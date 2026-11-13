@@ -1,0 +1,18 @@
+# github-ai-trend-radar 설정 (SPEC D1·D2, PLAN §1)
+
+[startrend]
+# star-trend 저장소 루트. 환경변수 RADAR_STARTREND_DIR 가 있으면 그것을 쓴다(CI 는 얕은 클론 경로)
+dir = "../../github-ai-star-trend"
+
+[candidates]
+cap = 200          # D2 — 그 주 AI 저장소 스타 증가 상위
+previous_top = 10  # 지난주 종합 TOP 10 가운데 빠진 저장소를 더한다
+
+[weights]
+# D1 가중치 v1 — 사용·기여 쪽에 더. 바꾸면 version 을 올린다(SPEC §4-1)
+version = 1
+s1 = 15  # 스타
+s2 = 15  # 포크
+s3 = 25  # 기여
+s4 = 30  # 사용
+s5 = 15  # 언급

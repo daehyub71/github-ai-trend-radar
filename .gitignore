@@ -1,0 +1,14 @@
+.env
+.env.*
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.work/
+.private/
+.DS_Store
+web/node_modules/
+web/.next/
+*.egg-info/
