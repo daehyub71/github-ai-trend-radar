@@ -1,0 +1,234 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表",
+ "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.7,
+    "s2": 0.0,
+    "s3": 25.84,
+    "s4": 4.25,
+    "s5": 8.07
+   },
+   "index": 53.86,
+   "rank": 80,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.29,
+    "s2": 0.0,
+    "s3": 25.33,
+    "s4": 3.92,
+    "s5": 8.16
+   },
+   "index": 54.7,
+   "rank": 77,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.26,
+    "s2": 0.0,
+    "s3": 24.36,
+    "s4": 3.75,
+    "s5": 8.12
+   },
+   "index": 49.5,
+   "rank": 103,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.27,
+    "s2": 0.0,
+    "s3": 25.9,
+    "s4": 4.51,
+    "s5": 8.29
+   },
+   "index": 45.97,
+   "rank": 124,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.71,
+    "s2": 0.0,
+    "s3": 20.81,
+    "s4": 3.53,
+    "s5": 8.08
+   },
+   "index": 38.13,
+   "rank": 152,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.17,
+    "s2": 0.0,
+    "s3": 25.48,
+    "s4": 3.84,
+    "s5": 8.11
+   },
+   "index": 41.6,
+   "rank": 132,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.35,
+    "s2": 0.0,
+    "s3": 25.01,
+    "s4": 1.86,
+    "s5": 8.12
+   },
+   "index": 38.34,
+   "rank": 146,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.15,
+    "s2": 0.0,
+    "s3": 20.73,
+    "s4": 3.36,
+    "s5": 8.12
+   },
+   "index": 36.35,
+   "rank": 148,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.98,
+    "s2": 0.0,
+    "s3": 18.53,
+    "s4": 3.82,
+    "s5": 8.07
+   },
+   "index": 31.39,
+   "rank": 165,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.66,
+    "s2": 0.0,
+    "s3": 23.63,
+    "s4": 1.68,
+    "s5": 8.38
+   },
+   "index": 36.35,
+   "rank": 150,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.5,
+    "s2": 0.0,
+    "s3": 24.24,
+    "s4": 2.94,
+    "s5": 8.32
+   },
+   "index": 42.99,
+   "rank": 129,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.09,
+    "s2": 0.0,
+    "s3": 23.59,
+    "s4": 2.58,
+    "s5": 8.38
+   },
+   "index": 41.65,
+   "rank": 139,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 10.2,
+    "s2": 0.0,
+    "s3": 24.24,
+    "s4": 9.59,
+    "s5": 8.38
+   },
+   "index": 52.41,
+   "rank": 81,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "JavaScript",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 10.2,
+   "s2": 0.0,
+   "s3": 24.24,
+   "s4": 9.59,
+   "s5": 8.38
+  },
+  "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+  "index": 52.41,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 57.79,
+   "s2": null,
+   "s3": 82.41,
+   "s4": 27.17,
+   "s5": 47.49
+  },
+  "prev_rank": 139,
+  "rank": 81,
+  "raw": {
+   "s1_stars_gain": 1856,
+   "s2_fork_delta": null,
+   "s2_forks": 8158,
+   "s3_closed_issues": 6,
+   "s3_merged_prs": 1000,
+   "s3_pr_authors": 769,
+   "s4_dependents": 0,
+   "s4_downloads": 591,
+   "s4_packages": "npm:awesome-dsh-plugin",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1333175049,
+  "star_rank": 85,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "partial",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1333175049,
+ "topics": [
+  "awesome",
+  "awesome-list",
+  "deepseek-harness",
+  "dsh",
+  "dsh-plugin"
+ ]
+}

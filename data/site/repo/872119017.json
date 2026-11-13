@@ -1,0 +1,249 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
+ "full_name": "D4Vinci/Scrapling",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.74,
+    "s2": 0.0,
+    "s3": 14.43,
+    "s4": 28.76,
+    "s5": 8.07
+   },
+   "index": 58.0,
+   "rank": 64,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 12.27,
+    "s4": 29.41,
+    "s5": 8.16
+   },
+   "index": 61.63,
+   "rank": 49,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.71,
+    "s2": 0.0,
+    "s3": 12.57,
+    "s4": 27.03,
+    "s5": 8.12
+   },
+   "index": 58.44,
+   "rank": 63,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.84,
+    "s2": 0.0,
+    "s3": 4.08,
+    "s4": 26.28,
+    "s5": 8.29
+   },
+   "index": 48.5,
+   "rank": 110,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.96,
+    "s2": 0.0,
+    "s3": 11.43,
+    "s4": 27.53,
+    "s5": 8.08
+   },
+   "index": 61.0,
+   "rank": 55,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 15.75,
+    "s4": 28.39,
+    "s5": 8.11
+   },
+   "index": 64.93,
+   "rank": 42,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.12,
+    "s2": 0.0,
+    "s3": 12.77,
+    "s4": 27.86,
+    "s5": 8.12
+   },
+   "index": 59.86,
+   "rank": 60,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.62,
+    "s2": 0.0,
+    "s3": 3.98,
+    "s4": 27.73,
+    "s5": 8.12
+   },
+   "index": 52.45,
+   "rank": 89,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.29,
+    "s2": 0.0,
+    "s3": 13.06,
+    "s4": 24.8,
+    "s5": 8.07
+   },
+   "index": 54.22,
+   "rank": 85,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.58,
+    "s2": 0.0,
+    "s3": 13.62,
+    "s4": 25.21,
+    "s5": 8.38
+   },
+   "index": 56.79,
+   "rank": 69,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.53,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 26.47,
+    "s5": 8.32
+   },
+   "index": 47.19,
+   "rank": 107,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.49,
+    "s2": 0.0,
+    "s3": 9.63,
+    "s4": 25.82,
+    "s5": 8.38
+   },
+   "index": 53.32,
+   "rank": 88,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 16.76,
+    "s2": 0.0,
+    "s3": 16.73,
+    "s4": 21.48,
+    "s5": 8.38
+   },
+   "index": 63.35,
+   "rank": 36,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 16.76,
+   "s2": 0.0,
+   "s3": 16.73,
+   "s4": 21.48,
+   "s5": 8.38
+  },
+  "full_name": "D4Vinci/Scrapling",
+  "index": 63.35,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 94.97,
+   "s2": null,
+   "s3": 56.87,
+   "s4": 60.87,
+   "s5": 47.49
+  },
+  "prev_rank": 88,
+  "rank": 36,
+  "raw": {
+   "s1_stars_gain": 8423,
+   "s2_fork_delta": null,
+   "s2_forks": 10639,
+   "s3_closed_issues": 5,
+   "s3_merged_prs": 13,
+   "s3_pr_authors": 12,
+   "s4_dependents": 0,
+   "s4_downloads": 397130,
+   "s4_packages": "pypi:scrapling",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 872119017,
+  "star_rank": 11,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 872119017,
+ "topics": [
+  "ai",
+  "ai-scraping",
+  "automation",
+  "crawler",
+  "crawling",
+  "crawling-python",
+  "data",
+  "data-extraction",
+  "mcp",
+  "mcp-server",
+  "playwright",
+  "python",
+  "scraping",
+  "selectors",
+  "stealth",
+  "web-scraper",
+  "web-scraping",
+  "web-scraping-python",
+  "webscraping",
+  "xpath"
+ ]
+}

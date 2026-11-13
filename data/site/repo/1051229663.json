@@ -1,0 +1,80 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Turn code into clarity. Generate accurate technical docs and AI-ready context in minutes—perfectly structured for human teams and intelligent agents.",
+ "full_name": "sopaco/deepwiki-rs",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.41,
+    "s2": 0.0,
+    "s3": 5.9,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 26.8,
+   "rank": 185,
+   "week": "2026-09-06"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 8.41,
+   "s2": 0.0,
+   "s3": 5.9,
+   "s4": 0.0,
+   "s5": 12.48
+  },
+  "full_name": "sopaco/deepwiki-rs",
+  "index": 26.8,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 30.85,
+   "s2": null,
+   "s3": 12.98,
+   "s4": null,
+   "s5": 45.77
+  },
+  "prev_rank": null,
+  "rank": 185,
+  "raw": {
+   "s1_stars_gain": 880,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1051229663,
+  "star_rank": 140,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-06"
+ },
+ "repo_id": 1051229663,
+ "topics": [
+  "deepseek",
+  "deepwiki",
+  "dsh-plugin",
+  "grok",
+  "okf-format",
+  "openwiki"
+ ]
+}

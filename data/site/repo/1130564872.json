@@ -1,0 +1,150 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+ "full_name": "koala73/worldmonitor",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.08,
+    "s2": 0.0,
+    "s3": 26.17,
+    "s4": 3.27,
+    "s5": 8.07
+   },
+   "index": 50.59,
+   "rank": 96,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.88,
+    "s2": 0.0,
+    "s3": 26.08,
+    "s4": 2.61,
+    "s5": 8.16
+   },
+   "index": 48.73,
+   "rank": 99,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.96,
+    "s2": 0.0,
+    "s3": 25.91,
+    "s4": 3.0,
+    "s5": 8.12
+   },
+   "index": 45.99,
+   "rank": 120,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.03,
+    "s2": 0.0,
+    "s3": 24.19,
+    "s4": 3.75,
+    "s5": 8.29
+   },
+   "index": 40.27,
+   "rank": 146,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.14,
+    "s2": 0.0,
+    "s3": 21.65,
+    "s4": 3.07,
+    "s5": 8.11
+   },
+   "index": 37.97,
+   "rank": 145,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.41,
+    "s2": 0.0,
+    "s3": 22.89,
+    "s4": 2.21,
+    "s5": 8.32
+   },
+   "index": 34.83,
+   "rank": 167,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 1.41,
+   "s2": 0.0,
+   "s3": 22.89,
+   "s4": 2.21,
+   "s5": 8.32
+  },
+  "full_name": "koala73/worldmonitor",
+  "index": 34.83,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 8.0,
+   "s2": null,
+   "s3": 77.83,
+   "s4": 6.25,
+   "s5": 47.12
+  },
+  "prev_rank": null,
+  "rank": 167,
+  "raw": {
+   "s1_stars_gain": 898,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 62,
+   "s3_merged_prs": 292,
+   "s3_pr_authors": 7,
+   "s4_dependents": null,
+   "s4_downloads": 331,
+   "s4_packages": "npm:worldmonitor",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1130564872,
+  "star_rank": 185,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1130564872,
+ "topics": [
+  "agent",
+  "ai",
+  "dashboard",
+  "geopolitics",
+  "mcp",
+  "mcp-server",
+  "monitoring",
+  "news",
+  "opensource",
+  "osint",
+  "palantir",
+  "situation"
+ ]
+}

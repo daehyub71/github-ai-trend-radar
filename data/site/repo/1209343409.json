@@ -1,0 +1,148 @@
+{
+ "category": "브라우저·컴퓨터 사용 자동화",
+ "description": "The headless browser for AI agents and web scraping",
+ "full_name": "h4ckf0r0day/obscura",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.4,
+    "s2": 0.0,
+    "s3": 30.03,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 44.9,
+   "rank": 116,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.56,
+    "s2": 0.0,
+    "s3": 27.46,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 43.63,
+   "rank": 123,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.08,
+    "s2": 0.0,
+    "s3": 35.53,
+    "s4": 0.0,
+    "s5": 26.66
+   },
+   "index": 87.27,
+   "rank": 3,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.23,
+    "s2": 0.0,
+    "s3": 34.15,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 55.86,
+   "rank": 73,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.09,
+    "s2": 0.0,
+    "s3": 26.65,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 40.29,
+   "rank": 139,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.1,
+    "s2": 0.0,
+    "s3": 30.38,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 44.43,
+   "rank": 124,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "브라우저·컴퓨터 사용 자동화",
+  "contrib": {
+   "s1": 1.1,
+   "s2": 0.0,
+   "s3": 30.38,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "h4ckf0r0day/obscura",
+  "index": 44.43,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 4.02,
+   "s2": null,
+   "s3": 66.84,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 124,
+  "raw": {
+   "s1_stars_gain": 639,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 21,
+   "s3_merged_prs": 29,
+   "s3_pr_authors": 12,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1209343409,
+  "star_rank": 192,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1209343409,
+ "topics": [
+  "antidetect",
+  "antidetect-browser",
+  "browser",
+  "browser-automation",
+  "cdp",
+  "headless",
+  "playwright",
+  "puppeteer",
+  "rust"
+ ]
+}

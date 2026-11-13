@@ -1,0 +1,133 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": "Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Claude/GPT/Gemini via 40+ providers. Auto-fallback, RTK -40% tokens, never hit limits.",
+ "full_name": "decolua/9router",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.22,
+    "s2": 0.0,
+    "s3": 12.46,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 26.23,
+   "rank": 184,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.69,
+    "s2": 0.0,
+    "s3": 13.5,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 27.0,
+   "rank": 173,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.88,
+    "s2": 0.0,
+    "s3": 13.82,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 42.18,
+   "rank": 133,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.3,
+    "s2": 0.0,
+    "s3": 12.88,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 31.73,
+   "rank": 167,
+   "week": "2026-09-13"
+  }
+ ],
+ "language": "JavaScript",
+ "latest": {
+  "backfilled": true,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 6.3,
+   "s2": 0.0,
+   "s3": 12.88,
+   "s4": 0.0,
+   "s5": 12.54
+  },
+  "full_name": "decolua/9router",
+  "index": 31.73,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 23.12,
+   "s2": null,
+   "s3": 28.34,
+   "s4": null,
+   "s5": 45.98
+  },
+  "prev_rank": 133,
+  "rank": 167,
+  "raw": {
+   "s1_stars_gain": 838,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 6,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1128025899,
+  "star_rank": 154,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-13"
+ },
+ "repo_id": 1128025899,
+ "topics": [
+  "ai-agents",
+  "ai-gateway",
+  "anthropic",
+  "chatgpt",
+  "claude",
+  "claude-code",
+  "cline",
+  "codex",
+  "copilot",
+  "cursor",
+  "deepseek",
+  "free-ai",
+  "gemini",
+  "gemini-cli",
+  "llm",
+  "llm-gateway",
+  "openai",
+  "openai-proxy",
+  "qwen",
+  "token-saver"
+ ]
+}

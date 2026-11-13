@@ -1,0 +1,161 @@
+{
+ "category": "멀티모달(이미지·음성·영상)",
+ "description": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D.",
+ "full_name": "img2threejs/img2threejs",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.73,
+    "s2": 0.0,
+    "s3": 4.12,
+    "s4": 0.65,
+    "s5": 8.07
+   },
+   "index": 23.58,
+   "rank": 191,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.67,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 0.0,
+    "s5": 8.16
+   },
+   "index": 19.98,
+   "rank": 195,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.5,
+    "s2": 0.0,
+    "s3": 10.49,
+    "s4": 0.38,
+    "s5": 8.12
+   },
+   "index": 30.49,
+   "rank": 174,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.94,
+    "s2": 0.0,
+    "s3": 9.85,
+    "s4": 0.38,
+    "s5": 8.29
+   },
+   "index": 24.46,
+   "rank": 179,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.32,
+    "s2": 0.0,
+    "s3": 8.44,
+    "s4": 5.15,
+    "s5": 8.32
+   },
+   "index": 23.22,
+   "rank": 196,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.66,
+    "s2": 0.0,
+    "s3": 7.91,
+    "s4": 6.03,
+    "s5": 8.38
+   },
+   "index": 24.98,
+   "rank": 189,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 1.64,
+    "s2": 0.0,
+    "s3": 7.76,
+    "s4": 11.13,
+    "s5": 8.38
+   },
+   "index": 28.91,
+   "rank": 183,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "멀티모달(이미지·음성·영상)",
+  "contrib": {
+   "s1": 1.64,
+   "s2": 0.0,
+   "s3": 7.76,
+   "s4": 11.13,
+   "s5": 8.38
+  },
+  "full_name": "img2threejs/img2threejs",
+  "index": 28.91,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 9.3,
+   "s2": null,
+   "s3": 26.38,
+   "s4": 31.52,
+   "s5": 47.49
+  },
+  "prev_rank": 189,
+  "rank": 183,
+  "raw": {
+   "s1_stars_gain": 817,
+   "s2_fork_delta": null,
+   "s2_forks": 1795,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 1,
+   "s4_dependents": 0,
+   "s4_downloads": 1765,
+   "s4_packages": "npm:img2threejs",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1301140808,
+  "star_rank": 182,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1301140808,
+ "topics": [
+  "3d",
+  "ai-agents",
+  "claude-code",
+  "computer-graphics",
+  "generative",
+  "image-to-3d",
+  "procedural-generation",
+  "threejs",
+  "typescript",
+  "webgl"
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "category": "벡터DB·메모리",
+ "description": "Long-term memory runtime for AI agents — plain Markdown as the source of truth, local ranked retrieval, and an independent sleep-time Manage layer. Claude Code and Codex share one store. No API key.",
+ "full_name": "tigerless-labs/agent-memory",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.91,
+    "s2": 0.0,
+    "s3": 14.81,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 41.26,
+   "rank": 132,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.44,
+    "s2": 0.0,
+    "s3": 11.32,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 30.24,
+   "rank": 168,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.73,
+    "s2": 0.0,
+    "s3": 19.73,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 35.31,
+   "rank": 163,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "벡터DB·메모리",
+  "contrib": {
+   "s1": 2.73,
+   "s2": 0.0,
+   "s3": 19.73,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "tigerless-labs/agent-memory",
+  "index": 35.31,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 10.0,
+   "s2": null,
+   "s3": 43.4,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": null,
+  "rank": 163,
+  "raw": {
+   "s1_stars_gain": 920,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 7,
+   "s3_pr_authors": 4,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1354059245,
+  "star_rank": 181,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1354059245,
+ "topics": [
+  "agent-memory",
+  "ai-agents",
+  "claude-code",
+  "codex",
+  "llm",
+  "local-first",
+  "long-term-memory",
+  "markdown",
+  "mcp",
+  "python",
+  "retrieval",
+  "sqlite"
+ ]
+}

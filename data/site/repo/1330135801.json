@@ -1,0 +1,86 @@
+{
+ "category": "MCP 서버·도구",
+ "description": null,
+ "full_name": "gvzdv/claudish-to-english",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.1,
+    "s2": 0.0,
+    "s3": 25.17,
+    "s4": 0.0,
+    "s5": 26.79
+   },
+   "index": 63.07,
+   "rank": 44,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.36,
+    "s2": 0.0,
+    "s3": 16.11,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "index": 50.14,
+   "rank": 92,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "Shell",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 8.36,
+   "s2": 0.0,
+   "s3": 16.11,
+   "s4": 0.0,
+   "s5": 25.66
+  },
+  "full_name": "gvzdv/claudish-to-english",
+  "index": 50.14,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 30.65,
+   "s2": null,
+   "s3": 35.45,
+   "s4": null,
+   "s5": 94.1
+  },
+  "prev_rank": 44,
+  "rank": 92,
+  "raw": {
+   "s1_stars_gain": 897,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 4,
+   "s3_pr_authors": 3,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 1,
+   "s5_hn_stories": 1
+  },
+  "repo_id": 1330135801,
+  "star_rank": 139,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1330135801,
+ "topics": []
+}

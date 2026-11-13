@@ -1,0 +1,23 @@
+{
+ "anchor": "2026-11-01",
+ "backfill": true,
+ "candidates": 201,
+ "geeknews": "ok",
+ "sources": {
+  "s3": {
+   "failed": 3,
+   "ok": 191,
+   "partial": 7
+  },
+  "s4": {
+   "none": 157,
+   "ok": 44
+  },
+  "s5": {
+   "ok": 201
+  }
+ },
+ "started_at": "2026-11-13T08:38:08+00:00",
+ "status": "partial",
+ "week": "2026-09-27"
+}

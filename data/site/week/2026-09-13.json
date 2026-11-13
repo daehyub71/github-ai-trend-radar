@@ -1,0 +1,566 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 4.02,
+      "use": 95.26,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "pingdotgg/t3code",
+     "repo_id": 1153130349
+    },
+    {
+     "evidence": {
+      "s1": 8.04,
+      "use": 80.88,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "genspark-ai/genoffice",
+     "repo_id": 1318187016
+    },
+    {
+     "evidence": {
+      "s1": 16.08,
+      "use": 87.74,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "remotion-dev/remotion",
+     "repo_id": 274495425
+    },
+    {
+     "evidence": {
+      "s1": 25.63,
+      "use": 96.11,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "t8y2/dbx",
+     "repo_id": 1224172037
+    },
+    {
+     "evidence": {
+      "s1": 27.64,
+      "use": 95.39,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "openclaw/openclaw",
+     "repo_id": 1103012935
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 97.99,
+      "s5": 45.98,
+      "use": 14.13
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 38.19,
+      "s5": 94.35,
+      "use": 14.13
+     },
+     "full_name": "TianyuCodings/NanoJev",
+     "repo_id": 1374702542
+    },
+    {
+     "evidence": {
+      "s1": 53.77,
+      "s5": 93.84,
+      "use": 14.13
+     },
+     "full_name": "ApodexAI/FrontierAgent",
+     "repo_id": 1342461518
+    },
+    {
+     "evidence": {
+      "s1": 99.5,
+      "s5": 98.74,
+      "use": 20.05
+     },
+     "full_name": "cloudflare/security-audit-skill",
+     "repo_id": 1273427276
+    },
+    {
+     "evidence": {
+      "s1": 98.49,
+      "s5": 96.73,
+      "use": 27.66
+     },
+     "full_name": "browser-use/jev-ultrafast",
+     "repo_id": 1373655162
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [
+    {
+     "evidence": {
+      "index": [
+       39.3,
+       53.41,
+       54.73,
+       59.45,
+       59.68
+      ]
+     },
+     "full_name": "affaan-m/ECC",
+     "repo_id": 1136590548
+    },
+    {
+     "evidence": {
+      "index": [
+       21.36,
+       22.83,
+       33.98,
+       35.07,
+       38.42
+      ]
+     },
+     "full_name": "petergyang/no-ai-slop",
+     "repo_id": 1291783779
+    }
+   ],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       61.9,
+       23.9
+      ],
+      "use_share": [
+       38.1,
+       76.1
+      ]
+     },
+     "full_name": "FlashML-org/FreeToken",
+     "repo_id": 1307001698
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       62.4,
+       39.1
+      ],
+      "use_share": [
+       37.7,
+       60.9
+      ]
+     },
+     "full_name": "cursor/plugins",
+     "repo_id": 1140229822
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "alibaba/open-code-review",
+    "pct": 100.0,
+    "repo_id": 1241960226
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "pct": 99.5,
+    "repo_id": 1273427276
+   },
+   {
+    "full_name": "hypit-ai/hypit",
+    "pct": 98.99,
+    "repo_id": 1316470719
+   },
+   {
+    "full_name": "browser-use/jev-ultrafast",
+    "pct": 98.49,
+    "repo_id": 1373655162
+   },
+   {
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pct": 97.99,
+    "repo_id": 1333065091
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 99.15,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "cheaper-inference/OmniRoute",
+    "pct": 98.31,
+    "repo_id": 1157102282
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.29,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "can1357/oh-my-pi",
+    "pct": 96.95,
+    "repo_id": 1125856365
+   },
+   {
+    "full_name": "t8y2/dbx",
+    "pct": 96.11,
+    "repo_id": 1224172037
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "huggingface/transformers",
+    "pct": 100.0,
+    "repo_id": 155220641
+   },
+   {
+    "full_name": "openai/codex",
+    "pct": 97.83,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 95.65,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 93.48,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 91.3,
+    "repo_id": 274495425
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "arnegiacomo/fugleramme",
+    "pct": 99.25,
+    "repo_id": 1294088656
+   },
+   {
+    "full_name": "cloudflare/security-audit-skill",
+    "pct": 98.74,
+    "repo_id": 1273427276
+   },
+   {
+    "full_name": "anthropics/claude-code",
+    "pct": 98.74,
+    "repo_id": 937253475
+   },
+   {
+    "full_name": "cathrynlavery/diagram-design",
+    "pct": 98.24,
+    "repo_id": 1212769188
+   },
+   {
+    "full_name": "google/artemis",
+    "pct": 97.99,
+    "repo_id": 1333399642
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 200,
+  "star_top_in_index_top": 3,
+  "with_packages": 47
+ },
+ "top10": [
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 24.19,
+    "s2": 0.0,
+    "s3": 40.84,
+    "s4": 0.0,
+    "s5": 25.73
+   },
+   "full_name": "abue-ammar/tinycast",
+   "index": 90.76,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 88.69,
+    "s2": null,
+    "s3": 89.85,
+    "s4": null,
+    "s5": 94.35
+   },
+   "prev_rank": 67,
+   "rank": 1,
+   "repo_id": 1284153858,
+   "star_rank": 23
+  },
+  {
+   "category": "멀티모달(이미지·음성·영상)",
+   "contrib": {
+    "s1": 26.45,
+    "s2": 0.0,
+    "s3": 36.8,
+    "s4": 0.0,
+    "s5": 26.11
+   },
+   "full_name": "debpalash/VoiceStudio",
+   "index": 89.36,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.98,
+    "s2": null,
+    "s3": 80.96,
+    "s4": null,
+    "s5": 95.73
+   },
+   "prev_rank": 1,
+   "rank": 2,
+   "repo_id": 1206390571,
+   "star_rank": 7
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 26.59,
+    "s2": 0.0,
+    "s3": 33.65,
+    "s4": 0.0,
+    "s5": 25.9
+   },
+   "full_name": "bilawalsidhu/gods-eye-view",
+   "index": 86.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 97.49,
+    "s2": null,
+    "s3": 74.03,
+    "s4": null,
+    "s5": 94.97
+   },
+   "prev_rank": 2,
+   "rank": 3,
+   "repo_id": 1277471539,
+   "star_rank": 6
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 23.16,
+    "s2": 0.0,
+    "s3": 31.26,
+    "s4": 0.0,
+    "s5": 27.07
+   },
+   "full_name": "arnegiacomo/fugleramme",
+   "index": 81.49,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 84.92,
+    "s2": null,
+    "s3": 68.78,
+    "s4": null,
+    "s5": 99.25
+   },
+   "prev_rank": null,
+   "rank": 4,
+   "repo_id": 1294088656,
+   "star_rank": 31
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 25.63,
+    "s2": 0.0,
+    "s3": 43.03,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "stablyai/orca",
+   "index": 81.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 93.97,
+    "s2": null,
+    "s3": 94.67,
+    "s4": null,
+    "s5": 45.98
+   },
+   "prev_rank": 8,
+   "rank": 5,
+   "repo_id": 1183888342,
+   "star_rank": 13
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 21.65,
+    "s2": 0.0,
+    "s3": 45.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "index": 79.26,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 79.4,
+    "s2": null,
+    "s3": 99.15,
+    "s4": null,
+    "s5": 45.98
+   },
+   "prev_rank": 7,
+   "rank": 6,
+   "repo_id": 1024554267,
+   "star_rank": 42
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 17.68,
+    "s2": 0.0,
+    "s3": 34.92,
+    "s4": 0.0,
+    "s5": 26.11
+   },
+   "full_name": "omacom/omarchy",
+   "index": 78.7,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 64.82,
+    "s2": null,
+    "s3": 76.82,
+    "s4": null,
+    "s5": 95.73
+   },
+   "prev_rank": 5,
+   "rank": 7,
+   "repo_id": 994093166,
+   "star_rank": 71
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 17.65,
+    "s2": 0.0,
+    "s3": 25.78,
+    "s4": 26.85,
+    "s5": 8.11
+   },
+   "full_name": "alibaba/open-code-review",
+   "index": 78.39,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 100.0,
+    "s2": null,
+    "s3": 87.65,
+    "s4": 76.09,
+    "s5": 45.98
+   },
+   "prev_rank": 61,
+   "rank": 8,
+   "repo_id": 1241960226,
+   "star_rank": 1
+  },
+  {
+   "category": "RAG·검색",
+   "contrib": {
+    "s1": 25.22,
+    "s2": 0.0,
+    "s3": 40.53,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Tencent/WeKnora",
+   "index": 78.29,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.46,
+    "s2": null,
+    "s3": 89.17,
+    "s4": null,
+    "s5": 45.98
+   },
+   "prev_rank": 42,
+   "rank": 9,
+   "repo_id": 1024118326,
+   "star_rank": 16
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 22.2,
+    "s2": 0.0,
+    "s3": 28.96,
+    "s4": 0.0,
+    "s5": 26.79
+   },
+   "full_name": "cathrynlavery/diagram-design",
+   "index": 77.95,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 81.41,
+    "s2": null,
+    "s3": 63.71,
+    "s4": null,
+    "s5": 98.24
+   },
+   "prev_rank": 29,
+   "rank": 10,
+   "repo_id": 1212769188,
+   "star_rank": 38
+  }
+ ],
+ "week": "2026-09-13",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

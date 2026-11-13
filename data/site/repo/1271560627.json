@@ -1,0 +1,171 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command.",
+ "full_name": "latent-spaces/brag",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.08,
+    "s2": 0.0,
+    "s3": 20.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 57.62,
+   "rank": 72,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.41,
+    "s2": 0.0,
+    "s3": 12.54,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 49.49,
+   "rank": 99,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.86,
+    "s2": 0.0,
+    "s3": 20.69,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 57.1,
+   "rank": 73,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.9,
+    "s2": 0.0,
+    "s3": 12.95,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 41.32,
+   "rank": 137,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.16,
+    "s2": 0.0,
+    "s3": 15.19,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 41.3,
+   "rank": 131,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.68,
+    "s2": 0.0,
+    "s3": 21.96,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 50.49,
+   "rank": 95,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.06,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 31.28,
+   "rank": 171,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 4.52,
+    "s2": 0.0,
+    "s3": 5.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 23.18,
+   "rank": 192,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 4.52,
+   "s2": 0.0,
+   "s3": 5.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "latent-spaces/brag",
+  "index": 23.18,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 16.58,
+   "s2": null,
+   "s3": 12.56,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 171,
+  "rank": 192,
+  "raw": {
+   "s1_stars_gain": 918,
+   "s2_fork_delta": null,
+   "s2_forks": 1651,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1271560627,
+  "star_rank": 167,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1271560627,
+ "topics": [
+  "agent-skills",
+  "claude-code",
+  "claude-skills",
+  "hyperframes",
+  "launch-video",
+  "video-generation"
+ ]
+}

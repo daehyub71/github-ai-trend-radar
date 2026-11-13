@@ -1,0 +1,158 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": "Every agent's model. One place. Codex on DeepSeek, Claude Code on Kimi, from the menu bar.",
+ "full_name": "yetone/magpie",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.66,
+    "s2": 0.0,
+    "s3": 34.07,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 58.28,
+   "rank": 68,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.0,
+    "s2": 0.0,
+    "s3": 43.22,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 79.77,
+   "rank": 10,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.85,
+    "s2": 0.0,
+    "s3": 40.78,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 77.1,
+   "rank": 12,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.77,
+    "s2": 0.0,
+    "s3": 33.1,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 71.82,
+   "rank": 21,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.68,
+    "s2": 0.0,
+    "s3": 17.84,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 55.38,
+   "rank": 72,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.49,
+    "s2": 0.0,
+    "s3": 18.5,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 56.94,
+   "rank": 63,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 24.12,
+    "s2": 0.0,
+    "s3": 18.2,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 55.27,
+   "rank": 72,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Go",
+ "latest": {
+  "backfilled": false,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 24.12,
+   "s2": 0.0,
+   "s3": 18.2,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "yetone/magpie",
+  "index": 55.27,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 88.44,
+   "s2": null,
+   "s3": 40.03,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 63,
+  "rank": 72,
+  "raw": {
+   "s1_stars_gain": 4950,
+   "s2_fork_delta": null,
+   "s2_forks": 3164,
+   "s3_closed_issues": 217,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1383809012,
+  "star_rank": 24,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1383809012,
+ "topics": [
+  "claude-code",
+  "codex",
+  "deepseek",
+  "gemini-cli",
+  "llm",
+  "macos"
+ ]
+}

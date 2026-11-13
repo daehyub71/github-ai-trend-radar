@@ -1,0 +1,92 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "开放的侧边栏底座，支持三方拓展注册新侧边栏页面。内置文件渲染编辑/终端/侧边对话/Git/子代理页面 ｜ Open sidebar foundation, supports third-party extensions to register new sidebar pages. Built-in file rendering/editing, terminal, side chat, Git, and sub-agent pages.",
+ "full_name": "omdsh-dev/DSH-better-sidebar",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.69,
+    "s2": 0.0,
+    "s3": 22.02,
+    "s4": 14.38,
+    "s5": 8.07
+   },
+   "index": 53.16,
+   "rank": 83,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.13,
+    "s2": 0.0,
+    "s3": 23.69,
+    "s4": 24.84,
+    "s5": 8.16
+   },
+   "index": 65.82,
+   "rank": 38,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 9.13,
+   "s2": 0.0,
+   "s3": 23.69,
+   "s4": 24.84,
+   "s5": 8.16
+  },
+  "full_name": "omdsh-dev/DSH-better-sidebar",
+  "index": 65.82,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 51.76,
+   "s2": null,
+   "s3": 80.54,
+   "s4": 70.37,
+   "s5": 46.23
+  },
+  "prev_rank": 83,
+  "rank": 38,
+  "raw": {
+   "s1_stars_gain": 1226,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 44,
+   "s3_merged_prs": 51,
+   "s3_pr_authors": 17,
+   "s4_dependents": null,
+   "s4_downloads": 103080,
+   "s4_packages": "npm:dsh-better-sidebar",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1326893710,
+  "star_rank": 97,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1326893710,
+ "topics": [
+  "deepseek",
+  "deepseek-harness",
+  "dsh",
+  "dsh-better-sidebar",
+  "dsh-plugin",
+  "sidebar"
+ ]
+}

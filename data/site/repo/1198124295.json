@@ -1,0 +1,99 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": null,
+ "full_name": "mvschwarz/openrig",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.82,
+    "s2": 0.0,
+    "s3": 42.65,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "index": 93.48,
+   "rank": 1,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.41,
+    "s2": 0.0,
+    "s3": 36.87,
+    "s4": 0.0,
+    "s5": 25.97
+   },
+   "index": 80.25,
+   "rank": 8,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.48,
+    "s2": 0.0,
+    "s3": 34.85,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 53.28,
+   "rank": 83,
+   "week": "2026-10-11"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 5.48,
+   "s2": 0.0,
+   "s3": 34.85,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "mvschwarz/openrig",
+  "index": 53.28,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 20.1,
+   "s2": null,
+   "s3": 76.67,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 8,
+  "rank": 83,
+  "raw": {
+   "s1_stars_gain": 973,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 15,
+   "s3_merged_prs": 249,
+   "s3_pr_authors": 31,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1198124295,
+  "star_rank": 160,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-11"
+ },
+ "repo_id": 1198124295,
+ "topics": []
+}

@@ -1,0 +1,73 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": null,
+ "full_name": "software-mansion-labs/goldie",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.53,
+    "s2": 0.0,
+    "s3": 18.92,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 46.26,
+   "rank": 122,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 14.53,
+   "s2": 0.0,
+   "s3": 18.92,
+   "s4": 0.0,
+   "s5": 12.81
+  },
+  "full_name": "software-mansion-labs/goldie",
+  "index": 46.26,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 53.27,
+   "s2": null,
+   "s3": 41.62,
+   "s4": null,
+   "s5": 46.98
+  },
+  "prev_rank": null,
+  "rank": 122,
+  "raw": {
+   "s1_stars_gain": 1348,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 3,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1344939825,
+  "star_rank": 94,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1344939825,
+ "topics": []
+}

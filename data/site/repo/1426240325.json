@@ -1,0 +1,90 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "REAP - Prompts for you to use REA (Reverse Engineer Anything), get the most out of it, and clone or break down any program",
+ "full_name": "JoasASantos/REA-Prompts",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.18,
+    "s2": 0.0,
+    "s3": 12.11,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 42.15,
+   "rank": 135,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.73,
+    "s2": 0.0,
+    "s3": 9.96,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 32.64,
+   "rank": 168,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Batchfile",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 9.73,
+   "s2": 0.0,
+   "s3": 9.96,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "JoasASantos/REA-Prompts",
+  "index": 32.64,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 35.68,
+   "s2": null,
+   "s3": 21.91,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 135,
+  "rank": 168,
+  "raw": {
+   "s1_stars_gain": 1166,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1426240325,
+  "star_rank": 129,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1426240325,
+ "topics": [
+  "prompt-engineering",
+  "rea",
+  "reverse-enginnering"
+ ]
+}

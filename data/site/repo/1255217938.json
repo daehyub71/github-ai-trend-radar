@@ -1,0 +1,73 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": null,
+ "full_name": "loopx-project/loopx",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.69,
+    "s2": 0.0,
+    "s3": 39.39,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 62.56,
+   "rank": 45,
+   "week": "2026-08-09"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 10.69,
+   "s2": 0.0,
+   "s3": 39.39,
+   "s4": 0.0,
+   "s5": 12.47
+  },
+  "full_name": "loopx-project/loopx",
+  "index": 62.56,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 39.2,
+   "s2": null,
+   "s3": 86.67,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 45,
+  "raw": {
+   "s1_stars_gain": 1160,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 26,
+   "s3_merged_prs": 206,
+   "s3_pr_authors": 23,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": "pypi:loopx",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1255217938,
+  "star_rank": 122,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-09"
+ },
+ "repo_id": 1255217938,
+ "topics": []
+}

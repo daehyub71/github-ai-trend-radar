@@ -1,0 +1,112 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": null,
+ "full_name": "Louis-CFM/coucou",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.45,
+    "s2": 0.0,
+    "s3": 26.03,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 62.03,
+   "rank": 45,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.66,
+    "s2": 0.0,
+    "s3": 34.59,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 61.73,
+   "rank": 52,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.69,
+    "s2": 0.0,
+    "s3": 27.54,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 41.18,
+   "rank": 132,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.95,
+    "s2": 0.0,
+    "s3": 29.26,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 46.07,
+   "rank": 117,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 3.95,
+   "s2": 0.0,
+   "s3": 29.26,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "Louis-CFM/coucou",
+  "index": 46.07,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 14.5,
+   "s2": null,
+   "s3": 64.38,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": 132,
+  "rank": 117,
+  "raw": {
+   "s1_stars_gain": 964,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 20,
+   "s3_merged_prs": 28,
+   "s3_pr_authors": 9,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1391438314,
+  "star_rank": 172,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1391438314,
+ "topics": []
+}

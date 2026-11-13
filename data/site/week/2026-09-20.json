@@ -1,0 +1,582 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 2.5,
+      "use": 93.23,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "pingdotgg/t3code",
+     "repo_id": 1153130349
+    },
+    {
+     "evidence": {
+      "s1": 15.0,
+      "use": 96.79,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "t8y2/dbx",
+     "repo_id": 1224172037
+    },
+    {
+     "evidence": {
+      "s1": 13.0,
+      "use": 86.97,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "genspark-ai/genoffice",
+     "repo_id": 1318187016
+    },
+    {
+     "evidence": {
+      "s1": 23.0,
+      "use": 91.54,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "melgarafael/DeskcommCRM",
+     "repo_id": 1223939135
+    },
+    {
+     "evidence": {
+      "s1": 24.0,
+      "use": 91.88,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "career-ops-hq/career-ops",
+     "repo_id": 1201476594
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 99.0,
+      "s5": 46.0,
+      "use": 14.89
+     },
+     "full_name": "browser-use/jev-ultrafast",
+     "repo_id": 1373655162
+    },
+    {
+     "evidence": {
+      "s1": 96.5,
+      "s5": 98.62,
+      "use": 14.89
+     },
+     "full_name": "zai-org/ZCode",
+     "repo_id": 1378288598
+    },
+    {
+     "evidence": {
+      "s1": 97.0,
+      "s5": 46.0,
+      "use": 14.89
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 66.5,
+      "s5": 98.62,
+      "use": 20.37
+     },
+     "full_name": "Contrastive-LM/CLM",
+     "repo_id": 1384094559
+    },
+    {
+     "evidence": {
+      "s1": 93.0,
+      "s5": 46.0,
+      "use": 14.89
+     },
+     "full_name": "cloudflare/security-audit-skill",
+     "repo_id": 1273427276
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       80.0,
+       48.4
+      ],
+      "use_share": [
+       20.0,
+       51.6
+      ]
+     },
+     "full_name": "TauricResearch/TradingAgents",
+     "repo_id": 909213664
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       82.2,
+       52.0
+      ],
+      "use_share": [
+       17.8,
+       48.0
+      ]
+     },
+     "full_name": "bilawalsidhu/gods-eye-view",
+     "repo_id": 1277471539
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       86.2,
+       56.0
+      ],
+      "use_share": [
+       13.8,
+       44.0
+      ]
+     },
+     "full_name": "obra/superpowers",
+     "repo_id": 1073224795
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       60.8,
+       34.7
+      ],
+      "use_share": [
+       39.2,
+       65.3
+      ]
+     },
+     "full_name": "anthropics/claude-plugins-official",
+     "repo_id": 1100776768
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       70.6,
+       45.3
+      ],
+      "use_share": [
+       29.4,
+       54.7
+      ]
+     },
+     "full_name": "mvanhorn/last30days-skill",
+     "repo_id": 1140843380
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "NandhaKishorM/laya",
+    "pct": 100.0,
+    "repo_id": 1375382253
+   },
+   {
+    "full_name": "eternity4719/HowToLiveBetter",
+    "pct": 99.5,
+    "repo_id": 1359648985
+   },
+   {
+    "full_name": "browser-use/jev-ultrafast",
+    "pct": 99.0,
+    "repo_id": 1373655162
+   },
+   {
+    "full_name": "google/ax",
+    "pct": 98.5,
+    "repo_id": 1196447493
+   },
+   {
+    "full_name": "vectorize-io/hindsight",
+    "pct": 98.0,
+    "repo_id": 1086419061
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 99.49,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.8,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "t8y2/dbx",
+    "pct": 96.79,
+    "repo_id": 1224172037
+   },
+   {
+    "full_name": "cheaper-inference/OmniRoute",
+    "pct": 95.94,
+    "repo_id": 1157102282
+   },
+   {
+    "full_name": "can1357/oh-my-pi",
+    "pct": 94.08,
+    "repo_id": 1125856365
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "openai/codex",
+    "pct": 100.0,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.37,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 94.74,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 92.11,
+    "repo_id": 274495425
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "pct": 89.47,
+    "repo_id": 787076358
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "jaredpalmer/kev",
+    "pct": 99.5,
+    "repo_id": 1375069862
+   },
+   {
+    "full_name": "devdotfast/whiteboard",
+    "pct": 99.25,
+    "repo_id": 1338539251
+   },
+   {
+    "full_name": "zai-org/ZCode",
+    "pct": 98.62,
+    "repo_id": 1378288598
+   },
+   {
+    "full_name": "Contrastive-LM/CLM",
+    "pct": 98.62,
+    "repo_id": 1384094559
+   },
+   {
+    "full_name": "google/ax",
+    "pct": 98.25,
+    "repo_id": 1196447493
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 201,
+  "star_top_in_index_top": 5,
+  "with_packages": 39
+ },
+ "top10": [
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 18.55,
+    "s2": 0.0,
+    "s3": 42.38,
+    "s4": 0.0,
+    "s5": 25.91
+   },
+   "full_name": "anomalyco/opencode",
+   "index": 86.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 68.0,
+    "s2": null,
+    "s3": 93.23,
+    "s4": null,
+    "s5": 95.0
+   },
+   "prev_rank": 14,
+   "rank": 1,
+   "repo_id": 975734319,
+   "star_rank": 65
+  },
+  {
+   "category": "모델·가중치",
+   "contrib": {
+    "s1": 26.05,
+    "s2": 0.0,
+    "s3": 32.69,
+    "s4": 0.0,
+    "s5": 27.14
+   },
+   "full_name": "jaredpalmer/kev",
+   "index": 85.87,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.5,
+    "s2": null,
+    "s3": 71.91,
+    "s4": null,
+    "s5": 99.5
+   },
+   "prev_rank": 138,
+   "rank": 2,
+   "repo_id": 1375069862,
+   "star_rank": 10
+  },
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 26.86,
+    "s2": 0.0,
+    "s3": 30.96,
+    "s4": 0.0,
+    "s5": 26.8
+   },
+   "full_name": "google/ax",
+   "index": 84.62,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.5,
+    "s2": null,
+    "s3": 68.1,
+    "s4": null,
+    "s5": 98.25
+   },
+   "prev_rank": null,
+   "rank": 3,
+   "repo_id": 1196447493,
+   "star_rank": 4
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 24.82,
+    "s2": 0.0,
+    "s3": 32.3,
+    "s4": 0.0,
+    "s5": 26.45
+   },
+   "full_name": "tt-a1i/archify",
+   "index": 83.58,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 91.0,
+    "s2": null,
+    "s3": 71.07,
+    "s4": null,
+    "s5": 97.0
+   },
+   "prev_rank": 13,
+   "rank": 4,
+   "repo_id": 1211139949,
+   "star_rank": 19
+  },
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 26.59,
+    "s2": 0.0,
+    "s3": 30.53,
+    "s4": 0.0,
+    "s5": 26.08
+   },
+   "full_name": "paperclipai/paperclip",
+   "index": 83.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 97.5,
+    "s2": null,
+    "s3": 67.17,
+    "s4": null,
+    "s5": 95.62
+   },
+   "prev_rank": null,
+   "rank": 5,
+   "repo_id": 1170821064,
+   "star_rank": 6
+  },
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 19.36,
+    "s2": 0.0,
+    "s3": 37.15,
+    "s4": 0.0,
+    "s5": 25.91
+   },
+   "full_name": "agent-substrate/substrate",
+   "index": 82.42,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 71.0,
+    "s2": null,
+    "s3": 81.73,
+    "s4": null,
+    "s5": 95.0
+   },
+   "prev_rank": null,
+   "rank": 6,
+   "repo_id": 1238047523,
+   "star_rank": 59
+  },
+  {
+   "category": "기타 AI",
+   "contrib": {
+    "s1": 27.27,
+    "s2": 0.0,
+    "s3": 41.92,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "NandhaKishorM/laya",
+   "index": 81.73,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 100.0,
+    "s2": null,
+    "s3": 92.22,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": 110,
+   "rank": 7,
+   "repo_id": 1375382253,
+   "star_rank": 1
+  },
+  {
+   "category": "로컬 LLM 실행",
+   "contrib": {
+    "s1": 16.3,
+    "s2": 0.0,
+    "s3": 38.99,
+    "s4": 0.0,
+    "s5": 25.67
+   },
+   "full_name": "JustVugg/colibri",
+   "index": 80.96,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 59.75,
+    "s2": null,
+    "s3": 85.79,
+    "s4": null,
+    "s5": 94.12
+   },
+   "prev_rank": 12,
+   "rank": 8,
+   "repo_id": 1286080397,
+   "star_rank": 81
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 25.91,
+    "s2": 0.0,
+    "s3": 42.07,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "stablyai/orca",
+   "index": 80.52,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.0,
+    "s2": null,
+    "s3": 92.55,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": 5,
+   "rank": 9,
+   "repo_id": 1183888342,
+   "star_rank": 11
+  },
+  {
+   "category": "벡터DB·메모리",
+   "contrib": {
+    "s1": 26.73,
+    "s2": 0.0,
+    "s3": 39.65,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "vectorize-io/hindsight",
+   "index": 78.92,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.0,
+    "s2": null,
+    "s3": 87.23,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": null,
+   "rank": 10,
+   "repo_id": 1086419061,
+   "star_rank": 5
+  }
+ ],
+ "week": "2026-09-20",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

@@ -1,0 +1,248 @@
+{
+ "category": "문서·데이터 파싱",
+ "description": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+ "full_name": "firecrawl/firecrawl",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.58,
+    "s2": 0.0,
+    "s3": 15.71,
+    "s4": 31.37,
+    "s5": 8.07
+   },
+   "index": 71.74,
+   "rank": 21,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.7,
+    "s2": 0.0,
+    "s3": 16.82,
+    "s4": 32.68,
+    "s5": 8.16
+   },
+   "index": 73.36,
+   "rank": 18,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.45,
+    "s2": 0.0,
+    "s3": 18.38,
+    "s4": 30.79,
+    "s5": 8.12
+   },
+   "index": 72.74,
+   "rank": 12,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.52,
+    "s2": 0.0,
+    "s3": 17.97,
+    "s4": 31.54,
+    "s5": 8.29
+   },
+   "index": 73.32,
+   "rank": 14,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.45,
+    "s2": 0.0,
+    "s3": 18.38,
+    "s4": 30.35,
+    "s5": 8.08
+   },
+   "index": 72.26,
+   "rank": 17,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.81,
+    "s2": 0.0,
+    "s3": 18.81,
+    "s4": 31.46,
+    "s5": 8.11
+   },
+   "index": 73.19,
+   "rank": 18,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.26,
+    "s2": 0.0,
+    "s3": 19.06,
+    "s4": 31.58,
+    "s5": 8.12
+   },
+   "index": 74.02,
+   "rank": 16,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.35,
+    "s2": 0.0,
+    "s3": 19.73,
+    "s4": 31.93,
+    "s5": 8.12
+   },
+   "index": 75.14,
+   "rank": 16,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 18.06,
+    "s4": 29.57,
+    "s5": 8.07
+   },
+   "index": 68.38,
+   "rank": 29,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.24,
+    "s2": 0.0,
+    "s3": 16.39,
+    "s4": 30.25,
+    "s5": 8.38
+   },
+   "index": 67.26,
+   "rank": 32,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.88,
+    "s2": 0.0,
+    "s3": 18.89,
+    "s4": 31.62,
+    "s5": 8.32
+   },
+   "index": 71.7,
+   "rank": 21,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.42,
+    "s2": 0.0,
+    "s3": 14.76,
+    "s4": 29.27,
+    "s5": 8.38
+   },
+   "index": 64.82,
+   "rank": 35,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 12.5,
+    "s2": 0.0,
+    "s3": 17.71,
+    "s4": 23.4,
+    "s5": 8.38
+   },
+   "index": 62.0,
+   "rank": 42,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "문서·데이터 파싱",
+  "contrib": {
+   "s1": 12.5,
+   "s2": 0.0,
+   "s3": 17.71,
+   "s4": 23.4,
+   "s5": 8.38
+  },
+  "full_name": "firecrawl/firecrawl",
+  "index": 62.0,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 70.85,
+   "s2": null,
+   "s3": 60.22,
+   "s4": 66.3,
+   "s5": 47.49
+  },
+  "prev_rank": 35,
+  "rank": 42,
+  "raw": {
+   "s1_stars_gain": 2294,
+   "s2_fork_delta": null,
+   "s2_forks": 10563,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 55,
+   "s3_pr_authors": 13,
+   "s4_dependents": 0,
+   "s4_downloads": 1294653,
+   "s4_packages": "pypi:firecrawl npm:firecrawl",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 787076358,
+  "star_rank": 59,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 787076358,
+ "topics": [
+  "ai",
+  "ai-agents",
+  "ai-crawler",
+  "ai-scraping",
+  "ai-search",
+  "crawler",
+  "data-extraction",
+  "html-to-markdown",
+  "llm",
+  "markdown",
+  "scraper",
+  "scraping",
+  "web-crawler",
+  "web-data",
+  "web-data-extraction",
+  "web-scraper",
+  "web-scraping",
+  "web-search",
+  "webscraping"
+ ]
+}

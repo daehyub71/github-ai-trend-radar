@@ -1,0 +1,177 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Beautiful, Modern & Opinionated Linux",
+ "full_name": "omacom/omarchy",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.37,
+    "s2": 0.0,
+    "s3": 41.22,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 55.06,
+   "rank": 73,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.53,
+    "s2": 0.0,
+    "s3": 30.0,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 67.14,
+   "rank": 35,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 26.32,
+    "s2": 0.0,
+    "s3": 36.93,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 75.81,
+   "rank": 10,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.81,
+    "s2": 0.0,
+    "s3": 33.73,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 71.35,
+   "rank": 18,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.66,
+    "s2": 0.0,
+    "s3": 34.72,
+    "s4": 0.0,
+    "s5": 26.15
+   },
+   "index": 83.53,
+   "rank": 5,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.68,
+    "s2": 0.0,
+    "s3": 34.92,
+    "s4": 0.0,
+    "s5": 26.11
+   },
+   "index": 78.7,
+   "rank": 7,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 38.53,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 63.76,
+   "rank": 41,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.0,
+    "s2": 0.0,
+    "s3": 34.38,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 52.92,
+   "rank": 86,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.96,
+    "s2": 0.0,
+    "s3": 38.11,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 51.54,
+   "rank": 94,
+   "week": "2026-10-04"
+  }
+ ],
+ "language": "Shell",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 0.96,
+   "s2": 0.0,
+   "s3": 38.11,
+   "s4": 0.0,
+   "s5": 12.47
+  },
+  "full_name": "omacom/omarchy",
+  "index": 51.54,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 3.52,
+   "s2": null,
+   "s3": 83.84,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": 86,
+  "rank": 94,
+  "raw": {
+   "s1_stars_gain": 666,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 160,
+   "s3_merged_prs": 72,
+   "s3_pr_authors": 33,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 994093166,
+  "star_rank": 193,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-04"
+ },
+ "repo_id": 994093166,
+ "topics": []
+}

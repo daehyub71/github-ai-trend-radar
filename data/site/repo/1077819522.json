@@ -1,0 +1,92 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Open-source 3D architectural editor with a local CLI, MCP tools, and practical workflows for humans and AI agents.",
+ "full_name": "pascalorg/editor",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.17,
+    "s2": 0.0,
+    "s3": 35.94,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 69.59,
+   "rank": 24,
+   "week": "2026-09-06"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 21.17,
+   "s2": 0.0,
+   "s3": 35.94,
+   "s4": 0.0,
+   "s5": 12.48
+  },
+  "full_name": "pascalorg/editor",
+  "index": 69.59,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 77.61,
+   "s2": null,
+   "s3": 79.06,
+   "s4": null,
+   "s5": 45.77
+  },
+  "prev_rank": null,
+  "rank": 24,
+  "raw": {
+   "s1_stars_gain": 1973,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 14,
+   "s3_merged_prs": 91,
+   "s3_pr_authors": 16,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1077819522,
+  "star_rank": 46,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-06"
+ },
+ "repo_id": 1077819522,
+ "topics": [
+  "3d",
+  "agent-skills",
+  "ai-agents",
+  "architecture",
+  "bim",
+  "cad",
+  "editor",
+  "floorplan",
+  "gemini-cli-extension",
+  "local-first",
+  "mcp",
+  "mcp-server",
+  "model-context-protocol",
+  "nextjs",
+  "parametric-design",
+  "react-three-fiber",
+  "threejs",
+  "typescript"
+ ]
+}

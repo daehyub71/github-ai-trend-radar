@@ -1,0 +1,120 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": "把腾讯WorkBuddy账号变成 OpenAI 兼容 API 的多账号网关，同时自动完成任务中心全部任务，附 Web 管理面板（账号池可视化 / 积分任务 / 配置热更新）。基于 Sliverkiss/workbuddy2api 的增强分支",
+ "full_name": "linguo2625469/workbuddy2api-panel",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.91,
+    "s2": 0.0,
+    "s3": 24.38,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 41.84,
+   "rank": 129,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.34,
+    "s2": 0.0,
+    "s3": 26.86,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 44.68,
+   "rank": 116,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.81,
+    "s2": 0.0,
+    "s3": 19.46,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 40.23,
+   "rank": 135,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.82,
+    "s2": 0.0,
+    "s3": 34.61,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 48.28,
+   "rank": 100,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "Go",
+ "latest": {
+  "backfilled": true,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 0.82,
+   "s2": 0.0,
+   "s3": 34.61,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "linguo2625469/workbuddy2api-panel",
+  "index": 48.28,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 3.0,
+   "s2": null,
+   "s3": 76.14,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": 135,
+  "rank": 100,
+  "raw": {
+   "s1_stars_gain": 846,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 95,
+   "s3_merged_prs": 24,
+   "s3_pr_authors": 19,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1366969284,
+  "star_rank": 195,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1366969284,
+ "topics": [
+  "admin-panel",
+  "codebuddy",
+  "gateway",
+  "golang",
+  "openai-api",
+  "reverse-proxy",
+  "workbuddy"
+ ]
+}

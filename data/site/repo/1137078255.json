@@ -1,0 +1,202 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+ "full_name": "colbymchenry/codegraph",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.47,
+    "s2": 0.0,
+    "s3": 5.98,
+    "s4": 24.18,
+    "s5": 8.07
+   },
+   "index": 44.71,
+   "rank": 117,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.78,
+    "s2": 0.0,
+    "s3": 15.78,
+    "s4": 24.18,
+    "s5": 8.16
+   },
+   "index": 56.9,
+   "rank": 71,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.72,
+    "s2": 0.0,
+    "s3": 14.95,
+    "s4": 24.78,
+    "s5": 8.12
+   },
+   "index": 54.57,
+   "rank": 80,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.69,
+    "s2": 0.0,
+    "s3": 12.04,
+    "s4": 24.03,
+    "s5": 8.29
+   },
+   "index": 53.06,
+   "rank": 86,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.62,
+    "s2": 0.0,
+    "s3": 21.7,
+    "s4": 24.0,
+    "s5": 8.08
+   },
+   "index": 59.4,
+   "rank": 60,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.32,
+    "s2": 0.0,
+    "s3": 15.6,
+    "s4": 24.55,
+    "s5": 8.11
+   },
+   "index": 53.59,
+   "rank": 83,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.47,
+    "s2": 0.0,
+    "s3": 4.38,
+    "s4": 26.01,
+    "s5": 8.12
+   },
+   "index": 40.97,
+   "rank": 134,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.47,
+    "s2": 0.0,
+    "s3": 24.58,
+    "s4": 25.21,
+    "s5": 8.12
+   },
+   "index": 66.38,
+   "rank": 31,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.38,
+    "s2": 0.0,
+    "s3": 21.0,
+    "s4": 22.79,
+    "s5": 8.32
+   },
+   "index": 54.49,
+   "rank": 75,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.72,
+    "s2": 0.0,
+    "s3": 18.76,
+    "s4": 23.24,
+    "s5": 8.38
+   },
+   "index": 54.11,
+   "rank": 85,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.9,
+    "s2": 0.0,
+    "s3": 14.93,
+    "s4": 20.33,
+    "s5": 8.38
+   },
+   "index": 47.54,
+   "rank": 113,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "C",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 3.9,
+   "s2": 0.0,
+   "s3": 14.93,
+   "s4": 20.33,
+   "s5": 8.38
+  },
+  "full_name": "colbymchenry/codegraph",
+  "index": 47.54,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 22.11,
+   "s2": null,
+   "s3": 50.75,
+   "s4": 57.61,
+   "s5": 47.49
+  },
+  "prev_rank": 85,
+  "rank": 113,
+  "raw": {
+   "s1_stars_gain": 1004,
+   "s2_fork_delta": null,
+   "s2_forks": 5165,
+   "s3_closed_issues": 7,
+   "s3_merged_prs": 36,
+   "s3_pr_authors": 1,
+   "s4_dependents": 0,
+   "s4_downloads": 170631,
+   "s4_packages": "npm:@colbymchenry/codegraph",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1137078255,
+  "star_rank": 156,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1137078255,
+ "topics": []
+}

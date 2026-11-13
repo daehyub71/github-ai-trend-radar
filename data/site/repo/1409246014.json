@@ -1,0 +1,122 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "SolidCraft: an open-source parametric 3D CAD application built in pure Rust. Desktop, web, and automation through MCP.",
+ "full_name": "tangency-labs/solidcraft",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.85,
+    "s2": 0.0,
+    "s3": 43.67,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 80.47,
+   "rank": 9,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.55,
+    "s2": 0.0,
+    "s3": 43.76,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 81.16,
+   "rank": 7,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.91,
+    "s2": 0.0,
+    "s3": 44.61,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 76.47,
+   "rank": 11,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 18.64,
+    "s2": 0.0,
+    "s3": 44.54,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 76.13,
+   "rank": 10,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 18.64,
+   "s2": 0.0,
+   "s3": 44.54,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "tangency-labs/solidcraft",
+  "index": 76.13,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 68.34,
+   "s2": null,
+   "s3": 97.99,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 11,
+  "rank": 10,
+  "raw": {
+   "s1_stars_gain": 2208,
+   "s2_fork_delta": null,
+   "s2_forks": 2192,
+   "s3_closed_issues": 626,
+   "s3_merged_prs": 720,
+   "s3_pr_authors": 120,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1409246014,
+  "star_rank": 64,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1409246014,
+ "topics": [
+  "3d-modeling",
+  "brep",
+  "cad",
+  "egui",
+  "mcp",
+  "parametric-cad",
+  "rust",
+  "step",
+  "wasm"
+ ]
+}

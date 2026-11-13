@@ -1,0 +1,90 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Unified research workspace for humans & agents — PDF Q&A with citations, Vault, writing. 为人与 Agent 协作的科研工作台；补齐 Zotero 时代的人机上下文断点。",
+ "full_name": "poco-ai/Agentero",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.7,
+    "s2": 0.0,
+    "s3": 32.32,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 48.97,
+   "rank": 101,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 3.7,
+   "s2": 0.0,
+   "s3": 32.32,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "poco-ai/Agentero",
+  "index": 48.97,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 13.57,
+   "s2": null,
+   "s3": 71.11,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 101,
+  "raw": {
+   "s1_stars_gain": 868,
+   "s2_fork_delta": null,
+   "s2_forks": 151,
+   "s3_closed_issues": 60,
+   "s3_merged_prs": 24,
+   "s3_pr_authors": 9,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1291896819,
+  "star_rank": 173,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1291896819,
+ "topics": [
+  "academic",
+  "ai-agents",
+  "citations",
+  "desktop-app",
+  "dsh-plugin",
+  "knowledge-base",
+  "literature-review",
+  "llm",
+  "mcp",
+  "pdf",
+  "rag",
+  "research",
+  "research-assistant",
+  "tauri",
+  "typescript",
+  "writing-assistant"
+ ]
+}

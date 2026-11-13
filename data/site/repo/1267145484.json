@@ -1,0 +1,99 @@
+{
+ "category": "추론·서빙",
+ "description": "Open source inference engine that tunes its kernels on your hardware to find the fastest way to run each model. 2x faster than Ollama. Works on Apple Silicon, NVIDIA, AMD, Intel, or just a CPU.",
+ "full_name": "magnitudedev/magnitude",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.23,
+    "s2": 0.0,
+    "s3": 18.38,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 49.42,
+   "rank": 105,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.4,
+    "s2": 0.0,
+    "s3": 9.33,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 33.21,
+   "rank": 173,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.14,
+    "s2": 0.0,
+    "s3": 19.77,
+    "s4": 0.0,
+    "s5": 26.73
+   },
+   "index": 61.63,
+   "rank": 46,
+   "week": "2026-09-27"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "추론·서빙",
+  "contrib": {
+   "s1": 15.14,
+   "s2": 0.0,
+   "s3": 19.77,
+   "s4": 0.0,
+   "s5": 26.73
+  },
+  "full_name": "magnitudedev/magnitude",
+  "index": 61.63,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 55.5,
+   "s2": null,
+   "s3": 43.49,
+   "s4": null,
+   "s5": 98.0
+  },
+  "prev_rank": null,
+  "rank": 46,
+  "raw": {
+   "s1_stars_gain": 1148,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 9,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 194,
+   "s5_hn_stories": 1
+  },
+  "repo_id": 1267145484,
+  "star_rank": 90,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-27"
+ },
+ "repo_id": 1267145484,
+ "topics": []
+}

@@ -1,0 +1,98 @@
+{
+ "category": "MCP 서버·도구",
+ "description": null,
+ "full_name": "MeteorNOX/DeepSeek-Balance-Whale-Widget",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.69,
+    "s2": 0.0,
+    "s3": 10.69,
+    "s4": 13.52,
+    "s5": 8.12
+   },
+   "index": 36.01,
+   "rank": 159,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.32,
+    "s2": 0.0,
+    "s3": 8.04,
+    "s4": 21.01,
+    "s5": 8.12
+   },
+   "index": 41.49,
+   "rank": 131,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.71,
+    "s2": 0.0,
+    "s3": 6.59,
+    "s4": 21.32,
+    "s5": 8.32
+   },
+   "index": 36.94,
+   "rank": 156,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 0.71,
+   "s2": 0.0,
+   "s3": 6.59,
+   "s4": 21.32,
+   "s5": 8.32
+  },
+  "full_name": "MeteorNOX/DeepSeek-Balance-Whale-Widget",
+  "index": 36.94,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 4.0,
+   "s2": null,
+   "s3": 22.42,
+   "s4": 60.42,
+   "s5": 47.12
+  },
+  "prev_rank": null,
+  "rank": 156,
+  "raw": {
+   "s1_stars_gain": 857,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": 86465,
+   "s4_packages": "npm:dsh-whale-widget",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1337920628,
+  "star_rank": 193,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1337920628,
+ "topics": []
+}

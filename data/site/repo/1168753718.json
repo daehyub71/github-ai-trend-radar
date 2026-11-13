@@ -1,0 +1,241 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Open source alternative to Semrush and Ahrefs",
+ "full_name": "every-app/open-seo",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.87,
+    "s2": 0.0,
+    "s3": 13.33,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 35.66,
+   "rank": 164,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.2,
+    "s2": 0.0,
+    "s3": 9.27,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 34.07,
+   "rank": 162,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.0,
+    "s2": 0.0,
+    "s3": 16.21,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 47.76,
+   "rank": 108,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.61,
+    "s2": 0.0,
+    "s3": 12.5,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 47.93,
+   "rank": 115,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.84,
+    "s2": 0.0,
+    "s3": 11.5,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 37.82,
+   "rank": 153,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.32,
+    "s2": 0.0,
+    "s3": 13.92,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 35.78,
+   "rank": 153,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.82,
+    "s2": 0.0,
+    "s3": 9.58,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 40.94,
+   "rank": 135,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.27,
+    "s2": 0.0,
+    "s3": 8.92,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 33.74,
+   "rank": 160,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.84,
+    "s2": 0.0,
+    "s3": 16.5,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 32.81,
+   "rank": 161,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.76,
+    "s2": 0.0,
+    "s3": 15.23,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 33.94,
+   "rank": 162,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.32,
+    "s2": 0.0,
+    "s3": 9.08,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 24.25,
+   "rank": 191,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.91,
+    "s2": 0.0,
+    "s3": 12.31,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 34.17,
+   "rank": 165,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 4.04,
+    "s2": 0.0,
+    "s3": 13.32,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 30.32,
+   "rank": 179,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 4.04,
+   "s2": 0.0,
+   "s3": 13.32,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "every-app/open-seo",
+  "index": 30.32,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 14.82,
+   "s2": null,
+   "s3": 29.31,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 165,
+  "rank": 179,
+  "raw": {
+   "s1_stars_gain": 894,
+   "s2_fork_delta": null,
+   "s2_forks": 3854,
+   "s3_closed_issues": 14,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1168753718,
+  "star_rank": 170,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1168753718,
+ "topics": [
+  "backlink-analysis",
+  "google-search-console-mcp",
+  "keyword-research",
+  "mcp",
+  "seo",
+  "seo-agent",
+  "seo-audit",
+  "seo-automation",
+  "seo-skills",
+  "seo-tools",
+  "site-audit"
+ ]
+}

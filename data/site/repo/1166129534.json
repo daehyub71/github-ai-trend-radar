@@ -1,0 +1,125 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+ "full_name": "NVIDIA/OpenShell",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 26.32,
+    "s2": 0.0,
+    "s3": 39.26,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "index": 91.59,
+   "rank": 3,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.14,
+    "s2": 0.0,
+    "s3": 35.41,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 58.02,
+   "rank": 72,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.47,
+    "s2": 0.0,
+    "s3": 37.96,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 53.37,
+   "rank": 82,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.27,
+    "s2": 0.0,
+    "s3": 36.92,
+    "s4": 0.0,
+    "s5": 26.93
+   },
+   "index": 85.12,
+   "rank": 3,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.69,
+    "s2": 0.0,
+    "s3": 36.26,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 59.9,
+   "rank": 47,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 10.69,
+   "s2": 0.0,
+   "s3": 36.26,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "NVIDIA/OpenShell",
+  "index": 59.9,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 39.2,
+   "s2": null,
+   "s3": 79.78,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 3,
+  "rank": 47,
+  "raw": {
+   "s1_stars_gain": 1251,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 78,
+   "s3_merged_prs": 58,
+   "s3_pr_authors": 20,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1166129534,
+  "star_rank": 122,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1166129534,
+ "topics": []
+}

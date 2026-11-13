@@ -1,0 +1,127 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "青简 Qingjian：用 Rust 写的拼音输入法，候选词旁多一条正在学的语言的译词",
+ "full_name": "qingjian-team/qingjian",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.69,
+    "s2": 0.0,
+    "s3": 36.65,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 64.88,
+   "rank": 43,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.73,
+    "s2": 0.0,
+    "s3": 12.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 46.04,
+   "rank": 117,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.36,
+    "s2": 0.0,
+    "s3": 29.38,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 60.21,
+   "rank": 60,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.89,
+    "s2": 0.0,
+    "s3": 34.46,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 48.3,
+   "rank": 102,
+   "week": "2026-10-11"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 0.89,
+   "s2": 0.0,
+   "s3": 34.46,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "qingjian-team/qingjian",
+  "index": 48.3,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 3.27,
+   "s2": null,
+   "s3": 75.81,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 60,
+  "rank": 102,
+  "raw": {
+   "s1_stars_gain": 759,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 70,
+   "s3_merged_prs": 55,
+   "s3_pr_authors": 22,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1359963149,
+  "star_rank": 193,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-11"
+ },
+ "repo_id": 1359963149,
+ "topics": [
+  "chinese",
+  "chinese-input-method",
+  "english-learning",
+  "ime",
+  "input-method",
+  "japanese-learning",
+  "language-learning",
+  "language-model",
+  "macos",
+  "offline",
+  "pinyin",
+  "rust",
+  "shuangpin",
+  "windows"
+ ]
+}

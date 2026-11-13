@@ -1,0 +1,582 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 2.5,
+      "use": 89.59,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "langgenius/dify",
+     "repo_id": 626805178
+    },
+    {
+     "evidence": {
+      "s1": 0.0,
+      "use": 86.13,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "agent-substrate/substrate",
+     "repo_id": 1238047523
+    },
+    {
+     "evidence": {
+      "s1": 6.5,
+      "use": 92.39,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "career-ops-hq/career-ops",
+     "repo_id": 1201476594
+    },
+    {
+     "evidence": {
+      "s1": 7.0,
+      "use": 82.88,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "Fission-AI/OpenSpec",
+     "repo_id": 1032459340
+    },
+    {
+     "evidence": {
+      "s1": 13.5,
+      "use": 88.49,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "genspark-ai/genoffice",
+     "repo_id": 1318187016
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 97.0,
+      "s5": 46.0,
+      "use": 13.54
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 93.0,
+      "s5": 46.0,
+      "use": 13.54
+     },
+     "full_name": "Panniantong/Agent-Reach",
+     "repo_id": 1165277268
+    },
+    {
+     "evidence": {
+      "s1": 91.5,
+      "s5": 46.0,
+      "use": 14.47
+     },
+     "full_name": "ifixai-ai/iFixAi",
+     "repo_id": 1222527844
+    },
+    {
+     "evidence": {
+      "s1": 92.0,
+      "s5": 46.0,
+      "use": 15.11
+     },
+     "full_name": "spinabot/brigade",
+     "repo_id": 1274498048
+    },
+    {
+     "evidence": {
+      "s1": 83.5,
+      "s5": 96.0,
+      "use": 25.04
+     },
+     "full_name": "rehan-remade/universal-modder",
+     "repo_id": 1397016507
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       81.2,
+       55.0
+      ],
+      "use_share": [
+       18.8,
+       45.0
+      ]
+     },
+     "full_name": "blader/humanizer",
+     "repo_id": 1136666433
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       69.1,
+       43.5
+      ],
+      "use_share": [
+       30.9,
+       56.5
+      ]
+     },
+     "full_name": "jamiepine/voicebox",
+     "repo_id": 1141782198
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       53.9,
+       29.6
+      ],
+      "use_share": [
+       46.1,
+       70.4
+      ]
+     },
+     "full_name": "ruvnet/ruflo",
+     "repo_id": 995029641
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       38.7,
+       14.5
+      ],
+      "use_share": [
+       61.3,
+       85.5
+      ]
+     },
+     "full_name": "headroomlabs-ai/headroom",
+     "repo_id": 1129940957
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       64.4,
+       42.5
+      ],
+      "use_share": [
+       35.6,
+       57.5
+      ]
+     },
+     "full_name": "cathrynlavery/diagram-design",
+     "repo_id": 1212769188
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "eternity4719/HowToLiveBetter",
+    "pct": 100.0,
+    "repo_id": 1359648985
+   },
+   {
+    "full_name": "debpalash/VoiceStudio",
+    "pct": 99.5,
+    "repo_id": 1206390571
+   },
+   {
+    "full_name": "vectorize-io/hindsight",
+    "pct": 99.0,
+    "repo_id": 1086419061
+   },
+   {
+    "full_name": "paperclipai/paperclip",
+    "pct": 98.5,
+    "repo_id": 1170821064
+   },
+   {
+    "full_name": "Niko1221/Strata",
+    "pct": 98.0,
+    "repo_id": 1385946301
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 99.83,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "can1357/oh-my-pi",
+    "pct": 97.12,
+    "repo_id": 1125856365
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 96.7,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "t8y2/dbx",
+    "pct": 96.28,
+    "repo_id": 1224172037
+   },
+   {
+    "full_name": "stablyai/orca",
+    "pct": 95.18,
+    "repo_id": 1183888342
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "openai/codex",
+    "pct": 100.0,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.62,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 95.24,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 92.86,
+    "repo_id": 274495425
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "pct": 90.48,
+    "repo_id": 787076358
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "Niko1221/Strata",
+    "pct": 98.88,
+    "repo_id": 1385946301
+   },
+   {
+    "full_name": "magnitudedev/magnitude",
+    "pct": 98.0,
+    "repo_id": 1267145484
+   },
+   {
+    "full_name": "EverMind-AI/Raven",
+    "pct": 97.75,
+    "repo_id": 1245465729
+   },
+   {
+    "full_name": "Tencent/BrowserSkill",
+    "pct": 97.5,
+    "repo_id": 1276665883
+   },
+   {
+    "full_name": "earendil-works/pi",
+    "pct": 97.25,
+    "repo_id": 1035029907
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 201,
+  "star_top_in_index_top": 3,
+  "with_packages": 43
+ },
+ "top10": [
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 24.82,
+    "s2": 0.0,
+    "s3": 42.65,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "full_name": "mvschwarz/openrig",
+   "index": 93.48,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 91.0,
+    "s2": null,
+    "s3": 93.82,
+    "s4": null,
+    "s5": 95.38
+   },
+   "prev_rank": null,
+   "rank": 1,
+   "repo_id": 1198124295,
+   "star_rank": 19
+  },
+  {
+   "category": "기타 AI",
+   "contrib": {
+    "s1": 25.23,
+    "s2": 0.0,
+    "s3": 41.84,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "full_name": "NandhaKishorM/laya",
+   "index": 93.08,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.5,
+    "s2": null,
+    "s3": 92.05,
+    "s4": null,
+    "s5": 95.38
+   },
+   "prev_rank": 7,
+   "rank": 2,
+   "repo_id": 1375382253,
+   "star_rank": 16
+  },
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 26.32,
+    "s2": 0.0,
+    "s3": 39.26,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "full_name": "NVIDIA/OpenShell",
+   "index": 91.59,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.5,
+    "s2": null,
+    "s3": 86.38,
+    "s4": null,
+    "s5": 95.38
+   },
+   "prev_rank": null,
+   "rank": 3,
+   "repo_id": 1166129534,
+   "star_rank": 8
+  },
+  {
+   "category": "로컬 LLM 실행",
+   "contrib": {
+    "s1": 26.73,
+    "s2": 0.0,
+    "s3": 36.53,
+    "s4": 0.0,
+    "s5": 26.97
+   },
+   "full_name": "Niko1221/Strata",
+   "index": 90.23,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.0,
+    "s2": null,
+    "s3": 80.37,
+    "s4": null,
+    "s5": 98.88
+   },
+   "prev_rank": null,
+   "rank": 4,
+   "repo_id": 1385946301,
+   "star_rank": 5
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 8.29,
+    "s2": 0.0,
+    "s3": 28.44,
+    "s4": 34.45,
+    "s5": 16.68
+   },
+   "full_name": "openclaw/openclaw",
+   "index": 87.87,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 47.0,
+    "s2": null,
+    "s3": 96.7,
+    "s4": 97.62,
+    "s5": 94.5
+   },
+   "prev_rank": 14,
+   "rank": 5,
+   "repo_id": 1103012935,
+   "star_rank": 107
+  },
+  {
+   "category": "브라우저·컴퓨터 사용 자동화",
+   "contrib": {
+    "s1": 40.25,
+    "s2": 0.0,
+    "s3": 0.0,
+    "s4": 0.0,
+    "s5": 47.25
+   },
+   "full_name": "tester-army/e2e",
+   "index": 87.5,
+   "missing": [
+    "s2",
+    "s3",
+    "s4"
+   ],
+   "pct": {
+    "s1": 80.5,
+    "s2": null,
+    "s3": null,
+    "s4": null,
+    "s5": 94.5
+   },
+   "prev_rank": null,
+   "rank": 6,
+   "repo_id": 1308631234,
+   "star_rank": 40
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 22.98,
+    "s2": 0.0,
+    "s3": 35.03,
+    "s4": 0.0,
+    "s5": 26.52
+   },
+   "full_name": "earendil-works/pi",
+   "index": 84.53,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 84.25,
+    "s2": null,
+    "s3": 77.07,
+    "s4": null,
+    "s5": 97.25
+   },
+   "prev_rank": 28,
+   "rank": 7,
+   "repo_id": 1035029907,
+   "star_rank": 32
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 26.18,
+    "s2": 0.0,
+    "s3": 43.26,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "stablyai/orca",
+   "index": 81.99,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.0,
+    "s2": null,
+    "s3": 95.18,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": 9,
+   "rank": 8,
+   "repo_id": 1183888342,
+   "star_rank": 9
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 24.27,
+    "s2": 0.0,
+    "s3": 43.76,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "t8y2/dbx",
+   "index": 80.58,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 89.0,
+    "s2": null,
+    "s3": 96.28,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": 55,
+   "rank": 9,
+   "repo_id": 1224172037,
+   "star_rank": 23
+  },
+  {
+   "category": "평가·관측(LLMOps)",
+   "contrib": {
+    "s1": 24.0,
+    "s2": 0.0,
+    "s3": 43.22,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "yetone/magpie",
+   "index": 79.77,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 88.0,
+    "s2": null,
+    "s3": 95.09,
+    "s4": null,
+    "s5": 46.0
+   },
+   "prev_rank": 68,
+   "rank": 10,
+   "repo_id": 1383809012,
+   "star_rank": 25
+  }
+ ],
+ "week": "2026-09-27",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

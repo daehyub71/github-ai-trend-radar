@@ -1,0 +1,1402 @@
+[
+ {
+  "full_name": "morluto/rea",
+  "gain": 77992,
+  "gain_rank": 1,
+  "id": 1209966933,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/photocraft",
+  "gain": 42508,
+  "gain_rank": 2,
+  "id": 1398080271,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "eternity4719/HowToLiveBetter",
+  "gain": 20997,
+  "gain_rank": 3,
+  "id": 1359648985,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "openai/math",
+  "gain": 13734,
+  "gain_rank": 4,
+  "id": 1407950271,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/artcraft",
+  "gain": 12897,
+  "gain_rank": 5,
+  "id": 476507964,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Niko1221/Strata",
+  "gain": 12006,
+  "gain_rank": 6,
+  "id": 1385946301,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "mattpocock/skills",
+  "gain": 9924,
+  "gain_rank": 7,
+  "id": 1148788086,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "lexmount/moli",
+  "gain": 9317,
+  "gain_rank": 8,
+  "id": 1329849289,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/lightcraft",
+  "gain": 9024,
+  "gain_rank": 9,
+  "id": 1398185212,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/filmcraft",
+  "gain": 8690,
+  "gain_rank": 10,
+  "id": 1398091865,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/pdfcraft",
+  "gain": 8064,
+  "gain_rank": 11,
+  "id": 1398086162,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "DuarteSantos8/openGym",
+  "gain": 7610,
+  "gain_rank": 12,
+  "id": 1305213943,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "DietrichGebert/ponytail",
+  "gain": 7201,
+  "gain_rank": 13,
+  "id": 1266797999,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tester-army/e2e",
+  "gain": 6441,
+  "gain_rank": 14,
+  "id": 1308631234,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/vectorcraft",
+  "gain": 6151,
+  "gain_rank": 15,
+  "id": 1398097510,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Ebony-Vinyl/dsh-our-free-model",
+  "gain": 6136,
+  "gain_rank": 16,
+  "id": 1385896447,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cathrynlavery/diagram-design",
+  "gain": 6047,
+  "gain_rank": 17,
+  "id": 1212769188,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Panniantong/Agent-Reach",
+  "gain": 5645,
+  "gain_rank": 18,
+  "id": 1165277268,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "neilsonnn/image-blaster",
+  "gain": 5172,
+  "gain_rank": 19,
+  "id": 1216542069,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tt-a1i/archify",
+  "gain": 5032,
+  "gain_rank": 20,
+  "id": 1211139949,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "debpalash/VoiceStudio",
+  "gain": 4968,
+  "gain_rank": 21,
+  "id": 1206390571,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "stablyai/orca",
+  "gain": 4917,
+  "gain_rank": 22,
+  "id": 1183888342,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "affaan-m/ECC",
+  "gain": 4752,
+  "gain_rank": 23,
+  "id": 1136590548,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "deepseek-ai/deepseek-harness",
+  "gain": 4598,
+  "gain_rank": 24,
+  "id": 1333065091,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/effectcraft",
+  "gain": 4538,
+  "gain_rank": 25,
+  "id": 1400136506,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "yetone/magpie",
+  "gain": 4187,
+  "gain_rank": 26,
+  "id": 1383809012,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "shader-effects-inc/shaders",
+  "gain": 4151,
+  "gain_rank": 27,
+  "id": 1395994653,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "heygen-com/hyperframes",
+  "gain": 4148,
+  "gain_rank": 28,
+  "id": 1177402105,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cloudflare/security-audit-skill",
+  "gain": 4078,
+  "gain_rank": 29,
+  "id": 1273427276,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "pbakaus/impeccable",
+  "gain": 4049,
+  "gain_rank": 30,
+  "id": 1097346685,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "addyosmani/agent-skills",
+  "gain": 3780,
+  "gain_rank": 31,
+  "id": 1158722119,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "thedotmack/claude-mem",
+  "gain": 3769,
+  "gain_rank": 32,
+  "id": 1048065319,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "rehan-remade/universal-modder",
+  "gain": 3730,
+  "gain_rank": 33,
+  "id": 1397016507,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "calesthio/OpenMontage",
+  "gain": 3723,
+  "gain_rank": 34,
+  "id": 1195360525,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "rohitg00/ai-engineering-from-scratch",
+  "gain": 3694,
+  "gain_rank": 35,
+  "id": 1185590488,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "ifixai-ai/iFixAi",
+  "gain": 3608,
+  "gain_rank": 36,
+  "id": 1222527844,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "odysseus-dev/odysseus",
+  "gain": 3601,
+  "gain_rank": 37,
+  "id": 1255180606,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "bilawalsidhu/gods-eye-view",
+  "gain": 3440,
+  "gain_rank": 38,
+  "id": 1277471539,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/wordcraft",
+  "gain": 3437,
+  "gain_rank": 39,
+  "id": 1408489772,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "alchaincyf/huashu-art-motion",
+  "gain": 3249,
+  "gain_rank": 40,
+  "id": 1406706284,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "ayghri/i-have-adhd",
+  "gain": 3200,
+  "gain_rank": 41,
+  "id": 1238120057,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "paperclipai/paperclip",
+  "gain": 3161,
+  "gain_rank": 42,
+  "id": 1170821064,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "vectorize-io/hindsight",
+  "gain": 3143,
+  "gain_rank": 43,
+  "id": 1086419061,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "msitarzewski/agency-agents",
+  "gain": 3114,
+  "gain_rank": 44,
+  "id": 1075372545,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "farion1231/cc-switch",
+  "gain": 3109,
+  "gain_rank": 45,
+  "id": 1031912724,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anthropics/knowledge-work-plugins",
+  "gain": 2899,
+  "gain_rank": 46,
+  "id": 1140828898,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "obra/superpowers",
+  "gain": 2818,
+  "gain_rank": 47,
+  "id": 1073224795,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tigerless-labs/autoharness",
+  "gain": 2807,
+  "gain_rank": 48,
+  "id": 1264396304,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "zhongerxin/iPhone-use",
+  "gain": 2688,
+  "gain_rank": 49,
+  "id": 1407504032,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tashfeenahmed/freellmapi",
+  "gain": 2628,
+  "gain_rank": 50,
+  "id": 1217040185,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "nykooi1/vibe-wise",
+  "gain": 2585,
+  "gain_rank": 51,
+  "id": 1394045721,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/designcraft",
+  "gain": 2528,
+  "gain_rank": 52,
+  "id": 1400018213,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "earthtojake/text-to-cad",
+  "gain": 2435,
+  "gain_rank": 53,
+  "id": 1217522067,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "alibaba/open-code-review",
+  "gain": 2432,
+  "gain_rank": 54,
+  "id": 1241960226,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cheaper-inference/OmniRoute",
+  "gain": 2417,
+  "gain_rank": 55,
+  "id": 1157102282,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "omnirush-ai/omnirush-gui",
+  "gain": 2412,
+  "gain_rank": 56,
+  "id": 1379137016,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "firecrawl/firecrawl",
+  "gain": 2339,
+  "gain_rank": 57,
+  "id": 787076358,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "yihui-dev/awesome-opus5-5-videos",
+  "gain": 2328,
+  "gain_rank": 58,
+  "id": 1390273274,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "hugohe3/ppt-master",
+  "gain": 2288,
+  "gain_rank": 59,
+  "id": 1113573066,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "666ghj/MiroFish",
+  "gain": 2241,
+  "gain_rank": 60,
+  "id": 1104332987,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "QingYunA/answer-me-with-html",
+  "gain": 2219,
+  "gain_rank": 61,
+  "id": 1401476500,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Leonxlnx/taste-skill",
+  "gain": 2196,
+  "gain_rank": 62,
+  "id": 1162099055,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Albert-Weasker/niubigeo",
+  "gain": 2167,
+  "gain_rank": 63,
+  "id": 1356159928,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "emilkowalski/skills",
+  "gain": 2127,
+  "gain_rank": 64,
+  "id": 1183325896,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "CopilotKit/OpenDots",
+  "gain": 2115,
+  "gain_rank": 65,
+  "id": 1396117711,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "qingjian-team/qingjian",
+  "gain": 2111,
+  "gain_rank": 66,
+  "id": 1359963149,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "multica-ai/andrej-karpathy-skills",
+  "gain": 2108,
+  "gain_rank": 67,
+  "id": 1142983825,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Graphify-Labs/graphify",
+  "gain": 2106,
+  "gain_rank": 68,
+  "id": 1200597263,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "pingdotgg/t3code",
+  "gain": 2064,
+  "gain_rank": 69,
+  "id": 1153130349,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "gain": 2053,
+  "gain_rank": 70,
+  "id": 1106996539,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "NousResearch/hermes-agent",
+  "gain": 2039,
+  "gain_rank": 71,
+  "id": 1024554267,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "earendil-works/pi",
+  "gain": 2029,
+  "gain_rank": 72,
+  "id": 1035029907,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "mvschwarz/openrig",
+  "gain": 2027,
+  "gain_rank": 73,
+  "id": 1198124295,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "FalkorDB/FalkorDB",
+  "gain": 1981,
+  "gain_rank": 74,
+  "id": 668673665,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/cadcraft",
+  "gain": 1975,
+  "gain_rank": 75,
+  "id": 1408289866,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/gridcraft",
+  "gain": 1968,
+  "gain_rank": 76,
+  "id": 1408285582,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "TencentCloud/Octop",
+  "gain": 1952,
+  "gain_rank": 77,
+  "id": 1293600453,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "OpenCut-app/OpenCut",
+  "gain": 1875,
+  "gain_rank": 78,
+  "id": 1006414368,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "monid-ai/monid",
+  "gain": 1839,
+  "gain_rank": 79,
+  "id": 1346870728,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "hypit-ai/hypit",
+  "gain": 1773,
+  "gain_rank": 80,
+  "id": 1316470719,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "JustVugg/colibri",
+  "gain": 1758,
+  "gain_rank": 81,
+  "id": 1286080397,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "NandhaKishorM/laya",
+  "gain": 1743,
+  "gain_rank": 82,
+  "id": 1375382253,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "blader/humanizer",
+  "gain": 1737,
+  "gain_rank": 83,
+  "id": 1136666433,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "latent-spaces/brag",
+  "gain": 1725,
+  "gain_rank": 84,
+  "id": 1271560627,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "KKKKhazix/AIHOT",
+  "gain": 1581,
+  "gain_rank": 85,
+  "id": 1393965829,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "harry0703/MoneyPrinterTurbo",
+  "gain": 1568,
+  "gain_rank": 86,
+  "id": 770153867,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "microsoft/markitdown",
+  "gain": 1521,
+  "gain_rank": 87,
+  "id": 888092115,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "chengyi-ai/native-subtitle-quote-image",
+  "gain": 1509,
+  "gain_rank": 88,
+  "id": 1335823455,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Jakeschincariol/replica-skill",
+  "gain": 1497,
+  "gain_rank": 89,
+  "id": 1403115747,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "usestrix/strix",
+  "gain": 1496,
+  "gain_rank": 90,
+  "id": 1032808806,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/deckcraft",
+  "gain": 1492,
+  "gain_rank": 91,
+  "id": 1408294296,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "JuliusBrussee/caveman",
+  "gain": 1470,
+  "gain_rank": 92,
+  "id": 1201173969,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Louis-CFM/coucou",
+  "gain": 1461,
+  "gain_rank": 93,
+  "id": 1391438314,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Yuan1z0825/nature-skills",
+  "gain": 1443,
+  "gain_rank": 94,
+  "id": 1219596233,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "p-e-w/heretic",
+  "gain": 1441,
+  "gain_rank": 95,
+  "id": 1061041576,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "miqdadbadjuber/anti-slop",
+  "gain": 1432,
+  "gain_rank": 96,
+  "id": 1326531152,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "coreyhaines31/marketingskills",
+  "gain": 1427,
+  "gain_rank": 97,
+  "id": 1135212071,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "remotion-dev/remotion",
+  "gain": 1419,
+  "gain_rank": 98,
+  "id": 274495425,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Edge0-AI/Edge0",
+  "gain": 1404,
+  "gain_rank": 99,
+  "id": 1361439328,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "storytold/soundcraft",
+  "gain": 1392,
+  "gain_rank": 100,
+  "id": 1408486424,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anomalyco/opencode",
+  "gain": 1350,
+  "gain_rank": 101,
+  "id": 975734319,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "t8y2/dbx",
+  "gain": 1323,
+  "gain_rank": 102,
+  "id": 1224172037,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tinyhumansai/openhuman",
+  "gain": 1293,
+  "gain_rank": 103,
+  "id": 1161163182,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "dataelement/dsh-desktop",
+  "gain": 1280,
+  "gain_rank": 104,
+  "id": 1333165619,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "experientiallabs/experiential",
+  "gain": 1273,
+  "gain_rank": 105,
+  "id": 1279659344,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "D4Vinci/Scrapling",
+  "gain": 1265,
+  "gain_rank": 106,
+  "id": 872119017,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "zhaoxuya520/reverse-skill",
+  "gain": 1265,
+  "gain_rank": 107,
+  "id": 1237819660,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "chthollyphile/folia-major",
+  "gain": 1262,
+  "gain_rank": 108,
+  "id": 1105953775,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "herdrdev/herdr",
+  "gain": 1227,
+  "gain_rank": 109,
+  "id": 1193909050,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "bojieli/ai-agent-book",
+  "gain": 1226,
+  "gain_rank": 110,
+  "id": 1053118194,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "nexu-io/open-design",
+  "gain": 1223,
+  "gain_rank": 111,
+  "id": 1223170290,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "microsoft/mxc",
+  "gain": 1213,
+  "gain_rank": 112,
+  "id": 1151717775,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "garrytan/gstack",
+  "gain": 1209,
+  "gain_rank": 113,
+  "id": 1179264259,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "mksglu/context-mode",
+  "gain": 1174,
+  "gain_rank": 114,
+  "id": 1164477708,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Tencent/WeKnora",
+  "gain": 1166,
+  "gain_rank": 115,
+  "id": 1024118326,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anthropics/skills",
+  "gain": 1156,
+  "gain_rank": 116,
+  "id": 1061953414,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anthropics/claude-code",
+  "gain": 1134,
+  "gain_rank": 117,
+  "id": 937253475,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
+  "gain": 1132,
+  "gain_rank": 118,
+  "id": 1350978527,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Alishahryar1/free-claude-code",
+  "gain": 1123,
+  "gain_rank": 119,
+  "id": 1144520675,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "openai/codex",
+  "gain": 1121,
+  "gain_rank": 120,
+  "id": 965415649,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "ruvnet/RuView",
+  "gain": 1118,
+  "gain_rank": 121,
+  "id": 997737944,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cursor/plugins",
+  "gain": 1114,
+  "gain_rank": 122,
+  "id": 1140229822,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Comfy-Org/ComfyUI",
+  "gain": 1099,
+  "gain_rank": 123,
+  "id": 589831718,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Oldcircle/geo-sleuth",
+  "gain": 1073,
+  "gain_rank": 124,
+  "id": 1375615157,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "getpaseo/paseo",
+  "gain": 1072,
+  "gain_rank": 125,
+  "id": 1075381375,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "NVIDIA/OpenShell",
+  "gain": 1071,
+  "gain_rank": 126,
+  "id": 1166129534,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "HelixDB/helix-foundry",
+  "gain": 1067,
+  "gain_rank": 127,
+  "id": 1408277479,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "VoltAgent/awesome-design-md",
+  "gain": 1046,
+  "gain_rank": 128,
+  "id": 1197515131,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "ai-job-search-dev/ai-job-search",
+  "gain": 1044,
+  "gain_rank": 129,
+  "id": 1185389803,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "yi1108/printfilm",
+  "gain": 1041,
+  "gain_rank": 130,
+  "id": 1363417187,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "github/spec-kit",
+  "gain": 1038,
+  "gain_rank": 131,
+  "id": 1042367133,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "jiwoochris/artex-global",
+  "gain": 1030,
+  "gain_rank": 132,
+  "id": 1403307052,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "openclaw/openclaw",
+  "gain": 1011,
+  "gain_rank": 133,
+  "id": 1103012935,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "danyuchn/asd-ste100-skill",
+  "gain": 971,
+  "gain_rank": 134,
+  "id": 1306733753,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Imbad0202/academic-research-skills",
+  "gain": 968,
+  "gain_rank": 135,
+  "id": 1167300963,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "TauricResearch/TradingAgents",
+  "gain": 964,
+  "gain_rank": 136,
+  "id": 909213664,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "HKUSTDial/Supervisor-Skills",
+  "gain": 960,
+  "gain_rank": 137,
+  "id": 1214785164,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "virgiliojr94/book-to-skill",
+  "gain": 959,
+  "gain_rank": 138,
+  "id": 1226123343,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "apify/apify-mcp-server",
+  "gain": 956,
+  "gain_rank": 139,
+  "id": 911256711,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "walkinglabs/learn-harness-engineering",
+  "gain": 953,
+  "gain_rank": 140,
+  "id": 1195243030,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "kaankiziltug/logo-design-skill",
+  "gain": 948,
+  "gain_rank": 141,
+  "id": 1388867993,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Vincentwei1021/video-shotcraft",
+  "gain": 940,
+  "gain_rank": 142,
+  "id": 1305663861,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "datawhalechina/hello-agents",
+  "gain": 919,
+  "gain_rank": 143,
+  "id": 1052050442,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "JCodesMore/ai-website-cloner-template",
+  "gain": 916,
+  "gain_rank": 144,
+  "id": 1180745961,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "lemomo-ai/lemo-opuscar",
+  "gain": 915,
+  "gain_rank": 145,
+  "id": 1389011744,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "CopilotKit/OpenIntelligentUI",
+  "gain": 910,
+  "gain_rank": 146,
+  "id": 1180226026,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "zhishile/codex-auth-helper",
+  "gain": 900,
+  "gain_rank": 147,
+  "id": 1256690992,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "xerj-org/xerj",
+  "gain": 899,
+  "gain_rank": 148,
+  "id": 1284653133,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "yang0/handraw-style",
+  "gain": 893,
+  "gain_rank": 149,
+  "id": 1358588929,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "f/prompts.chat",
+  "gain": 872,
+  "gain_rank": 150,
+  "id": 574523116,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "superdesigndev/treg",
+  "gain": 870,
+  "gain_rank": 151,
+  "id": 1301657572,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "shengjidaguai-china/goutoujunshi",
+  "gain": 867,
+  "gain_rank": 152,
+  "id": 1306722822,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tigerless-labs/agent-memory",
+  "gain": 866,
+  "gain_rank": 153,
+  "id": 1354059245,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "amontlabs/lcu",
+  "gain": 862,
+  "gain_rank": 154,
+  "id": 1381783784,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "ollama/ollama",
+  "gain": 852,
+  "gain_rank": 155,
+  "id": 658928958,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "K-Dense-AI/scientific-agent-skills",
+  "gain": 848,
+  "gain_rank": 156,
+  "id": 1079456184,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "threerocks/hand-drawn-styles",
+  "gain": 816,
+  "gain_rank": 157,
+  "id": 1283138527,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "irinabuht12-oss/marketing-skills",
+  "gain": 814,
+  "gain_rank": 158,
+  "id": 1138946494,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "can1357/oh-my-pi",
+  "gain": 807,
+  "gain_rank": 159,
+  "id": 1125856365,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Shubhamsaboo/awesome-llm-apps",
+  "gain": 797,
+  "gain_rank": 160,
+  "id": 793375104,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "linguo2625469/workbuddy2api-panel",
+  "gain": 785,
+  "gain_rank": 161,
+  "id": 1366969284,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "router-for-me/CLIProxyAPI",
+  "gain": 781,
+  "gain_rank": 162,
+  "id": 1012087571,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Robbyant/lingbot-map",
+  "gain": 774,
+  "gain_rank": 163,
+  "id": 1211752857,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "nano-muse/nanoMuse",
+  "gain": 770,
+  "gain_rank": 164,
+  "id": 1382865521,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "twostraws/SwiftUI-Agent-Skill",
+  "gain": 759,
+  "gain_rank": 165,
+  "id": 1173845549,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "CopilotKit/openmuse",
+  "gain": 756,
+  "gain_rank": 166,
+  "id": 1371757322,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tigerless-labs/cost-xray",
+  "gain": 754,
+  "gain_rank": 167,
+  "id": 1260962896,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "michael-denyer/pstack-claude",
+  "gain": 749,
+  "gain_rank": 168,
+  "id": 1250276806,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
+  "gain": 746,
+  "gain_rank": 169,
+  "id": 1202492868,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "HBAI-Ltd/Toonflow-app",
+  "gain": 739,
+  "gain_rank": 170,
+  "id": 1145022970,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "tw93/Mole",
+  "gain": 738,
+  "gain_rank": 171,
+  "id": 1062356571,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "every-app/open-seo",
+  "gain": 725,
+  "gain_rank": 172,
+  "id": 1168753718,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Egonex-AI/Understand-Anything",
+  "gain": 724,
+  "gain_rank": 173,
+  "id": 1182081931,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cjpais/Handy",
+  "gain": 715,
+  "gain_rank": 174,
+  "id": 931888694,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cloudflare/cloudflare-os",
+  "gain": 702,
+  "gain_rank": 175,
+  "id": 1211925923,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "headroomlabs-ai/headroom",
+  "gain": 700,
+  "gain_rank": 176,
+  "id": 1129940957,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "n8n-io/n8n",
+  "gain": 698,
+  "gain_rank": 177,
+  "id": 193215554,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "browser-use/jev-ultrafast",
+  "gain": 694,
+  "gain_rank": 178,
+  "id": 1373655162,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "jub0t/Concat",
+  "gain": 694,
+  "gain_rank": 179,
+  "id": 1346499044,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "pacifio/atlas",
+  "gain": 693,
+  "gain_rank": 180,
+  "id": 1238992253,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "genspark-ai/genoffice",
+  "gain": 689,
+  "gain_rank": 181,
+  "id": 1318187016,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "lyogavin/airllm",
+  "gain": 689,
+  "gain_rank": 182,
+  "id": 652712035,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "HKUDS/Vibe-Trading",
+  "gain": 687,
+  "gain_rank": 183,
+  "id": 1198306812,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Z4nzu/hackingtool",
+  "gain": 685,
+  "gain_rank": 184,
+  "id": 254832799,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "cactus-compute/needle",
+  "gain": 683,
+  "gain_rank": 185,
+  "id": 1165361576,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anthropics/financial-services",
+  "gain": 682,
+  "gain_rank": 186,
+  "id": 1165056385,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "mnfst/awesome-free-llm-apis",
+  "gain": 682,
+  "gain_rank": 187,
+  "id": 1188180267,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "open-webui/open-webui",
+  "gain": 676,
+  "gain_rank": 188,
+  "id": 701547123,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+  "gain": 671,
+  "gain_rank": 189,
+  "id": 1333175049,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "rtk-ai/rtk",
+  "gain": 670,
+  "gain_rank": 190,
+  "id": 1139971460,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "vercel-labs/skills",
+  "gain": 670,
+  "gain_rank": 191,
+  "id": 1134543109,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "topoteretes/cognee",
+  "gain": 669,
+  "gain_rank": 192,
+  "id": 679343504,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "omacom/omarchy",
+  "gain": 666,
+  "gain_rank": 193,
+  "id": 994093166,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "career-ops-hq/career-ops",
+  "gain": 664,
+  "gain_rank": 194,
+  "id": 1201476594,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Lordog/dive-into-llms",
+  "gain": 663,
+  "gain_rank": 195,
+  "id": 783730789,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "huggingface/transformers",
+  "gain": 656,
+  "gain_rank": 196,
+  "id": 155220641,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "dsh-market/dsh-market",
+  "gain": 654,
+  "gain_rank": 197,
+  "id": 1333807290,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "feitangyuan/onetake",
+  "gain": 651,
+  "gain_rank": 198,
+  "id": 1388594776,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "anywhere-labs/dsh-desktop",
+  "gain": 640,
+  "gain_rank": 199,
+  "id": 1333321333,
+  "reason": "gain_top"
+ },
+ {
+  "full_name": "Fission-AI/OpenSpec",
+  "gain": 640,
+  "gain_rank": 200,
+  "id": 1032459340,
+  "reason": "gain_top"
+ }
+]

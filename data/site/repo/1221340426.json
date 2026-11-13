@@ -1,0 +1,92 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Decentralized P2P mesh for autonomous AI agents — self-sovereign identity, peer-to-peer chat, and on-device AI that negotiates tasks on your behalf. No central server.",
+ "full_name": "allenpeng0705/EnvoyMesh",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.33,
+    "s2": 0.0,
+    "s3": 6.31,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 21.45,
+   "rank": 194,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.27,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 37.59,
+   "rank": 151,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 18.27,
+   "s2": 0.0,
+   "s3": 6.77,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "allenpeng0705/EnvoyMesh",
+  "index": 37.59,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 67.0,
+   "s2": null,
+   "s3": 14.89,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": null,
+  "rank": 151,
+  "raw": {
+   "s1_stars_gain": 1658,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1221340426,
+  "star_rank": 67,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1221340426,
+ "topics": [
+  "ai-agents",
+  "decentralized-ai",
+  "decentralized-exchange",
+  "decentralized-identity",
+  "decentralized-storage"
+ ]
+}

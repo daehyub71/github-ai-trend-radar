@@ -1,0 +1,86 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": null,
+ "full_name": "Vincentwei1021/anything2explainer",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.67,
+    "s2": 0.0,
+    "s3": 17.25,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 41.4,
+   "rank": 135,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.6,
+    "s2": 0.0,
+    "s3": 16.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 31.14,
+   "rank": 169,
+   "week": "2026-09-13"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 2.6,
+   "s2": 0.0,
+   "s3": 16.0,
+   "s4": 0.0,
+   "s5": 12.54
+  },
+  "full_name": "Vincentwei1021/anything2explainer",
+  "index": 31.14,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 9.55,
+   "s2": null,
+   "s3": 35.19,
+   "s4": null,
+   "s5": 45.98
+  },
+  "prev_rank": 135,
+  "rank": 169,
+  "raw": {
+   "s1_stars_gain": 669,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1361693766,
+  "star_rank": 181,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-13"
+ },
+ "repo_id": 1361693766,
+ "topics": []
+}

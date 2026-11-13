@@ -1,0 +1,106 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.",
+ "full_name": "titanwings/distilly",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.09,
+    "s2": 0.0,
+    "s3": 6.37,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 36.93,
+   "rank": 158,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.25,
+    "s2": 0.0,
+    "s3": 12.31,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 39.17,
+   "rank": 142,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 14.25,
+   "s2": 0.0,
+   "s3": 12.31,
+   "s4": 0.0,
+   "s5": 12.61
+  },
+  "full_name": "titanwings/distilly",
+  "index": 39.17,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 52.26,
+   "s2": null,
+   "s3": 27.07,
+   "s4": null,
+   "s5": 46.23
+  },
+  "prev_rank": 158,
+  "rank": 142,
+  "raw": {
+   "s1_stars_gain": 1257,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1195828337,
+  "star_rank": 96,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1195828337,
+ "topics": [
+  "agent-skills",
+  "agentic-ai",
+  "ai-agent",
+  "ai-agents",
+  "ai-assistants",
+  "ai-persona",
+  "claude-code",
+  "claude-skills",
+  "codex",
+  "codex-skills",
+  "deepseek-harness",
+  "digital-human",
+  "dsh-plugin",
+  "hermes-agent",
+  "knowledge-distillation",
+  "llm-agent",
+  "meta-skill",
+  "openclaw",
+  "personal-agent"
+ ]
+}

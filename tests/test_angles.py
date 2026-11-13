@@ -77,3 +77,12 @@ def test_angles_rules_are_configurable_and_versioned():
     rules = AngleRules(**{**RULES_V1.__dict__, "a_use_min": 95.0, "version": 2})
     out = select_angles([_week([_row(1, s1=10.0, s3=90.0, s4=90.0)])], rules)
     assert out["A"]["items"] == [] and out["rules_version"] == 2
+
+
+def test_angles_d_ignores_shift_caused_by_signal_coverage_change():
+    # 4주 전에는 기여가 비어 있었다(관심 100%) → 기여가 채워진 것일 뿐, 전환으로 치지 않는다
+    then = {"s1": 30.0, "s2": 0.0, "s3": 0.0, "s4": 0.0, "s5": 20.0}
+    now = {"s1": 15.0, "s2": 0.0, "s3": 30.0, "s4": 0.0, "s5": 5.0}
+    old = _row(1, s3=None, contrib=then)
+    weeks = [_week([old])] + [_week([_row(1)])] * 3 + [_week([_row(1, contrib=now)])]
+    assert select_angles(weeks)["D"]["items"] == []

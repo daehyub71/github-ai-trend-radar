@@ -1,0 +1,118 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of sandboxes, memories, tools, skill, subagents and message gateway, it handles different levels of tasks that could take minutes to hours.",
+ "full_name": "bytedance/deer-flow",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.41,
+    "s2": 0.0,
+    "s3": 35.11,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 48.13,
+   "rank": 106,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.81,
+    "s2": 0.0,
+    "s3": 38.83,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 52.19,
+   "rank": 91,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.36,
+    "s2": 0.0,
+    "s3": 41.15,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 63.0,
+   "rank": 46,
+   "week": "2026-09-06"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 9.36,
+   "s2": 0.0,
+   "s3": 41.15,
+   "s4": 0.0,
+   "s5": 12.48
+  },
+  "full_name": "bytedance/deer-flow",
+  "index": 63.0,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 34.33,
+   "s2": null,
+   "s3": 90.54,
+   "s4": null,
+   "s5": 45.77
+  },
+  "prev_rank": null,
+  "rank": 46,
+  "raw": {
+   "s1_stars_gain": 950,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 52,
+   "s3_merged_prs": 88,
+   "s3_pr_authors": 42,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 979115477,
+  "star_rank": 133,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-06"
+ },
+ "repo_id": 979115477,
+ "topics": [
+  "agent",
+  "agentic",
+  "agentic-framework",
+  "agentic-workflow",
+  "ai",
+  "ai-agents",
+  "deep-research",
+  "harness",
+  "langchain",
+  "langgraph",
+  "langmanus",
+  "llm",
+  "multi-agent",
+  "nodejs",
+  "podcast",
+  "python",
+  "superagent",
+  "typescript"
+ ]
+}

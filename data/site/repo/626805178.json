@@ -1,0 +1,223 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
+ "full_name": "langgenius/dify",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.34,
+    "s2": 0.0,
+    "s3": 42.07,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 59.89,
+   "rank": 55,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.52,
+    "s2": 0.0,
+    "s3": 40.46,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 57.59,
+   "rank": 69,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.8,
+    "s2": 0.0,
+    "s3": 42.39,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 58.74,
+   "rank": 60,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.58,
+    "s2": 0.0,
+    "s3": 41.11,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 60.5,
+   "rank": 55,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.99,
+    "s2": 0.0,
+    "s3": 42.87,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 66.34,
+   "rank": 34,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.77,
+    "s2": 0.0,
+    "s3": 40.53,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 61.84,
+   "rank": 57,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.5,
+    "s2": 0.0,
+    "s3": 42.03,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 62.08,
+   "rank": 47,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.68,
+    "s2": 0.0,
+    "s3": 40.72,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 53.95,
+   "rank": 81,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.27,
+    "s2": 0.0,
+    "s3": 39.24,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 52.46,
+   "rank": 87,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.14,
+    "s2": 0.0,
+    "s3": 39.84,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 52.83,
+   "rank": 84,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.88,
+    "s2": 0.0,
+    "s3": 40.96,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 56.78,
+   "rank": 66,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 2.88,
+   "s2": 0.0,
+   "s3": 40.96,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "langgenius/dify",
+  "index": 56.78,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 10.55,
+   "s2": null,
+   "s3": 90.1,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 84,
+  "rank": 66,
+  "raw": {
+   "s1_stars_gain": 741,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 108,
+   "s3_merged_prs": 303,
+   "s3_pr_authors": 55,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 626805178,
+  "star_rank": 179,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 626805178,
+ "topics": [
+  "agent",
+  "agentic-ai",
+  "agentic-framework",
+  "agentic-workflow",
+  "ai",
+  "automation",
+  "claude",
+  "deepseek",
+  "genai",
+  "gpt",
+  "llm",
+  "low-code",
+  "mcp",
+  "nextjs",
+  "no-code",
+  "openai",
+  "python",
+  "skills",
+  "workflow"
+ ]
+}

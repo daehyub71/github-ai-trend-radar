@@ -1,0 +1,234 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+ "full_name": "K-Dense-AI/scientific-agent-skills",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.82,
+    "s2": 0.0,
+    "s3": 12.39,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 25.69,
+   "rank": 187,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.24,
+    "s2": 0.0,
+    "s3": 13.9,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 51.69,
+   "rank": 96,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.9,
+    "s2": 0.0,
+    "s3": 8.92,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 47.64,
+   "rank": 117,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.59,
+    "s2": 0.0,
+    "s3": 28.63,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 59.7,
+   "rank": 57,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.14,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 29.1,
+   "rank": 175,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.0,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 31.31,
+   "rank": 169,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.98,
+    "s2": 0.0,
+    "s3": 12.42,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 32.94,
+   "rank": 162,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.03,
+    "s2": 0.0,
+    "s3": 5.6,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 24.11,
+   "rank": 186,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.02,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 41.84,
+   "rank": 126,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.5,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 35.85,
+   "rank": 160,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.59,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 28.81,
+   "rank": 176,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 4.04,
+    "s2": 0.0,
+    "s3": 5.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 22.7,
+   "rank": 195,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 4.04,
+   "s2": 0.0,
+   "s3": 5.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "K-Dense-AI/scientific-agent-skills",
+  "index": 22.7,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 14.82,
+   "s2": null,
+   "s3": 12.56,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 176,
+  "rank": 195,
+  "raw": {
+   "s1_stars_gain": 894,
+   "s2_fork_delta": null,
+   "s2_forks": 5002,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1079456184,
+  "star_rank": 171,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1079456184,
+ "topics": [
+  "agent-skills",
+  "ai-scientist",
+  "bioinformatics",
+  "chemoinformatics",
+  "claude",
+  "claude-skills",
+  "claudecode",
+  "clinical-research",
+  "computational-biology",
+  "data-analysis",
+  "drug-discovery",
+  "genomics",
+  "materials-science",
+  "metabolomics",
+  "proteomics",
+  "scientific-computing",
+  "scientific-visualization"
+ ]
+}

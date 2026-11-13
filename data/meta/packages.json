@@ -1,4 +1,10 @@
 {
+ "1003043071": {
+  "checked": "2026-11-13",
+  "full_name": "vitali87/code-graph-rag",
+  "packages": [],
+  "status": "ok"
+ },
  "1006414368": {
   "checked": "2026-11-13",
   "full_name": "OpenCut-app/OpenCut",
@@ -8,6 +14,23 @@
  "1007827531": {
   "checked": "2026-11-13",
   "full_name": "Crosstalk-Solutions/project-nomad",
+  "packages": [],
+  "status": "ok"
+ },
+ "1008304614": {
+  "checked": "2026-11-13",
+  "full_name": "semantica-agi/semantica",
+  "packages": [
+   [
+    "pypi",
+    "semantica"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1010681419": {
+  "checked": "2026-11-13",
+  "full_name": "shareAI-lab/learn-claude-code",
   "packages": [],
   "status": "ok"
  },
@@ -23,6 +46,17 @@
   "packages": [],
   "status": "ok"
  },
+ "1015815983": {
+  "checked": "2026-11-13",
+  "full_name": "zhouxiaoka/autoclip",
+  "packages": [
+   [
+    "pypi",
+    "autoclip-mcp"
+   ]
+  ],
+  "status": "ok"
+ },
  "1024118326": {
   "checked": "2026-11-13",
   "full_name": "Tencent/WeKnora",
@@ -33,6 +67,28 @@
   "checked": "2026-11-13",
   "full_name": "NousResearch/hermes-agent",
   "packages": [],
+  "status": "ok"
+ },
+ "1027384981": {
+  "checked": "2026-11-13",
+  "full_name": "langchain-ai/deepagents",
+  "packages": [
+   [
+    "pypi",
+    "deepagents"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1031059905": {
+  "checked": "2026-11-13",
+  "full_name": "abhigyanpatwari/GitNexus",
+  "packages": [
+   [
+    "npm",
+    "gitnexus"
+   ]
+  ],
   "status": "ok"
  },
  "1031912724": {
@@ -58,6 +114,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1033674301": {
+  "checked": "2026-11-13",
+  "full_name": "mihail911/modern-software-dev-assignments",
+  "packages": [],
+  "status": "ok"
+ },
  "1035029907": {
   "checked": "2026-11-13",
   "full_name": "earendil-works/pi",
@@ -67,6 +129,12 @@
  "1042367133": {
   "checked": "2026-11-13",
   "full_name": "github/spec-kit",
+  "packages": [],
+  "status": "ok"
+ },
+ "1044010907": {
+  "checked": "2026-11-13",
+  "full_name": "Devin-AXIS/iPolloWork",
   "packages": [],
   "status": "ok"
  },
@@ -92,10 +160,56 @@
   ],
   "status": "ok"
  },
+ "1051229663": {
+  "checked": "2026-11-13",
+  "full_name": "sopaco/deepwiki-rs",
+  "packages": [],
+  "status": "ok"
+ },
+ "1051789550": {
+  "checked": "2026-11-13",
+  "full_name": "Gaurav-Gosain/tuios",
+  "packages": [],
+  "status": "ok"
+ },
  "1052050442": {
   "checked": "2026-11-13",
   "full_name": "datawhalechina/hello-agents",
   "packages": [],
+  "status": "ok"
+ },
+ "1052845083": {
+  "checked": "2026-11-13",
+  "full_name": "danielmiessler/LifeOS",
+  "packages": [],
+  "status": "ok"
+ },
+ "1053118194": {
+  "checked": "2026-11-13",
+  "full_name": "bojieli/ai-agent-book",
+  "packages": [],
+  "status": "ok"
+ },
+ "1054812421": {
+  "checked": "2026-11-13",
+  "full_name": "antvis/Infographic",
+  "packages": [
+   [
+    "npm",
+    "@antv/infographic"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1057664813": {
+  "checked": "2026-11-13",
+  "full_name": "OpenBMB/VoxCPM",
+  "packages": [
+   [
+    "pypi",
+    "voxcpm"
+   ]
+  ],
   "status": "ok"
  },
  "1061041576": {
@@ -109,6 +223,12 @@
   ],
   "status": "ok"
  },
+ "1061327311": {
+  "checked": "2026-11-13",
+  "full_name": "altic-dev/FluidVoice",
+  "packages": [],
+  "status": "ok"
+ },
  "1061953414": {
   "checked": "2026-11-13",
   "full_name": "anthropics/skills",
@@ -118,6 +238,12 @@
  "1062356571": {
   "checked": "2026-11-13",
   "full_name": "tw93/Mole",
+  "packages": [],
+  "status": "ok"
+ },
+ "1065059442": {
+  "checked": "2026-11-13",
+  "full_name": "KeygraphHQ/shannon",
   "packages": [],
   "status": "ok"
  },
@@ -145,15 +271,85 @@
   "packages": [],
   "status": "ok"
  },
+ "1076362809": {
+  "checked": "2026-11-13",
+  "full_name": "corsairdev/corsair",
+  "packages": [
+   [
+    "npm",
+    "corsair"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1077819522": {
+  "checked": "2026-11-13",
+  "full_name": "pascalorg/editor",
+  "packages": [],
+  "status": "ok"
+ },
+ "1077985558": {
+  "checked": "2026-11-13",
+  "full_name": "dexmal/dexbotic",
+  "packages": [],
+  "status": "ok"
+ },
+ "1078079172": {
+  "checked": "2026-11-13",
+  "full_name": "ComposioHQ/awesome-claude-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1079084637": {
+  "checked": "2026-11-13",
+  "full_name": "alirezarezvani/claude-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1079456184": {
   "checked": "2026-11-13",
   "full_name": "K-Dense-AI/scientific-agent-skills",
   "packages": [],
   "status": "ok"
  },
+ "1079560616": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/sandbox-runtime",
+  "packages": [
+   [
+    "npm",
+    "@anthropic-ai/sandbox-runtime"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1083010192": {
+  "checked": "2026-11-13",
+  "full_name": "meituan-longcat/LongCat-Video",
+  "packages": [],
+  "status": "ok"
+ },
+ "1084853233": {
+  "checked": "2026-11-13",
+  "full_name": "VoltAgent/awesome-agent-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1086419061": {
   "checked": "2026-11-13",
   "full_name": "vectorize-io/hindsight",
+  "packages": [],
+  "status": "ok"
+ },
+ "1087192965": {
+  "checked": "2026-11-13",
+  "full_name": "shanraisshan/claude-code-best-practice",
+  "packages": [],
+  "status": "ok"
+ },
+ "1092047360": {
+  "checked": "2026-11-13",
+  "full_name": "luongnv89/claude-howto",
   "packages": [],
   "status": "ok"
  },
@@ -185,6 +381,12 @@
   ],
   "status": "ok"
  },
+ "1103643573": {
+  "checked": "2026-11-13",
+  "full_name": "openai/skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1104332987": {
   "checked": "2026-11-13",
   "full_name": "666ghj/MiroFish",
@@ -209,6 +411,35 @@
   "packages": [],
   "status": "ok"
  },
+ "1118085970": {
+  "checked": "2026-11-13",
+  "full_name": "opensandbox-group/OpenSandbox",
+  "packages": [
+   [
+    "pypi",
+    "opensandbox"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1118601518": {
+  "checked": "2026-11-13",
+  "full_name": "Wei-Shaw/sub2api",
+  "packages": [],
+  "status": "ok"
+ },
+ "1119210021": {
+  "checked": "2026-11-13",
+  "full_name": "smol-machines/smolvm",
+  "packages": [],
+  "status": "ok"
+ },
+ "1120195677": {
+  "checked": "2026-11-13",
+  "full_name": "pranshuparmar/witr",
+  "packages": [],
+  "status": "ok"
+ },
  "1124219907": {
   "checked": "2026-11-13",
   "full_name": "HKUDS/DeepTutor",
@@ -221,9 +452,83 @@
   "packages": [],
   "status": "ok"
  },
+ "1126947080": {
+  "checked": "2026-11-13",
+  "full_name": "kepano/obsidian-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1127650407": {
+  "checked": "2026-11-13",
+  "full_name": "asciimoo/hister",
+  "packages": [],
+  "status": "ok"
+ },
+ "1127761357": {
+  "checked": "2026-11-13",
+  "full_name": "arcboxlabs/arcbox",
+  "packages": [
+   [
+    "pypi",
+    "arcbox"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1128025899": {
+  "checked": "2026-11-13",
+  "full_name": "decolua/9router",
+  "packages": [],
+  "status": "ok"
+ },
+ "1128123594": {
+  "checked": "2026-11-13",
+  "full_name": "volcengine/OpenViking",
+  "packages": [
+   [
+    "pypi",
+    "openviking"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1128204614": {
+  "checked": "2026-11-13",
+  "full_name": "1jehuang/jcode",
+  "packages": [],
+  "status": "ok"
+ },
+ "1129940957": {
+  "checked": "2026-11-13",
+  "full_name": "headroomlabs-ai/headroom",
+  "packages": [
+   [
+    "pypi",
+    "headroom-ai"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1130564872": {
+  "checked": "2026-11-13",
+  "full_name": "koala73/worldmonitor",
+  "packages": [
+   [
+    "npm",
+    "worldmonitor"
+   ]
+  ],
+  "status": "ok"
+ },
  "1131202426": {
   "checked": "2026-11-13",
   "full_name": "meta/astryx",
+  "packages": [],
+  "status": "ok"
+ },
+ "1131513930": {
+  "checked": "2026-11-13",
+  "full_name": "ZhuLinsen/daily_stock_analysis",
   "packages": [],
   "status": "ok"
  },
@@ -238,9 +543,27 @@
   ],
   "status": "ok"
  },
+ "1132444278": {
+  "checked": "2026-11-13",
+  "full_name": "wafer-ai/gpu-perf-engineering-resources",
+  "packages": [],
+  "status": "ok"
+ },
  "1133707766": {
   "checked": "2026-11-13",
   "full_name": "multica-ai/multica",
+  "packages": [],
+  "status": "ok"
+ },
+ "1133911335": {
+  "checked": "2026-11-13",
+  "full_name": "different-ai/openwork",
+  "packages": [],
+  "status": "ok"
+ },
+ "1134411737": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/json-render",
   "packages": [],
   "status": "ok"
  },
@@ -278,6 +601,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1137066830": {
+  "checked": "2026-11-13",
+  "full_name": "Kruk2/jasna",
+  "packages": [],
+  "status": "ok"
+ },
  "1137078255": {
   "checked": "2026-11-13",
   "full_name": "colbymchenry/codegraph",
@@ -289,6 +618,35 @@
   ],
   "status": "ok"
  },
+ "1137212306": {
+  "checked": "2026-11-13",
+  "full_name": "op7418/Humanizer-zh",
+  "packages": [],
+  "status": "ok"
+ },
+ "1137515077": {
+  "checked": "2026-11-13",
+  "full_name": "tech-leads-club/agent-skills",
+  "packages": [
+   [
+    "npm",
+    "@tech-leads-club/agent-skills"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1137846174": {
+  "checked": "2026-11-13",
+  "full_name": "xai-org/x-algorithm",
+  "packages": [],
+  "status": "ok"
+ },
+ "1138946494": {
+  "checked": "2026-11-13",
+  "full_name": "irinabuht12-oss/marketing-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1139971460": {
   "checked": "2026-11-13",
   "full_name": "rtk-ai/rtk",
@@ -298,6 +656,12 @@
  "1140229822": {
   "checked": "2026-11-13",
   "full_name": "cursor/plugins",
+  "packages": [],
+  "status": "ok"
+ },
+ "1140582982": {
+  "checked": "2026-11-13",
+  "full_name": "TNT-Likely/PanWatch",
   "packages": [],
   "status": "ok"
  },
@@ -319,6 +683,17 @@
   "packages": [],
   "status": "ok"
  },
+ "1142274728": {
+  "checked": "2026-11-13",
+  "full_name": "jo-inc/camofox-browser",
+  "packages": [
+   [
+    "npm",
+    "@askjo/camofox-browser"
+   ]
+  ],
+  "status": "ok"
+ },
  "1142983825": {
   "checked": "2026-11-13",
   "full_name": "multica-ai/andrej-karpathy-skills",
@@ -337,9 +712,36 @@
   "packages": [],
   "status": "ok"
  },
+ "1148127041": {
+  "checked": "2026-11-13",
+  "full_name": "SimoneAvogadro/android-reverse-engineering-skill",
+  "packages": [],
+  "status": "ok"
+ },
  "1148788086": {
   "checked": "2026-11-13",
   "full_name": "mattpocock/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1151702019": {
+  "checked": "2026-11-13",
+  "full_name": "firecrawl/pdf-inspector",
+  "packages": [
+   [
+    "pypi",
+    "pdf-inspector"
+   ],
+   [
+    "npm",
+    "@firecrawl/pdf-inspector"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1151717775": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/mxc",
   "packages": [],
   "status": "ok"
  },
@@ -355,9 +757,33 @@
   "packages": [],
   "status": "ok"
  },
+ "1155113456": {
+  "checked": "2026-11-13",
+  "full_name": "mcncarl/yichen-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1155576139": {
+  "checked": "2026-11-13",
+  "full_name": "rocketride-org/rocketride-server",
+  "packages": [],
+  "status": "ok"
+ },
  "1155965274": {
   "checked": "2026-11-13",
   "full_name": "Donchitos/Claude-Code-Game-Studios",
+  "packages": [],
+  "status": "ok"
+ },
+ "1156170875": {
+  "checked": "2026-11-13",
+  "full_name": "Nasiko-Labs/nasiko",
+  "packages": [],
+  "status": "ok"
+ },
+ "1156994049": {
+  "checked": "2026-11-13",
+  "full_name": "OrchestratorInc/agent-orchestrator",
   "packages": [],
   "status": "ok"
  },
@@ -372,9 +798,38 @@
   ],
   "status": "ok"
  },
+ "1157171418": {
+  "checked": "2026-11-13",
+  "full_name": "jundot/omlx",
+  "packages": [],
+  "status": "ok"
+ },
+ "1158588224": {
+  "checked": "2026-11-13",
+  "full_name": "AlexsJones/llmfit",
+  "packages": [
+   [
+    "pypi",
+    "llmfit"
+   ]
+  ],
+  "status": "ok"
+ },
  "1158722119": {
   "checked": "2026-11-13",
   "full_name": "addyosmani/agent-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1160693255": {
+  "checked": "2026-11-13",
+  "full_name": "zubair-trabzada/geo-seo-claude",
+  "packages": [],
+  "status": "ok"
+ },
+ "1161163182": {
+  "checked": "2026-11-13",
+  "full_name": "tinyhumansai/openhuman",
   "packages": [],
   "status": "ok"
  },
@@ -401,9 +856,98 @@
   "packages": [],
   "status": "ok"
  },
+ "1162516847": {
+  "checked": "2026-11-13",
+  "full_name": "MakazhanAlpamys/Soup",
+  "packages": [
+   [
+    "pypi",
+    "soup-cli"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1163808211": {
+  "checked": "2026-11-13",
+  "full_name": "liustack/modlens",
+  "packages": [
+   [
+    "npm",
+    "@liustack/modlens"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1164477708": {
+  "checked": "2026-11-13",
+  "full_name": "mksglu/context-mode",
+  "packages": [
+   [
+    "npm",
+    "context-mode"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1165056385": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/financial-services",
+  "packages": [],
+  "status": "ok"
+ },
  "1165277268": {
   "checked": "2026-11-13",
   "full_name": "Panniantong/Agent-Reach",
+  "packages": [],
+  "status": "ok"
+ },
+ "1165324947": {
+  "checked": "2026-11-13",
+  "full_name": "agentscope-ai/QwenPaw",
+  "packages": [
+   [
+    "pypi",
+    "qwenpaw"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1165361576": {
+  "checked": "2026-11-13",
+  "full_name": "cactus-compute/needle",
+  "packages": [],
+  "status": "ok"
+ },
+ "1166102148": {
+  "checked": "2026-11-13",
+  "full_name": "DeusData/codebase-memory-mcp",
+  "packages": [
+   [
+    "pypi",
+    "codebase-memory-mcp"
+   ],
+   [
+    "npm",
+    "codebase-memory-mcp"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1166119443": {
+  "checked": "2026-11-13",
+  "full_name": "get-bb/bb",
+  "packages": [],
+  "status": "ok"
+ },
+ "1166129534": {
+  "checked": "2026-11-13",
+  "full_name": "NVIDIA/OpenShell",
+  "packages": [],
+  "status": "ok"
+ },
+ "1166506614": {
+  "checked": "2026-11-13",
+  "full_name": "mukul975/Anthropic-Cybersecurity-Skills",
   "packages": [],
   "status": "ok"
  },
@@ -411,6 +955,23 @@
   "checked": "2026-11-13",
   "full_name": "Imbad0202/academic-research-skills",
   "packages": [],
+  "status": "ok"
+ },
+ "1167515091": {
+  "checked": "2026-11-13",
+  "full_name": "Lakr233/vphone-cli",
+  "packages": [],
+  "status": "ok"
+ },
+ "1167788341": {
+  "checked": "2026-11-13",
+  "full_name": "tirth8205/code-review-graph",
+  "packages": [
+   [
+    "pypi",
+    "code-review-graph"
+   ]
+  ],
   "status": "ok"
  },
  "1168753718": {
@@ -425,6 +986,88 @@
   "packages": [],
   "status": "ok"
  },
+ "1171833693": {
+  "checked": "2026-11-13",
+  "full_name": "Agents365-ai/drawio-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1172273835": {
+  "checked": "2026-11-13",
+  "full_name": "SnailSploit/Claude-Red",
+  "packages": [],
+  "status": "ok"
+ },
+ "1172781277": {
+  "checked": "2026-11-13",
+  "full_name": "greensock/gsap-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1172963839": {
+  "checked": "2026-11-13",
+  "full_name": "openai/plugins",
+  "packages": [],
+  "status": "ok"
+ },
+ "1173234484": {
+  "checked": "2026-11-13",
+  "full_name": "openJiuwen-ai/jiuwenswarm",
+  "packages": [],
+  "status": "ok"
+ },
+ "1173845549": {
+  "checked": "2026-11-13",
+  "full_name": "twostraws/SwiftUI-Agent-Skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1173848034": {
+  "checked": "2026-11-13",
+  "full_name": "oblien/openship",
+  "packages": [
+   [
+    "npm",
+    "openship"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1174789082": {
+  "checked": "2026-11-13",
+  "full_name": "block/buzz",
+  "packages": [],
+  "status": "ok"
+ },
+ "1174820787": {
+  "checked": "2026-11-13",
+  "full_name": "karpathy/autoresearch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1175168650": {
+  "checked": "2026-11-13",
+  "full_name": "brightdata/cli",
+  "packages": [
+   [
+    "npm",
+    "@brightdata/cli"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1175278883": {
+  "checked": "2026-11-13",
+  "full_name": "whiteguo233/OpenBiliClaw",
+  "packages": [],
+  "status": "ok"
+ },
+ "1176011916": {
+  "checked": "2026-11-13",
+  "full_name": "HKUDS/CLI-Anything",
+  "packages": [],
+  "status": "ok"
+ },
  "1177402105": {
   "checked": "2026-11-13",
   "full_name": "heygen-com/hyperframes",
@@ -434,6 +1077,18 @@
     "hyperframes"
    ]
   ],
+  "status": "ok"
+ },
+ "1178737655": {
+  "checked": "2026-11-13",
+  "full_name": "THU-MAIC/OpenMAIC",
+  "packages": [],
+  "status": "ok"
+ },
+ "1179046874": {
+  "checked": "2026-11-13",
+  "full_name": "nidhinjs/prompt-master",
+  "packages": [],
   "status": "ok"
  },
  "1179264259": {
@@ -448,9 +1103,33 @@
   "packages": [],
   "status": "ok"
  },
+ "1179959183": {
+  "checked": "2026-11-13",
+  "full_name": "BuilderIO/agent-native",
+  "packages": [],
+  "status": "ok"
+ },
+ "1180226026": {
+  "checked": "2026-11-13",
+  "full_name": "CopilotKit/OpenIntelligentUI",
+  "packages": [],
+  "status": "ok"
+ },
+ "1180745961": {
+  "checked": "2026-11-13",
+  "full_name": "JCodesMore/ai-website-cloner-template",
+  "packages": [],
+  "status": "ok"
+ },
  "1182081931": {
   "checked": "2026-11-13",
   "full_name": "Egonex-AI/Understand-Anything",
+  "packages": [],
+  "status": "ok"
+ },
+ "1182212878": {
+  "checked": "2026-11-13",
+  "full_name": "iOfficeAI/OfficeCLI",
   "packages": [],
   "status": "ok"
  },
@@ -466,6 +1145,30 @@
   "packages": [],
   "status": "ok"
  },
+ "1183934088": {
+  "checked": "2026-11-13",
+  "full_name": "Anakin-Inc/anakin",
+  "packages": [],
+  "status": "ok"
+ },
+ "1184568969": {
+  "checked": "2026-11-13",
+  "full_name": "lightningpixel/modly",
+  "packages": [],
+  "status": "ok"
+ },
+ "1184901356": {
+  "checked": "2026-11-13",
+  "full_name": "humanlayer/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1185075092": {
+  "checked": "2026-11-13",
+  "full_name": "rcortx/kiwiq",
+  "packages": [],
+  "status": "ok"
+ },
  "1185389803": {
   "checked": "2026-11-13",
   "full_name": "ai-job-search-dev/ai-job-search",
@@ -478,6 +1181,17 @@
   "packages": [],
   "status": "ok"
  },
+ "1186559664": {
+  "checked": "2026-11-13",
+  "full_name": "Companion-Inc/feynman",
+  "packages": [
+   [
+    "npm",
+    "@companion-ai/feynman"
+   ]
+  ],
+  "status": "ok"
+ },
  "1187630119": {
   "checked": "2026-11-13",
   "full_name": "NVIDIA/SkillSpector",
@@ -488,6 +1202,34 @@
   "checked": "2026-11-13",
   "full_name": "mnfst/awesome-free-llm-apis",
   "packages": [],
+  "status": "ok"
+ },
+ "1188521544": {
+  "checked": "2026-11-13",
+  "full_name": "holaboss-ai/holaOS",
+  "packages": [],
+  "status": "ok"
+ },
+ "1188718672": {
+  "checked": "2026-11-13",
+  "full_name": "agegr/pi-web",
+  "packages": [
+   [
+    "npm",
+    "@agegr/pi-web"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1192555574": {
+  "checked": "2026-11-13",
+  "full_name": "RyanCodrai/turbovec",
+  "packages": [
+   [
+    "pypi",
+    "turbovec"
+   ]
+  ],
   "status": "ok"
  },
  "1193300953": {
@@ -514,6 +1256,35 @@
   "packages": [],
   "status": "ok"
  },
+ "1195828337": {
+  "checked": "2026-11-13",
+  "full_name": "titanwings/distilly",
+  "packages": [],
+  "status": "ok"
+ },
+ "1196352488": {
+  "checked": "2026-11-13",
+  "full_name": "Observal/Observal",
+  "packages": [],
+  "status": "ok"
+ },
+ "1196447493": {
+  "checked": "2026-11-13",
+  "full_name": "google/ax",
+  "packages": [],
+  "status": "ok"
+ },
+ "1197198701": {
+  "checked": "2026-11-13",
+  "full_name": "k2-fsa/OmniVoice",
+  "packages": [
+   [
+    "pypi",
+    "omnivoice"
+   ]
+  ],
+  "status": "ok"
+ },
  "1197515131": {
   "checked": "2026-11-13",
   "full_name": "VoltAgent/awesome-design-md",
@@ -531,6 +1302,45 @@
   "packages": [],
   "status": "ok"
  },
+ "1197990888": {
+  "checked": "2026-11-13",
+  "full_name": "Twigpine/openclaude",
+  "packages": [
+   [
+    "npm",
+    "@twigpine/openclaude"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1198124295": {
+  "checked": "2026-11-13",
+  "full_name": "mvschwarz/openrig",
+  "packages": [],
+  "status": "ok"
+ },
+ "1198246700": {
+  "checked": "2026-11-13",
+  "full_name": "emdash-cms/emdash",
+  "packages": [
+   [
+    "npm",
+    "emdash"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1198306812": {
+  "checked": "2026-11-13",
+  "full_name": "HKUDS/Vibe-Trading",
+  "packages": [
+   [
+    "pypi",
+    "vibe-trading-ai"
+   ]
+  ],
+  "status": "ok"
+ },
  "1200597263": {
   "checked": "2026-11-13",
   "full_name": "Graphify-Labs/graphify",
@@ -540,6 +1350,12 @@
     "graphifyy"
    ]
   ],
+  "status": "ok"
+ },
+ "1200598308": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/tgrep",
+  "packages": [],
   "status": "ok"
  },
  "1201173969": {
@@ -571,10 +1387,85 @@
   ],
   "status": "ok"
  },
+ "1202492868": {
+  "checked": "2026-11-13",
+  "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
+  "packages": [],
+  "status": "ok"
+ },
+ "1203558071": {
+  "checked": "2026-11-13",
+  "full_name": "TencentCloud/TencentDB-Agent-Memory",
+  "packages": [],
+  "status": "ok"
+ },
+ "1203670949": {
+  "checked": "2026-11-13",
+  "full_name": "AgriciDaniel/claude-obsidian",
+  "packages": [],
+  "status": "ok"
+ },
+ "1204004374": {
+  "checked": "2026-11-13",
+  "full_name": "handsomestWei/patent-disclosure-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1204828304": {
+  "checked": "2026-11-13",
+  "full_name": "nashsu/llm_wiki",
+  "packages": [],
+  "status": "ok"
+ },
+ "1206357666": {
+  "checked": "2026-11-13",
+  "full_name": "jordan-gibbs/hyperresearch",
+  "packages": [
+   [
+    "pypi",
+    "hyperresearch"
+   ]
+  ],
+  "status": "ok"
+ },
  "1206390571": {
   "checked": "2026-11-13",
   "full_name": "debpalash/VoiceStudio",
   "packages": [],
+  "status": "ok"
+ },
+ "1207091162": {
+  "checked": "2026-11-13",
+  "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+  "packages": [
+   [
+    "npm",
+    "@yizhiyanhua-ai/fireworks-tech-graph"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1208221543": {
+  "checked": "2026-11-13",
+  "full_name": "browser-use/video-use",
+  "packages": [],
+  "status": "ok"
+ },
+ "1209343409": {
+  "checked": "2026-11-13",
+  "full_name": "h4ckf0r0day/obscura",
+  "packages": [],
+  "status": "ok"
+ },
+ "1209889782": {
+  "checked": "2026-11-13",
+  "full_name": "getagentseal/codeburn",
+  "packages": [
+   [
+    "npm",
+    "codeburn"
+   ]
+  ],
   "status": "ok"
  },
  "1209966933": {
@@ -592,9 +1483,44 @@
   ],
   "status": "ok"
  },
+ "1210670063": {
+  "checked": "2026-11-13",
+  "full_name": "sergebulaev/linkedin-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1211139949": {
   "checked": "2026-11-13",
   "full_name": "tt-a1i/archify",
+  "packages": [],
+  "status": "ok"
+ },
+ "1211361116": {
+  "checked": "2026-11-13",
+  "full_name": "Manavarya09/design-extract",
+  "packages": [
+   [
+    "npm",
+    "designlang"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1211752857": {
+  "checked": "2026-11-13",
+  "full_name": "Robbyant/lingbot-map",
+  "packages": [],
+  "status": "ok"
+ },
+ "1211925923": {
+  "checked": "2026-11-13",
+  "full_name": "cloudflare/cloudflare-os",
+  "packages": [],
+  "status": "ok"
+ },
+ "1212163658": {
+  "checked": "2026-11-13",
+  "full_name": "kangarooking/cangjie-skill",
   "packages": [],
   "status": "ok"
  },
@@ -613,6 +1539,24 @@
  "1214785164": {
   "checked": "2026-11-13",
   "full_name": "HKUSTDial/Supervisor-Skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1215145625": {
+  "checked": "2026-11-13",
+  "full_name": "alchaincyf/huashu-design",
+  "packages": [],
+  "status": "ok"
+ },
+ "1216542069": {
+  "checked": "2026-11-13",
+  "full_name": "neilsonnn/image-blaster",
+  "packages": [],
+  "status": "ok"
+ },
+ "1216785679": {
+  "checked": "2026-11-13",
+  "full_name": "esengine/DeepSeek-Reasonix",
   "packages": [],
   "status": "ok"
  },
@@ -639,10 +1583,63 @@
   "packages": [],
   "status": "ok"
  },
+ "1219042200": {
+  "checked": "2026-11-13",
+  "full_name": "op7418/guizang-ppt-skill",
+  "packages": [],
+  "status": "ok"
+ },
  "1219596233": {
   "checked": "2026-11-13",
   "full_name": "Yuan1z0825/nature-skills",
   "packages": [],
+  "status": "ok"
+ },
+ "1219644159": {
+  "checked": "2026-11-13",
+  "full_name": "bradautomates/claude-video",
+  "packages": [],
+  "status": "ok"
+ },
+ "1220744720": {
+  "checked": "2026-11-13",
+  "full_name": "freestylefly/awesome-gpt-image-2",
+  "packages": [],
+  "status": "ok"
+ },
+ "1220899692": {
+  "checked": "2026-11-13",
+  "full_name": "Imbad0202/academic-research-skills-codex",
+  "packages": [],
+  "status": "ok"
+ },
+ "1221340426": {
+  "checked": "2026-11-13",
+  "full_name": "allenpeng0705/EnvoyMesh",
+  "packages": [],
+  "status": "ok"
+ },
+ "1221509404": {
+  "checked": "2026-11-13",
+  "full_name": "open-slide/open-slide",
+  "packages": [],
+  "status": "ok"
+ },
+ "1222213350": {
+  "checked": "2026-11-13",
+  "full_name": "deepseek-ai/awesome-deepseek-agent",
+  "packages": [],
+  "status": "ok"
+ },
+ "1222364235": {
+  "checked": "2026-11-13",
+  "full_name": "Tencent/teamai-cli",
+  "packages": [
+   [
+    "npm",
+    "teamai-cli"
+   ]
+  ],
   "status": "ok"
  },
  "1222527844": {
@@ -652,6 +1649,17 @@
    [
     "pypi",
     "ifixai"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1222789989": {
+  "checked": "2026-11-13",
+  "full_name": "weave-os/router",
+  "packages": [
+   [
+    "npm",
+    "@weave-os/router"
    ]
   ],
   "status": "ok"
@@ -668,15 +1676,74 @@
   "packages": [],
   "status": "ok"
  },
+ "1223939135": {
+  "checked": "2026-11-13",
+  "full_name": "melgarafael/DeskcommCRM",
+  "packages": [],
+  "status": "ok"
+ },
  "1224172037": {
   "checked": "2026-11-13",
   "full_name": "t8y2/dbx",
   "packages": [],
   "status": "ok"
  },
+ "1225365569": {
+  "checked": "2026-11-13",
+  "full_name": "AgnesAI-Labs/AgnesAI-Models",
+  "packages": [],
+  "status": "ok"
+ },
+ "1225774688": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/deepsec",
+  "packages": [
+   [
+    "npm",
+    "deepsec"
+   ]
+  ],
+  "status": "ok"
+ },
  "1226123343": {
   "checked": "2026-11-13",
   "full_name": "virgiliojr94/book-to-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1226971975": {
+  "checked": "2026-11-13",
+  "full_name": "beenuar/AiSOC",
+  "packages": [],
+  "status": "ok"
+ },
+ "1227920501": {
+  "checked": "2026-11-13",
+  "full_name": "stemdeckapp/stemdeck",
+  "packages": [],
+  "status": "ok"
+ },
+ "1229284184": {
+  "checked": "2026-11-13",
+  "full_name": "WenyuChiou/awesome-agentic-ai-zh",
+  "packages": [],
+  "status": "ok"
+ },
+ "1230751102": {
+  "checked": "2026-11-13",
+  "full_name": "BigPizzaV3/CodexPlusPlus",
+  "packages": [],
+  "status": "ok"
+ },
+ "1231743029": {
+  "checked": "2026-11-13",
+  "full_name": "echo-loop/Echo-Loop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1232493406": {
+  "checked": "2026-11-13",
+  "full_name": "PrimeIntellect-ai/prime-agent",
   "packages": [],
   "status": "ok"
  },
@@ -686,9 +1753,207 @@
   "packages": [],
   "status": "ok"
  },
+ "1236183038": {
+  "checked": "2026-11-13",
+  "full_name": "Asymptote-Labs/agent-beacon",
+  "packages": [],
+  "status": "ok"
+ },
+ "1236311506": {
+  "checked": "2026-11-13",
+  "full_name": "Fractal-Compute-Orchestrations/FractalWorkspace",
+  "packages": [],
+  "status": "ok"
+ },
+ "1237819660": {
+  "checked": "2026-11-13",
+  "full_name": "zhaoxuya520/reverse-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1238047523": {
+  "checked": "2026-11-13",
+  "full_name": "agent-substrate/substrate",
+  "packages": [],
+  "status": "ok"
+ },
  "1238120057": {
   "checked": "2026-11-13",
   "full_name": "ayghri/i-have-adhd",
+  "packages": [],
+  "status": "ok"
+ },
+ "1238992253": {
+  "checked": "2026-11-13",
+  "full_name": "pacifio/atlas",
+  "packages": [],
+  "status": "ok"
+ },
+ "1241960226": {
+  "checked": "2026-11-13",
+  "full_name": "alibaba/open-code-review",
+  "packages": [
+   [
+    "npm",
+    "@alibaba-group/open-code-review"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1242316635": {
+  "checked": "2026-11-13",
+  "full_name": "lynote-ai/humanize-text",
+  "packages": [],
+  "status": "ok"
+ },
+ "1242967652": {
+  "checked": "2026-11-13",
+  "full_name": "basketikun/infinite-canvas",
+  "packages": [],
+  "status": "ok"
+ },
+ "1243889840": {
+  "checked": "2026-11-13",
+  "full_name": "NVIDIA-NeMo/Switchyard",
+  "packages": [
+   [
+    "pypi",
+    "nemo-switchyard"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1245465729": {
+  "checked": "2026-11-13",
+  "full_name": "EverMind-AI/Raven",
+  "packages": [],
+  "status": "ok"
+ },
+ "1246148135": {
+  "checked": "2026-11-13",
+  "full_name": "akitaonrails/ai-memory",
+  "packages": [],
+  "status": "ok"
+ },
+ "1248769131": {
+  "checked": "2026-11-13",
+  "full_name": "luolangaga/tubatools",
+  "packages": [],
+  "status": "ok"
+ },
+ "1249703818": {
+  "checked": "2026-11-13",
+  "full_name": "hieunc229/mailflare",
+  "packages": [],
+  "status": "ok"
+ },
+ "1250276806": {
+  "checked": "2026-11-13",
+  "full_name": "michael-denyer/pstack-claude",
+  "packages": [],
+  "status": "ok"
+ },
+ "1251460378": {
+  "checked": "2026-11-13",
+  "full_name": "apache/maka",
+  "packages": [],
+  "status": "ok"
+ },
+ "1251775733": {
+  "checked": "2026-11-13",
+  "full_name": "helloianneo/ian-xiaohei-illustrations",
+  "packages": [],
+  "status": "ok"
+ },
+ "1255180606": {
+  "checked": "2026-11-13",
+  "full_name": "odysseus-dev/odysseus",
+  "packages": [],
+  "status": "ok"
+ },
+ "1255217938": {
+  "checked": "2026-11-13",
+  "full_name": "loopx-project/loopx",
+  "packages": [
+   [
+    "pypi",
+    "loopx"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1255237198": {
+  "checked": "2026-11-13",
+  "full_name": "HarnessMD/munder-difflin",
+  "packages": [],
+  "status": "ok"
+ },
+ "1256690992": {
+  "checked": "2026-11-13",
+  "full_name": "zhishile/codex-auth-helper",
+  "packages": [],
+  "status": "ok"
+ },
+ "1258301311": {
+  "checked": "2026-11-13",
+  "full_name": "rlaope/oh-my-hermes",
+  "packages": [
+   [
+    "npm",
+    "oh-my-hermes"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1260288940": {
+  "checked": "2026-11-13",
+  "full_name": "cloudflare/computer",
+  "packages": [
+   [
+    "npm",
+    "@cloudflare/computer"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1260962896": {
+  "checked": "2026-11-13",
+  "full_name": "tigerless-labs/cost-xray",
+  "packages": [],
+  "status": "ok"
+ },
+ "1261663145": {
+  "checked": "2026-11-13",
+  "full_name": "alphaXiv/OpenResearch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1264396304": {
+  "checked": "2026-11-13",
+  "full_name": "tigerless-labs/autoharness",
+  "packages": [],
+  "status": "ok"
+ },
+ "1264478656": {
+  "checked": "2026-11-13",
+  "full_name": "plannotator/effective-html",
+  "packages": [],
+  "status": "ok"
+ },
+ "1264811161": {
+  "checked": "2026-11-13",
+  "full_name": "chuspeeism/dashi-ppt-skill",
+  "packages": [
+   [
+    "npm",
+    "dashi-ppt-skill"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1266695553": {
+  "checked": "2026-11-13",
+  "full_name": "SenteLabsAI/OpenExecutive",
   "packages": [],
   "status": "ok"
  },
@@ -703,9 +1968,33 @@
   ],
   "status": "ok"
  },
+ "1266884317": {
+  "checked": "2026-11-13",
+  "full_name": "kunchenguid/firstmate",
+  "packages": [],
+  "status": "ok"
+ },
+ "1267145484": {
+  "checked": "2026-11-13",
+  "full_name": "magnitudedev/magnitude",
+  "packages": [],
+  "status": "ok"
+ },
+ "1271239690": {
+  "checked": "2026-11-13",
+  "full_name": "internet-court/internet-court-skill",
+  "packages": [],
+  "status": "ok"
+ },
  "1271560627": {
   "checked": "2026-11-13",
   "full_name": "latent-spaces/brag",
+  "packages": [],
+  "status": "ok"
+ },
+ "1273015953": {
+  "checked": "2026-11-13",
+  "full_name": "shy3130/tick-stock-panel",
   "packages": [],
   "status": "ok"
  },
@@ -718,6 +2007,34 @@
  "1273427276": {
   "checked": "2026-11-13",
   "full_name": "cloudflare/security-audit-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1273824907": {
+  "checked": "2026-11-13",
+  "full_name": "lidge-jun/opencodex",
+  "packages": [
+   [
+    "npm",
+    "@bitkyc08/opencodex"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1274498048": {
+  "checked": "2026-11-13",
+  "full_name": "spinabot/brigade",
+  "packages": [
+   [
+    "npm",
+    "@spinabot/brigade"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1276665883": {
+  "checked": "2026-11-13",
+  "full_name": "Tencent/BrowserSkill",
   "packages": [],
   "status": "ok"
  },
@@ -739,9 +2056,65 @@
   "packages": [],
   "status": "ok"
  },
+ "1283138527": {
+  "checked": "2026-11-13",
+  "full_name": "threerocks/hand-drawn-styles",
+  "packages": [],
+  "status": "ok"
+ },
+ "1284153858": {
+  "checked": "2026-11-13",
+  "full_name": "abue-ammar/tinycast",
+  "packages": [],
+  "status": "ok"
+ },
+ "1284653133": {
+  "checked": "2026-11-13",
+  "full_name": "xerj-org/xerj",
+  "packages": [],
+  "status": "ok"
+ },
  "1286080397": {
   "checked": "2026-11-13",
   "full_name": "JustVugg/colibri",
+  "packages": [],
+  "status": "ok"
+ },
+ "1287114669": {
+  "checked": "2026-11-13",
+  "full_name": "agentrhq/webcmd",
+  "packages": [
+   [
+    "npm",
+    "@agentrhq/webcmd"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1288325627": {
+  "checked": "2026-11-13",
+  "full_name": "trailhq/Trail-Code",
+  "packages": [
+   [
+    "npm",
+    "@nanonets/graft"
+   ],
+   [
+    "npm",
+    "@trailhq/trail-code"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1289958986": {
+  "checked": "2026-11-13",
+  "full_name": "Kuddev/pebrel",
+  "packages": [],
+  "status": "ok"
+ },
+ "1291783779": {
+  "checked": "2026-11-13",
+  "full_name": "petergyang/no-ai-slop",
   "packages": [],
   "status": "ok"
  },
@@ -751,9 +2124,74 @@
   "packages": [],
   "status": "ok"
  },
+ "1291928218": {
+  "checked": "2026-11-13",
+  "full_name": "diffusionstudio/editor",
+  "packages": [],
+  "status": "ok"
+ },
+ "1293600453": {
+  "checked": "2026-11-13",
+  "full_name": "TencentCloud/Octop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1294088656": {
+  "checked": "2026-11-13",
+  "full_name": "arnegiacomo/fugleramme",
+  "packages": [],
+  "status": "ok"
+ },
+ "1295987763": {
+  "checked": "2026-11-13",
+  "full_name": "zvec-ai/zvec-grep",
+  "packages": [
+   [
+    "npm",
+    "@zvec/zvec-grep"
+   ]
+  ],
+  "status": "ok"
+ },
  "1296300799": {
   "checked": "2026-11-13",
   "full_name": "jakubkrehel/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1296584905": {
+  "checked": "2026-11-13",
+  "full_name": "AhmadHassan-BTed/Turnitout-Humanizer",
+  "packages": [],
+  "status": "ok"
+ },
+ "1297316519": {
+  "checked": "2026-11-13",
+  "full_name": "MDX-Tom/gpt-instruct",
+  "packages": [],
+  "status": "ok"
+ },
+ "1298021489": {
+  "checked": "2026-11-13",
+  "full_name": "coji/natural-japanese",
+  "packages": [],
+  "status": "ok"
+ },
+ "1298164130": {
+  "checked": "2026-11-13",
+  "full_name": "LiamGvchi/gc-minimal-zine-poster",
+  "packages": [],
+  "status": "ok"
+ },
+ "1298890549": {
+  "checked": "2026-11-13",
+  "full_name": "littledivy/mimic",
+  "packages": [],
+  "status": "ok"
+ },
+ "1300902838": {
+  "checked": "2026-11-13",
+  "full_name": "xai-org/grok-build",
   "packages": [],
   "status": "ok"
  },
@@ -779,9 +2217,21 @@
   ],
   "status": "ok"
  },
+ "1302496224": {
+  "checked": "2026-11-13",
+  "full_name": "MemTensor/memmy-agent",
+  "packages": [],
+  "status": "ok"
+ },
  "1302612528": {
   "checked": "2026-11-13",
   "full_name": "sandbox-quantum/switch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1302690078": {
+  "checked": "2026-11-13",
+  "full_name": "larashero3-dotcom/lieflat-charts",
   "packages": [],
   "status": "ok"
  },
@@ -803,6 +2253,35 @@
   "packages": [],
   "status": "ok"
  },
+ "1306065843": {
+  "checked": "2026-11-13",
+  "full_name": "duolahypercho/codex-router",
+  "packages": [],
+  "status": "ok"
+ },
+ "1306128367": {
+  "checked": "2026-11-13",
+  "full_name": "andrewyng/openworker",
+  "packages": [
+   [
+    "pypi",
+    "openworker"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1306722822": {
+  "checked": "2026-11-13",
+  "full_name": "shengjidaguai-china/goutoujunshi",
+  "packages": [],
+  "status": "ok"
+ },
+ "1306733753": {
+  "checked": "2026-11-13",
+  "full_name": "danyuchn/asd-ste100-skill",
+  "packages": [],
+  "status": "ok"
+ },
  "1307001698": {
   "checked": "2026-11-13",
   "full_name": "FlashML-org/FreeToken",
@@ -814,9 +2293,68 @@
   ],
   "status": "ok"
  },
+ "1308234922": {
+  "checked": "2026-11-13",
+  "full_name": "Tiger3807861189/J-Space-Cognition-Suite",
+  "packages": [],
+  "status": "ok"
+ },
  "1308631234": {
   "checked": "2026-11-13",
   "full_name": "e2e-inc/e2e",
+  "packages": [],
+  "status": "ok"
+ },
+ "1309102418": {
+  "checked": "2026-11-13",
+  "full_name": "makecindy/cindy",
+  "packages": [],
+  "status": "ok"
+ },
+ "1309751899": {
+  "checked": "2026-11-13",
+  "full_name": "truefoundry/trueforge",
+  "packages": [
+   [
+    "npm",
+    "@truefoundry/trueforge"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1311108439": {
+  "checked": "2026-11-13",
+  "full_name": "chuspeeism/dashi-taskboard",
+  "packages": [],
+  "status": "ok"
+ },
+ "1312807575": {
+  "checked": "2026-11-13",
+  "full_name": "miuuyy/codex-chatgpt-web",
+  "packages": [],
+  "status": "ok"
+ },
+ "1315850547": {
+  "checked": "2026-11-13",
+  "full_name": "pollen-robotics/microduck",
+  "packages": [],
+  "status": "ok"
+ },
+ "1315854686": {
+  "checked": "2026-11-13",
+  "full_name": "talivia-group/talivia",
+  "packages": [],
+  "status": "ok"
+ },
+ "1315929647": {
+  "checked": "2026-11-13",
+  "full_name": "QwenLM/Qwen-MM-Plugins",
+  "packages": [],
+  "status": "ok"
+ },
+ "1316443307": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/skill-recorder",
   "packages": [],
   "status": "ok"
  },
@@ -831,9 +2369,97 @@
   ],
   "status": "ok"
  },
+ "1316527318": {
+  "checked": "2026-11-13",
+  "full_name": "yc-software/qm",
+  "packages": [
+   [
+    "npm",
+    "@yc-software/qm"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1317041031": {
+  "checked": "2026-11-13",
+  "full_name": "MiniMax-AI/MiniMax-H3",
+  "packages": [],
+  "status": "ok"
+ },
+ "1318025112": {
+  "checked": "2026-11-13",
+  "full_name": "MatrAIx-ai/MatrAIx-Persona-8B",
+  "packages": [],
+  "status": "ok"
+ },
+ "1318187016": {
+  "checked": "2026-11-13",
+  "full_name": "genspark-ai/genoffice",
+  "packages": [],
+  "status": "ok"
+ },
+ "1318768894": {
+  "checked": "2026-11-13",
+  "full_name": "trycompai/crm",
+  "packages": [],
+  "status": "ok"
+ },
  "1319154759": {
   "checked": "2026-11-13",
   "full_name": "FareedKhan-dev/kimi-k3-in-c",
+  "packages": [],
+  "status": "ok"
+ },
+ "1319419492": {
+  "checked": "2026-11-13",
+  "full_name": "Zeejay0/gathered-scenes-zine-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1321920026": {
+  "checked": "2026-11-13",
+  "full_name": "openTrinity/mycontext",
+  "packages": [],
+  "status": "ok"
+ },
+ "1322012299": {
+  "checked": "2026-11-13",
+  "full_name": "firecrawl/anydoc",
+  "packages": [
+   [
+    "npm",
+    "@firecrawl/anydoc"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1322651268": {
+  "checked": "2026-11-13",
+  "full_name": "fuxicodex/Fuxi",
+  "packages": [],
+  "status": "ok"
+ },
+ "1322768766": {
+  "checked": "2026-11-13",
+  "full_name": "ZzzLc0405/photo-abstract-editorial",
+  "packages": [],
+  "status": "ok"
+ },
+ "1322954467": {
+  "checked": "2026-11-13",
+  "full_name": "pathwaycom/arc-task-gen",
+  "packages": [],
+  "status": "ok"
+ },
+ "1323511527": {
+  "checked": "2026-11-13",
+  "full_name": "KKKKhazix/human-writing",
+  "packages": [],
+  "status": "ok"
+ },
+ "1324717617": {
+  "checked": "2026-11-13",
+  "full_name": "LaoFeng-mouse/flyingmouse-format",
   "packages": [],
   "status": "ok"
  },
@@ -848,15 +2474,85 @@
   ],
   "status": "ok"
  },
+ "1325096132": {
+  "checked": "2026-11-13",
+  "full_name": "eternityspring/shuohao-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1326531152": {
   "checked": "2026-11-13",
   "full_name": "miqdadbadjuber/anti-slop",
   "packages": [],
   "status": "ok"
  },
+ "1326654671": {
+  "checked": "2026-11-13",
+  "full_name": "oil-oil/oil-motion",
+  "packages": [],
+  "status": "ok"
+ },
+ "1326893710": {
+  "checked": "2026-11-13",
+  "full_name": "omdsh-dev/DSH-better-sidebar",
+  "packages": [
+   [
+    "npm",
+    "dsh-better-sidebar"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1327088798": {
+  "checked": "2026-11-13",
+  "full_name": "deeplethe/utopia",
+  "packages": [],
+  "status": "ok"
+ },
+ "1327214801": {
+  "checked": "2026-11-13",
+  "full_name": "ShawnPana/phone-harness",
+  "packages": [],
+  "status": "ok"
+ },
+ "1328627783": {
+  "checked": "2026-11-13",
+  "full_name": "antirez/h3.c",
+  "packages": [],
+  "status": "ok"
+ },
+ "1329163060": {
+  "checked": "2026-11-13",
+  "full_name": "HarnessRouter/harnessrouter",
+  "packages": [
+   [
+    "pypi",
+    "harnessrouter"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1329272295": {
+  "checked": "2026-11-13",
+  "full_name": "Leonxlnx/unlazy",
+  "packages": [],
+  "status": "ok"
+ },
  "1329849289": {
   "checked": "2026-11-13",
   "full_name": "lexmount/moli",
+  "packages": [],
+  "status": "ok"
+ },
+ "1330135801": {
+  "checked": "2026-11-13",
+  "full_name": "gvzdv/claudish-to-english",
+  "packages": [],
+  "status": "ok"
+ },
+ "1330702515": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/fx",
   "packages": [],
   "status": "ok"
  },
@@ -877,9 +2573,27 @@
   ],
   "status": "ok"
  },
+ "1331636953": {
+  "checked": "2026-11-13",
+  "full_name": "zhu1090093659/dsh-web",
+  "packages": [],
+  "status": "ok"
+ },
+ "1331728719": {
+  "checked": "2026-11-13",
+  "full_name": "Hisn00w/ASu-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1331882604": {
   "checked": "2026-11-13",
   "full_name": "scenario-labs/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1332080070": {
+  "checked": "2026-11-13",
+  "full_name": "dmmulroy/anti-slop",
   "packages": [],
   "status": "ok"
  },
@@ -904,6 +2618,12 @@
     "@deepseek-harness-tui/dsh-tui"
    ]
   ],
+  "status": "ok"
+ },
+ "1333165619": {
+  "checked": "2026-11-13",
+  "full_name": "dataelement/dsh-desktop",
+  "packages": [],
   "status": "ok"
  },
  "1333175049": {
@@ -951,6 +2671,35 @@
   ],
   "status": "ok"
  },
+ "1333961389": {
+  "checked": "2026-11-13",
+  "full_name": "bowenliang123/dsh-context",
+  "packages": [
+   [
+    "npm",
+    "dsh-context"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1334011664": {
+  "checked": "2026-11-13",
+  "full_name": "dream-num/univer-workspace",
+  "packages": [],
+  "status": "ok"
+ },
+ "1334198162": {
+  "checked": "2026-11-13",
+  "full_name": "NxcoreAI/EverRoom",
+  "packages": [],
+  "status": "ok"
+ },
+ "1334245678": {
+  "checked": "2026-11-13",
+  "full_name": "xiaobright/dsh-anchored-standard",
+  "packages": [],
+  "status": "ok"
+ },
  "1334325657": {
   "checked": "2026-11-13",
   "full_name": "liguobao/ds-harness-remote",
@@ -960,6 +2709,30 @@
     "ds-harness-remote"
    ]
   ],
+  "status": "ok"
+ },
+ "1334373503": {
+  "checked": "2026-11-13",
+  "full_name": "Ebony-Vinyl/EAC-Desktop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1334586481": {
+  "checked": "2026-11-13",
+  "full_name": "yjh051108/dsh-routing-suite",
+  "packages": [],
+  "status": "ok"
+ },
+ "1334897143": {
+  "checked": "2026-11-13",
+  "full_name": "EvoMap/AutoResearch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1335823455": {
+  "checked": "2026-11-13",
+  "full_name": "chengyi-ai/native-subtitle-quote-image",
+  "packages": [],
   "status": "ok"
  },
  "1336114531": {
@@ -979,9 +2752,240 @@
   "packages": [],
   "status": "ok"
  },
+ "1336933337": {
+  "checked": "2026-11-13",
+  "full_name": "yetone/cumora",
+  "packages": [],
+  "status": "ok"
+ },
+ "1337274902": {
+  "checked": "2026-11-13",
+  "full_name": "MerZlin/dsh-pet-indesktop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1337920628": {
+  "checked": "2026-11-13",
+  "full_name": "MeteorNOX/DeepSeek-Balance-Whale-Widget",
+  "packages": [
+   [
+    "npm",
+    "dsh-whale-widget"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1337955304": {
+  "checked": "2026-11-13",
+  "full_name": "wang2122/sprix-sage-router",
+  "packages": [],
+  "status": "ok"
+ },
+ "1338470635": {
+  "checked": "2026-11-13",
+  "full_name": "s1dashu/ip-as-logo-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1338539251": {
+  "checked": "2026-11-13",
+  "full_name": "devdotfast/whiteboard",
+  "packages": [],
+  "status": "ok"
+ },
+ "1339161831": {
+  "checked": "2026-11-13",
+  "full_name": "yanliudesign/mono-color-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1339256252": {
+  "checked": "2026-11-13",
+  "full_name": "YuJunZhiXue/dsh-purge",
+  "packages": [],
+  "status": "ok"
+ },
+ "1339742577": {
+  "checked": "2026-11-13",
+  "full_name": "amagine-ai/Amagine3D",
+  "packages": [],
+  "status": "ok"
+ },
+ "1340508826": {
+  "checked": "2026-11-13",
+  "full_name": "hardbeat920/monocode",
+  "packages": [
+   [
+    "npm",
+    "monocode"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1341067556": {
+  "checked": "2026-11-13",
+  "full_name": "coldteadotai/pr-lens",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342461518": {
+  "checked": "2026-11-13",
+  "full_name": "ApodexAI/FrontierAgent",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342737409": {
+  "checked": "2026-11-13",
+  "full_name": "FireRedTeam/FireRedAudio",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342876750": {
+  "checked": "2026-11-13",
+  "full_name": "totec448-spec/chat-on-steroids",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342886503": {
+  "checked": "2026-11-13",
+  "full_name": "duty1g/x64dbg-mcp-server",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342930695": {
+  "checked": "2026-11-13",
+  "full_name": "nateherkai/scroll-craft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1342935078": {
+  "checked": "2026-11-13",
+  "full_name": "bojieli/ai-infra-book",
+  "packages": [],
+  "status": "ok"
+ },
+ "1344208527": {
+  "checked": "2026-11-13",
+  "full_name": "b-nnett/grok-bot-0.18-reconstructed",
+  "packages": [],
+  "status": "ok"
+ },
+ "1344939825": {
+  "checked": "2026-11-13",
+  "full_name": "software-mansion-labs/goldie",
+  "packages": [],
+  "status": "ok"
+ },
+ "1345185947": {
+  "checked": "2026-11-13",
+  "full_name": "amosblomqvist/learn",
+  "packages": [],
+  "status": "ok"
+ },
+ "1345838715": {
+  "checked": "2026-11-13",
+  "full_name": "Derpyu520/qq-bridge",
+  "packages": [],
+  "status": "ok"
+ },
  "1346499044": {
   "checked": "2026-11-13",
   "full_name": "jub0t/Concat",
+  "packages": [],
+  "status": "ok"
+ },
+ "1346870728": {
+  "checked": "2026-11-13",
+  "full_name": "monid-ai/monid",
+  "packages": [],
+  "status": "ok"
+ },
+ "1346970181": {
+  "checked": "2026-11-13",
+  "full_name": "wide-trace/open-higgsfield",
+  "packages": [],
+  "status": "ok"
+ },
+ "1348577064": {
+  "checked": "2026-11-13",
+  "full_name": "sapientinc/PRAXIST",
+  "packages": [],
+  "status": "ok"
+ },
+ "1349122168": {
+  "checked": "2026-11-13",
+  "full_name": "ZJU-REAL/Easel",
+  "packages": [],
+  "status": "ok"
+ },
+ "1349253750": {
+  "checked": "2026-11-13",
+  "full_name": "Nanako0129/sepia",
+  "packages": [],
+  "status": "ok"
+ },
+ "1349507889": {
+  "checked": "2026-11-13",
+  "full_name": "Player-YN/BrowserKitten",
+  "packages": [],
+  "status": "ok"
+ },
+ "1349601607": {
+  "checked": "2026-11-13",
+  "full_name": "XiaoDuoYa/codex-with-chatgpt",
+  "packages": [],
+  "status": "ok"
+ },
+ "1350978527": {
+  "checked": "2026-11-13",
+  "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1351879111": {
+  "checked": "2026-11-13",
+  "full_name": "Human-Agent-Society/reef",
+  "packages": [
+   [
+    "pypi",
+    "reef-infra"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1353548665": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/commerce-agents",
+  "packages": [],
+  "status": "ok"
+ },
+ "1354059245": {
+  "checked": "2026-11-13",
+  "full_name": "tigerless-labs/agent-memory",
+  "packages": [],
+  "status": "ok"
+ },
+ "1354267344": {
+  "checked": "2026-11-13",
+  "full_name": "SonicloudTech/sonicloud_opensdk",
+  "packages": [],
+  "status": "ok"
+ },
+ "1354310030": {
+  "checked": "2026-11-13",
+  "full_name": "lnkiai/m3e-canvas",
+  "packages": [],
+  "status": "ok"
+ },
+ "1354701193": {
+  "checked": "2026-11-13",
+  "full_name": "shadcn-ui/lint",
+  "packages": [],
+  "status": "ok"
+ },
+ "1354887280": {
+  "checked": "2026-11-13",
+  "full_name": "NVlabs/SoL-Pi",
   "packages": [],
   "status": "ok"
  },
@@ -991,9 +2995,87 @@
   "packages": [],
   "status": "ok"
  },
+ "1356644576": {
+  "checked": "2026-11-13",
+  "full_name": "Taichu-AI/ZDTaichu5.0-9B",
+  "packages": [],
+  "status": "ok"
+ },
+ "1356772546": {
+  "checked": "2026-11-13",
+  "full_name": "Mantitup-Org/vista",
+  "packages": [],
+  "status": "ok"
+ },
+ "1357272370": {
+  "checked": "2026-11-13",
+  "full_name": "Rion-Wu-tech/wechat-intelligence-hub",
+  "packages": [],
+  "status": "ok"
+ },
+ "1357699236": {
+  "checked": "2026-11-13",
+  "full_name": "ashemag/human-atlas",
+  "packages": [],
+  "status": "ok"
+ },
+ "1358295353": {
+  "checked": "2026-11-13",
+  "full_name": "vinzdg/codenotch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1358588929": {
+  "checked": "2026-11-13",
+  "full_name": "yang0/handraw-style",
+  "packages": [],
+  "status": "ok"
+ },
  "1359648985": {
   "checked": "2026-11-13",
   "full_name": "eternity4719/HowToLiveBetter",
+  "packages": [],
+  "status": "ok"
+ },
+ "1359963149": {
+  "checked": "2026-11-13",
+  "full_name": "qingjian-team/qingjian",
+  "packages": [],
+  "status": "ok"
+ },
+ "1360432710": {
+  "checked": "2026-11-13",
+  "full_name": "sdli1995/dlssg_for_sm86",
+  "packages": [],
+  "status": "ok"
+ },
+ "1361439328": {
+  "checked": "2026-11-13",
+  "full_name": "Edge0-AI/Edge0",
+  "packages": [],
+  "status": "ok"
+ },
+ "1361693766": {
+  "checked": "2026-11-13",
+  "full_name": "Vincentwei1021/anything2explainer",
+  "packages": [],
+  "status": "ok"
+ },
+ "1363417187": {
+  "checked": "2026-11-13",
+  "full_name": "yi1108/printfilm",
+  "packages": [],
+  "status": "ok"
+ },
+ "1366969284": {
+  "checked": "2026-11-13",
+  "full_name": "linguo2625469/workbuddy2api-panel",
+  "packages": [],
+  "status": "ok"
+ },
+ "1367131646": {
+  "checked": "2026-11-13",
+  "full_name": "ardeyouxipianyi/workbuddy2api-hub",
   "packages": [],
   "status": "ok"
  },
@@ -1009,9 +3091,57 @@
   "packages": [],
   "status": "ok"
  },
+ "1371757322": {
+  "checked": "2026-11-13",
+  "full_name": "CopilotKit/openmuse",
+  "packages": [],
+  "status": "ok"
+ },
+ "1372482979": {
+  "checked": "2026-11-13",
+  "full_name": "TheoLeeCJ/SemIf-OpenJev",
+  "packages": [],
+  "status": "ok"
+ },
  "1373084533": {
   "checked": "2026-11-13",
   "full_name": "Jakeschincariol/youtube-agent-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1373655162": {
+  "checked": "2026-11-13",
+  "full_name": "browser-use/jev-ultrafast",
+  "packages": [],
+  "status": "ok"
+ },
+ "1373659194": {
+  "checked": "2026-11-13",
+  "full_name": "jarrodwatts/jev-trader",
+  "packages": [],
+  "status": "ok"
+ },
+ "1374005005": {
+  "checked": "2026-11-13",
+  "full_name": "tamaratran/fast-jev-compaction",
+  "packages": [],
+  "status": "ok"
+ },
+ "1374702542": {
+  "checked": "2026-11-13",
+  "full_name": "TianyuCodings/NanoJev",
+  "packages": [],
+  "status": "ok"
+ },
+ "1375069862": {
+  "checked": "2026-11-13",
+  "full_name": "jaredpalmer/kev",
+  "packages": [],
+  "status": "ok"
+ },
+ "1375382253": {
+  "checked": "2026-11-13",
+  "full_name": "NandhaKishorM/laya",
   "packages": [],
   "status": "ok"
  },
@@ -1021,10 +3151,74 @@
   "packages": [],
   "status": "ok"
  },
+ "1377211520": {
+  "checked": "2026-11-13",
+  "full_name": "mizorewww/laya-mlx",
+  "packages": [
+   [
+    "pypi",
+    "laya-mlx"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1378288598": {
+  "checked": "2026-11-13",
+  "full_name": "zai-org/ZCode",
+  "packages": [],
+  "status": "ok"
+ },
+ "1379137016": {
+  "checked": "2026-11-13",
+  "full_name": "omnirush-ai/omnirush-gui",
+  "packages": [],
+  "status": "ok"
+ },
+ "1379574728": {
+  "checked": "2026-11-13",
+  "full_name": "jev-chat/jev-chat-jarvis",
+  "packages": [],
+  "status": "ok"
+ },
+ "1380635125": {
+  "checked": "2026-11-13",
+  "full_name": "unreallabsai/unreal-agent",
+  "packages": [],
+  "status": "ok"
+ },
+ "1381783784": {
+  "checked": "2026-11-13",
+  "full_name": "amontlabs/lcu",
+  "packages": [],
+  "status": "ok"
+ },
+ "1382467199": {
+  "checked": "2026-11-13",
+  "full_name": "JohnHeibel/PDoomVideo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1382865521": {
+  "checked": "2026-11-13",
+  "full_name": "nano-muse/nanoMuse",
+  "packages": [],
+  "status": "ok"
+ },
  "1383809012": {
   "checked": "2026-11-13",
   "full_name": "yetone/magpie",
   "packages": [],
+  "status": "ok"
+ },
+ "1384094559": {
+  "checked": "2026-11-13",
+  "full_name": "Contrastive-LM/CLM",
+  "packages": [
+   [
+    "pypi",
+    "contrastive-lm"
+   ]
+  ],
   "status": "ok"
  },
  "1385896447": {
@@ -1044,6 +3238,29 @@
   "packages": [],
   "status": "ok"
  },
+ "1388482474": {
+  "checked": "2026-11-13",
+  "full_name": "dzhng/jevgrep",
+  "packages": [
+   [
+    "npm",
+    "@dzhng/jevgrep"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1388594776": {
+  "checked": "2026-11-13",
+  "full_name": "feitangyuan/onetake",
+  "packages": [],
+  "status": "ok"
+ },
+ "1388867993": {
+  "checked": "2026-11-13",
+  "full_name": "kaankiziltug/logo-design-skill",
+  "packages": [],
+  "status": "ok"
+ },
  "1389011744": {
   "checked": "2026-11-13",
   "full_name": "lemomo-ai/lemo-opuscar",
@@ -1056,9 +3273,44 @@
   "packages": [],
   "status": "ok"
  },
+ "1391438314": {
+  "checked": "2026-11-13",
+  "full_name": "Louis-CFM/coucou",
+  "packages": [],
+  "status": "ok"
+ },
  "1393965829": {
   "checked": "2026-11-13",
   "full_name": "KKKKhazix/AIHOT",
+  "packages": [],
+  "status": "ok"
+ },
+ "1394045721": {
+  "checked": "2026-11-13",
+  "full_name": "nykooi1/vibe-wise",
+  "packages": [],
+  "status": "ok"
+ },
+ "1395994653": {
+  "checked": "2026-11-13",
+  "full_name": "shader-effects-inc/shaders",
+  "packages": [
+   [
+    "npm",
+    "shaders"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1396117711": {
+  "checked": "2026-11-13",
+  "full_name": "CopilotKit/OpenDots",
+  "packages": [],
+  "status": "ok"
+ },
+ "1397016507": {
+  "checked": "2026-11-13",
+  "full_name": "rehan-remade/universal-modder",
   "packages": [],
   "status": "ok"
  },
@@ -1074,6 +3326,48 @@
   "packages": [],
   "status": "ok"
  },
+ "1398091865": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/filmcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1398097510": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/vectorcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1398185212": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/lightcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1400018213": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/designcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1400136506": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/effectcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1401461555": {
+  "checked": "2026-11-13",
+  "full_name": "Vincentwei1021/mg-styles-15",
+  "packages": [],
+  "status": "ok"
+ },
+ "1401469171": {
+  "checked": "2026-11-13",
+  "full_name": "Folkbench/folkbench",
+  "packages": [],
+  "status": "ok"
+ },
  "1401476500": {
   "checked": "2026-11-13",
   "full_name": "QingYunA/answer-me-with-html",
@@ -1083,6 +3377,18 @@
  "1403115747": {
   "checked": "2026-11-13",
   "full_name": "Jakeschincariol/replica-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1403307052": {
+  "checked": "2026-11-13",
+  "full_name": "jiwoochris/artex-global",
+  "packages": [],
+  "status": "ok"
+ },
+ "1403847264": {
+  "checked": "2026-11-13",
+  "full_name": "shinshin86/mesh-avatar-studio",
   "packages": [],
   "status": "ok"
  },
@@ -1097,9 +3403,57 @@
   ],
   "status": "ok"
  },
+ "1406706284": {
+  "checked": "2026-11-13",
+  "full_name": "alchaincyf/huashu-art-motion",
+  "packages": [],
+  "status": "ok"
+ },
+ "1407504032": {
+  "checked": "2026-11-13",
+  "full_name": "zhongerxin/iPhone-use",
+  "packages": [],
+  "status": "ok"
+ },
+ "1407950271": {
+  "checked": "2026-11-13",
+  "full_name": "openai/math",
+  "packages": [],
+  "status": "ok"
+ },
  "1407951147": {
   "checked": "2026-11-13",
   "full_name": "google-research/harness2",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408277479": {
+  "checked": "2026-11-13",
+  "full_name": "HelixDB/helix-foundry",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408285582": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/gridcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408289866": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/cadcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408294296": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/deckcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408486424": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/soundcraft",
   "packages": [],
   "status": "ok"
  },
@@ -1126,15 +3480,55 @@
   "packages": [],
   "status": "ok"
  },
+ "1409893258": {
+  "checked": "2026-11-13",
+  "full_name": "T-Auto/dsh-ops",
+  "packages": [
+   [
+    "npm",
+    "dsh-ops"
+   ]
+  ],
+  "status": "ok"
+ },
  "1410124849": {
   "checked": "2026-11-13",
   "full_name": "wheresryan22/anatomy",
   "packages": [],
   "status": "ok"
  },
+ "1410926671": {
+  "checked": "2026-11-13",
+  "full_name": "trhhubsd/ARTEX",
+  "packages": [],
+  "status": "ok"
+ },
+ "1410929004": {
+  "checked": "2026-11-13",
+  "full_name": "ARahim3/DigUp",
+  "packages": [],
+  "status": "ok"
+ },
+ "1415214046": {
+  "checked": "2026-11-13",
+  "full_name": "zhuyansen/new-term-radar",
+  "packages": [
+   [
+    "pypi",
+    "new-term-radar"
+   ]
+  ],
+  "status": "ok"
+ },
  "1416442720": {
   "checked": "2026-11-13",
   "full_name": "microsoft/TokenEconomizer",
+  "packages": [],
+  "status": "ok"
+ },
+ "1420743720": {
+  "checked": "2026-11-13",
+  "full_name": "Tencent-Hunyuan/Hy-Memory",
   "packages": [],
   "status": "ok"
  },
@@ -1167,6 +3561,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1422883896": {
+  "checked": "2026-11-13",
+  "full_name": "aicodeking/leanrea",
+  "packages": [],
+  "status": "ok"
+ },
  "1423101235": {
   "checked": "2026-11-13",
   "full_name": "Gathin23/cleanyourtv",
@@ -1176,6 +3576,12 @@
  "1423892373": {
   "checked": "2026-11-13",
   "full_name": "Zagitta/gpu-unlock",
+  "packages": [],
+  "status": "ok"
+ },
+ "1426240325": {
+  "checked": "2026-11-13",
+  "full_name": "JoasASantos/REA-Prompts",
   "packages": [],
   "status": "ok"
  },
@@ -1250,6 +3656,40 @@
   "packages": [],
   "status": "ok"
  },
+ "155220641": {
+  "checked": "2026-11-13",
+  "full_name": "huggingface/transformers",
+  "packages": [
+   [
+    "pypi",
+    "transformers"
+   ]
+  ],
+  "status": "ok"
+ },
+ "193215554": {
+  "checked": "2026-11-13",
+  "full_name": "n8n-io/n8n",
+  "packages": [
+   [
+    "npm",
+    "n8n"
+   ]
+  ],
+  "status": "ok"
+ },
+ "204164353": {
+  "checked": "2026-11-13",
+  "full_name": "kestra-io/kestra",
+  "packages": [],
+  "status": "ok"
+ },
+ "254832799": {
+  "checked": "2026-11-13",
+  "full_name": "Z4nzu/hackingtool",
+  "packages": [],
+  "status": "ok"
+ },
  "274495425": {
   "checked": "2026-11-13",
   "full_name": "remotion-dev/remotion",
@@ -1261,10 +3701,67 @@
   ],
   "status": "ok"
  },
+ "344190478": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/AI-For-Beginners",
+  "packages": [],
+  "status": "ok"
+ },
+ "436039945": {
+  "checked": "2026-11-13",
+  "full_name": "aklivity/zilla",
+  "packages": [],
+  "status": "ok"
+ },
+ "45717250": {
+  "checked": "2026-11-13",
+  "full_name": "tensorflow/tensorflow",
+  "packages": [
+   [
+    "pypi",
+    "tensorflow"
+   ]
+  ],
+  "status": "ok"
+ },
  "476507964": {
   "checked": "2026-11-13",
   "full_name": "storytold/artcraft",
   "packages": [],
+  "status": "ok"
+ },
+ "543101941": {
+  "checked": "2026-11-13",
+  "full_name": "dream-num/univer",
+  "packages": [],
+  "status": "ok"
+ },
+ "552661142": {
+  "checked": "2026-11-13",
+  "full_name": "langchain-ai/langchain",
+  "packages": [
+   [
+    "pypi",
+    "langchain"
+   ]
+  ],
+  "status": "ok"
+ },
+ "568098118": {
+  "checked": "2026-11-13",
+  "full_name": "makeplane/plane",
+  "packages": [],
+  "status": "ok"
+ },
+ "571613891": {
+  "checked": "2026-11-13",
+  "full_name": "roboflow/supervision",
+  "packages": [
+   [
+    "pypi",
+    "supervision"
+   ]
+  ],
   "status": "ok"
  },
  "574523116": {
@@ -1284,6 +3781,12 @@
   ],
   "status": "ok"
  },
+ "585146387": {
+  "checked": "2026-11-13",
+  "full_name": "shadcn-ui/ui",
+  "packages": [],
+  "status": "ok"
+ },
  "589831718": {
   "checked": "2026-11-13",
   "full_name": "Comfy-Org/ComfyUI",
@@ -1296,15 +3799,101 @@
   "packages": [],
   "status": "ok"
  },
+ "617502359": {
+  "checked": "2026-11-13",
+  "full_name": "vastsa/PI-Desktop",
+  "packages": [],
+  "status": "ok"
+ },
+ "626805178": {
+  "checked": "2026-11-13",
+  "full_name": "langgenius/dify",
+  "packages": [],
+  "status": "ok"
+ },
  "638513786": {
   "checked": "2026-11-13",
   "full_name": "Anil-matcha/Open-Generative-AI",
   "packages": [],
   "status": "ok"
  },
+ "652712035": {
+  "checked": "2026-11-13",
+  "full_name": "lyogavin/airllm",
+  "packages": [
+   [
+    "pypi",
+    "airllm"
+   ]
+  ],
+  "status": "ok"
+ },
+ "655806940": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/generative-ai-for-beginners",
+  "packages": [],
+  "status": "ok"
+ },
+ "65600975": {
+  "checked": "2026-11-13",
+  "full_name": "pytorch/pytorch",
+  "packages": [
+   [
+    "pypi",
+    "torch"
+   ]
+  ],
+  "status": "ok"
+ },
  "658928958": {
   "checked": "2026-11-13",
   "full_name": "ollama/ollama",
+  "packages": [],
+  "status": "ok"
+ },
+ "668673665": {
+  "checked": "2026-11-13",
+  "full_name": "FalkorDB/FalkorDB",
+  "packages": [],
+  "status": "ok"
+ },
+ "669879380": {
+  "checked": "2026-11-13",
+  "full_name": "rasbt/LLMs-from-scratch",
+  "packages": [],
+  "status": "ok"
+ },
+ "679343504": {
+  "checked": "2026-11-13",
+  "full_name": "topoteretes/cognee",
+  "packages": [
+   [
+    "pypi",
+    "cognee"
+   ]
+  ],
+  "status": "ok"
+ },
+ "701547123": {
+  "checked": "2026-11-13",
+  "full_name": "open-webui/open-webui",
+  "packages": [],
+  "status": "ok"
+ },
+ "740303686": {
+  "checked": "2026-11-13",
+  "full_name": "sgl-project/sglang",
+  "packages": [
+   [
+    "pypi",
+    "sglang"
+   ]
+  ],
+  "status": "ok"
+ },
+ "753163587": {
+  "checked": "2026-11-13",
+  "full_name": "clshortfuse/renodx",
   "packages": [],
   "status": "ok"
  },
@@ -1317,6 +3906,12 @@
     "mpt"
    ]
   ],
+  "status": "ok"
+ },
+ "775839592": {
+  "checked": "2026-11-13",
+  "full_name": "marin-community/marin",
+  "packages": [],
   "status": "ok"
  },
  "783730789": {
@@ -1340,6 +3935,63 @@
   ],
   "status": "ok"
  },
+ "793375104": {
+  "checked": "2026-11-13",
+  "full_name": "Shubhamsaboo/awesome-llm-apps",
+  "packages": [],
+  "status": "ok"
+ },
+ "793784055": {
+  "checked": "2026-11-13",
+  "full_name": "google-research/timesfm",
+  "packages": [],
+  "status": "ok"
+ },
+ "821266090": {
+  "checked": "2026-11-13",
+  "full_name": "genlayerlabs/genlayer-project-boilerplate",
+  "packages": [],
+  "status": "ok"
+ },
+ "824874689": {
+  "checked": "2026-11-13",
+  "full_name": "cline/cline",
+  "packages": [
+   [
+    "npm",
+    "cline"
+   ]
+  ],
+  "status": "ok"
+ },
+ "826515105": {
+  "checked": "2026-11-13",
+  "full_name": "CodebuffAI/freebuff",
+  "packages": [
+   [
+    "npm",
+    "freebuff"
+   ]
+  ],
+  "status": "ok"
+ },
+ "834369920": {
+  "checked": "2026-11-13",
+  "full_name": "jingyaogong/minimind",
+  "packages": [],
+  "status": "ok"
+ },
+ "839428333": {
+  "checked": "2026-11-13",
+  "full_name": "huggingface/speech-to-speech",
+  "packages": [
+   [
+    "pypi",
+    "speech-to-speech"
+   ]
+  ],
+  "status": "ok"
+ },
  "872119017": {
   "checked": "2026-11-13",
   "full_name": "D4Vinci/Scrapling",
@@ -1357,6 +4009,12 @@
   "packages": [],
   "status": "ok"
  },
+ "876286167": {
+  "checked": "2026-11-13",
+  "full_name": "lfnovo/open-notebook",
+  "packages": [],
+  "status": "ok"
+ },
  "888092115": {
   "checked": "2026-11-13",
   "full_name": "microsoft/markitdown",
@@ -1364,6 +4022,50 @@
    [
     "pypi",
     "markitdown"
+   ]
+  ],
+  "status": "ok"
+ },
+ "891997126": {
+  "checked": "2026-11-13",
+  "full_name": "ailyProject/aily-blockly",
+  "packages": [],
+  "status": "ok"
+ },
+ "895508656": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/ai-agents-for-beginners",
+  "packages": [],
+  "status": "ok"
+ },
+ "896924279": {
+  "checked": "2026-11-13",
+  "full_name": "moeru-ai/airi",
+  "packages": [],
+  "status": "ok"
+ },
+ "901529145": {
+  "checked": "2026-11-13",
+  "full_name": "The-Swarm-Corporation/AutoHedge",
+  "packages": [
+   [
+    "pypi",
+    "autohedge"
+   ]
+  ],
+  "status": "ok"
+ },
+ "908589694": {
+  "checked": "2026-11-13",
+  "full_name": "Zackriya-Solutions/meetily",
+  "packages": [
+   [
+    "pypi",
+    "meetily"
+   ],
+   [
+    "npm",
+    "meetily"
    ]
   ],
   "status": "ok"
@@ -1391,6 +4093,12 @@
   "packages": [],
   "status": "ok"
  },
+ "915520679": {
+  "checked": "2026-11-13",
+  "full_name": "FareedKhan-dev/train-llm-from-scratch",
+  "packages": [],
+  "status": "ok"
+ },
  "931888694": {
   "checked": "2026-11-13",
   "full_name": "cjpais/Handy",
@@ -1408,6 +4116,23 @@
   ],
   "status": "ok"
  },
+ "942867788": {
+  "checked": "2026-11-13",
+  "full_name": "elder-plinius/CL4R1T4S",
+  "packages": [],
+  "status": "ok"
+ },
+ "958531089": {
+  "checked": "2026-11-13",
+  "full_name": "VectifyAI/PageIndex",
+  "packages": [
+   [
+    "pypi",
+    "pageindex"
+   ]
+  ],
+  "status": "ok"
+ },
  "965415649": {
   "checked": "2026-11-13",
   "full_name": "openai/codex",
@@ -1419,9 +4144,45 @@
   ],
   "status": "ok"
  },
+ "968197216": {
+  "checked": "2026-11-13",
+  "full_name": "google-gemini/gemini-cli",
+  "packages": [],
+  "status": "ok"
+ },
+ "969302809": {
+  "checked": "2026-11-13",
+  "full_name": "hesreallyhim/awesome-claude-code",
+  "packages": [],
+  "status": "ok"
+ },
+ "974591843": {
+  "checked": "2026-11-13",
+  "full_name": "ChenLiu-1996/figures4papers",
+  "packages": [],
+  "status": "ok"
+ },
  "975734319": {
   "checked": "2026-11-13",
   "full_name": "anomalyco/opencode",
+  "packages": [],
+  "status": "ok"
+ },
+ "976921297": {
+  "checked": "2026-11-13",
+  "full_name": "asgeirtj/system_prompts_leaks",
+  "packages": [],
+  "status": "ok"
+ },
+ "979115477": {
+  "checked": "2026-11-13",
+  "full_name": "bytedance/deer-flow",
+  "packages": [],
+  "status": "ok"
+ },
+ "994093166": {
+  "checked": "2026-11-13",
+  "full_name": "omacom/omarchy",
   "packages": [],
   "status": "ok"
  },

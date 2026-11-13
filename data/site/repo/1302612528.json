@@ -1,0 +1,87 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Open-source AI teammates in Slack, Teams, Discord, Telegram and Mattermost. Self-host it, with any agent harness and any model.",
+ "full_name": "sandbox-quantum/switch",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 15.08,
+    "s2": 0.0,
+    "s3": 29.5,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 57.53,
+   "rank": 57,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 15.08,
+   "s2": 0.0,
+   "s3": 29.5,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "sandbox-quantum/switch",
+  "index": 57.53,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 55.28,
+   "s2": null,
+   "s3": 64.91,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 57,
+  "raw": {
+   "s1_stars_gain": 1772,
+   "s2_fork_delta": null,
+   "s2_forks": 349,
+   "s3_closed_issues": 8,
+   "s3_merged_prs": 55,
+   "s3_pr_authors": 8,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1302612528,
+  "star_rank": 90,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1302612528,
+ "topics": [
+  "agent-orchestration",
+  "ai",
+  "ai-agents",
+  "chatops",
+  "discord",
+  "langchain",
+  "mcp",
+  "microsoft-teams",
+  "multi-agent",
+  "open-source",
+  "openai",
+  "self-hosted",
+  "slack"
+ ]
+}

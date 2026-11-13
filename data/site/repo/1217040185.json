@@ -1,0 +1,215 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": null,
+ "full_name": "tashfeenahmed/freellmapi",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.43,
+    "s2": 0.0,
+    "s3": 20.33,
+    "s4": 5.23,
+    "s5": 8.16
+   },
+   "index": 38.15,
+   "rank": 148,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.01,
+    "s2": 0.0,
+    "s3": 21.72,
+    "s4": 8.26,
+    "s5": 8.12
+   },
+   "index": 53.11,
+   "rank": 84,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 24.26,
+    "s4": 11.26,
+    "s5": 8.29
+   },
+   "index": 57.38,
+   "rank": 67,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.92,
+    "s2": 0.0,
+    "s3": 14.26,
+    "s4": 7.76,
+    "s5": 8.08
+   },
+   "index": 40.03,
+   "rank": 142,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.88,
+    "s2": 0.0,
+    "s3": 23.34,
+    "s4": 11.51,
+    "s5": 8.11
+   },
+   "index": 54.85,
+   "rank": 78,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.65,
+    "s2": 0.0,
+    "s3": 20.68,
+    "s4": 10.22,
+    "s5": 8.12
+   },
+   "index": 50.66,
+   "rank": 96,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.21,
+    "s2": 0.0,
+    "s3": 18.66,
+    "s4": 10.08,
+    "s5": 8.12
+   },
+   "index": 48.07,
+   "rank": 104,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.3,
+    "s2": 0.0,
+    "s3": 16.68,
+    "s4": 9.54,
+    "s5": 16.45
+   },
+   "index": 55.97,
+   "rank": 80,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.45,
+    "s2": 0.0,
+    "s3": 20.69,
+    "s4": 9.24,
+    "s5": 8.38
+   },
+   "index": 52.77,
+   "rank": 86,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.26,
+    "s2": 0.0,
+    "s3": 22.07,
+    "s4": 11.03,
+    "s5": 8.32
+   },
+   "index": 56.68,
+   "rank": 65,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.9,
+    "s2": 0.0,
+    "s3": 20.33,
+    "s4": 14.63,
+    "s5": 8.38
+   },
+   "index": 58.24,
+   "rank": 54,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 14.54,
+    "s2": 0.0,
+    "s3": 17.14,
+    "s4": 16.5,
+    "s5": 8.38
+   },
+   "index": 56.56,
+   "rank": 62,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": false,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 14.54,
+   "s2": 0.0,
+   "s3": 17.14,
+   "s4": 16.5,
+   "s5": 8.38
+  },
+  "full_name": "tashfeenahmed/freellmapi",
+  "index": 56.56,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 82.41,
+   "s2": null,
+   "s3": 58.29,
+   "s4": 46.74,
+   "s5": 47.49
+  },
+  "prev_rank": 54,
+  "rank": 62,
+  "raw": {
+   "s1_stars_gain": 3785,
+   "s2_fork_delta": null,
+   "s2_forks": 7135,
+   "s3_closed_issues": 15,
+   "s3_merged_prs": 15,
+   "s3_pr_authors": 5,
+   "s4_dependents": 0,
+   "s4_downloads": 20460,
+   "s4_packages": "npm:freellmapi",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1217040185,
+  "star_rank": 36,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1217040185,
+ "topics": []
+}

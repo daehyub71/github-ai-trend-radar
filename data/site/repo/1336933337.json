@@ -1,0 +1,86 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Where agent teams gather. Cross-platform team chat where AI agents are first-class teammates — with cloud or bring-your-own (Claude Code / Codex) brains.",
+ "full_name": "yetone/cumora",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.57,
+    "s2": 0.0,
+    "s3": 31.5,
+    "s4": 0.0,
+    "s5": 26.24
+   },
+   "index": 81.31,
+   "rank": 5,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.0,
+    "s2": 0.0,
+    "s3": 29.85,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 42.4,
+   "rank": 140,
+   "week": "2026-08-23"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 0.0,
+   "s2": 0.0,
+   "s3": 29.85,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "yetone/cumora",
+  "index": 42.4,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 0.0,
+   "s2": null,
+   "s3": 65.67,
+   "s4": null,
+   "s5": 46.02
+  },
+  "prev_rank": 5,
+  "rank": 140,
+  "raw": {
+   "s1_stars_gain": 351,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 7,
+   "s3_merged_prs": 42,
+   "s3_pr_authors": 7,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1336933337,
+  "star_rank": 297,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-23"
+ },
+ "repo_id": 1336933337,
+ "topics": []
+}

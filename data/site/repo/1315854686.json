@@ -1,0 +1,87 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Open-source, self-hosted revenue-first analytics for founders: web analytics, Session Replay, revenue attribution, and customer revenue integrations. datafast alternative",
+ "full_name": "talivia-group/talivia",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.87,
+    "s2": 0.0,
+    "s3": 6.31,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 28.99,
+   "rank": 171,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 9.87,
+   "s2": 0.0,
+   "s3": 6.31,
+   "s4": 0.0,
+   "s5": 12.81
+  },
+  "full_name": "talivia-group/talivia",
+  "index": 28.99,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 36.18,
+   "s2": null,
+   "s3": 13.87,
+   "s4": null,
+   "s5": 46.98
+  },
+  "prev_rank": null,
+  "rank": 171,
+  "raw": {
+   "s1_stars_gain": 875,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1315854686,
+  "star_rank": 128,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1315854686,
+ "topics": [
+  "analytics",
+  "bing",
+  "datafast",
+  "dodopayments",
+  "google-search",
+  "lemonsqueezy",
+  "polar",
+  "product-analytics",
+  "revenue-analytics",
+  "revenue-attribution",
+  "session-replay",
+  "stripe",
+  "web-analytics"
+ ]
+}

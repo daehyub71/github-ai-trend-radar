@@ -1,0 +1,74 @@
+{
+ "category": "브라우저·컴퓨터 사용 자동화",
+ "description": null,
+ "full_name": "ShawnPana/phone-harness",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 28.14,
+    "s2": 0.0,
+    "s3": 0.0,
+    "s4": 0.0,
+    "s5": 22.86
+   },
+   "index": 51.01,
+   "rank": 94,
+   "week": "2026-08-09"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "브라우저·컴퓨터 사용 자동화",
+  "contrib": {
+   "s1": 28.14,
+   "s2": 0.0,
+   "s3": 0.0,
+   "s4": 0.0,
+   "s5": 22.86
+  },
+  "full_name": "ShawnPana/phone-harness",
+  "index": 51.01,
+  "missing": [
+   "s2",
+   "s3",
+   "s4"
+  ],
+  "pct": {
+   "s1": 56.28,
+   "s2": null,
+   "s3": null,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 94,
+  "raw": {
+   "s1_stars_gain": 1444,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": null,
+   "s3_merged_prs": null,
+   "s3_pr_authors": null,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1327214801,
+  "star_rank": 88,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "failed",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-09"
+ },
+ "repo_id": 1327214801,
+ "topics": []
+}

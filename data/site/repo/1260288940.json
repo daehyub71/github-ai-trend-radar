@@ -1,0 +1,72 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "Give your agent a computer 👾",
+ "full_name": "cloudflare/computer",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.55,
+    "s2": 0.0,
+    "s3": 15.94,
+    "s4": 20.92,
+    "s5": 8.07
+   },
+   "index": 55.48,
+   "rank": 72,
+   "week": "2026-08-09"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 10.55,
+   "s2": 0.0,
+   "s3": 15.94,
+   "s4": 20.92,
+   "s5": 8.07
+  },
+  "full_name": "cloudflare/computer",
+  "index": 55.48,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 59.8,
+   "s2": null,
+   "s3": 54.19,
+   "s4": 59.26,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 72,
+  "raw": {
+   "s1_stars_gain": 1571,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 7,
+   "s3_merged_prs": 12,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": 45277,
+   "s4_packages": "npm:@cloudflare/computer",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1260288940,
+  "star_rank": 81,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-09"
+ },
+ "repo_id": 1260288940,
+ "topics": []
+}

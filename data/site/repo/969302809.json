@@ -1,0 +1,73 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": null,
+ "full_name": "hesreallyhim/awesome-claude-code",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.41,
+    "s2": 0.0,
+    "s3": 13.88,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 27.24,
+   "rank": 181,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 0.41,
+   "s2": 0.0,
+   "s3": 13.88,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "hesreallyhim/awesome-claude-code",
+  "index": 27.24,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 1.51,
+   "s2": null,
+   "s3": 30.54,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 181,
+  "raw": {
+   "s1_stars_gain": 590,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 22,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 969302809,
+  "star_rank": 197,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 969302809,
+ "topics": []
+}

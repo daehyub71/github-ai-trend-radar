@@ -1,0 +1,228 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "Lightweight coding agent that runs in your terminal",
+ "full_name": "openai/codex",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.58,
+    "s2": 0.0,
+    "s3": 12.02,
+    "s4": 33.99,
+    "s5": 16.61
+   },
+   "index": 72.19,
+   "rank": 18,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.2,
+    "s2": 0.0,
+    "s3": 11.6,
+    "s4": 35.29,
+    "s5": 17.51
+   },
+   "index": 81.61,
+   "rank": 4,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.94,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 35.29,
+    "s5": 16.68
+   },
+   "index": 84.19,
+   "rank": 3,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.95,
+    "s2": 0.0,
+    "s3": 18.94,
+    "s4": 35.29,
+    "s5": 17.6
+   },
+   "index": 84.78,
+   "rank": 4,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.43,
+    "s2": 0.0,
+    "s3": 11.97,
+    "s4": 35.29,
+    "s5": 8.08
+   },
+   "index": 68.78,
+   "rank": 26,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.97,
+    "s2": 0.0,
+    "s3": 16.22,
+    "s4": 34.53,
+    "s5": 8.11
+   },
+   "index": 70.84,
+   "rank": 21,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.06,
+    "s2": 0.0,
+    "s3": 12.34,
+    "s4": 35.29,
+    "s5": 8.12
+   },
+   "index": 65.81,
+   "rank": 33,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.32,
+    "s2": 0.0,
+    "s3": 17.97,
+    "s4": 35.29,
+    "s5": 8.12
+   },
+   "index": 71.7,
+   "rank": 21,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.09,
+    "s2": 0.0,
+    "s3": 14.53,
+    "s4": 34.34,
+    "s5": 16.67
+   },
+   "index": 72.64,
+   "rank": 20,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.21,
+    "s2": 0.0,
+    "s3": 12.12,
+    "s4": 35.29,
+    "s5": 17.65
+   },
+   "index": 71.27,
+   "rank": 24,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.0,
+    "s2": 0.0,
+    "s3": 11.65,
+    "s4": 35.29,
+    "s5": 12.62
+   },
+   "index": 65.56,
+   "rank": 33,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.55,
+    "s2": 0.0,
+    "s3": 11.79,
+    "s4": 35.29,
+    "s5": 8.38
+   },
+   "index": 66.02,
+   "rank": 30,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.94,
+    "s2": 0.0,
+    "s3": 11.53,
+    "s4": 26.09,
+    "s5": 17.51
+   },
+   "index": 61.07,
+   "rank": 44,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": false,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 5.94,
+   "s2": 0.0,
+   "s3": 11.53,
+   "s4": 26.09,
+   "s5": 17.51
+  },
+  "full_name": "openai/codex",
+  "index": 61.07,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 33.67,
+   "s2": null,
+   "s3": 39.2,
+   "s4": 73.91,
+   "s5": 99.25
+  },
+  "prev_rank": 30,
+  "rank": 44,
+  "raw": {
+   "s1_stars_gain": 1154,
+   "s2_fork_delta": null,
+   "s2_forks": 21423,
+   "s3_closed_issues": 136,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": 0,
+   "s4_downloads": 26021465,
+   "s4_packages": "npm:@openai/codex",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 52,
+   "s5_hn_stories": 2
+  },
+  "repo_id": 965415649,
+  "star_rank": 133,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 965415649,
+ "topics": []
+}

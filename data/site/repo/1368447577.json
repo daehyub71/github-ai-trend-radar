@@ -1,0 +1,99 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": null,
+ "full_name": "Jakeschincariol/instagram-agent-skill",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.8,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 23.61,
+   "rank": 190,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.27,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 22.62,
+   "rank": 197,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 9.46,
+    "s2": 0.0,
+    "s3": 5.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 28.12,
+   "rank": 185,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 9.46,
+   "s2": 0.0,
+   "s3": 5.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "Jakeschincariol/instagram-agent-skill",
+  "index": 28.12,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 34.67,
+   "s2": null,
+   "s3": 12.56,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 185,
+  "raw": {
+   "s1_stars_gain": 1178,
+   "s2_fork_delta": null,
+   "s2_forks": 1211,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1368447577,
+  "star_rank": 131,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1368447577,
+ "topics": []
+}

@@ -1,0 +1,249 @@
+{
+ "category": "멀티모달(이미지·음성·영상)",
+ "description": "π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, and presence detection — all without a single pixel of video.",
+ "full_name": "ruvnet/RuView",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.49,
+    "s2": 0.0,
+    "s3": 14.76,
+    "s4": 7.84,
+    "s5": 8.07
+   },
+   "index": 40.16,
+   "rank": 146,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.16,
+    "s2": 0.0,
+    "s3": 15.08,
+    "s4": 8.5,
+    "s5": 16.65
+   },
+   "index": 48.38,
+   "rank": 103,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.83,
+    "s2": 0.0,
+    "s3": 11.67,
+    "s4": 7.51,
+    "s5": 8.12
+   },
+   "index": 32.13,
+   "rank": 168,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.68,
+    "s2": 0.0,
+    "s3": 15.5,
+    "s4": 6.01,
+    "s5": 8.29
+   },
+   "index": 31.49,
+   "rank": 166,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.84,
+    "s2": 0.0,
+    "s3": 17.24,
+    "s4": 6.35,
+    "s5": 8.08
+   },
+   "index": 33.52,
+   "rank": 171,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.73,
+    "s2": 0.0,
+    "s3": 14.73,
+    "s4": 7.67,
+    "s5": 8.11
+   },
+   "index": 41.25,
+   "rank": 133,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.0,
+    "s2": 0.0,
+    "s3": 11.89,
+    "s4": 3.72,
+    "s5": 8.12
+   },
+   "index": 26.73,
+   "rank": 182,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.53,
+    "s2": 0.0,
+    "s3": 12.67,
+    "s4": 5.04,
+    "s5": 8.12
+   },
+   "index": 35.35,
+   "rank": 152,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.01,
+    "s2": 0.0,
+    "s3": 17.61,
+    "s4": 4.77,
+    "s5": 8.07
+   },
+   "index": 37.45,
+   "rank": 146,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.07,
+    "s2": 0.0,
+    "s3": 11.66,
+    "s4": 4.2,
+    "s5": 8.38
+   },
+   "index": 32.32,
+   "rank": 168,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.18,
+    "s2": 0.0,
+    "s3": 15.97,
+    "s4": 4.41,
+    "s5": 8.32
+   },
+   "index": 31.88,
+   "rank": 173,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.97,
+    "s2": 0.0,
+    "s3": 12.69,
+    "s4": 3.44,
+    "s5": 8.38
+   },
+   "index": 36.49,
+   "rank": 155,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.41,
+    "s2": 0.0,
+    "s3": 11.95,
+    "s4": 10.36,
+    "s5": 8.38
+   },
+   "index": 36.09,
+   "rank": 163,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": false,
+  "category": "멀티모달(이미지·음성·영상)",
+  "contrib": {
+   "s1": 5.41,
+   "s2": 0.0,
+   "s3": 11.95,
+   "s4": 10.36,
+   "s5": 8.38
+  },
+  "full_name": "ruvnet/RuView",
+  "index": 36.09,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 30.65,
+   "s2": null,
+   "s3": 40.62,
+   "s4": 29.35,
+   "s5": 47.49
+  },
+  "prev_rank": 155,
+  "rank": 163,
+  "raw": {
+   "s1_stars_gain": 1104,
+   "s2_fork_delta": null,
+   "s2_forks": 13558,
+   "s3_closed_issues": 5,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 2,
+   "s4_dependents": 0,
+   "s4_downloads": 985,
+   "s4_packages": "pypi:wifi-densepose pypi:ruview npm:@ruvnet/ruview",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 997737944,
+  "star_rank": 139,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 997737944,
+ "topics": [
+  "awesome",
+  "claude",
+  "densepose",
+  "esp32",
+  "firmware",
+  "home-assistant",
+  "home-automation",
+  "iot",
+  "monitoring",
+  "networking",
+  "npm",
+  "pose-estimation",
+  "react",
+  "rf",
+  "self-learning",
+  "skills",
+  "spatial-intelligence",
+  "typescript",
+  "wifi",
+  "wifi-security"
+ ]
+}

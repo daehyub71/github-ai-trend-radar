@@ -1,0 +1,114 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "Apache Maka (Incubating) is a high-performance agent workspace that keeps a complete record of everything it did.",
+ "full_name": "apache/maka",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.3,
+    "s2": 0.0,
+    "s3": 42.42,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 61.33,
+   "rank": 52,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.35,
+    "s2": 0.0,
+    "s3": 44.09,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 76.99,
+   "rank": 8,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.62,
+    "s2": 0.0,
+    "s3": 43.53,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 61.96,
+   "rank": 48,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 5.62,
+   "s2": 0.0,
+   "s3": 43.53,
+   "s4": 0.0,
+   "s5": 12.81
+  },
+  "full_name": "apache/maka",
+  "index": 61.96,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 20.6,
+   "s2": null,
+   "s3": 95.77,
+   "s4": null,
+   "s5": 46.98
+  },
+  "prev_rank": 8,
+  "rank": 48,
+  "raw": {
+   "s1_stars_gain": 713,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 144,
+   "s3_merged_prs": 328,
+   "s3_pr_authors": 46,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1251460378,
+  "star_rank": 159,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1251460378,
+ "topics": [
+  "agent-runtime",
+  "ai",
+  "ai-agent",
+  "apache",
+  "cli",
+  "desktop",
+  "electron",
+  "event-sourcing",
+  "incubator",
+  "llm",
+  "local-first",
+  "maka",
+  "tool-use",
+  "typescript"
+ ]
+}

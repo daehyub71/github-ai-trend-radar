@@ -1,0 +1,106 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "DeepSeek Harness (DSH) Web 插件聚合生态 · 万物皆插件，通过创意工坊分发｜｜DeepSeek Harness (DSH) Web Plugin Aggregation Ecosystem · Everything is a plugin, distributed via the Creative Workshop",
+ "full_name": "zhu1090093659/dsh-web",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.89,
+    "s2": 0.0,
+    "s3": 37.88,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 73.24,
+   "rank": 15,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.89,
+    "s2": 0.0,
+    "s3": 44.3,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 79.8,
+   "rank": 8,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.87,
+    "s2": 0.0,
+    "s3": 37.92,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 58.34,
+   "rank": 64,
+   "week": "2026-08-23"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 7.87,
+   "s2": 0.0,
+   "s3": 37.92,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "zhu1090093659/dsh-web",
+  "index": 58.34,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 28.86,
+   "s2": null,
+   "s3": 83.42,
+   "s4": null,
+   "s5": 46.02
+  },
+  "prev_rank": 8,
+  "rank": 64,
+  "raw": {
+   "s1_stars_gain": 844,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 208,
+   "s3_merged_prs": 22,
+   "s3_pr_authors": 18,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1331636953,
+  "star_rank": 144,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-23"
+ },
+ "repo_id": 1331636953,
+ "topics": [
+  "cordis",
+  "deepseek-harness",
+  "dsh",
+  "dsh-plugin",
+  "dsh-web",
+  "dsh-web-ui"
+ ]
+}

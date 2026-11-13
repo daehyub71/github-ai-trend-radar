@@ -1,0 +1,88 @@
+{
+ "category": "벡터DB·메모리",
+ "description": "A vector index built on TurboQuant, written in Rust with Python bindings",
+ "full_name": "RyanCodrai/turbovec",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.29,
+    "s2": 0.0,
+    "s3": 14.23,
+    "s4": 16.99,
+    "s5": 17.47
+   },
+   "index": 58.98,
+   "rank": 61,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "벡터DB·메모리",
+  "contrib": {
+   "s1": 10.29,
+   "s2": 0.0,
+   "s3": 14.23,
+   "s4": 16.99,
+   "s5": 17.47
+  },
+  "full_name": "RyanCodrai/turbovec",
+  "index": 58.98,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 58.29,
+   "s2": null,
+   "s3": 48.39,
+   "s4": 48.15,
+   "s5": 98.99
+  },
+  "prev_rank": null,
+  "rank": 61,
+  "raw": {
+   "s1_stars_gain": 1454,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 16,
+   "s3_merged_prs": 7,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": 14998,
+   "s4_packages": "pypi:turbovec",
+   "s5_gn_points": 7,
+   "s5_gn_topics": 1,
+   "s5_hn_points": 302,
+   "s5_hn_stories": 1
+  },
+  "repo_id": 1192555574,
+  "star_rank": 84,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1192555574,
+ "topics": [
+  "ann",
+  "avx512",
+  "embedding",
+  "embeddings",
+  "faiss",
+  "nearest-neighbor",
+  "neon",
+  "python",
+  "quant",
+  "quantization",
+  "rag",
+  "rust",
+  "simd",
+  "turboquant",
+  "vector-search"
+ ]
+}

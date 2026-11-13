@@ -1,0 +1,117 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.",
+ "full_name": "shadcn-ui/ui",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.53,
+    "s2": 0.0,
+    "s3": 29.66,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 45.74,
+   "rank": 123,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.02,
+    "s2": 0.0,
+    "s3": 32.5,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 48.32,
+   "rank": 113,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.78,
+    "s2": 0.0,
+    "s3": 21.73,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 36.46,
+   "rank": 156,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 1.78,
+   "s2": 0.0,
+   "s3": 21.73,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "shadcn-ui/ui",
+  "index": 36.46,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 6.53,
+   "s2": null,
+   "s3": 47.8,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 156,
+  "raw": {
+   "s1_stars_gain": 675,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 14,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 585146387,
+  "star_rank": 187,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 585146387,
+ "topics": [
+  "ai",
+  "base-ui",
+  "components",
+  "gen-ui",
+  "generative-ai",
+  "generative-ui",
+  "laravel",
+  "nextjs",
+  "radix-ui",
+  "react",
+  "react-aria",
+  "react-aria-components",
+  "shadcn",
+  "tailwindcss",
+  "tanstack",
+  "ui",
+  "vite"
+ ]
+}

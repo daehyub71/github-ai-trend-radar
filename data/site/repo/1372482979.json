@@ -1,0 +1,86 @@
+{
+ "category": "추론·서빙",
+ "description": "Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe.",
+ "full_name": "TheoLeeCJ/SemIf-OpenJev",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.28,
+    "s2": 0.0,
+    "s3": 12.57,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 45.4,
+   "rank": 118,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.09,
+    "s2": 0.0,
+    "s3": 17.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 51.79,
+   "rank": 92,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "추론·서빙",
+  "contrib": {
+   "s1": 22.09,
+   "s2": 0.0,
+   "s3": 17.15,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "TheoLeeCJ/SemIf-OpenJev",
+  "index": 51.79,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 81.0,
+   "s2": null,
+   "s3": 37.73,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": 118,
+  "rank": 92,
+  "raw": {
+   "s1_stars_gain": 2353,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 4,
+   "s3_pr_authors": 4,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1372482979,
+  "star_rank": 39,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1372482979,
+ "topics": []
+}

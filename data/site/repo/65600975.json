@@ -1,0 +1,81 @@
+{
+ "category": "학습·파인튜닝",
+ "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+ "full_name": "pytorch/pytorch",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.82,
+    "s2": 0.0,
+    "s3": 17.72,
+    "s4": 34.45,
+    "s5": 8.38
+   },
+   "index": 62.37,
+   "rank": 48,
+   "week": "2026-10-11"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "학습·파인튜닝",
+  "contrib": {
+   "s1": 1.82,
+   "s2": 0.0,
+   "s3": 17.72,
+   "s4": 34.45,
+   "s5": 8.38
+  },
+  "full_name": "pytorch/pytorch",
+  "index": 62.37,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 10.3,
+   "s2": null,
+   "s3": 60.26,
+   "s4": 97.62,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 48,
+  "raw": {
+   "s1_stars_gain": 835,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 141,
+   "s3_merged_prs": 15,
+   "s3_pr_authors": 4,
+   "s4_dependents": null,
+   "s4_downloads": 13465023,
+   "s4_packages": "pypi:torch",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 65600975,
+  "star_rank": 179,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-11"
+ },
+ "repo_id": 65600975,
+ "topics": [
+  "autograd",
+  "deep-learning",
+  "gpu",
+  "machine-learning",
+  "neural-network",
+  "numpy",
+  "python",
+  "tensor"
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "category": "기타 AI",
+ "description": "《深入理解 AI Agent：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+ "full_name": "bojieli/ai-agent-book",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.02,
+    "s2": 0.0,
+    "s3": 34.62,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 70.11,
+   "rank": 25,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 31.19,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 68.19,
+   "rank": 30,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.66,
+    "s2": 0.0,
+    "s3": 30.19,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 65.4,
+   "rank": 38,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.49,
+    "s2": 0.0,
+    "s3": 28.46,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 56.76,
+   "rank": 71,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.38,
+    "s2": 0.0,
+    "s3": 18.54,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 45.41,
+   "rank": 116,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.75,
+    "s2": 0.0,
+    "s3": 33.92,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 69.21,
+   "rank": 28,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.77,
+    "s2": 0.0,
+    "s3": 24.84,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 60.16,
+   "rank": 58,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.23,
+    "s2": 0.0,
+    "s3": 6.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 31.93,
+   "rank": 167,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.33,
+    "s2": 0.0,
+    "s3": 5.6,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 30.41,
+   "rank": 167,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 30.6,
+   "rank": 178,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.86,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 25.21,
+   "rank": 188,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.63,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 27.85,
+   "rank": 179,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "기타 AI",
+  "contrib": {
+   "s1": 8.63,
+   "s2": 0.0,
+   "s3": 6.27,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "bojieli/ai-agent-book",
+  "index": 27.85,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 31.66,
+   "s2": null,
+   "s3": 13.79,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 188,
+  "rank": 179,
+  "raw": {
+   "s1_stars_gain": 1088,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1053118194,
+  "star_rank": 137,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1053118194,
+ "topics": [
+  "agent",
+  "agent-memory",
+  "ai-agent",
+  "book",
+  "coding-agent",
+  "context-engineering",
+  "large-language-models",
+  "llm",
+  "mcp",
+  "multi-agent",
+  "multimodal",
+  "rag",
+  "reinforcement-learning"
+ ]
+}

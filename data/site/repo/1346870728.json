@@ -1,0 +1,115 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Monid - OpenRouter for agent tools. Join our community at https://discord.gg/rQzztcgJV8",
+ "full_name": "monid-ai/monid",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.27,
+    "s2": 0.0,
+    "s3": 16.23,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 44.05,
+   "rank": 125,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.58,
+    "s2": 0.0,
+    "s3": 10.36,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 39.41,
+   "rank": 139,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.05,
+    "s2": 0.0,
+    "s3": 13.05,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 35.05,
+   "rank": 158,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.09,
+    "s2": 0.0,
+    "s3": 12.11,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 41.06,
+   "rank": 141,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 16.09,
+   "s2": 0.0,
+   "s3": 12.11,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "monid-ai/monid",
+  "index": 41.06,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 59.0,
+   "s2": null,
+   "s3": 26.65,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": 158,
+  "rank": 141,
+  "raw": {
+   "s1_stars_gain": 2050,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1346870728,
+  "star_rank": 83,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1346870728,
+ "topics": [
+  "ai-agents",
+  "developer-tools"
+ ]
+}

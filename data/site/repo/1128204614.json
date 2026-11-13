@@ -1,0 +1,99 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "High performance coding agent harness written in Rust, built for heavy multi-agent dev workflows",
+ "full_name": "1jehuang/jcode",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.83,
+    "s2": 0.0,
+    "s3": 28.24,
+    "s4": 0.0,
+    "s5": 26.07
+   },
+   "index": 65.14,
+   "rank": 36,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.6,
+    "s2": 0.0,
+    "s3": 22.27,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 37.48,
+   "rank": 153,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 2.6,
+   "s2": 0.0,
+   "s3": 22.27,
+   "s4": 0.0,
+   "s5": 12.61
+  },
+  "full_name": "1jehuang/jcode",
+  "index": 37.48,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 9.55,
+   "s2": null,
+   "s3": 48.98,
+   "s4": null,
+   "s5": 46.23
+  },
+  "prev_rank": 36,
+  "rank": 153,
+  "raw": {
+   "s1_stars_gain": 654,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 24,
+   "s3_merged_prs": 4,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1128204614,
+  "star_rank": 181,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1128204614,
+ "topics": [
+  "ai",
+  "ai-agent",
+  "ai-coding-agent",
+  "claude",
+  "cli",
+  "coding-agent",
+  "llm",
+  "mcp",
+  "openai",
+  "rust",
+  "terminal",
+  "tui"
+ ]
+}

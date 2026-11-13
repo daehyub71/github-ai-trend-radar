@@ -1,0 +1,112 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "The fastest, cheapest, most efficient open-source agent harness. Run more than 500 agents on a $10 VPS.",
+ "full_name": "tinyhumansai/openhuman",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.25,
+    "s2": 0.0,
+    "s3": 32.05,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 66.85,
+   "rank": 30,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.3,
+    "s2": 0.0,
+    "s3": 36.99,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 51.11,
+   "rank": 97,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.29,
+    "s2": 0.0,
+    "s3": 39.19,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 64.96,
+   "rank": 44,
+   "week": "2026-10-04"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 13.29,
+   "s2": 0.0,
+   "s3": 39.19,
+   "s4": 0.0,
+   "s5": 12.47
+  },
+  "full_name": "tinyhumansai/openhuman",
+  "index": 64.96,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 48.74,
+   "s2": null,
+   "s3": 86.22,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 44,
+  "raw": {
+   "s1_stars_gain": 1293,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 98,
+   "s3_merged_prs": 273,
+   "s3_pr_authors": 20,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1161163182,
+  "star_rank": 103,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-04"
+ },
+ "repo_id": 1161163182,
+ "topics": [
+  "agent-orchestration",
+  "ai-agents",
+  "ai-assistant",
+  "desktop",
+  "llm",
+  "local-first",
+  "mcp",
+  "personal-ai",
+  "privacy",
+  "rust",
+  "second-brain",
+  "tauri"
+ ]
+}

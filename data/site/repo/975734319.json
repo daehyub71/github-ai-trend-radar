@@ -1,0 +1,229 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "The open source coding agent.",
+ "full_name": "anomalyco/opencode",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.3,
+    "s2": 0.0,
+    "s3": 42.85,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 78.62,
+   "rank": 7,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.02,
+    "s2": 0.0,
+    "s3": 42.72,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 78.36,
+   "rank": 11,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.9,
+    "s2": 0.0,
+    "s3": 43.41,
+    "s4": 0.0,
+    "s5": 26.7
+   },
+   "index": 91.0,
+   "rank": 2,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.48,
+    "s2": 0.0,
+    "s3": 43.15,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 78.44,
+   "rank": 9,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.52,
+    "s2": 0.0,
+    "s3": 43.21,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 78.22,
+   "rank": 12,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.32,
+    "s2": 0.0,
+    "s3": 42.76,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 74.63,
+   "rank": 14,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.55,
+    "s2": 0.0,
+    "s3": 42.38,
+    "s4": 0.0,
+    "s5": 25.91
+   },
+   "index": 86.83,
+   "rank": 1,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.75,
+    "s2": 0.0,
+    "s3": 42.34,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 73.64,
+   "rank": 18,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 41.55,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 67.59,
+   "rank": 36,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.83,
+    "s2": 0.0,
+    "s3": 41.34,
+    "s4": 0.0,
+    "s5": 26.66
+   },
+   "index": 88.82,
+   "rank": 5,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.95,
+    "s2": 0.0,
+    "s3": 42.65,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 80.45,
+   "rank": 8,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.87,
+    "s2": 0.0,
+    "s3": 42.57,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 75.39,
+   "rank": 16,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 16.45,
+    "s2": 0.0,
+    "s3": 42.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 72.11,
+   "rank": 18,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 16.45,
+   "s2": 0.0,
+   "s3": 42.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "anomalyco/opencode",
+  "index": 72.11,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 60.3,
+   "s2": null,
+   "s3": 93.97,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 16,
+  "rank": 18,
+  "raw": {
+   "s1_stars_gain": 1947,
+   "s2_fork_delta": null,
+   "s2_forks": 30655,
+   "s3_closed_issues": 556,
+   "s3_merged_prs": 507,
+   "s3_pr_authors": 30,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 975734319,
+  "star_rank": 80,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 975734319,
+ "topics": []
+}

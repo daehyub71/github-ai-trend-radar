@@ -1,0 +1,91 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "AI-native, GPU-accelerated terminal emulator for Windows with SSH, persistent sessions, split panes, and first-class AI CLI workflows.",
+ "full_name": "Kuddev/pebrel",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.85,
+    "s2": 0.0,
+    "s3": 32.65,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 52.04,
+   "rank": 92,
+   "week": "2026-09-13"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 6.85,
+   "s2": 0.0,
+   "s3": 32.65,
+   "s4": 0.0,
+   "s5": 12.54
+  },
+  "full_name": "Kuddev/pebrel",
+  "index": 52.04,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 25.13,
+   "s2": null,
+   "s3": 71.83,
+   "s4": null,
+   "s5": 45.98
+  },
+  "prev_rank": null,
+  "rank": 92,
+  "raw": {
+   "s1_stars_gain": 876,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 20,
+   "s3_merged_prs": 28,
+   "s3_pr_authors": 9,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1289958986,
+  "star_rank": 150,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-13"
+ },
+ "repo_id": 1289958986,
+ "topics": [
+  "ai-cli",
+  "ai-terminal",
+  "claude-code",
+  "codex",
+  "conpty",
+  "developer-tools",
+  "gpu-accelerated",
+  "opengl",
+  "powershell",
+  "rust",
+  "session-persistence",
+  "split-panes",
+  "ssh",
+  "ssh-client",
+  "terminal",
+  "terminal-emulator",
+  "windows"
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "Deepsec is a security harness for finding vulnerabilities in your codebase powered by coding agents",
+ "full_name": "vercel-labs/deepsec",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.94,
+    "s2": 0.0,
+    "s3": 10.48,
+    "s4": 23.53,
+    "s5": 8.07
+   },
+   "index": 48.02,
+   "rank": 107,
+   "week": "2026-08-09"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 5.94,
+   "s2": 0.0,
+   "s3": 10.48,
+   "s4": 23.53,
+   "s5": 8.07
+  },
+  "full_name": "vercel-labs/deepsec",
+  "index": 48.02,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 33.67,
+   "s2": null,
+   "s3": 35.64,
+   "s4": 66.67,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 107,
+  "raw": {
+   "s1_stars_gain": 1044,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": 94514,
+   "s4_packages": "npm:deepsec",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1225774688,
+  "star_rank": 133,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-09"
+ },
+ "repo_id": 1225774688,
+ "topics": []
+}

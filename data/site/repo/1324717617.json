@@ -1,0 +1,110 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "飞鼠格式 FlyingMouse Format - Windows 免费文件格式转换工具（离线可用，内置 FFmpeg/LibreOffice/Poppler/Tesseract）。图片/文档/表格/PPT/PDF/音视频/WPS 格式互转 + OCR + 批量转换；音频仅支持普通格式。作者：牢蜂（LaoFeng）｜仅供个人免费使用，禁止商业售卖/转卖/套壳",
+ "full_name": "LaoFeng-mouse/flyingmouse-format",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.12,
+    "s2": 0.0,
+    "s3": 19.19,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 55.78,
+   "rank": 69,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.8,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 28.83,
+   "rank": 176,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.51,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 24.93,
+   "rank": 188,
+   "week": "2026-08-23"
+  }
+ ],
+ "language": "JavaScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 6.51,
+   "s2": 0.0,
+   "s3": 5.87,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "LaoFeng-mouse/flyingmouse-format",
+  "index": 24.93,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 23.88,
+   "s2": null,
+   "s3": 12.92,
+   "s4": null,
+   "s5": 46.02
+  },
+  "prev_rank": 176,
+  "rank": 188,
+  "raw": {
+   "s1_stars_gain": 750,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1324717617,
+  "star_rank": 154,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-23"
+ },
+ "repo_id": 1324717617,
+ "topics": [
+  "desktop-app",
+  "electron",
+  "ffmpeg",
+  "file-converter",
+  "format-converter",
+  "libreoffice",
+  "ocr",
+  "pdf",
+  "windows",
+  "wps"
+ ]
+}

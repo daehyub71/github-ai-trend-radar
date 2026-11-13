@@ -1,0 +1,239 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+ "full_name": "DietrichGebert/ponytail",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.67,
+    "s2": 0.0,
+    "s3": 4.12,
+    "s4": 15.03,
+    "s5": 8.07
+   },
+   "index": 43.9,
+   "rank": 124,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.85,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 15.69,
+    "s5": 8.16
+   },
+   "index": 44.85,
+   "rank": 120,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.21,
+    "s2": 0.0,
+    "s3": 5.69,
+    "s4": 17.27,
+    "s5": 8.12
+   },
+   "index": 48.29,
+   "rank": 107,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.47,
+    "s2": 0.0,
+    "s3": 10.18,
+    "s4": 16.52,
+    "s5": 8.29
+   },
+   "index": 52.46,
+   "rank": 90,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.3,
+    "s2": 0.0,
+    "s3": 7.44,
+    "s4": 15.53,
+    "s5": 8.08
+   },
+   "index": 48.34,
+   "rank": 103,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.76,
+    "s2": 0.0,
+    "s3": 11.3,
+    "s4": 16.88,
+    "s5": 8.11
+   },
+   "index": 53.05,
+   "rank": 85,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.71,
+    "s2": 0.0,
+    "s3": 6.84,
+    "s4": 17.65,
+    "s5": 8.12
+   },
+   "index": 48.31,
+   "rank": 101,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.21,
+    "s2": 0.0,
+    "s3": 23.54,
+    "s4": 15.97,
+    "s5": 8.12
+   },
+   "index": 64.83,
+   "rank": 37,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.58,
+    "s2": 0.0,
+    "s3": 23.68,
+    "s4": 16.22,
+    "s5": 8.07
+   },
+   "index": 64.55,
+   "rank": 46,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.23,
+    "s2": 0.0,
+    "s3": 20.19,
+    "s4": 18.49,
+    "s5": 8.38
+   },
+   "index": 63.28,
+   "rank": 46,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.85,
+    "s2": 0.0,
+    "s3": 14.81,
+    "s4": 16.18,
+    "s5": 8.32
+   },
+   "index": 56.15,
+   "rank": 67,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.14,
+    "s2": 0.0,
+    "s3": 15.63,
+    "s4": 18.94,
+    "s5": 8.38
+   },
+   "index": 59.08,
+   "rank": 50,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 15.7,
+    "s2": 0.0,
+    "s3": 6.53,
+    "s4": 18.41,
+    "s5": 8.38
+   },
+   "index": 49.02,
+   "rank": 100,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "JavaScript",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 15.7,
+   "s2": 0.0,
+   "s3": 6.53,
+   "s4": 18.41,
+   "s5": 8.38
+  },
+  "full_name": "DietrichGebert/ponytail",
+  "index": 49.02,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 88.94,
+   "s2": null,
+   "s3": 22.19,
+   "s4": 52.17,
+   "s5": 47.49
+  },
+  "prev_rank": 50,
+  "rank": 100,
+  "raw": {
+   "s1_stars_gain": 5077,
+   "s2_fork_delta": null,
+   "s2_forks": 10583,
+   "s3_closed_issues": 4,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": 0,
+   "s4_downloads": 38854,
+   "s4_packages": "npm:@dietrichgebert/ponytail",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1266797999,
+  "star_rank": 23,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1266797999,
+ "topics": [
+  "agent-skills",
+  "ai-agents",
+  "claude",
+  "claude-code",
+  "claude-code-plugin",
+  "cursor-rules",
+  "developer-tools",
+  "llm",
+  "prompt-engineering",
+  "yagni"
+ ]
+}

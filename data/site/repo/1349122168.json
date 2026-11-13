@@ -1,0 +1,83 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "An open-source AI agent for social media — discover trends, create content, publish everywhere, and learn what works across Xiaohongshu, Douyin, Zhihu, Bilibili, and more.🎨一个开源的 AI 社交媒体智能体——发现热点趋势、创作内容、一键发布至各大平台，并学习分析哪些内容真正有效，覆盖小红书、抖音、知乎、哔哩哔哩等平台。",
+ "full_name": "ZJU-REAL/Easel",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.18,
+    "s2": 0.0,
+    "s3": 27.61,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 57.34,
+   "rank": 70,
+   "week": "2026-09-27"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 17.18,
+   "s2": 0.0,
+   "s3": 27.61,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "ZJU-REAL/Easel",
+  "index": 57.34,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 63.0,
+   "s2": null,
+   "s3": 60.74,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": null,
+  "rank": 70,
+  "raw": {
+   "s1_stars_gain": 1378,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 8,
+   "s3_merged_prs": 23,
+   "s3_pr_authors": 8,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1349122168,
+  "star_rank": 75,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-27"
+ },
+ "repo_id": 1349122168,
+ "topics": [
+  "agent",
+  "agent-skill",
+  "content-automation",
+  "content-creation",
+  "content-generation",
+  "mcp",
+  "openclaw",
+  "social-media",
+  "social-media-management"
+ ]
+}

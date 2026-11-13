@@ -1,0 +1,491 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 12.31,
+      "use": 88.63,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "remotion-dev/remotion",
+     "repo_id": 274495425
+    },
+    {
+     "evidence": {
+      "s1": 16.58,
+      "use": 89.0,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "langgenius/dify",
+     "repo_id": 626805178
+    },
+    {
+     "evidence": {
+      "s1": 23.12,
+      "use": 93.32,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "apache/maka",
+     "repo_id": 1251460378
+    },
+    {
+     "evidence": {
+      "s1": 26.63,
+      "use": 86.63,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "JustVugg/colibri",
+     "repo_id": 1286080397
+    },
+    {
+     "evidence": {
+      "s1": 30.15,
+      "use": 85.7,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "vectorize-io/hindsight",
+     "repo_id": 1086419061
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 100.0,
+      "s5": 96.61,
+      "use": 14.13
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 93.47,
+      "s5": 46.23,
+      "use": 22.25
+     },
+     "full_name": "yjh051108/dsh-routing-suite",
+     "repo_id": 1334586481
+    },
+    {
+     "evidence": {
+      "s1": 95.48,
+      "s5": 46.23,
+      "use": 29.29
+     },
+     "full_name": "DietrichGebert/ponytail",
+     "repo_id": 1266797999
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [],
+   "status": "insufficient"
+  },
+  "D": {
+   "items": [],
+   "status": "insufficient"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pct": 100.0,
+    "repo_id": 1333065091
+   },
+   {
+    "full_name": "mattpocock/skills",
+    "pct": 99.5,
+    "repo_id": 1148788086
+   },
+   {
+    "full_name": "anywhere-labs/dsh-desktop",
+    "pct": 98.99,
+    "repo_id": 1333321333
+   },
+   {
+    "full_name": "harry0703/MoneyPrinterTurbo",
+    "pct": 98.49,
+    "repo_id": 770153867
+   },
+   {
+    "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+    "pct": 97.99,
+    "repo_id": 1333175049
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "cheaper-inference/OmniRoute",
+    "pct": 98.56,
+    "repo_id": 1157102282
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 98.39,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 98.14,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "zhu1090093659/dsh-web",
+    "pct": 97.46,
+    "repo_id": 1331636953
+   },
+   {
+    "full_name": "can1357/oh-my-pi",
+    "pct": 97.21,
+    "repo_id": 1125856365
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "openai/codex",
+    "pct": 100.0,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 98.15,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 96.3,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 94.44,
+    "repo_id": 274495425
+   },
+   {
+    "full_name": "firecrawl/firecrawl",
+    "pct": 92.59,
+    "repo_id": 787076358
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "anthropics/claude-code",
+    "pct": 100.0,
+    "repo_id": 937253475
+   },
+   {
+    "full_name": "openai/codex",
+    "pct": 99.25,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "RyanCodrai/turbovec",
+    "pct": 98.99,
+    "repo_id": 1192555574
+   },
+   {
+    "full_name": "earendil-works/pi",
+    "pct": 96.86,
+    "repo_id": 1035029907
+   },
+   {
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pct": 96.61,
+    "repo_id": 1333065091
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 200,
+  "star_top_in_index_top": 2,
+  "with_packages": 55
+ },
+ "top10": [
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 25.77,
+    "s2": 0.0,
+    "s3": 35.76,
+    "s4": 0.0,
+    "s5": 26.42
+   },
+   "full_name": "earendil-works/pi",
+   "index": 87.95,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 94.47,
+    "s2": null,
+    "s3": 78.68,
+    "s4": null,
+    "s5": 96.86
+   },
+   "prev_rank": 2,
+   "rank": 1,
+   "repo_id": 1035029907,
+   "star_rank": 12
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 21.38,
+    "s2": 0.0,
+    "s3": 36.42,
+    "s4": 0.0,
+    "s5": 26.18
+   },
+   "full_name": "CopilotKit/OpenBot",
+   "index": 83.97,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 78.39,
+    "s2": null,
+    "s3": 80.12,
+    "s4": null,
+    "s5": 95.98
+   },
+   "prev_rank": null,
+   "rank": 2,
+   "repo_id": 1336502227,
+   "star_rank": 44
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 24.81,
+    "s2": 0.0,
+    "s3": 44.61,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "index": 82.02,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.95,
+    "s2": null,
+    "s3": 98.14,
+    "s4": null,
+    "s5": 46.23
+   },
+   "prev_rank": 5,
+   "rank": 3,
+   "repo_id": 1024554267,
+   "star_rank": 19
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 17.2,
+    "s2": 0.0,
+    "s3": 11.6,
+    "s4": 35.29,
+    "s5": 17.51
+   },
+   "full_name": "openai/codex",
+   "index": 81.61,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 97.49,
+    "s2": null,
+    "s3": 39.42,
+    "s4": 100.0,
+    "s5": 99.25
+   },
+   "prev_rank": 18,
+   "rank": 4,
+   "repo_id": 965415649,
+   "star_rank": 6
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 23.57,
+    "s2": 0.0,
+    "s3": 31.5,
+    "s4": 0.0,
+    "s5": 26.24
+   },
+   "full_name": "yetone/cumora",
+   "index": 81.31,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 86.43,
+    "s2": null,
+    "s3": 69.29,
+    "s4": null,
+    "s5": 96.23
+   },
+   "prev_rank": null,
+   "rank": 5,
+   "repo_id": 1336933337,
+   "star_rank": 28
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 20.56,
+    "s2": 0.0,
+    "s3": 34.3,
+    "s4": 0.0,
+    "s5": 26.01
+   },
+   "full_name": "vercel-labs/fx",
+   "index": 80.86,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 75.38,
+    "s2": null,
+    "s3": 75.47,
+    "s4": null,
+    "s5": 95.35
+   },
+   "prev_rank": null,
+   "rank": 6,
+   "repo_id": 1330702515,
+   "star_rank": 50
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 25.22,
+    "s2": 0.0,
+    "s3": 42.38,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "full_name": "career-ops-hq/career-ops",
+   "index": 80.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.46,
+    "s2": null,
+    "s3": 93.23,
+    "s4": null,
+    "s5": 46.23
+   },
+   "prev_rank": 58,
+   "rank": 7,
+   "repo_id": 1201476594,
+   "star_rank": 16
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 22.89,
+    "s2": 0.0,
+    "s3": 44.3,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "full_name": "zhu1090093659/dsh-web",
+   "index": 79.8,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 83.92,
+    "s2": null,
+    "s3": 97.46,
+    "s4": null,
+    "s5": 46.23
+   },
+   "prev_rank": 15,
+   "rank": 8,
+   "repo_id": 1331636953,
+   "star_rank": 33
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 26.18,
+    "s2": 0.0,
+    "s3": 40.69,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "full_name": "stablyai/orca",
+   "index": 79.47,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.98,
+    "s2": null,
+    "s3": 89.51,
+    "s4": null,
+    "s5": 46.23
+   },
+   "prev_rank": 4,
+   "rank": 9,
+   "repo_id": 1183888342,
+   "star_rank": 9
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 8.25,
+    "s2": 0.0,
+    "s3": 28.94,
+    "s4": 33.99,
+    "s5": 8.16
+   },
+   "full_name": "openclaw/openclaw",
+   "index": 79.33,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 46.73,
+    "s2": null,
+    "s3": 98.39,
+    "s4": 96.3,
+    "s5": 46.23
+   },
+   "prev_rank": 8,
+   "rank": 10,
+   "repo_id": 1103012935,
+   "star_rank": 107
+  }
+ ],
+ "week": "2026-08-16",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

@@ -1,0 +1,73 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "An enhanced tool for CodexApp, striving to make Codex better to use and more comfortable 一个CodexApp的增强工具，努力让Codex和其他 AI Agent变得更好用更舒服",
+ "full_name": "BigPizzaV3/CodexPlusPlus",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.56,
+    "s2": 0.0,
+    "s3": 25.21,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 41.25,
+   "rank": 138,
+   "week": "2026-08-09"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 3.56,
+   "s2": 0.0,
+   "s3": 25.21,
+   "s4": 0.0,
+   "s5": 12.47
+  },
+  "full_name": "BigPizzaV3/CodexPlusPlus",
+  "index": 41.25,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 13.07,
+   "s2": null,
+   "s3": 55.47,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 138,
+  "raw": {
+   "s1_stars_gain": 706,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 4,
+   "s3_merged_prs": 13,
+   "s3_pr_authors": 3,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1230751102,
+  "star_rank": 174,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-09"
+ },
+ "repo_id": 1230751102,
+ "topics": []
+}

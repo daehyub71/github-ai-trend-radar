@@ -1,0 +1,216 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Reverse Engineering / Authorized Penetration Testing / Security Research Skill Router Pack AI-powered routing + On-demand toolchain bootstrapping + Self-evolving knowledge base  Supports Claude Code, Kiro, Cursor, Cline, and other AI coding clients 逆向/渗透/安全技能路由包 - AI 自动路由 + 按需自举工具链 + 自动进化经验库 | 支持 Claude Code / Kiro / Cursor / Cline 等代码 AI 客户端",
+ "full_name": "zhaoxuya520/reverse-skill",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.94,
+    "s2": 0.0,
+    "s3": 24.44,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 61.85,
+   "rank": 47,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.46,
+    "s2": 0.0,
+    "s3": 26.84,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 58.91,
+   "rank": 62,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.69,
+    "s2": 0.0,
+    "s3": 19.02,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 56.26,
+   "rank": 72,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.35,
+    "s2": 0.0,
+    "s3": 23.92,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 62.09,
+   "rank": 47,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.38,
+    "s2": 0.0,
+    "s3": 5.9,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 28.76,
+   "rank": 181,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.81,
+    "s2": 0.0,
+    "s3": 9.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 29.47,
+   "rank": 174,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.73,
+    "s2": 0.0,
+    "s3": 24.0,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 54.27,
+   "rank": 86,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.86,
+    "s2": 0.0,
+    "s3": 6.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 36.56,
+   "rank": 147,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.81,
+    "s2": 0.0,
+    "s3": 5.6,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 30.89,
+   "rank": 166,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.17,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 34.99,
+   "rank": 159,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.68,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 20.03,
+   "rank": 201,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.47,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 21.69,
+   "rank": 194,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "PowerShell",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 2.47,
+   "s2": 0.0,
+   "s3": 6.27,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "zhaoxuya520/reverse-skill",
+  "index": 21.69,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 9.05,
+   "s2": null,
+   "s3": 13.79,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 201,
+  "rank": 194,
+  "raw": {
+   "s1_stars_gain": 705,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1237819660,
+  "star_rank": 182,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1237819660,
+ "topics": []
+}

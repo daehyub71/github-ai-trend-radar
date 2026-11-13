@@ -1,0 +1,598 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 0.5,
+      "use": 91.66,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "sgl-project/sglang",
+     "repo_id": 740303686
+    },
+    {
+     "evidence": {
+      "s1": 9.45,
+      "use": 85.7,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "remotion-dev/remotion",
+     "repo_id": 274495425
+    },
+    {
+     "evidence": {
+      "s1": 19.9,
+      "use": 95.81,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "pingdotgg/t3code",
+     "repo_id": 1153130349
+    },
+    {
+     "evidence": {
+      "s1": 14.43,
+      "use": 87.86,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "multica-ai/multica",
+     "repo_id": 1133707766
+    },
+    {
+     "evidence": {
+      "s1": 26.37,
+      "use": 93.63,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "Wei-Shaw/sub2api",
+     "repo_id": 1118601518
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 98.51,
+      "s5": 45.77,
+      "use": 12.98
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 86.57,
+      "s5": 97.01,
+      "use": 12.98
+     },
+     "full_name": "ashemag/human-atlas",
+     "repo_id": 1357699236
+    },
+    {
+     "evidence": {
+      "s1": 11.44,
+      "s5": 95.27,
+      "use": 12.98
+     },
+     "full_name": "anthropics/commerce-agents",
+     "repo_id": 1353548665
+    },
+    {
+     "evidence": {
+      "s1": 97.51,
+      "s5": 45.77,
+      "use": 24.04
+     },
+     "full_name": "mattpocock/skills",
+     "repo_id": 1148788086
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [
+    {
+     "evidence": {
+      "index": [
+       54.28,
+       58.19,
+       65.82,
+       70.85,
+       82.28
+      ]
+     },
+     "full_name": "tt-a1i/archify",
+     "repo_id": 1211139949
+    },
+    {
+     "evidence": {
+      "index": [
+       28.98,
+       30.54,
+       31.04,
+       36.66,
+       44.21
+      ]
+     },
+     "full_name": "zhishile/codex-auth-helper",
+     "repo_id": 1256690992
+    }
+   ],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       47.3,
+       20.8
+      ],
+      "use_share": [
+       52.7,
+       79.2
+      ]
+     },
+     "full_name": "semantica-agi/semantica",
+     "repo_id": 1008304614
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       77.0,
+       51.2
+      ],
+      "use_share": [
+       23.0,
+       48.8
+      ]
+     },
+     "full_name": "FareedKhan-dev/kimi-k3-in-c",
+     "repo_id": 1319154759
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       58.7,
+       32.9
+      ],
+      "use_share": [
+       41.3,
+       67.1
+      ]
+     },
+     "full_name": "PrimeIntellect-ai/prime-agent",
+     "repo_id": 1232493406
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       53.6,
+       28.0
+      ],
+      "use_share": [
+       46.4,
+       72.0
+      ]
+     },
+     "full_name": "HKUDS/DeepTutor",
+     "repo_id": 1124219907
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       67.9,
+       44.4
+      ],
+      "use_share": [
+       32.1,
+       55.6
+      ]
+     },
+     "full_name": "microsoft/ai-agents-for-beginners",
+     "repo_id": 895508656
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "ayghri/i-have-adhd",
+    "pct": 100.0,
+    "repo_id": 1238120057
+   },
+   {
+    "full_name": "bilawalsidhu/gods-eye-view",
+    "pct": 99.5,
+    "repo_id": 1277471539
+   },
+   {
+    "full_name": "tt-a1i/archify",
+    "pct": 99.0,
+    "repo_id": 1211139949
+   },
+   {
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pct": 98.51,
+    "repo_id": 1333065091
+   },
+   {
+    "full_name": "DietrichGebert/ponytail",
+    "pct": 98.01,
+    "repo_id": 1266797999
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.82,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 97.24,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "t8y2/dbx",
+    "pct": 96.31,
+    "repo_id": 1224172037
+   },
+   {
+    "full_name": "pingdotgg/t3code",
+    "pct": 95.81,
+    "repo_id": 1153130349
+   },
+   {
+    "full_name": "sgl-project/sglang",
+    "pct": 95.31,
+    "repo_id": 740303686
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "openai/codex",
+    "pct": 100.0,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "vercel-labs/skills",
+    "pct": 98.0,
+    "repo_id": 1134543109
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 96.0,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 94.0,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "tensorflow/tensorflow",
+    "pct": 92.0,
+    "repo_id": 45717250
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "ayghri/i-have-adhd",
+    "pct": 99.5,
+    "repo_id": 1238120057
+   },
+   {
+    "full_name": "microsoft/tgrep",
+    "pct": 98.76,
+    "repo_id": 1200598308
+   },
+   {
+    "full_name": "google/artemis",
+    "pct": 98.51,
+    "repo_id": 1333399642
+   },
+   {
+    "full_name": "Tencent/teamai-cli",
+    "pct": 97.89,
+    "repo_id": 1222364235
+   },
+   {
+    "full_name": "TauricResearch/TradingAgents",
+    "pct": 97.26,
+    "repo_id": 909213664
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 202,
+  "star_top_in_index_top": 4,
+  "with_packages": 51
+ },
+ "top10": [
+  {
+   "category": "멀티모달(이미지·음성·영상)",
+   "contrib": {
+    "s1": 26.19,
+    "s2": 0.0,
+    "s3": 40.7,
+    "s4": 0.0,
+    "s5": 26.39
+   },
+   "full_name": "debpalash/VoiceStudio",
+   "index": 93.27,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.02,
+    "s2": null,
+    "s3": 89.53,
+    "s4": null,
+    "s5": 96.77
+   },
+   "prev_rank": 17,
+   "rank": 1,
+   "repo_id": 1206390571,
+   "star_rank": 9
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 27.14,
+    "s2": 0.0,
+    "s3": 34.3,
+    "s4": 0.0,
+    "s5": 25.75
+   },
+   "full_name": "bilawalsidhu/gods-eye-view",
+   "index": 87.18,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 99.5,
+    "s2": null,
+    "s3": 75.46,
+    "s4": null,
+    "s5": 94.4
+   },
+   "prev_rank": 24,
+   "rank": 2,
+   "repo_id": 1277471539,
+   "star_rank": 2
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 23.34,
+    "s2": 0.0,
+    "s3": 35.82,
+    "s4": 0.0,
+    "s5": 25.98
+   },
+   "full_name": "herdrdev/herdr",
+   "index": 85.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 85.57,
+    "s2": null,
+    "s3": 78.81,
+    "s4": null,
+    "s5": 95.27
+   },
+   "prev_rank": 22,
+   "rank": 3,
+   "repo_id": 1193909050,
+   "star_rank": 30
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 6.5,
+    "s2": 0.0,
+    "s3": 28.77,
+    "s4": 33.18,
+    "s5": 16.66
+   },
+   "full_name": "openclaw/openclaw",
+   "index": 85.1,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 36.82,
+    "s2": null,
+    "s3": 97.82,
+    "s4": 94.0,
+    "s5": 94.4
+   },
+   "prev_rank": 1,
+   "rank": 4,
+   "repo_id": 1103012935,
+   "star_rank": 128
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 22.66,
+    "s2": 0.0,
+    "s3": 34.72,
+    "s4": 0.0,
+    "s5": 26.15
+   },
+   "full_name": "omacom/omarchy",
+   "index": 83.53,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 83.08,
+    "s2": null,
+    "s3": 76.38,
+    "s4": null,
+    "s5": 95.9
+   },
+   "prev_rank": 18,
+   "rank": 5,
+   "repo_id": 994093166,
+   "star_rank": 35
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 27.0,
+    "s2": 0.0,
+    "s3": 29.73,
+    "s4": 0.0,
+    "s5": 25.54
+   },
+   "full_name": "tt-a1i/archify",
+   "index": 82.28,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 99.0,
+    "s2": null,
+    "s3": 65.41,
+    "s4": null,
+    "s5": 93.66
+   },
+   "prev_rank": 19,
+   "rank": 6,
+   "repo_id": 1211139949,
+   "star_rank": 3
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 24.56,
+    "s2": 0.0,
+    "s3": 44.2,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "index": 81.24,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.05,
+    "s2": null,
+    "s3": 97.24,
+    "s4": null,
+    "s5": 45.77
+   },
+   "prev_rank": 7,
+   "rank": 7,
+   "repo_id": 1024554267,
+   "star_rank": 21
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 26.05,
+    "s2": 0.0,
+    "s3": 42.29,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "full_name": "stablyai/orca",
+   "index": 80.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.52,
+    "s2": null,
+    "s3": 93.05,
+    "s4": null,
+    "s5": 45.77
+   },
+   "prev_rank": 5,
+   "rank": 8,
+   "repo_id": 1183888342,
+   "star_rank": 10
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 18.05,
+    "s2": 0.0,
+    "s3": 36.39,
+    "s4": 0.0,
+    "s5": 25.98
+   },
+   "full_name": "nexu-io/open-design",
+   "index": 80.42,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 66.17,
+    "s2": null,
+    "s3": 80.07,
+    "s4": null,
+    "s5": 95.27
+   },
+   "prev_rank": 33,
+   "rank": 9,
+   "repo_id": 1223170290,
+   "star_rank": 69
+  },
+  {
+   "category": "문서·데이터 파싱",
+   "contrib": {
+    "s1": 16.77,
+    "s2": 0.0,
+    "s3": 21.55,
+    "s4": 33.88,
+    "s5": 8.08
+   },
+   "full_name": "microsoft/markitdown",
+   "index": 80.28,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 95.02,
+    "s2": null,
+    "s3": 73.28,
+    "s4": 96.0,
+    "s5": 45.77
+   },
+   "prev_rank": 10,
+   "rank": 10,
+   "repo_id": 888092115,
+   "star_rank": 11
+  }
+ ],
+ "week": "2026-09-06",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

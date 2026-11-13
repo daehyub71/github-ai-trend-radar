@@ -1,0 +1,72 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": null,
+ "full_name": "rlaope/oh-my-hermes",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.65,
+    "s2": 0.0,
+    "s3": 23.14,
+    "s4": 5.37,
+    "s5": 8.11
+   },
+   "index": 43.28,
+   "rank": 123,
+   "week": "2026-09-13"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 6.65,
+   "s2": 0.0,
+   "s3": 23.14,
+   "s4": 5.37,
+   "s5": 8.11
+  },
+  "full_name": "rlaope/oh-my-hermes",
+  "index": 43.28,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 37.69,
+   "s2": null,
+   "s3": 78.68,
+   "s4": 15.22,
+   "s5": 45.98
+  },
+  "prev_rank": null,
+  "rank": 123,
+  "raw": {
+   "s1_stars_gain": 1064,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 115,
+   "s3_merged_prs": 115,
+   "s3_pr_authors": 3,
+   "s4_dependents": null,
+   "s4_downloads": 240,
+   "s4_packages": "npm:oh-my-hermes",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1258301311,
+  "star_rank": 125,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-13"
+ },
+ "repo_id": 1258301311,
+ "topics": []
+}

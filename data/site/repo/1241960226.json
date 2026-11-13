@@ -1,0 +1,183 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+ "full_name": "alibaba/open-code-review",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.99,
+    "s2": 0.0,
+    "s3": 24.71,
+    "s4": 21.57,
+    "s5": 8.07
+   },
+   "index": 58.34,
+   "rank": 61,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.33,
+    "s2": 0.0,
+    "s3": 21.47,
+    "s4": 21.57,
+    "s5": 8.16
+   },
+   "index": 52.53,
+   "rank": 85,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.92,
+    "s2": 0.0,
+    "s3": 21.63,
+    "s4": 24.71,
+    "s5": 8.08
+   },
+   "index": 59.33,
+   "rank": 61,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.65,
+    "s2": 0.0,
+    "s3": 25.78,
+    "s4": 26.85,
+    "s5": 8.11
+   },
+   "index": 78.39,
+   "rank": 8,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.62,
+    "s2": 0.0,
+    "s3": 22.32,
+    "s4": 25.08,
+    "s5": 8.12
+   },
+   "index": 71.13,
+   "rank": 24,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.5,
+    "s2": 0.0,
+    "s3": 15.85,
+    "s4": 26.05,
+    "s5": 8.12
+   },
+   "index": 63.52,
+   "rank": 40,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.95,
+    "s2": 0.0,
+    "s3": 15.53,
+    "s4": 21.94,
+    "s5": 8.07
+   },
+   "index": 58.49,
+   "rank": 68,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.4,
+    "s2": 0.0,
+    "s3": 16.19,
+    "s4": 21.85,
+    "s5": 8.38
+   },
+   "index": 55.82,
+   "rank": 73,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.97,
+    "s2": 0.0,
+    "s3": 12.81,
+    "s4": 24.1,
+    "s5": 8.38
+   },
+   "index": 50.26,
+   "rank": 103,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Go",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 4.97,
+   "s2": 0.0,
+   "s3": 12.81,
+   "s4": 24.1,
+   "s5": 8.38
+  },
+  "full_name": "alibaba/open-code-review",
+  "index": 50.26,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 28.14,
+   "s2": null,
+   "s3": 43.57,
+   "s4": 68.29,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 103,
+  "raw": {
+   "s1_stars_gain": 1028,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 3,
+   "s4_dependents": null,
+   "s4_downloads": 172843,
+   "s4_packages": "npm:@alibaba-group/open-code-review",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1241960226,
+  "star_rank": 144,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1241960226,
+ "topics": [
+  "agent",
+  "agent-skills",
+  "code-review",
+  "code-review-assistant",
+  "harness",
+  "repository-level-context"
+ ]
+}

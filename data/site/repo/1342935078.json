@@ -1,0 +1,102 @@
+{
+ "category": "기타 AI",
+ "description": "《深入理解 AI Infra：量化分析与系统设计》（李博杰 著）开源书稿：从硬件约束和模型架构出发，量化推导 LLM 推理与训练系统设计。含全书正文、PDF、配套计算工具与实验",
+ "full_name": "bojieli/ai-infra-book",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.94,
+    "s2": 0.0,
+    "s3": 22.5,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 59.98,
+   "rank": 60,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.09,
+    "s2": 0.0,
+    "s3": 17.07,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 36.71,
+   "rank": 155,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "기타 AI",
+  "contrib": {
+   "s1": 7.09,
+   "s2": 0.0,
+   "s3": 17.07,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "bojieli/ai-infra-book",
+  "index": 36.71,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 26.0,
+   "s2": null,
+   "s3": 37.56,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": 60,
+  "rank": 155,
+  "raw": {
+   "s1_stars_gain": 782,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 9,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1342935078,
+  "star_rank": 149,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1342935078,
+ "topics": [
+  "accelerator",
+  "ai-infra",
+  "ai-infrastructure",
+  "book",
+  "datacenter-network",
+  "deepseek",
+  "distributed-systems",
+  "gpu",
+  "kv-cache",
+  "llm",
+  "llm-inference",
+  "llm-serving",
+  "llm-training",
+  "mixture-of-experts",
+  "performance-engineering"
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "category": "모델·가중치",
+ "description": "[ECCV 2026 Best Paper Award Candidate] LingBot-Map: Geometric Context Transformer for Streaming 3D Reconstruction",
+ "full_name": "Robbyant/lingbot-map",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.07,
+    "s2": 0.0,
+    "s3": 8.19,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 25.74,
+   "rank": 181,
+   "week": "2026-10-04"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "모델·가중치",
+  "contrib": {
+   "s1": 5.07,
+   "s2": 0.0,
+   "s3": 8.19,
+   "s4": 0.0,
+   "s5": 12.47
+  },
+  "full_name": "Robbyant/lingbot-map",
+  "index": 25.74,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 18.59,
+   "s2": null,
+   "s3": 18.03,
+   "s4": null,
+   "s5": 45.73
+  },
+  "prev_rank": null,
+  "rank": 181,
+  "raw": {
+   "s1_stars_gain": 774,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1211752857,
+  "star_rank": 163,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-04"
+ },
+ "repo_id": 1211752857,
+ "topics": []
+}

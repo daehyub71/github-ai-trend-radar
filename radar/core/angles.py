@@ -4,7 +4,7 @@
 - B 반짝 관심: 스타 또는 언급 백분위 ≥ b_attention_min 이고 포크·기여·사용 평균 ≤ b_use_max
 - C 꾸준한 상승: 이번 주까지 지수가 c_rises 번 연속 올랐다 (이번 주 포함 c_rises+1 주 이력)
 - D 신호 전환: lookback 주 전보다 관심(S1+S5) 비중이 내려가고
-  사용·기여(S3+S4) 비중이 d_shift_min %p 이상 올랐다
+  사용·기여(S3+S4) 비중이 d_shift_min %p 이상 올랐다. 두 주에 값이 있는 신호가 같을 때만 (M2 실측 뒤 추가)
 
 거리가 먼 순(조건을 넘은 여유의 합)으로 유형마다 cap 개. 한 저장소는 D → C → A → B 순으로 한 유형에만.
 """
@@ -47,6 +47,10 @@ def _shares(row: Mapping[str, Any]) -> tuple[float, float] | None:
     return 100.0 * (c["s1"] + c["s5"]) / idx, 100.0 * (c["s3"] + c["s4"]) / idx
 
 
+def _present(row: Mapping[str, Any]) -> frozenset[str]:
+    return frozenset(k for k, v in row["pct"].items() if v is not None)
+
+
 def _a(row: Mapping[str, Any], r: AngleRules) -> tuple[float, dict[str, Any]] | None:
     p = row["pct"]
     s1 = p["s1"]
@@ -84,7 +88,9 @@ def select_angles(weeks: Sequence[Mapping[str, Any]], rules: AngleRules = RULES_
                     found["C"].append((vals[-1] - vals[0], rid, {"index": series}))
             old = hist[-(rules.lookback + 1)].get(rid)
             then, now = (_shares(old) if old else None), _shares(row)
-            if then and now and now[0] < then[0] and now[1] - then[1] >= rules.d_shift_min:
+            # 값이 있는 신호가 두 주에 같을 때만 비교한다 — 신호가 새로 채워지거나 빠진 것은 전환이 아니다
+            same = old is not None and _present(old) == _present(row)
+            if same and then and now and now[0] < then[0] and now[1] - then[1] >= rules.d_shift_min:
                 ev = {"attention_share": [round(then[0], 1), round(now[0], 1)],
                       "use_share": [round(then[1], 1), round(now[1], 1)]}
                 found["D"].append((now[1] - then[1], rid, ev))

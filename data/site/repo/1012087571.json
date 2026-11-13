@@ -1,0 +1,216 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": null,
+ "full_name": "router-for-me/CLIProxyAPI",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.03,
+    "s2": 0.0,
+    "s3": 33.06,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 51.56,
+   "rank": 93,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.06,
+    "s2": 0.0,
+    "s3": 33.15,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 57.82,
+   "rank": 68,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.5,
+    "s2": 0.0,
+    "s3": 30.72,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 52.77,
+   "rank": 89,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.08,
+    "s2": 0.0,
+    "s3": 31.46,
+    "s4": 0.0,
+    "s5": 26.59
+   },
+   "index": 73.12,
+   "rank": 15,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.72,
+    "s2": 0.0,
+    "s3": 32.51,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 55.71,
+   "rank": 74,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.46,
+    "s2": 0.0,
+    "s3": 36.34,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 58.34,
+   "rank": 69,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.3,
+    "s2": 0.0,
+    "s3": 33.03,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 52.87,
+   "rank": 90,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.86,
+    "s2": 0.0,
+    "s3": 29.61,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 51.02,
+   "rank": 93,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.21,
+    "s2": 0.0,
+    "s3": 30.19,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 47.87,
+   "rank": 105,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.02,
+    "s2": 0.0,
+    "s3": 28.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 44.68,
+   "rank": 116,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.95,
+    "s2": 0.0,
+    "s3": 32.96,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 53.86,
+   "rank": 87,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.56,
+    "s2": 0.0,
+    "s3": 34.8,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 51.31,
+   "rank": 89,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": false,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 3.56,
+   "s2": 0.0,
+   "s3": 34.8,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "router-for-me/CLIProxyAPI",
+  "index": 51.31,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 13.07,
+   "s2": null,
+   "s3": 76.55,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 87,
+  "rank": 89,
+  "raw": {
+   "s1_stars_gain": 857,
+   "s2_fork_delta": null,
+   "s2_forks": 8959,
+   "s3_closed_issues": 102,
+   "s3_merged_prs": 25,
+   "s3_pr_authors": 13,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1012087571,
+  "star_rank": 174,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1012087571,
+ "topics": []
+}

@@ -1,0 +1,112 @@
+{
+ "category": "AI 앱·서비스",
+ "description": "Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, courses, maps, and optional local AI, all running on hardware you own with no internet required.",
+ "full_name": "Crosstalk-Solutions/project-nomad",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.68,
+    "s2": 0.0,
+    "s3": 27.07,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 55.3,
+   "rank": 78,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.54,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 26.36,
+   "rank": 184,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.82,
+    "s2": 0.0,
+    "s3": 8.92,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 22.7,
+   "rank": 192,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 9.73,
+    "s2": 0.0,
+    "s3": 12.79,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 35.47,
+   "rank": 167,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 9.73,
+   "s2": 0.0,
+   "s3": 12.79,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "Crosstalk-Solutions/project-nomad",
+  "index": 35.47,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 35.68,
+   "s2": null,
+   "s3": 28.14,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 192,
+  "rank": 167,
+  "raw": {
+   "s1_stars_gain": 1186,
+   "s2_fork_delta": null,
+   "s2_forks": 4452,
+   "s3_closed_issues": 12,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1007827531,
+  "star_rank": 129,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1007827531,
+ "topics": []
+}

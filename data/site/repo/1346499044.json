@@ -1,0 +1,167 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "The truly free, open-source, local-first, cross-platform CapCut replacement. Scriptable through a JSON-RPC API & MCP.",
+ "full_name": "jub0t/Concat",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.63,
+    "s2": 0.0,
+    "s3": 13.81,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 35.25,
+   "rank": 157,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.02,
+    "s2": 0.0,
+    "s3": 32.11,
+    "s4": 0.0,
+    "s5": 25.97
+   },
+   "index": 71.1,
+   "rank": 20,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.91,
+    "s2": 0.0,
+    "s3": 28.34,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 48.8,
+   "rank": 100,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.95,
+    "s2": 0.0,
+    "s3": 20.41,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 35.83,
+   "rank": 152,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.2,
+    "s2": 0.0,
+    "s3": 28.63,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 63.79,
+   "rank": 45,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.59,
+    "s2": 0.0,
+    "s3": 28.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 61.94,
+   "rank": 45,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 18.02,
+    "s2": 0.0,
+    "s3": 16.75,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 47.72,
+   "rank": 110,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 18.02,
+   "s2": 0.0,
+   "s3": 16.75,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "jub0t/Concat",
+  "index": 47.72,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 66.08,
+   "s2": null,
+   "s3": 36.85,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 110,
+  "raw": {
+   "s1_stars_gain": 2121,
+   "s2_fork_delta": null,
+   "s2_forks": 2123,
+   "s3_closed_issues": 80,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1346499044,
+  "star_rank": 68,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1346499044,
+ "topics": [
+  "ffmpeg",
+  "free-video-editor",
+  "model-context-protocol",
+  "non-linear-editor",
+  "offline-first",
+  "open-source-video-editor",
+  "self-hosted",
+  "video-editing",
+  "video-editing-automation",
+  "video-editing-software",
+  "video-editing-tools",
+  "video-editor",
+  "voice-cloning",
+  "youtube-automation",
+  "youtube-shorts"
+ ]
+}

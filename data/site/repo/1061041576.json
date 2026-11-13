@@ -1,0 +1,180 @@
+{
+ "category": "학습·파인튜닝",
+ "description": "Fully automatic censorship removal for language models",
+ "full_name": "p-e-w/heretic",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.65,
+    "s2": 0.0,
+    "s3": 3.8,
+    "s4": 5.26,
+    "s5": 8.12
+   },
+   "index": 21.83,
+   "rank": 194,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.15,
+    "s2": 0.0,
+    "s3": 11.15,
+    "s4": 8.26,
+    "s5": 8.29
+   },
+   "index": 39.85,
+   "rank": 148,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.97,
+    "s2": 0.0,
+    "s3": 3.82,
+    "s4": 8.47,
+    "s5": 8.08
+   },
+   "index": 21.33,
+   "rank": 197,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.77,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 9.21,
+    "s5": 8.11
+   },
+   "index": 23.25,
+   "rank": 190,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.06,
+    "s2": 0.0,
+    "s3": 11.92,
+    "s4": 6.72,
+    "s5": 8.12
+   },
+   "index": 30.82,
+   "rank": 173,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.31,
+    "s2": 0.0,
+    "s3": 11.83,
+    "s4": 7.63,
+    "s5": 8.07
+   },
+   "index": 36.84,
+   "rank": 148,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.38,
+    "s2": 0.0,
+    "s3": 13.47,
+    "s4": 7.56,
+    "s5": 8.38
+   },
+   "index": 35.8,
+   "rank": 154,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.81,
+    "s2": 0.0,
+    "s3": 15.4,
+    "s4": 9.47,
+    "s5": 8.38
+   },
+   "index": 37.07,
+   "rank": 154,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 13.39,
+    "s2": 0.0,
+    "s3": 13.28,
+    "s4": 12.66,
+    "s5": 8.38
+   },
+   "index": 47.71,
+   "rank": 111,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "학습·파인튜닝",
+  "contrib": {
+   "s1": 13.39,
+   "s2": 0.0,
+   "s3": 13.28,
+   "s4": 12.66,
+   "s5": 8.38
+  },
+  "full_name": "p-e-w/heretic",
+  "index": 47.71,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 75.88,
+   "s2": null,
+   "s3": 45.14,
+   "s4": 35.87,
+   "s5": 47.49
+  },
+  "prev_rank": 154,
+  "rank": 111,
+  "raw": {
+   "s1_stars_gain": 2649,
+   "s2_fork_delta": null,
+   "s2_forks": 4635,
+   "s3_closed_issues": 3,
+   "s3_merged_prs": 10,
+   "s3_pr_authors": 3,
+   "s4_dependents": 0,
+   "s4_downloads": 6614,
+   "s4_packages": "pypi:heretic-llm",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1061041576,
+  "star_rank": 49,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1061041576,
+ "topics": [
+  "abliteration",
+  "llm",
+  "transformer"
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Sketch Material 3 Expressive screens in the browser and turn them into vibe-coding prompts.",
+ "full_name": "lnkiai/m3e-canvas",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 25.49,
+    "s2": 0.0,
+    "s3": 24.11,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 62.42,
+   "rank": 44,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.07,
+    "s2": 0.0,
+    "s3": 28.51,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 64.06,
+   "rank": 40,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 9.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 35.22,
+   "rank": 155,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.68,
+    "s2": 0.0,
+    "s3": 19.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 35.38,
+   "rank": 158,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 3.68,
+   "s2": 0.0,
+   "s3": 19.15,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "lnkiai/m3e-canvas",
+  "index": 35.38,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 13.5,
+   "s2": null,
+   "s3": 42.13,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": 155,
+  "rank": 158,
+  "raw": {
+   "s1_stars_gain": 661,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 8,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1354310030,
+  "star_rank": 174,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1354310030,
+ "topics": [
+  "design-tool",
+  "material-3-expressive",
+  "material-design",
+  "material3",
+  "nextjs",
+  "prompt",
+  "react",
+  "vibe-coding"
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "DSH's officially top-recommended TUI plugin — high performance, low overhead, cute pixel whale, smooth mouse interaction. One-command install via npm. / DSH 官方首推的 TUI 插件，高性能低占用，可爱像素鲸鱼，流畅鼠标交互，npm 一键安装",
+ "full_name": "ccch1mneyyy/dsh-TUI",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.25,
+    "s2": 0.0,
+    "s3": 24.91,
+    "s4": 9.15,
+    "s5": 8.07
+   },
+   "index": 50.38,
+   "rank": 98,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.12,
+    "s2": 0.0,
+    "s3": 26.03,
+    "s4": 20.26,
+    "s5": 8.16
+   },
+   "index": 60.57,
+   "rank": 54,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.21,
+    "s2": 0.0,
+    "s3": 22.22,
+    "s4": 12.5,
+    "s5": 8.32
+   },
+   "index": 45.24,
+   "rank": 121,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 0.89,
+    "s2": 0.0,
+    "s3": 19.39,
+    "s4": 16.88,
+    "s5": 8.38
+   },
+   "index": 45.53,
+   "rank": 122,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 0.89,
+   "s2": 0.0,
+   "s3": 19.39,
+   "s4": 16.88,
+   "s5": 8.38
+  },
+  "full_name": "ccch1mneyyy/dsh-TUI",
+  "index": 45.53,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 5.03,
+   "s2": null,
+   "s3": 65.91,
+   "s4": 47.83,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 122,
+  "raw": {
+   "s1_stars_gain": 744,
+   "s2_fork_delta": null,
+   "s2_forks": 361,
+   "s3_closed_issues": 34,
+   "s3_merged_prs": 22,
+   "s3_pr_authors": 6,
+   "s4_dependents": 0,
+   "s4_downloads": 22116,
+   "s4_packages": "npm:@deepseek-harness-tui/dsh-tui",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1333111893,
+  "star_rank": 190,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1333111893,
+ "topics": [
+  "claude-code",
+  "coding-agent",
+  "deepseek",
+  "deepseek-harness",
+  "dsh-plugin",
+  "ink",
+  "react",
+  "terminal",
+  "tui"
+ ]
+}

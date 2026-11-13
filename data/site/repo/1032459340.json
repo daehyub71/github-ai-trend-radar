@@ -1,0 +1,226 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Spec-driven development (SDD) for AI coding assistants.",
+ "full_name": "Fission-AI/OpenSpec",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.02,
+    "s2": 0.0,
+    "s3": 18.98,
+    "s4": 30.07,
+    "s5": 8.07
+   },
+   "index": 60.13,
+   "rank": 53,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.21,
+    "s2": 0.0,
+    "s3": 16.4,
+    "s4": 31.37,
+    "s5": 8.16
+   },
+   "index": 62.14,
+   "rank": 48,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.39,
+    "s2": 0.0,
+    "s3": 17.82,
+    "s4": 30.04,
+    "s5": 8.12
+   },
+   "index": 60.37,
+   "rank": 55,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.23,
+    "s2": 0.0,
+    "s3": 18.84,
+    "s4": 30.04,
+    "s5": 8.29
+   },
+   "index": 62.4,
+   "rank": 45,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.07,
+    "s2": 0.0,
+    "s3": 15.47,
+    "s4": 28.94,
+    "s5": 8.08
+   },
+   "index": 55.56,
+   "rank": 76,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.0,
+    "s2": 0.0,
+    "s3": 20.98,
+    "s4": 30.69,
+    "s5": 8.11
+   },
+   "index": 70.78,
+   "rank": 22,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.0,
+    "s2": 0.0,
+    "s3": 21.2,
+    "s4": 30.65,
+    "s5": 8.12
+   },
+   "index": 65.97,
+   "rank": 32,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.24,
+    "s2": 0.0,
+    "s3": 22.84,
+    "s4": 31.09,
+    "s5": 8.12
+   },
+   "index": 63.29,
+   "rank": 42,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.04,
+    "s2": 0.0,
+    "s3": 12.0,
+    "s4": 28.62,
+    "s5": 8.07
+   },
+   "index": 48.74,
+   "rank": 103,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.8,
+    "s2": 0.0,
+    "s3": 17.27,
+    "s4": 27.73,
+    "s5": 8.38
+   },
+   "index": 54.18,
+   "rank": 80,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.42,
+    "s2": 0.0,
+    "s3": 17.37,
+    "s4": 30.13,
+    "s5": 8.38
+   },
+   "index": 57.3,
+   "rank": 58,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 0.27,
+    "s2": 0.0,
+    "s3": 11.36,
+    "s4": 23.02,
+    "s5": 8.38
+   },
+   "index": 43.02,
+   "rank": 137,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 0.27,
+   "s2": 0.0,
+   "s3": 11.36,
+   "s4": 23.02,
+   "s5": 8.38
+  },
+  "full_name": "Fission-AI/OpenSpec",
+  "index": 43.02,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 1.51,
+   "s2": null,
+   "s3": 38.61,
+   "s4": 65.22,
+   "s5": 47.49
+  },
+  "prev_rank": 58,
+  "rank": 137,
+  "raw": {
+   "s1_stars_gain": 689,
+   "s2_fork_delta": null,
+   "s2_forks": 5122,
+   "s3_closed_issues": 4,
+   "s3_merged_prs": 6,
+   "s3_pr_authors": 1,
+   "s4_dependents": 0,
+   "s4_downloads": 1272036,
+   "s4_packages": "npm:@fission-ai/openspec",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1032459340,
+  "star_rank": 197,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1032459340,
+ "topics": [
+  "ai",
+  "context-engineering",
+  "engineering",
+  "planning",
+  "prd",
+  "sdd",
+  "sdlc",
+  "spec",
+  "spec-driven-development",
+  "specification"
+ ]
+}

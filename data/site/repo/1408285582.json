@@ -1,0 +1,99 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "GridCraft: an open-source, clean-room spreadsheet (Microsoft Excel-style) in pure Rust. By ArtCraft.",
+ "full_name": "storytold/gridcraft",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.99,
+    "s2": 0.0,
+    "s3": 34.94,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 64.41,
+   "rank": 48,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.06,
+    "s2": 0.0,
+    "s3": 40.71,
+    "s4": 0.0,
+    "s5": 26.24
+   },
+   "index": 89.02,
+   "rank": 4,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.55,
+    "s2": 0.0,
+    "s3": 41.8,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 55.2,
+   "rank": 73,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 0.55,
+   "s2": 0.0,
+   "s3": 41.8,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "storytold/gridcraft",
+  "index": 55.2,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 2.0,
+   "s2": null,
+   "s3": 91.96,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": 4,
+  "rank": 73,
+  "raw": {
+   "s1_stars_gain": 833,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 224,
+   "s3_merged_prs": 313,
+   "s3_pr_authors": 85,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1408285582,
+  "star_rank": 197,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 1408285582,
+ "topics": []
+}

@@ -1,0 +1,81 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+ "full_name": "google-gemini/gemini-cli",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.86,
+    "s2": 0.0,
+    "s3": 30.88,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 46.6,
+   "rank": 115,
+   "week": "2026-10-18"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 2.86,
+   "s2": 0.0,
+   "s3": 30.88,
+   "s4": 0.0,
+   "s5": 12.85
+  },
+  "full_name": "google-gemini/gemini-cli",
+  "index": 46.6,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 10.5,
+   "s2": null,
+   "s3": 67.94,
+   "s4": null,
+   "s5": 47.12
+  },
+  "prev_rank": null,
+  "rank": 115,
+  "raw": {
+   "s1_stars_gain": 928,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 38,
+   "s3_merged_prs": 25,
+   "s3_pr_authors": 10,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 968197216,
+  "star_rank": 180,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-18"
+ },
+ "repo_id": 968197216,
+ "topics": [
+  "ai",
+  "ai-agents",
+  "cli",
+  "gemini",
+  "gemini-api",
+  "mcp-client",
+  "mcp-server"
+ ]
+}

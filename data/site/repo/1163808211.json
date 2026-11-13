@@ -1,0 +1,106 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "The first vision plugin for DeepSeek Harness, and the vision bridge for every text-only coding agent. Paste an image, get structured JSON evidence (OCR, layout, semantics). | 全网最强 DeepSeek Harness 外挂视觉插件，为 DeepSeek、GLM 等纯文本模型外挂视觉能力，粘贴图片即得结构化 JSON 证据（OCR、版面、语义）。",
+ "full_name": "liustack/modlens",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.75,
+    "s2": 0.0,
+    "s3": 10.36,
+    "s4": 18.3,
+    "s5": 8.07
+   },
+   "index": 46.48,
+   "rank": 110,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.2,
+    "s2": 0.0,
+    "s3": 10.2,
+    "s4": 23.53,
+    "s5": 8.16
+   },
+   "index": 52.09,
+   "rank": 86,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 10.2,
+   "s2": 0.0,
+   "s3": 10.2,
+   "s4": 23.53,
+   "s5": 8.16
+  },
+  "full_name": "liustack/modlens",
+  "index": 52.09,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 57.79,
+   "s2": null,
+   "s3": 34.69,
+   "s4": 66.67,
+   "s5": 46.23
+  },
+  "prev_rank": 110,
+  "rank": 86,
+  "raw": {
+   "s1_stars_gain": 1443,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 34,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": 84229,
+   "s4_packages": "npm:@liustack/modlens",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1163808211,
+  "star_rank": 85,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1163808211,
+ "topics": [
+  "agent-skills",
+  "claude-code",
+  "claude-skills",
+  "codex",
+  "cordis",
+  "deepseek",
+  "dsh",
+  "dsh-plugin",
+  "glm",
+  "harness",
+  "harness-engineering",
+  "hermes-agent",
+  "image-to-text",
+  "multimodal",
+  "ocr",
+  "openclaw",
+  "pi-agent",
+  "text-only-llm",
+  "vision",
+  "vision-transformer"
+ ]
+}

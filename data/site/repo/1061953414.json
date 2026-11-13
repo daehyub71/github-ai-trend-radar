@@ -1,0 +1,231 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Public repository for Agent Skills",
+ "full_name": "anthropics/skills",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.34,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 50.08,
+   "rank": 100,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.72,
+    "s2": 0.0,
+    "s3": 18.19,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 47.52,
+   "rank": 111,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.82,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 35.25,
+   "rank": 160,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.52,
+    "s2": 0.0,
+    "s3": 14.0,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 48.33,
+   "rank": 112,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.15,
+    "s2": 0.0,
+    "s3": 11.5,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 40.13,
+   "rank": 140,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.88,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 31.84,
+   "rank": 166,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.09,
+    "s2": 0.0,
+    "s3": 12.54,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 41.17,
+   "rank": 132,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.95,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 40.77,
+   "rank": 133,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.51,
+    "s2": 0.0,
+    "s3": 12.6,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 36.58,
+   "rank": 150,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 32.39,
+   "rank": 167,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.55,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 34.9,
+   "rank": 166,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.71,
+    "s2": 0.0,
+    "s3": 15.92,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 47.58,
+   "rank": 110,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 21.52,
+    "s2": 0.0,
+    "s3": 13.55,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 48.02,
+   "rank": 108,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 21.52,
+   "s2": 0.0,
+   "s3": 13.55,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "anthropics/skills",
+  "index": 48.02,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 78.89,
+   "s2": null,
+   "s3": 29.82,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 110,
+  "rank": 108,
+  "raw": {
+   "s1_stars_gain": 3108,
+   "s2_fork_delta": null,
+   "s2_forks": 22792,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1061953414,
+  "star_rank": 43,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1061953414,
+ "topics": [
+  "agent-skills"
+ ]
+}

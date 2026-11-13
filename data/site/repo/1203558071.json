@@ -1,0 +1,135 @@
+{
+ "category": "벡터DB·메모리",
+ "description": "TencentDB Agent Memory is a team-level memory hub for AI Agents — turning conversations, docs, and code into four reusable memory assets (Chat Memory, Skill, LLM-Wiki, Code-Graph) that are governed, shared, and equipped across agents and frameworks.",
+ "full_name": "TencentCloud/TencentDB-Agent-Memory",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.81,
+    "s2": 0.0,
+    "s3": 22.8,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 60.08,
+   "rank": 54,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.05,
+    "s2": 0.0,
+    "s3": 11.15,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 42.81,
+   "rank": 127,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.88,
+    "s2": 0.0,
+    "s3": 23.71,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 52.14,
+   "rank": 92,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.5,
+    "s2": 0.0,
+    "s3": 19.34,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 40.65,
+   "rank": 144,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.12,
+    "s2": 0.0,
+    "s3": 25.95,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 53.02,
+   "rank": 85,
+   "week": "2026-10-11"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "벡터DB·메모리",
+  "contrib": {
+   "s1": 14.12,
+   "s2": 0.0,
+   "s3": 25.95,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "TencentCloud/TencentDB-Agent-Memory",
+  "index": 53.02,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 51.76,
+   "s2": null,
+   "s3": 57.09,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 85,
+  "raw": {
+   "s1_stars_gain": 1659,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 27,
+   "s3_merged_prs": 12,
+   "s3_pr_authors": 8,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1203558071,
+  "star_rank": 97,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-11"
+ },
+ "repo_id": 1203558071,
+ "topics": [
+  "agent",
+  "ai-agent",
+  "embedding",
+  "llm",
+  "local-first",
+  "long-term-memory",
+  "memory",
+  "openclaw-plugin",
+  "vector-search"
+ ]
+}

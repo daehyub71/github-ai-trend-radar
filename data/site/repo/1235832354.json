@@ -1,0 +1,83 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "Run thousands of AI agent sandboxes on the cheapest machines.",
+ "full_name": "deeplethe/sandstorm",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 18.5,
+    "s2": 0.0,
+    "s3": 15.11,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 46.57,
+   "rank": 116,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 18.5,
+   "s2": 0.0,
+   "s3": 15.11,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "deeplethe/sandstorm",
+  "index": 46.57,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 67.84,
+   "s2": null,
+   "s3": 33.25,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": null,
+  "rank": 116,
+  "raw": {
+   "s1_stars_gain": 2196,
+   "s2_fork_delta": null,
+   "s2_forks": 525,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 4,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1235832354,
+  "star_rank": 65,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1235832354,
+ "topics": [
+  "agent-infrastructure",
+  "ai-agents",
+  "checkpoint-restore",
+  "code-execution",
+  "gvisor",
+  "rust",
+  "sandbox",
+  "self-hosted",
+  "snapshot"
+ ]
+}

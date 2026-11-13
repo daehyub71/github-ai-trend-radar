@@ -1,0 +1,109 @@
+{
+ "category": "브라우저·컴퓨터 사용 자동화",
+ "description": "Run AI agents on real and isolated machines — own kernel, filesystem, and network — with <100ms boot. Local first, OCI compatible, pure Rust.",
+ "full_name": "arcboxlabs/arcbox",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.89,
+    "s2": 0.0,
+    "s3": 4.08,
+    "s4": 1.5,
+    "s5": 8.29
+   },
+   "index": 21.77,
+   "rank": 193,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.82,
+    "s2": 0.0,
+    "s3": 8.05,
+    "s4": 0.71,
+    "s5": 8.08
+   },
+   "index": 25.66,
+   "rank": 187,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.98,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 0.77,
+    "s5": 8.11
+   },
+   "index": 21.02,
+   "rank": 195,
+   "week": "2026-09-13"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "브라우저·컴퓨터 사용 자동화",
+  "contrib": {
+   "s1": 7.98,
+   "s2": 0.0,
+   "s3": 4.16,
+   "s4": 0.77,
+   "s5": 8.11
+  },
+  "full_name": "arcboxlabs/arcbox",
+  "index": 21.02,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 45.23,
+   "s2": null,
+   "s3": 14.13,
+   "s4": 2.17,
+   "s5": 45.98
+  },
+  "prev_rank": 187,
+  "rank": 195,
+  "raw": {
+   "s1_stars_gain": 1197,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": 18,
+   "s4_packages": "pypi:arcbox",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1127761357,
+  "star_rank": 110,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-13"
+ },
+ "repo_id": 1127761357,
+ "topics": [
+  "ai-agents",
+  "computer-use",
+  "containers",
+  "docker",
+  "firecracker",
+  "microvm",
+  "rust",
+  "sandbox",
+  "virtual-machine",
+  "virtualization"
+ ]
+}

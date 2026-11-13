@@ -1,0 +1,151 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+ "full_name": "HKUDS/CLI-Anything",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.7,
+    "s2": 0.0,
+    "s3": 6.37,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 22.54,
+   "rank": 195,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.39,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 21.81,
+   "rank": 195,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.66,
+    "s2": 0.0,
+    "s3": 13.92,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 38.13,
+   "rank": 149,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.14,
+    "s2": 0.0,
+    "s3": 10.04,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 31.72,
+   "rank": 168,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.36,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 37.18,
+   "rank": 149,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.18,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 39.53,
+   "rank": 147,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.18,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 28.4,
+   "rank": 178,
+   "week": "2026-10-25"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 9.18,
+   "s2": 0.0,
+   "s3": 6.27,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "HKUDS/CLI-Anything",
+  "index": 28.4,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 33.67,
+   "s2": null,
+   "s3": 13.79,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 147,
+  "rank": 178,
+  "raw": {
+   "s1_stars_gain": 1122,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1176011916,
+  "star_rank": 133,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-10-25"
+ },
+ "repo_id": 1176011916,
+ "topics": []
+}

@@ -1,0 +1,233 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "The open-source CapCut alternative",
+ "full_name": "OpenCut-app/OpenCut",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.54,
+    "s2": 0.0,
+    "s3": 9.25,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 39.26,
+   "rank": 154,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 20.28,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 39.31,
+   "rank": 140,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.39,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 40.81,
+   "rank": 143,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.14,
+    "s2": 0.0,
+    "s3": 9.61,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 32.57,
+   "rank": 165,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.41,
+    "s2": 0.0,
+    "s3": 5.9,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 18.79,
+   "rank": 202,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.92,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 20.88,
+   "rank": 197,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.55,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 28.86,
+   "rank": 179,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.61,
+    "s2": 0.0,
+    "s3": 10.04,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 35.2,
+   "rank": 155,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.72,
+    "s2": 0.0,
+    "s3": 5.6,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 34.8,
+   "rank": 155,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.21,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 34.03,
+   "rank": 161,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.05,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 24.4,
+   "rank": 190,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.13,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 26.35,
+   "rank": 185,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 1.64,
+    "s2": 0.0,
+    "s3": 5.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 20.31,
+   "rank": 198,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 1.64,
+   "s2": 0.0,
+   "s3": 5.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "OpenCut-app/OpenCut",
+  "index": 20.31,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 6.03,
+   "s2": null,
+   "s3": 12.56,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 185,
+  "rank": 198,
+  "raw": {
+   "s1_stars_gain": 765,
+   "s2_fork_delta": null,
+   "s2_forks": 9818,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1006414368,
+  "star_rank": 188,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1006414368,
+ "topics": [
+  "editor",
+  "oss",
+  "videoeditor"
+ ]
+}

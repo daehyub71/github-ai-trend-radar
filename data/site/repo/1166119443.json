@@ -1,0 +1,73 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": null,
+ "full_name": "get-bb/bb",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.07,
+    "s2": 0.0,
+    "s3": 39.53,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 52.41,
+   "rank": 91,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 0.07,
+   "s2": 0.0,
+   "s3": 39.53,
+   "s4": 0.0,
+   "s5": 12.81
+  },
+  "full_name": "get-bb/bb",
+  "index": 52.41,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 0.25,
+   "s2": null,
+   "s3": 86.97,
+   "s4": null,
+   "s5": 46.98
+  },
+  "prev_rank": null,
+  "rank": 91,
+  "raw": {
+   "s1_stars_gain": 556,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 51,
+   "s3_merged_prs": 198,
+   "s3_pr_authors": 17,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1166119443,
+  "star_rank": 199,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1166119443,
+ "topics": []
+}

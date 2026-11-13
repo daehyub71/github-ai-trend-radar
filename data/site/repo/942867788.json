@@ -1,0 +1,120 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "LEAKED SYSTEM PROMPTS FOR CHATGPT, CLAUDE, GEMINI, GROK, PERPLEXITY, CURSOR, LOVABLE, REPLIT, AND MORE! - AI SYSTEMS TRANSPARENCY FOR ALL! 👐",
+ "full_name": "elder-plinius/CL4R1T4S",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.98,
+    "s2": 0.0,
+    "s3": 6.31,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 38.1,
+   "rank": 152,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.76,
+    "s2": 0.0,
+    "s3": 5.9,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 20.15,
+   "rank": 198,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.3,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 23.61,
+   "rank": 195,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 4.3,
+   "s2": 0.0,
+   "s3": 6.77,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "elder-plinius/CL4R1T4S",
+  "index": 23.61,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 15.75,
+   "s2": null,
+   "s3": 14.89,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": null,
+  "rank": 195,
+  "raw": {
+   "s1_stars_gain": 686,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 942867788,
+  "star_rank": 169,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 942867788,
+ "topics": [
+  "agents",
+  "ai",
+  "chatgpt",
+  "gemini",
+  "google",
+  "grok",
+  "hacking",
+  "leak",
+  "leaked",
+  "openai",
+  "prompt",
+  "prompt-engineering",
+  "prompts",
+  "red-team",
+  "red-teaming",
+  "system",
+  "system-info",
+  "system-prompts",
+  "tools",
+  "transparency"
+ ]
+}

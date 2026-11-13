@@ -1,0 +1,508 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 2.99,
+      "use": 85.42,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "bytedance/deer-flow",
+     "repo_id": 979115477
+    },
+    {
+     "evidence": {
+      "s1": 13.93,
+      "use": 93.25,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "langgenius/dify",
+     "repo_id": 626805178
+    },
+    {
+     "evidence": {
+      "s1": 9.7,
+      "use": 87.56,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "langchain-ai/deepagents",
+     "repo_id": 1027384981
+    },
+    {
+     "evidence": {
+      "s1": 3.73,
+      "use": 80.5,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "JustVugg/colibri",
+     "repo_id": 1286080397
+    },
+    {
+     "evidence": {
+      "s1": 8.96,
+      "use": 85.7,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "remotion-dev/remotion",
+     "repo_id": 274495425
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 100.0,
+      "s5": 46.02,
+      "use": 12.92
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    },
+    {
+     "evidence": {
+      "s1": 99.0,
+      "s5": 46.02,
+      "use": 12.92
+     },
+     "full_name": "freestylefly/awesome-gpt-image-2",
+     "repo_id": 1220744720
+    },
+    {
+     "evidence": {
+      "s1": 93.03,
+      "s5": 46.02,
+      "use": 12.92
+     },
+     "full_name": "pathwaycom/arc-task-gen",
+     "repo_id": 1322954467
+    },
+    {
+     "evidence": {
+      "s1": 90.05,
+      "s5": 46.02,
+      "use": 12.92
+     },
+     "full_name": "multica-ai/andrej-karpathy-skills",
+     "repo_id": 1142983825
+    },
+    {
+     "evidence": {
+      "s1": 98.01,
+      "s5": 46.02,
+      "use": 21.75
+     },
+     "full_name": "mattpocock/skills",
+     "repo_id": 1148788086
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [],
+   "status": "insufficient"
+  },
+  "D": {
+   "items": [],
+   "status": "insufficient"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "deepseek-ai/deepseek-harness",
+    "pct": 100.0,
+    "repo_id": 1333065091
+   },
+   {
+    "full_name": "tt-a1i/archify",
+    "pct": 99.5,
+    "repo_id": 1211139949
+   },
+   {
+    "full_name": "freestylefly/awesome-gpt-image-2",
+    "pct": 99.0,
+    "repo_id": 1220744720
+   },
+   {
+    "full_name": "bilawalsidhu/gods-eye-view",
+    "pct": 98.51,
+    "repo_id": 1277471539
+   },
+   {
+    "full_name": "mattpocock/skills",
+    "pct": 98.01,
+    "repo_id": 1148788086
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 98.58,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "cheaper-inference/OmniRoute",
+    "pct": 97.33,
+    "repo_id": 1157102282
+   },
+   {
+    "full_name": "apache/maka",
+    "pct": 97.0,
+    "repo_id": 1251460378
+   },
+   {
+    "full_name": "can1357/oh-my-pi",
+    "pct": 96.83,
+    "repo_id": 1125856365
+   },
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 96.67,
+    "repo_id": 1024554267
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "openai/codex",
+    "pct": 100.0,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.87,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 95.74,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "tensorflow/tensorflow",
+    "pct": 93.62,
+    "repo_id": 45717250
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 91.49,
+    "repo_id": 274495425
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "SenteLabsAI/OpenExecutive",
+    "pct": 99.5,
+    "repo_id": 1266695553
+   },
+   {
+    "full_name": "bilawalsidhu/gods-eye-view",
+    "pct": 99.25,
+    "repo_id": 1277471539
+   },
+   {
+    "full_name": "Lakr233/vphone-cli",
+    "pct": 99.25,
+    "repo_id": 1167515091
+   },
+   {
+    "full_name": "anomalyco/opencode",
+    "pct": 97.89,
+    "repo_id": 975734319
+   },
+   {
+    "full_name": "stemdeckapp/stemdeck",
+    "pct": 97.14,
+    "repo_id": 1227920501
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 202,
+  "star_top_in_index_top": 3,
+  "with_packages": 48
+ },
+ "top10": [
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 25.1,
+    "s2": 0.0,
+    "s3": 43.94,
+    "s4": 0.0,
+    "s5": 26.19
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "index": 95.23,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.04,
+    "s2": null,
+    "s3": 96.67,
+    "s4": null,
+    "s5": 96.02
+   },
+   "prev_rank": 3,
+   "rank": 1,
+   "repo_id": 1024554267,
+   "star_rank": 17
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 20.9,
+    "s2": 0.0,
+    "s3": 43.41,
+    "s4": 0.0,
+    "s5": 26.7
+   },
+   "full_name": "anomalyco/opencode",
+   "index": 91.0,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 76.62,
+    "s2": null,
+    "s3": 95.5,
+    "s4": null,
+    "s5": 97.89
+   },
+   "prev_rank": 11,
+   "rank": 2,
+   "repo_id": 975734319,
+   "star_rank": 48
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 16.94,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 35.29,
+    "s5": 16.68
+   },
+   "full_name": "openai/codex",
+   "index": 84.19,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 96.02,
+    "s2": null,
+    "s3": 51.92,
+    "s4": 100.0,
+    "s5": 94.53
+   },
+   "prev_rank": 4,
+   "rank": 3,
+   "repo_id": 965415649,
+   "star_rank": 9
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 9.75,
+    "s2": 0.0,
+    "s3": 29.0,
+    "s4": 34.54,
+    "s5": 8.12
+   },
+   "full_name": "openclaw/openclaw",
+   "index": 81.4,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 55.22,
+    "s2": null,
+    "s3": 98.58,
+    "s4": 97.87,
+    "s5": 46.02
+   },
+   "prev_rank": 10,
+   "rank": 4,
+   "repo_id": 1103012935,
+   "star_rank": 91
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 26.05,
+    "s2": 0.0,
+    "s3": 42.08,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "stablyai/orca",
+   "index": 80.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.52,
+    "s2": null,
+    "s3": 92.58,
+    "s4": null,
+    "s5": 46.02
+   },
+   "prev_rank": 9,
+   "rank": 5,
+   "repo_id": 1183888342,
+   "star_rank": 10
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 20.76,
+    "s2": 0.0,
+    "s3": 32.92,
+    "s4": 0.0,
+    "s5": 26.29
+   },
+   "full_name": "guillaumemeyer/watermarks-remover",
+   "index": 79.97,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 76.12,
+    "s2": null,
+    "s3": 72.42,
+    "s4": null,
+    "s5": 96.39
+   },
+   "prev_rank": 16,
+   "rank": 6,
+   "repo_id": 1331135699,
+   "star_rank": 49
+  },
+  {
+   "category": "평가·관측(LLMOps)",
+   "contrib": {
+    "s1": 16.68,
+    "s2": 0.0,
+    "s3": 28.63,
+    "s4": 24.03,
+    "s5": 8.12
+   },
+   "full_name": "cheaper-inference/OmniRoute",
+   "index": 77.46,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 94.53,
+    "s2": null,
+    "s3": 97.33,
+    "s4": 68.09,
+    "s5": 46.02
+   },
+   "prev_rank": 12,
+   "rank": 7,
+   "repo_id": 1157102282,
+   "star_rank": 12
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 20.35,
+    "s2": 0.0,
+    "s3": 44.09,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "apache/maka",
+   "index": 76.99,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 74.63,
+    "s2": null,
+    "s3": 97.0,
+    "s4": null,
+    "s5": 46.02
+   },
+   "prev_rank": 52,
+   "rank": 8,
+   "repo_id": 1251460378,
+   "star_rank": 52
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 19.67,
+    "s2": 0.0,
+    "s3": 44.02,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "can1357/oh-my-pi",
+   "index": 76.24,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 72.14,
+    "s2": null,
+    "s3": 96.83,
+    "s4": null,
+    "s5": 46.02
+   },
+   "prev_rank": 19,
+   "rank": 9,
+   "repo_id": 1125856365,
+   "star_rank": 57
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 26.32,
+    "s2": 0.0,
+    "s3": 36.93,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "full_name": "omacom/omarchy",
+   "index": 75.81,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.52,
+    "s2": null,
+    "s3": 81.25,
+    "s4": null,
+    "s5": 46.02
+   },
+   "prev_rank": 35,
+   "rank": 10,
+   "repo_id": 994093166,
+   "star_rank": 8
+  }
+ ],
+ "week": "2026-08-23",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

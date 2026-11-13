@@ -1,0 +1,72 @@
+{
+ "category": "MCP 서버·도구",
+ "description": null,
+ "full_name": "zvec-ai/zvec-grep",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.25,
+    "s2": 0.0,
+    "s3": 17.44,
+    "s4": 12.77,
+    "s5": 17.16
+   },
+   "index": 62.62,
+   "rank": 41,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 15.25,
+   "s2": 0.0,
+   "s3": 17.44,
+   "s4": 12.77,
+   "s5": 17.16
+  },
+  "full_name": "zvec-ai/zvec-grep",
+  "index": 62.62,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 86.43,
+   "s2": null,
+   "s3": 59.31,
+   "s4": 36.17,
+   "s5": 97.24
+  },
+  "prev_rank": null,
+  "rank": 41,
+  "raw": {
+   "s1_stars_gain": 2822,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 7,
+   "s3_merged_prs": 14,
+   "s3_pr_authors": 5,
+   "s4_dependents": null,
+   "s4_downloads": 4530,
+   "s4_packages": "npm:@zvec/zvec-grep",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 9,
+   "s5_hn_stories": 1
+  },
+  "repo_id": 1295987763,
+  "star_rank": 28,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1295987763,
+ "topics": []
+}

@@ -1,0 +1,243 @@
+{
+ "category": "멀티모달(이미지·음성·영상)",
+ "description": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
+ "full_name": "harry0703/MoneyPrinterTurbo",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 10.68,
+    "s4": 1.96,
+    "s5": 8.07
+   },
+   "index": 32.51,
+   "rank": 169,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.38,
+    "s2": 0.0,
+    "s3": 18.84,
+    "s4": 0.65,
+    "s5": 8.16
+   },
+   "index": 45.03,
+   "rank": 118,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.15,
+    "s2": 0.0,
+    "s3": 20.59,
+    "s4": 1.5,
+    "s5": 8.12
+   },
+   "index": 46.37,
+   "rank": 119,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 22.06,
+    "s2": 0.0,
+    "s3": 28.19,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 63.07,
+   "rank": 40,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.14,
+    "s2": 0.0,
+    "s3": 17.24,
+    "s4": 0.0,
+    "s5": 8.08
+   },
+   "index": 39.46,
+   "rank": 145,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.42,
+    "s2": 0.0,
+    "s3": 17.29,
+    "s4": 0.0,
+    "s5": 8.11
+   },
+   "index": 37.82,
+   "rank": 146,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.64,
+    "s2": 0.0,
+    "s3": 18.73,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 47.91,
+   "rank": 103,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.68,
+    "s2": 0.0,
+    "s3": 26.46,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 60.68,
+   "rank": 53,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.11,
+    "s2": 0.0,
+    "s3": 15.93,
+    "s4": 0.95,
+    "s5": 8.07
+   },
+   "index": 35.06,
+   "rank": 154,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.21,
+    "s2": 0.0,
+    "s3": 16.06,
+    "s4": 2.52,
+    "s5": 8.38
+   },
+   "index": 40.18,
+   "rank": 136,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.62,
+    "s2": 0.0,
+    "s3": 15.97,
+    "s4": 5.88,
+    "s5": 8.32
+   },
+   "index": 42.79,
+   "rank": 131,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.08,
+    "s2": 0.0,
+    "s3": 18.44,
+    "s4": 6.89,
+    "s5": 8.38
+   },
+   "index": 44.79,
+   "rank": 122,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 14.63,
+    "s2": 0.0,
+    "s3": 18.4,
+    "s4": 11.51,
+    "s5": 8.38
+   },
+   "index": 52.92,
+   "rank": 79,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "멀티모달(이미지·음성·영상)",
+  "contrib": {
+   "s1": 14.63,
+   "s2": 0.0,
+   "s3": 18.4,
+   "s4": 11.51,
+   "s5": 8.38
+  },
+  "full_name": "harry0703/MoneyPrinterTurbo",
+  "index": 52.92,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 82.91,
+   "s2": null,
+   "s3": 62.56,
+   "s4": 32.61,
+   "s5": 47.49
+  },
+  "prev_rank": 122,
+  "rank": 79,
+  "raw": {
+   "s1_stars_gain": 4048,
+   "s2_fork_delta": null,
+   "s2_forks": 22882,
+   "s3_closed_issues": 13,
+   "s3_merged_prs": 17,
+   "s3_pr_authors": 10,
+   "s4_dependents": 0,
+   "s4_downloads": 3509,
+   "s4_packages": "pypi:mpt",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 770153867,
+  "star_rank": 35,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 770153867,
+ "topics": [
+  "ai-video-generator",
+  "content-creation",
+  "ffmpeg",
+  "instagram-reels",
+  "llm",
+  "python",
+  "short-video",
+  "subtitles",
+  "text-to-speech",
+  "tiktok",
+  "video-automation",
+  "video-workflow",
+  "workflow-automation",
+  "youtube-shorts"
+ ]
+}

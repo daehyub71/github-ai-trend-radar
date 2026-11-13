@@ -1,0 +1,247 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+ "full_name": "Egonex-AI/Understand-Anything",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.33,
+    "s2": 0.0,
+    "s3": 19.19,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 44.0,
+   "rank": 123,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.89,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 24.92,
+   "rank": 180,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.77,
+    "s2": 0.0,
+    "s3": 16.82,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 39.14,
+   "rank": 147,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.77,
+    "s2": 0.0,
+    "s3": 17.88,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 34.46,
+   "rank": 160,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.51,
+    "s2": 0.0,
+    "s3": 21.66,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 40.66,
+   "rank": 137,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.0,
+    "s2": 0.0,
+    "s3": 6.42,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 28.97,
+   "rank": 176,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.23,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 29.54,
+   "rank": 177,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.18,
+    "s2": 0.0,
+    "s3": 14.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 37.88,
+   "rank": 143,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.7,
+    "s2": 0.0,
+    "s3": 12.14,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 28.31,
+   "rank": 170,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.58,
+    "s2": 0.0,
+    "s3": 11.11,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 30.64,
+   "rank": 177,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.32,
+    "s2": 0.0,
+    "s3": 16.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 40.67,
+   "rank": 142,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.2,
+    "s2": 0.0,
+    "s3": 12.23,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 37.38,
+   "rank": 152,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 16.31,
+    "s2": 0.0,
+    "s3": 15.46,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 44.72,
+   "rank": 126,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 16.31,
+   "s2": 0.0,
+   "s3": 15.46,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "Egonex-AI/Understand-Anything",
+  "index": 44.72,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 59.8,
+   "s2": null,
+   "s3": 34.0,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 152,
+  "rank": 126,
+  "raw": {
+   "s1_stars_gain": 1929,
+   "s2_fork_delta": null,
+   "s2_forks": 7887,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1182081931,
+  "star_rank": 81,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1182081931,
+ "topics": [
+  "antigravity-skills",
+  "business-knowledge",
+  "claude-code",
+  "claude-skills",
+  "codebase-analysis",
+  "codex",
+  "codex-skills",
+  "developer-tools-ai-agent",
+  "gemini-cli-skills",
+  "karpathy-llm-wiki",
+  "knowledge-base",
+  "knowledge-graph",
+  "memory",
+  "opencode-skills",
+  "pi-agent",
+  "understandcode",
+  "vibe-coding"
+ ]
+}

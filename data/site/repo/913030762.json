@@ -1,0 +1,157 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+ "full_name": "vxcontrol/pentagi",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.16,
+    "s2": 0.0,
+    "s3": 5.9,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 31.55,
+   "rank": 175,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.75,
+    "s2": 0.0,
+    "s3": 9.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 34.4,
+   "rank": 157,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 5.87,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 43.21,
+   "rank": 122,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.0,
+    "s2": 0.0,
+    "s3": 6.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 31.35,
+   "rank": 176,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.14,
+    "s2": 0.0,
+    "s3": 6.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 19.36,
+   "rank": 199,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 2.19,
+    "s2": 0.0,
+    "s3": 5.71,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 20.85,
+   "rank": 197,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Go",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 2.19,
+   "s2": 0.0,
+   "s3": 5.71,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "vxcontrol/pentagi",
+  "index": 20.85,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 8.04,
+   "s2": null,
+   "s3": 12.56,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 199,
+  "rank": 197,
+  "raw": {
+   "s1_stars_gain": 809,
+   "s2_fork_delta": null,
+   "s2_forks": 5355,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 913030762,
+  "star_rank": 184,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 913030762,
+ "topics": [
+  "ai-agents",
+  "ai-security-tool",
+  "anthropic",
+  "autonomous-agents",
+  "golang",
+  "gpt",
+  "graphql",
+  "multi-agent-system",
+  "offensive-security",
+  "open-source",
+  "openai",
+  "penetration-testing",
+  "penetration-testing-tools",
+  "react",
+  "security-automation",
+  "security-testing",
+  "security-tools",
+  "self-hosted"
+ ]
+}

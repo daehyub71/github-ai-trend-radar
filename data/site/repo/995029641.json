@@ -1,0 +1,211 @@
+{
+ "category": "에이전트 프레임워크",
+ "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+ "full_name": "ruvnet/ruflo",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.69,
+    "s2": 0.0,
+    "s3": 24.69,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 47.99,
+   "rank": 107,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.63,
+    "s2": 0.0,
+    "s3": 14.28,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 36.46,
+   "rank": 157,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 21.07,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 45.67,
+   "rank": 125,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.37,
+    "s2": 0.0,
+    "s3": 22.57,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 52.43,
+   "rank": 84,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 2.88,
+    "s2": 0.0,
+    "s3": 32.03,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 47.45,
+   "rank": 105,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 1.02,
+    "s2": 0.0,
+    "s3": 32.3,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 45.87,
+   "rank": 119,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.99,
+    "s2": 0.0,
+    "s3": 36.48,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 66.43,
+   "rank": 36,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.14,
+    "s2": 0.0,
+    "s3": 38.34,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 72.33,
+   "rank": 18,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.75,
+    "s2": 0.0,
+    "s3": 32.99,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 58.69,
+   "rank": 53,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.15,
+    "s2": 0.0,
+    "s3": 40.2,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 56.3,
+   "rank": 65,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 프레임워크",
+  "contrib": {
+   "s1": 3.15,
+   "s2": 0.0,
+   "s3": 40.2,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "ruvnet/ruflo",
+  "index": 56.3,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 11.56,
+   "s2": null,
+   "s3": 88.44,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 53,
+  "rank": 65,
+  "raw": {
+   "s1_stars_gain": 845,
+   "s2_fork_delta": null,
+   "s2_forks": 9606,
+   "s3_closed_issues": 435,
+   "s3_merged_prs": 129,
+   "s3_pr_authors": 21,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 995029641,
+  "star_rank": 177,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 995029641,
+ "topics": [
+  "agentic-ai",
+  "agentic-framework",
+  "agentic-workflow",
+  "agents",
+  "ai-agents",
+  "ai-assistant",
+  "ai-skills",
+  "autonomous-agents",
+  "claude",
+  "codex",
+  "dsh-plugin",
+  "harness",
+  "mcp-server",
+  "multi-agent",
+  "multi-agent-systems",
+  "npm",
+  "skills",
+  "swarm",
+  "swarm-intelligence",
+  "typescript"
+ ]
+}

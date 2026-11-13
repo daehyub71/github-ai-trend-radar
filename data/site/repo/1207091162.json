@@ -1,0 +1,79 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Generate production-quality SVG+PNG technical diagrams from natural language. 7 styles, UML support, and AI/Agent workflow patterns.",
+ "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.05,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 1.31,
+    "s5": 8.16
+   },
+   "index": 18.68,
+   "rank": 200,
+   "week": "2026-08-16"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 5.05,
+   "s2": 0.0,
+   "s3": 4.16,
+   "s4": 1.31,
+   "s5": 8.16
+  },
+  "full_name": "yizhiyanhua-ai/fireworks-tech-graph",
+  "index": 18.68,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 28.64,
+   "s2": null,
+   "s3": 14.13,
+   "s4": 3.7,
+   "s5": 46.23
+  },
+  "prev_rank": null,
+  "rank": 200,
+  "raw": {
+   "s1_stars_gain": 864,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": 25,
+   "s4_packages": "npm:@yizhiyanhua-ai/fireworks-tech-graph",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1207091162,
+  "star_rank": 143,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-16"
+ },
+ "repo_id": 1207091162,
+ "topics": [
+  "agent-workflows",
+  "ai",
+  "claude-code",
+  "developer-tools",
+  "diagrams",
+  "svg"
+ ]
+}

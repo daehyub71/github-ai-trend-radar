@@ -1,0 +1,113 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "An AI-agent skill that generates browser-editable presentations from multiple visual themes, exportable to HTML, PDF, and PPTX.",
+ "full_name": "chuspeeism/dashi-ppt-skill",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 4.97,
+    "s2": 0.0,
+    "s3": 4.16,
+    "s4": 4.58,
+    "s5": 8.16
+   },
+   "index": 21.86,
+   "rank": 190,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.18,
+    "s2": 0.0,
+    "s3": 3.8,
+    "s4": 6.01,
+    "s5": 8.12
+   },
+   "index": 23.11,
+   "rank": 190,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.72,
+    "s2": 0.0,
+    "s3": 4.08,
+    "s4": 7.51,
+    "s5": 8.29
+   },
+   "index": 23.61,
+   "rank": 184,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": "JavaScript",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 3.72,
+   "s2": 0.0,
+   "s3": 4.08,
+   "s4": 7.51,
+   "s5": 8.29
+  },
+  "full_name": "chuspeeism/dashi-ppt-skill",
+  "index": 23.61,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 21.11,
+   "s2": null,
+   "s3": 13.87,
+   "s4": 21.28,
+   "s5": 46.98
+  },
+  "prev_rank": 190,
+  "rank": 184,
+  "raw": {
+   "s1_stars_gain": 714,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": 1279,
+   "s4_packages": "npm:dashi-ppt-skill",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1264811161,
+  "star_rank": 158,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1264811161,
+ "topics": [
+  "agent-skill",
+  "ai-agent",
+  "ai-ppt",
+  "claude",
+  "claude-code",
+  "dashial",
+  "html-presentation",
+  "ppt",
+  "pptx",
+  "presentation",
+  "presentation-generator",
+  "skill",
+  "slide-generator",
+  "slides"
+ ]
+}

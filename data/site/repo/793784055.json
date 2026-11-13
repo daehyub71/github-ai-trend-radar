@@ -1,0 +1,112 @@
+{
+ "category": "모델·가중치",
+ "description": null,
+ "full_name": "google-research/timesfm",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 20.11,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 57.32,
+   "rank": 68,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.18,
+    "s2": 0.0,
+    "s3": 14.12,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 36.78,
+   "rank": 157,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 7.26,
+    "s2": 0.0,
+    "s3": 16.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 35.8,
+   "rank": 152,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.27,
+    "s2": 0.0,
+    "s3": 6.77,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 19.59,
+   "rank": 201,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "모델·가중치",
+  "contrib": {
+   "s1": 0.27,
+   "s2": 0.0,
+   "s3": 6.77,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "google-research/timesfm",
+  "index": 19.59,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 1.0,
+   "s2": null,
+   "s3": 14.89,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": 152,
+  "rank": 201,
+  "raw": {
+   "s1_stars_gain": 569,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 793784055,
+  "star_rank": 199,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 793784055,
+ "topics": []
+}

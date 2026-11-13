@@ -1,0 +1,216 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": null,
+ "full_name": "can1357/oh-my-pi",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 18.91,
+    "s2": 0.0,
+    "s3": 43.08,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 74.47,
+   "rank": 12,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.45,
+    "s2": 0.0,
+    "s3": 44.19,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 73.24,
+   "rank": 19,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.67,
+    "s2": 0.0,
+    "s3": 44.02,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 76.24,
+   "rank": 9,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.35,
+    "s2": 0.0,
+    "s3": 42.34,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 70.5,
+   "rank": 20,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.48,
+    "s2": 0.0,
+    "s3": 43.02,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 67.98,
+   "rank": 31,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 44.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 68.4,
+   "rank": 33,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.77,
+    "s2": 0.0,
+    "s3": 42.76,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 72.08,
+   "rank": 22,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 9.0,
+    "s2": 0.0,
+    "s3": 44.15,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 65.69,
+   "rank": 33,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.62,
+    "s2": 0.0,
+    "s3": 41.78,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 59.87,
+   "rank": 64,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.97,
+    "s2": 0.0,
+    "s3": 42.15,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 59.08,
+   "rank": 61,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.62,
+    "s2": 0.0,
+    "s3": 40.88,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 59.45,
+   "rank": 48,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.84,
+    "s2": 0.0,
+    "s3": 41.23,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 58.02,
+   "rank": 56,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": false,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 3.84,
+   "s2": 0.0,
+   "s3": 41.23,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "can1357/oh-my-pi",
+  "index": 58.02,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 14.07,
+   "s2": null,
+   "s3": 90.7,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 48,
+  "rank": 56,
+  "raw": {
+   "s1_stars_gain": 872,
+   "s2_fork_delta": null,
+   "s2_forks": 4435,
+   "s3_closed_issues": 97,
+   "s3_merged_prs": 274,
+   "s3_pr_authors": 66,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1125856365,
+  "star_rank": 172,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1125856365,
+ "topics": []
+}

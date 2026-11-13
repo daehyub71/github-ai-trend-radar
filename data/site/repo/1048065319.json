@@ -1,0 +1,223 @@
+{
+ "category": "벡터DB·메모리",
+ "description": "Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+ "full_name": "thedotmack/claude-mem",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.37,
+    "s2": 0.0,
+    "s3": 9.88,
+    "s4": 16.34,
+    "s5": 8.07
+   },
+   "index": 37.66,
+   "rank": 157,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.28,
+    "s2": 0.0,
+    "s3": 17.32,
+    "s4": 17.65,
+    "s5": 8.16
+   },
+   "index": 46.41,
+   "rank": 114,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.52,
+    "s2": 0.0,
+    "s3": 17.52,
+    "s4": 18.77,
+    "s5": 8.12
+   },
+   "index": 52.94,
+   "rank": 86,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.14,
+    "s2": 0.0,
+    "s3": 13.69,
+    "s4": 19.52,
+    "s5": 8.29
+   },
+   "index": 46.64,
+   "rank": 121,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.27,
+    "s2": 0.0,
+    "s3": 10.25,
+    "s4": 15.35,
+    "s5": 8.11
+   },
+   "index": 33.98,
+   "rank": 159,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.16,
+    "s2": 0.0,
+    "s3": 26.03,
+    "s4": 13.45,
+    "s5": 8.12
+   },
+   "index": 55.75,
+   "rank": 76,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.9,
+    "s2": 0.0,
+    "s3": 24.03,
+    "s4": 13.35,
+    "s5": 8.07
+   },
+   "index": 60.36,
+   "rank": 59,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.44,
+    "s2": 0.0,
+    "s3": 24.11,
+    "s4": 15.13,
+    "s5": 8.38
+   },
+   "index": 59.05,
+   "rank": 62,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 8.12,
+    "s2": 0.0,
+    "s3": 23.89,
+    "s4": 13.24,
+    "s5": 8.32
+   },
+   "index": 53.56,
+   "rank": 79,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.61,
+    "s2": 0.0,
+    "s3": 23.41,
+    "s4": 17.22,
+    "s5": 17.09
+   },
+   "index": 73.33,
+   "rank": 18,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 16.23,
+    "s2": 0.0,
+    "s3": 25.77,
+    "s4": 17.65,
+    "s5": 8.38
+   },
+   "index": 68.02,
+   "rank": 24,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "벡터DB·메모리",
+  "contrib": {
+   "s1": 16.23,
+   "s2": 0.0,
+   "s3": 25.77,
+   "s4": 17.65,
+   "s5": 8.38
+  },
+  "full_name": "thedotmack/claude-mem",
+  "index": 68.02,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 91.96,
+   "s2": null,
+   "s3": 87.6,
+   "s4": 50.0,
+   "s5": 47.49
+  },
+  "prev_rank": 18,
+  "rank": 24,
+  "raw": {
+   "s1_stars_gain": 6611,
+   "s2_fork_delta": null,
+   "s2_forks": 10113,
+   "s3_closed_issues": 61,
+   "s3_merged_prs": 209,
+   "s3_pr_authors": 63,
+   "s4_dependents": 0,
+   "s4_downloads": 36980,
+   "s4_packages": "npm:claude-mem",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1048065319,
+  "star_rank": 17,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1048065319,
+ "topics": [
+  "ai",
+  "ai-agents",
+  "ai-memory",
+  "anthropic",
+  "artificial-intelligence",
+  "chromadb",
+  "claude",
+  "claude-agent-sdk",
+  "claude-agents",
+  "claude-code",
+  "claude-code-plugin",
+  "claude-skills",
+  "embeddings",
+  "long-term-memory",
+  "mem0",
+  "memory-engine",
+  "openmemory",
+  "rag",
+  "sqlite",
+  "supermemory"
+ ]
+}

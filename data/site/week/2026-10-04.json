@@ -1,0 +1,554 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 2.01,
+      "use": 90.44,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "huggingface/transformers",
+     "repo_id": 155220641
+    },
+    {
+     "evidence": {
+      "s1": 6.03,
+      "use": 80.1,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "open-webui/open-webui",
+     "repo_id": 701547123
+    },
+    {
+     "evidence": {
+      "s1": 20.6,
+      "use": 91.92,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "can1357/oh-my-pi",
+     "repo_id": 1125856365
+    },
+    {
+     "evidence": {
+      "s1": 33.67,
+      "use": 94.5,
+      "use_basis": "s3·s4"
+     },
+     "full_name": "openclaw/openclaw",
+     "repo_id": 1103012935
+    },
+    {
+     "evidence": {
+      "s1": 49.25,
+      "use": 93.03,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "t8y2/dbx",
+     "repo_id": 1224172037
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 90.95,
+      "s5": 45.73,
+      "use": 12.33
+     },
+     "full_name": "neilsonnn/image-blaster",
+     "repo_id": 1216542069
+    },
+    {
+     "evidence": {
+      "s1": 98.49,
+      "s5": 99.75,
+      "use": 22.79
+     },
+     "full_name": "openai/math",
+     "repo_id": 1407950271
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       86.0,
+       48.9
+      ],
+      "use_share": [
+       14.0,
+       51.1
+      ]
+     },
+     "full_name": "coreyhaines31/marketingskills",
+     "repo_id": 1135212071
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       58.4,
+       26.1
+      ],
+      "use_share": [
+       41.6,
+       73.9
+      ]
+     },
+     "full_name": "omacom/omarchy",
+     "repo_id": 994093166
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       80.8,
+       55.5
+      ],
+      "use_share": [
+       19.2,
+       44.5
+      ]
+     },
+     "full_name": "tigerless-labs/autoharness",
+     "repo_id": 1264396304
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       68.6,
+       46.5
+      ],
+      "use_share": [
+       31.4,
+       53.5
+      ]
+     },
+     "full_name": "JuliusBrussee/caveman",
+     "repo_id": 1201173969
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       45.3,
+       25.0
+      ],
+      "use_share": [
+       54.7,
+       75.0
+      ]
+     },
+     "full_name": "career-ops-hq/career-ops",
+     "repo_id": 1201476594
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": true,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "morluto/rea",
+    "pct": 100.0,
+    "repo_id": 1209966933
+   },
+   {
+    "full_name": "storytold/photocraft",
+    "pct": 99.5,
+    "repo_id": 1398080271
+   },
+   {
+    "full_name": "eternity4719/HowToLiveBetter",
+    "pct": 98.99,
+    "repo_id": 1359648985
+   },
+   {
+    "full_name": "openai/math",
+    "pct": 98.49,
+    "repo_id": 1407950271
+   },
+   {
+    "full_name": "storytold/artcraft",
+    "pct": 97.99,
+    "repo_id": 476507964
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "storytold/photocraft",
+    "pct": 99.32,
+    "repo_id": 1398080271
+   },
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 99.15,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "cheaper-inference/OmniRoute",
+    "pct": 97.45,
+    "repo_id": 1157102282
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 97.11,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "pingdotgg/t3code",
+    "pct": 96.77,
+    "repo_id": 1153130349
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "huggingface/transformers",
+    "pct": 100.0,
+    "repo_id": 155220641
+   },
+   {
+    "full_name": "openai/codex",
+    "pct": 97.3,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "vercel-labs/skills",
+    "pct": 94.59,
+    "repo_id": 1134543109
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 91.89,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 89.19,
+    "repo_id": 888092115
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "openai/math",
+    "pct": 99.75,
+    "repo_id": 1407950271
+   },
+   {
+    "full_name": "Niko1221/Strata",
+    "pct": 98.99,
+    "repo_id": 1385946301
+   },
+   {
+    "full_name": "storytold/photocraft",
+    "pct": 98.87,
+    "repo_id": 1398080271
+   },
+   {
+    "full_name": "microsoft/mxc",
+    "pct": 98.49,
+    "repo_id": 1151717775
+   },
+   {
+    "full_name": "morluto/rea",
+    "pct": 97.36,
+    "repo_id": 1209966933
+   }
+  ]
+ },
+ "issue": null,
+ "stats": {
+  "candidates": 200,
+  "star_top_in_index_top": 4,
+  "with_packages": 38
+ },
+ "top10": [
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 27.14,
+    "s2": 0.0,
+    "s3": 45.15,
+    "s4": 0.0,
+    "s5": 26.96
+   },
+   "full_name": "storytold/photocraft",
+   "index": 99.25,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 99.5,
+    "s2": null,
+    "s3": 99.32,
+    "s4": null,
+    "s5": 98.87
+   },
+   "prev_rank": null,
+   "rank": 1,
+   "repo_id": 1398080271,
+   "star_rank": 2
+  },
+  {
+   "category": "벡터DB·메모리",
+   "contrib": {
+    "s1": 21.52,
+    "s2": 0.0,
+    "s3": 38.23,
+    "s4": 0.0,
+    "s5": 25.56
+   },
+   "full_name": "vectorize-io/hindsight",
+   "index": 85.3,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 78.89,
+    "s2": null,
+    "s3": 84.1,
+    "s4": null,
+    "s5": 93.72
+   },
+   "prev_rank": 14,
+   "rank": 2,
+   "repo_id": 1086419061,
+   "star_rank": 43
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 17.65,
+    "s2": 0.0,
+    "s3": 28.24,
+    "s4": 19.08,
+    "s5": 17.18
+   },
+   "full_name": "morluto/rea",
+   "index": 82.14,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 100.0,
+    "s2": null,
+    "s3": 96.0,
+    "s4": 54.05,
+    "s5": 97.36
+   },
+   "prev_rank": null,
+   "rank": 3,
+   "repo_id": 1209966933,
+   "star_rank": 1
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 26.04,
+    "s2": 0.0,
+    "s3": 42.86,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "storytold/filmcraft",
+   "index": 81.38,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.48,
+    "s2": null,
+    "s3": 94.3,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": null,
+   "rank": 4,
+   "repo_id": 1398091865,
+   "star_rank": 10
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 25.35,
+    "s2": 0.0,
+    "s3": 43.37,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "storytold/vectorcraft",
+   "index": 81.19,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.96,
+    "s2": null,
+    "s3": 95.41,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": null,
+   "rank": 5,
+   "repo_id": 1398097510,
+   "star_rank": 15
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 25.9,
+    "s2": 0.0,
+    "s3": 42.75,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "storytold/pdfcraft",
+   "index": 81.12,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 94.97,
+    "s2": null,
+    "s3": 94.05,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": null,
+   "rank": 6,
+   "repo_id": 1398086162,
+   "star_rank": 11
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 26.18,
+    "s2": 0.0,
+    "s3": 42.36,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "storytold/lightcraft",
+   "index": 81.01,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.98,
+    "s2": null,
+    "s3": 93.2,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": null,
+   "rank": 7,
+   "repo_id": 1398185212,
+   "star_rank": 9
+  },
+  {
+   "category": "에이전트 프레임워크",
+   "contrib": {
+    "s1": 17.41,
+    "s2": 0.0,
+    "s3": 36.87,
+    "s4": 0.0,
+    "s5": 25.97
+   },
+   "full_name": "mvschwarz/openrig",
+   "index": 80.25,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 63.82,
+    "s2": null,
+    "s3": 81.12,
+    "s4": null,
+    "s5": 95.23
+   },
+   "prev_rank": 1,
+   "rank": 8,
+   "repo_id": 1198124295,
+   "star_rank": 73
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 42.48,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "stablyai/orca",
+   "index": 79.34,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 89.45,
+    "s2": null,
+    "s3": 93.45,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": 8,
+   "rank": 9,
+   "repo_id": 1183888342,
+   "star_rank": 22
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 23.98,
+    "s2": 0.0,
+    "s3": 42.17,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "full_name": "storytold/effectcraft",
+   "index": 78.62,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 87.94,
+    "s2": null,
+    "s3": 92.77,
+    "s4": null,
+    "s5": 45.73
+   },
+   "prev_rank": null,
+   "rank": 10,
+   "repo_id": 1400136506,
+   "star_rank": 25
+  }
+ ],
+ "week": "2026-10-04",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

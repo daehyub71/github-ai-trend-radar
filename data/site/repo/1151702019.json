@@ -1,0 +1,109 @@
+{
+ "category": "문서·데이터 파싱",
+ "description": "Fast Rust library for PDF inspection, classification, and text extraction. Intelligently detects scanned vs text-based PDFs to enable smart routing decisions.",
+ "full_name": "firecrawl/pdf-inspector",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.77,
+    "s2": 0.0,
+    "s3": 14.2,
+    "s4": 28.1,
+    "s5": 8.07
+   },
+   "index": 63.15,
+   "rank": 43,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.9,
+    "s2": 0.0,
+    "s3": 11.89,
+    "s4": 30.07,
+    "s5": 8.16
+   },
+   "index": 54.02,
+   "rank": 80,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 9.46,
+    "s4": 27.03,
+    "s5": 8.29
+   },
+   "index": 57.46,
+   "rank": 65,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": "Rust",
+ "latest": {
+  "backfilled": true,
+  "category": "문서·데이터 파싱",
+  "contrib": {
+   "s1": 12.68,
+   "s2": 0.0,
+   "s3": 9.46,
+   "s4": 27.03,
+   "s5": 8.29
+  },
+  "full_name": "firecrawl/pdf-inspector",
+  "index": 57.46,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 71.86,
+   "s2": null,
+   "s3": 32.15,
+   "s4": 76.6,
+   "s5": 46.98
+  },
+  "prev_rank": null,
+  "rank": 65,
+  "raw": {
+   "s1_stars_gain": 1961,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 6,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": 239045,
+   "s4_packages": "pypi:pdf-inspector npm:@firecrawl/pdf-inspector",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1151702019,
+  "star_rank": 57,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1151702019,
+ "topics": [
+  "markdown",
+  "nodejs",
+  "ocr-routing",
+  "pdf",
+  "pdf-classification",
+  "pdf-extraction",
+  "pdf-parser",
+  "python",
+  "rust",
+  "text-extraction"
+ ]
+}

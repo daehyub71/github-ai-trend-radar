@@ -1,0 +1,110 @@
+{
+ "category": "코딩 에이전트·IDE",
+ "description": "Cross-platform local MCP capabilities for ChatGPT with Chrome integration, Goal, Compact & Resume, and durable multi-agent workflows.",
+ "full_name": "totec448-spec/chat-on-steroids",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.25,
+    "s2": 0.0,
+    "s3": 30.19,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 56.92,
+   "rank": 66,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.84,
+    "s2": 0.0,
+    "s3": 30.61,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 56.99,
+   "rank": 74,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.41,
+    "s2": 0.0,
+    "s3": 36.46,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 55.41,
+   "rank": 77,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": true,
+  "category": "코딩 에이전트·IDE",
+  "contrib": {
+   "s1": 6.41,
+   "s2": 0.0,
+   "s3": 36.46,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "totec448-spec/chat-on-steroids",
+  "index": 55.41,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 23.5,
+   "s2": null,
+   "s3": 80.2,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": 74,
+  "rank": 77,
+  "raw": {
+   "s1_stars_gain": 748,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 50,
+   "s3_merged_prs": 68,
+   "s3_pr_authors": 14,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1342876750,
+  "star_rank": 154,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1342876750,
+ "topics": [
+  "automation",
+  "chatgpt",
+  "chrome-extension",
+  "electron",
+  "linux",
+  "local-first",
+  "macos",
+  "mcp",
+  "multi-agent",
+  "windows"
+ ]
+}

@@ -1,0 +1,73 @@
+{
+ "category": "AI 앱·서비스",
+ "description": null,
+ "full_name": "TNT-Likely/PanWatch",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.95,
+    "s2": 0.0,
+    "s3": 19.54,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 39.04,
+   "rank": 144,
+   "week": "2026-09-20"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "AI 앱·서비스",
+  "contrib": {
+   "s1": 6.95,
+   "s2": 0.0,
+   "s3": 19.54,
+   "s4": 0.0,
+   "s5": 12.55
+  },
+  "full_name": "TNT-Likely/PanWatch",
+  "index": 39.04,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 25.5,
+   "s2": null,
+   "s3": 42.98,
+   "s4": null,
+   "s5": 46.0
+  },
+  "prev_rank": null,
+  "rank": 144,
+  "raw": {
+   "s1_stars_gain": 780,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 9,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1140582982,
+  "star_rank": 150,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-20"
+ },
+ "repo_id": 1140582982,
+ "topics": []
+}

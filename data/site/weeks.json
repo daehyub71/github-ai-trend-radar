@@ -1,0 +1,93 @@
+[
+ {
+  "backfilled": false,
+  "candidates": 200,
+  "issue": 1,
+  "top1": "storytold/craft-anything",
+  "week": "2026-11-01"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "Gathin23/cleanyourtv",
+  "week": "2026-10-25"
+ },
+ {
+  "backfilled": true,
+  "candidates": 201,
+  "issue": null,
+  "top1": "Gathin23/cleanyourtv",
+  "week": "2026-10-18"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "storytold/wordcraft",
+  "week": "2026-10-11"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "storytold/photocraft",
+  "week": "2026-10-04"
+ },
+ {
+  "backfilled": true,
+  "candidates": 201,
+  "issue": null,
+  "top1": "mvschwarz/openrig",
+  "week": "2026-09-27"
+ },
+ {
+  "backfilled": true,
+  "candidates": 201,
+  "issue": null,
+  "top1": "anomalyco/opencode",
+  "week": "2026-09-20"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "abue-ammar/tinycast",
+  "week": "2026-09-13"
+ },
+ {
+  "backfilled": true,
+  "candidates": 202,
+  "issue": null,
+  "top1": "debpalash/VoiceStudio",
+  "week": "2026-09-06"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "openclaw/openclaw",
+  "week": "2026-08-30"
+ },
+ {
+  "backfilled": true,
+  "candidates": 202,
+  "issue": null,
+  "top1": "NousResearch/hermes-agent",
+  "week": "2026-08-23"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "earendil-works/pi",
+  "week": "2026-08-16"
+ },
+ {
+  "backfilled": true,
+  "candidates": 200,
+  "issue": null,
+  "top1": "PrimeIntellect-ai/prime-agent",
+  "week": "2026-08-09"
+ }
+]

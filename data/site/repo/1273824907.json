@@ -1,0 +1,163 @@
+{
+ "category": "평가·관측(LLMOps)",
+ "description": null,
+ "full_name": "lidge-jun/opencodex",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 11.0,
+    "s2": 0.0,
+    "s3": 27.68,
+    "s4": 17.65,
+    "s5": 8.07
+   },
+   "index": 64.39,
+   "rank": 40,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.91,
+    "s2": 0.0,
+    "s3": 27.97,
+    "s4": 18.95,
+    "s5": 8.16
+   },
+   "index": 65.99,
+   "rank": 37,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 3.78,
+    "s2": 0.0,
+    "s3": 27.45,
+    "s4": 18.02,
+    "s5": 8.12
+   },
+   "index": 57.37,
+   "rank": 68,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.92,
+    "s2": 0.0,
+    "s3": 27.35,
+    "s4": 18.02,
+    "s5": 8.29
+   },
+   "index": 60.58,
+   "rank": 54,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.23,
+    "s2": 0.0,
+    "s3": 25.69,
+    "s4": 16.94,
+    "s5": 8.08
+   },
+   "index": 56.94,
+   "rank": 65,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 6.83,
+    "s2": 0.0,
+    "s3": 28.12,
+    "s4": 16.11,
+    "s5": 8.11
+   },
+   "index": 59.17,
+   "rank": 66,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 5.74,
+    "s2": 0.0,
+    "s3": 26.97,
+    "s4": 16.72,
+    "s5": 8.12
+   },
+   "index": 57.54,
+   "rank": 71,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.53,
+    "s2": 0.0,
+    "s3": 25.38,
+    "s4": 19.33,
+    "s5": 8.12
+   },
+   "index": 53.36,
+   "rank": 83,
+   "week": "2026-09-27"
+  }
+ ],
+ "language": null,
+ "latest": {
+  "backfilled": true,
+  "category": "평가·관측(LLMOps)",
+  "contrib": {
+   "s1": 0.53,
+   "s2": 0.0,
+   "s3": 25.38,
+   "s4": 19.33,
+   "s5": 8.12
+  },
+  "full_name": "lidge-jun/opencodex",
+  "index": 53.36,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 3.0,
+   "s2": null,
+   "s3": 86.29,
+   "s4": 54.76,
+   "s5": 46.0
+  },
+  "prev_rank": 71,
+  "rank": 83,
+  "raw": {
+   "s1_stars_gain": 557,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 79,
+   "s3_merged_prs": 239,
+   "s3_pr_authors": 12,
+   "s4_dependents": null,
+   "s4_downloads": 35139,
+   "s4_packages": "npm:@bitkyc08/opencodex",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1273824907,
+  "star_rank": 195,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-09-27"
+ },
+ "repo_id": 1273824907,
+ "topics": []
+}

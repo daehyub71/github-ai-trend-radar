@@ -1,0 +1,233 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "符合nature论文学术表达和科研绘图的Skill",
+ "full_name": "Yuan1z0825/nature-skills",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.47,
+    "s2": 0.0,
+    "s3": 18.8,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 43.75,
+   "rank": 126,
+   "week": "2026-08-09"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.7,
+    "s2": 0.0,
+    "s3": 16.23,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 42.54,
+   "rank": 129,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.33,
+    "s2": 0.0,
+    "s3": 17.01,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 44.89,
+   "rank": 128,
+   "week": "2026-08-23"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 17.27,
+    "s2": 0.0,
+    "s3": 14.61,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 44.7,
+   "rank": 130,
+   "week": "2026-08-30"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 19.2,
+    "s2": 0.0,
+    "s3": 17.4,
+    "s4": 0.0,
+    "s5": 12.48
+   },
+   "index": 49.08,
+   "rank": 96,
+   "week": "2026-09-06"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 21.11,
+    "s2": 0.0,
+    "s3": 19.04,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 52.68,
+   "rank": 88,
+   "week": "2026-09-13"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 16.5,
+    "s2": 0.0,
+    "s3": 13.57,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 42.62,
+   "rank": 126,
+   "week": "2026-09-20"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 13.36,
+    "s2": 0.0,
+    "s3": 13.5,
+    "s4": 0.0,
+    "s5": 12.55
+   },
+   "index": 39.41,
+   "rank": 137,
+   "week": "2026-09-27"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 14.53,
+    "s2": 0.0,
+    "s3": 19.17,
+    "s4": 0.0,
+    "s5": 12.47
+   },
+   "index": 46.17,
+   "rank": 110,
+   "week": "2026-10-04"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 15.76,
+    "s2": 0.0,
+    "s3": 15.03,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 43.75,
+   "rank": 120,
+   "week": "2026-10-11"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 22.5,
+    "s4": 0.0,
+    "s5": 12.85
+   },
+   "index": 48.03,
+   "rank": 102,
+   "week": "2026-10-18"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 10.14,
+    "s2": 0.0,
+    "s3": 17.27,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 40.36,
+   "rank": 143,
+   "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 8.09,
+    "s2": 0.0,
+    "s3": 15.99,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "index": 37.03,
+   "rank": 161,
+   "week": "2026-11-01"
+  }
+ ],
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 8.09,
+   "s2": 0.0,
+   "s3": 15.99,
+   "s4": 0.0,
+   "s5": 12.95
+  },
+  "full_name": "Yuan1z0825/nature-skills",
+  "index": 37.03,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 29.65,
+   "s2": null,
+   "s3": 35.18,
+   "s4": null,
+   "s5": 47.49
+  },
+  "prev_rank": 143,
+  "rank": 161,
+  "raw": {
+   "s1_stars_gain": 1093,
+   "s2_fork_delta": null,
+   "s2_forks": 2774,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 4,
+   "s3_pr_authors": 4,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1219596233,
+  "star_rank": 141,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-01"
+ },
+ "repo_id": 1219596233,
+ "topics": [
+  "codex-skills",
+  "nature",
+  "nature-skills"
+ ]
+}

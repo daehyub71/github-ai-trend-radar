@@ -1,0 +1,95 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Data visualization Skill for AI Agents, turning data into polished, interactive HTML charts. 面向 AI Agents 的数据可视化 Skill，将数据快速生成精致、可交互的 HTML 图表。",
+ "full_name": "larashero3-dotcom/lieflat-charts",
+ "history": [
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 0.89,
+    "s2": 0.0,
+    "s3": 12.31,
+    "s4": 0.0,
+    "s5": 12.61
+   },
+   "index": 25.81,
+   "rank": 179,
+   "week": "2026-08-16"
+  },
+  {
+   "backfilled": true,
+   "contrib": {
+    "s1": 23.16,
+    "s2": 0.0,
+    "s3": 11.84,
+    "s4": 0.0,
+    "s5": 12.81
+   },
+   "index": 47.82,
+   "rank": 116,
+   "week": "2026-08-30"
+  }
+ ],
+ "language": "HTML",
+ "latest": {
+  "backfilled": true,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 23.16,
+   "s2": 0.0,
+   "s3": 11.84,
+   "s4": 0.0,
+   "s5": 12.81
+  },
+  "full_name": "larashero3-dotcom/lieflat-charts",
+  "index": 47.82,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 84.92,
+   "s2": null,
+   "s3": 26.06,
+   "s4": null,
+   "s5": 46.98
+  },
+  "prev_rank": null,
+  "rank": 116,
+  "raw": {
+   "s1_stars_gain": 2745,
+   "s2_fork_delta": null,
+   "s2_forks": null,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1302690078,
+  "star_rank": 31,
+  "status": {
+   "s2_status": "none",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-08-30"
+ },
+ "repo_id": 1302690078,
+ "topics": [
+  "agent-skills",
+  "charts",
+  "claude-code",
+  "codex",
+  "data-visualization",
+  "html",
+  "moxt",
+  "svg"
+ ]
+}
