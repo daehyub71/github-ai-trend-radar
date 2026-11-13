@@ -1,0 +1,1453 @@
+{
+ "1006414368": {
+  "checked": "2026-11-13",
+  "full_name": "OpenCut-app/OpenCut",
+  "packages": [],
+  "status": "ok"
+ },
+ "1007827531": {
+  "checked": "2026-11-13",
+  "full_name": "Crosstalk-Solutions/project-nomad",
+  "packages": [],
+  "status": "ok"
+ },
+ "1011567289": {
+  "checked": "2026-11-13",
+  "full_name": "shiyu-coder/Kronos",
+  "packages": [],
+  "status": "ok"
+ },
+ "1012087571": {
+  "checked": "2026-11-13",
+  "full_name": "router-for-me/CLIProxyAPI",
+  "packages": [],
+  "status": "ok"
+ },
+ "1024118326": {
+  "checked": "2026-11-13",
+  "full_name": "Tencent/WeKnora",
+  "packages": [],
+  "status": "ok"
+ },
+ "1024554267": {
+  "checked": "2026-11-13",
+  "full_name": "NousResearch/hermes-agent",
+  "packages": [],
+  "status": "ok"
+ },
+ "1031912724": {
+  "checked": "2026-11-13",
+  "full_name": "farion1231/cc-switch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1032459340": {
+  "checked": "2026-11-13",
+  "full_name": "Fission-AI/OpenSpec",
+  "packages": [
+   [
+    "npm",
+    "@fission-ai/openspec"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1032808806": {
+  "checked": "2026-11-13",
+  "full_name": "usestrix/strix",
+  "packages": [],
+  "status": "ok"
+ },
+ "1035029907": {
+  "checked": "2026-11-13",
+  "full_name": "earendil-works/pi",
+  "packages": [],
+  "status": "ok"
+ },
+ "1042367133": {
+  "checked": "2026-11-13",
+  "full_name": "github/spec-kit",
+  "packages": [],
+  "status": "ok"
+ },
+ "1044296738": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/VibeVoice",
+  "packages": [
+   [
+    "pypi",
+    "vibevoice"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1048065319": {
+  "checked": "2026-11-13",
+  "full_name": "thedotmack/claude-mem",
+  "packages": [
+   [
+    "npm",
+    "claude-mem"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1052050442": {
+  "checked": "2026-11-13",
+  "full_name": "datawhalechina/hello-agents",
+  "packages": [],
+  "status": "ok"
+ },
+ "1061041576": {
+  "checked": "2026-11-13",
+  "full_name": "p-e-w/heretic",
+  "packages": [
+   [
+    "pypi",
+    "heretic-llm"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1061953414": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1062356571": {
+  "checked": "2026-11-13",
+  "full_name": "tw93/Mole",
+  "packages": [],
+  "status": "ok"
+ },
+ "1073224795": {
+  "checked": "2026-11-13",
+  "full_name": "obra/superpowers",
+  "packages": [],
+  "status": "ok"
+ },
+ "1075372545": {
+  "checked": "2026-11-13",
+  "full_name": "msitarzewski/agency-agents",
+  "packages": [],
+  "status": "ok"
+ },
+ "1075381375": {
+  "checked": "2026-11-13",
+  "full_name": "getpaseo/paseo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1075431749": {
+  "checked": "2026-11-13",
+  "full_name": "karpathy/nanochat",
+  "packages": [],
+  "status": "ok"
+ },
+ "1079456184": {
+  "checked": "2026-11-13",
+  "full_name": "K-Dense-AI/scientific-agent-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1086419061": {
+  "checked": "2026-11-13",
+  "full_name": "vectorize-io/hindsight",
+  "packages": [],
+  "status": "ok"
+ },
+ "1097346685": {
+  "checked": "2026-11-13",
+  "full_name": "pbakaus/impeccable",
+  "packages": [
+   [
+    "npm",
+    "impeccable"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1100776768": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/claude-plugins-official",
+  "packages": [],
+  "status": "ok"
+ },
+ "1103012935": {
+  "checked": "2026-11-13",
+  "full_name": "openclaw/openclaw",
+  "packages": [
+   [
+    "npm",
+    "openclaw"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1104332987": {
+  "checked": "2026-11-13",
+  "full_name": "666ghj/MiroFish",
+  "packages": [],
+  "status": "ok"
+ },
+ "1105953775": {
+  "checked": "2026-11-13",
+  "full_name": "chthollyphile/folia-major",
+  "packages": [],
+  "status": "ok"
+ },
+ "1106996539": {
+  "checked": "2026-11-13",
+  "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1113573066": {
+  "checked": "2026-11-13",
+  "full_name": "hugohe3/ppt-master",
+  "packages": [],
+  "status": "ok"
+ },
+ "1124219907": {
+  "checked": "2026-11-13",
+  "full_name": "HKUDS/DeepTutor",
+  "packages": [],
+  "status": "ok"
+ },
+ "1125856365": {
+  "checked": "2026-11-13",
+  "full_name": "can1357/oh-my-pi",
+  "packages": [],
+  "status": "ok"
+ },
+ "1131202426": {
+  "checked": "2026-11-13",
+  "full_name": "meta/astryx",
+  "packages": [],
+  "status": "ok"
+ },
+ "1132001614": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/agent-browser",
+  "packages": [
+   [
+    "npm",
+    "agent-browser"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1133707766": {
+  "checked": "2026-11-13",
+  "full_name": "multica-ai/multica",
+  "packages": [],
+  "status": "ok"
+ },
+ "1134543109": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/skills",
+  "packages": [
+   [
+    "npm",
+    "skills"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1135212071": {
+  "checked": "2026-11-13",
+  "full_name": "coreyhaines31/marketingskills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1136590548": {
+  "checked": "2026-11-13",
+  "full_name": "affaan-m/ECC",
+  "packages": [
+   [
+    "npm",
+    "ecc-universal"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1136666433": {
+  "checked": "2026-11-13",
+  "full_name": "blader/humanizer",
+  "packages": [],
+  "status": "ok"
+ },
+ "1137078255": {
+  "checked": "2026-11-13",
+  "full_name": "colbymchenry/codegraph",
+  "packages": [
+   [
+    "npm",
+    "@colbymchenry/codegraph"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1139971460": {
+  "checked": "2026-11-13",
+  "full_name": "rtk-ai/rtk",
+  "packages": [],
+  "status": "ok"
+ },
+ "1140229822": {
+  "checked": "2026-11-13",
+  "full_name": "cursor/plugins",
+  "packages": [],
+  "status": "ok"
+ },
+ "1140828898": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/knowledge-work-plugins",
+  "packages": [],
+  "status": "ok"
+ },
+ "1140843380": {
+  "checked": "2026-11-13",
+  "full_name": "mvanhorn/last30days-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1141782198": {
+  "checked": "2026-11-13",
+  "full_name": "jamiepine/voicebox",
+  "packages": [],
+  "status": "ok"
+ },
+ "1142983825": {
+  "checked": "2026-11-13",
+  "full_name": "multica-ai/andrej-karpathy-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1144520675": {
+  "checked": "2026-11-13",
+  "full_name": "Alishahryar1/free-claude-code",
+  "packages": [],
+  "status": "ok"
+ },
+ "1145022970": {
+  "checked": "2026-11-13",
+  "full_name": "HBAI-Ltd/Toonflow-app",
+  "packages": [],
+  "status": "ok"
+ },
+ "1148788086": {
+  "checked": "2026-11-13",
+  "full_name": "mattpocock/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1152014594": {
+  "checked": "2026-11-13",
+  "full_name": "AgriciDaniel/claude-seo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1153130349": {
+  "checked": "2026-11-13",
+  "full_name": "pingdotgg/t3code",
+  "packages": [],
+  "status": "ok"
+ },
+ "1155965274": {
+  "checked": "2026-11-13",
+  "full_name": "Donchitos/Claude-Code-Game-Studios",
+  "packages": [],
+  "status": "ok"
+ },
+ "1157102282": {
+  "checked": "2026-11-13",
+  "full_name": "cheaper-inference/OmniRoute",
+  "packages": [
+   [
+    "npm",
+    "omniroute"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1158722119": {
+  "checked": "2026-11-13",
+  "full_name": "addyosmani/agent-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1161958643": {
+  "checked": "2026-11-13",
+  "full_name": "vercel-labs/agent-desktop",
+  "packages": [
+   [
+    "npm",
+    "agent-desktop"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1162099055": {
+  "checked": "2026-11-13",
+  "full_name": "Leonxlnx/taste-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1162410458": {
+  "checked": "2026-11-13",
+  "full_name": "Thysrael/Horizon",
+  "packages": [],
+  "status": "ok"
+ },
+ "1165277268": {
+  "checked": "2026-11-13",
+  "full_name": "Panniantong/Agent-Reach",
+  "packages": [],
+  "status": "ok"
+ },
+ "1167300963": {
+  "checked": "2026-11-13",
+  "full_name": "Imbad0202/academic-research-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1168753718": {
+  "checked": "2026-11-13",
+  "full_name": "every-app/open-seo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1170821064": {
+  "checked": "2026-11-13",
+  "full_name": "paperclipai/paperclip",
+  "packages": [],
+  "status": "ok"
+ },
+ "1177402105": {
+  "checked": "2026-11-13",
+  "full_name": "heygen-com/hyperframes",
+  "packages": [
+   [
+    "npm",
+    "hyperframes"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1179264259": {
+  "checked": "2026-11-13",
+  "full_name": "garrytan/gstack",
+  "packages": [],
+  "status": "ok"
+ },
+ "1179388779": {
+  "checked": "2026-11-13",
+  "full_name": "ethanplusai/sellbird",
+  "packages": [],
+  "status": "ok"
+ },
+ "1182081931": {
+  "checked": "2026-11-13",
+  "full_name": "Egonex-AI/Understand-Anything",
+  "packages": [],
+  "status": "ok"
+ },
+ "1183325896": {
+  "checked": "2026-11-13",
+  "full_name": "emilkowalski/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1183888342": {
+  "checked": "2026-11-13",
+  "full_name": "stablyai/orca",
+  "packages": [],
+  "status": "ok"
+ },
+ "1185389803": {
+  "checked": "2026-11-13",
+  "full_name": "ai-job-search-dev/ai-job-search",
+  "packages": [],
+  "status": "ok"
+ },
+ "1185590488": {
+  "checked": "2026-11-13",
+  "full_name": "rohitg00/ai-engineering-from-scratch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1187630119": {
+  "checked": "2026-11-13",
+  "full_name": "NVIDIA/SkillSpector",
+  "packages": [],
+  "status": "ok"
+ },
+ "1188180267": {
+  "checked": "2026-11-13",
+  "full_name": "mnfst/awesome-free-llm-apis",
+  "packages": [],
+  "status": "ok"
+ },
+ "1193300953": {
+  "checked": "2026-11-13",
+  "full_name": "dramaclaw/dramaclaw",
+  "packages": [],
+  "status": "ok"
+ },
+ "1193909050": {
+  "checked": "2026-11-13",
+  "full_name": "herdrdev/herdr",
+  "packages": [],
+  "status": "ok"
+ },
+ "1195243030": {
+  "checked": "2026-11-13",
+  "full_name": "walkinglabs/learn-harness-engineering",
+  "packages": [],
+  "status": "ok"
+ },
+ "1195360525": {
+  "checked": "2026-11-13",
+  "full_name": "OpenMontageInc/OpenMontage",
+  "packages": [],
+  "status": "ok"
+ },
+ "1197515131": {
+  "checked": "2026-11-13",
+  "full_name": "VoltAgent/awesome-design-md",
+  "packages": [
+   [
+    "npm",
+    "awesome-design-md"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1197652028": {
+  "checked": "2026-11-13",
+  "full_name": "google/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1200597263": {
+  "checked": "2026-11-13",
+  "full_name": "Graphify-Labs/graphify",
+  "packages": [
+   [
+    "pypi",
+    "graphifyy"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1201173969": {
+  "checked": "2026-11-13",
+  "full_name": "JuliusBrussee/caveman",
+  "packages": [],
+  "status": "ok"
+ },
+ "1201476594": {
+  "checked": "2026-11-13",
+  "full_name": "career-ops-hq/career-ops",
+  "packages": [],
+  "status": "ok"
+ },
+ "1201730379": {
+  "checked": "2026-11-13",
+  "full_name": "alchaincyf/nuwa-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1202410617": {
+  "checked": "2026-11-13",
+  "full_name": "FailproofAI/failproofai",
+  "packages": [
+   [
+    "npm",
+    "failproofai"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1206390571": {
+  "checked": "2026-11-13",
+  "full_name": "debpalash/VoiceStudio",
+  "packages": [],
+  "status": "ok"
+ },
+ "1209966933": {
+  "checked": "2026-11-13",
+  "full_name": "morluto/rea",
+  "packages": [
+   [
+    "npm",
+    "rea-agents"
+   ],
+   [
+    "npm",
+    "@morluto/rea"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1211139949": {
+  "checked": "2026-11-13",
+  "full_name": "tt-a1i/archify",
+  "packages": [],
+  "status": "ok"
+ },
+ "1212503250": {
+  "checked": "2026-11-13",
+  "full_name": "citrolabs/ego-lite",
+  "packages": [],
+  "status": "ok"
+ },
+ "1212769188": {
+  "checked": "2026-11-13",
+  "full_name": "cathrynlavery/diagram-design",
+  "packages": [],
+  "status": "ok"
+ },
+ "1214785164": {
+  "checked": "2026-11-13",
+  "full_name": "HKUSTDial/Supervisor-Skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1216954187": {
+  "checked": "2026-11-13",
+  "full_name": "ConardLi/garden-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1217040185": {
+  "checked": "2026-11-13",
+  "full_name": "tashfeenahmed/freellmapi",
+  "packages": [
+   [
+    "npm",
+    "freellmapi"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1217522067": {
+  "checked": "2026-11-13",
+  "full_name": "earthtojake/text-to-cad",
+  "packages": [],
+  "status": "ok"
+ },
+ "1219596233": {
+  "checked": "2026-11-13",
+  "full_name": "Yuan1z0825/nature-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1222527844": {
+  "checked": "2026-11-13",
+  "full_name": "ifixai-ai/iFixAi",
+  "packages": [
+   [
+    "pypi",
+    "ifixai"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1222917575": {
+  "checked": "2026-11-13",
+  "full_name": "Nutlope/hallmark",
+  "packages": [],
+  "status": "ok"
+ },
+ "1223170290": {
+  "checked": "2026-11-13",
+  "full_name": "nexu-io/open-design",
+  "packages": [],
+  "status": "ok"
+ },
+ "1224172037": {
+  "checked": "2026-11-13",
+  "full_name": "t8y2/dbx",
+  "packages": [],
+  "status": "ok"
+ },
+ "1226123343": {
+  "checked": "2026-11-13",
+  "full_name": "virgiliojr94/book-to-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1235832354": {
+  "checked": "2026-11-13",
+  "full_name": "deeplethe/sandstorm",
+  "packages": [],
+  "status": "ok"
+ },
+ "1238120057": {
+  "checked": "2026-11-13",
+  "full_name": "ayghri/i-have-adhd",
+  "packages": [],
+  "status": "ok"
+ },
+ "1266797999": {
+  "checked": "2026-11-13",
+  "full_name": "DietrichGebert/ponytail",
+  "packages": [
+   [
+    "npm",
+    "@dietrichgebert/ponytail"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1271560627": {
+  "checked": "2026-11-13",
+  "full_name": "latent-spaces/brag",
+  "packages": [],
+  "status": "ok"
+ },
+ "1273138090": {
+  "checked": "2026-11-13",
+  "full_name": "baidu/Unlimited-OCR",
+  "packages": [],
+  "status": "ok"
+ },
+ "1273427276": {
+  "checked": "2026-11-13",
+  "full_name": "cloudflare/security-audit-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1277471539": {
+  "checked": "2026-11-13",
+  "full_name": "bilawalsidhu/gods-eye-view",
+  "packages": [],
+  "status": "ok"
+ },
+ "1278883735": {
+  "checked": "2026-11-13",
+  "full_name": "gamedev-skills/awesome-gamedev-agent-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1279659344": {
+  "checked": "2026-11-13",
+  "full_name": "experientiallabs/experiential",
+  "packages": [],
+  "status": "ok"
+ },
+ "1286080397": {
+  "checked": "2026-11-13",
+  "full_name": "JustVugg/colibri",
+  "packages": [],
+  "status": "ok"
+ },
+ "1291896819": {
+  "checked": "2026-11-13",
+  "full_name": "poco-ai/Agentero",
+  "packages": [],
+  "status": "ok"
+ },
+ "1296300799": {
+  "checked": "2026-11-13",
+  "full_name": "jakubkrehel/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1301140808": {
+  "checked": "2026-11-13",
+  "full_name": "img2threejs/img2threejs",
+  "packages": [
+   [
+    "npm",
+    "img2threejs"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1301657572": {
+  "checked": "2026-11-13",
+  "full_name": "superdesigndev/treg",
+  "packages": [
+   [
+    "pypi",
+    "tools-registry"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1302612528": {
+  "checked": "2026-11-13",
+  "full_name": "sandbox-quantum/switch",
+  "packages": [],
+  "status": "ok"
+ },
+ "1304469751": {
+  "checked": "2026-11-13",
+  "full_name": "anomalyco/hex",
+  "packages": [],
+  "status": "ok"
+ },
+ "1305213943": {
+  "checked": "2026-11-13",
+  "full_name": "DuarteSantos8/openGym",
+  "packages": [],
+  "status": "ok"
+ },
+ "1305663861": {
+  "checked": "2026-11-13",
+  "full_name": "Vincentwei1021/video-shotcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1307001698": {
+  "checked": "2026-11-13",
+  "full_name": "FlashML-org/FreeToken",
+  "packages": [
+   [
+    "pypi",
+    "freetoken"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1308631234": {
+  "checked": "2026-11-13",
+  "full_name": "e2e-inc/e2e",
+  "packages": [],
+  "status": "ok"
+ },
+ "1316470719": {
+  "checked": "2026-11-13",
+  "full_name": "hypit-ai/hypit",
+  "packages": [
+   [
+    "npm",
+    "@hypit/hypit"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1319154759": {
+  "checked": "2026-11-13",
+  "full_name": "FareedKhan-dev/kimi-k3-in-c",
+  "packages": [],
+  "status": "ok"
+ },
+ "1324949198": {
+  "checked": "2026-11-13",
+  "full_name": "ranxianglei/billion-context",
+  "packages": [
+   [
+    "npm",
+    "billion-context"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1326531152": {
+  "checked": "2026-11-13",
+  "full_name": "miqdadbadjuber/anti-slop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1329849289": {
+  "checked": "2026-11-13",
+  "full_name": "lexmount/moli",
+  "packages": [],
+  "status": "ok"
+ },
+ "1331135699": {
+  "checked": "2026-11-13",
+  "full_name": "guillaumemeyer/watermarks-remover",
+  "packages": [],
+  "status": "ok"
+ },
+ "1331261687": {
+  "checked": "2026-11-13",
+  "full_name": "milind-soni/OpenMausBot",
+  "packages": [
+   [
+    "npm",
+    "openmausbot"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1331882604": {
+  "checked": "2026-11-13",
+  "full_name": "scenario-labs/skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1332781509": {
+  "checked": "2026-11-13",
+  "full_name": "elie222/rakazo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1333065091": {
+  "checked": "2026-11-13",
+  "full_name": "deepseek-ai/deepseek-harness",
+  "packages": [],
+  "status": "ok"
+ },
+ "1333111893": {
+  "checked": "2026-11-13",
+  "full_name": "ccch1mneyyy/dsh-TUI",
+  "packages": [
+   [
+    "npm",
+    "@deepseek-harness-tui/dsh-tui"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1333175049": {
+  "checked": "2026-11-13",
+  "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+  "packages": [
+   [
+    "npm",
+    "awesome-dsh-plugin"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1333321333": {
+  "checked": "2026-11-13",
+  "full_name": "anywhere-labs/dsh-desktop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1333399642": {
+  "checked": "2026-11-13",
+  "full_name": "google/artemis",
+  "packages": [],
+  "status": "ok"
+ },
+ "1333652151": {
+  "checked": "2026-11-13",
+  "full_name": "PC2005-cloud/dsh-pet",
+  "packages": [
+   [
+    "npm",
+    "dsh-pet"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1333807290": {
+  "checked": "2026-11-13",
+  "full_name": "dsh-market/dsh-market",
+  "packages": [
+   [
+    "npm",
+    "dshmarket"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1334325657": {
+  "checked": "2026-11-13",
+  "full_name": "liguobao/ds-harness-remote",
+  "packages": [
+   [
+    "npm",
+    "ds-harness-remote"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1336114531": {
+  "checked": "2026-11-13",
+  "full_name": "elysia395/dsh-wallpaper-engine",
+  "packages": [
+   [
+    "npm",
+    "dsh-plugin-wallpaper-engine"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1336502227": {
+  "checked": "2026-11-13",
+  "full_name": "CopilotKit/OpenBot",
+  "packages": [],
+  "status": "ok"
+ },
+ "1346499044": {
+  "checked": "2026-11-13",
+  "full_name": "jub0t/Concat",
+  "packages": [],
+  "status": "ok"
+ },
+ "1356159928": {
+  "checked": "2026-11-13",
+  "full_name": "Albert-Weasker/niubigeo",
+  "packages": [],
+  "status": "ok"
+ },
+ "1359648985": {
+  "checked": "2026-11-13",
+  "full_name": "eternity4719/HowToLiveBetter",
+  "packages": [],
+  "status": "ok"
+ },
+ "1368447577": {
+  "checked": "2026-11-13",
+  "full_name": "Jakeschincariol/instagram-agent-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1368596582": {
+  "checked": "2026-11-13",
+  "full_name": "google/elephant-goldfish-model",
+  "packages": [],
+  "status": "ok"
+ },
+ "1373084533": {
+  "checked": "2026-11-13",
+  "full_name": "Jakeschincariol/youtube-agent-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1375615157": {
+  "checked": "2026-11-13",
+  "full_name": "Oldcircle/geo-sleuth",
+  "packages": [],
+  "status": "ok"
+ },
+ "1383809012": {
+  "checked": "2026-11-13",
+  "full_name": "yetone/magpie",
+  "packages": [],
+  "status": "ok"
+ },
+ "1385896447": {
+  "checked": "2026-11-13",
+  "full_name": "Ebony-Vinyl/dsh-our-free-model",
+  "packages": [
+   [
+    "npm",
+    "@ebony-vinyl/dsh-our-free-model"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1385946301": {
+  "checked": "2026-11-13",
+  "full_name": "Niko1221/Strata",
+  "packages": [],
+  "status": "ok"
+ },
+ "1389011744": {
+  "checked": "2026-11-13",
+  "full_name": "lemomo-ai/lemo-opuscar",
+  "packages": [],
+  "status": "ok"
+ },
+ "1390273274": {
+  "checked": "2026-11-13",
+  "full_name": "yihui-dev/awesome-opus5-5-videos",
+  "packages": [],
+  "status": "ok"
+ },
+ "1393965829": {
+  "checked": "2026-11-13",
+  "full_name": "KKKKhazix/AIHOT",
+  "packages": [],
+  "status": "ok"
+ },
+ "1398080271": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/photocraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1398086162": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/pdfcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1401476500": {
+  "checked": "2026-11-13",
+  "full_name": "QingYunA/answer-me-with-html",
+  "packages": [],
+  "status": "ok"
+ },
+ "1403115747": {
+  "checked": "2026-11-13",
+  "full_name": "Jakeschincariol/replica-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1404197626": {
+  "checked": "2026-11-13",
+  "full_name": "openfilm/openfilm",
+  "packages": [
+   [
+    "npm",
+    "openfilm"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1407951147": {
+  "checked": "2026-11-13",
+  "full_name": "google-research/harness2",
+  "packages": [],
+  "status": "ok"
+ },
+ "1408489772": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/wordcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1409013846": {
+  "checked": "2026-11-13",
+  "full_name": "Fei2411/DS-Bot",
+  "packages": [
+   [
+    "npm",
+    "ds-bot"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1409246014": {
+  "checked": "2026-11-13",
+  "full_name": "tangency-labs/solidcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "1410124849": {
+  "checked": "2026-11-13",
+  "full_name": "wheresryan22/anatomy",
+  "packages": [],
+  "status": "ok"
+ },
+ "1416442720": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/TokenEconomizer",
+  "packages": [],
+  "status": "ok"
+ },
+ "1421822085": {
+  "checked": "2026-11-13",
+  "full_name": "kingcharleslzy-ai/dsh-purge",
+  "packages": [],
+  "status": "ok"
+ },
+ "1421825221": {
+  "checked": "2026-11-13",
+  "full_name": "deepseek-ai/DeepInfer",
+  "packages": [
+   [
+    "pypi",
+    "deepinfer"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1422597771": {
+  "checked": "2026-11-13",
+  "full_name": "amosblomqvist/learnharness",
+  "packages": [],
+  "status": "ok"
+ },
+ "1422648476": {
+  "checked": "2026-11-13",
+  "full_name": "herdrdev/herdr-app",
+  "packages": [],
+  "status": "ok"
+ },
+ "1423101235": {
+  "checked": "2026-11-13",
+  "full_name": "Gathin23/cleanyourtv",
+  "packages": [],
+  "status": "ok"
+ },
+ "1423892373": {
+  "checked": "2026-11-13",
+  "full_name": "Zagitta/gpu-unlock",
+  "packages": [],
+  "status": "ok"
+ },
+ "1427126014": {
+  "checked": "2026-11-13",
+  "full_name": "Jakeschincariol/day-trader-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1431851693": {
+  "checked": "2026-11-13",
+  "full_name": "rddmwmddr/android-ad-cleaner",
+  "packages": [],
+  "status": "ok"
+ },
+ "1432859403": {
+  "checked": "2026-11-13",
+  "full_name": "qybaihe/bla",
+  "packages": [
+   [
+    "npm",
+    "bla-agents"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1432967563": {
+  "checked": "2026-11-13",
+  "full_name": "ccch1mneyyy/dsh-Go",
+  "packages": [],
+  "status": "ok"
+ },
+ "1433377156": {
+  "checked": "2026-11-13",
+  "full_name": "unclebob/ub-mode",
+  "packages": [],
+  "status": "ok"
+ },
+ "1435695423": {
+  "checked": "2026-11-13",
+  "full_name": "anhao/ai-pose-gallery-zh",
+  "packages": [],
+  "status": "ok"
+ },
+ "1438540053": {
+  "checked": "2026-11-13",
+  "full_name": "wangzan101/Mika",
+  "packages": [],
+  "status": "ok"
+ },
+ "1438623288": {
+  "checked": "2026-11-13",
+  "full_name": "heydamir/unslop",
+  "packages": [],
+  "status": "ok"
+ },
+ "1439372976": {
+  "checked": "2026-11-13",
+  "full_name": "patch-gg/pixelfx",
+  "packages": [],
+  "status": "ok"
+ },
+ "1440705679": {
+  "checked": "2026-11-13",
+  "full_name": "deepseek-ai/dsh-superagent-prototype",
+  "packages": [],
+  "status": "ok"
+ },
+ "1440956372": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/craft-anything",
+  "packages": [],
+  "status": "ok"
+ },
+ "274495425": {
+  "checked": "2026-11-13",
+  "full_name": "remotion-dev/remotion",
+  "packages": [
+   [
+    "npm",
+    "remotion"
+   ]
+  ],
+  "status": "ok"
+ },
+ "476507964": {
+  "checked": "2026-11-13",
+  "full_name": "storytold/artcraft",
+  "packages": [],
+  "status": "ok"
+ },
+ "574523116": {
+  "checked": "2026-11-13",
+  "full_name": "f/prompts.chat",
+  "packages": [],
+  "status": "ok"
+ },
+ "575865240": {
+  "checked": "2026-11-13",
+  "full_name": "AstrBotDevs/AstrBot",
+  "packages": [
+   [
+    "pypi",
+    "astrbot"
+   ]
+  ],
+  "status": "ok"
+ },
+ "589831718": {
+  "checked": "2026-11-13",
+  "full_name": "Comfy-Org/ComfyUI",
+  "packages": [],
+  "status": "ok"
+ },
+ "598667202": {
+  "checked": "2026-11-13",
+  "full_name": "lightpanda-io/browser",
+  "packages": [],
+  "status": "ok"
+ },
+ "638513786": {
+  "checked": "2026-11-13",
+  "full_name": "Anil-matcha/Open-Generative-AI",
+  "packages": [],
+  "status": "ok"
+ },
+ "658928958": {
+  "checked": "2026-11-13",
+  "full_name": "ollama/ollama",
+  "packages": [],
+  "status": "ok"
+ },
+ "770153867": {
+  "checked": "2026-11-13",
+  "full_name": "harry0703/MoneyPrinterTurbo",
+  "packages": [
+   [
+    "pypi",
+    "mpt"
+   ]
+  ],
+  "status": "ok"
+ },
+ "783730789": {
+  "checked": "2026-11-13",
+  "full_name": "Lordog/dive-into-llms",
+  "packages": [],
+  "status": "ok"
+ },
+ "787076358": {
+  "checked": "2026-11-13",
+  "full_name": "firecrawl/firecrawl",
+  "packages": [
+   [
+    "pypi",
+    "firecrawl"
+   ],
+   [
+    "npm",
+    "firecrawl"
+   ]
+  ],
+  "status": "ok"
+ },
+ "872119017": {
+  "checked": "2026-11-13",
+  "full_name": "D4Vinci/Scrapling",
+  "packages": [
+   [
+    "pypi",
+    "scrapling"
+   ]
+  ],
+  "status": "ok"
+ },
+ "876064934": {
+  "checked": "2026-11-13",
+  "full_name": "patchy631/ai-engineering-hub",
+  "packages": [],
+  "status": "ok"
+ },
+ "888092115": {
+  "checked": "2026-11-13",
+  "full_name": "microsoft/markitdown",
+  "packages": [
+   [
+    "pypi",
+    "markitdown"
+   ]
+  ],
+  "status": "ok"
+ },
+ "909213664": {
+  "checked": "2026-11-13",
+  "full_name": "TauricResearch/TradingAgents",
+  "packages": [],
+  "status": "ok"
+ },
+ "911256711": {
+  "checked": "2026-11-13",
+  "full_name": "apify/apify-mcp-server",
+  "packages": [
+   [
+    "npm",
+    "@apify/actors-mcp-server"
+   ]
+  ],
+  "status": "ok"
+ },
+ "913030762": {
+  "checked": "2026-11-13",
+  "full_name": "vxcontrol/pentagi",
+  "packages": [],
+  "status": "ok"
+ },
+ "931888694": {
+  "checked": "2026-11-13",
+  "full_name": "cjpais/Handy",
+  "packages": [],
+  "status": "ok"
+ },
+ "937253475": {
+  "checked": "2026-11-13",
+  "full_name": "anthropics/claude-code",
+  "packages": [
+   [
+    "npm",
+    "claude-code"
+   ]
+  ],
+  "status": "ok"
+ },
+ "965415649": {
+  "checked": "2026-11-13",
+  "full_name": "openai/codex",
+  "packages": [
+   [
+    "npm",
+    "@openai/codex"
+   ]
+  ],
+  "status": "ok"
+ },
+ "975734319": {
+  "checked": "2026-11-13",
+  "full_name": "anomalyco/opencode",
+  "packages": [],
+  "status": "ok"
+ },
+ "995029641": {
+  "checked": "2026-11-13",
+  "full_name": "ruvnet/ruflo",
+  "packages": [],
+  "status": "ok"
+ },
+ "997737944": {
+  "checked": "2026-11-13",
+  "full_name": "ruvnet/RuView",
+  "packages": [
+   [
+    "pypi",
+    "wifi-densepose"
+   ],
+   [
+    "pypi",
+    "ruview"
+   ],
+   [
+    "npm",
+    "@ruvnet/ruview"
+   ]
+  ],
+  "status": "ok"
+ }
+}

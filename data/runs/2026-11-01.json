@@ -1,0 +1,51 @@
+{
+ "calls": {
+  "ecosystems": 52,
+  "geeknews": 24,
+  "gh_rest": 800,
+  "gh_search": 612,
+  "hn": 200,
+  "npm": 37,
+  "npm_registry": 414,
+  "pypi": 214,
+  "pypistats": 14
+ },
+ "candidates": 200,
+ "finished_at": "2026-11-13T03:16:37+00:00",
+ "geeknews": "ok",
+ "notes": [
+  "S2: 지난 스냅샷 없음",
+  "pingdotgg/t3code S3: is:pr is:merged merged 2026-11-01 주 1,064건 — Search 상한 1,000건까지만 셌다",
+  "stablyai/orca S3: is:pr is:merged merged 2026-11-01 주 1,523건 — Search 상한 1,000건까지만 셌다",
+  "awesome-dsh-plugin/awesome-dsh-plugin S3: is:pr is:merged merged 2026-11-01 주 1,693건 — Search 상한 1,000건까지만 셌다",
+  "meta/astryx S3: is:pr is:merged merged 2026-11-01 주 1,155건 — Search 상한 1,000건까지만 셌다",
+  "openclaw/openclaw S3: is:pr is:merged merged 2026-11-01 주 2,942건 — Search 상한 1,000건까지만 셌다; is:issue is:closed closed 2026-11-01 주 1,322건 — Search 상한 1,000건까지만 셌다",
+  "anthropics/claude-code S3: is:issue is:closed closed 2026-11-01 주 1,127건 — Search 상한 1,000건까지만 셌다"
+ ],
+ "sources": {
+  "s2": {
+   "failed": 0,
+   "ok": 200,
+   "partial": 0
+  },
+  "s3": {
+   "failed": 0,
+   "ok": 194,
+   "partial": 6
+  },
+  "s4": {
+   "failed": 0,
+   "none": 153,
+   "ok": 47,
+   "partial": 0
+  },
+  "s5": {
+   "failed": 0,
+   "ok": 200,
+   "partial": 0
+  }
+ },
+ "started_at": "2026-11-13T02:32:52+00:00",
+ "status": "partial",
+ "week": "2026-11-01"
+}

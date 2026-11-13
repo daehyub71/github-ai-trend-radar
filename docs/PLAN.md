@@ -58,6 +58,11 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | S4 사용 | 패키지 연결(D11: 이름 후보 조회 + 저장소의 `pyproject.toml`·`setup.py`·`package.json` 이름, 레지스트리 저장소 URL 일치 확인)을 먼저 찾고, PyPI는 pypistats 최근 일별, npm은 downloads range API | 연결 1회(캐시) + 패키지마다 1회 | pypistats는 약 180일, npm range는 18개월 — 12주 가능. **의존 수는 소급 불가**, 지금부터 매주 쌓는다 |
 | S5 언급 | HN Algolia(저장소 URL·`owner/name` 정확 일치, 기간 필터) · GeekNews | 저장소마다 1~2회 | HN은 기간 검색으로 가능. GeekNews `/past?day=` 는 1년 전까지 읽힌다 — 12주 약 84일 × 1~2쪽, 간격 2초로 3~6분(D12) |
 
+- **M1 구현 세부 (2026-11-13)**
+  - S2: 저장소를 ID(`/repositories/{id}`)로 조회해 이름이 바뀌어도 따라간다. 주간 증가는 **두 스냅샷 사이가 6~8일일 때만** 인정하고 아니면 결측(첫 실행·불규칙 실행 보호).
+  - S4: 연결 확인은 레지스트리에서 직접 한다 — PyPI JSON(`project_urls`·`home_page`)·npm `/<name>/latest`(`repository`·`homepage`·`bugs`). 연결 결과는 `data/meta/packages.json`에 4주 캐시. 패키지가 없으면 상태 `none`(실패와 구분). 의존 수는 ecosyste.ms.
+  - S5: GeekNews 날짜는 KST 라 UTC 주 끝을 덮도록 하루 더 읽고, 글 ID 로 중복을 뺀다.
+  - 요청 간격: Search 2.1초 · GeekNews 2초 · pypistats 1초 · ecosyste.ms 0.2초. 429·5xx·연결 실패는 지수 대기 재시도, GitHub 한도는 reset 까지 대기(최대 15분).
 - PR 작성자 고유 수는 Search API가 바로 주지 않는다. 머지 PR 목록(주당 최대 100건씩)을 받아 `user.login`에서 `[bot]`을 빼고 센다. 100건을 넘는 저장소는 페이지를 더 읽는다(상한을 둔다).
 - 모든 응답은 녹화 파일로 테스트하고, 형식이 바뀌면 `partial`로 기록한다(F3).
 - GitHub 토큰은 star-trend의 읽기 전용 토큰을 재사용한다(D8). 한 실행의 REST·Search 호출 수를 실행 기록에 남긴다.
