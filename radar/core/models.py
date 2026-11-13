@@ -13,6 +13,9 @@ class RepoMeta:
     category: str | None
     secondary: str | None
     kind: str | None  # classify.type (도구/라이브러리 등)
+    description: str | None = None  # 저장소 설명(외부 글 — LLM 에는 신뢰하지 않는 데이터로 넘긴다)
+    topics: tuple[str, ...] = ()
+    language: str | None = None
 
 
 @dataclass(frozen=True)

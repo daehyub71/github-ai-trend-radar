@@ -7,7 +7,7 @@ name = "radar"
 version = "0.0.1"
 description = "Weekly AI GitHub trend radar: composite index of stars, forks, contributions, packages, mentions"
 requires-python = ">=3.12,<3.14"   # CI 3.12, 로컬 3.13 (SPEC N1)
-dependencies = []
+dependencies = ["anthropic>=2.4,<3"]  # M5 T5-1
 
 [tool.setuptools.packages.find]
 include = ["radar*"]
@@ -25,6 +25,10 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# 글 틀(한국어 고정 문장)만 담은 파일 — 문장을 쪼개면 오히려 읽기 어렵다
+"radar/publish/drafts.py" = ["E501"]
 
 [tool.mypy]
 python_version = "3.12"

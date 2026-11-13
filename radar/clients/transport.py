@@ -23,7 +23,8 @@ class TransportError(Exception):
 
 
 class Transport(Protocol):
-    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float) -> HttpResponse: ...
+    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float,
+                 body: bytes | None = None) -> HttpResponse: ...
 
 
 def _lower(items: Iterable[tuple[str, str]]) -> dict[str, str]:
@@ -31,8 +32,9 @@ def _lower(items: Iterable[tuple[str, str]]) -> dict[str, str]:
 
 
 class UrllibTransport:
-    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float) -> HttpResponse:
-        req = urllib.request.Request(url, method=method, headers=dict(headers))
+    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float,
+                 body: bytes | None = None) -> HttpResponse:
+        req = urllib.request.Request(url, data=body, method=method, headers=dict(headers))
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 return HttpResponse(resp.status, _lower(resp.headers.items()), resp.read())

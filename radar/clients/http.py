@@ -63,17 +63,24 @@ class HttpClient:
         return None
 
     def get(self, kind: str, url: str, headers: Mapping[str, str] | None = None) -> HttpResponse:
+        return self.request(kind, "GET", url, headers)
+
+    def request(self, kind: str, method: str, url: str, headers: Mapping[str, str] | None = None,
+                body: bytes | None = None) -> HttpResponse:
+        """한 번 보낸다. GET 은 429·5xx·연결 실패를 재시도하고, 그 밖의 방법은 중복 생성을 막으려고
+        429·한도 대기만 재시도한다(요청이 처리되지 않은 것이 확실한 경우)."""
         p = self._policy(kind)
+        safe = method == "GET"
         h = {"User-Agent": USER_AGENT, **(headers or {})}
         wait = p.backoff
         for attempt in range(1, p.attempts + 1):
             self._space(kind, p)
             self.calls[kind] = self.calls.get(kind, 0) + 1
             try:
-                r = self._t("GET", url, h, p.timeout)
+                r = self._t(method, url, h, p.timeout, body)
             except TransportError:
                 self._last[kind] = self._clock()
-                if attempt == p.attempts:
+                if attempt == p.attempts or not safe:
                     raise
                 self._sleep(wait)
                 wait *= 2
@@ -83,7 +90,7 @@ class HttpClient:
             if limit is not None and limit <= MAX_WAIT and attempt < p.attempts:
                 self._sleep(limit)
                 continue
-            if (r.status == 429 or r.status >= 500) and attempt < p.attempts:
+            if (r.status == 429 or (safe and r.status >= 500)) and attempt < p.attempts:
                 self._sleep(wait)
                 wait *= 2
                 continue
@@ -99,6 +106,16 @@ class HttpClient:
             return 200, json.loads(r.body)
         except ValueError:
             return 200, None
+
+    def send_json(self, kind: str, method: str, url: str, payload: Any,
+                  headers: Mapping[str, str] | None = None) -> tuple[int, Any]:
+        """JSON 본문을 보내고 (상태, JSON 본문 또는 None) 을 돌려준다."""
+        h = {"Accept": "application/json", "Content-Type": "application/json", **(headers or {})}
+        r = self.request(kind, method, url, h, json.dumps(payload, ensure_ascii=False).encode())
+        try:
+            return r.status, json.loads(r.body) if r.body else None
+        except ValueError:
+            return r.status, None
 
     def get_text(self, kind: str, url: str, headers: Mapping[str, str] | None = None) -> tuple[int, str]:
         r = self.get(kind, url, headers)

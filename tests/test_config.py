@@ -43,3 +43,11 @@ def test_config_weights_must_sum_to_100(tmp_path):
 def test_config_repo_settings_file_is_valid():
     c = load_config()
     assert sum(c.weights.values()) == 100
+
+
+def test_config_angles_loaded_from_settings():
+    from radar.config import load_config
+    from radar.core.angles import RULES_V1
+
+    cfg = load_config()
+    assert cfg.angles == RULES_V1

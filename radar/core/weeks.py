@@ -24,3 +24,8 @@ def parse_week(text: str) -> date:
     if week_start(d) != d:
         raise ValueError(f"주 이름은 일요일이어야 한다: {text}")
     return d
+
+
+def target_week(today: date) -> date:
+    """주간 실행이 처리할 주 — 오늘 기준 마지막으로 끝난 주(일~토)."""
+    return week_start(today) - timedelta(weeks=1)

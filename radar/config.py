@@ -6,6 +6,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+from radar.core.angles import RULES_V1, AngleRules
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SETTINGS = PROJECT_ROOT / "config" / "settings.toml"
 SIGNALS = ("s1", "s2", "s3", "s4", "s5")
@@ -22,6 +24,7 @@ class Config:
     previous_top: int
     weights: dict[str, int]
     weights_version: int
+    angles: AngleRules = RULES_V1
 
 
 def load_config(path: Path = DEFAULT_SETTINGS, env: Mapping[str, str] | None = None) -> Config:
@@ -34,8 +37,10 @@ def load_config(path: Path = DEFAULT_SETTINGS, env: Mapping[str, str] | None = N
         w = raw["weights"]
         weights = {k: int(w[k]) for k in SIGNALS}
         cfg_dir = env.get("RADAR_STARTREND_DIR") or str(path.parent / raw["startrend"]["dir"])
+        ang = raw.get("angles", {})
+        angles = AngleRules(**{k: type(getattr(RULES_V1, k))(v) for k, v in ang.items()})
         cfg = Config(Path(cfg_dir).resolve(), int(raw["candidates"]["cap"]),
-                     int(raw["candidates"]["previous_top"]), weights, int(w["version"]))
+                     int(raw["candidates"]["previous_top"]), weights, int(w["version"]), angles)
     except (OSError, KeyError, TypeError, ValueError, tomllib.TOMLDecodeError) as e:
         raise ConfigError(f"설정을 읽지 못했다 ({path.name}: {e})") from e
     if sum(weights.values()) != 100:

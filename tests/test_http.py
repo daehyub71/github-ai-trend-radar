@@ -93,3 +93,16 @@ def test_http_get_text_and_headers_never_logged():
     c, _ = _client(t)
     assert c.get_text("k", "https://h/a", {"Authorization": "Bearer secret"}) == (200, "hello")
     assert "secret" not in repr(c.calls)
+
+
+def test_http_post_does_not_retry_5xx_but_retries_429():
+    import json as _json
+
+    from tests.fakes import FakeTransport, ok, status
+
+    t = FakeTransport([("api.x/a", [status(502), ok({"id": 1})]), ("api.x/b", [status(429), ok({"id": 2})])])
+    c, _ = _client(t)
+    assert c.send_json("notion", "POST", "https://api.x/a", {"k": "값"})[0] == 502
+    assert c.send_json("notion", "POST", "https://api.x/b", {"k": 1}) == (200, {"id": 2})
+    assert _json.loads(t.bodies[0] or b"") == {"k": "값"}
+    assert [m for m, _, _ in t.requests] == ["POST", "POST", "POST"]

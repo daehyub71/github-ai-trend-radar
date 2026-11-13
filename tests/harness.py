@@ -16,11 +16,12 @@ ALLOWED: dict[str, set[str]] = {
     "clients": {"core", "clients"},
     "inputs": {"core", "inputs"},
     "collectors": {"core", "clients", "collectors"},  # 수집기끼리는 아래에서 따로 막는다
-    "app": {"core", "clients", "inputs", "collectors", "app"},
-    "cli": {"core", "clients", "inputs", "collectors", "app", "cli"},
+    "publish": {"core", "clients", "publish"},  # M5 글·Notion — 수집기·입력을 모른다(사실 묶음만 받는다)
+    "app": {"core", "clients", "inputs", "collectors", "publish", "app"},
+    "cli": {"core", "clients", "inputs", "collectors", "publish", "app", "cli"},
     "package": set(),
 }
-APP_MODULES = {"config", "store", "pipeline", "backfill"}
+APP_MODULES = {"config", "store", "pipeline", "backfill", "blog", "site"}
 NETWORK_MODULES = {"socket", "ssl", "http.client", "urllib.request", "ftplib", "smtplib"}
 NETWORK_ALLOWED_FILES = {"radar/clients/transport.py"}
 LLM_SDK_MODULES = {"anthropic"}
@@ -39,7 +40,7 @@ def layer_of(relpath: str) -> str:
         return "cli"
     if len(parts) == 2 and Path(parts[1]).stem in APP_MODULES:
         return "app"
-    if len(parts) > 2 and parts[1] in ("core", "clients", "inputs", "collectors"):
+    if len(parts) > 2 and parts[1] in ("core", "clients", "inputs", "collectors", "publish"):
         return parts[1]
     raise ValueError(f"층을 알 수 없는 모듈: {relpath}")
 

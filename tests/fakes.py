@@ -28,9 +28,12 @@ class FakeTransport:
         self.routes = [(frag, list(r) if isinstance(r, list) else r) for frag, r in routes]
         self.default = default or status(404)
         self.requests: list[tuple[str, str, dict[str, str]]] = []
+        self.bodies: list[bytes | None] = []
 
-    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float) -> HttpResponse:
+    def __call__(self, method: str, url: str, headers: Mapping[str, str], timeout: float,
+                 body: bytes | None = None) -> HttpResponse:
         self.requests.append((method, url, dict(headers)))
+        self.bodies.append(body)
         for frag, r in self.routes:
             if frag in url:
                 item = (r.pop(0) if len(r) > 1 else r[0]) if isinstance(r, list) else r

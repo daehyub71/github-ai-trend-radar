@@ -23,3 +23,13 @@ def test_weeks_parse_rejects_non_sunday():
     assert parse_week("2026-11-01") == date(2026, 11, 1)
     with pytest.raises(ValueError):
         parse_week("2026-11-02")
+
+
+def test_weeks_target_week_is_last_complete_week():
+    from datetime import date
+
+    from radar.core.weeks import target_week
+
+    assert target_week(date(2026, 11, 16)) == date(2026, 11, 8)   # 월요일 → 지난 일~토
+    assert target_week(date(2026, 11, 15)) == date(2026, 11, 8)   # 일요일 당일은 그 주가 막 시작
+    assert target_week(date(2026, 11, 14)) == date(2026, 11, 1)

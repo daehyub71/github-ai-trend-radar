@@ -2,11 +2,11 @@
 
 입력 읽기 → 후보 선정 → S2 포크 스냅샷 → 패키지 연결(캐시) → 저장소마다 S3·S4·S5 → GeekNews 한 번 →
 signals·스냅샷·실행 기록 저장. 한 신호가 실패해도 나머지는 계속 모으고 상태를 남긴다.
-지수 계산(정규화·가중 평균)은 M2 에서 이 파일 위에 붙는다.
+수집이 끝나면 정규화·지수(build_index)로 index/<주>.json 을 쓴다(M2).
 """
 
 import json
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from datetime import UTC, date, datetime, timedelta
 from pathlib import Path
 from typing import Any
@@ -16,6 +16,7 @@ from radar.collectors import activity, forks, mentions, packages
 from radar.collectors.base import FAILED, OK, PARTIAL, RepoRef
 from radar.config import Config
 from radar.core.candidates import select_candidates
+from radar.core.index import compute, rank, signal_percentiles
 from radar.core.models import Candidate
 from radar.core.signals import fork_delta_checked
 from radar.inputs.startrend import load_ai_repos, load_week_stars
@@ -36,6 +37,7 @@ POLICIES: dict[str, Policy] = {
     "geeknews": Policy(min_interval=2.0, attempts=2),
     "pypistats": Policy(min_interval=1.0),
     "ecosystems": Policy(min_interval=0.2),
+    "notion": Policy(min_interval=0.34),  # 초당 3회 미만
 }
 LINK_TTL_DAYS = 28
 NONE = "none"  # 패키지가 없다 — 실패가 아니라 해당 없음
@@ -52,7 +54,8 @@ SIGNAL_FIELDS = (
 FORK_FIELDS = ("repo_id", "full_name", "forks", "stars", "archived", "status", "snapshot_at")
 
 
-def _previous_top(data: Path, week: date) -> list[int]:
+def previous_top(data: Path, week: date) -> list[int]:
+    """지난주 index 의 종합 TOP (없으면 빈 목록)."""
     f = week_path("index", week - timedelta(weeks=1), "json", data)
     if not f.exists():
         return []
@@ -63,16 +66,16 @@ def _previous_top(data: Path, week: date) -> list[int]:
 def _candidates(cfg: Config, week: date, data: Path) -> tuple[list[Candidate], dict[int, Any]]:
     ai = load_ai_repos(cfg.startrend_dir)
     rows = load_week_stars(cfg.startrend_dir, week)
-    cands = select_candidates(rows, ai.keys(), _previous_top(data, week)[: cfg.previous_top], cfg.cap)
+    cands = select_candidates(rows, ai.keys(), previous_top(data, week)[: cfg.previous_top], cfg.cap)
     return cands, ai
 
 
-def _load_links(data: Path) -> dict[str, Any]:
+def load_links(data: Path) -> dict[str, Any]:
     f = data / "meta" / "packages.json"
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 
-def _needs_link(entry: Mapping[str, Any] | None, today: date) -> bool:
+def needs_link(entry: Mapping[str, Any] | None, today: date) -> bool:
     if not entry:
         return True
     return (today - date.fromisoformat(str(entry["checked"]))).days >= LINK_TTL_DAYS
@@ -82,9 +85,9 @@ def plan_week(cfg: Config, week: date, *, data: Path = DATA, limit: int | None =
     """--dry-run — 호출 0. 후보 수와 예상 호출 수."""
     cands, _ = _candidates(cfg, week, data)
     cands = cands[:limit] if limit else cands
-    links = _load_links(data)
+    links = load_links(data)
     today = datetime.now(UTC).date()
-    uncached = sum(1 for c in cands if _needs_link(links.get(str(c.id)), today))
+    uncached = sum(1 for c in cands if needs_link(links.get(str(c.id)), today))
     known = sum(len(links.get(str(c.id), {}).get("packages", [])) for c in cands)
     n = len(cands)
     calls = {"gh_rest": n + 3 * uncached, "gh_search": 2 * n, "registry": 4 * uncached,
@@ -104,11 +107,46 @@ def _prev_forks(data: Path, week: date) -> tuple[dict[int, int], datetime | None
     return vals, at
 
 
-def _worst(*states: str) -> str:
+def worst(*states: str) -> str:
+    """가장 나쁜 상태 (failed > partial > ok)."""
     for s in (FAILED, PARTIAL):
         if s in states:
             return s
     return OK
+
+
+def s4_state(pkgs: Sequence[packages.Package], states: Sequence[str]) -> str:
+    """패키지가 없으면 none, 모두 실패면 failed, 아니면 가장 나쁜 상태."""
+    if not pkgs:
+        return NONE
+    if all(s == FAILED for s in states):
+        return FAILED
+    return worst(*states)
+
+
+def signal_row(c: Candidate, full: str, category: str | None, *,
+               s2: tuple[int | None, int | None, str],
+               s3: tuple[activity.WeekActivity | None, str],
+               s4: tuple[Sequence[packages.Package], int | None, int | None, str],
+               s5: tuple[tuple[int, int] | None, tuple[int, int] | None, str],
+               backfilled: bool) -> dict[str, Any]:
+    """signals CSV 한 행 — 주간 수집과 소급이 같은 형식을 쓴다(F5)."""
+    forks_n, fork_delta, s2_status = s2
+    wa, s3_status = s3
+    pkgs, dl, dep, s4_status = s4
+    hn_w, gn, s5_status = s5
+    return {
+        "repo_id": c.id, "full_name": full, "category": category,
+        "gain_rank": c.gain_rank, "reason": c.reason, "s1_stars_gain": c.gain,
+        "s2_forks": forks_n, "s2_fork_delta": fork_delta, "s2_status": s2_status,
+        "s3_merged_prs": wa.merged_prs if wa else None, "s3_pr_authors": wa.pr_authors if wa else None,
+        "s3_closed_issues": wa.closed_issues if wa else None, "s3_status": s3_status,
+        "s4_packages": " ".join(f"{p.ecosystem}:{p.name}" for p in pkgs) or None,
+        "s4_downloads": dl, "s4_dependents": dep, "s4_status": s4_status,
+        "s5_hn_stories": hn_w[0] if hn_w else None, "s5_hn_points": hn_w[1] if hn_w else None,
+        "s5_gn_topics": gn[0] if gn else None, "s5_gn_points": gn[1] if gn else None,
+        "s5_status": s5_status, "backfilled": int(backfilled),
+    }
 
 
 def collect_week(cfg: Config, client: HttpClient, token: str, week: date, *, data: Path = DATA,
@@ -135,9 +173,9 @@ def collect_week(cfg: Config, client: HttpClient, token: str, week: date, *, dat
     name = {c.id: (snaps[c.id].full_name if c.id in snaps else c.full_name) for c in cands}
 
     # 패키지 연결 (4주 캐시)
-    links = _load_links(data)
+    links = load_links(data)
     for c in cands:
-        if _needs_link(links.get(str(c.id)), today):
+        if needs_link(links.get(str(c.id)), today):
             lr = packages.link(client, token, name[c.id])
             links[str(c.id)] = {"checked": today.isoformat(), "full_name": name[c.id], "status": lr.status,
                                 "packages": [[p.ecosystem, p.name] for p in lr.packages]}
@@ -176,32 +214,18 @@ def collect_week(cfg: Config, client: HttpClient, token: str, week: date, *, dat
             dep_rows.append({"repo_id": c.id, "ecosystem": p.ecosystem, "name": p.name, "dependents": dep})
             if dep is not None:
                 dep_total = (dep_total or 0) + dep
-        if not pkgs:
-            s4_status = NONE
-        elif all(s == FAILED for s in s4_states):
-            s4_status = FAILED
-        else:
-            s4_status = _worst(*s4_states)
+        s4_status = s4_state(pkgs, s4_states)
 
         hn, hn_status = mentions.hn_mentions(client, full, weeks)
         gn = gn_idx.get(full.lower(), {}).get(week, (0, 0)) if gn_status != FAILED else None
-        s5_status = _worst(hn_status, gn_status)
+        s5_status = worst(hn_status, gn_status)
         hn_w = hn.get(week)
 
-        rows.append({
-            "repo_id": c.id, "full_name": full, "category": ai[c.id].category if c.id in ai else None,
-            "gain_rank": c.gain_rank, "reason": c.reason, "s1_stars_gain": c.gain,
-            "s2_forks": snap.forks if snap else None, "s2_fork_delta": delta.get(c.id),
-            "s2_status": s2_status,
-            "s3_merged_prs": wa.merged_prs if wa else None, "s3_pr_authors": wa.pr_authors if wa else None,
-            "s3_closed_issues": wa.closed_issues if wa else None, "s3_status": act.status,
-            "s4_packages": " ".join(f"{p.ecosystem}:{p.name}" for p in pkgs) or None,
-            "s4_downloads": dl_total, "s4_dependents": dep_total, "s4_status": s4_status,
-            "s5_hn_stories": hn_w[0] if hn_w else None, "s5_hn_points": hn_w[1] if hn_w else None,
-            "s5_gn_topics": gn[0] if gn else (0 if gn is not None else None),
-            "s5_gn_points": gn[1] if gn else (0 if gn is not None else None),
-            "s5_status": s5_status, "backfilled": 0,
-        })
+        rows.append(signal_row(
+            c, full, ai[c.id].category if c.id in ai else None,
+            s2=(snap.forks if snap else None, delta.get(c.id), s2_status),
+            s3=(wa, act.status), s4=(pkgs, dl_total, dep_total, s4_status),
+            s5=(hn_w, gn, s5_status), backfilled=False))
         for key, st in (("s2", s2_status), ("s3", act.status), ("s4", s4_status), ("s5", s5_status)):
             tally[key][st] += 1
 
@@ -226,7 +250,41 @@ def collect_week(cfg: Config, client: HttpClient, token: str, week: date, *, dat
     write_mutable(data / "meta" / "packages.json", json_text(links))
     write_once(week_path("signals", week, "csv", data), csv_text(SIGNAL_FIELDS, rows))
     write_once(week_path("runs", week, "json", data), json_text(record))
+    build_index(cfg, week, data=data)
     return record
+
+
+TOP_N = 10
+
+
+def _r(v: float | None) -> float | None:
+    return None if v is None else round(v, 2)
+
+
+def build_index(cfg: Config, week: date, *, data: Path = DATA) -> dict[str, Any]:
+    """signals/<주>.csv → index/<주>.json (SPEC F4). 같은 입력이면 같은 파일, 다른 가중치로 덮어쓰지 않는다.
+
+    신호가 실패한 저장소도 남은 신호로 지수를 낸다(결측 재분배).
+    """
+    rows = read_csv(week_path("signals", week, "csv", data))
+    pcts = signal_percentiles(rows)
+    idx = compute(pcts, cfg.weights)
+    by_id = {int(r["repo_id"]): r for r in rows}
+    # 지난주 TOP 보충 저장소는 그 주 스타 순위가 없을 수 있다 → 동점이면 맨 뒤
+    order = rank(idx, {rid: int(r["gain_rank"]) for rid, r in by_id.items() if r["gain_rank"]})
+    out_rows = [{
+        "rank": i + 1, "repo_id": rid, "full_name": by_id[rid]["full_name"],
+        "category": by_id[rid]["category"] or None,
+        "gain_rank": int(by_id[rid]["gain_rank"]) if by_id[rid]["gain_rank"] else None,
+        "index": _r(idx[rid].index),
+        "pct": {k: _r(pcts[k].get(rid)) for k in cfg.weights},
+        "contrib": {k: round(v, 2) for k, v in idx[rid].contrib.items()},
+        "missing": list(idx[rid].missing), "backfilled": by_id[rid]["backfilled"] == "1",
+    } for i, rid in enumerate(order)]
+    out = {"week": week.isoformat(), "weights_version": cfg.weights_version, "weights": dict(cfg.weights),
+           "candidates": len(rows), "top": [r["repo_id"] for r in out_rows[:TOP_N]], "rows": out_rows}
+    write_once(week_path("index", week, "json", data), json_text(out))
+    return out
 
 
 def make_client(transport: Any, policies: Mapping[str, Policy] | None = None) -> HttpClient:

@@ -40,8 +40,12 @@ def load_ai_repos(root: Path) -> dict[int, RepoMeta]:
         if not isinstance(d.get("id"), int) or not isinstance(d.get("full_name"), str):
             raise ContractError(f"{f}: id·full_name 이 없다")
         if c["is_ai"] is True:
+            topics = d.get("topics") if isinstance(d.get("topics"), list) else []
+            desc = d.get("description") if isinstance(d.get("description"), str) else None
+            lang = d.get("language") if isinstance(d.get("language"), str) else None
             out[d["id"]] = RepoMeta(d["id"], d["full_name"], d.get("created"), c.get("category"),
-                                    c.get("secondary"), c.get("type"))
+                                    c.get("secondary"), c.get("type"), desc,
+                                    tuple(str(t) for t in topics), lang)
     return out
 
 

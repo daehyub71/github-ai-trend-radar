@@ -1,0 +1,189 @@
+# 주간 실행 (SPEC F1·D6, TASKS T3-1·T3-2) — `python -m radar weekly`
+#
+# 크론: 월 09:00 UTC = 18:00 KST. star-trend 주간 실행(월 00:00 UTC 시작, 보통 04:50~06:30 끝) 다음이다.
+# 입력(star-trend 공개 데이터)이 그 주로 갱신되지 않았으면 30분씩 4번 다시 받아 본다. 그래도 없으면 실패로 남긴다.
+# 손으로도 돌릴 수 있다(workflow_dispatch) — 기본은 점검(check, 쓰기 없음), run 을 골라야 수집·커밋한다.
+#
+# 보안(SPEC N4·N5): 권한은 contents: write 만 · 외부 Action 은 커밋 SHA 고정 · 시크릿과 입력값은 env 로만 넘긴다
+#                  · checkout 은 토큰을 .git/config 에 남기지 않는다. tests/test_workflow.py 가 이 규칙을 검사한다.
+# 필요한 것: Secrets RADAR_GH_TOKEN(읽기 전용 — star-trend 의 깃허브 토큰 재사용, D8)
+#           · 변수 RADAR_STARTREND_REPO(없으면 daehyub71/github-ai-star-trend)
+# M5(있을 때만): RADAR_PRIVATE_REPO_TOKEN(비공개 저장소 내용 읽기·쓰기) · STARTREND_ANTHROPIC_API_KEY · NOTION_TOKEN
+#              — 없으면 초안·Notion 단계만 건너뛴다. 공개 데이터 수집·지수·사이트 데이터는 그대로 돈다.
+name: weekly
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "check = 점검만(쓰기 없음) · run = 주간 수집·커밋"
+        required: true
+        default: check
+        type: choice
+        options: [check, run]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      PYTHONPATH: .
+      PYTHONUTF8: "1"
+      RADAR_STARTREND_DIR: ${{ github.workspace }}/.startrend
+      STARTREND_REPO: ${{ vars.RADAR_STARTREND_REPO || 'daehyub71/github-ai-star-trend' }}
+      # 손으로 실행할 때 기본은 점검(check). 크론(schedule)은 실행으로 친다
+      RUN: ${{ github.event_name == 'schedule' || inputs.mode == 'run' }}
+      HAS_PRIVATE: ${{ secrets.RADAR_PRIVATE_REPO_TOKEN != '' }}
+      HAS_LLM: ${{ secrets.STARTREND_ANTHROPIC_API_KEY != '' }}
+      PRIVATE_REPO: ${{ vars.RADAR_PRIVATE_REPO || format('{0}-private', github.repository) }}
+    steps:
+      - name: 레이더 저장소
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: star-trend 공개 데이터 (입력 계약, 필요한 폴더만)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ env.STARTREND_REPO }}
+          path: .startrend
+          fetch-depth: 1
+          sparse-checkout: |
+            data/repos
+            data/stars
+            data/site/categories.json
+          sparse-checkout-cone-mode: false
+          persist-credentials: false
+
+      - name: Python 3.12
+        uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+
+      - name: 패키지 — 버전·해시 고정
+        run: python -m pip install --require-hashes --no-deps -r requirements-lock.txt
+
+      - name: 점검 — Secrets · 토큰 한도 · 입력 계약 (값은 출력하지 않는다)
+        env:
+          RADAR_GH_TOKEN: ${{ secrets.RADAR_GH_TOKEN }}
+        run: |
+          fail=0
+          if [ -n "$RADAR_GH_TOKEN" ]; then echo "OK  RADAR_GH_TOKEN 있음"; else echo "NG  RADAR_GH_TOKEN 없음"; fail=1; fi
+          limit=$(curl -s -H "Authorization: Bearer $RADAR_GH_TOKEN" https://api.github.com/rate_limit \
+            | python -c "import json,sys; print(json.load(sys.stdin).get('resources',{}).get('core',{}).get('limit',0))" || echo 0)
+          echo "깃허브 시간당 한도: $limit"
+          [ "$limit" -ge 5000 ] || fail=1
+          python -m radar contract || fail=1
+          if [ "$fail" = "0" ]; then echo "점검 통과"; else echo "점검 실패 — 위 NG 를 본다"; fi
+          exit $fail
+
+      - name: 입력 갱신 대기 (30분 × 4, D6)
+        if: env.RUN == 'true'
+        run: |
+          set +e
+          for i in 0 1 2 3 4; do
+            python -m radar weekly --check-input
+            code=$?
+            [ "$code" = "0" ] && exit 0
+            [ "$code" = "4" ] || exit "$code"
+            [ "$i" = "4" ] && break
+            echo "30분 뒤 다시 본다 ($((i + 1))/4)"
+            sleep 1800
+            git -C .startrend fetch -q --depth 1 origin HEAD && git -C .startrend reset -q --hard FETCH_HEAD
+          done
+          echo "::error::star-trend 입력이 2시간 안에 갱신되지 않았다 — 이번 주 실행을 멈춘다(SPEC K1)"
+          exit 4
+
+      - name: 예상 호출 수 (호출 0)
+        if: env.RUN == 'true'
+        run: python -m radar weekly --dry-run
+
+      - name: 주간 수집 · 지수
+        if: env.RUN == 'true'
+        id: run
+        env:
+          GITHUB_TOKEN: ${{ secrets.RADAR_GH_TOKEN }}
+        run: |
+          set +e
+          python -m radar weekly
+          code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: 사이트 데이터 (호출 0)
+        if: env.RUN == 'true'
+        run: python -m radar site
+
+      - name: 비공개 저장소 (M5 초안 · Notion 대응표, D7)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true'
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: ${{ env.PRIVATE_REPO }}
+          token: ${{ secrets.RADAR_PRIVATE_REPO_TOKEN }}
+          path: .private
+          persist-credentials: false
+
+      - name: 초안 · Notion (LLM $3 상한, 초안 상태만 고친다)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true' && env.HAS_LLM == 'true'
+        env:
+          STARTREND_ANTHROPIC_API_KEY: ${{ secrets.STARTREND_ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          set +e
+          python -m radar blog --cap 3 || echo "::warning::초안 단계 실패 — 숫자 표만 있는 초안이 남았는지 본다"
+          if [ -n "$NOTION_TOKEN" ] && [ -f .private/notion/index.json ]; then
+            python -m radar notion || echo "::warning::Notion 단계 실패"
+          else
+            echo "NOTION_TOKEN 또는 레이더 DB 대응표 없음 — Notion 건너뜀"
+          fi
+          exit 0
+
+      - name: 비공개 저장소 push
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true'
+        env:
+          PUSH_TOKEN: ${{ secrets.RADAR_PRIVATE_REPO_TOKEN }}
+        run: |
+          cd .private
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then echo "비공개 저장소 바뀐 것 없음"; exit 0; fi
+          git commit -q -m "drafts: weekly $(date -u +%F)"
+          auth=$(printf 'x-access-token:%s' "$PUSH_TOKEN" | base64 -w0)
+          echo "::add-mask::$auth"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" pull -q --rebase
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push -q
+
+      - name: 공개 데이터 commit · push (크기·시크릿 가드 먼저)
+        if: env.RUN == 'true'
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+          RADAR_GH_TOKEN: ${{ secrets.RADAR_GH_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          python scripts/size_guard.py --staged
+          if git diff --cached --quiet; then echo "바뀐 데이터 없음"; exit 0; fi
+          git commit -q -m "data: weekly $(date -u +%F)"
+          auth=$(printf 'x-access-token:%s' "$PUSH_TOKEN" | base64 -w0)
+          echo "::add-mask::$auth"
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" pull -q --rebase origin main
+          git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" push -q origin HEAD:main
+
+      - name: 결과 — 0 성공 · 그 밖은 실패
+        if: env.RUN == 'true'
+        env:
+          CODE: ${{ steps.run.outputs.code }}
+        run: |
+          echo "weekly 종료 코드 $CODE"
+          [ "$CODE" = "0" ]
