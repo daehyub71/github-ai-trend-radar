@@ -48,6 +48,29 @@ def test_packages_link_uses_manifest_names_and_checks_registry_repo():
     assert r.packages == [Package("pypi", "real-pkg"), Package("npm", "@org/ui")]
 
 
+def test_packages_pointer_package_is_skipped_and_followed():
+    # 2026-11-14: anthropics/claude-code 가 안내용 자리표시 패키지 npm:claude-code(주 약 1만)에 연결됐다.
+    # 공식 @anthropic-ai/claude-code(주 약 1,700만)는 이름 앞부분이 깃허브 주인과 달라 이름 후보에 없었다.
+    pointer = {"description": "Pointer to the official Claude Code package at @anthropic-ai/claude-code",
+               "repository": {"url": "git+https://github.com/anthropics/claude-code.git"}}
+    official = {"description": "Use Claude from your terminal", "homepage": "https://github.com/anthropics/claude-code"}
+    t = FakeTransport([("registry.npmjs.org/claude-code/latest", ok(pointer)),
+                       ("registry.npmjs.org/@anthropic-ai/claude-code/latest", ok(official))])
+    c, _ = _client(t)
+    assert link(c, "tok", "anthropics/claude-code").packages == [Package("npm", "@anthropic-ai/claude-code")]
+
+
+def test_packages_pointer_target_must_match_repo_and_deprecated_is_skipped():
+    pointer = {"description": "Moved to @evil/tool", "repository": {"url": "https://github.com/org/tool"}}
+    other = {"homepage": "https://github.com/evil/tool"}
+    deprecated = {"deprecated": "no longer maintained", "repository": {"url": "https://github.com/org/tool"}}
+    t = FakeTransport([("registry.npmjs.org/tool/latest", ok(pointer)),
+                       ("registry.npmjs.org/@evil/tool/latest", ok(other)),
+                       ("registry.npmjs.org/@org/tool/latest", ok(deprecated))])
+    c, _ = _client(t)
+    assert link(c, "tok", "org/tool").packages == []  # 가리킨 패키지도 이 저장소여야 따라간다
+
+
 def test_packages_private_package_json_is_ignored():
     t = FakeTransport([("/contents/package.json", _content('{"name": "app", "private": true}'))])
     c, _ = _client(t)

@@ -4106,12 +4106,12 @@
   "status": "ok"
  },
  "937253475": {
-  "checked": "2026-11-13",
+  "checked": "2026-11-14",
   "full_name": "anthropics/claude-code",
   "packages": [
    [
     "npm",
-    "claude-code"
+    "@anthropic-ai/claude-code"
    ]
   ],
   "status": "ok"

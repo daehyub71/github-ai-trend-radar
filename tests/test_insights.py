@@ -93,6 +93,18 @@ def test_insights_i2_needs_two_prior_weeks_and_no_jump_sentence_below_threshold(
     assert got.big == "4주 평균의 1.14배" and got.text == ""
 
 
+def test_insights_i2_compares_only_weeks_with_the_same_packages():
+    # 패키지 연결이 바뀐 주(2026-11-14 claude-code: 자리표시 → 공식)는 다운로드를 견주지 않는다
+    def pt(k, v, pkgs):
+        return WeekPoint(week=(CUR - timedelta(weeks=k)).isoformat(), downloads=v, packages=pkgs)
+
+    old, new = "npm:claude-code", "npm:@anthropic-ai/claude-code"
+    win = [pt(3, 9000, old), pt(2, 9500, old), pt(1, 9800, old), pt(0, 17_600_000, new)]
+    assert "I2" not in _by_id(observe(win, [], RULES_V1))
+    same = [pt(2, 100, new), pt(1, 110, new), pt(0, 120, new)]
+    assert _by_id(observe(same, [], RULES_V1))["I2"].big == "4주 평균의 1.14배"
+
+
 def test_insights_i3_fork_ratio_top_share():
     me = WeekPoint(week="2026-11-01", stars=100, forks=900, fork_delta=20)
     pop = [WeekPoint(week="2026-11-01", stars=100, fork_delta=1) for _ in range(9)] + [me]

@@ -41,6 +41,7 @@ class WeekPoint:
     index: float | None = None
     stars: float | None = None
     downloads: float | None = None
+    packages: str | None = None  # 다운로드를 잰 패키지(s4_packages) — 바뀐 주끼리는 견주지 않는다
     dependents: float | None = None
     forks: float | None = None
     fork_delta: float | None = None
@@ -124,6 +125,8 @@ def _i2(win: Sequence[WeekPoint], r: InsightRules) -> Insight | None:
     cur = win[-1]
     if cur.downloads is None:
         return None
+    if cur.packages:  # 패키지 연결이 바뀌기 전 주는 다른 패키지의 다운로드다
+        win = [p for p in win if not p.packages or p.packages == cur.packages]
     c = _d(cur.week)
     by = {p.week: p.downloads for p in win if p.downloads is not None}
     prior = [by[w] for w in ((c - timedelta(weeks=k)).isoformat() for k in range(1, 5)) if w in by]

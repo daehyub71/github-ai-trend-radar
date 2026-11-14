@@ -27,6 +27,12 @@ ATTRIBUTION = "ecosyste.ms (CC BY-SA 4.0)"
 _SUFFIXES = ("-python", "-py", ".py", "-js", ".js", "-node", "-ts", "-sdk", "-cli")
 _PREFIXES = ("python-", "py-", "node-", "js-")
 _SETUP_NAME = re.compile(r"""\bname\s*=\s*['"]([A-Za-z0-9._\-]+)['"]""")
+# 안내용 자리표시·이전 패키지 — 연결하지 않고, 설명에 적힌 npm 패키지가 이 저장소면
+# 그쪽을 연결한다(2026-11-14)
+_POINTER = re.compile(
+    r"(?i)\b(pointer to|moved to|has moved|renamed to|deprecated in favou?r of|use \S+ instead)\b"
+)
+_NPM_SCOPED = re.compile(r"@[a-z0-9][a-z0-9._~-]*/[a-z0-9][a-z0-9._~-]*")
 
 
 @dataclass(frozen=True)
@@ -92,21 +98,40 @@ def manifest_names(client: HttpClient, token: str, full_name: str) -> dict[str, 
     return out
 
 
-def _registry_urls(client: HttpClient, eco: str, name: str) -> list[object] | None:
-    """레지스트리에 적힌 URL 들. 패키지가 없으면 None."""
+def _registry(client: HttpClient, eco: str, name: str) -> tuple[list[object], str, bool] | None:
+    """레지스트리에 적힌 (URL 들, 설명, 폐기 여부). 패키지가 없으면 None."""
     if eco == "pypi":
         st, body = client.get_json("pypi", f"https://pypi.org/pypi/{quote(name)}/json")
         if st != 200 or not isinstance(body, dict):
             return None
         info = body.get("info") or {}
         urls = list((info.get("project_urls") or {}).values())
-        return urls + [info.get("home_page"), info.get("download_url")]
+        return urls + [info.get("home_page"), info.get("download_url")], str(info.get("summary") or ""), False
     st, body = client.get_json("npm_registry", f"https://registry.npmjs.org/{quote(name, safe='@/')}/latest")
     if st != 200 or not isinstance(body, dict):
         return None
     repo = body.get("repository")
-    return [repo.get("url") if isinstance(repo, dict) else repo, body.get("homepage"),
+    urls = [repo.get("url") if isinstance(repo, dict) else repo, body.get("homepage"),
             (body.get("bugs") or {}).get("url") if isinstance(body.get("bugs"), dict) else None]
+    return urls, str(body.get("description") or ""), bool(body.get("deprecated"))
+
+
+def _verified(client: HttpClient, eco: str, name: str, full_name: str, *,
+              follow: bool = True) -> Package | None:
+    """레지스트리 저장소 URL 이 이 저장소인 패키지(D11). 자리표시·폐기 패키지는 빼고, 설명이 가리키는
+    npm 패키지를 한 번만 따라간다 — 그 패키지도 이 저장소여야 한다."""
+    reg = _registry(client, eco, name)
+    if reg is None:
+        return None
+    urls, desc, deprecated = reg
+    if not any(same_repo(u, full_name) for u in urls):
+        return None
+    if not deprecated and not _POINTER.search(desc):
+        return Package(eco, name)
+    target = _NPM_SCOPED.search(desc.lower()) if eco == "npm" and follow else None
+    if target and target.group(0) != name:
+        return _verified(client, eco, target.group(0), full_name, follow=False)
+    return None
 
 
 def link(client: HttpClient, token: str, full_name: str) -> LinkResult:
@@ -117,9 +142,9 @@ def link(client: HttpClient, token: str, full_name: str) -> LinkResult:
         if eco == "pypi":
             names = [_pypi_norm(n) for n in names]
         for name in dict.fromkeys(names):
-            urls = _registry_urls(client, eco, name)
-            if urls and any(same_repo(u, full_name) for u in urls):
-                res.packages.append(Package(eco, name))
+            pkg = _verified(client, eco, name, full_name)
+            if pkg is not None and pkg not in res.packages:
+                res.packages.append(pkg)
     return res
 
 

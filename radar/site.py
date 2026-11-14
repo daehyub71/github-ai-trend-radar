@@ -68,6 +68,7 @@ def _point(week: str, r: Mapping[str, Any], rr: Mapping[str, str]) -> WeekPoint:
         closed_issues=_f(rr.get("s3_closed_issues")),
         stars=_f(rr.get("s1_stars_gain")),
         downloads=_f(rr.get("s4_downloads")),
+        packages=rr.get("s4_packages") or None,
         dependents=_f(rr.get("s4_dependents")),
         forks=_f(rr.get("s2_forks")),
         fork_delta=_f(rr.get("s2_fork_delta")),

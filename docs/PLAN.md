@@ -1,6 +1,6 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.7.1** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.7.1.
+> **상태: v0.7.2** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.7.2.
 > PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
@@ -70,7 +70,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 
 - **M1 구현 세부 (2026-11-13)**
   - S2: 저장소를 ID(`/repositories/{id}`)로 조회해 이름이 바뀌어도 따라간다. 주간 증가는 **두 스냅샷 사이가 6~8일일 때만** 인정하고 아니면 결측(첫 실행·불규칙 실행 보호).
-  - S4: 연결 확인은 레지스트리에서 직접 한다 — PyPI JSON(`project_urls`·`home_page`)·npm `/<name>/latest`(`repository`·`homepage`·`bugs`). 연결 결과는 `data/meta/packages.json`에 4주 캐시. 패키지가 없으면 상태 `none`(실패와 구분). 의존 수는 ecosyste.ms.
+  - S4: 연결 확인은 레지스트리에서 직접 한다 — PyPI JSON(`project_urls`·`home_page`)·npm `/<name>/latest`(`repository`·`homepage`·`bugs`). 설명이 자리표시·이전 안내이거나 폐기된 패키지는 빼고, 설명이 가리키는 npm 패키지를 한 번 따라가 같은 확인을 한다(v0.7.2). 연결 결과는 `data/meta/packages.json`에 4주 캐시. 패키지가 없으면 상태 `none`(실패와 구분). 의존 수는 ecosyste.ms.
   - S5: GeekNews 날짜는 KST 라 UTC 주 끝을 덮도록 하루 더 읽고, 글 ID 로 중복을 뺀다.
   - 요청 간격: Search 2.1초 · GeekNews 2초 · pypistats 1초 · ecosyste.ms 0.2초. 429·5xx·연결 실패는 지수 대기 재시도, GitHub 한도는 reset 까지 대기(최대 15분).
 - PR 작성자 고유 수는 Search API가 바로 주지 않는다. 머지 PR 목록(주당 최대 100건씩)을 받아 `user.login`에서 `[bot]`을 빼고 센다. 100건을 넘는 저장소는 페이지를 더 읽는다(상한을 둔다).
@@ -201,6 +201,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.7.2 | 2026-11-14 | S4 연결 보강(자리표시·폐기 패키지 제외, 가리키는 패키지 따라가기) · I2 는 같은 패키지 주끼리만 비교 |
 | v0.7.1 | 2026-11-14 | P8 구조도 응답 형식(문자열 목록) · 주간 순서 초안 → 해설 → 그림(초안에 넣기) → Notion(그림 업로드) |
 | v0.7 | 2026-11-14 | SPEC v0.7 D21~D23 반영: P8 저장소 설명 그림(후보 수집·확인·구조도) |
 | v0.6 | 2026-11-14 | SPEC v0.6 F11 반영: M8 글 그림(차트 데이터·그리기·초안 결합·Notion 업로드), P7, PK6 |
