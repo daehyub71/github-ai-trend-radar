@@ -66,6 +66,19 @@ export function gitFailureKind(stderr) {
   return "원인 불명 — 네트워크 또는 git 오류";
 }
 
+/** git 오류 첫 줄 — 토큰·인증 머리말처럼 보이는 것은 가린다(Vercel 도 환경변수 값을 로그에서 가린다) */
+export function gitFailureHint(stderr) {
+  const line = String(stderr ?? "")
+    .split("\n")
+    .map((x) => x.trim())
+    .filter((x) => x && !/authorization/i.test(x))
+    .slice(-1)[0] ?? "";
+  return line
+    .replace(/(ghp_|gho_|ghs_|github_pat_)[A-Za-z0-9_]+/g, "$1[가림]")
+    .replace(/[A-Za-z0-9+/=]{32,}/g, "[가림]")
+    .slice(0, 160);
+}
+
 /** 한 폴더만 얕게 받는 git 명령들(인자 배열) */
 export function fetchCommands(repo, ref, folder, dir) {
   return [
@@ -85,8 +98,11 @@ function fetchFolder({ repo, ref, folder }, dest, env) {
         execFileSync("git", args, { env, stdio: ["ignore", "ignore", "pipe"] });
       } catch (e) {
         // 인자에는 토큰이 없지만, 혹시 모를 git 출력은 그대로 옮기지 않는다 — 원인 종류만 알린다
-        const kind = gitFailureKind(e && typeof e === "object" && "stderr" in e ? e.stderr : "");
-        throw new Error(`git ${args[0] === "-C" ? args[2] : args[0]} 실패 — ${repo} 의 ${folder}: ${kind}`);
+        const err = e && typeof e === "object" && "stderr" in e ? e.stderr : "";
+        const code = e && typeof e === "object" && "code" in e ? ` (${String(e.code)})` : "";
+        const hint = gitFailureHint(err);
+        throw new Error(`git ${args[0] === "-C" ? args[2] : args[0]} 실패 — ${repo} 의 ${folder}: ${gitFailureKind(err)}${code}`
+          + (hint ? ` · git: ${hint}` : ""));
       }
     }
     const src = path.join(dir, folder);

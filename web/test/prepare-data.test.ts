@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { fetchCommands, gitAuthEnv, gitFailureKind, planPrepare } from "../scripts/prepare-data.mjs";
+import { fetchCommands, gitAuthEnv, gitFailureHint, gitFailureKind, planPrepare } from "../scripts/prepare-data.mjs";
 
 const TOKEN = "github_pat_" + "x".repeat(70); // 형식만 맞춘 가짜 값
 const PUBLIC = (p: string) => p === "../data/site/weeks.json";
@@ -64,5 +64,14 @@ describe("gitFailureKind", () => {
     expect(gitFailureKind("The requested URL returned error: 403")).toContain("권한 없음");
     expect(gitFailureKind(undefined)).toContain("원인 불명");
     expect(gitFailureKind("fatal: Authentication failed for 'https://github.com/o/p.git/'")).not.toContain("github.com");
+  });
+});
+
+describe("gitFailureHint", () => {
+  it("마지막 오류 줄만, 토큰·긴 base64·인증 머리말은 가린다", () => {
+    const fake = "github_pat_" + "x".repeat(40);
+    expect(gitFailureHint(`trace\nAUTHORIZATION: basic abc\nfatal: bad token ${fake}`)).toBe("fatal: bad token github_pat_[가림]");
+    expect(gitFailureHint("fatal: x " + "A".repeat(60))).toBe("fatal: x [가림]");
+    expect(gitFailureHint(undefined)).toBe("");
   });
 });

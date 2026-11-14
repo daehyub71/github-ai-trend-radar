@@ -9,4 +9,5 @@ export function planPrepare(env: Env, exists: (p: string) => boolean): { site: S
 export function gitAuthEnv(token: string, base?: Env): Env;
 export function fetchCommands(repo: string, ref: string, folder: string, dir: string): string[][];
 export function gitFailureKind(stderr: unknown): string;
+export function gitFailureHint(stderr: unknown): string;
 export function main(env?: Env): void;
