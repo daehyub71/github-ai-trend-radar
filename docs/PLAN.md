@@ -1,6 +1,6 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.5** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.5.
+> **상태: v0.6** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.6.
 > PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
@@ -34,6 +34,7 @@ radar/
     angles.py            관점 글 유형 A~D 선정·근거 숫자 (F9, D9)
     insights.py          (M7) 코드 관찰 I1~I7 (F10-1)
     evidence.py          (M7) 근거 모델·URL 정규화·중복 제거·번호 E1… (star-trend 이식)
+    charts_data.py       (M8) 차트 데이터 — 12주 순위 시리즈·기여 막대·신호 지도 점·주별 신호 비중·카테고리 (F11)
   inputs/startrend.py  입력 계약 읽기·검증
   clients/transport.py 네트워크는 여기서만 (재시도·한도·녹화 재생)
   collectors/          신호별 수집기 — 서로 import 하지 않는다
@@ -46,6 +47,7 @@ radar/
   publish/             (M5) llm.py · gate.py · drafts.py · notion.py · budget.py
                        (M7) card.py (요청·JSON 스키마·파싱·렌더) · prompt_card.md · gate 근거 번호 검사
   cards.py             (M7) 해설 단계: 대상(TOP 10 + 관점) → 근거 → 해설 → 비공개 저장 → site-private 사본
+                       (M8) publish/charts.py — matplotlib 으로 C1~C4·저장소 카드 PNG (matplotlib 은 이 파일에서만)
   cli.py               python -m radar <weekly|backfill|contract|notion|evidence|cards> [--dry-run]
 web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
   scripts/prepare-data.mjs (M7) 빌드 때 비공개 저장소의 site-private/ 만 받는다(읽기 전용 토큰, star-trend 이식)
@@ -140,6 +142,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | **M4** | 사이트 | **DESIGN 시안(Claude Design 캔버스) 합의 →** Next.js 정적 사이트, Vercel 배포, 보안 점검 | 시안 합의 기록, 웹 lint·test·build 통과, 배포 |
 | **M5** | 블로그·Notion | Sonnet 5.5 해설($3 상한), 게이트(숫자·링크·금지 표현), 별도 연재 초안, **관점 글 초안(F9)**, 비공개 저장소 저장, Notion 레이더 DB(글 종류 속성) | 실제 1주 TOP 10 글·관점 글과 Notion 페이지 검토 확인 |
 | **M6** | 운영 관찰 | 연속 3주 자동 실행 관찰, 문제 정리 | 3주 연속 정상 |
+| **M8** | 글 그림 (F11, 2026-11-14 추가) | matplotlib 추가(잠금 해시·층 규칙), 차트 데이터(core, TDD)·그리기(C1~C4·R1), **11-01 주 시안 그림 합의 →** 초안 결합(그림 자리·트렌드 분석 소제목·일러스트 프롬프트 R2), Notion 파일 업로드, 워크플로(한글 글꼴·그림 단계) | 시안 합의 기록, 11-08 주 자동 실행 초안·Notion 에 그림, 사용자 검토 |
 | **M7** | 저장소 해설 (F10, 2026-11-14 추가) | **DESIGN 시안 v2 합의 →** 코드 관찰 I1~I7, 근거 수집(README·릴리스·HN 글·댓글·GeekNews·Tavily), Sonnet 5.5 해설 6절(JSON 스키마)·게이트(근거 번호·URL·숫자·단정), 비공개 저장·site-private, 빌드 때 받기, 저장소 화면·TOP 10 한 줄, 주간 워크플로 단계, **보안 점검** 뒤 배포 | 시안 합의 기록, 11-01 주 실제 1회(장당 비용·게이트 제외 수 MEASURE 기록), 사용자 검토, 웹 lint·test·build, 배포 |
 
 - M3까지 끝나면 사이트 없이도 매주 지수가 쌓인다. 사이트·글은 그 데이터 위에 올린다.
@@ -170,6 +173,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | P3 | GeekNews | 주간·소급 모두 포함(D12), 요청 간격 2초 |
 | P4 | HTTP | 표준 라이브러리 `urllib` (새 패키지 0). M5의 `anthropic` SDK는 그때 사용자 확인 |
 | P5 | 해설 코드 | star-trend의 근거·게이트·빌드 받기 코드를 **복사해 고친다**(공유 패키지로 만들지 않는다 — ai-trend-batch `budget.py` 복사 선례). 레이더 층 규칙 안으로 옮긴다 |
+| P7 | 그림 (M8) | matplotlib(Agg) 로 PNG 를 그린다. 글꼴은 이름으로 찾고(Noto Sans CJK KR → Apple SD Gothic Neo), 없으면 그림 단계만 실패로 남기고 초안은 그림 자리 없이 쓴다. Notion 업로드·결합은 star-trend `notion` 업로드 방식을 옮긴다(P5) |
 | P6 | 해설 호출 | Sonnet 5.5 일반 호출(Batch 안 씀) — 25장 × 약 35초 ≈ 15분이라 주간 실행 시간 안에 든다. 실패하면 한 번 다시 묻고, 그래도 안 되면 그 저장소는 숫자·관찰만 |
 
 ---
@@ -182,6 +186,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | PK2 | 과거 주를 지금의 AI 판정으로 걸러 소급이 실제 그때와 다르다 | 소급 값에 표시를 남기고 글에서 밝힌다 |
 | PK3 | star-trend 토큰을 같이 써서 월요일 오전 한도가 겹친다 | 실행 시각을 star-trend 종료 뒤(09:00 UTC)로 두었다. 남은 한도를 시작 때 확인한다 |
 | PK4 | 해설 단계가 주간 실행을 늘린다(근거 약 20초 + 해설 약 35초 × 25 ≈ 25분) | 잡 제한 240분 안. 해설 단계는 수집·지수·커밋 뒤에 두어 실패해도 공개 데이터는 나간다 |
+| PK6 | matplotlib 이 무겁다(numpy·pillow 등) — 해시 잠금 설치 시간이 는다 | Actions 캐시 없이도 1분 안팎(실측 T8-2). 그림은 공개 데이터 수집·지수 뒤 단계라 실패해도 수집은 나간다 |
 | PK5 | 빌드 때 비공개 저장소를 받지 못하면 사이트 배포가 멈춘다 | 프로덕션만 실패시키고 미리보기는 해설 없이 빌드한다. 토큰 만료일을 TASKS에 적는다 |
 
 ---
@@ -194,4 +199,5 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.6 | 2026-11-14 | SPEC v0.6 F11 반영: M8 글 그림(차트 데이터·그리기·초안 결합·Notion 업로드), P7, PK6 |
 | v0.5 | 2026-11-14 | SPEC v0.5 F10 반영: M7 저장소 해설(모듈·저장·테스트), P5·P6 제안, PK4·PK5 |

@@ -118,3 +118,22 @@ def test_card_prompt_why_now_uses_signal_names_not_numbers():
     # 홈 TOP 10 한 줄 — 숫자 대신 신호 이름 (2026-11-14 사용자 요청)
     rule = PROMPT[PROMPT.index("`summary.why_now`"):PROMPT.index("`summary.watch`")]
     assert "숫자는" in rule and "신호 이름으로" in rule and "사용(주간 다운로드)" in rule
+
+
+def test_card_gate_nature_needs_enough_comments():
+    # 화제의 성격 "논란"·"호평"은 그 주 글의 댓글 합이 10개 이상일 때만 (2026-11-14 검토 뒤 사용자 결정)
+    raw = _raw()
+    buzz: dict[str, object] = {"nature": "논란", "trigger": _claim("HN 글이 올라왔습니다.", "F"),
+                               "reactions": [],
+                               "reading": _claim("소개 글의 노출로 읽힙니다.", "F", basis="추정")}
+    raw["buzz"] = buzz
+    few = {**FACTS, "posts_this_week": [{"site": "HN", "points": 6, "comments": 3},
+                                        {"site": "GeekNews", "points": 16, "comments": None}]}
+    clean, _ = gate(raw, few, _docs())
+    assert clean["buzz"]["nature"] == "소개"
+    many = {**FACTS, "posts_this_week": [{"site": "HN", "points": 1616, "comments": 535}]}
+    clean, _ = gate(raw, many, _docs())
+    assert clean["buzz"]["nature"] == "논란"
+    buzz["nature"] = "질문"
+    clean, _ = gate(raw, few, _docs())
+    assert clean["buzz"]["nature"] == "질문"  # 소개·질문은 댓글 수와 상관없다

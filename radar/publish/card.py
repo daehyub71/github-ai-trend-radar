@@ -24,6 +24,8 @@ DOC_DEFAULT = 800
 LABELS = ("푸는 문제", "구조", "쓰는 사람", "대안과 비교한 자리")
 NATURES = ("소개", "호평", "논란", "질문", "없음")
 CAPS = {"trend_notes": 4, "what": 4, "reactions": 3, "watch": 3}
+STRONG_NATURES = ("논란", "호평")
+NATURE_MIN_COMMENTS = 10  # 논란·호평은 그 주 글의 댓글 합이 이만큼은 있어야 한다(2026-11-14 검토 뒤)
 PROMPT = (Path(__file__).parent / "prompt_card.md").read_text(encoding="utf-8")
 
 _CLAIM_PROPS: dict[str, Any] = {
@@ -147,6 +149,10 @@ def gate(raw: Mapping[str, Any], facts: Mapping[str, Any],
             what.append({"label": c["label"], **x})
     b = raw.get("buzz") or {}
     nature = b.get("nature") if b.get("nature") in NATURES and b.get("nature") != "없음" else None
+    posts = [p for p in facts.get("posts_this_week") or [] if isinstance(p, Mapping)]
+    comments = sum(int(p.get("comments") or 0) for p in posts)
+    if nature in STRONG_NATURES and comments < NATURE_MIN_COMMENTS:
+        nature = "소개"  # 댓글 몇 개로 논란·호평이라 부르지 않는다
     clean = {
         "summary": {k: claim(s.get(k), f"summary.{k}") for k in ("what", "why_now", "watch")},
         "trend_notes": many(raw.get("trend_notes"), "trend_notes", CAPS["trend_notes"]),
