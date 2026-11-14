@@ -1,7 +1,7 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.4 확정** (2026-11-13). 기준 문서는 `docs/SPEC.md` v0.4.
-> PLAN 결정 P1~P4 모두 확정. 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
+> **상태: v0.5** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.5.
+> PLAN 결정 P1~P4 확정, P5·P6(M7 저장소 해설)은 제안 — 시안 합의 때 함께 확인. 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
 
@@ -32,16 +32,24 @@ radar/
     normalize.py         로그 → 백분위, S3 합성 (D5)
     index.py             가중 평균·결측 재분배·기여분 (§4-1, D1)
     angles.py            관점 글 유형 A~D 선정·근거 숫자 (F9, D9)
+    insights.py          (M7) 코드 관찰 I1~I7 (F10-1)
+    evidence.py          (M7) 근거 모델·URL 정규화·중복 제거·번호 E1… (star-trend 이식)
   inputs/startrend.py  입력 계약 읽기·검증
   clients/transport.py 네트워크는 여기서만 (재시도·한도·녹화 재생)
   collectors/          신호별 수집기 — 서로 import 하지 않는다
     forks.py  (S2)     activity.py (S3)   packages.py (S4)   mentions.py (S5)
+  evidence/            (M7) 해설 근거 — 서로 import 하지 않는다
+    github.py (README·릴리스)  hn.py (글·큰 댓글 타래)  geeknews.py  web.py (Tavily 검색)
   store.py             평문 파일 읽기·쓰기 (§3)
   pipeline.py          주간 실행 순서 (F1)
   backfill.py          12주 소급 (F5)
   publish/             (M5) llm.py · gate.py · drafts.py · notion.py · budget.py
-  cli.py               python -m radar <weekly|backfill|contract|notion> [--dry-run]
-web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
+                       (M7) card.py (요청·JSON 스키마·파싱·렌더) · prompt_card.md · gate 근거 번호 검사
+  cards.py             (M7) 해설 단계: 대상(TOP 10 + 관점) → 근거 → 해설 → 비공개 저장 → site-private 사본
+  cli.py               python -m radar <weekly|backfill|contract|notion|evidence|cards> [--dry-run]
+web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
+  scripts/prepare-data.mjs (M7) 빌드 때 비공개 저장소의 site-private/ 만 받는다(읽기 전용 토큰, star-trend 이식)
+  components/CardView·AiNote (M7) 해설 6절 · AI 작성 안내 · TOP 10 표 한 줄
 ```
 
 - 층 규칙은 star-trend의 `test_architecture.py` 방식으로 테스트가 강제한다. core는 다른 층을 모르고, 수집기끼리 서로 모르고, 네트워크는 `transport.py`에서만 쓴다.
@@ -93,6 +101,9 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | `data/index/<주>.json` | 백분위·가중치 버전·지수·순위·기여분 | 공개 |
 | `data/site/` | 사이트용 파생 데이터 | 공개 |
 | 비공개 저장소 `weeks/<주>/` | LLM 해설·블로그 초안·Notion 대응표 | **비공개**(D7) |
+| 비공개 저장소 `cards/<repo_id>.json` · `weeks/<주>/cards/` | 저장소 해설(최신 · 주별) | **비공개**(D13) |
+| 비공개 저장소 `site-private/` | 사이트용 해설 사본 — Vercel 빌드가 받는다 | **비공개**, 화면에만 보인다(D13) |
+| `.work/evidence/<주>/` | 근거 원문·검색 결과 캐시 | 커밋 안 함(gitignore) |
 
 - 주간 파일은 한 번 쓰면 다시 쓰지 않는다. 다시 계산하면 가중치 버전을 올린다.
 - 크기 가드(커밋 전 훅 + CI)가 공개 저장소에 초안·해설이 들어오는 것을 막는다.
@@ -110,9 +121,11 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | **M4** | 사이트 | **DESIGN 시안(Claude Design 캔버스) 합의 →** Next.js 정적 사이트, Vercel 배포, 보안 점검 | 시안 합의 기록, 웹 lint·test·build 통과, 배포 |
 | **M5** | 블로그·Notion | Sonnet 5.5 해설($3 상한), 게이트(숫자·링크·금지 표현), 별도 연재 초안, **관점 글 초안(F9)**, 비공개 저장소 저장, Notion 레이더 DB(글 종류 속성) | 실제 1주 TOP 10 글·관점 글과 Notion 페이지 검토 확인 |
 | **M6** | 운영 관찰 | 연속 3주 자동 실행 관찰, 문제 정리 | 3주 연속 정상 |
+| **M7** | 저장소 해설 (F10, 2026-11-14 추가) | **DESIGN 시안 v2 합의 →** 코드 관찰 I1~I7, 근거 수집(README·릴리스·HN 글·댓글·GeekNews·Tavily), Sonnet 5.5 해설 6절(JSON 스키마)·게이트(근거 번호·URL·숫자·단정), 비공개 저장·site-private, 빌드 때 받기, 저장소 화면·TOP 10 한 줄, 주간 워크플로 단계, **보안 점검** 뒤 배포 | 시안 합의 기록, 11-01 주 실제 1회(장당 비용·게이트 제외 수 MEASURE 기록), 사용자 검토, 웹 lint·test·build, 배포 |
 
 - M3까지 끝나면 사이트 없이도 매주 지수가 쌓인다. 사이트·글은 그 데이터 위에 올린다.
 - 마일스톤마다 사용자 확인 뒤 다음으로 넘어간다.
+- M7은 M6(관찰)과 같은 기간에 진행한다. M6은 매주 실행을 지켜보는 일이라 겹쳐도 된다.
 
 ---
 
@@ -124,6 +137,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 - **pipeline**: 한 신호 실패 시 나머지로 지수, 빠진 신호 표시.
 - **publish(M5)**: 게이트가 없는 숫자·링크·금지 표현을 실제로 잡는지 통제군.
 - **web(M4)**: 컴포넌트 핵심 동작(Vitest).
+- **M7**: 관찰 I1~I7 경계값(데이터 없음·0·동점·포크 증가 없음)을 TDD로 먼저. 근거 수집기는 녹화 응답(README 없음·릴리스 0·HN 댓글 없음·Tavily 실패 → 그 출처만 빠짐). 해설 게이트 통제군 — 근거 번호 없는 항목·목록 밖 URL·facts 밖 숫자·단정 표현·근거 속 지시문(주입)을 실제로 잡는지. 웹: 프로덕션에서 토큰 없으면 빌드 실패, 해설 없는 저장소는 숫자·관찰만, AI 작성 안내 렌더.
 - 검증 명령: `ruff check .` · `mypy radar tests` · `pytest` · (웹) `npm run lint && npm test && npm run build`.
 
 ---
@@ -136,6 +150,8 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | P2 | 패키지 연결 | ~~ecosyste.ms 저장소→패키지 조회~~ → **이름 조회 + 저장소 패키지 파일**(D11). 저장소 URL 조회는 응답이 수십 MB이고 포크 패키지가 섞인다(star-trend MEASURE §22). 의존 수는 ecosyste.ms, CC-BY-SA 출처 표기 |
 | P3 | GeekNews | 주간·소급 모두 포함(D12), 요청 간격 2초 |
 | P4 | HTTP | 표준 라이브러리 `urllib` (새 패키지 0). M5의 `anthropic` SDK는 그때 사용자 확인 |
+| P5 (제안) | 해설 코드 | star-trend의 근거·게이트·빌드 받기 코드를 **복사해 고친다**(공유 패키지로 만들지 않는다 — ai-trend-batch `budget.py` 복사 선례). 레이더 층 규칙 안으로 옮긴다 |
+| P6 (제안) | 해설 호출 | Sonnet 5.5 일반 호출(Batch 안 씀) — 25장 × 약 35초 ≈ 15분이라 주간 실행 시간 안에 든다. 실패하면 한 번 다시 묻고, 그래도 안 되면 그 저장소는 숫자·관찰만 |
 
 ---
 
@@ -146,6 +162,8 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | PK1 | Search API 분당 30회가 주간 실행 시간을 늘린다 | 질의를 기간 OR로 묶을 수 있는지 M0에서 실측, 안 되면 실행 시간을 잡 제한(6시간) 안에서 감수 |
 | PK2 | 과거 주를 지금의 AI 판정으로 걸러 소급이 실제 그때와 다르다 | 소급 값에 표시를 남기고 글에서 밝힌다 |
 | PK3 | star-trend 토큰을 같이 써서 월요일 오전 한도가 겹친다 | 실행 시각을 star-trend 종료 뒤(09:00 UTC)로 두었다. 남은 한도를 시작 때 확인한다 |
+| PK4 | 해설 단계가 주간 실행을 늘린다(근거 약 20초 + 해설 약 35초 × 25 ≈ 25분) | 잡 제한 240분 안. 해설 단계는 수집·지수·커밋 뒤에 두어 실패해도 공개 데이터는 나간다 |
+| PK5 | 빌드 때 비공개 저장소를 받지 못하면 사이트 배포가 멈춘다 | 프로덕션만 실패시키고 미리보기는 해설 없이 빌드한다. 토큰 만료일을 TASKS에 적는다 |
 
 ---
 
@@ -157,3 +175,4 @@ web/                   (M4) Next.js 정적 사이트 — data/site 만 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.5 | 2026-11-14 | SPEC v0.5 F10 반영: M7 저장소 해설(모듈·저장·테스트), P5·P6 제안, PK4·PK5 |
