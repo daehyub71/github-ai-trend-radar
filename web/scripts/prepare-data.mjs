@@ -57,7 +57,8 @@ export function gitFailureKind(stderr) {
   if (s.includes("repository not found") || s.includes("not found")) {
     return "저장소를 찾지 못했다 — 토큰의 Repository access 에 이 비공개 저장소가 있는지 본다";
   }
-  if (s.includes("authentication failed") || s.includes("401") || s.includes("invalid username or password")) {
+  if (s.includes("authentication failed") || s.includes("401") || s.includes("invalid username")
+    || s.includes("could not read username")) {
     return "인증 실패 — 토큰 값·만료를 본다";
   }
   if (s.includes("403") || s.includes("permission") || s.includes("denied")) {

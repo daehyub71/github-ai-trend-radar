@@ -62,6 +62,8 @@ describe("gitFailureKind", () => {
     expect(gitFailureKind(Buffer.from("remote: Repository not found.\nfatal: repository 'https://github.com/o/p.git/' not found"))).toContain("저장소를 찾지 못했다");
     expect(gitFailureKind("fatal: Authentication failed for 'https://github.com/o/p.git/'")).toContain("인증 실패");
     expect(gitFailureKind("The requested URL returned error: 403")).toContain("권한 없음");
+    // 자격 증명 도우미가 없는 Vercel 에서 틀린 토큰은 이렇게 끝난다 (2026-11-14 실제 빌드)
+    expect(gitFailureKind("fatal: could not read Username for 'https://github.com': terminal prompts disabled")).toContain("인증 실패");
     expect(gitFailureKind(undefined)).toContain("원인 불명");
     expect(gitFailureKind("fatal: Authentication failed for 'https://github.com/o/p.git/'")).not.toContain("github.com");
   });
