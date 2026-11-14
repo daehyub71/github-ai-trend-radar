@@ -50,6 +50,15 @@
   화살표를 정합니다. `nodes` 는 상자 라벨 목록이고 앞에서부터 1, 2, 3… 번입니다.
   `edges` 는 "1>2 화살표 라벨" 형식의 문자열 목록입니다(라벨이 없으면 "1>2").
   라벨은 짧게(한글 12자 · 영문 24자 이내), 상자 번호 말고는 숫자와 링크를 쓰지 않습니다. 근거가 부족하면 두 목록을 비워 둡니다.
-- `illustration` — 이미지 AI 로 만들 교육용 설명 그림. `teach` 는 가르칠 것 한 줄(한국어),
-  `prompt` 는 영어 장면 묘사 400자 이상(단계 흐름·비유·구성 요소, 글자 대신 빈 라벨 칸, 밝은 배경, 로고·실존 인물 없음),
-  `labels` 는 나중에 얹을 한글 라벨 2~6개.
+- `illustration` — 이미지 AI 로 만들 **기술 도해**. 독자는 개발자이고, 엔지니어링 블로그·기술 문서에 실릴 수준으로 씁니다.
+  - `teach` — 그림이 보여 줄 기술적 사실 한 줄(한국어, 전문 용어 그대로). 예: "MoE 라우터가 고른 전문가 가중치만 디스크에서 CPU 로 스트리밍한다".
+  - `prompt` — 영어 400자 이상, **다크 블루프린트 기술 도해** 양식으로 씁니다.
+    - 화면: 16:9, deep navy background (#0B1220) with a faint engineering grid, thin cyan (#22D3EE) and indigo (#6366F1)
+      line art, orthographic or isometric technical schematic, engineering-drawing precision.
+    - 내용: README·근거에 나온 **실제 구성 요소**를 정확한 기술 용어로 그립니다(예: tensor shards, MoE router, KV cache,
+      CPU/GPU die, NVMe array, API gateway, vector index, worker pool, terminal pane, process/sandbox boundary).
+      데이터·제어 흐름은 방향 화살표와 버스 선으로, 구성 요소마다 annotation leader line 끝에 빈 라벨 상자를 둡니다.
+    - 비유를 쓰지 않습니다. 사람·캐릭터·마스코트·의인화한 로봇, 만화체·귀여운·친근한 표현, 파스텔, 장난감,
+      일상 사물 비유(도서관 책장·공장·컨베이어 벨트·책상 등)를 쓰지 않습니다.
+    - 마지막 문장은 금지 목록으로 끝냅니다: "No people, characters, logos, or text."
+  - `labels` — 나중에 빈 라벨 상자에 얹을 한글 라벨 2~6개(기술 용어).

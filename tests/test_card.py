@@ -175,3 +175,21 @@ def test_card_gate_diagram_and_illustration():
     raw["illustration"] = {"teach": "t", "prompt": "see https://x.com", "labels": []}
     clean, _ = gate(raw, FACTS, _docs())
     assert clean["diagram"] is None and clean["illustration"] is None  # 상자 3개 미만 · 프롬프트에 링크
+
+
+def test_card_gate_drops_childlike_illustration_style():
+    # 2026-11-14 사용자: "기술적인 분위기보다 유아틱" → 다크 블루프린트 기술 도해(D24).
+    # 지시를 어기면 코드가 뺀다
+    raw = _raw()
+    kid = ("A bright, friendly educational illustration of a small robot assistant on a conveyor belt, "
+           "light pastel background, cute flat style")
+    raw["illustration"] = {"teach": "흐름", "prompt": kid, "labels": ["입력"]}
+    clean, report = gate(raw, FACTS, _docs())
+    assert clean["illustration"] is None
+    assert any(e["where"] == "illustration" and "그림 양식" in e["reason"] for e in report.excluded)
+    tech = ("Dark technical blueprint schematic on a deep navy background with a faint engineering grid. "
+            "Thin cyan line art shows MoE expert weight shards streamed from an NVMe disk array "
+            "into a CPU die. "
+            "Robotics arm controller module for a robot SDK, empty label boxes, no text")
+    raw["illustration"] = {"teach": "전문가 가중치만 스트리밍", "prompt": tech, "labels": ["라우터"]}
+    assert gate(raw, FACTS, _docs())[0]["illustration"]["prompt"] == tech  # 로봇 공학 용어는 막지 않는다

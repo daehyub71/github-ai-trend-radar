@@ -61,6 +61,14 @@ DIAGRAM_NODES = (3, 6)  # 구조도 상자 수 (최소, 최대)
 DIAGRAM_EDGES = 8
 LABEL_MAX = 24
 TEACH_MAX = 80  # 일러스트로 가르칠 것 한 줄 — 상자 라벨보다 길다
+# 일러스트 양식(D24, 2026-11-14) — 다크 블루프린트 기술 도해. 아동 교재 분위기면 프롬프트를 뺀다.
+# "No mascots" 처럼 금지를 적은 절은 검사에서 뺀다. 로봇 공학·라이브러리·팩토리 같은 기술 용어는 막지 않는다.
+STYLE_BANNED = re.compile(
+    r"(?i)\b(cartoon\w*|cute|kawaii|chibi|mascots?|friendly|playful|pastel\w*|toys?|storybook|childlike|"
+    r"whimsical|smiling|anthropomorphi\w*|conveyor belts?|(?:small|little|tiny|cute|friendly) robots?|"
+    r"robot (?:assistant|helper|character)s?|helper robots?)\b"
+)
+_NEGATED = re.compile(r"(?i)\b(?:no|without|avoid|never)\b[^.;]*")
 
 SCHEMA: dict[str, Any] = _obj({
     "summary": _obj({"what": CLAIM, "why_now": CLAIM, "watch": CLAIM}),
@@ -189,9 +197,14 @@ def gate(raw: Mapping[str, Any], facts: Mapping[str, Any],
             diagram = {"nodes": nodes, "edges": edges[:DIAGRAM_EDGES]}
     illustration = None
     il = raw.get("illustration")
-    if isinstance(il, Mapping) and str(il.get("prompt") or "").strip() and not LINK.search(str(il["prompt"])):
+    prompt = str(il.get("prompt") or "").strip() if isinstance(il, Mapping) else ""
+    style = STYLE_BANNED.search(_NEGATED.sub("", prompt))
+    if style:
+        report.excluded.append({"where": "illustration", "reason": f"그림 양식: {style.group(0)}",
+                                "text": prompt[:80]})
+    elif isinstance(il, Mapping) and prompt and not LINK.search(prompt):
         labels = [lb for x in il.get("labels") or [] if (lb := label(x))]
-        illustration = {"teach": label(il.get("teach"), TEACH_MAX) or "", "prompt": str(il["prompt"]).strip(),
+        illustration = {"teach": label(il.get("teach"), TEACH_MAX) or "", "prompt": prompt,
                         "labels": labels}
     clean = {
         "summary": {k: claim(s.get(k), f"summary.{k}") for k in ("what", "why_now", "watch")},
