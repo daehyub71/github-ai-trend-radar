@@ -51,6 +51,21 @@ export function gitAuthEnv(token, base = process.env) {
   };
 }
 
+/** git 오류 출력을 원인 종류로 — 출력 원문(주소·머리말이 섞일 수 있다)은 옮기지 않는다 */
+export function gitFailureKind(stderr) {
+  const s = String(stderr ?? "").toLowerCase();
+  if (s.includes("repository not found") || s.includes("not found")) {
+    return "저장소를 찾지 못했다 — 토큰의 Repository access 에 이 비공개 저장소가 있는지 본다";
+  }
+  if (s.includes("authentication failed") || s.includes("401") || s.includes("invalid username or password")) {
+    return "인증 실패 — 토큰 값·만료를 본다";
+  }
+  if (s.includes("403") || s.includes("permission") || s.includes("denied")) {
+    return "권한 없음 — 토큰의 Contents 권한(Read)을 본다";
+  }
+  return "원인 불명 — 네트워크 또는 git 오류";
+}
+
 /** 한 폴더만 얕게 받는 git 명령들(인자 배열) */
 export function fetchCommands(repo, ref, folder, dir) {
   return [
@@ -68,9 +83,10 @@ function fetchFolder({ repo, ref, folder }, dest, env) {
     for (const args of fetchCommands(repo, ref, folder, dir)) {
       try {
         execFileSync("git", args, { env, stdio: ["ignore", "ignore", "pipe"] });
-      } catch {
-        // 인자에는 토큰이 없지만, 혹시 모를 git 출력은 그대로 옮기지 않는다
-        throw new Error(`git ${args[0] === "-C" ? args[2] : args[0]} 실패 — ${repo} 의 ${folder}`);
+      } catch (e) {
+        // 인자에는 토큰이 없지만, 혹시 모를 git 출력은 그대로 옮기지 않는다 — 원인 종류만 알린다
+        const kind = gitFailureKind(e && typeof e === "object" && "stderr" in e ? e.stderr : "");
+        throw new Error(`git ${args[0] === "-C" ? args[2] : args[0]} 실패 — ${repo} 의 ${folder}: ${kind}`);
       }
     }
     const src = path.join(dir, folder);

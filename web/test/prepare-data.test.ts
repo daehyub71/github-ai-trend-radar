@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { fetchCommands, gitAuthEnv, planPrepare } from "../scripts/prepare-data.mjs";
+import { fetchCommands, gitAuthEnv, gitFailureKind, planPrepare } from "../scripts/prepare-data.mjs";
 
 const TOKEN = "github_pat_" + "x".repeat(70); // 형식만 맞춘 가짜 값
 const PUBLIC = (p: string) => p === "../data/site/weeks.json";
@@ -54,5 +54,15 @@ describe("prepare-data — Vercel 빌드 준비 (D13, PLAN PK5)", () => {
     expect(cmds.map((c) => c[0])).toEqual(["clone", "-C", "-C", "-C"]);
     expect(cmds[0]).toContain("https://github.com/o/p.git");
     expect(cmds[1]).toEqual(["-C", ".tmp", "sparse-checkout", "set", "site-private"]);
+  });
+});
+
+describe("gitFailureKind", () => {
+  it("git 오류를 원인 종류로만 바꾼다 — 원문은 옮기지 않는다", () => {
+    expect(gitFailureKind(Buffer.from("remote: Repository not found.\nfatal: repository 'https://github.com/o/p.git/' not found"))).toContain("저장소를 찾지 못했다");
+    expect(gitFailureKind("fatal: Authentication failed for 'https://github.com/o/p.git/'")).toContain("인증 실패");
+    expect(gitFailureKind("The requested URL returned error: 403")).toContain("권한 없음");
+    expect(gitFailureKind(undefined)).toContain("원인 불명");
+    expect(gitFailureKind("fatal: Authentication failed for 'https://github.com/o/p.git/'")).not.toContain("github.com");
   });
 });
