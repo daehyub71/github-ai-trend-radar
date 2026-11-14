@@ -1,7 +1,7 @@
 # PLAN.md — github-ai-trend-radar
 
 > **상태: v0.5** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.5.
-> PLAN 결정 P1~P4 확정, P5·P6(M7 저장소 해설)은 제안 — 시안 합의 때 함께 확인. 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
+> PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
 
@@ -106,6 +106,25 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | `.work/evidence/<주>/` | 근거 원문·검색 결과 캐시 | 커밋 안 함(gitignore) |
 
 - 주간 파일은 한 번 쓰면 다시 쓰지 않는다. 다시 계산하면 가중치 버전을 올린다.
+
+### 4-1. 해설 사본 형식 v1 (M7 — 웹과 해설 단계의 계약, 2026-11-14)
+
+비공개 저장소 `site-private/` (웹은 빌드 때 받아 `web/.data/site-private/`, 로컬은 `../.private/site-private/`):
+
+| 파일 | 내용 |
+|---|---|
+| `cards/<repo_id>.json` | 저장소의 **가장 최근** 해설 — 아래 형식 |
+| `cards/index.json` | `[{repo_id, full_name, week}]` |
+| `weeks/<주>.json` | `{week, lines: {"<repo_id>": "이번 주 왜 올랐나 한 줄"}}` — 홈 TOP 10 한 줄(D16) |
+
+`cards/<repo_id>.json` (예시: `tests/fixtures/card_v1.json`):
+- `version`(1) · `repo_id` · `full_name` · `week` · `generated`(UTC ISO) · `model` · `gate{checked, excluded}`
+- `summary{what, why_now, watch}` — 각각 **Claim**
+- `trend_notes[]` Claim(2~4) · `what[]` Claim + `label`(푸는 문제·구조·쓰는 사람·대안과 비교한 자리)
+- `buzz{posts[], nature, trigger, reactions[], reading}` — `posts[]{site(HN|GeekNews), title, url, points, comments, date, target}`, `nature` 소개·호평·논란·질문·null, `trigger`·`reading` Claim 또는 null
+- `watch[]` Claim(2~3) · `releases[]{tag, date, url}` · `evidence[]{id, title(120자), site, date, url}` · `history[]{week, why_now}`
+- **Claim** = `{text, sources[], basis}` — `sources` 는 근거 번호(`E1`…)와 코드 값(`F`), `basis` 는 `확인`|`추정`
+- 숫자 표(02절 동향 표·04절 언급 숫자·05절 관찰)는 공개 `data/site/repo/<id>.json` 의 `trend`·`mentions`·`insights` 에서 온다(코드 계산)
 - 크기 가드(커밋 전 훅 + CI)가 공개 저장소에 초안·해설이 들어오는 것을 막는다.
 
 ---
@@ -150,8 +169,8 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | P2 | 패키지 연결 | ~~ecosyste.ms 저장소→패키지 조회~~ → **이름 조회 + 저장소 패키지 파일**(D11). 저장소 URL 조회는 응답이 수십 MB이고 포크 패키지가 섞인다(star-trend MEASURE §22). 의존 수는 ecosyste.ms, CC-BY-SA 출처 표기 |
 | P3 | GeekNews | 주간·소급 모두 포함(D12), 요청 간격 2초 |
 | P4 | HTTP | 표준 라이브러리 `urllib` (새 패키지 0). M5의 `anthropic` SDK는 그때 사용자 확인 |
-| P5 (제안) | 해설 코드 | star-trend의 근거·게이트·빌드 받기 코드를 **복사해 고친다**(공유 패키지로 만들지 않는다 — ai-trend-batch `budget.py` 복사 선례). 레이더 층 규칙 안으로 옮긴다 |
-| P6 (제안) | 해설 호출 | Sonnet 5.5 일반 호출(Batch 안 씀) — 25장 × 약 35초 ≈ 15분이라 주간 실행 시간 안에 든다. 실패하면 한 번 다시 묻고, 그래도 안 되면 그 저장소는 숫자·관찰만 |
+| P5 | 해설 코드 | star-trend의 근거·게이트·빌드 받기 코드를 **복사해 고친다**(공유 패키지로 만들지 않는다 — ai-trend-batch `budget.py` 복사 선례). 레이더 층 규칙 안으로 옮긴다 |
+| P6 | 해설 호출 | Sonnet 5.5 일반 호출(Batch 안 씀) — 25장 × 약 35초 ≈ 15분이라 주간 실행 시간 안에 든다. 실패하면 한 번 다시 묻고, 그래도 안 되면 그 저장소는 숫자·관찰만 |
 
 ---
 

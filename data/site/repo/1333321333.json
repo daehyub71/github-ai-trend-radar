@@ -173,6 +173,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 1,627",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 2명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 3명, 12주 첫 주 7명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "67위 → 112위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 14위(08-23 주), 최저 157위(10-04 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": false,
@@ -224,6 +255,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 12
+  }
+ },
  "repo_id": 1333321333,
  "topics": [
   "cordis",
@@ -234,5 +280,55 @@
   "dsh",
   "dsh-plugin",
   "dsh-plugin-desktop"
+ ],
+ "trend": [
+  {
+   "avg": "104위",
+   "key": "종합 순위",
+   "now": "112위",
+   "prev": "67위"
+  },
+  {
+   "avg": "47.2",
+   "key": "지수",
+   "now": "47.6",
+   "prev": "56.6"
+  },
+  {
+   "avg": "1,256",
+   "key": "스타 증가",
+   "now": "1,117",
+   "prev": "1,516"
+  },
+  {
+   "avg": "29",
+   "key": "머지 PR",
+   "now": "22",
+   "prev": "41"
+  },
+  {
+   "avg": "4",
+   "key": "PR 작성자",
+   "now": "2",
+   "prev": "6"
+  },
+  {
+   "avg": "16",
+   "key": "닫힌 이슈",
+   "now": "17",
+   "prev": "27"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "1,627",
+   "prev": "—"
+  }
  ]
 }

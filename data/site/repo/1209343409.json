@@ -82,6 +82,30 @@
    "week": "2026-10-25"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 12명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "12주 첫 주 5명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "12주 동안 글 1건 · 25점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "124위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 3위(08-30 주), 최저 139위(09-20 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": true,
@@ -133,6 +157,21 @@
   },
   "week": "2026-10-25"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 25,
+   "hn_stories": 1,
+   "weeks": 12
+  }
+ },
  "repo_id": 1209343409,
  "topics": [
   "antidetect",
@@ -144,5 +183,49 @@
   "playwright",
   "puppeteer",
   "rust"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "124위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "44.4",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "639",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "29",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "12",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "21",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  }
  ]
 }

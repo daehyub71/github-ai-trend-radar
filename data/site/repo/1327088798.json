@@ -43,6 +43,30 @@
    "week": "2026-09-13"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 7명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 HN 1건 · 2점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "41위 → 24위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 2위(08-30 주), 최저 41위(09-06 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-09-13"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 2,
+   "hn_stories": 1,
+   "weeks": 3
+  }
+ },
  "repo_id": 1327088798,
  "topics": [
   "agent-memory",
@@ -111,5 +150,49 @@
   "semantic-search",
   "temporal-knowledge-graph",
   "world-model"
+ ],
+ "trend": [
+  {
+   "avg": "22위",
+   "key": "종합 순위",
+   "now": "24위",
+   "prev": "41위"
+  },
+  {
+   "avg": "76.0",
+   "key": "지수",
+   "now": "70.5",
+   "prev": "64.0"
+  },
+  {
+   "avg": "2,150",
+   "key": "스타 증가",
+   "now": "2,263",
+   "prev": "1,374"
+  },
+  {
+   "avg": "184",
+   "key": "머지 PR",
+   "now": "122",
+   "prev": "129"
+  },
+  {
+   "avg": "6",
+   "key": "PR 작성자",
+   "now": "7",
+   "prev": "5"
+  },
+  {
+   "avg": "54",
+   "key": "닫힌 이슈",
+   "now": "32",
+   "prev": "52"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

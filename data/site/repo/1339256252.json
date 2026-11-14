@@ -43,6 +43,23 @@
    "week": "2026-10-25"
   }
  ],
+ "insights": [
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "25위 → 22위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 22위(이번 주), 최저 96위(10-11 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": true,
@@ -95,6 +112,21 @@
   },
   "week": "2026-10-25"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1339256252,
  "topics": [
   "deepseek",
@@ -104,5 +136,31 @@
   "harness-jailbreak",
   "jailbreak",
   "llm-jailbreak"
+ ],
+ "trend": [
+  {
+   "avg": "60위",
+   "key": "종합 순위",
+   "now": "22위",
+   "prev": "25위"
+  },
+  {
+   "avg": "60.1",
+   "key": "지수",
+   "now": "70.7",
+   "prev": "70.1"
+  },
+  {
+   "avg": "4,148",
+   "key": "스타 증가",
+   "now": "6,535",
+   "prev": "6,634"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

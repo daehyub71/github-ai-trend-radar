@@ -2,8 +2,9 @@
 
 - weeks.json: 주 목록(최신 먼저, 소급 표시·회차)
 - week/<주>.json: 종합 TOP 10 · 신호별 TOP 5 · 관점 노트(숫자만) · 숫자 카드
-- repo/<id>.json: 저장소 설명(star-trend 공개 메타) · 최신 신호·원값 · 주별 이력
-LLM 글(해설·초안)은 넣지 않는다(D7 — 비공개 저장소에만).
+- repo/<id>.json: 저장소 설명(star-trend 공개 메타) · 최신 신호·원값 · 주별 이력 · 코드 관찰 I1~I7(F10-1)
+LLM 글(해설·초안)은 넣지 않는다(D7).
+저장소 해설은 비공개 저장소 site-private/ 에 두고 웹이 빌드 때 받는다(D13).
 """
 
 import json
@@ -14,6 +15,7 @@ from typing import Any
 
 from radar.config import Config
 from radar.core.angles import select_angles
+from radar.core.insights import WeekPoint, mention_counts, observe, trend_rows
 from radar.inputs.startrend import load_ai_repos, load_categories
 from radar.store import DATA, json_text, read_csv, week_path, write_mutable
 
@@ -48,6 +50,35 @@ def _num(v: str) -> int | float | str | None:
     return int(f) if f.is_integer() else f
 
 
+def _f(v: str | None) -> float | None:
+    if v is None or v == "":
+        return None
+    try:
+        return float(v)
+    except ValueError:
+        return None
+
+
+def _point(week: str, r: Mapping[str, Any], rr: Mapping[str, str]) -> WeekPoint:
+    return WeekPoint(
+        week=week,
+        rank=r["rank"],
+        index=r["index"],
+        merged_prs=_f(rr.get("s3_merged_prs")),
+        closed_issues=_f(rr.get("s3_closed_issues")),
+        stars=_f(rr.get("s1_stars_gain")),
+        downloads=_f(rr.get("s4_downloads")),
+        dependents=_f(rr.get("s4_dependents")),
+        forks=_f(rr.get("s2_forks")),
+        fork_delta=_f(rr.get("s2_fork_delta")),
+        pr_authors=_f(rr.get("s3_pr_authors")),
+        hn_stories=_f(rr.get("s5_hn_stories")),
+        hn_points=_f(rr.get("s5_hn_points")),
+        gn_topics=_f(rr.get("s5_gn_topics")),
+        gn_points=_f(rr.get("s5_gn_points")),
+    )
+
+
 def _load_weeks(data: Path) -> list[dict[str, Any]]:
     return [json.loads(f.read_text(encoding="utf-8")) for f in sorted((data / "index").glob("*.json"))]
 
@@ -65,6 +96,7 @@ def export_site(cfg: Config, *, data: Path = DATA) -> dict[str, int]:
     listing: list[dict[str, Any]] = []
     history: dict[int, list[dict[str, Any]]] = {}
     latest: dict[int, dict[str, Any]] = {}
+    points: dict[str, dict[int, WeekPoint]] = {}
     for i, w in enumerate(weeks):
         bf = _backfilled(w)
         issue += 0 if bf else 1
@@ -146,6 +178,7 @@ def export_site(cfg: Config, *, data: Path = DATA) -> dict[str, int]:
                 }
             )
             rr = raw.get(rid, {})
+            points.setdefault(w["week"], {})[rid] = _point(w["week"], r, rr)
             latest[rid] = {
                 **row(r),
                 "week": w["week"],
@@ -156,6 +189,9 @@ def export_site(cfg: Config, *, data: Path = DATA) -> dict[str, int]:
     write_mutable(site / "weeks.json", json_text(list(reversed(listing))))
     for rid, hist in history.items():
         m = meta.get(rid)
+        lw = latest[rid]["week"]
+        mine = [points[h["week"]][rid] for h in hist if rid in points.get(h["week"], {})]
+        insights = observe(mine, list(points[lw].values()), cfg.insights)
         doc = {
             "repo_id": rid,
             "full_name": latest[rid]["full_name"],
@@ -165,6 +201,10 @@ def export_site(cfg: Config, *, data: Path = DATA) -> dict[str, int]:
             "language": m.language if m else None,
             "latest": latest[rid],
             "history": hist,
+            "insights": [i.as_dict() for i in insights],
+            "insights_version": cfg.insights.version,
+            "trend": trend_rows(mine),
+            "mentions": mention_counts(mine, cfg.insights),
         }
         write_mutable(site / "repo" / f"{rid}.json", json_text(doc))
     return {"weeks": len(weeks), "repos": len(history)}

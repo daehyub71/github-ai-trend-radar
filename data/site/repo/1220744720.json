@@ -82,6 +82,30 @@
    "week": "2026-09-20"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 0명, 6주 첫 주 0명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "6주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "161위 → 188위",
+   "id": "I7",
+   "signal": "index",
+   "text": "6주 최고 88위(09-06 주), 최저 188위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": true,
@@ -133,6 +157,21 @@
   },
   "week": "2026-09-20"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 6
+  }
+ },
  "repo_id": 1220744720,
  "topics": [
   "agents",
@@ -145,5 +184,49 @@
   "prompt-engineering",
   "skills",
   "workflow-automation"
+ ],
+ "trend": [
+  {
+   "avg": "127위",
+   "key": "종합 순위",
+   "now": "188위",
+   "prev": "161위"
+  },
+  {
+   "avg": "43.4",
+   "key": "지수",
+   "now": "24.8",
+   "prev": "33.4"
+  },
+  {
+   "avg": "5,136",
+   "key": "스타 증가",
+   "now": "723",
+   "prev": "1,328"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

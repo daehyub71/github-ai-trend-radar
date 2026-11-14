@@ -43,6 +43,30 @@
    "week": "2026-09-20"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 14명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "74위 → 77위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 66위(09-06 주), 최저 77위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-09-20"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1342876750,
  "topics": [
   "automation",
@@ -106,5 +145,49 @@
   "mcp",
   "multi-agent",
   "windows"
+ ],
+ "trend": [
+  {
+   "avg": "70위",
+   "key": "종합 순위",
+   "now": "77위",
+   "prev": "74위"
+  },
+  {
+   "avg": "57.0",
+   "key": "지수",
+   "now": "55.4",
+   "prev": "57.0"
+  },
+  {
+   "avg": "1,296",
+   "key": "스타 증가",
+   "now": "748",
+   "prev": "1,297"
+  },
+  {
+   "avg": "20",
+   "key": "머지 PR",
+   "now": "68",
+   "prev": "23"
+  },
+  {
+   "avg": "4",
+   "key": "PR 작성자",
+   "now": "14",
+   "prev": "3"
+  },
+  {
+   "avg": "42",
+   "key": "닫힌 이슈",
+   "now": "50",
+   "prev": "46"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

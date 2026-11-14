@@ -95,6 +95,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 1,931",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "9주 첫 주 1명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "9주 동안 글 5건 · 20점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "186위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "9주 최고 22위(09-06 주), 최저 194위(10-11 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -146,6 +177,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 12,
+   "gn_topics": 1,
+   "hn_points": 8,
+   "hn_stories": 4,
+   "weeks": 9
+  }
+ },
  "repo_id": 1333399642,
  "topics": [
   "ai-agents",
@@ -153,5 +199,55 @@
   "google",
   "test-automation",
   "testing"
+ ],
+ "trend": [
+  {
+   "avg": "168위",
+   "key": "종합 순위",
+   "now": "186위",
+   "prev": "—"
+  },
+  {
+   "avg": "31.5",
+   "key": "지수",
+   "now": "25.0",
+   "prev": "—"
+  },
+  {
+   "avg": "1,654",
+   "key": "스타 증가",
+   "now": "1,022",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "1,931",
+   "prev": "—"
+  }
  ]
 }

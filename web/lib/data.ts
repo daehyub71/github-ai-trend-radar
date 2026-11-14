@@ -2,7 +2,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import type { RepoDoc, WeekDoc, WeekListItem } from "./types";
+import { parseCard, parseWeekLines } from "./card";
+import type { Card, RepoDoc, WeekDoc, WeekLines, WeekListItem } from "./types";
 
 const WEEK = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -34,4 +35,34 @@ export function loadRepos(dir: string = siteDir()): RepoDoc[] {
 export function findRepo(owner: string, name: string, dir: string = siteDir()): RepoDoc | null {
   const want = `${owner}/${name}`.toLowerCase();
   return loadRepos(dir).find((r) => r.full_name.toLowerCase() === want) ?? null;
+}
+
+// ── 비공개 해설 사본(site-private, PLAN §4-1) — 없으면 해설 없이 그린다 ──
+
+/**
+ * 해설 사본 폴더. RADAR_PRIVATE_DIR → 빌드 때 받은 web/.data/site-private → 로컬 ../.private/site-private 순.
+ * 어느 것도 없으면 null(미리보기·로컬 — 해설 없이 빌드).
+ */
+export function privateDir(): string | null {
+  const env = process.env.RADAR_PRIVATE_DIR;
+  if (env) return path.resolve(env);
+  const candidates = [
+    path.resolve(process.cwd(), ".data", "site-private"),
+    path.resolve(process.cwd(), "..", ".private", "site-private"),
+  ];
+  return candidates.find((d) => fs.existsSync(d)) ?? null;
+}
+
+/** cards/<repo_id>.json — 없으면 null. 형식이 계약과 다르면 빌드를 멈춘다(parseCard). */
+export function loadCard(repoId: number, dir: string | null = privateDir()): Card | null {
+  if (!dir || !Number.isSafeInteger(repoId) || repoId <= 0) return null;
+  const file = path.join(dir, "cards", `${repoId}.json`);
+  return fs.existsSync(file) ? parseCard(readJson<unknown>(file), repoId) : null;
+}
+
+/** weeks/<주>.json 의 TOP 10 한 줄 — 없으면 빈 표 */
+export function loadWeekLines(week: string, dir: string | null = privateDir()): WeekLines {
+  if (!dir || !WEEK.test(week)) return {};
+  const file = path.join(dir, "weeks", `${week}.json`);
+  return fs.existsSync(file) ? parseWeekLines(readJson<unknown>(file), week) : {};
 }

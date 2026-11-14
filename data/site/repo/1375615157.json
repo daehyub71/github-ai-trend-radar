@@ -56,6 +56,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 858",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 3명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 1명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "5주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "128위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 105위(10-11 주), 최저 178위(10-18 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -107,6 +138,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 5
+  }
+ },
  "repo_id": 1375615157,
  "topics": [
   "agent-skills",
@@ -127,5 +173,55 @@
   "photo-geolocation",
   "reverse-image-search",
   "satellite-imagery"
+ ],
+ "trend": [
+  {
+   "avg": "143위",
+   "key": "종합 순위",
+   "now": "128위",
+   "prev": "—"
+  },
+  {
+   "avg": "38.5",
+   "key": "지수",
+   "now": "44.6",
+   "prev": "—"
+  },
+  {
+   "avg": "1,151",
+   "key": "스타 증가",
+   "now": "1,494",
+   "prev": "—"
+  },
+  {
+   "avg": "4",
+   "key": "머지 PR",
+   "now": "7",
+   "prev": "—"
+  },
+  {
+   "avg": "3",
+   "key": "PR 작성자",
+   "now": "3",
+   "prev": "—"
+  },
+  {
+   "avg": "4",
+   "key": "닫힌 이슈",
+   "now": "1",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "858",
+   "prev": "—"
+  }
  ]
 }

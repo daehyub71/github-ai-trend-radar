@@ -43,6 +43,30 @@
    "week": "2026-10-04"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "140위 → 185위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 131위(09-20 주), 최저 185위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-10-04"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1306722822,
  "topics": [
   "ai-agent",
@@ -103,5 +142,49 @@
   "lgbtq",
   "psychology",
   "relationship-advice"
+ ],
+ "trend": [
+  {
+   "avg": "136위",
+   "key": "종합 순위",
+   "now": "185위",
+   "prev": "140위"
+  },
+  {
+   "avg": "40.0",
+   "key": "지수",
+   "now": "24.6",
+   "prev": "38.4"
+  },
+  {
+   "avg": "1,868",
+   "key": "스타 증가",
+   "now": "867",
+   "prev": "1,359"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "1"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

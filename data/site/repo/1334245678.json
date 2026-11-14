@@ -30,6 +30,30 @@
    "week": "2026-08-16"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 4명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "2주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "49위 → 89위",
+   "id": "I7",
+   "signal": "index",
+   "text": "2주 최고 49위(08-09 주), 최저 89위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": true,
@@ -81,11 +105,70 @@
   },
   "week": "2026-08-16"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 2
+  }
+ },
  "repo_id": 1334245678,
  "topics": [
   "deepseek",
   "deepseek-harness",
   "dsh-plugin",
   "llm-agent"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "89위",
+   "prev": "49위"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "51.3",
+   "prev": "61.3"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,193",
+   "prev": "2,297"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "6",
+   "prev": "12"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "4",
+   "prev": "8"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "19",
+   "prev": "6"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

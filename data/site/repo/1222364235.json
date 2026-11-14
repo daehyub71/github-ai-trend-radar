@@ -17,6 +17,37 @@
    "week": "2026-09-06"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 1회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 51개 중 42위 — 다운로드에 비해 관심이 큰 저장소입니다.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "PR 작성자 22명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 글 2건 · 6점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "Hacker News 2건(6점).",
+   "title": "언급"
+  },
+  {
+   "big": "21위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": null,
  "latest": {
   "backfilled": true,
@@ -67,6 +98,71 @@
   },
   "week": "2026-09-06"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 6,
+   "hn_stories": 2
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 6,
+   "hn_stories": 2,
+   "weeks": 1
+  }
+ },
  "repo_id": 1222364235,
- "topics": []
+ "topics": [],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "21위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "70.4",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "3,485",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "주간 다운로드",
+   "now": "2,956",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "64",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "22",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "32",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "2",
+   "prev": "—"
+  }
+ ]
 }

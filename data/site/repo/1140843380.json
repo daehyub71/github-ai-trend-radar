@@ -134,6 +134,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 5,929",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 9명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "12주 첫 주 3명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "127위 → 144위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 98위(09-06 주), 최저 185위(09-27 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -185,6 +216,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 12
+  }
+ },
  "repo_id": 1140843380,
  "topics": [
   "ai-prompts",
@@ -207,5 +253,55 @@
   "twitter",
   "web-search",
   "youtube"
+ ],
+ "trend": [
+  {
+   "avg": "130위",
+   "key": "종합 순위",
+   "now": "144위",
+   "prev": "127위"
+  },
+  {
+   "avg": "42.3",
+   "key": "지수",
+   "now": "41.0",
+   "prev": "44.0"
+  },
+  {
+   "avg": "791",
+   "key": "스타 증가",
+   "now": "851",
+   "prev": "840"
+  },
+  {
+   "avg": "23",
+   "key": "머지 PR",
+   "now": "10",
+   "prev": "18"
+  },
+  {
+   "avg": "10",
+   "key": "PR 작성자",
+   "now": "9",
+   "prev": "10"
+  },
+  {
+   "avg": "6",
+   "key": "닫힌 이슈",
+   "now": "5",
+   "prev": "3"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "5,929",
+   "prev": "—"
+  }
  ]
 }

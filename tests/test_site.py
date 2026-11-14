@@ -56,6 +56,14 @@ def test_site_export_weeks_week_and_repo_files(tmp_path):
     assert repo["history"][0]["backfilled"] is True
     assert repo["latest"]["raw"]["s1_stars_gain"] == 9
     assert out["repos"] == 2 and out["weeks"] == 2
+    # 코드 관찰(F10-1) — 저장소마다 최신 주 기준. 언급·다운로드 값이 없으면 그 관찰은 없다
+    ins = {i["id"]: i for i in repo["insights"]}
+    assert ins["I7"]["big"] == "1위 → 2위" and set(ins) == {"I7"}
+    assert repo["insights_version"] == 1
+    trend = {t["key"]: t for t in repo["trend"]}
+    assert trend["종합 순위"] == {"key": "종합 순위", "prev": "1위", "now": "2위", "avg": "—"}
+    assert trend["스타 증가"]["now"] == "9" and "주간 다운로드" not in trend
+    assert repo["mentions"] is None  # 언급 값이 없는 주
 
 
 def test_site_export_has_no_llm_text_or_private_paths(tmp_path):

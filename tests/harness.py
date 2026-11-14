@@ -16,12 +16,13 @@ ALLOWED: dict[str, set[str]] = {
     "clients": {"core", "clients"},
     "inputs": {"core", "inputs"},
     "collectors": {"core", "clients", "collectors"},  # 수집기끼리는 아래에서 따로 막는다
+    "evidence": {"core", "clients", "evidence"},  # M7 해설 근거 — 수집기처럼 서로 import 하지 않는다
     "publish": {"core", "clients", "publish"},  # M5 글·Notion — 수집기·입력을 모른다(사실 묶음만 받는다)
-    "app": {"core", "clients", "inputs", "collectors", "publish", "app"},
-    "cli": {"core", "clients", "inputs", "collectors", "publish", "app", "cli"},
+    "app": {"core", "clients", "inputs", "collectors", "evidence", "publish", "app"},
+    "cli": {"core", "clients", "inputs", "collectors", "evidence", "publish", "app", "cli"},
     "package": set(),
 }
-APP_MODULES = {"config", "store", "pipeline", "backfill", "blog", "site"}
+APP_MODULES = {"config", "store", "pipeline", "backfill", "blog", "site", "cards"}
 NETWORK_MODULES = {"socket", "ssl", "http.client", "urllib.request", "ftplib", "smtplib"}
 NETWORK_ALLOWED_FILES = {"radar/clients/transport.py"}
 LLM_SDK_MODULES = {"anthropic"}
@@ -40,7 +41,7 @@ def layer_of(relpath: str) -> str:
         return "cli"
     if len(parts) == 2 and Path(parts[1]).stem in APP_MODULES:
         return "app"
-    if len(parts) > 2 and parts[1] in ("core", "clients", "inputs", "collectors", "publish"):
+    if len(parts) > 2 and parts[1] in ("core", "clients", "inputs", "collectors", "evidence", "publish"):
         return parts[1]
     raise ValueError(f"층을 알 수 없는 모듈: {relpath}")
 
@@ -71,7 +72,7 @@ def check_sources(sources: Mapping[str, str]) -> list[str]:
     violations: list[str] = []
     for relpath, src in sorted(sources.items()):
         layer = layer_of(relpath)
-        own = Path(relpath).stem if layer == "collectors" else None
+        own = Path(relpath).stem if layer in ("collectors", "evidence") else None
         for lineno, mod, names in _imports(ast.parse(src, filename=relpath)):
             where = f"{relpath}:{lineno}"
             if mod.startswith("."):
@@ -89,8 +90,8 @@ def check_sources(sources: Mapping[str, str]) -> list[str]:
             for target in dict.fromkeys(targets):
                 if target not in ALLOWED[layer]:
                     violations.append(f"{where} {layer} 층은 {target} 층을 import 할 수 없다 ({mod})")
-            if layer == "collectors" and "collectors" in targets:
-                others = names if mod == f"{PACKAGE}.collectors" else [mod.split(".")[2]]
+            if layer in ("collectors", "evidence") and layer in targets:
+                others = names if mod == f"{PACKAGE}.{layer}" else [mod.split(".")[2]]
                 for other in others:
                     if other not in (own, "base"):
                         violations.append(f"{where} 수집기끼리 import 금지 ({other})")

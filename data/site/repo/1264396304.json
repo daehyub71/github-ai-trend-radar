@@ -69,6 +69,30 @@
    "week": "2026-10-04"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 11명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 0명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "5주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "32위 → 62위",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 32위(09-27 주), 최저 185위(09-13 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -120,6 +144,21 @@
   },
   "week": "2026-10-04"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 5
+  }
+ },
  "repo_id": 1264396304,
  "topics": [
   "agent-skills",
@@ -127,5 +166,49 @@
   "claude-code-plugin",
   "llm-agents",
   "python"
+ ],
+ "trend": [
+  {
+   "avg": "132위",
+   "key": "종합 순위",
+   "now": "62위",
+   "prev": "32위"
+  },
+  {
+   "avg": "40.7",
+   "key": "지수",
+   "now": "60.0",
+   "prev": "65.8"
+  },
+  {
+   "avg": "1,416",
+   "key": "스타 증가",
+   "now": "2,807",
+   "prev": "2,709"
+  },
+  {
+   "avg": "7",
+   "key": "머지 PR",
+   "now": "20",
+   "prev": "23"
+  },
+  {
+   "avg": "6",
+   "key": "PR 작성자",
+   "now": "11",
+   "prev": "19"
+  },
+  {
+   "avg": "2",
+   "key": "닫힌 이슈",
+   "now": "9",
+   "prev": "8"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

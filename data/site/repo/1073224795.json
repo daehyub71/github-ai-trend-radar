@@ -173,6 +173,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 28,186",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 1명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 2명, 12주 첫 주 0명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "129위 → 47위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 36위(09-20 주), 최저 139위(08-23 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Shell",
  "latest": {
   "backfilled": false,
@@ -224,6 +255,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 12
+  }
+ },
  "repo_id": 1073224795,
  "topics": [
   "ai",
@@ -234,5 +280,55 @@
   "skills",
   "subagent-driven-development",
   "superpowers"
+ ],
+ "trend": [
+  {
+   "avg": "97위",
+   "key": "종합 순위",
+   "now": "47위",
+   "prev": "129위"
+  },
+  {
+   "avg": "50.0",
+   "key": "지수",
+   "now": "60.6",
+   "prev": "43.9"
+  },
+  {
+   "avg": "4,174",
+   "key": "스타 증가",
+   "now": "4,366",
+   "prev": "5,817"
+  },
+  {
+   "avg": "4",
+   "key": "머지 PR",
+   "now": "16",
+   "prev": "0"
+  },
+  {
+   "avg": "1",
+   "key": "PR 작성자",
+   "now": "1",
+   "prev": "0"
+  },
+  {
+   "avg": "14",
+   "key": "닫힌 이슈",
+   "now": "28",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "28,186",
+   "prev": "—"
+  }
  ]
 }

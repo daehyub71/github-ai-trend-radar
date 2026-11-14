@@ -82,6 +82,44 @@
    "week": "2026-09-20"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 140회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 39개 중 11위.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 0.88배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "6주 첫 주(08-16, 113,433)의 0.80배.",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "PR 작성자 40명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 37명, 6주 첫 주 29명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "6주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "32위 → 62위",
+   "id": "I7",
+   "signal": "index",
+   "text": "6주 최고 17위(08-16 주), 최저 62위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -132,6 +170,21 @@
   },
   "week": "2026-09-20"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 6
+  }
+ },
  "repo_id": 1128123594,
  "topics": [
   "agent-context",
@@ -145,5 +198,55 @@
   "memory-management",
   "self-evolving",
   "vector-database"
+ ],
+ "trend": [
+  {
+   "avg": "27위",
+   "key": "종합 순위",
+   "now": "62위",
+   "prev": "32위"
+  },
+  {
+   "avg": "68.6",
+   "key": "지수",
+   "now": "59.5",
+   "prev": "68.4"
+  },
+  {
+   "avg": "1,506",
+   "key": "스타 증가",
+   "now": "653",
+   "prev": "1,270"
+  },
+  {
+   "avg": "103,491",
+   "key": "주간 다운로드",
+   "now": "91,293",
+   "prev": "115,082"
+  },
+  {
+   "avg": "100",
+   "key": "머지 PR",
+   "now": "132",
+   "prev": "112"
+  },
+  {
+   "avg": "36",
+   "key": "PR 작성자",
+   "now": "40",
+   "prev": "31"
+  },
+  {
+   "avg": "49",
+   "key": "닫힌 이슈",
+   "now": "58",
+   "prev": "74"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

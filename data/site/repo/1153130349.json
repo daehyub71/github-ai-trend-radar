@@ -173,6 +173,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 10,688",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 190명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 102명, 12주 첫 주 42명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "12주 동안 글 2건 · 16점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "2위 → 2위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 2위(이번 주), 최저 76위(09-20 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": false,
@@ -224,6 +255,71 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 11,
+   "gn_topics": 1,
+   "hn_points": 5,
+   "hn_stories": 1,
+   "weeks": 12
+  }
+ },
  "repo_id": 1153130349,
- "topics": []
+ "topics": [],
+ "trend": [
+  {
+   "avg": "7위",
+   "key": "종합 순위",
+   "now": "2위",
+   "prev": "2위"
+  },
+  {
+   "avg": "81.2",
+   "key": "지수",
+   "now": "84.5",
+   "prev": "82.8"
+  },
+  {
+   "avg": "2,859",
+   "key": "스타 증가",
+   "now": "15,605",
+   "prev": "6,244"
+  },
+  {
+   "avg": "864",
+   "key": "머지 PR",
+   "now": "996",
+   "prev": "999"
+  },
+  {
+   "avg": "124",
+   "key": "PR 작성자",
+   "now": "190",
+   "prev": "110"
+  },
+  {
+   "avg": "581",
+   "key": "닫힌 이슈",
+   "now": "482",
+   "prev": "480"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "10,688",
+   "prev": "—"
+  }
+ ]
 }

@@ -69,6 +69,51 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 18회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 47개 중 22위.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 1.23배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "10-11 주에 한 번에 589% 늘었습니다.",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "누적 포크 111,855",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 68명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 72명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "5주 동안 글 4건 · 108점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "3위 → 11위",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 3위(10-25 주), 최저 11위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": false,
@@ -119,6 +164,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 108,
+   "hn_stories": 4,
+   "weeks": 5
+  }
+ },
  "repo_id": 1209966933,
  "topics": [
   "agent-skills",
@@ -141,5 +201,61 @@
   "security",
   "touhou",
   "typescript"
+ ],
+ "trend": [
+  {
+   "avg": "4위",
+   "key": "종합 순위",
+   "now": "11위",
+   "prev": "3위"
+  },
+  {
+   "avg": "84.3",
+   "key": "지수",
+   "now": "75.3",
+   "prev": "82.2"
+  },
+  {
+   "avg": "104,062",
+   "key": "스타 증가",
+   "now": "26,287",
+   "prev": "36,906"
+  },
+  {
+   "avg": "381,079",
+   "key": "주간 다운로드",
+   "now": "468,081",
+   "prev": "516,764"
+  },
+  {
+   "avg": "584",
+   "key": "머지 PR",
+   "now": "356",
+   "prev": "379"
+  },
+  {
+   "avg": "119",
+   "key": "PR 작성자",
+   "now": "68",
+   "prev": "59"
+  },
+  {
+   "avg": "600",
+   "key": "닫힌 이슈",
+   "now": "174",
+   "prev": "338"
+  },
+  {
+   "avg": "1",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "111,855",
+   "prev": "—"
+  }
  ]
 }

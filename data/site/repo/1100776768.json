@@ -82,6 +82,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 4,882",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 5명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "11주 첫 주 3명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "11주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "116위 → 143위",
+   "id": "I7",
+   "signal": "index",
+   "text": "11주 최고 55위(10-11 주), 최저 153위(09-20 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -133,10 +164,75 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 11
+  }
+ },
  "repo_id": 1100776768,
  "topics": [
   "claude-code",
   "mcp",
   "skills"
+ ],
+ "trend": [
+  {
+   "avg": "82위",
+   "key": "종합 순위",
+   "now": "143위",
+   "prev": "116위"
+  },
+  {
+   "avg": "53.5",
+   "key": "지수",
+   "now": "41.1",
+   "prev": "46.0"
+  },
+  {
+   "avg": "2,691",
+   "key": "스타 증가",
+   "now": "825",
+   "prev": "1,241"
+  },
+  {
+   "avg": "18",
+   "key": "머지 PR",
+   "now": "26",
+   "prev": "10"
+  },
+  {
+   "avg": "1",
+   "key": "PR 작성자",
+   "now": "5",
+   "prev": "2"
+  },
+  {
+   "avg": "16",
+   "key": "닫힌 이슈",
+   "now": "5",
+   "prev": "6"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "4,882",
+   "prev": "—"
+  }
  ]
 }

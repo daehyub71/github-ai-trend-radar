@@ -1,0 +1,634 @@
+{
+ "angles": {
+  "A": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 11.56,
+      "use": 88.44,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "ruvnet/ruflo",
+     "repo_id": 995029641
+    },
+    {
+     "evidence": {
+      "s1": 14.07,
+      "use": 90.7,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "can1357/oh-my-pi",
+     "repo_id": 1125856365
+    },
+    {
+     "evidence": {
+      "s1": 10.55,
+      "use": 85.18,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "multica-ai/multica",
+     "repo_id": 1133707766
+    },
+    {
+     "evidence": {
+      "s1": 9.3,
+      "use": 81.83,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "getpaseo/paseo",
+     "repo_id": 1075381375
+    },
+    {
+     "evidence": {
+      "s1": 24.62,
+      "use": 93.8,
+      "use_basis": "s2·s3"
+     },
+     "full_name": "elie222/rakazo",
+     "repo_id": 1332781509
+    }
+   ],
+   "status": "ok"
+  },
+  "B": {
+   "items": [
+    {
+     "evidence": {
+      "s1": 98.99,
+      "s5": 99.25,
+      "use": 12.56
+     },
+     "full_name": "deepseek-ai/dsh-superagent-prototype",
+     "repo_id": 1440705679
+    },
+    {
+     "evidence": {
+      "s1": 63.32,
+      "s5": 97.11,
+      "use": 12.56
+     },
+     "full_name": "FareedKhan-dev/kimi-k3-in-c",
+     "repo_id": 1319154759
+    },
+    {
+     "evidence": {
+      "s1": 44.22,
+      "s5": 97.11,
+      "use": 12.56
+     },
+     "full_name": "unclebob/ub-mode",
+     "repo_id": 1433377156
+    },
+    {
+     "evidence": {
+      "s1": 96.48,
+      "s5": 47.49,
+      "use": 12.56
+     },
+     "full_name": "cloudflare/security-audit-skill",
+     "repo_id": 1273427276
+    },
+    {
+     "evidence": {
+      "s1": 95.48,
+      "s5": 47.49,
+      "use": 12.56
+     },
+     "full_name": "deepseek-ai/deepseek-harness",
+     "repo_id": 1333065091
+    }
+   ],
+   "status": "ok"
+  },
+  "C": {
+   "items": [
+    {
+     "evidence": {
+      "index": [
+       25.61,
+       32.29,
+       42.12,
+       54.06,
+       56.43
+      ]
+     },
+     "full_name": "lemomo-ai/lemo-opuscar",
+     "repo_id": 1389011744
+    },
+    {
+     "evidence": {
+      "index": [
+       61.24,
+       68.37,
+       71.67,
+       79.36,
+       83.25
+      ]
+     },
+     "full_name": "debpalash/VoiceStudio",
+     "repo_id": 1206390571
+    },
+    {
+     "evidence": {
+      "index": [
+       35.06,
+       40.18,
+       42.79,
+       44.79,
+       52.92
+      ]
+     },
+     "full_name": "harry0703/MoneyPrinterTurbo",
+     "repo_id": 770153867
+    },
+    {
+     "evidence": {
+      "index": [
+       43.42,
+       44.25,
+       44.49,
+       54.68,
+       55.83
+      ]
+     },
+     "full_name": "Ebony-Vinyl/dsh-our-free-model",
+     "repo_id": 1385896447
+    }
+   ],
+   "status": "ok"
+  },
+  "D": {
+   "items": [
+    {
+     "evidence": {
+      "attention_share": [
+       82.6,
+       47.3
+      ],
+      "use_share": [
+       17.3,
+       52.7
+      ]
+     },
+     "full_name": "miqdadbadjuber/anti-slop",
+     "repo_id": 1326531152
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       77.5,
+       48.7
+      ],
+      "use_share": [
+       22.5,
+       51.3
+      ]
+     },
+     "full_name": "f/prompts.chat",
+     "repo_id": 574523116
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       47.6,
+       22.0
+      ],
+      "use_share": [
+       52.5,
+       78.0
+      ]
+     },
+     "full_name": "superdesigndev/treg",
+     "repo_id": 1301657572
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       47.1,
+       26.3
+      ],
+      "use_share": [
+       52.9,
+       73.7
+      ]
+     },
+     "full_name": "storytold/wordcraft",
+     "repo_id": 1408489772
+    },
+    {
+     "evidence": {
+      "attention_share": [
+       72.3,
+       51.9
+      ],
+      "use_share": [
+       27.7,
+       48.1
+      ]
+     },
+     "full_name": "VoltAgent/awesome-design-md",
+     "repo_id": 1197515131
+    }
+   ],
+   "status": "ok"
+  }
+ },
+ "backfilled": false,
+ "by_signal": {
+  "s1": [
+   {
+    "full_name": "morluto/rea",
+    "pct": 100.0,
+    "repo_id": 1209966933
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "pct": 99.5,
+    "repo_id": 1440956372
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "pct": 98.99,
+    "repo_id": 1440705679
+   },
+   {
+    "full_name": "pingdotgg/t3code",
+    "pct": 98.49,
+    "repo_id": 1153130349
+   },
+   {
+    "full_name": "vercel-labs/agent-desktop",
+    "pct": 97.99,
+    "repo_id": 1161958643
+   }
+  ],
+  "s2": [],
+  "s3": [
+   {
+    "full_name": "pingdotgg/t3code",
+    "pct": 98.32,
+    "repo_id": 1153130349
+   },
+   {
+    "full_name": "tangency-labs/solidcraft",
+    "pct": 97.99,
+    "repo_id": 1409246014
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 96.98,
+    "repo_id": 1103012935
+   },
+   {
+    "full_name": "NousResearch/hermes-agent",
+    "pct": 96.65,
+    "repo_id": 1024554267
+   },
+   {
+    "full_name": "storytold/photocraft",
+    "pct": 96.15,
+    "repo_id": 1398080271
+   }
+  ],
+  "s4": [
+   {
+    "full_name": "vercel-labs/skills",
+    "pct": 97.83,
+    "repo_id": 1134543109
+   },
+   {
+    "full_name": "remotion-dev/remotion",
+    "pct": 96.74,
+    "repo_id": 274495425
+   },
+   {
+    "full_name": "openai/codex",
+    "pct": 73.91,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "microsoft/markitdown",
+    "pct": 71.74,
+    "repo_id": 888092115
+   },
+   {
+    "full_name": "openclaw/openclaw",
+    "pct": 69.57,
+    "repo_id": 1103012935
+   }
+  ],
+  "s5": [
+   {
+    "full_name": "anthropics/claude-code",
+    "pct": 99.5,
+    "repo_id": 937253475
+   },
+   {
+    "full_name": "openai/codex",
+    "pct": 99.25,
+    "repo_id": 965415649
+   },
+   {
+    "full_name": "deepseek-ai/dsh-superagent-prototype",
+    "pct": 99.25,
+    "repo_id": 1440705679
+   },
+   {
+    "full_name": "storytold/craft-anything",
+    "pct": 98.99,
+    "repo_id": 1440956372
+   },
+   {
+    "full_name": "debpalash/VoiceStudio",
+    "pct": 97.11,
+    "repo_id": 1206390571
+   }
+  ]
+ },
+ "issue": 1,
+ "stats": {
+  "candidates": 200,
+  "star_top_in_index_top": 2,
+  "with_packages": 47
+ },
+ "top10": [
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 27.14,
+    "s2": 0.0,
+    "s3": 43.09,
+    "s4": 0.0,
+    "s5": 27.0
+   },
+   "full_name": "storytold/craft-anything",
+   "index": 97.23,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 99.5,
+    "s2": null,
+    "s3": 94.81,
+    "s4": null,
+    "s5": 98.99
+   },
+   "prev_rank": null,
+   "rank": 1,
+   "repo_id": 1440956372,
+   "star_rank": 2
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 26.86,
+    "s2": 0.0,
+    "s3": 44.69,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "pingdotgg/t3code",
+   "index": 84.51,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.49,
+    "s2": null,
+    "s3": 98.32,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 2,
+   "rank": 2,
+   "repo_id": 1153130349,
+   "star_rank": 4
+  },
+  {
+   "category": "멀티모달(이미지·음성·영상)",
+   "contrib": {
+    "s1": 25.35,
+    "s2": 0.0,
+    "s3": 31.41,
+    "s4": 0.0,
+    "s5": 26.48
+   },
+   "full_name": "debpalash/VoiceStudio",
+   "index": 83.25,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.96,
+    "s2": null,
+    "s3": 69.1,
+    "s4": null,
+    "s5": 97.11
+   },
+   "prev_rank": 8,
+   "rank": 3,
+   "repo_id": 1206390571,
+   "star_rank": 15
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 24.81,
+    "s2": 0.0,
+    "s3": 31.29,
+    "s4": 0.0,
+    "s5": 26.24
+   },
+   "full_name": "google/elephant-goldfish-model",
+   "index": 82.34,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.95,
+    "s2": null,
+    "s3": 68.84,
+    "s4": null,
+    "s5": 96.23
+   },
+   "prev_rank": null,
+   "rank": 4,
+   "repo_id": 1368596582,
+   "star_rank": 19
+  },
+  {
+   "category": "코딩 에이전트·IDE",
+   "contrib": {
+    "s1": 25.22,
+    "s2": 0.0,
+    "s3": 43.13,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "stablyai/orca",
+   "index": 81.3,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.46,
+    "s2": null,
+    "s3": 94.89,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 5,
+   "rank": 5,
+   "repo_id": 1183888342,
+   "star_rank": 16
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 11.53,
+    "s2": 0.0,
+    "s3": 24.04,
+    "s4": 34.14,
+    "s5": 8.38
+   },
+   "full_name": "remotion-dev/remotion",
+   "index": 78.09,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 65.33,
+    "s2": null,
+    "s3": 81.74,
+    "s4": 96.74,
+    "s5": 47.49
+   },
+   "prev_rank": 10,
+   "rank": 6,
+   "repo_id": 274495425,
+   "star_rank": 70
+  },
+  {
+   "category": "에이전트 스킬·프롬프트",
+   "contrib": {
+    "s1": 24.67,
+    "s2": 0.0,
+    "s3": 40.35,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "Gathin23/cleanyourtv",
+   "index": 77.97,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.45,
+    "s2": null,
+    "s3": 88.78,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 1,
+   "rank": 7,
+   "repo_id": 1423101235,
+   "star_rank": 20
+  },
+  {
+   "category": "AI 앱·서비스",
+   "contrib": {
+    "s1": 20.56,
+    "s2": 0.0,
+    "s3": 43.93,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "index": 77.44,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 75.38,
+    "s2": null,
+    "s3": 96.65,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 12,
+   "rank": 8,
+   "repo_id": 1024554267,
+   "star_rank": 50
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 19.74,
+    "s2": 0.0,
+    "s3": 43.7,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "storytold/photocraft",
+   "index": 76.39,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 72.36,
+    "s2": null,
+    "s3": 96.15,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 9,
+   "rank": 9,
+   "repo_id": 1398080271,
+   "star_rank": 56
+  },
+  {
+   "category": "MCP 서버·도구",
+   "contrib": {
+    "s1": 18.64,
+    "s2": 0.0,
+    "s3": 44.54,
+    "s4": 0.0,
+    "s5": 12.95
+   },
+   "full_name": "tangency-labs/solidcraft",
+   "index": 76.13,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 68.34,
+    "s2": null,
+    "s3": 97.99,
+    "s4": null,
+    "s5": 47.49
+   },
+   "prev_rank": 11,
+   "rank": 10,
+   "repo_id": 1409246014,
+   "star_rank": 64
+  }
+ ],
+ "week": "2026-11-01",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

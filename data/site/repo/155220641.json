@@ -43,6 +43,37 @@
    "week": "2026-10-04"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 37,521회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 38개 중 1위 — 관심보다 실제 사용이 앞선 저장소입니다.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "PR 작성자 33명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "9주 첫 주 20명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "9주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "37위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "9주 최고 11위(09-13 주), 최저 37위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -93,6 +124,21 @@
   },
   "week": "2026-10-04"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 9
+  }
+ },
  "repo_id": 155220641,
  "topics": [
   "audio",
@@ -114,5 +160,55 @@
   "speech-recognition",
   "transformer",
   "vlm"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "37위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "67.5",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "656",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "주간 다운로드",
+   "now": "24,613,491",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "78",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "33",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "55",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  }
  ]
 }

@@ -43,6 +43,51 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 677회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 47개 중 8위 — 관심보다 실제 사용이 앞선 저장소입니다.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 1.37배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "누적 포크 581",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 19명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "4주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "38위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "4주 최고 31위(10-18 주), 최저 42위(10-11 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": false,
@@ -93,8 +138,79 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 4
+  }
+ },
  "repo_id": 1324949198,
  "topics": [
   "dsh-plugin"
+ ],
+ "trend": [
+  {
+   "avg": "36위",
+   "key": "종합 순위",
+   "now": "38위",
+   "prev": "—"
+  },
+  {
+   "avg": "65.9",
+   "key": "지수",
+   "now": "62.9",
+   "prev": "—"
+  },
+  {
+   "avg": "946",
+   "key": "스타 증가",
+   "now": "1,252",
+   "prev": "—"
+  },
+  {
+   "avg": "620,020",
+   "key": "주간 다운로드",
+   "now": "848,207",
+   "prev": "—"
+  },
+  {
+   "avg": "302",
+   "key": "머지 PR",
+   "now": "104",
+   "prev": "—"
+  },
+  {
+   "avg": "15",
+   "key": "PR 작성자",
+   "now": "19",
+   "prev": "—"
+  },
+  {
+   "avg": "406",
+   "key": "닫힌 이슈",
+   "now": "131",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "581",
+   "prev": "—"
+  }
  ]
 }

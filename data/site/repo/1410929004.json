@@ -30,6 +30,30 @@
    "week": "2026-10-18"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 6명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "2주 HN 2건 · 6점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "30위 → 103위",
+   "id": "I7",
+   "signal": "index",
+   "text": "2주 최고 30위(10-11 주), 최저 103위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Swift",
  "latest": {
   "backfilled": true,
@@ -81,6 +105,21 @@
   },
   "week": "2026-10-18"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 6,
+   "hn_stories": 2,
+   "weeks": 2
+  }
+ },
  "repo_id": 1410929004,
  "topics": [
   "embeddinggemma",
@@ -97,5 +136,49 @@
   "swift",
   "tauri",
   "windows"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "103위",
+   "prev": "30위"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "47.5",
+   "prev": "67.6"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,119",
+   "prev": "4,309"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "8",
+   "prev": "1"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "6",
+   "prev": "1"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "47",
+   "prev": "11"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "2"
+  }
  ]
 }

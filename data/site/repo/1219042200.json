@@ -30,6 +30,30 @@
    "week": "2026-08-23"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "200위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 198위(08-09 주), 최저 200위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "HTML",
  "latest": {
   "backfilled": true,
@@ -81,6 +105,21 @@
   },
   "week": "2026-08-23"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1219042200,
  "topics": [
   "ai-agent",
@@ -94,5 +133,49 @@
   "skills",
   "swiss-design",
   "web-ppt"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "200위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "19.4",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "573",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  }
  ]
 }

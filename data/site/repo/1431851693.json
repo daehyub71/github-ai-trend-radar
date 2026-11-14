@@ -30,6 +30,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 684",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 10명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "2주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "14위 → 31위",
+   "id": "I7",
+   "signal": "index",
+   "text": "2주 최고 14위(10-25 주), 최저 31위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -81,6 +112,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 2
+  }
+ },
  "repo_id": 1431851693,
  "topics": [
   "adb",
@@ -91,5 +137,55 @@
   "hyperos",
   "magicos",
   "originos"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "31위",
+   "prev": "14위"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "64.7",
+   "prev": "76.1"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,614",
+   "prev": "5,161"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "196",
+   "prev": "83"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "10",
+   "prev": "32"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "130",
+   "prev": "180"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "684",
+   "prev": "—"
+  }
  ]
 }

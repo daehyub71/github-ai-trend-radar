@@ -43,6 +43,44 @@
    "week": "2026-08-30"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 2회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 48개 중 33위.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 1.22배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "190위 → 184위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 184위(이번 주), 최저 190위(08-23 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": true,
@@ -93,6 +131,21 @@
   },
   "week": "2026-08-30"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1264811161,
  "topics": [
   "agent-skill",
@@ -109,5 +162,55 @@
   "skill",
   "slide-generator",
   "slides"
+ ],
+ "trend": [
+  {
+   "avg": "190위",
+   "key": "종합 순위",
+   "now": "184위",
+   "prev": "190위"
+  },
+  {
+   "avg": "22.5",
+   "key": "지수",
+   "now": "23.6",
+   "prev": "23.1"
+  },
+  {
+   "avg": "854",
+   "key": "스타 증가",
+   "now": "714",
+   "prev": "857"
+  },
+  {
+   "avg": "1,044",
+   "key": "주간 다운로드",
+   "now": "1,279",
+   "prev": "1,115"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

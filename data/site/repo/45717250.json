@@ -43,6 +43,44 @@
    "week": "2026-09-06"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 2,919회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 51개 중 4위 — 관심보다 실제 사용이 앞선 저장소입니다.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 0.94배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "PR 작성자 18명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "16위 → 23위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 16위(08-30 주), 최저 25위(08-23 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "C++",
  "latest": {
   "backfilled": true,
@@ -93,6 +131,21 @@
   },
   "week": "2026-09-06"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 45717250,
  "topics": [
   "deep-learning",
@@ -103,5 +156,55 @@
   "neural-network",
   "python",
   "tensorflow"
+ ],
+ "trend": [
+  {
+   "avg": "20위",
+   "key": "종합 순위",
+   "now": "23위",
+   "prev": "16위"
+  },
+  {
+   "avg": "70.8",
+   "key": "지수",
+   "now": "69.7",
+   "prev": "72.5"
+  },
+  {
+   "avg": "758",
+   "key": "스타 증가",
+   "now": "918",
+   "prev": "839"
+  },
+  {
+   "avg": "2,845,803",
+   "key": "주간 다운로드",
+   "now": "2,679,255",
+   "prev": "2,790,559"
+  },
+  {
+   "avg": "56",
+   "key": "머지 PR",
+   "now": "34",
+   "prev": "46"
+  },
+  {
+   "avg": "35",
+   "key": "PR 작성자",
+   "now": "18",
+   "prev": "32"
+  },
+  {
+   "avg": "42",
+   "key": "닫힌 이슈",
+   "now": "30",
+   "prev": "43"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

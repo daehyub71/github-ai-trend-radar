@@ -95,6 +95,23 @@
    "week": "2026-10-04"
   }
  ],
+ "insights": [
+  {
+   "big": "9주 HN 1건 · GeekNews 1건 · 8점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "11위 → 172위",
+   "id": "I7",
+   "signal": "index",
+   "text": "9주 최고 6위(08-30 주), 최저 192위(09-06 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": true,
@@ -147,6 +164,21 @@
   },
   "week": "2026-10-04"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 6,
+   "gn_topics": 1,
+   "hn_points": 2,
+   "hn_stories": 1,
+   "weeks": 9
+  }
+ },
  "repo_id": 1238992253,
  "topics": [
   "ai",
@@ -164,5 +196,31 @@
   "opencode-skills",
   "self-hosted",
   "skills"
+ ],
+ "trend": [
+  {
+   "avg": "80위",
+   "key": "종합 순위",
+   "now": "172위",
+   "prev": "11위"
+  },
+  {
+   "avg": "55.3",
+   "key": "지수",
+   "now": "27.9",
+   "prev": "79.0"
+  },
+  {
+   "avg": "1,426",
+   "key": "스타 증가",
+   "now": "693",
+   "prev": "1,353"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "1"
+  }
  ]
 }

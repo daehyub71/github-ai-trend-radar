@@ -17,6 +17,30 @@
    "week": "2026-09-06"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 5명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 글 3건 · 10점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "Hacker News 3건(10점).",
+   "title": "언급"
+  },
+  {
+   "big": "14위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": null,
  "latest": {
   "backfilled": true,
@@ -68,6 +92,65 @@
   },
   "week": "2026-09-06"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 10,
+   "hn_stories": 3
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 10,
+   "hn_stories": 3,
+   "weeks": 1
+  }
+ },
  "repo_id": 1200598308,
- "topics": []
+ "topics": [],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "14위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "76.7",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "2,784",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "14",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "5",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "5",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "3",
+   "prev": "—"
+  }
+ ]
 }

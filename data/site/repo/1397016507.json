@@ -43,6 +43,30 @@
    "week": "2026-10-11"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 69명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 HN 1건 · 4점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "18위 → 49위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 18위(10-04 주), 최저 55위(09-27 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-10-11"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 4,
+   "hn_stories": 1,
+   "weeks": 3
+  }
+ },
  "repo_id": 1397016507,
  "topics": [
   "age-of-empires",
@@ -106,5 +145,49 @@
   "modding",
   "reverse-engineering",
   "tmodloader"
+ ],
+ "trend": [
+  {
+   "avg": "36위",
+   "key": "종합 순위",
+   "now": "49위",
+   "prev": "18위"
+  },
+  {
+   "avg": "66.8",
+   "key": "지수",
+   "now": "62.3",
+   "prev": "73.2"
+  },
+  {
+   "avg": "3,208",
+   "key": "스타 증가",
+   "now": "1,828",
+   "prev": "3,730"
+  },
+  {
+   "avg": "62",
+   "key": "머지 PR",
+   "now": "131",
+   "prev": "123"
+  },
+  {
+   "avg": "31",
+   "key": "PR 작성자",
+   "now": "69",
+   "prev": "61"
+  },
+  {
+   "avg": "20",
+   "key": "닫힌 이슈",
+   "now": "7",
+   "prev": "40"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

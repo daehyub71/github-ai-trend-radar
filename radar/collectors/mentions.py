@@ -6,29 +6,20 @@
 - 주는 글 시각(UTC)으로 정한다. GeekNews 날짜는 KST 라 UTC 주 끝을 덮도록 하루 더 읽는다.
 """
 
-import html
-import re
 from collections.abc import Sequence
-from dataclasses import dataclass
 from datetime import UTC, date, datetime, timedelta
 from urllib.parse import urlencode
 
 from radar.clients.http import HttpClient
 from radar.clients.transport import TransportError
 from radar.collectors.base import FAILED, OK, PARTIAL, same_repo
+from radar.core.geeknews import Topic as Topic
+from radar.core.geeknews import parse_past as parse_past
 from radar.core.weeks import week_end, week_start
 
 HN = "https://hn.algolia.com/api/v1/search"
 GEEKNEWS = "https://news.hada.io"
 MAX_PAGES = 3
-
-_ROW = re.compile(r"<div class='topic_row'")
-_ID = re.compile(r"data-topic-state-id='(\d+)'")
-_LINK = re.compile(r"<a href='([^']+)'[^>]*class='topic-title-link'>")
-_POINTS = re.compile(r"<span id='tp\d+'>(\d+)</span>\s*points")
-_TIME = re.compile(r'<time [^>]*datetime="([^"]+)"')
-_GH = re.compile(r"github\.com/([A-Za-z0-9_.\-]+)/([A-Za-z0-9_.\-]+)", re.I)
-
 
 def _utc_ts(d: date) -> int:
     return int(datetime(d.year, d.month, d.day, tzinfo=UTC).timestamp())
@@ -52,40 +43,6 @@ def hn_mentions(client: HttpClient, full_name: str,
             n, p = out[w]
             out[w] = (n + 1, p + int(h.get("points") or 0))
     return out, OK
-
-
-@dataclass(frozen=True)
-class Topic:
-    topic_id: int
-    repo: str  # owner/name 소문자
-    points: int
-    day: date  # UTC 날짜
-
-
-def parse_past(page: str, page_no: int = 1) -> tuple[list[Topic], bool]:
-    """날짜별 목록 한 쪽 → (깃허브 저장소를 가리키는 글, 다음 쪽이 있는가). 형식이 바뀌면 ValueError."""
-    blocks = ["<div class='topic_row'" + b for b in _ROW.split(page)[1:]]
-    topics: list[Topic] = []
-    read = 0
-    for b in blocks:
-        tid, link, tm = _ID.search(b), _LINK.search(b), _TIME.search(b)
-        if not tid or not link or not tm:
-            continue
-        read += 1
-        m = _GH.search(html.unescape(link.group(1)))
-        if not m:
-            continue
-        try:
-            day = datetime.fromisoformat(tm.group(1)).astimezone(UTC).date()
-        except ValueError:
-            continue
-        pts = _POINTS.search(b)
-        repo = f"{m.group(1)}/{m.group(2).removesuffix('.git')}".lower()
-        topics.append(Topic(int(tid.group(1)), repo, int(pts.group(1)) if pts else 0, day))
-    if blocks and not read:
-        raise ValueError(f"GeekNews 목록 형식이 바뀌었다 (글 {len(blocks)}개를 읽지 못함)")
-    has_next = re.search(rf"(?:&|&amp;|\?)page={page_no + 1}(?!\d)", page) is not None
-    return topics, has_next
 
 
 def geeknews_index(client: HttpClient, weeks: Sequence[date],

@@ -1,0 +1,58 @@
+import { describe, expect, it } from "vitest";
+
+import { fetchCommands, gitAuthEnv, planPrepare } from "../scripts/prepare-data.mjs";
+
+const TOKEN = "github_pat_" + "x".repeat(70); // 형식만 맞춘 가짜 값
+const PUBLIC = (p: string) => p === "../data/site/weeks.json";
+
+describe("prepare-data — Vercel 빌드 준비 (D13, PLAN PK5)", () => {
+  it("reads the public data in place and never fetches it", () => {
+    expect(planPrepare({}, PUBLIC).site).toEqual({ action: "use", from: "../data/site" });
+    expect(planPrepare({}, () => false).site.action).toBe("fail");
+  });
+
+  it("fetches only site-private with both the repo and the read token", () => {
+    const env = { RADAR_PRIVATE_REPO: "o/p", RADAR_PRIVATE_READ_TOKEN: TOKEN };
+    expect(planPrepare(env, PUBLIC).priv).toEqual({ action: "fetch", repo: "o/p", ref: "HEAD", folder: "site-private", required: false });
+    expect(planPrepare({ ...env, VERCEL_ENV: "production" }, PUBLIC).priv).toMatchObject({ action: "fetch", required: true });
+  });
+
+  it("refuses a production build without the private copy settings", () => {
+    // 해설이 말없이 빠지지 않게 — 둘 중 하나만 있어도 멈춘다
+    for (const env of [
+      { VERCEL_ENV: "production" },
+      { VERCEL_ENV: "production", RADAR_PRIVATE_REPO: "o/p" },
+      { VERCEL_ENV: "production", RADAR_PRIVATE_READ_TOKEN: TOKEN },
+    ]) {
+      const priv = planPrepare(env, PUBLIC).priv;
+      expect(priv.action).toBe("fail");
+      expect(JSON.stringify(priv)).not.toContain(TOKEN);
+    }
+    const priv = planPrepare({ VERCEL_ENV: "production", RADAR_PRIVATE_REPO: "o/p" }, PUBLIC).priv;
+    expect(priv).toMatchObject({ reason: expect.stringContaining("RADAR_PRIVATE_READ_TOKEN") });
+  });
+
+  it("skips the private copy on preview and local builds", () => {
+    expect(planPrepare({}, PUBLIC).priv.action).toBe("skip");
+    expect(planPrepare({ VERCEL_ENV: "preview" }, PUBLIC).priv.action).toBe("skip");
+    expect(planPrepare({ VERCEL_ENV: "preview", RADAR_PRIVATE_REPO: "o/p" }, PUBLIC).priv.action).toBe("skip");
+  });
+
+  it("rejects a repo name that is not owner/name", () => {
+    const env = { RADAR_PRIVATE_REPO: "o/p.git --upload-pack=x", RADAR_PRIVATE_READ_TOKEN: TOKEN };
+    expect(planPrepare(env, PUBLIC).priv.action).toBe("fail");
+  });
+
+  it("passes the token through git's environment, never on the command line", () => {
+    const env = gitAuthEnv(TOKEN, {});
+    expect(env.GIT_CONFIG_KEY_0).toBe("http.https://github.com/.extraheader");
+    expect(env.GIT_CONFIG_VALUE_0).toBe(`AUTHORIZATION: basic ${Buffer.from(`x-access-token:${TOKEN}`).toString("base64")}`);
+    expect(env.GIT_TERMINAL_PROMPT).toBe("0");
+    const cmds = fetchCommands("o/p", "HEAD", "site-private", ".tmp");
+    expect(cmds.flat().join(" ")).not.toContain(TOKEN);
+    expect(cmds.flat().join(" ")).not.toContain(env.GIT_CONFIG_VALUE_0);
+    expect(cmds.map((c) => c[0])).toEqual(["clone", "-C", "-C", "-C"]);
+    expect(cmds[0]).toContain("https://github.com/o/p.git");
+    expect(cmds[1]).toEqual(["-C", ".tmp", "sparse-checkout", "set", "site-private"]);
+  });
+});

@@ -56,6 +56,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 2,272",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "4주 동안 글 2건 · 40점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "145위 → 153위",
+   "id": "I7",
+   "signal": "index",
+   "text": "4주 최고 29위(10-11 주), 최저 153위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": false,
@@ -107,11 +138,76 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 39,
+   "gn_topics": 1,
+   "hn_points": 1,
+   "hn_stories": 1,
+   "weeks": 4
+  }
+ },
  "repo_id": 1410124849,
  "topics": [
   "agent-skill",
   "open-source",
   "svg",
   "vizualization"
+ ],
+ "trend": [
+  {
+   "avg": "72위",
+   "key": "종합 순위",
+   "now": "153위",
+   "prev": "145위"
+  },
+  {
+   "avg": "57.1",
+   "key": "지수",
+   "now": "38.7",
+   "prev": "40.3"
+  },
+  {
+   "avg": "7,677",
+   "key": "스타 증가",
+   "now": "2,416",
+   "prev": "3,220"
+  },
+  {
+   "avg": "21",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "5",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "1",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "1",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "2,272",
+   "prev": "—"
+  }
  ]
 }

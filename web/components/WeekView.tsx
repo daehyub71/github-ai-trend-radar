@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { StackedBar } from "@/components/StackedBar";
 import { ANGLE_NAME, ANGLE_RULE, SIGNALS, SIGNAL_COLOR, SIGNAL_NAME, SIGNAL_WHAT, fmt, move, repoPath, weekRange } from "@/lib/format";
-import type { AngleItem, WeekDoc, WeekListItem } from "@/lib/types";
+import type { AngleItem, WeekDoc, WeekLines, WeekListItem } from "@/lib/types";
 
 function evidence(key: string, ev: Record<string, unknown>): string {
   const n = (k: string) => (typeof ev[k] === "number" ? (ev[k] as number).toFixed(1) : "—");
@@ -14,7 +14,8 @@ function evidence(key: string, ev: Record<string, unknown>): string {
   return `관심 ${fmt(a[0])}% → ${fmt(a[1])}% · 사용·기여 ${fmt(u[0])}% → ${fmt(u[1])}%`;
 }
 
-export function WeekView({ doc, weeks }: { doc: WeekDoc; weeks: WeekListItem[] }) {
+// lines = 비공개 해설의 "이번 주 왜 올랐나" 한 줄(D16) — 없으면 그 줄을 비운다
+export function WeekView({ doc, weeks, lines = {} }: { doc: WeekDoc; weeks: WeekListItem[]; lines?: WeekLines }) {
   const w = doc.weights;
   return (
     <>
@@ -69,8 +70,13 @@ export function WeekView({ doc, weeks }: { doc: WeekDoc; weeks: WeekListItem[] }
                     <td className="num big">{r.rank}</td>
                     <td>
                       <div className="name">
-                        <Link href={repoPath(r.full_name)}>{r.full_name}</Link>
-                        {r.category ? <span className="chip">{r.category}</span> : null}
+                        <div className="name-row">
+                          <Link href={repoPath(r.full_name)}>{r.full_name}</Link>
+                          {r.category ? <span className="chip">{r.category}</span> : null}
+                        </div>
+                        {lines[String(r.repo_id)] ? (
+                          <div className="ai-line"><span className="ai-tag" title="AI 해설">AI</span><span>{lines[String(r.repo_id)]}</span></div>
+                        ) : null}
                       </div>
                     </td>
                     <td className="num big">{fmt(r.index)}</td>

@@ -9,12 +9,12 @@
 | M0 기반·실측 | ██████████ | 100% | 10/10 | ✅ 2026-11-13 |
 | M1 수집기 | ██████████ | 100% | 8/8 | ✅ 2026-11-13 |
 | M2 지수·소급 | ██████████ | 100% | 9/9 | ✅ 2026-11-14 (사전 위임 — T2-7·T2-9 아침 확인) |
-| M3 주간 자동 실행 | ███████░░░ | 67% | 4/6 | 🔄 Secrets 등록 대기 |
+| M3 주간 자동 실행 | ████████░░ | 83% | 5/6 | 🔄 11-16 첫 예약 실행 대기 |
 | M4 사이트 | ██████████ | 100% | 7/7 | ✅ 2026-11-14 (시안은 사전 위임 — 확인 대기) |
 | M5 블로그·Notion | █████████░ | 89% | 8/9 | 🔄 사용자 검토 대기 |
 | M6 운영 관찰 | ░░░░░░░░░░ | 0% | 0/3 | 🔜 |
-| M7 저장소 해설 | ██░░░░░░░░ | 18% | 2/11 | 🔄 시안 v2 합의 대기 |
-| **전체** | ████████░░ | **76%** | **48/63** | |
+| M7 저장소 해설 | ████████░░ | 82% | 9/11 | 🔄 사용자 등록·검토 대기 |
+| **전체** | █████████░ | **89%** | **56/63** | |
 
 ---
 
@@ -60,7 +60,7 @@
 - [x] T3-2 데이터 커밋 잡(공개 데이터만) + 크기 가드 — `git add data` + `size_guard --staged`, 사이트 데이터·M5 단계(토큰 있을 때만) 포함
 - [x] T3-3 CLI `weekly --dry-run` 호출 수 예측 — `python -m radar weekly [--check-input] [--dry-run]`, 입력 대기 종료 코드 4
 - [x] T3-4 보안 점검(보안 리뷰·시크릿·CI 권한·아티팩트) — 2026-11-14 보안 리뷰 HIGH·MEDIUM 0, 워크플로 규칙 테스트(`tests/test_workflow.py`) + 통제군
-- [ ] T3-5 Secrets 등록(star-trend 키 재사용, D8)·수동 실행 1회
+- [x] T3-5 Secrets 등록(star-trend 키 재사용, D8)·수동 실행 1회 — 2026-11-14 사용자가 키체인에서 4개 등록(`RADAR_GH_TOKEN`·`STARTREND_ANTHROPIC_API_KEY`·`NOTION_TOKEN`·`STARTREND_TAVILY_API_KEY`). 점검 모드 수동 실행 성공(run 43558458501): 토큰 있음 · 시간당 한도 5,000 · 입력 계약 통과(AI 1,425 · 최신 11-01 · 후보 200). `RADAR_PRIVATE_REPO_TOKEN` 은 미등록 — 그동안 초안·해설·Notion 단계는 건너뛴다
 - [ ] T3-6 첫 예약 실행 성공 확인
 
 ## M4 사이트
@@ -95,14 +95,14 @@
 
 - [x] T7-1 SPEC v0.5(F10, D13~D16, K8~K10) · PLAN v0.5(M7, P5·P6 제안) — 사용자 결정 4개(질문지 2026-11-14)
 - [x] T7-2 시안 v2 — 캔버스 아트보드 3장(저장소 v2 · 화제 절 · TOP 10 한 줄), DESIGN §2-2b·§6
-- [ ] T7-3 시안 v2 사용자 합의 (DESIGN §6에 기록)
-- [ ] T7-4 코드 관찰 I1~I7 `core/insights.py` (TDD) + 사이트 내보내기 `insights`
-- [ ] T7-5 근거 수집기 `evidence/`(README·릴리스·HN 글·댓글·GeekNews·Tavily) + 녹화 응답 테스트 + `.work/evidence/` 캐시
-- [ ] T7-6 해설 요청·JSON 스키마·파싱 `publish/card.py` + 게이트(근거 번호·목록 밖 URL·facts 밖 숫자·단정·주입) 통제군
-- [ ] T7-7 `radar cards` 단계 — 대상(TOP 10 + 관점)·예산·비공개 저장·`site-private/` 사본·`--dry-run`
-- [ ] T7-8 11-01 주 실제 1회(dry-run 제시 뒤) — 장당 비용·게이트 제외 수 MEASURE §4, Tavily 남은 크레딧 확인(K8)
-- [ ] T7-9 웹 — 빌드 때 받기(`prepare-data`)·해설 화면·AI 작성 안내·TOP 10 한 줄 + 컴포넌트 테스트 (**T7-3 합의 뒤**)
-- [ ] T7-10 주간 워크플로 해설 단계 + Secrets `STARTREND_TAVILY_API_KEY` · Vercel 환경 변수 `RADAR_PRIVATE_REPO`·`RADAR_PRIVATE_READ_TOKEN`(사용자 등록)
+- [x] T7-3 시안 v2 사용자 합의 (DESIGN §6에 기록) — 2026-11-14 수정 없이 합의
+- [x] T7-4 코드 관찰 I1~I7 `core/insights.py` (TDD) + 사이트 내보내기 `insights` — 02절 동향 표(`trend`)·04절 언급 숫자(`mentions`)도 같이. remotion 실제 값이 시안과 글자 그대로 같다. 테스트 13개 추가
+- [x] T7-5 근거 수집기 `evidence/`(README·릴리스·HN 글·댓글·GeekNews·Tavily) + 녹화 응답 테스트 + `.work/evidence/` 캐시 — 새 층 `evidence`(층 테스트 통제군 추가), GeekNews 해석은 `core/geeknews.py` 로 옮겨 S5 와 같이 쓴다(글 제목도 읽음). 테스트 11개
+- [x] T7-6 해설 요청·JSON 스키마·파싱 `publish/card.py` + 게이트(근거 번호·목록 밖 URL·facts 밖 숫자·단정·주입) 통제군 — `prompt_card.md`, 근거 표는 인용한 것만, 사본 형식 v1(PLAN §4-1)과 키가 같은지 테스트. 테스트 4개
+- [x] T7-7 `radar cards` 단계 — 대상(TOP 10 + 관점)·예산·비공개 저장·`site-private/` 사본·`--dry-run` — 예산은 상한 − 그 주 초안 비용, 읽지 못하면 1회 다시, 실패 출처는 캐시하지 않음. 11-01 dry-run: 대상 28 · Tavily 84크레딧 · 예상 $1.51 · 남은 예산 $2.90. 테스트 6개
+- [x] T7-8 11-01 주 실제 1회(dry-run 제시 뒤) — 장당 비용·게이트 제외 수 MEASURE §4, Tavily 남은 크레딧 확인(K8) — 28/28 성공, $1.30(장당 $0.046), Tavily 84크레딧, 게이트 제외 7(모두 사실 밖 숫자), 약 7.5분. 남은 크레딧은 Tavily 대시보드에서 사용자 확인
+- [x] T7-9 웹 — 빌드 때 받기(`prepare-data`)·해설 화면·AI 작성 안내·TOP 10 한 줄 + 컴포넌트 테스트 (**T7-3 합의 뒤**) — 웹 테스트 5 → 40, 해설 있음/없음 두 빌드 통과. 링크는 http·https 만, 프로덕션은 해설 사본 설정이 없으면 빌드 실패(의도). 시안과 다른 점: star-trend 카드 링크 줄은 계약에 필드가 없어 뺐다, 해설 없는 저장소는 절 번호를 숨긴다
+- [ ] T7-10 주간 워크플로 해설 단계 + Secrets `STARTREND_TAVILY_API_KEY` · Vercel 환경 변수 `RADAR_PRIVATE_REPO`·`RADAR_PRIVATE_READ_TOKEN`(사용자 등록) — 워크플로 단계는 넣었다(초안 다음·비공개 push 전, 규칙 테스트 통과). 남은 것: 사용자 등록 3개
 - [ ] T7-11 보안 점검 뒤 배포, 사용자 검토
 
 ---
@@ -113,4 +113,5 @@
 - **2026-11-13 지난주 TOP 보충 저장소가 그 주 스타 파일에 없으면 `gain_rank` 가 비어 `build_index` 가 멈췄다** — 비면 동점 맨 뒤로, 사이트·초안에는 "—". 테스트 `test_backfill_writes_marked_weeks_with_index_and_prev_top`.
 - **2026-11-14 D(신호 전환)가 신호가 새로 채워진 저장소를 잡았다** — 두 주에 값이 있는 신호가 같을 때만 비교(MEASURE §3-5).
 - **2026-11-14 Secrets 등록(`gh secret set`)은 자동 모드에서 막혔다** — 사용자가 직접 등록한다(T3-5).
+- **2026-11-14 claude-code 사용 신호가 비공식 패키지에 연결됨** — `anthropics/claude-code` 의 S4 가 `npm:claude-code`(주 9,795회)로 잡혔다. 공식은 `@anthropic-ai/claude-code`. 이름 조회 후보의 저장소 URL 이 같아 통과한 것으로 보인다(D11 확인 규칙의 빈틈). 코드 관찰 I1 이 이 값을 쓴다 — 고칠지 사용자 확인 대기.
 - **2026-11-14 Vercel CLI 토큰 만료** — `vercel login` 이 계정 2단계 인증(2026-07-18 켜짐) 코드 화면에서 막혔다. 사용자 승인으로 krx-signal-briefing `.env` 의 `VERCEL_TOKEN` 을 명령에만 넘겨(값 출력 없음) API 로 프로젝트 생성·깃허브 연결·배포했다. 이후 갱신은 깃허브 연동 자동 배포라 CLI 로그인이 필요 없다. 2단계 인증 복구는 계정 문제로 따로 남는다.

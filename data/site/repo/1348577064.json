@@ -56,6 +56,30 @@
    "week": "2026-09-27"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 4명, 6주 첫 주 2명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "6주 HN 1건 · 1점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "192위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "6주 최고 70위(08-30 주), 최저 192위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -107,6 +131,65 @@
   },
   "week": "2026-09-27"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 1,
+   "hn_stories": 1,
+   "weeks": 6
+  }
+ },
  "repo_id": 1348577064,
- "topics": []
+ "topics": [],
+ "trend": [
+  {
+   "avg": "112위",
+   "key": "종합 순위",
+   "now": "192위",
+   "prev": "—"
+  },
+  {
+   "avg": "46.4",
+   "key": "지수",
+   "now": "23.7",
+   "prev": "—"
+  },
+  {
+   "avg": "1,435",
+   "key": "스타 증가",
+   "now": "686",
+   "prev": "—"
+  },
+  {
+   "avg": "6",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "2",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "4",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  }
+ ]
 }

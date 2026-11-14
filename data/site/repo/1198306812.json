@@ -82,6 +82,44 @@
    "week": "2026-10-25"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 4회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 42개 중 30위.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 1.23배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "10주 첫 주(08-23, 2,028)의 1.45배.",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "PR 작성자 17명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "10주 첫 주 17명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "10주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "157위 → 146위",
+   "id": "I7",
+   "signal": "index",
+   "text": "10주 최고 117위(09-06 주), 최저 157위(10-18 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -132,6 +170,21 @@
   },
   "week": "2026-10-25"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 10
+  }
+ },
  "repo_id": 1198306812,
  "topics": [
   "ai-agent",
@@ -144,5 +197,55 @@
   "python",
   "quantitative-finance",
   "trading"
+ ],
+ "trend": [
+  {
+   "avg": "150위",
+   "key": "종합 순위",
+   "now": "146위",
+   "prev": "157위"
+  },
+  {
+   "avg": "37.1",
+   "key": "지수",
+   "now": "40.3",
+   "prev": "36.6"
+  },
+  {
+   "avg": "783",
+   "key": "스타 증가",
+   "now": "752",
+   "prev": "879"
+  },
+  {
+   "avg": "2,400",
+   "key": "주간 다운로드",
+   "now": "2,949",
+   "prev": "3,144"
+  },
+  {
+   "avg": "72",
+   "key": "머지 PR",
+   "now": "85",
+   "prev": "63"
+  },
+  {
+   "avg": "14",
+   "key": "PR 작성자",
+   "now": "17",
+   "prev": "15"
+  },
+  {
+   "avg": "16",
+   "key": "닫힌 이슈",
+   "now": "25",
+   "prev": "9"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

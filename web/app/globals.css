@@ -86,3 +86,73 @@ h1, h2 { margin: 0; } h2 { font-size: 21px; }
 .steps li { border: 1px solid var(--line); border-radius: 12px; padding: 14px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; color: #374151; }
 .footer { background: #fff; border-top: 1px solid var(--line); }
 .footer-in { padding-block: 22px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: var(--muted); }
+
+/* v2 저장소 해설 (DESIGN §2-2b · §3 v2 행) — 보라 = AI 해설, 남색 = 코드 계산 */
+.chip-ai { display: inline-flex; align-items: center; padding: 6px 12px; border-radius: 999px; background: #3b1f6e; color: #e9d5ff; font-size: 13px; font-weight: 600; }
+.stat .d.up { color: #86efac; } .stat .d.down { color: #fca5a5; }
+.toc-bar { background: #fff; border-bottom: 1px solid var(--line); }
+.toc { padding-block: 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.toc a { padding: 8px 12px; min-height: 36px; display: inline-flex; align-items: center; border-radius: 999px; border: 1px solid var(--line); color: #374151; text-decoration: none; font-size: 13px; }
+.toc a:hover { background: #f9fafb; color: #111827; }
+.repo-main { gap: 24px; }
+.sec { scroll-margin-top: 12px; }
+.panel h3, .grid-sig h3, .watch h3 { margin: 0; font-size: 17px; }
+.ai-notice { background: #f5f3ff; border: 1px solid #ddd6fe; border-radius: 14px; padding: 16px 20px; display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+.ai-notice p { margin: 0; flex: 1 1 520px; font-size: 14px; line-height: 1.7; color: #3b0764; }
+.ai-badge { padding: 4px 10px; border-radius: 6px; background: #6d28d9; color: #fff; font-size: 12px; font-weight: 700; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tag-ai, .tag-code { width: fit-content; padding: 3px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.tag-ai { background: #ede9fe; color: #5b21b6; } .tag-code { background: #eef2ff; color: #1f3fa8; }
+.card-week { margin: 0; background: #fffbeb; border: 1px solid #fde68a; border-radius: 12px; padding: 12px 16px; font-size: 14px; color: #78350f; }
+.panel.ai-top { border-top: 4px solid #8b5cf6; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.sec-no { font-family: var(--font-num), sans-serif; font-weight: 700; }
+.claim-row { display: grid; grid-template-columns: minmax(120px, 160px) 1fr; gap: 16px; padding: 14px 0; border-top: 1px solid #f3f4f6; }
+.claim-row > b { color: #4c1d95; }
+.claim { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.claim-text { font-size: 15px; line-height: 1.75; } .claim-text.lg { font-size: 16px; }
+.basis { font-size: 12px; } .basis a { color: inherit; }
+.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px; }
+.col { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.table.compact { min-width: 460px; }
+.table.posts { min-width: 720px; }
+.table.ev { min-width: 640px; }
+.table .r { text-align: right; }
+.table .rowh { color: var(--ink); font-size: 14px; font-weight: 600; border-bottom: 1px solid #f3f4f6; }
+.table .soft { color: var(--muted); }
+.table .evn { width: 56px; }
+.ev-row:target { background: #f5f3ff; }
+.panel p.rel { font-size: 13px; line-height: 1.7; }
+.notes { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.notes li { border: 1px solid #ede9fe; border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; }
+.counts { display: flex; flex-wrap: wrap; gap: 12px; }
+.count { flex: 1 1 220px; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px; }
+.count .k { font-size: 12px; color: var(--muted); }
+.count .v { font-family: var(--font-num), var(--font-sans), sans-serif; font-size: 24px; font-weight: 700; }
+.site { padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; background: #f3f4f6; color: #374151; white-space: nowrap; }
+.site.hn { background: #fff7ed; color: #9a3412; } .site.gn { background: #ecfdf5; color: #065f46; }
+.obs { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+.obs-k { font-size: 12px; color: var(--muted); font-weight: 600; }
+.obs-v { font-family: var(--font-num), var(--font-sans), sans-serif; font-size: 20px; font-weight: 700; }
+.obs-t { font-size: 14px; color: #374151; }
+.buzz-ai { background: #fdf2f8; border-radius: 12px; padding: 16px 18px; display: flex; flex-direction: column; gap: 14px; }
+.buzz-grid { display: grid; grid-template-columns: minmax(110px, 140px) 1fr; gap: 12px 16px; }
+.buzz-grid > b { color: #831843; }
+.reactions { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; line-height: 1.7; }
+.nature { padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; }
+.ins-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 14px; }
+.ins { border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.ins-head { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--muted); font-weight: 600; }
+.ins-head i { width: 10px; height: 10px; border-radius: 3px; display: inline-block; flex: none; }
+.ins-big { font-family: var(--font-num), var(--font-sans), sans-serif; font-size: 22px; font-weight: 700; }
+.panel .ins p { font-size: 14px; line-height: 1.65; }
+.watch { border-top: 1px solid #f3f4f6; padding-top: 14px; display: flex; flex-direction: column; gap: 10px; }
+.watch ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 8px; font-size: 15px; line-height: 1.7; }
+.grid-sig { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px; }
+.grid-sig > h2 { grid-column: 1 / -1; }
+/* 홈 TOP 10 — 저장소 이름 아래 AI 한 줄 (TopRowV2) */
+.name-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ai-line { display: flex; gap: 8px; align-items: baseline; }
+.ai-tag { flex: none; padding: 1px 6px; border-radius: 4px; background: #ede9fe; color: #5b21b6; font-size: 11px; font-weight: 700; }
+.ai-line span:last-child { font-size: 13px; line-height: 1.6; color: #374151; }
+@media (max-width: 560px) { .claim-row, .buzz-grid { grid-template-columns: 1fr; gap: 6px; } }

@@ -43,6 +43,30 @@
    "week": "2026-10-18"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 75명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "13위 → 58위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 5위(10-04 주), 최저 58위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-10-18"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1398097510,
  "topics": [
   "art",
@@ -102,5 +141,49 @@
   "svg",
   "svg-editor",
   "vector-graphics"
+ ],
+ "trend": [
+  {
+   "avg": "9위",
+   "key": "종합 순위",
+   "now": "58위",
+   "prev": "13위"
+  },
+  {
+   "avg": "79.3",
+   "key": "지수",
+   "now": "58.6",
+   "prev": "77.3"
+  },
+  {
+   "avg": "4,758",
+   "key": "스타 증가",
+   "now": "940",
+   "prev": "3,365"
+  },
+  {
+   "avg": "752",
+   "key": "머지 PR",
+   "now": "675",
+   "prev": "882"
+  },
+  {
+   "avg": "82",
+   "key": "PR 작성자",
+   "now": "75",
+   "prev": "97"
+  },
+  {
+   "avg": "284",
+   "key": "닫힌 이슈",
+   "now": "167",
+   "prev": "283"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

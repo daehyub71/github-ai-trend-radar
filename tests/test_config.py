@@ -51,3 +51,10 @@ def test_config_angles_loaded_from_settings():
 
     cfg = load_config()
     assert cfg.angles == RULES_V1
+
+
+def test_config_insights_loaded_from_settings():
+    from radar.config import load_config
+    from radar.core.insights import RULES_V1
+
+    assert load_config().insights == RULES_V1

@@ -28,3 +28,12 @@ c_rises = 4            # C 꾸준한 상승: 연속 상승 주
 lookback = 4           # D 신호 전환: 몇 주 전과 비교
 d_shift_min = 20.0     #   사용·기여 비중 상승 %p ≥
 cap = 5                # 유형마다 최대
+
+[insights]
+# F10-1 코드 관찰 I1~I7 규칙 v1 (SPEC). 문구·임계값을 바꾸면 version 을 올린다
+version = 1
+window_weeks = 12   # 이번 주 포함 최근 몇 주를 보나
+ratio_top = 0.2     # I1·I3 후보 안 상위·하위 이 비율이면 뜻을 붙인다
+jump_min = 0.3      # I2 한 주 다운로드 증가가 이 이상이면 문장으로
+single_share = 0.8  # I5 글 하나가 언급 점수의 이 비율 이상
+quiet_points = 10   # I5 창 전체 언급 점수 합이 이 미만이면 "조용하다"

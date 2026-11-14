@@ -27,6 +27,13 @@ def test_architecture_detects_collector_importing_other_collector():
     assert len(v) == 1 and "수집기끼리" in v[0]
 
 
+def test_architecture_detects_evidence_importing_other_evidence_or_collectors():
+    v = check_sources({"radar/evidence/hn.py": "from radar.evidence.web import collect_web\n"
+                                               "from radar.collectors.mentions import parse_past\n"
+                                               "from radar.evidence.base import SourceError\n"})
+    assert any("수집기끼리" in x for x in v) and any("collectors" in x for x in v) and len(v) == 2
+
+
 def test_architecture_detects_core_importing_app():
     v = check_sources({"radar/core/x.py": "from radar import config\n"})
     assert len(v) == 1 and "core 층은 app 층" in v[0]

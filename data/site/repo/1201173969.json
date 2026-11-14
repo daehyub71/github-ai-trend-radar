@@ -173,6 +173,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 6,942",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 2명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 12명, 12주 첫 주 1명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 HN 1건 · 2점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "108위 → 77위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 36위(08-30 주), 최저 137위(10-18 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Go",
  "latest": {
   "backfilled": false,
@@ -224,6 +255,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 2,
+   "hn_stories": 1,
+   "weeks": 12
+  }
+ },
  "repo_id": 1201173969,
  "topics": [
   "ai",
@@ -236,5 +282,55 @@
   "prompt-engineering",
   "skill",
   "tokens"
+ ],
+ "trend": [
+  {
+   "avg": "93위",
+   "key": "종합 순위",
+   "now": "77위",
+   "prev": "108위"
+  },
+  {
+   "avg": "51.9",
+   "key": "지수",
+   "now": "53.9",
+   "prev": "48.3"
+  },
+  {
+   "avg": "1,880",
+   "key": "스타 증가",
+   "now": "1,782",
+   "prev": "1,832"
+  },
+  {
+   "avg": "13",
+   "key": "머지 PR",
+   "now": "13",
+   "prev": "2"
+  },
+  {
+   "avg": "6",
+   "key": "PR 작성자",
+   "now": "2",
+   "prev": "1"
+  },
+  {
+   "avg": "20",
+   "key": "닫힌 이슈",
+   "now": "39",
+   "prev": "14"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "6,942",
+   "prev": "—"
+  }
  ]
 }

@@ -1,4 +1,4 @@
-"""명령줄 — python -m radar <contract|collect|weekly|index|backfill|site|blog|notion> (PLAN §2)."""
+"""명령줄 — python -m radar <contract|collect|weekly|index|backfill|site|blog|cards|notion> (PLAN §2)."""
 
 import argparse
 import json
@@ -181,6 +181,36 @@ def _blog(week_text: str | None, cap: float, dry_run: bool) -> int:
     return 0 if rec["status"] == "ok" else 1
 
 
+def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str]) -> int:
+    """M7 — 저장소 해설 (TOP 10 + 관점 저장소, LLM 저장소당 1회). 해설은 .private/ 에만 (D13)."""
+    from radar import cards, pipeline
+    from radar.clients.claude import ClaudeClient
+    from radar.clients.transport import UrllibTransport
+
+    try:
+        week = _week_arg(week_text)
+        if dry_run:
+            print(json.dumps(cards.plan(week, cap=cap, only=only), ensure_ascii=False, indent=1))
+            return 0
+        key = os.environ.get("STARTREND_ANTHROPIC_API_KEY", "")
+        token = os.environ.get("GITHUB_TOKEN", "")
+        if not key or not token:
+            print("STARTREND_ANTHROPIC_API_KEY · GITHUB_TOKEN 이 필요하다 — 이 명령에만 넘긴다",
+                  file=sys.stderr)
+            return 1
+        tavily = os.environ.get("STARTREND_TAVILY_API_KEY", "")
+        if not tavily:
+            print("STARTREND_TAVILY_API_KEY 가 없다 — 웹 검색 근거 없이 쓴다(D15 미충족)", file=sys.stderr)
+        rec = cards.write_cards(week, ClaudeClient(key), client=pipeline.make_client(UrllibTransport()),
+                                token=token, tavily_key=tavily, cap=cap, only=only)
+    except (ConfigError, ContractError, ValueError, FileNotFoundError) as e:
+        print(f"해설 중단: {e}", file=sys.stderr)
+        return 1
+    print(json.dumps({k: rec[k] for k in ("week", "targets", "ok", "skipped", "failed", "cost_usd",
+                                          "tavily_credits")}, ensure_ascii=False, indent=1))
+    return 0 if rec["failed"] == 0 else 1
+
+
 def _notion(week_text: str | None, parent: str | None) -> int:
     """M5 — 레이더 DB 만들기(--setup PARENT) 또는 그 주 초안 두 편 올리기."""
     from radar import blog, pipeline
@@ -238,6 +268,12 @@ def main(argv: list[str] | None = None) -> int:
     bl.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
     bl.add_argument("--cap", type=float, default=3.0, help="LLM 비용 상한(달러, D4 $3)")
     bl.add_argument("--dry-run", action="store_true", help="호출 없이 최악 비용만")
+    cd = sub.add_parser("cards", help="저장소 해설 — TOP 10 + 관점 저장소 (LLM·웹 검색, 비공개 저장소에만)")
+    cd.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
+    cd.add_argument("--cap", type=float, default=3.0,
+                    help="LLM 비용 상한(달러) — 그 주 초안 비용을 뺀 나머지를 쓴다")
+    cd.add_argument("--dry-run", action="store_true", help="호출 없이 대상·예상 호출·비용만")
+    cd.add_argument("--only", action="append", default=[], metavar="OWNER/NAME", help="이 저장소만 (여러 번)")
     no = sub.add_parser("notion", help="초안을 Notion 레이더 DB 에 (상태 '초안'인 페이지만 고친다)")
     no.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
     no.add_argument("--setup", metavar="PARENT_PAGE_ID", help="레이더 DB 를 이 페이지 아래에 한 번 만든다")
@@ -251,6 +287,8 @@ def main(argv: list[str] | None = None) -> int:
         return _site()
     if args.cmd == "blog":
         return _blog(args.week, args.cap, args.dry_run)
+    if args.cmd == "cards":
+        return _cards(args.week, args.cap, args.dry_run, args.only)
     if args.cmd == "notion":
         return _notion(args.week, args.setup)
     if args.cmd == "weekly":

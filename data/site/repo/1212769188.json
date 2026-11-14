@@ -173,6 +173,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 4,443",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 3명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 6명, 12주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "12주 동안 글 3건 · 62점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "49위 → 93위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 10위(09-13 주), 최저 167위(09-20 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "HTML",
  "latest": {
   "backfilled": false,
@@ -224,6 +255,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 59,
+   "gn_topics": 1,
+   "hn_points": 3,
+   "hn_stories": 2,
+   "weeks": 12
+  }
+ },
  "repo_id": 1212769188,
  "topics": [
   "agent-skills",
@@ -234,5 +280,55 @@
   "drawio",
   "mermaid",
   "svg"
+ ],
+ "trend": [
+  {
+   "avg": "45위",
+   "key": "종합 순위",
+   "now": "93위",
+   "prev": "49위"
+  },
+  {
+   "avg": "62.7",
+   "key": "지수",
+   "now": "50.4",
+   "prev": "59.3"
+  },
+  {
+   "avg": "5,155",
+   "key": "스타 증가",
+   "now": "2,215",
+   "prev": "2,832"
+  },
+  {
+   "avg": "21",
+   "key": "머지 PR",
+   "now": "6",
+   "prev": "16"
+  },
+  {
+   "avg": "7",
+   "key": "PR 작성자",
+   "now": "3",
+   "prev": "7"
+  },
+  {
+   "avg": "16",
+   "key": "닫힌 이슈",
+   "now": "1",
+   "prev": "6"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "4,443",
+   "prev": "—"
+  }
  ]
 }

@@ -43,6 +43,30 @@
    "week": "2026-08-23"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 18명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "3주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "8위 → 64위",
+   "id": "I7",
+   "signal": "index",
+   "text": "3주 최고 8위(08-16 주), 최저 64위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-08-23"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 3
+  }
+ },
  "repo_id": 1331636953,
  "topics": [
   "cordis",
@@ -102,5 +141,49 @@
   "dsh-plugin",
   "dsh-web",
   "dsh-web-ui"
+ ],
+ "trend": [
+  {
+   "avg": "12위",
+   "key": "종합 순위",
+   "now": "64위",
+   "prev": "8위"
+  },
+  {
+   "avg": "76.5",
+   "key": "지수",
+   "now": "58.3",
+   "prev": "79.8"
+  },
+  {
+   "avg": "2,702",
+   "key": "스타 증가",
+   "now": "844",
+   "prev": "2,636"
+  },
+  {
+   "avg": "154",
+   "key": "머지 PR",
+   "now": "22",
+   "prev": "284"
+  },
+  {
+   "avg": "54",
+   "key": "PR 작성자",
+   "now": "18",
+   "prev": "89"
+  },
+  {
+   "avg": "256",
+   "key": "닫힌 이슈",
+   "now": "208",
+   "prev": "368"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

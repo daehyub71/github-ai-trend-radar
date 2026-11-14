@@ -69,6 +69,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 6,339",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 2명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 3명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "5주 동안 글 2건 · 19점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "144위 → 114위",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 12위(10-18 주), 최저 144위(10-25 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": false,
@@ -120,6 +151,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 17,
+   "gn_topics": 1,
+   "hn_points": 2,
+   "hn_stories": 1,
+   "weeks": 5
+  }
+ },
  "repo_id": 476507964,
  "topics": [
   "3d-graphics",
@@ -127,5 +173,55 @@
   "aivideo",
   "filmmaking",
   "imagegeneration"
+ ],
+ "trend": [
+  {
+   "avg": "60위",
+   "key": "종합 순위",
+   "now": "114위",
+   "prev": "144위"
+  },
+  {
+   "avg": "61.5",
+   "key": "지수",
+   "now": "47.3",
+   "prev": "40.4"
+  },
+  {
+   "avg": "8,982",
+   "key": "스타 증가",
+   "now": "1,687",
+   "prev": "1,745"
+  },
+  {
+   "avg": "3",
+   "key": "머지 PR",
+   "now": "3",
+   "prev": "0"
+  },
+  {
+   "avg": "2",
+   "key": "PR 작성자",
+   "now": "2",
+   "prev": "0"
+  },
+  {
+   "avg": "26",
+   "key": "닫힌 이슈",
+   "now": "9",
+   "prev": "10"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "6,339",
+   "prev": "—"
+  }
  ]
 }

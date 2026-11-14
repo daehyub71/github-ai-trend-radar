@@ -95,6 +95,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 3,164",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 47명, 7주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "7주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "63위 → 72위",
+   "id": "I7",
+   "signal": "index",
+   "text": "7주 최고 10위(09-27 주), 최저 72위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Go",
  "latest": {
   "backfilled": false,
@@ -146,6 +177,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 7
+  }
+ },
  "repo_id": 1383809012,
  "topics": [
   "claude-code",
@@ -154,5 +200,55 @@
   "gemini-cli",
   "llm",
   "macos"
+ ],
+ "trend": [
+  {
+   "avg": "42위",
+   "key": "종합 순위",
+   "now": "72위",
+   "prev": "63위"
+  },
+  {
+   "avg": "65.3",
+   "key": "지수",
+   "now": "55.3",
+   "prev": "56.9"
+  },
+  {
+   "avg": "5,698",
+   "key": "스타 증가",
+   "now": "4,950",
+   "prev": "6,276"
+  },
+  {
+   "avg": "46",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "14",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "276",
+   "key": "닫힌 이슈",
+   "now": "217",
+   "prev": "199"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "3,164",
+   "prev": "—"
+  }
  ]
 }

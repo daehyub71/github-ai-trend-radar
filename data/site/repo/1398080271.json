@@ -69,6 +69,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 13,964",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 84명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 173명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "5주 동안 글 3건 · 156점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "9위 → 9위",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 1위(10-04 주), 최저 9위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": false,
@@ -120,6 +151,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 9,
+   "gn_topics": 1,
+   "hn_points": 147,
+   "hn_stories": 2,
+   "weeks": 5
+  }
+ },
  "repo_id": 1398080271,
  "topics": [
   "art",
@@ -129,5 +175,55 @@
   "images",
   "photo-editing",
   "rust"
+ ],
+ "trend": [
+  {
+   "avg": "5위",
+   "key": "종합 순위",
+   "now": "9위",
+   "prev": "9위"
+  },
+  {
+   "avg": "86.1",
+   "key": "지수",
+   "now": "76.4",
+   "prev": "77.6"
+  },
+  {
+   "avg": "18,832",
+   "key": "스타 증가",
+   "now": "2,349",
+   "prev": "3,311"
+  },
+  {
+   "avg": "809",
+   "key": "머지 PR",
+   "now": "371",
+   "prev": "346"
+  },
+  {
+   "avg": "166",
+   "key": "PR 작성자",
+   "now": "84",
+   "prev": "121"
+  },
+  {
+   "avg": "652",
+   "key": "닫힌 이슈",
+   "now": "596",
+   "prev": "219"
+  },
+  {
+   "avg": "1",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "13,964",
+   "prev": "—"
+  }
  ]
 }

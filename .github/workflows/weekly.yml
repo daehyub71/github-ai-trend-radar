@@ -10,6 +10,8 @@
 #           · 변수 RADAR_STARTREND_REPO(없으면 daehyub71/github-ai-star-trend)
 # M5(있을 때만): RADAR_PRIVATE_REPO_TOKEN(비공개 저장소 내용 읽기·쓰기) · STARTREND_ANTHROPIC_API_KEY · NOTION_TOKEN
 #              — 없으면 초안·Notion 단계만 건너뛴다. 공개 데이터 수집·지수·사이트 데이터는 그대로 돈다.
+# M7(있을 때만): STARTREND_TAVILY_API_KEY(웹 검색, D15) — 저장소 해설은 초안 다음에 같은 $3 상한 안에서 쓴다.
+#              해설 사본(site-private/)은 비공개 저장소에 먼저 push 하고, 그 뒤 공개 데이터 push 가 Vercel 빌드를 부른다.
 name: weekly
 
 on:
@@ -75,9 +77,23 @@ jobs:
       - name: 점검 — Secrets · 토큰 한도 · 입력 계약 (값은 출력하지 않는다)
         env:
           RADAR_GH_TOKEN: ${{ secrets.RADAR_GH_TOKEN }}
+          PRIVATE_TOKEN: ${{ secrets.RADAR_PRIVATE_REPO_TOKEN }}
         run: |
           fail=0
           if [ -n "$RADAR_GH_TOKEN" ]; then echo "OK  RADAR_GH_TOKEN 있음"; else echo "NG  RADAR_GH_TOKEN 없음"; fail=1; fi
+          # 비공개 저장소 토큰은 있으면 실제로 읽어 본다(쓰기는 push 단계에서 드러난다). 없으면 M5·M7 단계만 건너뛴다
+          if [ -n "$PRIVATE_TOKEN" ]; then
+            auth=$(printf 'x-access-token:%s' "$PRIVATE_TOKEN" | base64 -w0)
+            echo "::add-mask::$auth"
+            if git -c http.https://github.com/.extraheader="AUTHORIZATION: basic $auth" \
+                ls-remote --quiet "https://github.com/$PRIVATE_REPO.git" HEAD >/dev/null 2>&1; then
+              echo "OK  비공개 저장소 토큰으로 $PRIVATE_REPO 를 읽을 수 있다"
+            else
+              echo "NG  비공개 저장소 토큰으로 $PRIVATE_REPO 를 읽지 못했다 — 토큰의 저장소·Contents 권한을 본다"; fail=1
+            fi
+          else
+            echo "--  RADAR_PRIVATE_REPO_TOKEN 없음 — 초안·해설·Notion 단계는 건너뛴다"
+          fi
           limit=$(curl -s -H "Authorization: Bearer $RADAR_GH_TOKEN" https://api.github.com/rate_limit \
             | python -c "import json,sys; print(json.load(sys.stdin).get('resources',{}).get('core',{}).get('limit',0))" || echo 0)
           echo "깃허브 시간당 한도: $limit"
@@ -145,6 +161,17 @@ jobs:
           else
             echo "NOTION_TOKEN 또는 레이더 DB 대응표 없음 — Notion 건너뜀"
           fi
+          exit 0
+
+      - name: 저장소 해설 (LLM · 웹 검색, 초안 다음 — 같은 $3 상한, D13~D16)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true' && env.HAS_LLM == 'true'
+        env:
+          STARTREND_ANTHROPIC_API_KEY: ${{ secrets.STARTREND_ANTHROPIC_API_KEY }}
+          STARTREND_TAVILY_API_KEY: ${{ secrets.STARTREND_TAVILY_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.RADAR_GH_TOKEN }}
+        run: |
+          set +e
+          python -m radar cards --cap 3 || echo "::warning::해설 단계에 실패한 저장소가 있다 — .private/weeks/<주>/cards/run.json 을 본다"
           exit 0
 
       - name: 비공개 저장소 push

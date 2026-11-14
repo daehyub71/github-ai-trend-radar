@@ -69,6 +69,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 7,532",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 35명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 97명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "5주 HN 1건 · 4점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "40위 → 55위",
+   "id": "I7",
+   "signal": "index",
+   "text": "5주 최고 2위(10-11 주), 최저 55위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Rust",
  "latest": {
   "backfilled": false,
@@ -120,6 +151,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 4,
+   "hn_stories": 1,
+   "weeks": 5
+  }
+ },
  "repo_id": 1398086162,
  "topics": [
   "document-processing",
@@ -130,5 +176,55 @@
   "pdf-tools",
   "pdf-viewer",
   "rust"
+ ],
+ "trend": [
+  {
+   "avg": "16위",
+   "key": "종합 순위",
+   "now": "55위",
+   "prev": "40위"
+  },
+  {
+   "avg": "78.1",
+   "key": "지수",
+   "now": "58.9",
+   "prev": "62.9"
+  },
+  {
+   "avg": "4,712",
+   "key": "스타 증가",
+   "now": "1,045",
+   "prev": "1,332"
+  },
+  {
+   "avg": "400",
+   "key": "머지 PR",
+   "now": "138",
+   "prev": "125"
+  },
+  {
+   "avg": "103",
+   "key": "PR 작성자",
+   "now": "35",
+   "prev": "31"
+  },
+  {
+   "avg": "222",
+   "key": "닫힌 이슈",
+   "now": "67",
+   "prev": "78"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "7,532",
+   "prev": "—"
+  }
  ]
 }

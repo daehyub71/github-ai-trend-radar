@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "repo_id": 274495425,
+  "full_name": "remotion-dev/remotion",
+  "week": "2026-11-01",
+  "generated": "2026-11-14T12:00:00Z",
+  "model": "claude-sonnet-5-5",
+  "gate": {"checked": 14, "excluded": 0},
+  "summary": {
+    "what": {"text": "React 컴포넌트로 동영상을 만들고 렌더링하는 프레임워크입니다.", "sources": ["E1"], "basis": "확인"},
+    "why_now": {"text": "스타 순위는 70위지만, 사용(주간 다운로드)과 기여 신호가 지수의 4분의 3을 만들어 종합 6위에 올랐습니다.", "sources": ["F"], "basis": "확인"},
+    "watch": {"text": "다운로드가 10-25 주에 한 번에 72% 늘어난 뒤 이번 주에도 같은 수준입니다.", "sources": ["F", "E4"], "basis": "추정"}
+  },
+  "trend_notes": [
+    {"text": "PR 작성자가 14명에서 22명으로 늘었습니다. 기여하는 사람의 폭이 넓어진 주입니다.", "sources": ["F"], "basis": "확인"},
+    {"text": "이번 주 릴리스는 패치 버전 두 개였습니다. 큰 기능 출시로 다운로드가 늘어난 주는 아닌 것으로 보입니다.", "sources": ["E2", "E3"], "basis": "추정"}
+  ],
+  "what": [
+    {"label": "푸는 문제", "text": "동영상의 각 장면을 React 컴포넌트로 만들고, 이를 렌더링해 영상 파일로 내보냅니다.", "sources": ["E1"], "basis": "확인"},
+    {"label": "대안과 비교한 자리", "text": "예시 문장입니다.", "sources": ["E4"], "basis": "추정"}
+  ],
+  "buzz": {
+    "posts": [
+      {"site": "HN", "title": "Example post title", "url": "https://news.ycombinator.com/item?id=1", "points": 1, "comments": 0, "date": "2026-09-22", "target": "저장소"}
+    ],
+    "nature": null,
+    "trigger": null,
+    "reactions": [],
+    "reading": {"text": "커뮤니티 화제보다 사용으로 오른 저장소입니다.", "sources": ["F"], "basis": "추정"}
+  },
+  "watch": [
+    {"text": "다운로드가 2주 연속 350만 회 수준입니다. 새 기준선인지 다음 주 값으로 확인합니다.", "sources": ["F"], "basis": "추정"},
+    {"text": "PR 작성자가 늘고 있습니다. 외부 기여가 계속 넓어지는지 봅니다.", "sources": ["F"], "basis": "추정"}
+  ],
+  "releases": [
+    {"tag": "v4.0.541", "date": "2026-11-05", "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.541"},
+    {"tag": "v4.0.540", "date": "2026-11-02", "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.540"}
+  ],
+  "evidence": [
+    {"id": "E1", "title": "remotion-dev/remotion — README", "site": "github.com", "date": null, "url": "https://github.com/remotion-dev/remotion"},
+    {"id": "E2", "title": "v4.0.541", "site": "github.com", "date": "2026-11-05", "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.541"},
+    {"id": "E3", "title": "v4.0.540", "site": "github.com", "date": "2026-11-02", "url": "https://github.com/remotion-dev/remotion/releases/tag/v4.0.540"},
+    {"id": "E4", "title": "Example web article", "site": "example.com", "date": "2026-10-28", "url": "https://example.com/remotion"}
+  ],
+  "history": [{"week": "2026-11-01", "why_now": "스타 순위는 70위지만, 사용(주간 다운로드)과 기여 신호가 지수의 4분의 3을 만들어 종합 6위에 올랐습니다."}]
+}

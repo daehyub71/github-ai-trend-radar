@@ -23,3 +23,23 @@ describe("format", () => {
     expect(repoPath("org/a.b")).toBe("/repo/org/a.b");
   });
 });
+
+import { rankLine, shortDate, starRankLine, weekSpan } from "@/lib/format";
+
+describe("format — 저장소 화면 v2", () => {
+  it("weekSpan · shortDate", () => {
+    expect(weekSpan("2026-11-01")).toBe("11-01 주(11-01~11-07)");
+    expect(weekSpan("2026-12-27")).toBe("12-27 주(12-27~01-02)");
+    expect(shortDate("2026-11-05")).toBe("11-05");
+    expect(shortDate(null)).toBe("—");
+  });
+  it("rankLine · starRankLine", () => {
+    expect(rankLine({ prev_rank: 10, rank: 6 })).toEqual({ text: "지난주 10위 · 4계단 위", tone: "up" });
+    expect(rankLine({ prev_rank: 3, rank: 5 })).toEqual({ text: "지난주 3위 · 2계단 아래", tone: "down" });
+    expect(rankLine({ prev_rank: 5, rank: 5 }).text).toBe("지난주 5위 · 그대로");
+    expect(rankLine({ prev_rank: null, rank: 5 }).tone).toBe("flat");
+    expect(starRankLine(70)).toBe("스타만 보면 TOP 10 밖");
+    expect(starRankLine(3)).toBe("스타로도 TOP 10");
+    expect(starRankLine(null)).toBe("스타 순위 없음");
+  });
+});

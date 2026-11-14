@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 
 import { SiteFooter, SiteHeader } from "@/components/Chrome";
 import { WeekView } from "@/components/WeekView";
-import { loadWeek, loadWeeks } from "@/lib/data";
+import { loadWeek, loadWeekLines, loadWeeks } from "@/lib/data";
 
 export const dynamicParams = false;
 
@@ -17,7 +17,7 @@ export default async function WeekPage({ params }: { params: Promise<{ week: str
   return (
     <>
       <SiteHeader active="week" />
-      <WeekView doc={loadWeek(week)} weeks={weeks} />
+      <WeekView doc={loadWeek(week)} weeks={weeks} lines={loadWeekLines(week)} />
       <SiteFooter />
     </>
   );

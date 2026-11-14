@@ -160,6 +160,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 5,002",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 0명, 11주 첫 주 2명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "11주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "176위 → 195위",
+   "id": "I7",
+   "signal": "index",
+   "text": "11주 최고 57위(09-06 주), 최저 195위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -211,6 +242,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 11
+  }
+ },
  "repo_id": 1079456184,
  "topics": [
   "agent-skills",
@@ -230,5 +276,55 @@
   "proteomics",
   "scientific-computing",
   "scientific-visualization"
+ ],
+ "trend": [
+  {
+   "avg": "162위",
+   "key": "종합 순위",
+   "now": "195위",
+   "prev": "176위"
+  },
+  {
+   "avg": "32.7",
+   "key": "지수",
+   "now": "22.7",
+   "prev": "28.8"
+  },
+  {
+   "avg": "2,062",
+   "key": "스타 증가",
+   "now": "894",
+   "prev": "1,153"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "5,002",
+   "prev": "—"
+  }
  ]
 }

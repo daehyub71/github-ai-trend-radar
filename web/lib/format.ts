@@ -57,3 +57,35 @@ export function repoPath(fullName: string): string {
   const [o, n] = fullName.split("/");
   return `/repo/${encodeURIComponent(o)}/${encodeURIComponent(n)}`;
 }
+
+/** 2026-11-01 → "11-01 주(11-01~11-07)" (UTC) — 02절 코드 표 칩 */
+export function weekSpan(week: string): string {
+  const s = new Date(`${week}T00:00:00Z`);
+  const e = new Date(s.getTime() + 6 * 86400000);
+  const md = (x: Date) => `${String(x.getUTCMonth() + 1).padStart(2, "0")}-${String(x.getUTCDate()).padStart(2, "0")}`;
+  return `${md(s)} 주(${md(s)}~${md(e)})`;
+}
+
+/** "2026-11-05" → "11-05", 없으면 대시 */
+export function shortDate(d: string | null | undefined): string {
+  if (!d) return "—";
+  return /^\d{4}-\d{2}-\d{2}/.test(d) ? d.slice(5, 10) : d;
+}
+
+export type Tone = "up" | "down" | "flat";
+
+/** 히어로 종합 순위 카드 아래 줄 — 지난주 값과 순위 변화 */
+export function rankLine(r: Pick<Row, "prev_rank" | "rank">): { text: string; tone: Tone } {
+  if (r.prev_rank == null) return { text: "지난주 순위 없음 — 새로 진입", tone: "flat" };
+  const d = r.prev_rank - r.rank;
+  if (d === 0) return { text: `지난주 ${r.prev_rank}위 · 그대로`, tone: "flat" };
+  return d > 0
+    ? { text: `지난주 ${r.prev_rank}위 · ${d}계단 위`, tone: "up" }
+    : { text: `지난주 ${r.prev_rank}위 · ${-d}계단 아래`, tone: "down" };
+}
+
+/** 히어로 스타 순위 카드 아래 줄 */
+export function starRankLine(starRank: number | null): string {
+  if (starRank == null) return "스타 순위 없음";
+  return starRank <= 10 ? "스타로도 TOP 10" : "스타만 보면 TOP 10 밖";
+}

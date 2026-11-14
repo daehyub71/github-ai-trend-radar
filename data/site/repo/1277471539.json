@@ -147,6 +147,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 12,729",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 28명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 9명, 11주 첫 주 0명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "이번 주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "11주 동안 글 5건 · 25점 — 이번 주는 조용했습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "36위 → 41위",
+   "id": "I7",
+   "signal": "index",
+   "text": "11주 최고 2위(09-06 주), 최저 63위(10-04 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": false,
@@ -198,6 +229,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 25,
+   "hn_stories": 5,
+   "weeks": 11
+  }
+ },
  "repo_id": 1277471539,
  "topics": [
   "3d-globe",
@@ -212,5 +258,55 @@
   "spatial-intelligence",
   "webgl",
   "worldview"
+ ],
+ "trend": [
+  {
+   "avg": "41위",
+   "key": "종합 순위",
+   "now": "41위",
+   "prev": "36위"
+  },
+  {
+   "avg": "64.7",
+   "key": "지수",
+   "now": "62.1",
+   "prev": "64.7"
+  },
+  {
+   "avg": "3,758",
+   "key": "스타 증가",
+   "now": "1,645",
+   "prev": "2,176"
+  },
+  {
+   "avg": "64",
+   "key": "머지 PR",
+   "now": "81",
+   "prev": "80"
+  },
+  {
+   "avg": "22",
+   "key": "PR 작성자",
+   "now": "28",
+   "prev": "23"
+  },
+  {
+   "avg": "16",
+   "key": "닫힌 이슈",
+   "now": "16",
+   "prev": "27"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "12,729",
+   "prev": "—"
+  }
  ]
 }

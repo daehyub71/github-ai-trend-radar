@@ -69,6 +69,30 @@
    "week": "2026-10-18"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 1명, 6주 첫 주 0명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "6주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "177위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "6주 최고 122위(09-20 주), 최저 179위(09-13 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -120,11 +144,70 @@
   },
   "week": "2026-10-18"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 6
+  }
+ },
  "repo_id": 1363417187,
  "topics": [
   "ai",
   "ai-video",
   "short-drama",
   "short-video"
+ ],
+ "trend": [
+  {
+   "avg": "155위",
+   "key": "종합 순위",
+   "now": "177위",
+   "prev": "—"
+  },
+  {
+   "avg": "34.1",
+   "key": "지수",
+   "now": "31.1",
+   "prev": "—"
+  },
+  {
+   "avg": "1,270",
+   "key": "스타 증가",
+   "now": "1,409",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  }
  ]
 }

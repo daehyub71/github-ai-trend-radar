@@ -43,6 +43,30 @@
    "week": "2026-09-13"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "언급 점수의 100.0%가 글 하나",
+   "id": "I5",
+   "signal": "s5",
+   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "143위 → 109위",
+   "id": "I7",
+   "signal": "index",
+   "text": "4주 최고 98위(08-23 주), 최저 143위(09-06 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": true,
@@ -94,6 +118,21 @@
   },
   "week": "2026-09-13"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 1,
+   "hn_stories": 1
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 1,
+   "hn_stories": 1,
+   "weeks": 4
+  }
+ },
  "repo_id": 1342461518,
  "topics": [
   "agent-orchestration",
@@ -104,5 +143,49 @@
   "multi-agent",
   "terminal-agent",
   "tui"
+ ],
+ "trend": [
+  {
+   "avg": "120위",
+   "key": "종합 순위",
+   "now": "109위",
+   "prev": "143위"
+  },
+  {
+   "avg": "45.7",
+   "key": "지수",
+   "now": "46.7",
+   "prev": "40.0"
+  },
+  {
+   "avg": "1,099",
+   "key": "스타 증가",
+   "now": "1,344",
+   "prev": "943"
+  },
+  {
+   "avg": "10",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "2"
+  },
+  {
+   "avg": "4",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "2"
+  },
+  {
+   "avg": "2",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "3"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "1",
+   "prev": "0"
+  }
  ]
 }

@@ -7,6 +7,8 @@ from pathlib import Path
 from typing import Any
 
 from radar.core.angles import RULES_V1, AngleRules
+from radar.core.insights import RULES_V1 as INSIGHTS_V1
+from radar.core.insights import InsightRules
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SETTINGS = PROJECT_ROOT / "config" / "settings.toml"
@@ -25,6 +27,7 @@ class Config:
     weights: dict[str, int]
     weights_version: int
     angles: AngleRules = RULES_V1
+    insights: InsightRules = INSIGHTS_V1
 
 
 def load_config(path: Path = DEFAULT_SETTINGS, env: Mapping[str, str] | None = None) -> Config:
@@ -39,8 +42,10 @@ def load_config(path: Path = DEFAULT_SETTINGS, env: Mapping[str, str] | None = N
         cfg_dir = env.get("RADAR_STARTREND_DIR") or str(path.parent / raw["startrend"]["dir"])
         ang = raw.get("angles", {})
         angles = AngleRules(**{k: type(getattr(RULES_V1, k))(v) for k, v in ang.items()})
+        ins = raw.get("insights", {})
+        insights = InsightRules(**{k: type(getattr(INSIGHTS_V1, k))(v) for k, v in ins.items()})
         cfg = Config(Path(cfg_dir).resolve(), int(raw["candidates"]["cap"]),
-                     int(raw["candidates"]["previous_top"]), weights, int(w["version"]), angles)
+                     int(raw["candidates"]["previous_top"]), weights, int(w["version"]), angles, insights)
     except (OSError, KeyError, TypeError, ValueError, tomllib.TOMLDecodeError) as e:
         raise ConfigError(f"설정을 읽지 못했다 ({path.name}: {e})") from e
     if sum(weights.values()) != 100:

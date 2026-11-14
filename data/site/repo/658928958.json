@@ -134,6 +134,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 19,054",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 8명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 11명, 12주 첫 주 6명.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 HN 1건 · 2점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "111위 → 104위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 56위(08-23 주), 최저 131위(08-30 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Go",
  "latest": {
   "backfilled": false,
@@ -185,6 +216,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 2,
+   "hn_stories": 1,
+   "weeks": 12
+  }
+ },
  "repo_id": 658928958,
  "topics": [
   "deepseek",
@@ -201,5 +247,55 @@
   "muse",
   "ollama",
   "qwen"
+ ],
+ "trend": [
+  {
+   "avg": "100위",
+   "key": "종합 순위",
+   "now": "104위",
+   "prev": "111위"
+  },
+  {
+   "avg": "49.0",
+   "key": "지수",
+   "now": "48.8",
+   "prev": "46.7"
+  },
+  {
+   "avg": "1,018",
+   "key": "스타 증가",
+   "now": "952",
+   "prev": "984"
+  },
+  {
+   "avg": "27",
+   "key": "머지 PR",
+   "now": "21",
+   "prev": "16"
+  },
+  {
+   "avg": "8",
+   "key": "PR 작성자",
+   "now": "8",
+   "prev": "4"
+  },
+  {
+   "avg": "30",
+   "key": "닫힌 이슈",
+   "now": "32",
+   "prev": "23"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "19,054",
+   "prev": "—"
+  }
  ]
 }

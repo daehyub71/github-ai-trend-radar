@@ -30,6 +30,37 @@
    "week": "2026-08-16"
   }
  ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 58회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 55개 중 19위.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "2주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "110위 → 86위",
+   "id": "I7",
+   "signal": "index",
+   "text": "2주 최고 86위(이번 주), 최저 110위(08-09 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": true,
@@ -80,6 +111,21 @@
   },
   "week": "2026-08-16"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 2
+  }
+ },
  "repo_id": 1163808211,
  "topics": [
   "agent-skills",
@@ -102,5 +148,55 @@
   "text-only-llm",
   "vision",
   "vision-transformer"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "86위",
+   "prev": "110위"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "52.1",
+   "prev": "46.5"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,443",
+   "prev": "1,438"
+  },
+  {
+   "avg": "—",
+   "key": "주간 다운로드",
+   "now": "84,229",
+   "prev": "23,591"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "34",
+   "prev": "28"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

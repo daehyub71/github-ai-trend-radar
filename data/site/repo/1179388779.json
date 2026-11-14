@@ -56,6 +56,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 1,136",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 4명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "4주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "97위 → 115위",
+   "id": "I7",
+   "signal": "index",
+   "text": "4주 최고 92위(10-18 주), 최저 130위(10-11 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -107,6 +138,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 4
+  }
+ },
  "repo_id": 1179388779,
  "topics": [
   "ai-agent",
@@ -123,5 +169,55 @@
   "python",
   "sales-automation",
   "sellbird"
+ ],
+ "trend": [
+  {
+   "avg": "106위",
+   "key": "종합 순위",
+   "now": "115위",
+   "prev": "97위"
+  },
+  {
+   "avg": "47.7",
+   "key": "지수",
+   "now": "46.8",
+   "prev": "51.2"
+  },
+  {
+   "avg": "1,221",
+   "key": "스타 증가",
+   "now": "1,071",
+   "prev": "1,294"
+  },
+  {
+   "avg": "31",
+   "key": "머지 PR",
+   "now": "27",
+   "prev": "28"
+  },
+  {
+   "avg": "9",
+   "key": "PR 작성자",
+   "now": "4",
+   "prev": "12"
+  },
+  {
+   "avg": "3",
+   "key": "닫힌 이슈",
+   "now": "8",
+   "prev": "3"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "1,136",
+   "prev": "—"
+  }
  ]
 }

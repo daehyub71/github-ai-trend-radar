@@ -56,6 +56,30 @@
    "week": "2026-09-13"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "4주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "133위 → 167위",
+   "id": "I7",
+   "signal": "index",
+   "text": "4주 최고 133위(09-06 주), 최저 184위(08-23 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "JavaScript",
  "latest": {
   "backfilled": true,
@@ -107,6 +131,21 @@
   },
   "week": "2026-09-13"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 4
+  }
+ },
  "repo_id": 1128025899,
  "topics": [
   "ai-agents",
@@ -129,5 +168,49 @@
   "openai-proxy",
   "qwen",
   "token-saver"
+ ],
+ "trend": [
+  {
+   "avg": "163위",
+   "key": "종합 순위",
+   "now": "167위",
+   "prev": "133위"
+  },
+  {
+   "avg": "31.8",
+   "key": "지수",
+   "now": "31.7",
+   "prev": "42.2"
+  },
+  {
+   "avg": "855",
+   "key": "스타 증가",
+   "now": "838",
+   "prev": "1,408"
+  },
+  {
+   "avg": "0",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "0",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "13",
+   "key": "닫힌 이슈",
+   "now": "6",
+   "prev": "16"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }

@@ -1,6 +1,6 @@
 import { SiteFooter, SiteHeader } from "@/components/Chrome";
 import { WeekView } from "@/components/WeekView";
-import { loadWeek, loadWeeks } from "@/lib/data";
+import { loadWeek, loadWeekLines, loadWeeks } from "@/lib/data";
 
 export default function Home() {
   const weeks = loadWeeks();
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SiteHeader active="week" />
-      <WeekView doc={doc} weeks={weeks} />
+      <WeekView doc={doc} weeks={weeks} lines={loadWeekLines(doc.week)} />
       <SiteFooter />
     </>
   );

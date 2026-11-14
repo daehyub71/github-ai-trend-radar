@@ -121,6 +121,37 @@
    "week": "2026-11-01"
   }
  ],
+ "insights": [
+  {
+   "big": "누적 포크 7,129",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 41명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "12주 첫 주 22명 — 기여하는 사람이 늘고 있습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "12주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "13위 → 16위",
+   "id": "I7",
+   "signal": "index",
+   "text": "12주 최고 13위(10-25 주), 최저 122위(09-13 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "Python",
  "latest": {
   "backfilled": false,
@@ -172,6 +203,21 @@
   },
   "week": "2026-11-01"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 12
+  }
+ },
  "repo_id": 1124219907,
  "topics": [
   "ai-agents",
@@ -183,5 +229,55 @@
   "learning",
   "multi-agent-systems",
   "rag"
+ ],
+ "trend": [
+  {
+   "avg": "45위",
+   "key": "종합 순위",
+   "now": "16위",
+   "prev": "13위"
+  },
+  {
+   "avg": "65.2",
+   "key": "지수",
+   "now": "72.9",
+   "prev": "76.2"
+  },
+  {
+   "avg": "5,830",
+   "key": "스타 증가",
+   "now": "3,487",
+   "prev": "10,621"
+  },
+  {
+   "avg": "102",
+   "key": "머지 PR",
+   "now": "115",
+   "prev": "144"
+  },
+  {
+   "avg": "42",
+   "key": "PR 작성자",
+   "now": "41",
+   "prev": "67"
+  },
+  {
+   "avg": "42",
+   "key": "닫힌 이슈",
+   "now": "38",
+   "prev": "22"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "7,129",
+   "prev": "—"
+  }
  ]
 }

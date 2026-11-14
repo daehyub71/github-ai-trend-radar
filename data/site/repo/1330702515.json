@@ -30,6 +30,30 @@
    "week": "2026-08-23"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 8명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "2주 HN 1건 · 5점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "6위 → 126위",
+   "id": "I7",
+   "signal": "index",
+   "text": "2주 최고 6위(08-16 주), 최저 126위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": null,
  "latest": {
   "backfilled": true,
@@ -81,6 +105,65 @@
   },
   "week": "2026-08-23"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 5,
+   "hn_stories": 1,
+   "weeks": 2
+  }
+ },
  "repo_id": 1330702515,
- "topics": []
+ "topics": [],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "126위",
+   "prev": "6위"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "45.3",
+   "prev": "80.9"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "465",
+   "prev": "2,098"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "87",
+   "prev": "140"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "8",
+   "prev": "8"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "8",
+   "prev": "20"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "1"
+  }
+ ]
 }

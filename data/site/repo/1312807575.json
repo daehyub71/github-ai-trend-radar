@@ -82,6 +82,30 @@
    "week": "2026-09-27"
   }
  ],
+ "insights": [
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "4주 전 3명, 6주 첫 주 3명 — 기여하는 사람이 줄었습니다.",
+   "title": "기여 폭"
+  },
+  {
+   "big": "6주 HN 1건 · 1점",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "95위 → 112위",
+   "id": "I7",
+   "signal": "index",
+   "text": "6주 최고 35위(09-13 주), 최저 112위(이번 주).",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
  "language": "TypeScript",
  "latest": {
   "backfilled": true,
@@ -133,6 +157,21 @@
   },
   "week": "2026-09-27"
  },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 1,
+   "hn_stories": 1,
+   "weeks": 6
+  }
+ },
  "repo_id": 1312807575,
  "topics": [
   "chatgpt",
@@ -145,5 +184,49 @@
   "quickstart",
   "responses-api",
   "typescript"
+ ],
+ "trend": [
+  {
+   "avg": "62위",
+   "key": "종합 순위",
+   "now": "112위",
+   "prev": "95위"
+  },
+  {
+   "avg": "58.8",
+   "key": "지수",
+   "now": "46.6",
+   "prev": "50.7"
+  },
+  {
+   "avg": "2,320",
+   "key": "스타 증가",
+   "now": "1,561",
+   "prev": "2,085"
+  },
+  {
+   "avg": "2",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "1",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "62",
+   "key": "닫힌 이슈",
+   "now": "35",
+   "prev": "73"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "0"
+  }
  ]
 }
