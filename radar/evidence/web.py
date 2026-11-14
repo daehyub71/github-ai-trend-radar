@@ -39,16 +39,23 @@ def default_queries(t: ev.Target) -> list[str]:
     return [t.full_name, f"{t.name} github tutorial", f"{t.name} review"]
 
 
-def collect_web(client: HttpClient, api_key: str, t: ev.Target) -> tuple[list[ev.Evidence], int]:
-    """(근거, 쓴 크레딧). 실패한 요청도 크레딧을 쓸 수 있어 크게 센다."""
+def collect_web(
+    client: HttpClient, api_key: str, t: ev.Target
+) -> tuple[list[ev.Evidence], int, list[dict[str, str]]]:
+    """(근거, 쓴 크레딧, 이미지 결과 [{url, description, query}]).
+
+    실패한 요청도 크레딧을 쓸 수 있어 크게 센다.
+    """
     if not api_key:
         raise SourceError("Tavily 키가 없다")
     own = ev.normalize_url(f"https://github.com/{t.full_name}") or ""
     docs: list[ev.Evidence] = []
+    images: list[dict[str, str]] = []
     credits = 0
     for q in default_queries(t):
         payload = {"query": q, "search_depth": "basic", "max_results": MAX_RESULTS, "include_answer": False,
-                   "include_raw_content": False, "include_published_date": True}
+                   "include_raw_content": False, "include_published_date": True,
+                   "include_images": True, "include_image_descriptions": True}
         try:
             credits += 1
             auth = {"Authorization": f"Bearer {api_key}"}
@@ -57,6 +64,12 @@ def collect_web(client: HttpClient, api_key: str, t: ev.Target) -> tuple[list[ev
             raise SourceError(f"Tavily 연결 실패: {type(e).__name__}") from e
         if st != 200 or not isinstance(body, dict) or not isinstance(body.get("results"), list):
             raise SourceError(f"Tavily {st}")
+        for im in body.get("images") or []:
+            url = im.get("url") if isinstance(im, dict) else im
+            new = all(x["url"] != url for x in images)
+            if isinstance(url, str) and url.startswith(("http://", "https://")) and new:
+                desc = str(im.get("description") or "") if isinstance(im, dict) else ""
+                images.append({"url": url, "description": desc, "query": q})
         for r in body["results"]:
             if not isinstance(r, dict) or not isinstance(r.get("url"), str):
                 continue
@@ -68,4 +81,4 @@ def collect_web(client: HttpClient, api_key: str, t: ev.Target) -> tuple[list[ev
                         text=str(r.get("content") or ""), published_at=pub, extra={"query": q})
             if ev.until_ok(d, t.until):
                 docs.append(d)
-    return ev.dedupe(docs), credits
+    return ev.dedupe(docs), credits, images

@@ -27,7 +27,7 @@ NETWORK_MODULES = {"socket", "ssl", "http.client", "urllib.request", "ftplib", "
 NETWORK_ALLOWED_FILES = {"radar/clients/transport.py"}
 LLM_SDK_MODULES = {"anthropic"}
 LLM_SDK_ALLOWED_FILES = {"radar/clients/claude.py"}
-CHART_MODULES = {"matplotlib"}
+CHART_MODULES = {"matplotlib", "PIL"}
 CHART_ALLOWED_FILES = {"radar/publish/charts.py"}  # M8 — 그림 도구는 한 파일에서만 (SPEC D20)
 
 
@@ -86,7 +86,7 @@ def check_sources(sources: Mapping[str, str]) -> list[str]:
             if mod.split(".")[0] in LLM_SDK_MODULES and relpath not in LLM_SDK_ALLOWED_FILES:
                 violations.append(f"{where} LLM SDK 는 clients/claude.py 에서만 ({mod})")
             if mod.split(".")[0] in CHART_MODULES and relpath not in CHART_ALLOWED_FILES:
-                violations.append(f"{where} matplotlib 은 publish/charts.py 에서만 ({mod})")
+                violations.append(f"{where} matplotlib·Pillow 는 publish/charts.py 에서만 ({mod})")
             if mod != PACKAGE and not mod.startswith(PACKAGE + "."):
                 continue
             # `from radar import config` 는 이름마다 층을 본다

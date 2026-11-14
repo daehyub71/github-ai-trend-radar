@@ -181,7 +181,8 @@ def _blog(week_text: str | None, cap: float, dry_run: bool) -> int:
     return 0 if rec["status"] == "ok" else 1
 
 
-def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str]) -> int:
+def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str],
+           images_only: bool = False) -> int:
     """M7 — 저장소 해설 (TOP 10 + 관점 저장소, LLM 저장소당 1회). 해설은 .private/ 에만 (D13)."""
     from radar import cards, pipeline
     from radar.clients.claude import ClaudeClient
@@ -194,6 +195,15 @@ def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str]) ->
             return 0
         key = os.environ.get("STARTREND_ANTHROPIC_API_KEY", "")
         token = os.environ.get("GITHUB_TOKEN", "")
+        if images_only and token:
+            picked = cards.pick_images(week, client=pipeline.make_client(UrllibTransport()), token=token,
+                                       tavily_key=os.environ.get("STARTREND_TAVILY_API_KEY", ""), only=only)
+            kinds: dict[str, int] = {}
+            for v in picked.values():
+                kinds[v["kind"]] = kinds.get(v["kind"], 0) + 1
+            print(json.dumps({"week": week.isoformat(), "pictures": len(picked), "kinds": kinds},
+                             ensure_ascii=False, indent=1))
+            return 0
         if not key or not token:
             print("STARTREND_ANTHROPIC_API_KEY · GITHUB_TOKEN 이 필요하다 — 이 명령에만 넘긴다",
                   file=sys.stderr)
@@ -288,6 +298,8 @@ def main(argv: list[str] | None = None) -> int:
                     help="LLM 비용 상한(달러) — 그 주 초안 비용을 뺀 나머지를 쓴다")
     cd.add_argument("--dry-run", action="store_true", help="호출 없이 대상·예상 호출·비용만")
     cd.add_argument("--only", action="append", default=[], metavar="OWNER/NAME", help="이 저장소만 (여러 번)")
+    cd.add_argument("--images-only", action="store_true",
+                    help="LLM 없이 저장소 설명 그림만 고른다(근거 캐시 사용)")
     im = sub.add_parser("images",
                         help="글 그림 — 차트 4종·관점 저장소 카드 PNG (네트워크·LLM 0, 비공개 저장소에만)")
     im.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
@@ -305,7 +317,7 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "blog":
         return _blog(args.week, args.cap, args.dry_run)
     if args.cmd == "cards":
-        return _cards(args.week, args.cap, args.dry_run, args.only)
+        return _cards(args.week, args.cap, args.dry_run, args.only, args.images_only)
     if args.cmd == "images":
         return _images(args.week)
     if args.cmd == "notion":

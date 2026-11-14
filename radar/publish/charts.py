@@ -19,7 +19,8 @@ from matplotlib import font_manager  # noqa: E402 — 백엔드를 정한 뒤에
 from matplotlib import pyplot as plt  # noqa: E402
 from matplotlib.axes import Axes  # noqa: E402
 from matplotlib.figure import Figure  # noqa: E402
-from matplotlib.patches import Rectangle  # noqa: E402
+from matplotlib.patches import FancyBboxPatch, Rectangle  # noqa: E402
+from PIL import Image, UnidentifiedImageError  # noqa: E402
 
 from radar.core.charts_data import Bar, MapPoint, Series, Share, quadrant  # noqa: E402
 
@@ -46,6 +47,25 @@ INK, MUTED, GRID, BG, ACCENT, SHADE = "#111827", "#4B5563", "#E5E7EB", "#FFFFFF"
 TOP_COLOR = INK  # 신호 지도의 TOP 점 — 관점 C(파랑)와 겹치지 않게
 FONT_CANDIDATES = ("Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "AppleGothic", "NanumGothic")
 RANK_TICKS = (1, 2, 3, 5, 10, 20, 50, 100, 200)
+
+
+IMAGE_FORMATS = {"PNG": "png", "JPEG": "jpg", "GIF": "gif", "WEBP": "webp"}
+MIN_W, MIN_H = 200, 100
+
+
+def inspect_image(data: bytes) -> tuple[str, int, int] | None:
+    """받은 내용이 그림인지 — (확장자, 폭, 높이). 형식이 다르거나 너무 작으면 None."""
+    from io import BytesIO
+
+    try:
+        with Image.open(BytesIO(data)) as im:
+            fmt, (w, h) = im.format or "", im.size
+            im.verify()
+    except (UnidentifiedImageError, OSError, ValueError, Image.DecompressionBombError):
+        return None
+    if fmt not in IMAGE_FORMATS or w < MIN_W or h < MIN_H:
+        return None
+    return IMAGE_FORMATS[fmt], w, h
 
 
 def pick_font() -> str | None:
@@ -333,6 +353,98 @@ def draw_trend_analysis(
     return _save(fig, path)
 
 
+def _layers(nodes: Sequence[Mapping[str, str]], edges: Sequence[Mapping[str, str]]) -> dict[str, int]:
+    """상자마다 단(왼쪽부터 0) — 들어오는 화살표가 없는 상자에서 가장 긴 길. 고리는 순서대로 끊는다."""
+    ids = [n["id"] for n in nodes]
+    layer = {i: 0 for i in ids}
+    for _ in range(len(ids)):
+        changed = False
+        for e in edges:
+            a, b = e["from"], e["to"]
+            if a in layer and b in layer and ids.index(a) < ids.index(b) and layer[b] < layer[a] + 1:
+                layer[b] = layer[a] + 1
+                changed = True
+        if not changed:
+            break
+    return layer
+
+
+def draw_diagram(
+    nodes: Sequence[Mapping[str, str]],
+    edges: Sequence[Mapping[str, str]],
+    path: Path,
+    *,
+    full_name: str,
+    week: str,
+) -> Path:
+    """구조도(D22) — README 를 바탕으로 AI 가 정한 상자·화살표를 왼쪽 → 오른쪽 흐름으로."""
+    fig = _figure()
+    _head(
+        fig,
+        f"{_short(full_name)} — 어떻게 동작하나",
+        "README 를 바탕으로 AI 가 정리한 구조도 · 자동 생성",
+        f"깃허브 AI 트렌드 레이더 · {week} 주 · {full_name}",
+    )
+    ax = fig.add_axes((0.04, 0.08, 0.92, 0.76))
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 100)
+    ax.axis("off")
+    layer = _layers(nodes, edges)
+    cols = max(layer.values()) + 1 if layer else 1
+    by_col: dict[int, list[str]] = {}
+    for n in nodes:
+        by_col.setdefault(layer[n["id"]], []).append(n["id"])
+    bw, bh = min(24.0, 80.0 / cols), 16.0
+    pos: dict[str, tuple[float, float]] = {}
+    for c, members in by_col.items():
+        x = 6 + (c + 0.5) * (88 / cols)
+        for k, nid in enumerate(members):
+            y = 50 + ((len(members) - 1) / 2 - k) * (bh + 10)
+            pos[nid] = (x, y)
+    labels = {n["id"]: n["label"] for n in nodes}
+    for e in edges:
+        (x1, y1), (x2, y2) = pos[e["from"]], pos[e["to"]]
+        ax.annotate(
+            "",
+            xy=(x2 - bw / 2, y2),
+            xytext=(x1 + bw / 2, y1),
+            arrowprops={"arrowstyle": "-|>", "color": MUTED, "linewidth": 2, "mutation_scale": 22},
+        )
+        if e.get("label"):
+            ax.text(
+                (x1 + x2) / 2,
+                (y1 + y2) / 2 + 3,
+                e["label"],
+                ha="center",
+                va="bottom",
+                fontsize=13,
+                color=MUTED,
+            )
+    for nid, (x, y) in pos.items():
+        ax.add_patch(
+            FancyBboxPatch(
+                (x - bw / 2, y - bh / 2),
+                bw,
+                bh,
+                boxstyle="round,pad=0.4,rounding_size=2",
+                facecolor="#EEF2FF",
+                edgecolor=ACCENT,
+                linewidth=2,
+            )
+        )
+        ax.text(
+            x,
+            y,
+            "\n".join(textwrap.wrap(labels[nid], width=10)[:3]),
+            ha="center",
+            va="center",
+            fontsize=17,
+            color=INK,
+            fontweight="bold",
+        )
+    return _save(fig, path)
+
+
 def draw_repo_card(
     *,
     full_name: str,
@@ -343,24 +455,33 @@ def draw_repo_card(
     lines: Sequence[str],
     path: Path,
     week: str,
+    picture: Path | None = None,
+    caption: str = "",
 ) -> Path:
-    """R1 — 저장소 카드: 이름·카테고리·관점, 해설 요약(또는 코드 관찰), 신호 백분위 막대, 12주 순위."""
+    """R1 — 저장소 카드: 이름·카테고리·관점, 설명 그림(있으면), 해설 요약(또는 코드 관찰),
+    신호 막대, 12주 순위.
+    """
     fig = _figure()
     color = ANGLE_COLORS.get(angle or "", ACCENT)
-    fig.patches.append(
-        Rectangle((0, 0.965), 1, 0.035, color=color, transform=fig.transFigure, figure=fig)
-    )
+    fig.patches.append(Rectangle((0, 0.965), 1, 0.035, color=color, transform=fig.transFigure, figure=fig))
     tag = f"관점 {angle} · {ANGLE_NAMES[angle]}" if angle in ANGLE_NAMES else "이번 주 TOP"
     fig.text(0.05, 0.90, tag, fontsize=16, color=color, fontweight="bold", va="top")
     fig.text(0.05, 0.84, full_name, fontsize=32, color=INK, fontweight="bold", va="top")
     fig.text(0.05, 0.765, category, fontsize=15, color=MUTED, va="top")
-    y = 0.68
+    y, size, width, rows, step = 0.68, 17, 40, 3, 0.05
+    if picture is not None:
+        pic = fig.add_axes((0.05, 0.38, 0.52, 0.33))
+        with Image.open(picture) as im:
+            pic.imshow(im.convert("RGB"))
+        pic.axis("off")
+        fig.text(0.05, 0.365, caption, fontsize=11, color=MUTED, va="top")
+        y, size, width, rows, step = 0.31, 14, 52, 2, 0.04
     for line in lines[:3]:
-        wrapped = textwrap.wrap(line, width=40) or [""]
-        for j, part in enumerate(wrapped[:3]):
-            fig.text(0.05, y, ("· " if j == 0 else "  ") + part, fontsize=17, color=INK, va="top")
-            y -= 0.05
-        y -= 0.025
+        wrapped = textwrap.wrap(line, width=width) or [""]
+        for j, part in enumerate(wrapped[:rows]):
+            fig.text(0.05, y, ("· " if j == 0 else "  ") + part, fontsize=size, color=INK, va="top")
+            y -= step
+        y -= step / 2
     bars = fig.add_axes((0.62, 0.50, 0.33, 0.36))
     ys = list(range(len(SIGNALS)))
     vals = [pct.get(s) for s in SIGNALS]

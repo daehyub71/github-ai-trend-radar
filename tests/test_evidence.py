@@ -179,15 +179,19 @@ def test_evidence_web_tavily_three_queries_skip_own_repo_and_late():
         {"url": "https://github.com/org/tool/issues/1", "title": "own", "content": "x"},
         {"url": "https://late.example.com", "title": "late", "content": "x", "published_date": "2026-11-20"},
         {"url": "https://www.reddit.com/r/x/1", "title": "thread", "content": "s"},
-    ]}
+    ], "images": [{"url": "https://cdn.example.com/tool.png", "description": "Tool overview"},
+                  "javascript:x"]}
     t = FakeTransport([("api.tavily.com", ok(res))])
     c, _ = _client(t)
-    docs, credits = collect_web(c, "tv-secret", T)
+    docs, credits, images = collect_web(c, "tv-secret", T)
     assert credits == 3 and len(t.requests) == 3
+    assert images == [{"url": "https://cdn.example.com/tool.png", "description": "Tool overview",
+                       "query": "org/tool"}]
     assert [d.url for d in docs] == ["https://blog.example.com/a?utm_source=x", "https://www.reddit.com/r/x/1"]
     assert docs[0].published_at == "2026-11-02T10:00:00Z" and docs[0].source == "web"
     body = json.loads(t.bodies[0] or b"{}")
     assert body["query"] == "org/tool" and body["include_published_date"] is True
+    assert body["include_images"] is True
     assert t.requests[0][0] == "POST" and t.requests[0][2]["Authorization"] == "Bearer tv-secret"
 
 
@@ -196,3 +200,48 @@ def test_evidence_web_error_hides_key():
     with pytest.raises(SourceError) as e:
         collect_web(c, "tv-secret", T)
     assert "tv-secret" not in str(e.value)
+
+
+# --- 저장소 설명 그림 받기 (T8-10) ------------------------------------------------------------------
+
+def _png(w: int = 400, h: int = 200) -> bytes:
+    from io import BytesIO
+
+    from PIL import Image
+
+    buf = BytesIO()
+    Image.new("RGB", (w, h), "white").save(buf, "PNG")
+    return buf.getvalue()
+
+
+def test_evidence_images_repo_meta_homepage_og_and_fetch():
+    from radar.clients.transport import HttpResponse
+    from radar.evidence.images import fetch_image, homepage_og, repo_meta
+
+    gql = {"data": {"r0": {"nameWithOwner": "Org/Tool", "usesCustomOpenGraphImage": True,
+                           "openGraphImageUrl": "https://repository-images.githubusercontent.com/1/a",
+                           "homepageUrl": "https://tool.dev", "licenseInfo": {"spdxId": "MIT"}},
+                    "r1": {"nameWithOwner": "org/plain", "usesCustomOpenGraphImage": False,
+                           "openGraphImageUrl": "https://opengraph.githubassets.com/x", "homepageUrl": "",
+                           "licenseInfo": None}}}
+    png = _png()
+    t = FakeTransport([
+        ("api.github.com/graphql", ok(gql)),
+        ("/og.png", HttpResponse(200, {"content-type": "image/png"}, png)),
+        ("/vector.svg", HttpResponse(200, {"Content-Type": "image/svg+xml"}, b"<svg/>")),
+        ("/page.html", HttpResponse(200, {"Content-Type": "text/html"}, b"<html>")),
+        ("/missing.png", HttpResponse(404, {}, b"")),
+        ("tool.dev/", ok('<meta property="og:image" content="/og.png">')),
+    ])
+    c, _ = _client(t)
+    meta = repo_meta(c, "tok", ["Org/Tool", "org/plain"])
+    assert meta == {"org/tool": {"social": "https://repository-images.githubusercontent.com/1/a",
+                                 "homepage": "https://tool.dev", "license": "MIT"},
+                    "org/plain": {"social": None, "homepage": None, "license": None}}
+    assert t.requests[0][0] == "POST" and t.requests[0][2]["Authorization"] == "Bearer tok"
+    assert homepage_og(c, "https://tool.dev/") == "https://tool.dev/og.png"
+    assert homepage_og(c, "ftp://x") is None
+    assert fetch_image(c, "https://tool.dev/og.png") == png
+    assert fetch_image(c, "https://tool.dev/vector.svg") is None  # SVG 는 뺀다
+    assert fetch_image(c, "https://tool.dev/page.html") is None  # 그림이 아니다
+    assert fetch_image(c, "https://tool.dev/missing.png") is None  # 404

@@ -57,6 +57,7 @@ def test_architecture_detects_matplotlib_outside_charts():
     v = check_sources({"radar/site.py": "import matplotlib.pyplot as plt\n",
                        "radar/publish/charts.py": "import matplotlib\nfrom matplotlib import pyplot\n"})
     assert len(v) == 1 and "publish/charts.py 에서만" in v[0] and v[0].startswith("radar/site.py")
+    assert check_sources({"radar/cards.py": "from PIL import Image\n"})  # Pillow 도 같다
 
 
 def test_architecture_detects_relative_import():

@@ -14,7 +14,7 @@ from typing import Any
 from radar.clients.claude import LLMRequest
 from radar.core import evidence as ev
 from radar.core.untrusted import block
-from radar.publish.gate import allowed_numbers, check
+from radar.publish.gate import LINK, allowed_numbers, check
 
 VERSION = 1
 MAX_TOKENS = 8000
@@ -51,6 +51,12 @@ def _obj(props: dict[str, Any]) -> dict[str, Any]:
     return {"type": "object", "properties": props, "required": list(props), "additionalProperties": False}
 
 
+_NODE = _obj({"id": {"type": "string"}, "label": {"type": "string"}})
+_EDGE = _obj({"from": {"type": "string"}, "to": {"type": "string"}, "label": {"type": "string"}})
+DIAGRAM_NODES = (3, 6)  # 구조도 상자 수 (최소, 최대)
+DIAGRAM_EDGES = 8
+LABEL_MAX = 24
+
 SCHEMA: dict[str, Any] = _obj({
     "summary": _obj({"what": CLAIM, "why_now": CLAIM, "watch": CLAIM}),
     "trend_notes": {"type": "array", "items": CLAIM},
@@ -58,6 +64,9 @@ SCHEMA: dict[str, Any] = _obj({
     "buzz": _obj({"nature": {"type": "string", "enum": list(NATURES)}, "trigger": CLAIM,
                   "reactions": {"type": "array", "items": CLAIM}, "reading": CLAIM}),
     "watch": {"type": "array", "items": CLAIM},
+    "diagram": _obj({"nodes": {"type": "array", "items": _NODE}, "edges": {"type": "array", "items": _EDGE}}),
+    "illustration": _obj({"teach": {"type": "string"}, "prompt": {"type": "string"},
+                          "labels": {"type": "array", "items": {"type": "string"}}}),
 })
 
 
@@ -153,6 +162,30 @@ def gate(raw: Mapping[str, Any], facts: Mapping[str, Any],
     comments = sum(int(p.get("comments") or 0) for p in posts)
     if nature in STRONG_NATURES and comments < NATURE_MIN_COMMENTS:
         nature = "소개"  # 댓글 몇 개로 논란·호평이라 부르지 않는다
+    def label(text: Any) -> str | None:
+        t = str(text or "").strip()[:LABEL_MAX]
+        return t if t and not check(t, allowed) else None
+
+    diagram = None
+    d = raw.get("diagram")
+    if isinstance(d, Mapping):
+        nodes = []
+        for n in (d.get("nodes") or [])[: DIAGRAM_NODES[1] + 2]:
+            if isinstance(n, Mapping) and n.get("id") and (lb := label(n.get("label"))):
+                nodes.append({"id": str(n["id"]), "label": lb})
+        nodes = nodes[: DIAGRAM_NODES[1]]
+        ids = {n["id"] for n in nodes}
+        edges = [{"from": str(e["from"]), "to": str(e["to"]), "label": label(e.get("label")) or ""}
+                 for e in d.get("edges") or []
+                 if isinstance(e, Mapping) and e.get("from") in ids and e.get("to") in ids][:DIAGRAM_EDGES]
+        if len(nodes) >= DIAGRAM_NODES[0]:
+            diagram = {"nodes": nodes, "edges": edges}
+    illustration = None
+    il = raw.get("illustration")
+    if isinstance(il, Mapping) and str(il.get("prompt") or "").strip() and not LINK.search(str(il["prompt"])):
+        labels = [lb for x in il.get("labels") or [] if (lb := label(x))]
+        illustration = {"teach": label(il.get("teach")) or "", "prompt": str(il["prompt"]).strip(),
+                        "labels": labels}
     clean = {
         "summary": {k: claim(s.get(k), f"summary.{k}") for k in ("what", "why_now", "watch")},
         "trend_notes": many(raw.get("trend_notes"), "trend_notes", CAPS["trend_notes"]),
@@ -161,6 +194,8 @@ def gate(raw: Mapping[str, Any], facts: Mapping[str, Any],
                  "reactions": many(b.get("reactions"), "buzz.reactions", CAPS["reactions"]),
                  "reading": claim(b.get("reading"), "buzz.reading")},
         "watch": many(raw.get("watch"), "watch", CAPS["watch"]),
+        "diagram": diagram,
+        "illustration": illustration,
     }
     return clean, report
 
@@ -202,5 +237,6 @@ def site_card(clean: Mapping[str, Any], *, target: ev.Target, week: str, model: 
         "what": list(clean["what"]),
         "buzz": {"posts": [dict(p) for p in posts], **clean["buzz"]},
         "watch": list(clean["watch"]), "releases": [dict(r) for r in releases], "evidence": evidence,
+        "diagram": clean.get("diagram"), "illustration": clean.get("illustration"),
         "history": sorted(hist, key=lambda h: str(h["week"]), reverse=True),
     }

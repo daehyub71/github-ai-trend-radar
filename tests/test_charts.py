@@ -94,3 +94,53 @@ def test_charts_render_all_four_and_card(tmp_path):
 
 def test_charts_font_pick_is_known_or_none():
     assert charts.pick_font() in (*charts.FONT_CANDIDATES, None)
+
+
+def test_charts_inspect_image_accepts_real_pictures_only():
+    from io import BytesIO
+
+    from PIL import Image
+
+    def png(w: int, h: int) -> bytes:
+        buf = BytesIO()
+        Image.new("RGB", (w, h), "white").save(buf, "PNG")
+        return buf.getvalue()
+
+    assert charts.inspect_image(png(640, 320)) == ("png", 640, 320)
+    assert charts.inspect_image(png(64, 64)) is None  # 아이콘 크기
+    assert charts.inspect_image(b"<html>not an image</html>") is None
+
+
+def test_charts_diagram_and_card_with_picture(tmp_path):
+    _quiet()
+    from PIL import Image
+
+    nodes = [
+        {"id": "a", "label": "React 컴포넌트"},
+        {"id": "b", "label": "렌더러"},
+        {"id": "c", "label": "MP4"},
+        {"id": "d", "label": "클라우드 렌더"},
+    ]
+    edges = [
+        {"from": "a", "to": "b", "label": "프레임마다"},
+        {"from": "b", "to": "c", "label": "인코딩"},
+        {"from": "a", "to": "d", "label": ""},
+    ]
+    d = charts.draw_diagram(nodes, edges, tmp_path / "d.png", full_name="o/tool", week="2026-11-01")
+    assert _size(d) == (1600, 900)
+    assert charts._layers(nodes, edges) == {"a": 0, "b": 1, "c": 2, "d": 1}
+    pic = tmp_path / "p.png"
+    Image.new("RGB", (800, 400), "#DDEEFF").save(pic)
+    card = charts.draw_repo_card(
+        full_name="o/tool",
+        category="MCP",
+        angle="B",
+        pct={"s1": 90.0, "s2": None, "s3": 10.0, "s4": None, "s5": 95.0},
+        ranks=[(w, 50) for w in WEEKS],
+        lines=["무엇", "왜", "볼 것"],
+        path=tmp_path / "c.png",
+        week="2026-11-01",
+        picture=pic,
+        caption="그림: o/tool · 공개용(소셜 미리보기)",
+    )
+    assert _size(card) == (1600, 900)

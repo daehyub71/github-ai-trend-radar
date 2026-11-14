@@ -21,13 +21,15 @@ from radar.clients.http import HttpClient
 from radar.config import PROJECT_ROOT
 from radar.core import evidence as ev
 from radar.core.geeknews import Topic
+from radar.core.repo_images import explanatory, rank_candidates, readme_images
 from radar.core.weeks import week_end
 from radar.evidence.base import SourceError
 from radar.evidence.geeknews import collect_geeknews, geeknews_week
 from radar.evidence.github import collect_github
 from radar.evidence.hn import collect_hn
+from radar.evidence.images import fetch_image, homepage_og, repo_meta
 from radar.evidence.web import collect_web
-from radar.publish import card
+from radar.publish import card, charts
 from radar.publish.budget import Budget, BudgetExceeded, cost_usd
 from radar.store import DATA, json_text, write_mutable
 
@@ -72,6 +74,7 @@ class Collected:
     failures: list[str] = field(default_factory=list)
     credits: int = 0
     cached: bool = False
+    images: list[dict[str, str]] = field(default_factory=list)  # 웹 이미지 검색 결과 (D21)
 
 
 def _cache(work: Path, week: date, name: str) -> Path:
@@ -127,7 +130,13 @@ def collect(
     p = _cache(work, t.since, f"{t.repo_id}.json")
     if p.exists():
         raw = _read(p)
-        return Collected([ev.from_record(r) for r in raw["docs"]], raw["posts"], raw["releases"], cached=True)
+        return Collected(
+            [ev.from_record(r) for r in raw["docs"]],
+            raw["posts"],
+            raw["releases"],
+            cached=True,
+            images=list(raw.get("images") or []),
+        )
     failures: list[str] = []
     gh_docs, releases, problems = collect_github(client, token, t)
     failures += [f"github {x}" for x in problems]
@@ -139,10 +148,11 @@ def collect(
         failures.append(f"hn {e}")
     gn_docs, gn_posts = collect_geeknews(dict(gn), t)
     web_docs: list[ev.Evidence] = []
+    web_images: list[dict[str, str]] = []
     credits = 0
     if tavily_key:
         try:
-            web_docs, credits = collect_web(client, tavily_key, t)
+            web_docs, credits, web_images = collect_web(client, tavily_key, t)
         except SourceError as e:
             failures.append(f"web {e}")
             credits = 3
@@ -150,14 +160,15 @@ def collect(
         failures.append("web 키 없음")
     docs = [d for d in ev.dedupe(gh_docs + hn_docs + gn_docs + web_docs) if ev.until_ok(d, t.until)]
     posts = sorted(posts + gn_posts, key=lambda x: (-int(x["points"] or 0), str(x["url"])))
-    col = Collected(docs, posts, releases, failures, credits)
+    col = Collected(docs, posts, releases, failures, credits, images=web_images)
     if not failures:
-        write_mutable(
-            p,
-            json_text(
-                {"docs": [d.record(with_text=True) for d in docs], "posts": posts, "releases": releases}
-            ),
-        )
+        record = {
+            "docs": [d.record(with_text=True) for d in docs],
+            "posts": posts,
+            "releases": releases,
+            "images": web_images,
+        }
+        write_mutable(p, json_text(record))
     return col
 
 
@@ -196,6 +207,100 @@ def facts_for(t: ev.Target, week: date, col: Collected, data: Path = DATA) -> di
         "posts_this_week": col.posts,
         "releases_this_week": col.releases,
     }
+
+
+def slug(full_name: str) -> str:
+    return full_name.replace("/", "__")
+
+
+def pick_image(
+    t: ev.Target,
+    col: Collected,
+    meta: Mapping[str, Any] | None,
+    *,
+    client: HttpClient,
+    folder: Path,
+    known: Mapping[str, Any],
+) -> dict[str, Any] | None:
+    """저장소 설명 그림 하나 (SPEC F11 · D21) — 후보를 차례로 받아 설명이 되는 첫 그림.
+
+    받아 둔 것이 있으면 그대로 쓴다.
+    """
+    key = slug(t.full_name)
+    old = known.get(key)
+    if old and (folder / old["file"]).exists():
+        return dict(old)
+    m = meta or {}
+    readme = next((d.text for d in col.docs if d.kind == "readme"), "")
+    home = m.get("homepage")
+    cands = rank_candidates(
+        readme=readme_images(readme, t.full_name),
+        license_id=m.get("license"),
+        social=m.get("social"),
+        homepage_og=homepage_og(client, home) if home else None,
+        homepage=home,
+        web=col.images,
+        full_name=t.full_name,
+    )
+    for c in cands:
+        data = fetch_image(client, c.url)
+        info = charts.inspect_image(data) if data else None
+        if data is None or info is None or not explanatory(info[1], info[2]):
+            continue
+        ext, w, h = info
+        name = f"{key}.{ext}"
+        folder.mkdir(parents=True, exist_ok=True)
+        (folder / name).write_bytes(data)
+        return {
+            "kind": c.kind,
+            "url": c.url,
+            "source": c.source,
+            "rights": c.rights,
+            "file": name,
+            "width": w,
+            "height": h,
+        }
+    return None
+
+
+def _meta(client: HttpClient, token: str, ts: Sequence[ev.Target], work: Path, week: date) -> dict[str, Any]:
+    """소셜 미리보기·홈페이지·라이선스 — 그 주에 한 번(캐시)."""
+    path = _cache(work, week, "meta.json")
+    if path.exists():
+        cached: dict[str, Any] = _read(path)
+        if cached:
+            return cached
+    meta = repo_meta(client, token, [t.full_name for t in ts])
+    if meta:
+        write_mutable(path, json_text(meta))
+    return meta
+
+
+def pick_images(
+    week: date,
+    *,
+    client: HttpClient,
+    token: str,
+    tavily_key: str,
+    data: Path = DATA,
+    private: Path = PRIVATE,
+    work: Path = WORK,
+    only: Sequence[str] = (),
+) -> dict[str, Any]:
+    """--images-only — LLM 없이 저장소 설명 그림만 고른다(근거 캐시를 쓴다)."""
+    ts = _filter(targets(week, data), only)
+    folder = private / "weeks" / week.isoformat() / "blog" / "images"
+    index = folder / "images.json"
+    known: dict[str, Any] = _read(index) if index.exists() else {}
+    meta = _meta(client, token, ts, work, week)
+    gn, _ = _geeknews(client, week, work)
+    for t in ts:
+        col = collect(t, client=client, token=token, tavily_key=tavily_key, gn=gn, work=work)
+        picked = pick_image(t, col, meta.get(t.full_name.lower()), client=client, folder=folder, known=known)
+        if picked:
+            known[slug(t.full_name)] = picked
+    write_mutable(index, json_text(known))
+    return known
 
 
 def blog_spent(week: date, private: Path = PRIVATE) -> float:
@@ -316,9 +421,16 @@ def write_cards(
     lines: dict[str, str] = _read(lines_path)["lines"] if lines_path.exists() else {}
     results: list[dict[str, Any]] = []
     credits = 0
+    img_dir = private / "weeks" / wk / "blog" / "images"
+    img_index = img_dir / "images.json"
+    known: dict[str, Any] = _read(img_index) if img_index.exists() else {}
+    meta = _meta(client, token, ts, work, week)
     for t in ts:
         col = collect(t, client=client, token=token, tavily_key=tavily_key, gn=gn, work=work)
         credits += col.credits
+        picked = pick_image(t, col, meta.get(t.full_name.lower()), client=client, folder=img_dir, known=known)
+        if picked:
+            known[slug(t.full_name)] = picked
         facts = facts_for(t, week, col, data)
         req = card.build_request(facts, col.docs)
         raw, status, model, tin, tout, cost = _complete(llm, req, budget, models)
@@ -353,9 +465,9 @@ def write_cards(
         )
         write_mutable(latest, json_text(site))
         write_mutable(private / "site-private" / "cards" / f"{t.repo_id}.json", json_text(site))
-        slug = t.full_name.replace("/", "__")
+        fname = slug(t.full_name)
         write_mutable(
-            private / "weeks" / wk / "cards" / f"{slug}.json",
+            private / "weeks" / wk / "cards" / f"{fname}.json",
             json_text(
                 {
                     "card": site,
@@ -373,6 +485,7 @@ def write_cards(
         results.append(row)
         log(f"  {t.full_name}: ok · 근거 {len(col.docs)} · 제외 {len(report.excluded)} · ${cost:.4f}")
     write_mutable(lines_path, json_text({"week": wk, "lines": lines}))
+    write_mutable(img_index, json_text(known))
     _write_index(private)
     record = {
         "week": wk,

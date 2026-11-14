@@ -1,6 +1,6 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.6** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.6.
+> **상태: v0.7** (2026-11-14). 기준 문서는 `docs/SPEC.md` v0.7.
 > PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
@@ -125,6 +125,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 - `trend_notes[]` Claim(2~4) · `what[]` Claim + `label`(푸는 문제·구조·쓰는 사람·대안과 비교한 자리)
 - `buzz{posts[], nature, trigger, reactions[], reading}` — `posts[]{site(HN|GeekNews), title, url, points, comments, date, target}`, `nature` 소개·호평·논란·질문·null, `trigger`·`reading` Claim 또는 null
 - `watch[]` Claim(2~3) · `releases[]{tag, date, url}` · `evidence[]{id, title(120자), site, date, url}` · `history[]{week, why_now}`
+- (M8, 선택) `diagram{nodes[]{id,label}, edges[]{from,to,label}}` 구조도 · `illustration{teach, prompt, labels[]}` 일러스트 프롬프트 — 없으면 null. 웹은 읽지 않는다
 - **Claim** = `{text, sources[], basis}` — `sources` 는 근거 번호(`E1`…)와 코드 값(`F`), `basis` 는 `확인`|`추정`
 - 숫자 표(02절 동향 표·04절 언급 숫자·05절 관찰)는 공개 `data/site/repo/<id>.json` 의 `trend`·`mentions`·`insights` 에서 온다(코드 계산)
 - 크기 가드(커밋 전 훅 + CI)가 공개 저장소에 초안·해설이 들어오는 것을 막는다.
@@ -174,6 +175,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | P4 | HTTP | 표준 라이브러리 `urllib` (새 패키지 0). M5의 `anthropic` SDK는 그때 사용자 확인 |
 | P5 | 해설 코드 | star-trend의 근거·게이트·빌드 받기 코드를 **복사해 고친다**(공유 패키지로 만들지 않는다 — ai-trend-batch `budget.py` 복사 선례). 레이더 층 규칙 안으로 옮긴다 |
 | P7 | 그림 (M8) | matplotlib(Agg) 로 PNG 를 그린다. 글꼴은 이름으로 찾고(Noto Sans CJK KR → Apple SD Gothic Neo), 없으면 그림 단계만 실패로 남기고 초안은 그림 자리 없이 쓴다. Notion 업로드·결합은 star-trend `notion` 업로드 방식을 옮긴다(P5) |
+| P8 | 저장소 설명 그림 (M8) | 해설 단계(`radar cards`)가 근거와 함께 그림 후보를 모은다 — README 는 이미 받은 원문에서, 소셜 미리보기·홈페이지는 GraphQL 한 번, 홈페이지 og:image 는 HTML 한 번, 웹 이미지는 Tavily 같은 검색에 `include_images`(크레딧 추가 없음). 고른 그림만 받아 Pillow 로 확인한다(Pillow 도 `publish/charts.py` 에서만). 구조도·일러스트 프롬프트는 해설 JSON 스키마에 `diagram`·`illustration` 을 더한다 — 호출 수는 그대로 |
 | P6 | 해설 호출 | Sonnet 5.5 일반 호출(Batch 안 씀) — 25장 × 약 35초 ≈ 15분이라 주간 실행 시간 안에 든다. 실패하면 한 번 다시 묻고, 그래도 안 되면 그 저장소는 숫자·관찰만 |
 
 ---
@@ -199,5 +201,6 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.7 | 2026-11-14 | SPEC v0.7 D21~D23 반영: P8 저장소 설명 그림(후보 수집·확인·구조도) |
 | v0.6 | 2026-11-14 | SPEC v0.6 F11 반영: M8 글 그림(차트 데이터·그리기·초안 결합·Notion 업로드), P7, PK6 |
 | v0.5 | 2026-11-14 | SPEC v0.5 F10 반영: M7 저장소 해설(모듈·저장·테스트), P5·P6 제안, PK4·PK5 |

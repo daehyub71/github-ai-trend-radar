@@ -66,7 +66,8 @@ def test_card_request_wraps_untrusted_evidence_and_truncates():
     assert "[E2] github · release · 2026-11-05 · github.com" in req.user
     assert "x" * 6001 not in req.user  # README 6,000자까지
     assert "https://example.com/remotion-guide" not in req.user  # URL 대신 사이트 이름만
-    assert set(SCHEMA["required"]) == {"summary", "trend_notes", "what", "buzz", "watch"}
+    assert set(SCHEMA["required"]) == {"summary", "trend_notes", "what", "buzz", "watch", "diagram",
+                                       "illustration"}
 
 
 def test_card_parse_rejects_bad_shapes():
@@ -137,3 +138,26 @@ def test_card_gate_nature_needs_enough_comments():
     buzz["nature"] = "질문"
     clean, _ = gate(raw, few, _docs())
     assert clean["buzz"]["nature"] == "질문"  # 소개·질문은 댓글 수와 상관없다
+
+
+def test_card_gate_diagram_and_illustration():
+    raw = _raw()
+    raw["diagram"] = {
+        "nodes": [{"id": "a", "label": "React 컴포넌트"}, {"id": "b", "label": "렌더러"},
+                  {"id": "c", "label": "MP4 파일"}, {"id": "d", "label": "https://x.com"},
+                  {"id": "e", "label": "9999 프레임"}],
+        "edges": [{"from": "a", "to": "b", "label": "프레임마다"},
+                  {"from": "b", "to": "c", "label": "인코딩"},
+                  {"from": "b", "to": "d", "label": "링크"}, {"from": "zz", "to": "a", "label": "없는 상자"}],
+    }
+    raw["illustration"] = {"teach": "코드로 영상을 만드는 흐름", "prompt": "A flat diagram of frames " * 20,
+                           "labels": ["컴포넌트", "렌더", "https://bad"]}
+    clean, report = gate(raw, FACTS, _docs())
+    assert [n["id"] for n in clean["diagram"]["nodes"]] == ["a", "b", "c"]  # 링크·사실 밖 숫자 상자는 뺀다
+    assert clean["diagram"]["edges"] == [{"from": "a", "to": "b", "label": "프레임마다"},
+                                         {"from": "b", "to": "c", "label": "인코딩"}]
+    assert clean["illustration"]["labels"] == ["컴포넌트", "렌더"]
+    raw["diagram"] = {"nodes": [{"id": "a", "label": "하나"}, {"id": "b", "label": "둘"}], "edges": []}
+    raw["illustration"] = {"teach": "t", "prompt": "see https://x.com", "labels": []}
+    clean, _ = gate(raw, FACTS, _docs())
+    assert clean["diagram"] is None and clean["illustration"] is None  # 상자 3개 미만 · 프롬프트에 링크

@@ -85,6 +85,22 @@ def _transport() -> FakeTransport:
                 "api.tavily.com",
                 ok({"results": [{"url": "https://blog.example.com/t", "title": "Guide", "content": "s"}]}),
             ),
+            (
+                "api.github.com/graphql",
+                ok(
+                    {
+                        "data": {
+                            "r0": {
+                                "nameWithOwner": "org/tool",
+                                "usesCustomOpenGraphImage": False,
+                                "openGraphImageUrl": "",
+                                "homepageUrl": "",
+                                "licenseInfo": None,
+                            }
+                        }
+                    }
+                ),
+            ),
         ]
     )
 
@@ -257,3 +273,87 @@ def test_cards_budget_subtracts_blog_spent(tmp_path):
     p = cards.plan(W, data=data, work=work, private=private)
     assert p["targets"] == 2 and p["calls"]["tavily_credits"] == 6 and p["llm"]["remaining_usd"] == 0.05
     assert p["reasons"]["org/lib"] == ["관점 A(조용한 강자)"]
+
+
+def _png() -> bytes:
+    from io import BytesIO
+
+    from PIL import Image
+
+    buf = BytesIO()
+    Image.new("RGB", (640, 320), "white").save(buf, "PNG")
+    return buf.getvalue()
+
+
+def test_cards_pick_repo_image_with_source_and_rights(tmp_path):
+    from radar.clients.transport import HttpResponse
+
+    data, private, work = _data(tmp_path), tmp_path / "private", tmp_path / "work"
+    readme = "# Tool\n![arch](docs/arch.png)\n"
+    gql = {
+        "data": {
+            "r0": {
+                "nameWithOwner": "org/tool",
+                "usesCustomOpenGraphImage": False,
+                "openGraphImageUrl": "",
+                "homepageUrl": "",
+                "licenseInfo": {"spdxId": "MIT"},
+            },
+            "r1": {
+                "nameWithOwner": "org/lib",
+                "usesCustomOpenGraphImage": True,
+                "openGraphImageUrl": "https://repository-images.githubusercontent.com/2/x",
+                "homepageUrl": "",
+                "licenseInfo": {"spdxId": "AGPL-3.0"},
+            },
+        }
+    }
+    import base64
+
+    t = _transport()
+    t.routes[:0] = [
+        ("api.github.com/graphql", ok(gql)),
+        ("/readme", ok({"content": base64.b64encode(readme.encode()).decode(), "encoding": "base64"})),
+        (
+            "raw.githubusercontent.com/org/tool/HEAD/docs/arch.png",
+            HttpResponse(200, {"Content-Type": "image/png"}, _png()),
+        ),
+        (
+            "repository-images.githubusercontent.com/2/x",
+            HttpResponse(200, {"Content-Type": "image/png"}, _png()),
+        ),
+    ]
+    client, _ = _client(t)
+    cards.write_cards(
+        W,
+        MockLLM(lambda r: _answer()),
+        client=client,
+        token="tok",
+        tavily_key="tv",
+        data=data,
+        private=private,
+        work=work,
+        log=lambda s: None,
+    )
+    folder = private / "weeks" / "2026-11-01" / "blog" / "images"
+    man = json.loads((folder / "images.json").read_text(encoding="utf-8"))
+    assert man["org__tool"]["kind"] == "readme" and man["org__tool"]["rights"] == "라이선스 MIT"
+    assert man["org__tool"]["file"] == "org__tool.png" and (folder / "org__tool.png").exists()
+    # AGPL 이라 README 그림은 후보가 아니고, 주인이 올린 소셜 미리보기를 쓴다
+    assert man["org__lib"]["kind"] == "social" and man["org__lib"]["rights"] == "공개용(소셜 미리보기)"
+    # 다시 돌리면 받아 둔 그림을 쓴다 — 그림 주소는 다시 부르지 않는다
+    t2 = _transport()
+    t2.routes[:0] = [("api.github.com/graphql", ok(gql))]
+    c2, _ = _client(t2)
+    cards.write_cards(
+        W,
+        MockLLM(lambda r: _answer()),
+        client=c2,
+        token="tok",
+        tavily_key="tv",
+        data=data,
+        private=private,
+        work=work,
+        log=lambda s: None,
+    )
+    assert not [u for u in t2.urls() if "raw.githubusercontent" in u or "repository-images" in u]
