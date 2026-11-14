@@ -53,6 +53,12 @@ def test_architecture_detects_llm_sdk_outside_claude_client():
     assert len(v) == 1 and "LLM SDK" in v[0]
 
 
+def test_architecture_detects_matplotlib_outside_charts():
+    v = check_sources({"radar/site.py": "import matplotlib.pyplot as plt\n",
+                       "radar/publish/charts.py": "import matplotlib\nfrom matplotlib import pyplot\n"})
+    assert len(v) == 1 and "publish/charts.py 에서만" in v[0] and v[0].startswith("radar/site.py")
+
+
 def test_architecture_detects_relative_import():
     v = check_sources({"radar/core/x.py": "from . import weeks\n"})
     assert len(v) == 1 and "상대 import" in v[0]

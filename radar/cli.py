@@ -211,6 +211,20 @@ def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str]) ->
     return 0 if rec["failed"] == 0 else 1
 
 
+def _images(week_text: str | None) -> int:
+    """M8 — 글 그림(차트 4종 · 관점 저장소 카드). 네트워크·LLM 0, 비공개 저장소 초안 폴더에만."""
+    from radar import images
+
+    try:
+        rec = images.render_images(load_config(), _week_arg(week_text))
+    except (ConfigError, ContractError, ValueError, FileNotFoundError) as e:
+        print(f"그림 중단: {e}", file=sys.stderr)
+        return 1
+    print(json.dumps({"week": rec["week"], "charts": len(rec["files"]), "cards": len(rec["cards"]),
+                      "observations": rec["observations"]}, ensure_ascii=False, indent=1))
+    return 0
+
+
 def _notion(week_text: str | None, parent: str | None) -> int:
     """M5 — 레이더 DB 만들기(--setup PARENT) 또는 그 주 초안 두 편 올리기."""
     from radar import blog, pipeline
@@ -274,6 +288,9 @@ def main(argv: list[str] | None = None) -> int:
                     help="LLM 비용 상한(달러) — 그 주 초안 비용을 뺀 나머지를 쓴다")
     cd.add_argument("--dry-run", action="store_true", help="호출 없이 대상·예상 호출·비용만")
     cd.add_argument("--only", action="append", default=[], metavar="OWNER/NAME", help="이 저장소만 (여러 번)")
+    im = sub.add_parser("images",
+                        help="글 그림 — 차트 4종·관점 저장소 카드 PNG (네트워크·LLM 0, 비공개 저장소에만)")
+    im.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
     no = sub.add_parser("notion", help="초안을 Notion 레이더 DB 에 (상태 '초안'인 페이지만 고친다)")
     no.add_argument("--week", help="주 시작일(일요일). 없으면 star-trend 최신 주")
     no.add_argument("--setup", metavar="PARENT_PAGE_ID", help="레이더 DB 를 이 페이지 아래에 한 번 만든다")
@@ -289,6 +306,8 @@ def main(argv: list[str] | None = None) -> int:
         return _blog(args.week, args.cap, args.dry_run)
     if args.cmd == "cards":
         return _cards(args.week, args.cap, args.dry_run, args.only)
+    if args.cmd == "images":
+        return _images(args.week)
     if args.cmd == "notion":
         return _notion(args.week, args.setup)
     if args.cmd == "weekly":
