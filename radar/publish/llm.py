@@ -14,7 +14,7 @@ from radar.clients.claude import FALLBACK_MODELS, LLMClient, LLMRequest
 from radar.publish.budget import Budget, BudgetExceeded
 
 PROMPT = Path(__file__).resolve().parent / "prompt.md"
-FIXED_TARGETS = ("title:1", "title:2", "title:3", "lead", "flow_title", "flow", "caveats", "summary")
+FIXED_TARGETS = ("title:1", "title:2", "title:3", "lead", "flow_title", "flow", "trend", "caveats", "summary")
 ANGLE_FIXED = ("angle_intro", "angle_summary")
 RESERVED = re.compile(r"(?i)<(\s*/?\s*(?:facts|system|instructions)(?![\w-]))")
 SCHEMA: dict[str, Any] = {

@@ -369,6 +369,157 @@ def _layers(nodes: Sequence[Mapping[str, str]], edges: Sequence[Mapping[str, str
     return layer
 
 
+def _vw(text: str) -> float:
+    """보이는 폭 — 한글·한자 한 글자 = 1, 로마자·숫자·기호 = 0.6 (글꼴 크기 1em 기준)."""
+    return sum(1.0 if ord(c) >= 0x1100 else 0.6 for c in text)
+
+
+def _tokens(text: str) -> list[str]:
+    out: list[str] = []
+    for word in text.split():
+        parts = word.split("·")
+        out += [p + "·" for p in parts[:-1]] + ([parts[-1]] if parts[-1] else [])
+    return out
+
+
+def _wrap_label(text: str, width: float) -> list[str]:
+    """라벨 줄바꿈 — 빈칸과 가운뎃점(·) 뒤에서만 끊고, 한 줄보다 긴 낱말만 자른다. width 는 보이는 폭."""
+    lines: list[str] = []
+    for tok in _tokens(text):
+        while _vw(tok) > width:
+            cut = 1
+            while cut < len(tok) and _vw(tok[: cut + 1]) <= width:
+                cut += 1
+            lines.append(tok[:cut])
+            tok = tok[cut:]
+        if not tok:
+            continue
+        if lines and _vw(tok) <= width:
+            joined = lines[-1] + ("" if lines[-1].endswith("·") else " ") + tok
+            if _vw(joined) <= width:
+                lines[-1] = joined
+                continue
+        lines.append(tok)
+    return lines
+
+
+def _fit(text: str, px: float, max_font: float, *, min_font: float = 7.0,
+         max_lines: int = 3) -> tuple[float, list[str]]:
+    """px 폭 안에 들도록 글꼴 크기와 줄을 정한다 — 낱말을 자르기보다 글꼴을 줄인다."""
+    em = DPI / 72  # 글꼴 1pt 의 픽셀
+    longest = max((_vw(t) for t in _tokens(text)), default=1.0)
+    font = max(min_font, min(max_font, px / (longest * em)))
+    lines = _wrap_label(text, px / (font * em))
+    while len(lines) > max_lines and font > min_font:
+        font = max(min_font, font - 0.5)
+        lines = _wrap_label(text, px / (font * em))
+    return (int(font) if font == int(font) else font), lines[:max_lines]
+
+
+def _flow_layout(
+    nodes: Sequence[Mapping[str, str]], edges: Sequence[Mapping[str, str]]
+) -> tuple[dict[str, tuple[float, float]], float, float]:
+    """상자 중심 좌표(0~100 축)와 상자 폭·높이.
+
+    단 사이에는 상자 폭의 0.6배 이상 틈을 둔다(화살표·라벨 자리).
+    """
+    layer = _layers(nodes, edges)
+    cols = max(layer.values()) + 1 if layer else 1
+    by_col: dict[int, list[str]] = {}
+    for n in nodes:
+        by_col.setdefault(layer[n["id"]], []).append(n["id"])
+    rows = max((len(m) for m in by_col.values()), default=1)
+    slot = 100 / cols
+    bw = min(26.0, slot * 0.6)
+    bh = min(34.0, 84.0 / rows - 10)
+    pos: dict[str, tuple[float, float]] = {}
+    for c, members in by_col.items():
+        x = (c + 0.5) * slot
+        for k, nid in enumerate(members):
+            pos[nid] = (x, 50 + ((len(members) - 1) / 2 - k) * (bh + 10))
+    return pos, bw, bh
+
+
+def _flow(
+    ax: Axes,
+    nodes: Sequence[Mapping[str, str]],
+    edges: Sequence[Mapping[str, str]],
+    *,
+    px: tuple[float, float],
+    box_font: float,
+    edge_font: float,
+) -> None:
+    """구조도를 축 하나에 그린다. px 는 축의 픽셀 크기 — 글자 줄바꿈 폭을 정한다."""
+    ax.set_xlim(0, 100)
+    ax.set_ylim(0, 100)
+    ax.axis("off")
+    pos, bw, bh = _flow_layout(nodes, edges)
+    unit = px[0] / 100  # 축 1칸의 픽셀
+    labels = {n["id"]: n["label"] for n in nodes}
+    for e in edges:
+        (x1, y1), (x2, y2) = pos[e["from"]], pos[e["to"]]
+        if x2 > x1:
+            start, end, rad = (x1 + bw / 2, y1), (x2 - bw / 2, y2), 0.0
+        else:  # 되돌아가는 화살표 — 상자 아래로 돌린다
+            start, end, rad = (x1, y1 - bh / 2), (x2, y2 - bh / 2), 0.4
+        ax.annotate(
+            "",
+            xy=end,
+            xytext=start,
+            arrowprops={
+                "arrowstyle": "-|>",
+                "color": MUTED,
+                "linewidth": 2,
+                "mutation_scale": 18,
+                "shrinkA": 2,
+                "shrinkB": 2,
+                "connectionstyle": f"arc3,rad={rad}",
+            },
+            zorder=1,
+        )
+        if e.get("label"):
+            gap_px = max(abs(end[0] - start[0]) * unit, bw * unit * 0.6)
+            efont, elines = _fit(e["label"], gap_px * 0.95, edge_font, max_lines=2)
+            ax.text(
+                (start[0] + end[0]) / 2,
+                (start[1] + end[1]) / 2 + 2.5,
+                "\n".join(elines),
+                ha="center",
+                va="bottom",
+                fontsize=efont,
+                color=MUTED,
+                zorder=3,
+                linespacing=1.1,
+                bbox={"boxstyle": "round,pad=0.15", "facecolor": BG, "edgecolor": "none", "alpha": 0.9},
+            )
+    for nid, (x, y) in pos.items():
+        ax.add_patch(
+            FancyBboxPatch(
+                (x - bw / 2, y - bh / 2),
+                bw,
+                bh,
+                boxstyle="round,pad=0,rounding_size=2",
+                facecolor="#EEF2FF",
+                edgecolor=ACCENT,
+                linewidth=2,
+                zorder=2,
+            )
+        )
+        bfont, blines = _fit(labels[nid], bw * unit * 0.85, box_font)
+        ax.text(
+            x,
+            y,
+            "\n".join(blines),
+            ha="center",
+            va="center",
+            fontsize=bfont,
+            color=INK,
+            fontweight="bold",
+            zorder=4,
+            linespacing=1.15,
+        )
+
+
 def draw_diagram(
     nodes: Sequence[Mapping[str, str]],
     edges: Sequence[Mapping[str, str]],
@@ -385,63 +536,8 @@ def draw_diagram(
         "README 를 바탕으로 AI 가 정리한 구조도 · 자동 생성",
         f"깃허브 AI 트렌드 레이더 · {week} 주 · {full_name}",
     )
-    ax = fig.add_axes((0.04, 0.08, 0.92, 0.76))
-    ax.set_xlim(0, 100)
-    ax.set_ylim(0, 100)
-    ax.axis("off")
-    layer = _layers(nodes, edges)
-    cols = max(layer.values()) + 1 if layer else 1
-    by_col: dict[int, list[str]] = {}
-    for n in nodes:
-        by_col.setdefault(layer[n["id"]], []).append(n["id"])
-    bw, bh = min(24.0, 80.0 / cols), 16.0
-    pos: dict[str, tuple[float, float]] = {}
-    for c, members in by_col.items():
-        x = 6 + (c + 0.5) * (88 / cols)
-        for k, nid in enumerate(members):
-            y = 50 + ((len(members) - 1) / 2 - k) * (bh + 10)
-            pos[nid] = (x, y)
-    labels = {n["id"]: n["label"] for n in nodes}
-    for e in edges:
-        (x1, y1), (x2, y2) = pos[e["from"]], pos[e["to"]]
-        ax.annotate(
-            "",
-            xy=(x2 - bw / 2, y2),
-            xytext=(x1 + bw / 2, y1),
-            arrowprops={"arrowstyle": "-|>", "color": MUTED, "linewidth": 2, "mutation_scale": 22},
-        )
-        if e.get("label"):
-            ax.text(
-                (x1 + x2) / 2,
-                (y1 + y2) / 2 + 3,
-                e["label"],
-                ha="center",
-                va="bottom",
-                fontsize=13,
-                color=MUTED,
-            )
-    for nid, (x, y) in pos.items():
-        ax.add_patch(
-            FancyBboxPatch(
-                (x - bw / 2, y - bh / 2),
-                bw,
-                bh,
-                boxstyle="round,pad=0.4,rounding_size=2",
-                facecolor="#EEF2FF",
-                edgecolor=ACCENT,
-                linewidth=2,
-            )
-        )
-        ax.text(
-            x,
-            y,
-            "\n".join(textwrap.wrap(labels[nid], width=10)[:3]),
-            ha="center",
-            va="center",
-            fontsize=17,
-            color=INK,
-            fontweight="bold",
-        )
+    box = (0.04, 0.12, 0.92, 0.70)
+    _flow(fig.add_axes(box), nodes, edges, px=(W * DPI * box[2], H * DPI * box[3]), box_font=18, edge_font=13)
     return _save(fig, path)
 
 
@@ -456,10 +552,11 @@ def draw_repo_card(
     path: Path,
     week: str,
     picture: Path | None = None,
+    diagram: Mapping[str, Sequence[Mapping[str, str]]] | None = None,
     caption: str = "",
 ) -> Path:
     """R1 — 저장소 카드: 이름·카테고리·관점, 설명 그림(있으면), 해설 요약(또는 코드 관찰),
-    신호 막대, 12주 순위.
+    신호 막대, 12주 순위. 구조도(diagram)는 그림 파일을 줄이지 않고 패널에 직접 그린다(글자가 읽히게).
     """
     fig = _figure()
     color = ANGLE_COLORS.get(angle or "", ACCENT)
@@ -469,15 +566,22 @@ def draw_repo_card(
     fig.text(0.05, 0.84, full_name, fontsize=32, color=INK, fontweight="bold", va="top")
     fig.text(0.05, 0.765, category, fontsize=15, color=MUTED, va="top")
     y, size, width, rows, step = 0.68, 17, 40, 3, 0.05
-    if picture is not None:
-        pic = fig.add_axes((0.05, 0.38, 0.52, 0.33))
-        with Image.open(picture) as im:
-            pic.imshow(im.convert("RGB"))
-        pic.axis("off")
+    if picture is not None or diagram:
+        panel = (0.05, 0.38, 0.52, 0.33)
+        pic = fig.add_axes(panel)
+        if diagram:
+            _flow(pic, diagram["nodes"], diagram["edges"], px=(W * DPI * panel[2], H * DPI * panel[3]),
+                  box_font=12, edge_font=10)
+        elif picture is not None:
+            with Image.open(picture) as im:
+                pic.imshow(im.convert("RGB"))
+            pic.axis("off")
         fig.text(0.05, 0.365, caption, fontsize=11, color=MUTED, va="top")
         y, size, width, rows, step = 0.31, 14, 52, 2, 0.04
     for line in lines[:3]:
         wrapped = textwrap.wrap(line, width=width) or [""]
+        if len(wrapped) > rows:  # 잘린 줄은 말줄임표로 표시한다
+            wrapped = wrapped[: rows - 1] + [wrapped[rows - 1].rstrip(" ,.") + "…"]
         for j, part in enumerate(wrapped[:rows]):
             fig.text(0.05, y, ("· " if j == 0 else "  ") + part, fontsize=size, color=INK, va="top")
             y -= step

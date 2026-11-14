@@ -14,6 +14,7 @@ from radar.core.charts_data import (
     signal_map,
     signal_shares,
     trend_observations,
+    week_trend,
 )
 
 END = date(2026, 11, 1)
@@ -124,6 +125,8 @@ def test_trend_observations_sentences():
     assert lines[0].startswith("12주 동안 TOP 3 기여분에서 사용·기여 비중은 ")
     assert "이번 주 TOP 3 중 1개는 4주 전에 TOP 3 밖이었습니다." in lines
     assert "이번 주 TOP 3 에 가장 많은 카테고리는 에이전트(3개)입니다." in lines
+    # 초안(F11 트렌드 분석)과 그림 단계가 같은 문장을 쓴다
+    assert week_trend(weeks, {"agent": "에이전트"}, top_n=3, n_weeks=12) == lines
 
 
 def test_repo_card_lines_from_commentary_or_observations():

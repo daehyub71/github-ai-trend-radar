@@ -197,6 +197,19 @@ def trend_observations(
     return lines
 
 
+def week_trend(
+    weeks: Sequence[Mapping[str, Any]], names: Mapping[str, str], *, top_n: int = 10, n_weeks: int = 12
+) -> list[str]:
+    """12주 트렌드 관찰 문장 — 초안의 "트렌드 분석"(F11)과 그림 단계가 같은 문장을 쓴다."""
+    _, mix = category_mix(weeks, names, top_n=top_n, n_weeks=n_weeks)
+    return trend_observations(
+        signal_shares(weeks, top_n=top_n, n_weeks=n_weeks),
+        mix,
+        rank_series(weeks, top_n=top_n, n_weeks=n_weeks),
+        top_n=top_n,
+    )
+
+
 def repo_card_lines(card: Mapping[str, Any] | None, insights: Sequence[Mapping[str, Any]]) -> list[str]:
     """저장소 카드의 글 — 해설 3줄 요약(빠진 줄은 건너뛴다), 해설이 없으면 코드 관찰 2개."""
     if card:

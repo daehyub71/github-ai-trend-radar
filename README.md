@@ -33,7 +33,8 @@ For example, in the week of 2026-11-01 `remotion-dev/remotion` ranked 70th by st
 | M4 · Website (Next.js on Vercel) | ✅ deployed |
 | M5 · Blog drafts and Notion pages | 🔄 waiting for human review |
 | M6 · Three weeks of observation | planned |
-| M7 · Repository commentary | 🔄 first run done (28 repositories, $1.30), deploying |
+| M7 · Repository commentary | ✅ deployed |
+| M8 · Post pictures (charts, repository pictures, diagrams) | 🔄 in drafts and Notion; first scheduled run on 2026-11-16 |
 
 The live progress dashboard is at the top of [`docs/TASKS.md`](docs/TASKS.md).
 
@@ -60,6 +61,7 @@ star-trend public data ──► candidates (AI repos: top 200 by weekly star ga
 - **Angle notes.** Code picks up to five repositories for each of four angles — A quiet strength (low stars, high use and contribution), B flash of attention (high stars or mentions, low use), C steady rise (index up four weeks in a row), D signal shift (attention share falls while use and contribution rise).
 - **Code observations.** Every repository page shows observations computed from numbers only, such as downloads per star, the download trend against the 4-week average, the growth in PR authors, and whether one post made the whole mention signal.
 - **Repository commentary.** For the week's TOP 10 and angle-note repositories, our code collects evidence: the README, releases, Hacker News posts with their largest comment threads, GeekNews posts, and web search results (Tavily). Claude Sonnet 5.5 writes a 3-line summary, the week's trend, what the repository is, where and why it drew attention, and what to watch, all as schema-constrained JSON. A code gate drops any claim without an evidence number, with a link, with a number that is not in the computed facts, or with banned wording.
+- **Post pictures.** matplotlib draws four charts from computed numbers only: the TOP 10 rank trend over 12 weeks, signal contributions, a signal map (attention × real use) and a 12-week trend of signal shares and categories. Each commentary repository gets one explanatory picture with its source and rights: a README image (permissive licenses only), the owner's social preview, the homepage image, a web image search result, or, when none exists, a "how it works" diagram that Claude outlines from the README and code draws. Pictures go into the blog drafts and are uploaded to the Notion draft pages.
 - **Weekly run.** GitHub Actions runs every Monday at 09:00 UTC, after star-trend's own weekly run. If the input is not ready yet, it checks again every 30 minutes, up to 4 times.
 
 ## Engineering rules
@@ -98,6 +100,7 @@ python -m radar weekly                # collect signals and compute the index
 python -m radar site                  # site data under data/site/ (no network)
 python -m radar blog --dry-run        # TOP 10 and angle-note drafts: worst-case cost only
 python -m radar cards --dry-run       # repository commentary: targets, calls and cost only
+python -m radar images               # post charts and repository cards, merged into the drafts (no network, no LLM)
 ```
 
 ```bash
@@ -109,10 +112,10 @@ cd web && npm ci && npm run dev   # site; reads ../data/site and, if present, ..
 ## Repository layout
 
 ```
-radar/      core/ (weeks, normalize, index, angles, insights, evidence) · clients/ (transport, http, claude)
+radar/      core/ (weeks, normalize, index, angles, insights, evidence, charts_data, repo_images) · clients/ (transport, http, claude)
             inputs/ (star-trend contract) · collectors/ (forks, activity, packages, mentions)
-            evidence/ (github, hn, geeknews, web) · publish/ (drafts, card, gate, notion, budget)
-            pipeline.py · backfill.py · site.py · blog.py · cards.py · cli.py
+            evidence/ (github, hn, geeknews, web, images) · publish/ (drafts, card, gate, notion, budget, charts)
+            pipeline.py · backfill.py · site.py · blog.py · cards.py · images.py · cli.py
 data/       candidates · signals · index · meta · site (public, computed)
 web/        Next.js site (static generation)
 docs/       SPEC · PLAN · DESIGN · TASKS · MEASURE (Korean)

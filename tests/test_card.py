@@ -140,24 +140,38 @@ def test_card_gate_nature_needs_enough_comments():
     assert clean["buzz"]["nature"] == "질문"  # 소개·질문은 댓글 수와 상관없다
 
 
+def test_card_schema_keeps_diagram_small():
+    # 상자·화살표를 객체로 두면 구조화 출력 문법이 한도를 넘는다
+    # (400 "compiled grammar is too large", 11-14 실측)
+    d = SCHEMA["properties"]["diagram"]["properties"]
+    assert d["nodes"]["items"] == {"type": "string"} and d["edges"]["items"] == {"type": "string"}
+
+
+ILL_RAW = {"teach": "코드로 영상을 만드는 흐름", "prompt": "A flat diagram of frames " * 20,
+           "labels": ["컴포넌트", "렌더", "https://bad"]}
+
+
 def test_card_gate_diagram_and_illustration():
     raw = _raw()
     raw["diagram"] = {
-        "nodes": [{"id": "a", "label": "React 컴포넌트"}, {"id": "b", "label": "렌더러"},
-                  {"id": "c", "label": "MP4 파일"}, {"id": "d", "label": "https://x.com"},
-                  {"id": "e", "label": "9999 프레임"}],
-        "edges": [{"from": "a", "to": "b", "label": "프레임마다"},
-                  {"from": "b", "to": "c", "label": "인코딩"},
-                  {"from": "b", "to": "d", "label": "링크"}, {"from": "zz", "to": "a", "label": "없는 상자"}],
+        "nodes": ["React 컴포넌트", "렌더러", "MP4 파일", "https://x.com", "9999 프레임"],
+        "edges": ["1>2 프레임마다", "2 -> 3: 인코딩", "2>4 링크", "9>1 없는 상자", "1>3", "엉뚱한 줄"],
     }
-    raw["illustration"] = {"teach": "코드로 영상을 만드는 흐름", "prompt": "A flat diagram of frames " * 20,
-                           "labels": ["컴포넌트", "렌더", "https://bad"]}
+    raw["illustration"] = ILL_RAW
     clean, report = gate(raw, FACTS, _docs())
-    assert [n["id"] for n in clean["diagram"]["nodes"]] == ["a", "b", "c"]  # 링크·사실 밖 숫자 상자는 뺀다
-    assert clean["diagram"]["edges"] == [{"from": "a", "to": "b", "label": "프레임마다"},
-                                         {"from": "b", "to": "c", "label": "인코딩"}]
+    # 링크·사실 밖 숫자 상자는 빼고, 상자 번호(1부터)가 id 가 된다
+    assert clean["diagram"]["nodes"] == [{"id": "1", "label": "React 컴포넌트"},
+                                         {"id": "2", "label": "렌더러"},
+                                         {"id": "3", "label": "MP4 파일"}]
+    assert clean["diagram"]["edges"] == [{"from": "1", "to": "2", "label": "프레임마다"},
+                                         {"from": "2", "to": "3", "label": "인코딩"},
+                                         {"from": "1", "to": "3", "label": ""}]
     assert clean["illustration"]["labels"] == ["컴포넌트", "렌더"]
-    raw["diagram"] = {"nodes": [{"id": "a", "label": "하나"}, {"id": "b", "label": "둘"}], "edges": []}
+    long_teach = "에이전트가 먼저 동작하게 만들고 품질 검사 도구로 다듬은 뒤 작은 커밋으로 남기는 흐름"
+    raw["illustration"] = {**ILL_RAW, "teach": long_teach}
+    # 상자 라벨 길이(24자)로 자르지 않는다
+    assert gate(raw, FACTS, _docs())[0]["illustration"]["teach"] == long_teach
+    raw["diagram"] = {"nodes": ["하나", "둘"], "edges": ["1>2"]}
     raw["illustration"] = {"teach": "t", "prompt": "see https://x.com", "labels": []}
     clean, _ = gate(raw, FACTS, _docs())
     assert clean["diagram"] is None and clean["illustration"] is None  # 상자 3개 미만 · 프롬프트에 링크

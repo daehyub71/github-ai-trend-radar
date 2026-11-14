@@ -22,7 +22,7 @@ def _meta(meta: Mapping[int, Mapping[str, Any]], rid: int) -> dict[str, Any]:
 
 def build_facts(weeks: Sequence[Mapping[str, Any]], angles: Mapping[str, Any],
                 meta: Mapping[int, Mapping[str, Any]], *, issue: int,
-                angle_rules: Mapping[str, Any] | None = None) -> dict[str, Any]:
+                angle_rules: Mapping[str, Any] | None = None, trend: Sequence[str] = ()) -> dict[str, Any]:
     """weeks: index/<주>.json 들(오래된 순, 마지막이 이번 주). meta: 저장소 ID → 설명·카테고리 이름.
 
     Args:
@@ -31,6 +31,7 @@ def build_facts(weeks: Sequence[Mapping[str, Any]], angles: Mapping[str, Any],
         meta: 저장소 메타(설명·토픽·언어·카테고리 표시 이름).
         issue: 연재 회차.
         angle_rules: 관점 유형 임계값(글에서 규칙을 설명할 때 쓰는 숫자).
+        trend: 12주 트렌드 관찰 문장(코드가 쓴 것, F11 "트렌드 분석").
 
     Returns:
         사실 묶음.
@@ -64,6 +65,6 @@ def build_facts(weeks: Sequence[Mapping[str, Any]], angles: Mapping[str, Any],
         "week_end": (start + timedelta(days=6)).isoformat(),
         "weights": cur["weights"], "weights_version": cur["weights_version"],
         "candidates": cur["candidates"], "history_weeks": len(weeks),
-        "top10": top, "dropped": dropped, "angles": ang,
+        "top10": top, "dropped": dropped, "angles": ang, "trend": {"observations": list(trend)},
         "rules": {"top_n": TOP_N, "backfill_weeks": 12, "angles": dict(angle_rules or {})},
     }

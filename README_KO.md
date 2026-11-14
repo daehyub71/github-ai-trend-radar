@@ -33,7 +33,8 @@
 | M4 · 사이트(Next.js · Vercel) | ✅ 배포됨 |
 | M5 · 블로그 초안과 Notion 페이지 | 🔄 사람 검토 대기 |
 | M6 · 3주 운영 관찰 | 예정 |
-| M7 · 저장소 해설 | 🔄 첫 실행 완료(저장소 28개, $1.30), 배포 중 |
+| M7 · 저장소 해설 | ✅ 배포됨 |
+| M8 · 글 그림(차트 · 저장소 그림 · 구조도) | 🔄 초안과 Notion 에 들어감, 2026-11-16 첫 예약 실행 |
 
 진도율 대시보드는 [`docs/TASKS.md`](docs/TASKS.md) 맨 위에 있습니다.
 
@@ -60,6 +61,7 @@ star-trend 공개 데이터 ──► 후보 (AI 저장소: 주간 스타 증가
 - **관점 노트.** 코드가 유형마다 최대 5개 저장소를 고릅니다. A 조용한 강자(스타는 낮고 사용·기여는 높음), B 반짝 관심(스타·언급은 높고 사용은 낮음), C 꾸준한 상승(지수 4주 연속 상승), D 신호 전환(관심 비중이 내려가고 사용·기여 비중이 오름)입니다.
 - **코드 관찰.** 모든 저장소 화면에 숫자만으로 계산한 관찰이 나옵니다. 스타 1개당 다운로드, 4주 평균 대비 다운로드 추세, PR 작성자 증가, 글 하나가 언급 신호를 다 만들었는지 같은 것입니다.
 - **저장소 해설.** 그 주 TOP 10과 관점 노트 저장소에 대해 코드가 근거를 모읍니다. README, 릴리스, Hacker News 글과 큰 댓글 타래, GeekNews 글, 웹 검색(Tavily) 결과입니다. Claude Sonnet 5.5 가 3줄 요약 · 이번 주 동향 · 무엇인가 · 어디서 어떻게 화제가 됐나 · 지켜볼 점을 정해진 JSON 형식으로 씁니다. 코드 게이트가 근거 번호가 없는 주장, 링크를 쓴 주장, 계산한 사실에 없는 숫자를 쓴 주장, 금지 표현을 쓴 주장을 뺍니다.
+- **글 그림.** matplotlib 이 계산한 숫자로만 차트 4종을 그립니다. TOP 10 의 12주 순위 추이, 신호 기여, 신호 지도(관심 × 실사용), 신호 비중·카테고리의 12주 트렌드입니다. 해설 대상 저장소마다 설명 그림 하나를 출처·저작권 상태와 함께 고릅니다. README 그림(허용형 라이선스만), 주인이 올린 소셜 미리보기, 홈페이지 대표 이미지, 웹 이미지 검색 순이고, 아무것도 없으면 Claude 가 README 로 정리한 "어떻게 동작하나" 구조도를 코드가 그립니다. 그림은 블로그 초안에 들어가고 Notion 초안 페이지에 올라갑니다.
 - **주간 실행.** 깃허브 Actions 가 매주 월요일 09:00 UTC 에 돕니다. star-trend 주간 실행이 끝난 뒤입니다. 입력이 아직 준비되지 않았으면 30분마다 최대 4번 다시 봅니다.
 
 ## 개발 원칙
@@ -98,6 +100,7 @@ python -m radar weekly                # 신호 수집과 지수 계산
 python -m radar site                  # data/site/ 사이트 데이터 (네트워크 없음)
 python -m radar blog --dry-run        # TOP 10·관점 노트 초안: 최악 비용만
 python -m radar cards --dry-run       # 저장소 해설: 대상·호출 수·비용만
+python -m radar images               # 글 차트·저장소 카드를 그리고 초안에 넣는다 (네트워크·LLM 없음)
 ```
 
 ```bash
@@ -109,10 +112,10 @@ cd web && npm ci && npm run dev   # 사이트 — ../data/site 와 (있으면) .
 ## 저장소 구성
 
 ```
-radar/      core/ (주 · 정규화 · 지수 · 관점 · 관찰 · 근거) · clients/ (transport · http · claude)
+radar/      core/ (주 · 정규화 · 지수 · 관점 · 관찰 · 근거 · 차트 데이터 · 저장소 그림 후보) · clients/ (transport · http · claude)
             inputs/ (star-trend 계약) · collectors/ (포크 · 기여 · 패키지 · 언급)
-            evidence/ (github · hn · geeknews · web) · publish/ (초안 · 해설 · 게이트 · notion · 예산)
-            pipeline.py · backfill.py · site.py · blog.py · cards.py · cli.py
+            evidence/ (github · hn · geeknews · web · 그림) · publish/ (초안 · 해설 · 게이트 · notion · 예산 · 차트)
+            pipeline.py · backfill.py · site.py · blog.py · cards.py · images.py · cli.py
 data/       candidates · signals · index · meta · site (공개, 계산값)
 web/        Next.js 사이트(정적 생성)
 docs/       SPEC · PLAN · DESIGN · TASKS · MEASURE

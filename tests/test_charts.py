@@ -144,3 +144,71 @@ def test_charts_diagram_and_card_with_picture(tmp_path):
         caption="그림: o/tool · 공개용(소셜 미리보기)",
     )
     assert _size(card) == (1600, 900)
+
+
+def test_charts_flow_layout_leaves_room_for_arrows():
+    nodes = [{"id": str(i), "label": f"상자 {i}"} for i in range(1, 6)]
+    edges = [{"from": str(i), "to": str(i + 1), "label": "다음"} for i in range(1, 5)]
+    pos, bw, bh = charts._flow_layout(nodes, edges)
+    xs = sorted(x for x, _ in pos.values())
+    gaps = [b - a - bw for a, b in zip(xs, xs[1:], strict=False)]
+    assert min(gaps) >= 0.6 * bw  # 화살표와 라벨이 들어갈 틈 (11-01 시안: 틈이 거의 없어 화살표가 안 보였다)
+    assert all(0 <= x - bw / 2 and x + bw / 2 <= 100 for x, _ in pos.values())
+    # 한 단에 상자가 여럿이면 위아래로 겹치지 않는다
+    branch = [{"from": "1", "to": "2", "label": ""}, {"from": "1", "to": "3", "label": ""}]
+    pos2, _, bh2 = charts._flow_layout(nodes[:3], branch)
+    assert abs(pos2["2"][1] - pos2["3"][1]) > bh2
+
+
+def test_charts_card_draws_diagram_in_panel(tmp_path):
+    _quiet()
+    card = charts.draw_repo_card(
+        full_name="o/tool",
+        category="MCP",
+        angle="B",
+        pct={s: 50.0 for s in SIG},
+        ranks=[(w, 50) for w in WEEKS],
+        lines=["무엇", "왜", "볼 것"],
+        path=tmp_path / "c.png",
+        week="2026-11-01",
+        diagram={
+            "nodes": [
+                {"id": "1", "label": "입력"},
+                {"id": "2", "label": "처리 엔진"},
+                {"id": "3", "label": "출력"},
+            ],
+            "edges": [{"from": "1", "to": "2", "label": "읽기"}, {"from": "2", "to": "3", "label": ""}],
+        },
+        caption="그림: README 를 바탕으로 AI 가 정리 · 자동 생성",
+    )
+    assert _size(card) == (1600, 900)
+
+
+def test_charts_wrap_label_breaks_at_spaces_and_dots():
+    # 폭은 한글 한 글자 = 1, 로마자 = 0.6
+    assert charts._wrap_label("GitHub·Feishu 요청", 5) == ["GitHub·", "Feishu", "요청"]
+    assert charts._wrap_label("독립 에이전트 세션", 8) == ["독립 에이전트", "세션"]
+    assert charts._wrap_label("짧음", 8) == ["짧음"]
+    # 한 줄보다 긴 낱말만 자른다
+    assert charts._wrap_label("Supercalifragilistic", 5) == ["Supercal", "ifragili", "stic"]
+
+
+def test_charts_fit_shrinks_font_instead_of_chopping_words():
+    font, lines = charts._fit("먼저 동작시키기", 80, 12)
+    assert font < 12 and lines == ["먼저", "동작시키기"]
+    assert charts._fit("입력", 200, 12) == (12, ["입력"])
+
+
+def test_charts_render_stops_without_korean_font(monkeypatch, tmp_path):
+    # P7 — 한글 글꼴이 없으면 네모 글자 그림을 만들지 않고 그림 단계만 실패한다(초안은 그림 자리 없이)
+    from datetime import date
+    from typing import cast
+
+    import pytest
+
+    from radar import images
+    from radar.config import Config
+
+    monkeypatch.setattr(charts, "pick_font", lambda: None)
+    with pytest.raises(ValueError, match="한글 글꼴"):
+        images.render_images(cast(Config, None), date(2026, 11, 1), data=tmp_path, private=tmp_path)

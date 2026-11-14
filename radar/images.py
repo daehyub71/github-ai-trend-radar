@@ -86,6 +86,9 @@ def caption(p: dict[str, Any]) -> str:
 
 
 def render_images(cfg: Config, week: date, *, data: Path = DATA, private: Path = PRIVATE) -> dict[str, Any]:
+    if charts.pick_font() is None:  # P7 — 네모 글자 그림을 만들지 않는다
+        fonts = ", ".join(charts.FONT_CANDIDATES)
+        raise ValueError(f"한글 글꼴이 없다({fonts}) — CI 는 fonts-noto-cjk 를 설치한다")
     weeks = _weeks(data, week)
     if not weeks or weeks[-1]["week"] != week.isoformat():
         raise ValueError(f"{week} 주 지수가 없다")
@@ -148,7 +151,8 @@ def render_images(cfg: Config, week: date, *, data: Path = DATA, private: Path =
                 lines=cd.repo_card_lines(card, insights),
                 path=out / name,
                 week=wk,
-                picture=blog / pic["file"] if pic else None,
+                picture=blog / pic["file"] if pic and pic["kind"] != "diagram" else None,
+                diagram=card["diagram"] if pic and pic["kind"] == "diagram" and card else None,
                 caption=caption(pic) if pic else "",
             )
             made.append(
@@ -159,6 +163,7 @@ def render_images(cfg: Config, week: date, *, data: Path = DATA, private: Path =
                     "file": name,
                     "from_commentary": card is not None,
                     "picture": pic,
+                    "illustration": (card or {}).get("illustration"),
                 }
             )
     manifest = {

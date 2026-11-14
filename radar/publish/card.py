@@ -6,6 +6,7 @@
 """
 
 import json
+import re
 from collections.abc import Mapping, Sequence
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -51,11 +52,15 @@ def _obj(props: dict[str, Any]) -> dict[str, Any]:
     return {"type": "object", "properties": props, "required": list(props), "additionalProperties": False}
 
 
-_NODE = _obj({"id": {"type": "string"}, "label": {"type": "string"}})
-_EDGE = _obj({"from": {"type": "string"}, "to": {"type": "string"}, "label": {"type": "string"}})
+# 구조도는 문자열 목록으로 받는다 — 상자·화살표를 객체로 두면 구조화 출력 문법이 한도를 넘는다(11-14 실측).
+# 상자는 라벨 목록(번호 1부터), 화살표는 "1>2 라벨".
+# 사이트·그림 계약(nodes[{id,label}]·edges[{from,to,label}])은 게이트가 만든다.
+_STRINGS = {"type": "array", "items": {"type": "string"}}
+_EDGE_TEXT = re.compile(r"^\s*(\d+)\s*(?:->|→|>)\s*(\d+)\s*[:：]?\s*(.*)$")
 DIAGRAM_NODES = (3, 6)  # 구조도 상자 수 (최소, 최대)
 DIAGRAM_EDGES = 8
 LABEL_MAX = 24
+TEACH_MAX = 80  # 일러스트로 가르칠 것 한 줄 — 상자 라벨보다 길다
 
 SCHEMA: dict[str, Any] = _obj({
     "summary": _obj({"what": CLAIM, "why_now": CLAIM, "watch": CLAIM}),
@@ -64,7 +69,7 @@ SCHEMA: dict[str, Any] = _obj({
     "buzz": _obj({"nature": {"type": "string", "enum": list(NATURES)}, "trigger": CLAIM,
                   "reactions": {"type": "array", "items": CLAIM}, "reading": CLAIM}),
     "watch": {"type": "array", "items": CLAIM},
-    "diagram": _obj({"nodes": {"type": "array", "items": _NODE}, "edges": {"type": "array", "items": _EDGE}}),
+    "diagram": _obj({"nodes": _STRINGS, "edges": _STRINGS}),
     "illustration": _obj({"teach": {"type": "string"}, "prompt": {"type": "string"},
                           "labels": {"type": "array", "items": {"type": "string"}}}),
 })
@@ -162,29 +167,31 @@ def gate(raw: Mapping[str, Any], facts: Mapping[str, Any],
     comments = sum(int(p.get("comments") or 0) for p in posts)
     if nature in STRONG_NATURES and comments < NATURE_MIN_COMMENTS:
         nature = "소개"  # 댓글 몇 개로 논란·호평이라 부르지 않는다
-    def label(text: Any) -> str | None:
-        t = str(text or "").strip()[:LABEL_MAX]
+    def label(text: Any, limit: int = LABEL_MAX) -> str | None:
+        t = str(text or "").strip()[:limit]
         return t if t and not check(t, allowed) else None
 
     diagram = None
     d = raw.get("diagram")
     if isinstance(d, Mapping):
         nodes = []
-        for n in (d.get("nodes") or [])[: DIAGRAM_NODES[1] + 2]:
-            if isinstance(n, Mapping) and n.get("id") and (lb := label(n.get("label"))):
-                nodes.append({"id": str(n["id"]), "label": lb})
+        for i, n in enumerate((d.get("nodes") or [])[: DIAGRAM_NODES[1] + 2], 1):
+            if isinstance(n, str) and (lb := label(n)):
+                nodes.append({"id": str(i), "label": lb})
         nodes = nodes[: DIAGRAM_NODES[1]]
         ids = {n["id"] for n in nodes}
-        edges = [{"from": str(e["from"]), "to": str(e["to"]), "label": label(e.get("label")) or ""}
-                 for e in d.get("edges") or []
-                 if isinstance(e, Mapping) and e.get("from") in ids and e.get("to") in ids][:DIAGRAM_EDGES]
+        edges = []
+        for e in d.get("edges") or []:
+            m = _EDGE_TEXT.match(e) if isinstance(e, str) else None
+            if m and m.group(1) in ids and m.group(2) in ids and m.group(1) != m.group(2):
+                edges.append({"from": m.group(1), "to": m.group(2), "label": label(m.group(3)) or ""})
         if len(nodes) >= DIAGRAM_NODES[0]:
-            diagram = {"nodes": nodes, "edges": edges}
+            diagram = {"nodes": nodes, "edges": edges[:DIAGRAM_EDGES]}
     illustration = None
     il = raw.get("illustration")
     if isinstance(il, Mapping) and str(il.get("prompt") or "").strip() and not LINK.search(str(il["prompt"])):
         labels = [lb for x in il.get("labels") or [] if (lb := label(x))]
-        illustration = {"teach": label(il.get("teach")) or "", "prompt": str(il["prompt"]).strip(),
+        illustration = {"teach": label(il.get("teach"), TEACH_MAX) or "", "prompt": str(il["prompt"]).strip(),
                         "labels": labels}
     clean = {
         "summary": {k: claim(s.get(k), f"summary.{k}") for k in ("what", "why_now", "watch")},

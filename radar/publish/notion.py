@@ -3,10 +3,18 @@
 - `Notion-Version: 2026-03-11` 고정(star-trend 와 같음). 본문은 마크다운 API 로 넣는다.
 - **상태가 "초안"인 페이지만** 고친다. 검토 중·게시한 페이지, 휴지통·지워진 페이지는 건드리지 않는다.
 - 대응표(DB·페이지 ID)는 비공개 저장소 `notion/index.json` 에만 둔다(D7). 토큰은 헤더에만 싣는다.
+- 그림(F11)은 마크다운이 업로드를 못 가리키므로, 그림 줄을 표시 문단으로 바꿔 올린 뒤
+  파일 업로드 API(만들기 → multipart 보내기)로 올리고 블록 API 로 표시 문단 뒤에 끼운다
+  (star-trend 결정 62 방식).
+  같은 그림(내용 해시)은 다시 올리지 않는다.
 """
 
+import hashlib
 import json
-from collections.abc import Callable, Mapping
+import re
+import secrets
+from collections.abc import Callable, Mapping, Sequence
+from pathlib import Path
 from typing import Any
 
 from radar.clients.http import HttpClient
@@ -20,6 +28,14 @@ DRAFT = "초안"
 STATUS_OPTIONS = (("초안", "gray", "To-do"), ("검토 중", "blue", "In progress"),
                   ("승인", "purple", "In progress"), ("게시됨", "green", "Complete"))
 POST_KINDS = ("TOP 10", "관점")
+# 초안 폴더(blog/) 안의 그림만 — 하위 폴더 이름과 파일 이름을 좁혀 폴더 밖을 가리키지 못하게 한다
+LOCAL_IMAGE = re.compile(
+    r"^!\[([^\]]*)\]\(((?:charts|images|gen)/[A-Za-z0-9_.-]+\.(?:png|jpe?g|webp|gif))\)$"
+)
+IMAGE_MARK = "⟦그림 {}⟧"
+IMAGE_TYPES = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp",
+               ".gif": "image/gif"}
+UPLOAD_MAX = 20 * 1024 * 1024  # 한 번에 보내는 파일 업로드 한도
 
 
 class NotionError(Exception):
@@ -36,10 +52,13 @@ class NotionAPI:
     def __repr__(self) -> str:
         return "NotionAPI()"
 
-    def _call(self, method: str, path: str, body: Mapping[str, Any] | None = None) -> dict[str, Any]:
+    def _call(self, method: str, path: str, body: Mapping[str, Any] | None = None, *,
+              raw: tuple[bytes, str] | None = None) -> dict[str, Any]:
         h = {"Authorization": f"Bearer {self._token}", "Notion-Version": NOTION_VERSION}
         if body is None:
-            r = self._c.request(KIND, method, API + path, {"Accept": "application/json", **h})
+            extra = {"Content-Type": raw[1]} if raw else {}
+            r = self._c.request(KIND, method, API + path, {"Accept": "application/json", **h, **extra},
+                                raw[0] if raw else None)
             try:
                 status, data = r.status, (json.loads(r.body) if r.body else {})
             except ValueError:
@@ -78,6 +97,48 @@ class NotionAPI:
         self._call("PATCH", f"/v1/pages/{page_id}/markdown", {
             "type": "replace_content",
             "replace_content": {"new_str": markdown, "allow_deleting_content": False}})
+
+    def list_children(self, block_id: str) -> list[tuple[str, str, str]]:
+        """(블록 ID, 종류, 글) — 페이지 바로 아래 블록."""
+        out: list[tuple[str, str, str]] = []
+        cursor: str | None = None
+        while True:
+            q = "?page_size=100" + (f"&start_cursor={cursor}" if cursor else "")
+            d = self._call("GET", f"/v1/blocks/{block_id}/children{q}")
+            for b in d.get("results") or []:
+                kind = str(b.get("type") or "")
+                rich = (b.get(kind) or {}).get("rich_text") or []
+                out.append((str(b["id"]), kind, "".join(str(x.get("plain_text", "")) for x in rich)))
+            if not d.get("has_more") or not d.get("next_cursor"):
+                return out
+            cursor = str(d["next_cursor"])
+
+    def upload_file(self, filename: str, data: bytes, content_type: str) -> str:
+        """작은 파일(20MB 이하) 올리기 — 만들기 → 보내기. 1시간 안에 블록에 붙여야 한다."""
+        d = self._call("POST", "/v1/file_uploads", {"filename": filename, "content_type": content_type})
+        fid = str(d.get("id") or "")
+        if not fid:
+            raise NotionError(f"파일 업로드 응답에 id 가 없다: {filename}")
+        boundary = secrets.token_hex(16)
+        name = filename.replace('"', "")
+        head = (f"--{boundary}\r\nContent-Disposition: form-data; name=\"file\"; filename=\"{name}\"\r\n"
+                f"Content-Type: {content_type}\r\n\r\n")
+        body = head.encode() + data + f"\r\n--{boundary}--\r\n".encode()
+        r = self._call("POST", f"/v1/file_uploads/{fid}/send",
+                       raw=(body, f"multipart/form-data; boundary={boundary}"))
+        if r.get("status") != "uploaded":
+            raise NotionError(f"파일 올리기 상태가 {r.get('status')}: {filename}")
+        return fid
+
+    def insert_image(self, parent_id: str, after_block_id: str, file_upload_id: str, caption: str) -> None:
+        cap = [{"type": "text", "text": {"content": caption[:2000]}}] if caption else []
+        image = {"type": "file_upload", "file_upload": {"id": file_upload_id}, "caption": cap}
+        self._call("PATCH", f"/v1/blocks/{parent_id}/children", {
+            "children": [{"type": "image", "image": image}],
+            "position": {"type": "after_block", "after_block": {"id": after_block_id}}})
+
+    def delete_block(self, block_id: str) -> None:
+        self._call("DELETE", f"/v1/blocks/{block_id}")
 
 
 def schema() -> dict[str, Any]:
@@ -143,3 +204,51 @@ def upsert(api: NotionAPI, idx: dict[str, Any], *, week: str, kind: str, issue: 
     api.update_properties(known["page_id"], props(title, kind, week, issue, new=False))
     api.replace_markdown(known["page_id"], markdown)
     return "updated"
+
+
+def local_images(markdown: str, base_dir: Path) -> tuple[str, list[tuple[str, str, Path]]]:
+    """그림 줄 → 표시 문단. (보낼 마크다운, [(표시, 캡션, 파일)]). 파일이 없거나 너무 크면 줄을 뺀다."""
+    lines: list[str] = []
+    found: list[tuple[str, str, Path]] = []
+    for line in markdown.split("\n"):
+        m = LOCAL_IMAGE.match(line.strip())
+        if not m:
+            lines.append(line)
+            continue
+        path = base_dir / m.group(2)
+        if not path.is_file() or path.stat().st_size > UPLOAD_MAX:
+            continue
+        mark = IMAGE_MARK.format(len(found) + 1)
+        lines.append(mark)
+        found.append((mark, m.group(1), path))
+    return "\n".join(lines), found
+
+
+def attach_images(api: NotionAPI, idx: dict[str, Any], page_id: str, found: Sequence[tuple[str, str, Path]],
+                  *, save: Callable[[], None]) -> int:
+    """표시 문단 뒤에 그림 블록을 끼우고 표시 문단을 지운다. 끼운 그림 수."""
+    blocks = {text.strip(): bid for bid, kind, text in api.list_children(page_id) if kind == "paragraph"}
+    uploads: dict[str, str] = idx.setdefault("uploads", {})
+    n = 0
+    for mark, caption, path in found:
+        bid = blocks.get(mark)
+        if bid is None:
+            continue
+        data = path.read_bytes()
+        key = hashlib.sha256(data).hexdigest()
+        up = uploads.get(key)
+        if up is not None:
+            try:
+                api.insert_image(page_id, bid, up, caption)
+            except NotionError as e:
+                if e.status not in (400, 404):
+                    raise
+                up = None  # 붙이지 못한 채 만료된 업로드 — 다시 올린다
+        if up is None:
+            up = api.upload_file(path.name, data, IMAGE_TYPES[path.suffix.lower()])
+            api.insert_image(page_id, bid, up, caption)
+        uploads[key] = up
+        save()
+        api.delete_block(bid)
+        n += 1
+    return n

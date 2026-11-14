@@ -71,14 +71,61 @@ def _move(r: Mapping[str, Any]) -> str:
     return "새로 진입" if r["prev_rank"] is None else f"지난주 {r['prev_rank']}위"
 
 
-def post_markdown(f: Mapping[str, Any], t: Mapping[str, str]) -> str:
-    """TOP 10 글 (F7). t 는 gate_texts 를 거친 글."""
+# 글 그림 (F11) — 차트 alt 는 Notion 캡션이 된다. art 는 그림 단계의 charts.json (없으면 그림 자리 없이 쓴다, P7)
+CHART_ALT = {
+    "c1": "TOP 10 12주 종합 순위 추이",
+    "c2": "신호 기여 — 지수를 무엇이 채웠나",
+    "c3": "신호 지도 — 관심과 실사용",
+    "c4": "12주 트렌드 — 신호 비중과 카테고리",
+}
+
+
+def _chart(art: Mapping[str, Any] | None, key: str) -> list[str]:
+    if not art or not (art.get("files") or {}).get(key):
+        return []
+    return [f"![{CHART_ALT[key]}](charts/{art['files'][key]})", ""]
+
+
+def _key(full_name: str) -> str:
+    return full_name.replace("/", "__")
+
+
+def _repo_picture(art: Mapping[str, Any] | None, full_name: str) -> list[str]:
+    for it in (art or {}).get("intros") or []:
+        pic = it.get("picture")
+        if it.get("full_name") == full_name and pic and pic.get("file"):
+            return [f"![{it.get('caption') or ''}]({pic['file']})", ""]
+    return []
+
+
+def _trend(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None) -> list[str]:
+    # 예전 사실 묶음(트렌드 관찰 없음)이면 그림 단계가 쓴 같은 관찰 문장을 쓴다
+    obs = (f.get("trend") or {}).get("observations") or (art or {}).get("observations") or []
+    lines = ["### 트렌드 분석", "", *_chart(art, "c4")]
+    lines += [f"- {o}" for o in obs] + ([""] if obs else [])
+    return lines + [t["trend"], ""]
+
+
+def _illustration(card: Mapping[str, Any]) -> list[str]:
+    """R2 — 사람이 이미지 AI 로 만들 프롬프트. 이미 만든 일러스트가 있으면 뺀다."""
+    ill = card.get("illustration")
+    if not ill or (card.get("picture") or {}).get("kind") == "illustration":
+        return []
+    labels = " · ".join(ill.get("labels") or [])
+    return [f"> 🎨 일러스트 프롬프트 — {ill.get('teach') or ''}".rstrip(" —"),
+            f"> 이미지 AI 로 만들어 `gen/{_key(card['full_name'])}.png` 로 두면 카드와 글에 들어갑니다."
+            + (f" 얹을 한글 라벨: {labels}" if labels else ""),
+            ">", f"> {ill['prompt']}", ""]
+
+
+def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None) -> str:
+    """TOP 10 글 (F7). t 는 gate_texts 를 거친 글, art 는 그림 단계 결과(F11 — 없으면 그림 없이)."""
     lines = [
         f"# 📡 {f['series']} {f['issue']}회 📡 {t['title:1']}", "",
         f"> 제목 후보: {t['title:2']} / {t['title:3']}", "",
         t["lead"], "",
         f"***{f['series']} {f['issue']}회 정보***", "",
-        "⭐ 이 글의 내용 : 이번 주 흐름 · 종합 TOP 10(지수와 신호 기여) · TOP 10 저장소(무엇인가 · 어떤 신호로 떴나)"
+        "⭐ 이 글의 내용 : 이번 주 흐름 · 종합 TOP 10(지수와 신호 기여) · 트렌드 분석 · TOP 10 저장소(무엇인가 · 어떤 신호로 떴나)"
         " · 숫자를 읽을 때 주의할 점 · 한 장 요약", "",
         f"⭐ 집계 기간 : {_period(f)}", "",
         f"⭐ 종합 지수 : 다섯 신호의 후보 내 순위 백분위를 가중 평균({_weights(f)}, 가중치 v{f['weights_version']})"
@@ -88,7 +135,7 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str]) -> str:
         " · 언급은 Hacker News·GeekNews", "",
         "⭐ 쓰는 방식 : 숫자는 코드가, 글 초안은 AI(Claude)가 쓰고 사람이 검토합니다", "",
         f"⭐ 데이터 저장소 : {DATA_REPO}", "",
-        f"### 이번 주 흐름 — {t['flow_title']}", "", t["flow"], "",
+        f"### 이번 주 흐름 — {t['flow_title']}", "", t["flow"], "", *_chart(art, "c1"),
         "### 종합 TOP 10 — 지수와 신호 기여", "",
         "| 순위 | 저장소 | 지수 | 변동 | 스타 순위 | 스타 | 포크 | 기여 | 사용 | 언급 |",
         "|---|---|---|---|---|---|---|---|---|---|",
@@ -99,14 +146,17 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str]) -> str:
         lines.append(f"| {r['rank']} | {r['repo']} | {r['index']:.1f} | {_move(r)} | {star} | " + " | ".join(cells)
                      + " |")
     lines += ["", "표의 신호 칸은 지수에 더해진 기여분입니다(합이 지수). — 는 이번 주 값이 없어 빠진 신호입니다.", ""]
+    lines += _chart(art, "c2")
     if f["dropped"]:
         lines += ["### 지난주 TOP 10에서 빠진 저장소", ""]
         for d in f["dropped"]:
             now = "후보 밖" if d["now_rank"] is None else f"{d['now_rank']}위"
             lines.append(f"- {d['repo']} — 지난주 {d['prev_rank']}위 → 이번 주 {now}")
         lines.append("")
+    lines += _trend(f, t, art)
     for r in f["top10"]:
         lines += [f"### {r['rank']}위 {r['repo']} — 지수 {r['index']:.1f} ({_move(r)})", "",
+                  *_repo_picture(art, r["repo"]),
                   f"신호 기여: {_contrib_line(r)}", "",
                   f"**무엇인가** {t['what:' + r['repo']]}", "",
                   f"**어떤 신호로 떴나** {t['why:' + r['repo']]}", ""]
@@ -133,10 +183,11 @@ def _evidence(key: str, ev: Mapping[str, Any]) -> str:
     return f"관심 비중 {a[0]:.1f}% → {a[1]:.1f}% · 사용·기여 비중 {u[0]:.1f}% → {u[1]:.1f}%"
 
 
-def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str]) -> str:
-    """관점 노트 (F9)."""
+def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None) -> str:
+    """관점 노트 (F9). art 가 있으면 신호 지도(C3)·관점 카드(R1)·일러스트 프롬프트(R2)를 넣는다."""
     rules = f["rules"]["angles"]
-    lines = [f"# 📡 {f['series']} 관점 노트 📡 {_period(f)}", "", t["angle_intro"], ""]
+    cards = {c["full_name"]: c for c in (art or {}).get("cards") or []}
+    lines = [f"# 📡 {f['series']} 관점 노트 📡 {_period(f)}", "", t["angle_intro"], "", *_chart(art, "c3")]
     for key in ("A", "B", "C", "D"):
         a = f["angles"][key]
         lines += [f"### {key}. {a['name']}", "", ANGLE_RULE_TEXT[key].format(**rules) if rules else "", ""]
@@ -147,8 +198,13 @@ def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str]) -> str:
             lines += ["이번 주에는 조건을 만족하는 저장소가 없습니다.", ""]
             continue
         for it in a["items"]:
-            lines += [f"#### {it['repo']} — 종합 {it['rank']}위 · 지수 {it['index']:.1f}", "",
-                      f"근거: {_evidence(key, it['evidence'])}", "", t["angle:" + it["repo"]], ""]
+            card = cards.get(it["repo"])
+            lines += [f"#### {it['repo']} — 종합 {it['rank']}위 · 지수 {it['index']:.1f}", ""]
+            if card:
+                lines += [f"![관점 카드 — {it['repo']}](charts/{card['file']})", ""]
+            lines += [f"근거: {_evidence(key, it['evidence'])}", "", t["angle:" + it["repo"]], ""]
+            if card:
+                lines += _illustration(card)
     lines += ["### 주의할 점", "",
               f"- 유형은 코드가 정한 규칙으로 고릅니다(유형마다 최대 5개, 한 저장소는 한 유형에만). 백분위는 후보 {f['candidates']}개 안의 상대값입니다.",
               "- 반짝 관심 유형은 판단이 아니라 관측입니다. 사용·기여 신호가 늦게 나타나는 저장소도 많습니다.", "",

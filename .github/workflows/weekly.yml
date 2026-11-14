@@ -148,22 +148,16 @@ jobs:
           path: .private
           persist-credentials: false
 
-      - name: 초안 · Notion (LLM $3 상한, 초안 상태만 고친다)
+      - name: 초안 (LLM $3 상한)
         if: env.RUN == 'true' && env.HAS_PRIVATE == 'true' && env.HAS_LLM == 'true'
         env:
           STARTREND_ANTHROPIC_API_KEY: ${{ secrets.STARTREND_ANTHROPIC_API_KEY }}
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
         run: |
           set +e
           python -m radar blog --cap 3 || echo "::warning::초안 단계 실패 — 숫자 표만 있는 초안이 남았는지 본다"
-          if [ -n "$NOTION_TOKEN" ] && [ -f .private/notion/index.json ]; then
-            python -m radar notion || echo "::warning::Notion 단계 실패"
-          else
-            echo "NOTION_TOKEN 또는 레이더 DB 대응표 없음 — Notion 건너뜀"
-          fi
           exit 0
 
-      - name: 저장소 해설 (LLM · 웹 검색, 초안 다음 — 같은 $3 상한, D13~D16)
+      - name: 저장소 해설 (LLM · 웹 검색, 초안 다음 — 같은 $3 상한, D13~D16) · 저장소 설명 그림 고르기
         if: env.RUN == 'true' && env.HAS_PRIVATE == 'true' && env.HAS_LLM == 'true'
         env:
           STARTREND_ANTHROPIC_API_KEY: ${{ secrets.STARTREND_ANTHROPIC_API_KEY }}
@@ -172,6 +166,36 @@ jobs:
         run: |
           set +e
           python -m radar cards --cap 3 || echo "::warning::해설 단계에 실패한 저장소가 있다 — .private/weeks/<주>/cards/run.json 을 본다"
+          exit 0
+
+      - name: 한글 글꼴 (글 그림, P7)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true'
+        run: |
+          start=$(date +%s)
+          { sudo apt-get update -q && sudo apt-get install -y -q --no-install-recommends fonts-noto-cjk; } >/dev/null \
+            || echo "::warning::한글 글꼴 설치 실패 — 그림 단계는 멈추고 초안은 그림 없이 남는다"
+          echo "글꼴 설치 $(( $(date +%s) - start ))초"
+
+      - name: 글 그림 — 차트 4종 · 저장소 카드 · 초안에 넣기 (네트워크·LLM 0, F11)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true'
+        run: |
+          set +e
+          start=$(date +%s)
+          python -m radar images || echo "::warning::그림 단계 실패 — 초안은 그림 자리 없이 남는다"
+          echo "그림 단계 $(( $(date +%s) - start ))초"
+          exit 0
+
+      - name: Notion (초안 상태만 고친다, 그림 포함)
+        if: env.RUN == 'true' && env.HAS_PRIVATE == 'true'
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        run: |
+          set +e
+          if [ -n "$NOTION_TOKEN" ] && [ -f .private/notion/index.json ]; then
+            python -m radar notion || echo "::warning::Notion 단계 실패 — 이번 주 초안이 있는지 본다"
+          else
+            echo "NOTION_TOKEN 또는 레이더 DB 대응표 없음 — Notion 건너뜀"
+          fi
           exit 0
 
       - name: 비공개 저장소 push

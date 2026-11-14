@@ -222,15 +222,23 @@ def _cards(week_text: str | None, cap: float, dry_run: bool, only: list[str],
 
 
 def _images(week_text: str | None) -> int:
-    """M8 — 글 그림(차트 4종 · 관점 저장소 카드). 네트워크·LLM 0, 비공개 저장소 초안 폴더에만."""
-    from radar import images
+    """M8 — 글 그림(차트 4종 · 관점 저장소 카드) 뒤 초안에 그림을 넣어 다시 쓴다.
+
+    네트워크·LLM 0, 비공개 저장소 초안 폴더에만.
+    """
+    from radar import blog, images
 
     try:
-        rec = images.render_images(load_config(), _week_arg(week_text))
+        week = _week_arg(week_text)
+        rec = images.render_images(load_config(), week)
+        drafted = (blog.PRIVATE / "weeks" / week.isoformat() / "blog" / "draft.json").exists()
+        merged = blog.rewrite_drafts(week) if drafted else None
     except (ConfigError, ContractError, ValueError, FileNotFoundError) as e:
         print(f"그림 중단: {e}", file=sys.stderr)
         return 1
     print(json.dumps({"week": rec["week"], "charts": len(rec["files"]), "cards": len(rec["cards"]),
+                      "intros": sum(1 for i in rec["intros"] if i["picture"]),
+                      "drafts": "그림 넣어 다시 씀" if merged else "초안 없음",
                       "observations": rec["observations"]}, ensure_ascii=False, indent=1))
     return 0
 
