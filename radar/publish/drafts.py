@@ -118,10 +118,34 @@ def _illustration(card: Mapping[str, Any]) -> list[str]:
             ">", f"> {ill['prompt']}", ""]
 
 
-def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None) -> str:
-    """TOP 10 글 (F7). t 는 gate_texts 를 거친 글, art 는 그림 단계 결과(F11 — 없으면 그림 없이)."""
+def _cover(cover: str | None) -> list[str]:
+    """대표 이미지 (D25) — 사람이 만든 blog/gen/cover*.* 가 있으면 제목 바로 아래."""
+    return [f"![대표 이미지]({cover})", ""] if cover else []
+
+
+def _tag(c: Mapping[str, Any]) -> str:
+    return " (추정)" if c.get("basis") == "추정" else ""
+
+
+def _what(note: Mapping[str, Any] | None, fallback: str) -> list[str]:
+    """무엇인가 (D25) — 그 주 저장소 해설(F10, README·웹 근거·게이트 통과)이 있으면 그것을,
+    없으면 초안 LLM 문단(설명·토픽·언어 근거)을 쓴다."""
+    head = ((note or {}).get("summary") or {}).get("what") or {}
+    items = [w for w in (note or {}).get("what") or [] if w.get("text")]
+    if not head.get("text") and not items:
+        return [f"**무엇인가** {fallback}", ""]
+    lines = [f"**무엇인가**{_tag(head)} {head['text']}" if head.get("text") else "**무엇인가**", ""]
+    lines += [f"- **{w['label']}**{_tag(w)} {w['text']}" for w in items]
+    return lines + ([""] if items else [])
+
+
+def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None, *,
+                  notes: Mapping[str, Mapping[str, Any]] | None = None, cover: str | None = None) -> str:
+    """TOP 10 글 (F7). t 는 gate_texts 를 거친 글, art 는 그림 단계 결과(F11 — 없으면 그림 없이),
+    notes 는 그 주 저장소 해설(저장소 이름 → 카드), cover 는 대표 이미지 경로(blog/ 기준)."""
     lines = [
         f"# 📡 {f['series']} {f['issue']}회 📡 {t['title:1']}", "",
+        *_cover(cover),
         f"> 제목 후보: {t['title:2']} / {t['title:3']}", "",
         t["lead"], "",
         f"***{f['series']} {f['issue']}회 정보***", "",
@@ -158,7 +182,7 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, 
         lines += [f"### {r['rank']}위 {r['repo']} — 지수 {r['index']:.1f} ({_move(r)})", "",
                   *_repo_picture(art, r["repo"]),
                   f"신호 기여: {_contrib_line(r)}", "",
-                  f"**무엇인가** {t['what:' + r['repo']]}", "",
+                  *_what((notes or {}).get(r["repo"]), t["what:" + r["repo"]]),
                   f"**어떤 신호로 떴나** {t['why:' + r['repo']]}", ""]
     lines += [
         "### 숫자를 읽을 때 주의할 점", "",
@@ -183,11 +207,13 @@ def _evidence(key: str, ev: Mapping[str, Any]) -> str:
     return f"관심 비중 {a[0]:.1f}% → {a[1]:.1f}% · 사용·기여 비중 {u[0]:.1f}% → {u[1]:.1f}%"
 
 
-def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None) -> str:
+def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None, *,
+                    cover: str | None = None) -> str:
     """관점 노트 (F9). art 가 있으면 신호 지도(C3)·관점 카드(R1)·일러스트 프롬프트(R2)를 넣는다."""
     rules = f["rules"]["angles"]
     cards = {c["full_name"]: c for c in (art or {}).get("cards") or []}
-    lines = [f"# 📡 {f['series']} 관점 노트 📡 {_period(f)}", "", t["angle_intro"], "", *_chart(art, "c3")]
+    lines = [f"# 📡 {f['series']} 관점 노트 📡 {_period(f)}", "", *_cover(cover), t["angle_intro"], "",
+             *_chart(art, "c3")]
     for key in ("A", "B", "C", "D"):
         a = f["angles"][key]
         lines += [f"### {key}. {a['name']}", "", ANGLE_RULE_TEXT[key].format(**rules) if rules else "", ""]

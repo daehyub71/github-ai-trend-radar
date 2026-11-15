@@ -253,9 +253,76 @@ def test_publish_rewrite_drafts_merges_pictures_without_llm(tmp_path):
     texts = {t: "관측한 내용입니다." for t in targets(f)}
     (out / "draft.json").write_text(json.dumps({"texts": texts}, ensure_ascii=False), encoding="utf-8")
     week = date(2026, 11, 1)
-    assert blog.rewrite_drafts(week, private=tmp_path) == {"week": "2026-11-01", "pictures": False}
+    assert blog.rewrite_drafts(week, private=tmp_path) == {"week": "2026-11-01", "pictures": False,
+                                                           "notes": 0, "cover": False}
     assert "![" not in (out / "post.md").read_text(encoding="utf-8")
     (out / "charts" / "charts.json").write_text(json.dumps(ART, ensure_ascii=False), encoding="utf-8")
-    assert blog.rewrite_drafts(week, private=tmp_path) == {"week": "2026-11-01", "pictures": True}
+    assert blog.rewrite_drafts(week, private=tmp_path) == {"week": "2026-11-01", "pictures": True,
+                                                           "notes": 0, "cover": False}
     assert "](charts/c1-rank-trend.png)" in (out / "post.md").read_text(encoding="utf-8")
     assert "](charts/card-org__r2.png)" in (out / "angles.md").read_text(encoding="utf-8")
+
+
+# ── 초안의 "무엇인가"는 저장소 해설(README·웹 근거)로 · 대표 이미지 (T8-13, D25) ──
+
+NOTE: dict[str, Any] = {
+    "full_name": "org/r2", "week": "2026-11-01",
+    "summary": {"what": {"text": "여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다.", "basis": "확인",
+                         "sources": ["E1"]}, "why_now": None, "watch": None},
+    "what": [{"label": "구조", "text": "WebSocket 서버가 CLI 를 감쌉니다.", "basis": "확인",
+              "sources": ["E1"]},
+             {"label": "쓰는 사람", "text": "구독을 이미 쓰는 개발자입니다.", "basis": "추정",
+              "sources": ["E2"]}],
+}
+
+
+def test_publish_post_what_prefers_commentary_card():
+    f = _facts_with_angle()
+    post = drafts.post_markdown(f, _texts(f), ART, notes={"org/r2": NOTE})
+    sec = post[post.index("org/r2 — 지수"):post.index("org/r3 — 지수")]
+    assert "**무엇인가** 여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다." in sec
+    assert "- **구조** WebSocket 서버가 CLI 를 감쌉니다." in sec
+    assert "- **쓰는 사람** (추정) 구독을 이미 쓰는 개발자입니다." in sec
+    assert sec.index("**무엇인가**") < sec.index("- **쓰는 사람**") < sec.index("**어떤 신호로 떴나**")
+    assert "**무엇인가** 관측한 내용입니다." not in sec
+    # 해설이 없는 저장소는 초안 LLM 문단(설명·토픽·언어 근거)을 그대로 쓴다
+    r3 = post[post.index("org/r3 — 지수"):]
+    assert "**무엇인가** 관측한 내용입니다." in r3
+    # 게이트에 모두 걸려 무엇인가가 비면 초안 LLM 문단으로 돌아간다
+    empty = dict(NOTE, summary={"what": None}, what=[])
+    again = drafts.post_markdown(f, _texts(f), ART, notes={"org/r2": empty})
+    assert "**무엇인가** 관측한 내용입니다." in again
+
+
+def test_publish_cover_goes_under_title():
+    f = _facts_with_angle()
+    post = drafts.post_markdown(f, _texts(f), ART, cover="gen/cover.png").split("\n")
+    assert post[0].startswith("# 📡 ") and post[2] == "![대표 이미지](gen/cover.png)"
+    ang = drafts.angles_markdown(f, _texts(f), ART, cover="gen/cover-angles.png").split("\n")
+    assert ang[2] == "![대표 이미지](gen/cover-angles.png)"
+    assert "대표 이미지" not in drafts.post_markdown(f, _texts(f), ART)
+
+
+def test_publish_rewrite_drafts_uses_week_commentary_and_cover(tmp_path):
+    from datetime import date
+
+    from radar import blog
+
+    f = _facts_with_angle()
+    out = tmp_path / "weeks" / "2026-11-01" / "blog"
+    (out / "charts").mkdir(parents=True)
+    (out / "facts.json").write_text(json.dumps(f, ensure_ascii=False), encoding="utf-8")
+    texts = {t: "관측한 내용입니다." for t in targets(f)}
+    (out / "draft.json").write_text(json.dumps({"texts": texts}, ensure_ascii=False), encoding="utf-8")
+    cards = tmp_path / "weeks" / "2026-11-01" / "cards"
+    cards.mkdir(parents=True)
+    (cards / "org__r2.json").write_text(json.dumps({"card": NOTE}, ensure_ascii=False), encoding="utf-8")
+    (cards / "run.json").write_text(json.dumps({"week": "2026-11-01", "cards": 1}), encoding="utf-8")
+    (out / "gen").mkdir()
+    (out / "gen" / "cover.png").write_bytes(b"\x89PNG cover")
+    got = blog.rewrite_drafts(date(2026, 11, 1), private=tmp_path)
+    assert got == {"week": "2026-11-01", "pictures": False, "notes": 1, "cover": True}
+    post = (out / "post.md").read_text(encoding="utf-8")
+    assert "**무엇인가** 여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다." in post
+    assert post.split("\n")[2] == "![대표 이미지](gen/cover.png)"
+    assert "대표 이미지" not in (out / "angles.md").read_text(encoding="utf-8")  # 관점 글은 cover-angles.*

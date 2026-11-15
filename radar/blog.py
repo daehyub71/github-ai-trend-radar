@@ -24,6 +24,7 @@ from radar.publish.llm import build_request, explain, targets
 from radar.store import DATA, json_text, week_path, write_mutable
 
 PRIVATE = PROJECT_ROOT / ".private"
+COVER_EXT = ("png", "jpg", "jpeg", "webp")
 CAP_USD = 3.0  # D4
 
 
@@ -69,9 +70,30 @@ def _art(blog: Path, week: date) -> dict[str, Any] | None:
     return art if art.get("week") == week.isoformat() else None
 
 
-def _write(out: Path, f: dict[str, Any], texts: dict[str, str], art: dict[str, Any] | None) -> None:
-    write_mutable(out / "post.md", drafts.post_markdown(f, texts, art))
-    write_mutable(out / "angles.md", drafts.angles_markdown(f, texts, art))
+def _notes(out: Path) -> dict[str, dict[str, Any]]:
+    """그 주 저장소 해설(F10) 사본 — weeks/<주>/cards/*.json. 해설 단계 전이면 빈 묶음(D25)."""
+    notes: dict[str, dict[str, Any]] = {}
+    for p in sorted((out.parent / "cards").glob("*.json")):
+        c = json.loads(p.read_text(encoding="utf-8")).get("card")
+        if isinstance(c, dict) and c.get("full_name"):
+            notes[c["full_name"]] = c
+    return notes
+
+
+def _cover(out: Path, stem: str) -> str | None:
+    """사람이 만든 대표 이미지 — blog/gen/<stem>.<확장자> (D25)."""
+    for ext in COVER_EXT:
+        if (out / "gen" / f"{stem}.{ext}").is_file():
+            return f"gen/{stem}.{ext}"
+    return None
+
+
+def _write(out: Path, f: dict[str, Any], texts: dict[str, str], art: dict[str, Any] | None) -> dict[str, Any]:
+    notes, cover = _notes(out), _cover(out, "cover")
+    write_mutable(out / "post.md", drafts.post_markdown(f, texts, art, notes=notes, cover=cover))
+    write_mutable(out / "angles.md",
+                  drafts.angles_markdown(f, texts, art, cover=_cover(out, "cover-angles")))
+    return {"notes": len(notes), "cover": cover is not None}
 
 
 def plan(cfg: Config, week: date, *, data: Path = DATA, model: str = "claude-sonnet-5-5") -> dict[str, Any]:
@@ -110,8 +132,8 @@ def rewrite_drafts(week: date, *, private: Path = PRIVATE) -> dict[str, Any]:
     raw = json.loads((out / "draft.json").read_text(encoding="utf-8")).get("texts") or {}
     texts, _ = drafts.gate_texts(raw, targets(f), f)
     art = _art(out, week)
-    _write(out, f, texts, art)
-    return {"week": week.isoformat(), "pictures": art is not None}
+    merged = _write(out, f, texts, art)
+    return {"week": week.isoformat(), "pictures": art is not None, **merged}
 
 
 def _title(md: str) -> str:

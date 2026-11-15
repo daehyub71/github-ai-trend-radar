@@ -238,7 +238,8 @@ def _images(week_text: str | None) -> int:
         return 1
     print(json.dumps({"week": rec["week"], "charts": len(rec["files"]), "cards": len(rec["cards"]),
                       "intros": sum(1 for i in rec["intros"] if i["picture"]),
-                      "drafts": "그림 넣어 다시 씀" if merged else "초안 없음",
+                      "drafts": (f"그림 넣어 다시 씀 · 해설 {merged['notes']}개 · 대표 이미지 "
+                                 + ("있음" if merged["cover"] else "없음")) if merged else "초안 없음",
                       "observations": rec["observations"]}, ensure_ascii=False, indent=1))
     return 0
 
