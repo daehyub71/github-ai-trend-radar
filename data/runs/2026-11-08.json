@@ -1,0 +1,53 @@
+{
+ "calls": {
+  "ecosystems": 49,
+  "geeknews": 24,
+  "gh_rest": 260,
+  "gh_search": 655,
+  "hn": 200,
+  "npm": 36,
+  "npm_registry": 40,
+  "pypi": 20,
+  "pypistats": 13
+ },
+ "candidates": 200,
+ "finished_at": "2026-11-16T07:24:58+00:00",
+ "geeknews": "ok",
+ "notes": [
+  "S2: 스냅샷 간격 3일 — 주간 증가로 쓰지 않는다",
+  "pingdotgg/t3code S3: is:pr is:merged merged 2026-11-08 주 1,926건 — Search 상한 1,000건까지만 셌다; is:issue is:closed closed 2026-11-08 주 1,826건 — Search 상한 1,000건까지만 셌다",
+  "stablyai/orca S3: is:pr is:merged merged 2026-11-08 주 1,659건 — Search 상한 1,000건까지만 셌다",
+  "NousResearch/hermes-agent S3: is:pr is:merged merged 2026-11-08 주 2,414건 — Search 상한 1,000건까지만 셌다; is:issue is:closed closed 2026-11-08 주 1,201건 — Search 상한 1,000건까지만 셌다",
+  "paperclipai/paperclip S3: is:pr is:merged merged 2026-11-08 주 1,100건 — Search 상한 1,000건까지만 셌다",
+  "tangency-labs/solidcraft S3: is:pr is:merged merged 2026-11-08 주 1,311건 — Search 상한 1,000건까지만 셌다; is:issue is:closed closed 2026-11-08 주 1,101건 — Search 상한 1,000건까지만 셌다",
+  "awesome-dsh-plugin/awesome-dsh-plugin S3: is:pr is:merged merged 2026-11-08 주 2,168건 — Search 상한 1,000건까지만 셌다",
+  "anthropics/claude-code S3: is:issue is:closed closed 2026-11-08 주 1,441건 — Search 상한 1,000건까지만 셌다",
+  "openclaw/openclaw S3: is:pr is:merged merged 2026-11-08 주 2,240건 — Search 상한 1,000건까지만 셌다"
+ ],
+ "sources": {
+  "s2": {
+   "failed": 0,
+   "ok": 200,
+   "partial": 0
+  },
+  "s3": {
+   "failed": 0,
+   "ok": 192,
+   "partial": 8
+  },
+  "s4": {
+   "failed": 0,
+   "none": 155,
+   "ok": 45,
+   "partial": 0
+  },
+  "s5": {
+   "failed": 0,
+   "ok": 200,
+   "partial": 0
+  }
+ },
+ "started_at": "2026-11-16T06:47:54+00:00",
+ "status": "partial",
+ "week": "2026-11-08"
+}

@@ -54,35 +54,48 @@
    "index": 42.86,
    "rank": 138,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 7.54,
+    "s2": 0.0,
+    "s3": 23.37,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 43.45,
+   "rank": 131,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 2,441",
+   "big": "누적 포크 2,507",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 6명",
+   "big": "PR 작성자 2명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 7명, 6주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
+   "text": "4주 전 6명, 7주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "6주 언급 0건",
+   "big": "7주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "138위 (처음)",
+   "big": "138위 → 131위",
    "id": "I7",
    "signal": "index",
-   "text": "6주 최고 29위(09-27 주), 최저 138위(이번 주).",
+   "text": "7주 최고 29위(09-27 주), 최저 138위(11-01 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,34 +105,34 @@
   "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 1.51,
+   "s1": 7.54,
    "s2": 0.0,
-   "s3": 28.4,
+   "s3": 23.37,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "KKKKhazix/AIHOT",
-  "index": 42.86,
+  "index": 43.45,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 5.53,
+   "s1": 27.64,
    "s2": null,
-   "s3": 62.48,
+   "s3": 51.42,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": null,
-  "rank": 138,
+  "prev_rank": 138,
+  "rank": 131,
   "raw": {
-   "s1_stars_gain": 756,
+   "s1_stars_gain": 984,
    "s2_fork_delta": null,
-   "s2_forks": 2441,
-   "s3_closed_issues": 11,
-   "s3_merged_prs": 36,
-   "s3_pr_authors": 6,
+   "s2_forks": 2507,
+   "s3_closed_issues": 4,
+   "s3_merged_prs": 47,
+   "s3_pr_authors": 2,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -129,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1393965829,
-  "star_rank": 189,
+  "star_rank": 145,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -150,7 +163,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 6
+   "weeks": 7
   }
  },
  "repo_id": 1393965829,
@@ -170,52 +183,52 @@
  ],
  "trend": [
   {
-   "avg": "99위",
+   "avg": "131위",
    "key": "종합 순위",
-   "now": "138위",
-   "prev": "—"
+   "now": "131위",
+   "prev": "138위"
   },
   {
-   "avg": "49.8",
+   "avg": "42.5",
    "key": "지수",
-   "now": "42.9",
-   "prev": "—"
+   "now": "43.5",
+   "prev": "42.9"
   },
   {
-   "avg": "1,228",
+   "avg": "815",
    "key": "스타 증가",
-   "now": "756",
-   "prev": "—"
+   "now": "984",
+   "prev": "756"
   },
   {
-   "avg": "38",
+   "avg": "28",
    "key": "머지 PR",
-   "now": "36",
-   "prev": "—"
+   "now": "47",
+   "prev": "36"
   },
   {
    "avg": "6",
    "key": "PR 작성자",
-   "now": "6",
-   "prev": "—"
+   "now": "2",
+   "prev": "6"
   },
   {
-   "avg": "16",
+   "avg": "14",
    "key": "닫힌 이슈",
-   "now": "11",
-   "prev": "—"
+   "now": "4",
+   "prev": "11"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "2,441",
-   "prev": "—"
+   "now": "2,507",
+   "prev": "2,441"
   }
  ]
 }

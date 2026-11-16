@@ -145,35 +145,48 @@
    "index": 62.09,
    "rank": 41,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 32.36,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 58.47,
+   "rank": 61,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 12,729",
+   "big": "누적 포크 12,878",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 28명",
+   "big": "PR 작성자 16명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 9명, 11주 첫 주 0명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 41명, 12주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
    "big": "이번 주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "11주 동안 글 5건 · 25점 — 이번 주는 조용했습니다.",
+   "text": "12주 동안 글 5건 · 25점 — 이번 주는 조용했습니다.",
    "title": "언급"
   },
   {
-   "big": "36위 → 41위",
+   "big": "41위 → 61위",
    "id": "I7",
    "signal": "index",
-   "text": "11주 최고 2위(09-06 주), 최저 63위(10-04 주).",
+   "text": "12주 최고 2위(09-06 주), 최저 63위(10-04 주).",
    "title": "순위 이동"
   }
  ],
@@ -183,34 +196,34 @@
   "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 14.12,
+   "s1": 13.57,
    "s2": 0.0,
-   "s3": 35.02,
+   "s3": 32.36,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "bilawalsidhu/gods-eye-view",
-  "index": 62.09,
+  "index": 58.47,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 51.76,
+   "s1": 49.75,
    "s2": null,
-   "s3": 77.05,
+   "s3": 71.19,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 36,
-  "rank": 41,
+  "prev_rank": 41,
+  "rank": 61,
   "raw": {
-   "s1_stars_gain": 1645,
+   "s1_stars_gain": 1534,
    "s2_fork_delta": null,
-   "s2_forks": 12729,
-   "s3_closed_issues": 16,
-   "s3_merged_prs": 81,
-   "s3_pr_authors": 28,
+   "s2_forks": 12878,
+   "s3_closed_issues": 12,
+   "s3_merged_prs": 77,
+   "s3_pr_authors": 16,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -220,14 +233,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1277471539,
-  "star_rank": 97,
+  "star_rank": 101,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -241,7 +254,7 @@
    "gn_topics": 0,
    "hn_points": 25,
    "hn_stories": 5,
-   "weeks": 11
+   "weeks": 12
   }
  },
  "repo_id": 1277471539,
@@ -261,40 +274,40 @@
  ],
  "trend": [
   {
-   "avg": "41위",
+   "avg": "36위",
    "key": "종합 순위",
-   "now": "41위",
-   "prev": "36위"
+   "now": "61위",
+   "prev": "41위"
   },
   {
-   "avg": "64.7",
+   "avg": "65.2",
    "key": "지수",
-   "now": "62.1",
-   "prev": "64.7"
+   "now": "58.5",
+   "prev": "62.1"
   },
   {
-   "avg": "3,758",
+   "avg": "3,310",
    "key": "스타 증가",
-   "now": "1,645",
-   "prev": "2,176"
+   "now": "1,534",
+   "prev": "1,645"
   },
   {
-   "avg": "64",
+   "avg": "79",
    "key": "머지 PR",
-   "now": "81",
-   "prev": "80"
+   "now": "77",
+   "prev": "81"
   },
   {
-   "avg": "22",
+   "avg": "27",
    "key": "PR 작성자",
-   "now": "28",
-   "prev": "23"
+   "now": "16",
+   "prev": "28"
   },
   {
-   "avg": "16",
+   "avg": "18",
    "key": "닫힌 이슈",
-   "now": "16",
-   "prev": "27"
+   "now": "12",
+   "prev": "16"
   },
   {
    "avg": "0",
@@ -305,8 +318,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "12,729",
-   "prev": "—"
+   "now": "12,878",
+   "prev": "12,729"
   }
  ]
 }

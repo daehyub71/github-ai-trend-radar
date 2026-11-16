@@ -171,21 +171,34 @@
    "index": 81.3,
    "rank": 5,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 25.77,
+    "s2": 0.0,
+    "s3": 42.71,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 81.02,
+   "rank": 5,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 7,811",
+   "big": "누적 포크 7,991",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 35명",
+   "big": "PR 작성자 32명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 29명, 12주 첫 주 14명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 13명, 12주 첫 주 15명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
@@ -209,34 +222,34 @@
   "backfilled": false,
   "category": "코딩 에이전트·IDE",
   "contrib": {
-   "s1": 25.22,
+   "s1": 25.77,
    "s2": 0.0,
-   "s3": 43.13,
+   "s3": 42.71,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "stablyai/orca",
-  "index": 81.3,
+  "index": 81.02,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 92.46,
+   "s1": 94.47,
    "s2": null,
-   "s3": 94.89,
+   "s3": 93.97,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
   "prev_rank": 5,
   "rank": 5,
   "raw": {
-   "s1_stars_gain": 7107,
+   "s1_stars_gain": 6674,
    "s2_fork_delta": null,
-   "s2_forks": 7811,
-   "s3_closed_issues": 469,
-   "s3_merged_prs": 995,
-   "s3_pr_authors": 35,
+   "s2_forks": 7991,
+   "s3_closed_issues": 448,
+   "s3_merged_prs": 984,
+   "s3_pr_authors": 32,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1183888342,
-  "star_rank": 16,
+  "star_rank": 12,
   "status": {
    "s2_status": "ok",
    "s3_status": "partial",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -295,40 +308,40 @@
  ],
  "trend": [
   {
-   "avg": "8위",
+   "avg": "6위",
    "key": "종합 순위",
    "now": "5위",
    "prev": "5위"
   },
   {
-   "avg": "80.6",
+   "avg": "81.0",
    "key": "지수",
-   "now": "81.3",
-   "prev": "81.4"
+   "now": "81.0",
+   "prev": "81.3"
   },
   {
-   "avg": "7,007",
+   "avg": "7,555",
    "key": "스타 증가",
-   "now": "7,107",
-   "prev": "6,962"
+   "now": "6,674",
+   "prev": "7,107"
   },
   {
-   "avg": "994",
+   "avg": "999",
    "key": "머지 PR",
-   "now": "995",
-   "prev": "1,000"
+   "now": "984",
+   "prev": "995"
   },
   {
-   "avg": "24",
+   "avg": "25",
    "key": "PR 작성자",
-   "now": "35",
-   "prev": "23"
+   "now": "32",
+   "prev": "35"
   },
   {
-   "avg": "553",
+   "avg": "591",
    "key": "닫힌 이슈",
-   "now": "469",
-   "prev": "891"
+   "now": "448",
+   "prev": "469"
   },
   {
    "avg": "0",
@@ -339,8 +352,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "7,811",
-   "prev": "—"
+   "now": "7,991",
+   "prev": "7,811"
   }
  ]
 }

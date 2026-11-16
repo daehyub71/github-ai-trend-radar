@@ -171,11 +171,24 @@
    "index": 37.51,
    "rank": 158,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 13.16,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 33.81,
+   "rank": 163,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 23,414",
+   "big": "누적 포크 23,542",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -185,7 +198,7 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 0명, 12주 첫 주 0명.",
+   "text": "4주 전 1명, 12주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
@@ -196,7 +209,7 @@
    "title": "언급"
   },
   {
-   "big": "73위 → 158위",
+   "big": "158위 → 163위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 35위(09-06 주), 최저 175위(10-04 주).",
@@ -209,32 +222,32 @@
   "backfilled": false,
   "category": "에이전트 프레임워크",
   "contrib": {
-   "s1": 18.84,
+   "s1": 13.16,
    "s2": 0.0,
-   "s3": 5.71,
+   "s3": 8.11,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "TauricResearch/TradingAgents",
-  "index": 37.51,
+  "index": 33.81,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 69.1,
+   "s1": 48.24,
    "s2": null,
-   "s3": 12.56,
+   "s3": 17.84,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 73,
-  "rank": 158,
+  "prev_rank": 158,
+  "rank": 163,
   "raw": {
-   "s1_stars_gain": 2210,
+   "s1_stars_gain": 1478,
    "s2_fork_delta": null,
-   "s2_forks": 23414,
-   "s3_closed_issues": 0,
+   "s2_forks": 23542,
+   "s3_closed_issues": 1,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 909213664,
-  "star_rank": 63,
+  "star_rank": 104,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -280,40 +293,40 @@
  ],
  "trend": [
   {
-   "avg": "136위",
+   "avg": "131위",
    "key": "종합 순위",
-   "now": "158위",
-   "prev": "73위"
+   "now": "163위",
+   "prev": "158위"
   },
   {
-   "avg": "39.8",
+   "avg": "42.5",
    "key": "지수",
-   "now": "37.5",
-   "prev": "55.6"
+   "now": "33.8",
+   "prev": "37.5"
   },
   {
-   "avg": "2,478",
+   "avg": "2,790",
    "key": "스타 증가",
-   "now": "2,210",
-   "prev": "5,485"
+   "now": "1,478",
+   "prev": "2,210"
   },
   {
    "avg": "0",
    "key": "머지 PR",
    "now": "0",
-   "prev": "1"
+   "prev": "0"
   },
   {
    "avg": "0",
    "key": "PR 작성자",
    "now": "0",
-   "prev": "1"
+   "prev": "0"
   },
   {
    "avg": "5",
    "key": "닫힌 이슈",
-   "now": "0",
-   "prev": "12"
+   "now": "1",
+   "prev": "0"
   },
   {
    "avg": "0",
@@ -324,8 +337,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "23,414",
-   "prev": "—"
+   "now": "23,542",
+   "prev": "23,414"
   }
  ]
 }

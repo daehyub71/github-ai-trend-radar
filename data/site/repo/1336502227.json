@@ -54,35 +54,48 @@
    "index": 58.9,
    "rank": 54,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 16.99,
+    "s2": 0.0,
+    "s3": 30.91,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 60.45,
+   "rank": 49,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,442",
+   "big": "누적 포크 1,545",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 18명",
+   "big": "PR 작성자 7명",
    "id": "I4",
    "signal": "s3",
-   "text": "12주 첫 주 12명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "12주 첫 주 13명 — 기여하는 사람이 줄었습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "이번 주 언급 0건",
+   "big": "12주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "12주 동안 글 1건 · 12점 — 이번 주는 조용했습니다.",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "54위 (처음)",
+   "big": "54위 → 49위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 2위(08-16 주), 최저 76위(08-30 주).",
+   "text": "12주 최고 49위(이번 주), 최저 76위(08-30 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,34 +105,34 @@
   "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 10.96,
+   "s1": 16.99,
    "s2": 0.0,
-   "s3": 34.99,
+   "s3": 30.91,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "CopilotKit/OpenBot",
-  "index": 58.9,
+  "index": 60.45,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 40.2,
+   "s1": 62.31,
    "s2": null,
-   "s3": 76.97,
+   "s3": 68.01,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": null,
-  "rank": 54,
+  "prev_rank": 54,
+  "rank": 49,
   "raw": {
-   "s1_stars_gain": 1270,
+   "s1_stars_gain": 1937,
    "s2_fork_delta": null,
-   "s2_forks": 1442,
-   "s3_closed_issues": 13,
-   "s3_merged_prs": 251,
-   "s3_pr_authors": 18,
+   "s2_forks": 1545,
+   "s3_closed_issues": 8,
+   "s3_merged_prs": 366,
+   "s3_pr_authors": 7,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -129,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1336502227,
-  "star_rank": 120,
+  "star_rank": 76,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -148,8 +161,8 @@
   "window": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 12,
-   "hn_stories": 1,
+   "hn_points": 0,
+   "hn_stories": 0,
    "weeks": 12
   }
  },
@@ -167,50 +180,50 @@
   {
    "avg": "—",
    "key": "종합 순위",
-   "now": "54위",
-   "prev": "—"
+   "now": "49위",
+   "prev": "54위"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "58.9",
-   "prev": "—"
+   "now": "60.5",
+   "prev": "58.9"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "1,270",
-   "prev": "—"
+   "now": "1,937",
+   "prev": "1,270"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "251",
-   "prev": "—"
+   "now": "366",
+   "prev": "251"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "18",
-   "prev": "—"
+   "now": "7",
+   "prev": "18"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "13",
-   "prev": "—"
+   "now": "8",
+   "prev": "13"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,442",
-   "prev": "—"
+   "now": "1,545",
+   "prev": "1,442"
   }
  ]
 }

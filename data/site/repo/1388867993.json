@@ -54,42 +54,62 @@
    "index": 28.34,
    "rank": 184,
    "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 0.69,
+    "s2": 0.0,
+    "s3": 15.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 28.34,
+   "rank": 178,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "PR 작성자 2명",
+   "big": "누적 포크 566",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 1명",
    "id": "I4",
    "signal": "s3",
-   "text": "",
+   "text": "4주 전 0명, 7주 첫 주 2명.",
    "title": "기여 폭"
   },
   {
-   "big": "4주 언급 0건",
+   "big": "7주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "185위 → 184위",
+   "big": "178위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "4주 최고 100위(09-27 주), 최저 185위(10-11 주).",
+   "text": "7주 최고 100위(09-27 주), 최저 185위(10-11 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": null,
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 1.57,
+   "s1": 0.69,
    "s2": 0.0,
-   "s3": 13.92,
+   "s3": 15.11,
    "s4": 0.0,
-   "s5": 12.85
+   "s5": 12.54
   },
   "full_name": "kaankiziltug/logo-design-skill",
   "index": 28.34,
@@ -98,21 +118,21 @@
    "s4"
   ],
   "pct": {
-   "s1": 5.75,
+   "s1": 2.51,
    "s2": null,
-   "s3": 30.63,
+   "s3": 33.25,
    "s4": null,
-   "s5": 47.12
+   "s5": 45.98
   },
-  "prev_rank": 185,
-  "rank": 184,
+  "prev_rank": null,
+  "rank": 178,
   "raw": {
-   "s1_stars_gain": 873,
+   "s1_stars_gain": 653,
    "s2_fork_delta": null,
-   "s2_forks": null,
-   "s3_closed_issues": 0,
-   "s3_merged_prs": 2,
-   "s3_pr_authors": 2,
+   "s2_forks": 566,
+   "s3_closed_issues": 3,
+   "s3_merged_prs": 1,
+   "s3_pr_authors": 1,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -122,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1388867993,
-  "star_rank": 190,
+  "star_rank": 195,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-10-18"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -143,53 +163,59 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 4
+   "weeks": 7
   }
  },
  "repo_id": 1388867993,
  "topics": [],
  "trend": [
   {
-   "avg": "154위",
+   "avg": "184위",
    "key": "종합 순위",
-   "now": "184위",
-   "prev": "185위"
+   "now": "178위",
+   "prev": "—"
   },
   {
-   "avg": "33.8",
+   "avg": "27.3",
    "key": "지수",
    "now": "28.3",
-   "prev": "26.2"
+   "prev": "—"
   },
   {
-   "avg": "1,176",
+   "avg": "910",
    "key": "스타 증가",
-   "now": "873",
-   "prev": "948"
+   "now": "653",
+   "prev": "—"
   },
   {
    "avg": "1",
    "key": "머지 PR",
-   "now": "2",
-   "prev": "0"
+   "now": "1",
+   "prev": "—"
   },
   {
    "avg": "1",
    "key": "PR 작성자",
-   "now": "2",
-   "prev": "0"
+   "now": "1",
+   "prev": "—"
   },
   {
-   "avg": "1",
+   "avg": "0",
    "key": "닫힌 이슈",
-   "now": "0",
-   "prev": "1"
+   "now": "3",
+   "prev": "—"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "566",
+   "prev": "—"
   }
  ]
 }

@@ -28,65 +28,85 @@
    "index": 46.98,
    "rank": 110,
    "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 8.36,
+    "s2": 0.0,
+    "s3": 28.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 49.72,
+   "rank": 98,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "PR 작성자 2명",
+   "big": "누적 포크 807",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 6명",
    "id": "I4",
    "signal": "s3",
-   "text": "11주 첫 주 2명.",
+   "text": "",
    "title": "기여 폭"
   },
   {
-   "big": "11주 언급 0건",
+   "big": "4주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "110위 (처음)",
+   "big": "98위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "11주 최고 110위(이번 주), 최저 172위(08-09 주).",
+   "text": "4주 최고 98위(이번 주), 최저 110위(10-18 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": null,
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 8.86,
+   "s1": 8.36,
    "s2": 0.0,
-   "s3": 25.27,
+   "s3": 28.82,
    "s4": 0.0,
-   "s5": 12.85
+   "s5": 12.54
   },
   "full_name": "beenuar/AiSOC",
-  "index": 46.98,
+  "index": 49.72,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 32.5,
+   "s1": 30.65,
    "s2": null,
-   "s3": 55.58,
+   "s3": 63.4,
    "s4": null,
-   "s5": 47.12
+   "s5": 45.98
   },
   "prev_rank": null,
-  "rank": 110,
+  "rank": 98,
   "raw": {
-   "s1_stars_gain": 1211,
+   "s1_stars_gain": 1079,
    "s2_fork_delta": null,
-   "s2_forks": null,
-   "s3_closed_issues": 9,
-   "s3_merged_prs": 38,
-   "s3_pr_authors": 2,
+   "s2_forks": 807,
+   "s3_closed_issues": 10,
+   "s3_merged_prs": 67,
+   "s3_pr_authors": 6,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -96,14 +116,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1226971975,
-  "star_rank": 136,
+  "star_rank": 139,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-10-18"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -117,7 +137,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 11
+   "weeks": 4
   }
  },
  "repo_id": 1226971975,
@@ -126,43 +146,49 @@
   {
    "avg": "—",
    "key": "종합 순위",
-   "now": "110위",
+   "now": "98위",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "47.0",
+   "now": "49.7",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "1,211",
+   "now": "1,079",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "38",
+   "now": "67",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "2",
+   "now": "6",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "9",
+   "now": "10",
    "prev": "—"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
    "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "807",
    "prev": "—"
   }
  ]

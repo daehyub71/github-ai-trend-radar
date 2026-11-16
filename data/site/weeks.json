@@ -2,6 +2,13 @@
  {
   "backfilled": false,
   "candidates": 200,
+  "issue": 2,
+  "top1": "meta/astryx",
+  "week": "2026-11-08"
+ },
+ {
+  "backfilled": false,
+  "candidates": 200,
   "issue": 1,
   "top1": "storytold/craft-anything",
   "week": "2026-11-01"

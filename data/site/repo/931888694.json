@@ -54,35 +54,48 @@
    "index": 61.38,
    "rank": 43,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.41,
+    "s2": 0.0,
+    "s3": 30.84,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 48.79,
+   "rank": 102,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 3,636",
+   "big": "누적 포크 3,677",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 13명",
+   "big": "PR 작성자 7명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 6명, 11주 첫 주 4명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "12주 첫 주 4명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "11주 언급 0건",
+   "big": "12주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "114위 → 43위",
+   "big": "43위 → 102위",
    "id": "I7",
    "signal": "index",
-   "text": "11주 최고 43위(이번 주), 최저 151위(08-23 주).",
+   "text": "12주 최고 43위(11-01 주), 최저 151위(08-23 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,34 +105,34 @@
   "backfilled": false,
   "category": "멀티모달(이미지·음성·영상)",
   "contrib": {
-   "s1": 17.41,
+   "s1": 5.41,
    "s2": 0.0,
-   "s3": 31.03,
+   "s3": 30.84,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "cjpais/Handy",
-  "index": 61.38,
+  "index": 48.79,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 63.82,
+   "s1": 19.85,
    "s2": null,
-   "s3": 68.26,
+   "s3": 67.84,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 114,
-  "rank": 43,
+  "prev_rank": 43,
+  "rank": 102,
   "raw": {
-   "s1_stars_gain": 2039,
+   "s1_stars_gain": 861,
    "s2_fork_delta": null,
-   "s2_forks": 3636,
-   "s3_closed_issues": 20,
-   "s3_merged_prs": 21,
-   "s3_pr_authors": 13,
+   "s2_forks": 3677,
+   "s3_closed_issues": 56,
+   "s3_merged_prs": 23,
+   "s3_pr_authors": 7,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -129,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 931888694,
-  "star_rank": 73,
+  "star_rank": 160,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -150,7 +163,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 11
+   "weeks": 12
   }
  },
  "repo_id": 931888694,
@@ -162,40 +175,40 @@
  ],
  "trend": [
   {
-   "avg": "124위",
+   "avg": "78위",
    "key": "종합 순위",
-   "now": "43위",
-   "prev": "114위"
+   "now": "102위",
+   "prev": "43위"
   },
   {
-   "avg": "43.9",
+   "avg": "53.8",
    "key": "지수",
-   "now": "61.4",
-   "prev": "46.3"
+   "now": "48.8",
+   "prev": "61.4"
   },
   {
-   "avg": "1,074",
+   "avg": "1,736",
    "key": "스타 증가",
-   "now": "2,039",
-   "prev": "1,433"
+   "now": "861",
+   "prev": "2,039"
   },
   {
-   "avg": "6",
+   "avg": "13",
    "key": "머지 PR",
-   "now": "21",
-   "prev": "5"
+   "now": "23",
+   "prev": "21"
   },
   {
-   "avg": "4",
+   "avg": "8",
    "key": "PR 작성자",
-   "now": "13",
-   "prev": "2"
+   "now": "7",
+   "prev": "13"
   },
   {
-   "avg": "17",
+   "avg": "12",
    "key": "닫힌 이슈",
-   "now": "20",
-   "prev": "4"
+   "now": "56",
+   "prev": "20"
   },
   {
    "avg": "0",
@@ -206,8 +219,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "3,636",
-   "prev": "—"
+   "now": "3,677",
+   "prev": "3,636"
   }
  ]
 }

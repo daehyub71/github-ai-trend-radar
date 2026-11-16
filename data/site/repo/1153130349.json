@@ -1,6 +1,6 @@
 {
  "category": "코딩 에이전트·IDE",
- "description": null,
+ "description": "The best way to control Claude Code, Codex and more from any computer or phone",
  "full_name": "pingdotgg/t3code",
  "history": [
   {
@@ -171,21 +171,34 @@
    "index": 84.51,
    "rank": 2,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 26.59,
+    "s2": 0.0,
+    "s3": 44.92,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 84.05,
+   "rank": 3,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 10,688",
+   "big": "누적 포크 11,066",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 190명",
+   "big": "PR 작성자 118명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 102명, 12주 첫 주 42명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 81명, 12주 첫 주 35명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
@@ -196,10 +209,10 @@
    "title": "언급"
   },
   {
-   "big": "2위 → 2위",
+   "big": "2위 → 3위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 2위(이번 주), 최저 76위(09-20 주).",
+   "text": "12주 최고 2위(11-01 주), 최저 76위(09-20 주).",
    "title": "순위 이동"
   }
  ],
@@ -209,34 +222,34 @@
   "backfilled": false,
   "category": "코딩 에이전트·IDE",
   "contrib": {
-   "s1": 26.86,
+   "s1": 26.59,
    "s2": 0.0,
-   "s3": 44.69,
+   "s3": 44.92,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "pingdotgg/t3code",
-  "index": 84.51,
+  "index": 84.05,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 98.49,
+   "s1": 97.49,
    "s2": null,
-   "s3": 98.32,
+   "s3": 98.83,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
   "prev_rank": 2,
-  "rank": 2,
+  "rank": 3,
   "raw": {
-   "s1_stars_gain": 15605,
+   "s1_stars_gain": 9400,
    "s2_fork_delta": null,
-   "s2_forks": 10688,
-   "s3_closed_issues": 482,
-   "s3_merged_prs": 996,
-   "s3_pr_authors": 190,
+   "s2_forks": 11066,
+   "s3_closed_issues": 999,
+   "s3_merged_prs": 998,
+   "s3_pr_authors": 118,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1153130349,
-  "star_rank": 4,
+  "star_rank": 6,
   "status": {
    "s2_status": "ok",
    "s3_status": "partial",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -271,43 +284,52 @@
   }
  },
  "repo_id": 1153130349,
- "topics": [],
+ "topics": [
+  "agent-orchestration",
+  "agents",
+  "ai",
+  "chatgpt",
+  "claude",
+  "claude-code",
+  "code",
+  "vibe-coding"
+ ],
  "trend": [
   {
-   "avg": "7위",
+   "avg": "4위",
    "key": "종합 순위",
-   "now": "2위",
+   "now": "3위",
    "prev": "2위"
   },
   {
-   "avg": "81.2",
+   "avg": "83.7",
    "key": "지수",
-   "now": "84.5",
-   "prev": "82.8"
+   "now": "84.0",
+   "prev": "84.5"
   },
   {
-   "avg": "2,859",
+   "avg": "6,244",
    "key": "스타 증가",
-   "now": "15,605",
-   "prev": "6,244"
+   "now": "9,400",
+   "prev": "15,605"
   },
   {
-   "avg": "864",
+   "avg": "960",
    "key": "머지 PR",
-   "now": "996",
-   "prev": "999"
+   "now": "998",
+   "prev": "996"
   },
   {
-   "avg": "124",
+   "avg": "146",
    "key": "PR 작성자",
-   "now": "190",
-   "prev": "110"
+   "now": "118",
+   "prev": "190"
   },
   {
-   "avg": "581",
+   "avg": "626",
    "key": "닫힌 이슈",
-   "now": "482",
-   "prev": "480"
+   "now": "999",
+   "prev": "482"
   },
   {
    "avg": "0",
@@ -318,8 +340,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "10,688",
-   "prev": "—"
+   "now": "11,066",
+   "prev": "10,688"
   }
  ]
 }

@@ -171,25 +171,38 @@
    "index": 61.07,
    "rank": 44,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 11.08,
+    "s2": 0.0,
+    "s3": 11.92,
+    "s4": 25.67,
+    "s5": 17.18
+   },
+   "index": 65.86,
+   "rank": 32,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "스타 1개당 다운로드 22,549회",
+   "big": "스타 1개당 다운로드 13,617회",
    "id": "I1",
    "signal": "s4",
-   "text": "패키지가 있는 후보 47개 중 1위 — 관심보다 실제 사용이 앞선 저장소입니다.",
+   "text": "패키지가 있는 후보 45개 중 2위 — 관심보다 실제 사용이 앞선 저장소입니다.",
    "title": "사용 대비 관심"
   },
   {
-   "big": "4주 평균의 1.20배",
+   "big": "4주 평균의 1.18배",
    "id": "I2",
    "signal": "s4",
-   "text": "12주 첫 주(08-16, 16,197,912)의 1.61배. 10-25 주에 한 번에 59% 늘었습니다.",
+   "text": "12주 첫 주(08-23, 20,368,373)의 1.30배. 10-25 주에 한 번에 59% 늘었습니다.",
    "title": "다운로드 추세"
   },
   {
-   "big": "누적 포크 21,423",
+   "big": "누적 포크 21,482",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -199,21 +212,21 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 1명, 12주 첫 주 0명.",
+   "text": "4주 전 0명, 12주 첫 주 1명.",
    "title": "기여 폭"
   },
   {
-   "big": "이번 주 글 2건 · 52점",
+   "big": "이번 주 글 2건 · 3점",
    "id": "I5",
    "signal": "s5",
-   "text": "Hacker News 2건(52점).",
+   "text": "Hacker News 2건(3점).",
    "title": "언급"
   },
   {
-   "big": "30위 → 44위",
+   "big": "44위 → 32위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 3위(08-23 주), 최저 44위(이번 주).",
+   "text": "12주 최고 3위(08-23 주), 최저 44위(11-01 주).",
    "title": "순위 이동"
   }
  ],
@@ -223,63 +236,63 @@
   "backfilled": false,
   "category": "코딩 에이전트·IDE",
   "contrib": {
-   "s1": 5.94,
+   "s1": 11.08,
    "s2": 0.0,
-   "s3": 11.53,
-   "s4": 26.09,
-   "s5": 17.51
+   "s3": 11.92,
+   "s4": 25.67,
+   "s5": 17.18
   },
   "full_name": "openai/codex",
-  "index": 61.07,
+  "index": 65.86,
   "missing": [
    "s2"
   ],
   "pct": {
-   "s1": 33.67,
+   "s1": 62.81,
    "s2": null,
-   "s3": 39.2,
-   "s4": 73.91,
-   "s5": 99.25
+   "s3": 40.54,
+   "s4": 72.73,
+   "s5": 97.36
   },
-  "prev_rank": 30,
-  "rank": 44,
+  "prev_rank": 44,
+  "rank": 32,
   "raw": {
-   "s1_stars_gain": 1154,
+   "s1_stars_gain": 1949,
    "s2_fork_delta": null,
-   "s2_forks": 21423,
-   "s3_closed_issues": 136,
+   "s2_forks": 21482,
+   "s3_closed_issues": 264,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": 0,
-   "s4_downloads": 26021465,
+   "s4_downloads": 26539823,
    "s4_packages": "npm:@openai/codex",
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
-   "s5_hn_points": 52,
+   "s5_hn_points": 3,
    "s5_hn_stories": 2
   },
   "repo_id": 965415649,
-  "star_rank": 133,
+  "star_rank": 75,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "ok",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 52,
+   "hn_points": 3,
    "hn_stories": 2
   },
   "window": {
    "gn_points": 0,
    "gn_topics": 2,
-   "hn_points": 1100,
-   "hn_stories": 12,
+   "hn_points": 952,
+   "hn_stories": 11,
    "weeks": 12
   }
  },
@@ -287,28 +300,28 @@
  "topics": [],
  "trend": [
   {
-   "avg": "27위",
+   "avg": "33위",
    "key": "종합 순위",
-   "now": "44위",
-   "prev": "30위"
+   "now": "32위",
+   "prev": "44위"
   },
   {
-   "avg": "68.9",
+   "avg": "66.0",
    "key": "지수",
-   "now": "61.1",
-   "prev": "66.0"
+   "now": "65.9",
+   "prev": "61.1"
   },
   {
-   "avg": "1,365",
+   "avg": "1,373",
    "key": "스타 증가",
-   "now": "1,154",
-   "prev": "1,917"
+   "now": "1,949",
+   "prev": "1,154"
   },
   {
-   "avg": "21,692,199",
+   "avg": "22,412,428",
    "key": "주간 다운로드",
-   "now": "26,021,465",
-   "prev": "27,967,221"
+   "now": "26,539,823",
+   "prev": "26,021,465"
   },
   {
    "avg": "0",
@@ -323,22 +336,22 @@
    "prev": "0"
   },
   {
-   "avg": "282",
+   "avg": "257",
    "key": "닫힌 이슈",
-   "now": "136",
-   "prev": "176"
+   "now": "264",
+   "prev": "136"
   },
   {
    "avg": "2",
    "key": "HN·GeekNews 글",
    "now": "2",
-   "prev": "0"
+   "prev": "2"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "21,423",
-   "prev": "—"
+   "now": "21,482",
+   "prev": "21,423"
   }
  ]
 }

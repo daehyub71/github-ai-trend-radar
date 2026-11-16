@@ -80,35 +80,48 @@
    "index": 56.43,
    "rank": 63,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 21.24,
+    "s2": 0.0,
+    "s3": 19.57,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 53.35,
+   "rank": 83,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,879",
+   "big": "누적 포크 2,113",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 4명",
+   "big": "PR 작성자 1명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 0명, 6주 첫 주 0명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 1명, 7주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
-   "big": "6주 언급 0건",
+   "big": "7주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "86위 → 63위",
+   "big": "63위 → 83위",
    "id": "I7",
    "signal": "index",
-   "text": "6주 최고 63위(이번 주), 최저 182위(10-04 주).",
+   "text": "7주 최고 63위(11-01 주), 최저 182위(10-04 주).",
    "title": "순위 이동"
   }
  ],
@@ -118,34 +131,34 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 21.93,
+   "s1": 21.24,
    "s2": 0.0,
-   "s3": 21.55,
+   "s3": 19.57,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "lemomo-ai/lemo-opuscar",
-  "index": 56.43,
+  "index": 53.35,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 80.4,
+   "s1": 77.89,
    "s2": null,
-   "s3": 47.4,
+   "s3": 43.05,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 86,
-  "rank": 63,
+  "prev_rank": 63,
+  "rank": 83,
   "raw": {
-   "s1_stars_gain": 3355,
+   "s1_stars_gain": 2897,
    "s2_fork_delta": null,
-   "s2_forks": 1879,
-   "s3_closed_issues": 6,
-   "s3_merged_prs": 4,
-   "s3_pr_authors": 4,
+   "s2_forks": 2113,
+   "s3_closed_issues": 16,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 1,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -155,14 +168,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1389011744,
-  "star_rank": 40,
+  "star_rank": 45,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -176,7 +189,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 6
+   "weeks": 7
   }
  },
  "repo_id": 1389011744,
@@ -204,40 +217,40 @@
  ],
  "trend": [
   {
-   "avg": "143위",
+   "avg": "114위",
    "key": "종합 순위",
-   "now": "63위",
-   "prev": "86위"
+   "now": "83위",
+   "prev": "63위"
   },
   {
-   "avg": "38.5",
+   "avg": "46.2",
    "key": "지수",
-   "now": "56.4",
-   "prev": "54.1"
+   "now": "53.4",
+   "prev": "56.4"
   },
   {
-   "avg": "2,328",
+   "avg": "2,938",
    "key": "스타 증가",
-   "now": "3,355",
-   "prev": "3,427"
+   "now": "2,897",
+   "prev": "3,355"
   },
   {
-   "avg": "1",
+   "avg": "2",
    "key": "머지 PR",
-   "now": "4",
-   "prev": "2"
-  },
-  {
-   "avg": "1",
-   "key": "PR 작성자",
-   "now": "4",
-   "prev": "2"
-  },
-  {
-   "avg": "1",
-   "key": "닫힌 이슈",
-   "now": "6",
+   "now": "2",
    "prev": "4"
+  },
+  {
+   "avg": "2",
+   "key": "PR 작성자",
+   "now": "1",
+   "prev": "4"
+  },
+  {
+   "avg": "2",
+   "key": "닫힌 이슈",
+   "now": "16",
+   "prev": "6"
   },
   {
    "avg": "0",
@@ -248,8 +261,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,879",
-   "prev": "—"
+   "now": "2,113",
+   "prev": "1,879"
   }
  ]
 }

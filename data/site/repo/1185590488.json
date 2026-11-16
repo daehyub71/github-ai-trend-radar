@@ -158,21 +158,34 @@
    "index": 51.27,
    "rank": 91,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 21.81,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 46.14,
+   "rank": 119,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 13,991",
+   "big": "누적 포크 14,099",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 3명",
+   "big": "PR 작성자 2명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 3명, 12주 첫 주 0명.",
+   "text": "4주 전 5명, 12주 첫 주 1명.",
    "title": "기여 폭"
   },
   {
@@ -183,7 +196,7 @@
    "title": "언급"
   },
   {
-   "big": "98위 → 91위",
+   "big": "91위 → 119위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 35위(09-20 주), 최저 193위(09-13 주).",
@@ -196,34 +209,34 @@
   "backfilled": false,
   "category": "기타 AI",
   "contrib": {
-   "s1": 13.84,
+   "s1": 11.79,
    "s2": 0.0,
-   "s3": 24.48,
+   "s3": 21.81,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "rohitg00/ai-engineering-from-scratch",
-  "index": 51.27,
+  "index": 46.14,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 50.75,
+   "s1": 43.22,
    "s2": null,
-   "s3": 53.85,
+   "s3": 47.99,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 98,
-  "rank": 91,
+  "prev_rank": 91,
+  "rank": 119,
   "raw": {
-   "s1_stars_gain": 1600,
+   "s1_stars_gain": 1385,
    "s2_fork_delta": null,
-   "s2_forks": 13991,
-   "s3_closed_issues": 5,
-   "s3_merged_prs": 27,
-   "s3_pr_authors": 3,
+   "s2_forks": 14099,
+   "s3_closed_issues": 8,
+   "s3_merged_prs": 17,
+   "s3_pr_authors": 2,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -233,14 +246,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1185590488,
-  "star_rank": 99,
+  "star_rank": 114,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -282,40 +295,40 @@
  ],
  "trend": [
   {
-   "avg": "72위",
+   "avg": "78위",
    "key": "종합 순위",
-   "now": "91위",
-   "prev": "98위"
+   "now": "119위",
+   "prev": "91위"
   },
   {
-   "avg": "56.5",
+   "avg": "54.7",
    "key": "지수",
-   "now": "51.3",
-   "prev": "51.1"
+   "now": "46.1",
+   "prev": "51.3"
   },
   {
-   "avg": "3,297",
+   "avg": "2,774",
    "key": "스타 증가",
-   "now": "1,600",
-   "prev": "2,814"
+   "now": "1,385",
+   "prev": "1,600"
   },
   {
-   "avg": "29",
+   "avg": "27",
    "key": "머지 PR",
-   "now": "27",
-   "prev": "3"
+   "now": "17",
+   "prev": "27"
   },
   {
    "avg": "3",
    "key": "PR 작성자",
-   "now": "3",
-   "prev": "2"
+   "now": "2",
+   "prev": "3"
   },
   {
    "avg": "5",
    "key": "닫힌 이슈",
-   "now": "5",
-   "prev": "1"
+   "now": "8",
+   "prev": "5"
   },
   {
    "avg": "0",
@@ -326,8 +339,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "13,991",
-   "prev": "—"
+   "now": "14,099",
+   "prev": "13,991"
   }
  ]
 }

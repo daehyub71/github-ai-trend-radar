@@ -1,0 +1,188 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Buyer-controlled client for x402 API payments in USDC on Base.",
+ "full_name": "vAPI-Network/vapi-network",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 9.75,
+    "s2": 0.0,
+    "s3": 7.32,
+    "s4": 9.63,
+    "s5": 8.11
+   },
+   "index": 34.81,
+   "rank": 159,
+   "week": "2026-11-08"
+  }
+ ],
+ "insights": [
+  {
+   "big": "스타 1개당 다운로드 1회",
+   "id": "I1",
+   "signal": "s4",
+   "text": "패키지가 있는 후보 45개 중 40위 — 다운로드에 비해 관심이 큰 저장소입니다.",
+   "title": "사용 대비 관심"
+  },
+  {
+   "big": "누적 포크 163",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 1명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "1주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "title": "언급"
+  },
+  {
+   "big": "159위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
+ "language": "TypeScript",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 9.75,
+   "s2": 0.0,
+   "s3": 7.32,
+   "s4": 9.63,
+   "s5": 8.11
+  },
+  "full_name": "vAPI-Network/vapi-network",
+  "index": 34.81,
+  "missing": [
+   "s2"
+  ],
+  "pct": {
+   "s1": 55.28,
+   "s2": null,
+   "s3": 24.87,
+   "s4": 27.27,
+   "s5": 45.98
+  },
+  "prev_rank": null,
+  "rank": 159,
+  "raw": {
+   "s1_stars_gain": 1663,
+   "s2_fork_delta": null,
+   "s2_forks": 163,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 2,
+   "s3_pr_authors": 1,
+   "s4_dependents": 0,
+   "s4_downloads": 1952,
+   "s4_packages": "npm:vapi-network",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1401744296,
+  "star_rank": 90,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "ok",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-08"
+ },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 1
+  }
+ },
+ "repo_id": 1401744296,
+ "topics": [
+  "agent-payments",
+  "ai-agents",
+  "base",
+  "mcp",
+  "usdc",
+  "x402"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "159위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "34.8",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,663",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "주간 다운로드",
+   "now": "1,952",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "2",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "1",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "163",
+   "prev": "—"
+  }
+ ]
+}

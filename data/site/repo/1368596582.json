@@ -15,18 +15,31 @@
    "index": 82.34,
    "rank": 4,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 25.22,
+    "s2": 0.0,
+    "s3": 30.87,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "index": 81.75,
+   "rank": 4,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,356",
+   "big": "누적 포크 1,482",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 11명",
+   "big": "PR 작성자 12명",
    "id": "I4",
    "signal": "s3",
    "text": "",
@@ -40,10 +53,10 @@
    "title": "언급"
   },
   {
-   "big": "4위 (처음)",
+   "big": "4위 → 4위",
    "id": "I7",
    "signal": "index",
-   "text": "",
+   "text": "2주 최고 4위(이번 주), 최저 4위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -53,34 +66,34 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 24.81,
+   "s1": 25.22,
    "s2": 0.0,
-   "s3": 31.29,
+   "s3": 30.87,
    "s4": 0.0,
-   "s5": 26.24
+   "s5": 25.66
   },
   "full_name": "google/elephant-goldfish-model",
-  "index": 82.34,
+  "index": 81.75,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 90.95,
+   "s1": 92.46,
    "s2": null,
-   "s3": 68.84,
+   "s3": 67.92,
    "s4": null,
-   "s5": 96.23
+   "s5": 94.1
   },
-  "prev_rank": null,
+  "prev_rank": 4,
   "rank": 4,
   "raw": {
-   "s1_stars_gain": 6164,
+   "s1_stars_gain": 5162,
    "s2_fork_delta": null,
-   "s2_forks": 1356,
-   "s3_closed_issues": 14,
-   "s3_merged_prs": 46,
-   "s3_pr_authors": 11,
+   "s2_forks": 1482,
+   "s3_closed_issues": 15,
+   "s3_merged_prs": 38,
+   "s3_pr_authors": 12,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -90,14 +103,14 @@
    "s5_hn_stories": 1
   },
   "repo_id": 1368596582,
-  "star_rank": 19,
+  "star_rank": 16,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -109,9 +122,9 @@
   "window": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 1,
-   "hn_stories": 1,
-   "weeks": 1
+   "hn_points": 2,
+   "hn_stories": 2,
+   "weeks": 2
   }
  },
  "repo_id": 1368596582,
@@ -138,49 +151,49 @@
    "avg": "—",
    "key": "종합 순위",
    "now": "4위",
-   "prev": "—"
+   "prev": "4위"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "82.3",
-   "prev": "—"
+   "now": "81.8",
+   "prev": "82.3"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "6,164",
-   "prev": "—"
+   "now": "5,162",
+   "prev": "6,164"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "46",
-   "prev": "—"
+   "now": "38",
+   "prev": "46"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "11",
-   "prev": "—"
+   "now": "12",
+   "prev": "11"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "14",
-   "prev": "—"
+   "now": "15",
+   "prev": "14"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
    "now": "1",
-   "prev": "—"
+   "prev": "1"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,356",
-   "prev": "—"
+   "now": "1,482",
+   "prev": "1,356"
   }
  ]
 }

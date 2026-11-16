@@ -171,18 +171,31 @@
    "index": 50.08,
    "rank": 94,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 18.78,
+    "s2": 0.0,
+    "s3": 37.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 68.32,
+   "rank": 25,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 10,762",
+   "big": "누적 포크 10,924",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 1명",
+   "big": "PR 작성자 55명",
    "id": "I4",
    "signal": "s3",
    "text": "",
@@ -196,7 +209,7 @@
    "title": "언급"
   },
   {
-   "big": "64위 → 94위",
+   "big": "94위 → 25위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 22위(08-23 주), 최저 97위(09-20 주).",
@@ -209,34 +222,34 @@
   "backfilled": false,
   "category": "멀티모달(이미지·음성·영상)",
   "contrib": {
-   "s1": 23.57,
+   "s1": 18.78,
    "s2": 0.0,
-   "s3": 13.55,
+   "s3": 37.0,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "OpenMontageInc/OpenMontage",
-  "index": 50.08,
+  "index": 68.32,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 86.43,
+   "s1": 68.84,
    "s2": null,
-   "s3": 29.82,
+   "s3": 81.41,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 64,
-  "rank": 94,
+  "prev_rank": 94,
+  "rank": 25,
   "raw": {
-   "s1_stars_gain": 4400,
+   "s1_stars_gain": 2253,
    "s2_fork_delta": null,
-   "s2_forks": 10762,
-   "s3_closed_issues": 1,
-   "s3_merged_prs": 1,
-   "s3_pr_authors": 1,
+   "s2_forks": 10924,
+   "s3_closed_issues": 33,
+   "s3_merged_prs": 93,
+   "s3_pr_authors": 55,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1195360525,
-  "star_rank": 28,
+  "star_rank": 63,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -294,40 +307,40 @@
  ],
  "trend": [
   {
-   "avg": "54위",
+   "avg": "67위",
    "key": "종합 순위",
-   "now": "94위",
-   "prev": "64위"
+   "now": "25위",
+   "prev": "94위"
   },
   {
-   "avg": "60.2",
+   "avg": "56.6",
    "key": "지수",
-   "now": "50.1",
-   "prev": "56.9"
+   "now": "68.3",
+   "prev": "50.1"
   },
   {
-   "avg": "2,922",
+   "avg": "3,091",
    "key": "스타 증가",
-   "now": "4,400",
-   "prev": "2,480"
+   "now": "2,253",
+   "prev": "4,400"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "1",
-   "prev": "—"
+   "now": "93",
+   "prev": "1"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "1",
-   "prev": "—"
+   "now": "55",
+   "prev": "1"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "1",
-   "prev": "—"
+   "now": "33",
+   "prev": "1"
   },
   {
    "avg": "0",
@@ -338,8 +351,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "10,762",
-   "prev": "—"
+   "now": "10,924",
+   "prev": "10,762"
   }
  ]
 }

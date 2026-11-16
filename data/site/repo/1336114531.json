@@ -28,42 +28,62 @@
    "index": 52.23,
    "rank": 83,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.76,
+    "s2": 0.0,
+    "s3": 18.6,
+    "s4": 15.24,
+    "s5": 8.11
+   },
+   "index": 47.72,
+   "rank": 112,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "스타 1개당 다운로드 25회",
+   "big": "스타 1개당 다운로드 26회",
    "id": "I1",
    "signal": "s4",
-   "text": "패키지가 있는 후보 47개 중 20위.",
+   "text": "패키지가 있는 후보 45개 중 24위.",
    "title": "사용 대비 관심"
   },
   {
-   "big": "누적 포크 109",
+   "big": "4주 평균의 0.81배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "누적 포크 117",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 6명",
+   "big": "PR 작성자 8명",
    "id": "I4",
    "signal": "s3",
    "text": "",
    "title": "기여 폭"
   },
   {
-   "big": "3주 언급 0건",
+   "big": "4주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
    "title": "언급"
   },
   {
-   "big": "83위 (처음)",
+   "big": "83위 → 112위",
    "id": "I7",
    "signal": "index",
-   "text": "3주 최고 83위(이번 주), 최저 130위(10-18 주).",
+   "text": "4주 최고 83위(11-01 주), 최저 130위(10-18 주).",
    "title": "순위 이동"
   }
  ],
@@ -73,35 +93,35 @@
   "backfilled": false,
   "category": "MCP 서버·도구",
   "contrib": {
-   "s1": 8.6,
+   "s1": 5.76,
    "s2": 0.0,
-   "s3": 17.22,
-   "s4": 18.03,
-   "s5": 8.38
+   "s3": 18.6,
+   "s4": 15.24,
+   "s5": 8.11
   },
   "full_name": "elysia395/dsh-wallpaper-engine",
-  "index": 52.23,
+  "index": 47.72,
   "missing": [
    "s2"
   ],
   "pct": {
-   "s1": 48.74,
+   "s1": 32.66,
    "s2": null,
-   "s3": 58.54,
-   "s4": 51.09,
-   "s5": 47.49
+   "s3": 63.23,
+   "s4": 43.18,
+   "s5": 45.98
   },
-  "prev_rank": null,
-  "rank": 83,
+  "prev_rank": 83,
+  "rank": 112,
   "raw": {
-   "s1_stars_gain": 1529,
+   "s1_stars_gain": 1109,
    "s2_fork_delta": null,
-   "s2_forks": 109,
-   "s3_closed_issues": 16,
-   "s3_merged_prs": 12,
-   "s3_pr_authors": 6,
+   "s2_forks": 117,
+   "s3_closed_issues": 18,
+   "s3_merged_prs": 20,
+   "s3_pr_authors": 8,
    "s4_dependents": 0,
-   "s4_downloads": 38064,
+   "s4_downloads": 28333,
    "s4_packages": "npm:dsh-plugin-wallpaper-engine",
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
@@ -109,14 +129,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1336114531,
-  "star_rank": 103,
+  "star_rank": 135,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "ok",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -130,7 +150,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 3
+   "weeks": 4
   }
  },
  "repo_id": 1336114531,
@@ -147,58 +167,58 @@
  ],
  "trend": [
   {
-   "avg": "—",
+   "avg": "106위",
    "key": "종합 순위",
-   "now": "83위",
-   "prev": "—"
+   "now": "112위",
+   "prev": "83위"
   },
   {
-   "avg": "—",
+   "avg": "47.5",
    "key": "지수",
-   "now": "52.2",
-   "prev": "—"
+   "now": "47.7",
+   "prev": "52.2"
   },
   {
-   "avg": "—",
+   "avg": "1,326",
    "key": "스타 증가",
-   "now": "1,529",
-   "prev": "—"
+   "now": "1,109",
+   "prev": "1,529"
   },
   {
-   "avg": "—",
+   "avg": "34,927",
    "key": "주간 다운로드",
-   "now": "38,064",
-   "prev": "—"
+   "now": "28,333",
+   "prev": "38,064"
   },
   {
-   "avg": "—",
+   "avg": "8",
    "key": "머지 PR",
-   "now": "12",
-   "prev": "—"
+   "now": "20",
+   "prev": "12"
   },
   {
-   "avg": "—",
+   "avg": "4",
    "key": "PR 작성자",
-   "now": "6",
-   "prev": "—"
+   "now": "8",
+   "prev": "6"
   },
   {
-   "avg": "—",
+   "avg": "12",
    "key": "닫힌 이슈",
-   "now": "16",
-   "prev": "—"
+   "now": "18",
+   "prev": "16"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "109",
-   "prev": "—"
+   "now": "117",
+   "prev": "109"
   }
  ]
 }

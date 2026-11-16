@@ -158,14 +158,34 @@
    "index": 27.85,
    "rank": 179,
    "week": "2026-10-25"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 2.33,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 22.98,
+   "rank": 193,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
+   "big": "누적 포크 6,799",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 0명, 12주 첫 주 10명.",
+   "text": "4주 전 0명, 12주 첫 주 6명.",
    "title": "기여 폭"
   },
   {
@@ -176,45 +196,45 @@
    "title": "언급"
   },
   {
-   "big": "188위 → 179위",
+   "big": "193위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 25위(08-09 주), 최저 188위(10-18 주).",
+   "text": "12주 최고 28위(09-13 주), 최저 193위(이번 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": "Python",
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "기타 AI",
   "contrib": {
-   "s1": 8.63,
+   "s1": 2.33,
    "s2": 0.0,
-   "s3": 6.27,
+   "s3": 8.11,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "bojieli/ai-agent-book",
-  "index": 27.85,
+  "index": 22.98,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 31.66,
+   "s1": 8.54,
    "s2": null,
-   "s3": 13.79,
+   "s3": 17.84,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 188,
-  "rank": 179,
+  "prev_rank": null,
+  "rank": 193,
   "raw": {
-   "s1_stars_gain": 1088,
+   "s1_stars_gain": 725,
    "s2_fork_delta": null,
-   "s2_forks": null,
-   "s3_closed_issues": 0,
+   "s2_forks": 6799,
+   "s3_closed_issues": 1,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -226,14 +246,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1053118194,
-  "star_rank": 137,
+  "star_rank": 183,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-10-25"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -268,46 +288,52 @@
  ],
  "trend": [
   {
-   "avg": "175위",
+   "avg": "182위",
    "key": "종합 순위",
-   "now": "179위",
-   "prev": "188위"
+   "now": "193위",
+   "prev": "—"
   },
   {
-   "avg": "29.5",
+   "avg": "27.9",
    "key": "지수",
-   "now": "27.9",
-   "prev": "25.2"
+   "now": "23.0",
+   "prev": "—"
   },
   {
-   "avg": "1,182",
+   "avg": "1,173",
    "key": "스타 증가",
-   "now": "1,088",
-   "prev": "1,069"
+   "now": "725",
+   "prev": "—"
   },
   {
    "avg": "0",
    "key": "머지 PR",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
    "avg": "0",
    "key": "PR 작성자",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
    "avg": "0",
    "key": "닫힌 이슈",
-   "now": "0",
-   "prev": "0"
+   "now": "1",
+   "prev": "—"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "6,799",
+   "prev": "—"
   }
  ]
 }

@@ -54,35 +54,48 @@
    "index": 51.32,
    "rank": 88,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.21,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 23.57,
+   "rank": 189,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 2,365",
+   "big": "누적 포크 2,417",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 8명",
+   "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "",
+   "text": "4주 전 0명.",
    "title": "기여 폭"
   },
   {
    "big": "이번 주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "4주 동안 글 3건 · 91점 — 이번 주는 조용했습니다.",
+   "text": "5주 동안 글 3건 · 91점 — 이번 주는 조용했습니다.",
    "title": "언급"
   },
   {
-   "big": "149위 → 88위",
+   "big": "88위 → 189위",
    "id": "I7",
    "signal": "index",
-   "text": "4주 최고 42위(10-18 주), 최저 153위(10-11 주).",
+   "text": "5주 최고 42위(10-18 주), 최저 189위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,34 +105,34 @@
   "backfilled": false,
   "category": "에이전트 프레임워크",
   "contrib": {
-   "s1": 12.33,
+   "s1": 5.21,
    "s2": 0.0,
-   "s3": 26.04,
+   "s3": 5.82,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "google-research/harness2",
-  "index": 51.32,
+  "index": 23.57,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 45.23,
+   "s1": 19.1,
    "s2": null,
-   "s3": 57.29,
+   "s3": 12.81,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 149,
-  "rank": 88,
+  "prev_rank": 88,
+  "rank": 189,
   "raw": {
-   "s1_stars_gain": 1381,
+   "s1_stars_gain": 857,
    "s2_fork_delta": null,
-   "s2_forks": 2365,
-   "s3_closed_issues": 6,
-   "s3_merged_prs": 17,
-   "s3_pr_authors": 8,
+   "s2_forks": 2417,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -129,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1407951147,
-  "star_rank": 110,
+  "star_rank": 162,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -150,47 +163,47 @@
    "gn_topics": 0,
    "hn_points": 91,
    "hn_stories": 3,
-   "weeks": 4
+   "weeks": 5
   }
  },
  "repo_id": 1407951147,
  "topics": [],
  "trend": [
   {
-   "avg": "115위",
+   "avg": "108위",
    "key": "종합 순위",
-   "now": "88위",
-   "prev": "149위"
+   "now": "189위",
+   "prev": "88위"
   },
   {
-   "avg": "45.6",
+   "avg": "47.0",
    "key": "지수",
-   "now": "51.3",
-   "prev": "37.9"
+   "now": "23.6",
+   "prev": "51.3"
   },
   {
-   "avg": "7,252",
+   "avg": "5,784",
    "key": "스타 증가",
-   "now": "1,381",
-   "prev": "2,540"
+   "now": "857",
+   "prev": "1,381"
   },
   {
-   "avg": "0",
+   "avg": "4",
    "key": "머지 PR",
-   "now": "17",
-   "prev": "0"
+   "now": "0",
+   "prev": "17"
   },
   {
-   "avg": "0",
+   "avg": "2",
    "key": "PR 작성자",
-   "now": "8",
-   "prev": "0"
+   "now": "0",
+   "prev": "8"
   },
   {
-   "avg": "0",
+   "avg": "2",
    "key": "닫힌 이슈",
-   "now": "6",
-   "prev": "0"
+   "now": "0",
+   "prev": "6"
   },
   {
    "avg": "1",
@@ -201,8 +214,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "2,365",
-   "prev": "—"
+   "now": "2,417",
+   "prev": "2,365"
   }
  ]
 }

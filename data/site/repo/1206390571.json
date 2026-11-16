@@ -158,32 +158,45 @@
    "index": 83.25,
    "rank": 3,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 26.04,
+    "s2": 0.0,
+    "s3": 40.2,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 78.78,
+   "rank": 7,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 12,109",
+   "big": "누적 포크 12,365",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 6명",
+   "big": "PR 작성자 33명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 1명, 12주 첫 주 5명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 10명, 12주 첫 주 3명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "언급 점수의 100.0%가 글 하나",
+   "big": "이번 주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
+   "text": "12주 동안 글 3건 · 59점 — 이번 주는 조용했습니다.",
    "title": "언급"
   },
   {
-   "big": "8위 → 3위",
+   "big": "3위 → 7위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 1위(09-06 주), 최저 112위(08-23 주).",
@@ -196,58 +209,58 @@
   "backfilled": false,
   "category": "멀티모달(이미지·음성·영상)",
   "contrib": {
-   "s1": 25.35,
+   "s1": 26.04,
    "s2": 0.0,
-   "s3": 31.41,
+   "s3": 40.2,
    "s4": 0.0,
-   "s5": 26.48
+   "s5": 12.54
   },
   "full_name": "debpalash/VoiceStudio",
-  "index": 83.25,
+  "index": 78.78,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 92.96,
+   "s1": 95.48,
    "s2": null,
-   "s3": 69.1,
+   "s3": 88.44,
    "s4": null,
-   "s5": 97.11
+   "s5": 45.98
   },
-  "prev_rank": 8,
-  "rank": 3,
+  "prev_rank": 3,
+  "rank": 7,
   "raw": {
-   "s1_stars_gain": 7257,
+   "s1_stars_gain": 6866,
    "s2_fork_delta": null,
-   "s2_forks": 12109,
-   "s3_closed_issues": 27,
-   "s3_merged_prs": 54,
-   "s3_pr_authors": 6,
+   "s2_forks": 12365,
+   "s3_closed_issues": 133,
+   "s3_merged_prs": 231,
+   "s3_pr_authors": 33,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
-   "s5_hn_points": 3,
-   "s5_hn_stories": 1
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
   },
   "repo_id": 1206390571,
-  "star_rank": 15,
+  "star_rank": 10,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 3,
-   "hn_stories": 1
+   "hn_points": 0,
+   "hn_stories": 0
   },
   "window": {
    "gn_points": 50,
@@ -281,52 +294,52 @@
  ],
  "trend": [
   {
-   "avg": "28위",
+   "avg": "15위",
    "key": "종합 순위",
-   "now": "3위",
-   "prev": "8위"
+   "now": "7위",
+   "prev": "3위"
   },
   {
-   "avg": "70.2",
+   "avg": "75.7",
    "key": "지수",
-   "now": "83.2",
-   "prev": "79.4"
+   "now": "78.8",
+   "prev": "83.2"
   },
   {
-   "avg": "11,216",
+   "avg": "11,788",
    "key": "스타 증가",
-   "now": "7,257",
-   "prev": "11,961"
+   "now": "6,866",
+   "prev": "7,257"
   },
   {
-   "avg": "102",
+   "avg": "112",
    "key": "머지 PR",
-   "now": "54",
-   "prev": "235"
+   "now": "231",
+   "prev": "54"
   },
   {
-   "avg": "8",
+   "avg": "9",
    "key": "PR 작성자",
-   "now": "6",
-   "prev": "16"
+   "now": "33",
+   "prev": "6"
   },
   {
-   "avg": "80",
+   "avg": "70",
    "key": "닫힌 이슈",
-   "now": "27",
-   "prev": "199"
+   "now": "133",
+   "prev": "27"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
-   "now": "1",
-   "prev": "0"
+   "now": "0",
+   "prev": "1"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "12,109",
-   "prev": "—"
+   "now": "12,365",
+   "prev": "12,109"
   }
  ]
 }

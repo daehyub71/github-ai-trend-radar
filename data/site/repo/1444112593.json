@@ -1,0 +1,169 @@
+{
+ "category": "멀티모달(이미지·음성·영상)",
+ "description": "Films made with code. Short films, long YouTube videos, ads, explainers and music videos: an AI coding agent writes the script, builds every frame in code, designs the sound and hands you an MP4.",
+ "full_name": "sarpstar/cinecode",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 12.61,
+    "s2": 0.0,
+    "s3": 9.21,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 34.36,
+   "rank": 162,
+   "week": "2026-11-08"
+  }
+ ],
+ "insights": [
+  {
+   "big": "누적 포크 443",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "1주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "162위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "멀티모달(이미지·음성·영상)",
+  "contrib": {
+   "s1": 12.61,
+   "s2": 0.0,
+   "s3": 9.21,
+   "s4": 0.0,
+   "s5": 12.54
+  },
+  "full_name": "sarpstar/cinecode",
+  "index": 34.36,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 46.23,
+   "s2": null,
+   "s3": 20.27,
+   "s4": null,
+   "s5": 45.98
+  },
+  "prev_rank": null,
+  "rank": 162,
+  "raw": {
+   "s1_stars_gain": 1446,
+   "s2_fork_delta": null,
+   "s2_forks": 443,
+   "s3_closed_issues": 2,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1444112593,
+  "star_rank": 108,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-08"
+ },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 1
+  }
+ },
+ "repo_id": 1444112593,
+ "topics": [],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "162위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "34.4",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,446",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "2",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "443",
+   "prev": "—"
+  }
+ ]
+}

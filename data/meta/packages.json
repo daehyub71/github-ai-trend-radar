@@ -69,6 +69,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1024661423": {
+  "checked": "2026-11-16",
+  "full_name": "we-promise/sure",
+  "packages": [],
+  "status": "ok"
+ },
  "1027384981": {
   "checked": "2026-11-13",
   "full_name": "langchain-ai/deepagents",
@@ -584,6 +590,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1135847870": {
+  "checked": "2026-11-16",
+  "full_name": "google-labs-code/stitch-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1136590548": {
   "checked": "2026-11-13",
   "full_name": "affaan-m/ECC",
@@ -697,6 +709,12 @@
  "1142983825": {
   "checked": "2026-11-13",
   "full_name": "multica-ai/andrej-karpathy-skills",
+  "packages": [],
+  "status": "ok"
+ },
+ "1143633223": {
+  "checked": "2026-11-16",
+  "full_name": "GoogleChrome/modern-web-guidance-src",
   "packages": [],
   "status": "ok"
  },
@@ -1221,6 +1239,12 @@
   ],
   "status": "ok"
  },
+ "1189825116": {
+  "checked": "2026-11-16",
+  "full_name": "GoogleChrome/modern-web-guidance",
+  "packages": [],
+  "status": "ok"
+ },
  "1192555574": {
   "checked": "2026-11-13",
   "full_name": "RyanCodrai/turbovec",
@@ -1373,6 +1397,12 @@
  "1201730379": {
   "checked": "2026-11-13",
   "full_name": "alchaincyf/nuwa-skill",
+  "packages": [],
+  "status": "ok"
+ },
+ "1202057891": {
+  "checked": "2026-11-16",
+  "full_name": "garrytan/gbrain",
   "packages": [],
   "status": "ok"
  },
@@ -1951,6 +1981,12 @@
   ],
   "status": "ok"
  },
+ "1264986626": {
+  "checked": "2026-11-16",
+  "full_name": "shadcn/improve",
+  "packages": [],
+  "status": "ok"
+ },
  "1266695553": {
   "checked": "2026-11-13",
   "full_name": "SenteLabsAI/OpenExecutive",
@@ -2106,6 +2142,12 @@
   ],
   "status": "ok"
  },
+ "1289817225": {
+  "checked": "2026-11-16",
+  "full_name": "arjun988/blender-skills",
+  "packages": [],
+  "status": "ok"
+ },
  "1289958986": {
   "checked": "2026-11-13",
   "full_name": "Kuddev/pebrel",
@@ -2187,6 +2229,17 @@
   "checked": "2026-11-13",
   "full_name": "littledivy/mimic",
   "packages": [],
+  "status": "ok"
+ },
+ "1299769220": {
+  "checked": "2026-11-16",
+  "full_name": "openai/codex-security",
+  "packages": [
+   [
+    "npm",
+    "@openai/codex-security"
+   ]
+  ],
   "status": "ok"
  },
  "1300902838": {
@@ -3061,6 +3114,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1362562155": {
+  "checked": "2026-11-16",
+  "full_name": "Likely7/Veyra-NRVideo",
+  "packages": [],
+  "status": "ok"
+ },
  "1363417187": {
   "checked": "2026-11-13",
   "full_name": "yi1108/printfilm",
@@ -3124,6 +3183,12 @@
  "1374005005": {
   "checked": "2026-11-13",
   "full_name": "tamaratran/fast-jev-compaction",
+  "packages": [],
+  "status": "ok"
+ },
+ "1374472673": {
+  "checked": "2026-11-16",
+  "full_name": "kuafuai/andee",
   "packages": [],
   "status": "ok"
  },
@@ -3374,6 +3439,17 @@
   "packages": [],
   "status": "ok"
  },
+ "1401744296": {
+  "checked": "2026-11-16",
+  "full_name": "vAPI-Network/vapi-network",
+  "packages": [
+   [
+    "npm",
+    "vapi-network"
+   ]
+  ],
+  "status": "ok"
+ },
  "1403115747": {
   "checked": "2026-11-13",
   "full_name": "Jakeschincariol/replica-skill",
@@ -3509,6 +3585,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1410961834": {
+  "checked": "2026-11-16",
+  "full_name": "BaaRai/ARTEX",
+  "packages": [],
+  "status": "ok"
+ },
  "1415214046": {
   "checked": "2026-11-13",
   "full_name": "zhuyansen/new-term-radar",
@@ -3529,6 +3611,12 @@
  "1420743720": {
   "checked": "2026-11-13",
   "full_name": "Tencent-Hunyuan/Hy-Memory",
+  "packages": [],
+  "status": "ok"
+ },
+ "1421473933": {
+  "checked": "2026-11-16",
+  "full_name": "reacher-z/Awesome-REA",
   "packages": [],
   "status": "ok"
  },
@@ -3591,6 +3679,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1429303647": {
+  "checked": "2026-11-16",
+  "full_name": "anomalyco/rune",
+  "packages": [],
+  "status": "ok"
+ },
  "1431851693": {
   "checked": "2026-11-13",
   "full_name": "rddmwmddr/android-ad-cleaner",
@@ -3638,6 +3732,12 @@
   "packages": [],
   "status": "ok"
  },
+ "1438661890": {
+  "checked": "2026-11-16",
+  "full_name": "JuneYaooo/rea-video",
+  "packages": [],
+  "status": "ok"
+ },
  "1439372976": {
   "checked": "2026-11-13",
   "full_name": "patch-gg/pixelfx",
@@ -3653,6 +3753,29 @@
  "1440956372": {
   "checked": "2026-11-13",
   "full_name": "storytold/craft-anything",
+  "packages": [],
+  "status": "ok"
+ },
+ "1444005452": {
+  "checked": "2026-11-16",
+  "full_name": "Sandflow-ai/sand3d",
+  "packages": [
+   [
+    "pypi",
+    "sand3d"
+   ]
+  ],
+  "status": "ok"
+ },
+ "1444112593": {
+  "checked": "2026-11-16",
+  "full_name": "sarpstar/cinecode",
+  "packages": [],
+  "status": "ok"
+ },
+ "1444573070": {
+  "checked": "2026-11-16",
+  "full_name": "janestreet/agent_skills",
   "packages": [],
   "status": "ok"
  },
@@ -3697,6 +3820,17 @@
    [
     "npm",
     "remotion"
+   ]
+  ],
+  "status": "ok"
+ },
+ "275386910": {
+  "checked": "2026-11-16",
+  "full_name": "soxoj/maigret",
+  "packages": [
+   [
+    "pypi",
+    "maigret"
    ]
   ],
   "status": "ok"
@@ -3990,6 +4124,12 @@
     "speech-to-speech"
    ]
   ],
+  "status": "ok"
+ },
+ "849553306": {
+  "checked": "2026-11-16",
+  "full_name": "anthropics/claude-quickstarts",
+  "packages": [],
   "status": "ok"
  },
  "872119017": {

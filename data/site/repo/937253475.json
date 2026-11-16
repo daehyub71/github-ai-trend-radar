@@ -171,49 +171,55 @@
    "index": 51.86,
    "rank": 85,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 4.35,
+    "s2": 0.0,
+    "s3": 12.49,
+    "s4": 25.27,
+    "s5": 17.45
+   },
+   "index": 59.55,
+   "rank": 52,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "스타 1개당 다운로드 10회",
+   "big": "스타 1개당 다운로드 18,949회",
    "id": "I1",
    "signal": "s4",
-   "text": "패키지가 있는 후보 47개 중 26위.",
+   "text": "패키지가 있는 후보 45개 중 1위 — 관심보다 실제 사용이 앞선 저장소입니다.",
    "title": "사용 대비 관심"
   },
   {
-   "big": "4주 평균의 1.03배",
-   "id": "I2",
-   "signal": "s4",
-   "text": "12주 첫 주(08-16, 10,527)의 0.93배. 10-25 주에 한 번에 64% 늘었습니다.",
-   "title": "다운로드 추세"
-  },
-  {
-   "big": "누적 포크 24,957",
+   "big": "누적 포크 25,015",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 2명",
+   "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 2명, 12주 첫 주 1명.",
+   "text": "4주 전 0명, 12주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
-   "big": "언급 점수의 99.9%가 글 하나",
+   "big": "이번 주 글 2건 · 28점",
    "id": "I5",
    "signal": "s5",
-   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
+   "text": "Hacker News 2건(28점).",
    "title": "언급"
   },
   {
-   "big": "104위 → 85위",
+   "big": "85위 → 52위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 56위(09-13 주), 최저 128위(10-11 주).",
+   "text": "12주 최고 52위(이번 주), 최저 128위(10-11 주).",
    "title": "순위 이동"
   }
  ],
@@ -223,63 +229,63 @@
   "backfilled": false,
   "category": "코딩 에이전트·IDE",
   "contrib": {
-   "s1": 3.37,
+   "s1": 4.35,
    "s2": 0.0,
-   "s3": 17.12,
-   "s4": 13.81,
-   "s5": 17.56
+   "s3": 12.49,
+   "s4": 25.27,
+   "s5": 17.45
   },
   "full_name": "anthropics/claude-code",
-  "index": 51.86,
+  "index": 59.55,
   "missing": [
    "s2"
   ],
   "pct": {
-   "s1": 19.1,
+   "s1": 24.62,
    "s2": null,
-   "s3": 58.21,
-   "s4": 39.13,
-   "s5": 99.5
+   "s3": 42.46,
+   "s4": 71.59,
+   "s5": 98.87
   },
-  "prev_rank": 104,
-  "rank": 85,
+  "prev_rank": 85,
+  "rank": 52,
   "raw": {
-   "s1_stars_gain": 949,
+   "s1_stars_gain": 930,
    "s2_fork_delta": null,
-   "s2_forks": 24957,
+   "s2_forks": 25015,
    "s3_closed_issues": 1000,
-   "s3_merged_prs": 2,
-   "s3_pr_authors": 2,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
    "s4_dependents": 0,
-   "s4_downloads": 9795,
-   "s4_packages": "npm:claude-code",
-   "s5_gn_points": 2,
-   "s5_gn_topics": 1,
-   "s5_hn_points": 1615,
-   "s5_hn_stories": 1
+   "s4_downloads": 17622461,
+   "s4_packages": "npm:@anthropic-ai/claude-code",
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 28,
+   "s5_hn_stories": 2
   },
   "repo_id": 937253475,
-  "star_rank": 162,
+  "star_rank": 151,
   "status": {
    "s2_status": "ok",
    "s3_status": "partial",
    "s4_status": "ok",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
-   "gn_points": 2,
-   "gn_topics": 1,
-   "hn_points": 1615,
-   "hn_stories": 1
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 28,
+   "hn_stories": 2
   },
   "window": {
-   "gn_points": 6,
-   "gn_topics": 2,
-   "hn_points": 2425,
-   "hn_stories": 16,
+   "gn_points": 2,
+   "gn_topics": 1,
+   "hn_points": 1876,
+   "hn_stories": 13,
    "weeks": 12
   }
  },
@@ -287,58 +293,58 @@
  "topics": [],
  "trend": [
   {
-   "avg": "116위",
+   "avg": "106위",
    "key": "종합 순위",
-   "now": "85위",
-   "prev": "104위"
+   "now": "52위",
+   "prev": "85위"
   },
   {
-   "avg": "45.5",
+   "avg": "47.7",
    "key": "지수",
-   "now": "51.9",
-   "prev": "50.1"
+   "now": "59.5",
+   "prev": "51.9"
   },
   {
-   "avg": "1,380",
+   "avg": "1,334",
    "key": "스타 증가",
-   "now": "949",
-   "prev": "954"
+   "now": "930",
+   "prev": "949"
   },
   {
-   "avg": "9,544",
+   "avg": "8,866",
    "key": "주간 다운로드",
-   "now": "9,795",
-   "prev": "11,600"
+   "now": "17,622,461",
+   "prev": "9,795"
   },
   {
    "avg": "1",
    "key": "머지 PR",
-   "now": "2",
+   "now": "0",
    "prev": "2"
   },
   {
    "avg": "1",
    "key": "PR 작성자",
-   "now": "2",
-   "prev": "1"
+   "now": "0",
+   "prev": "2"
   },
   {
    "avg": "982",
    "key": "닫힌 이슈",
    "now": "1,000",
-   "prev": "929"
+   "prev": "1,000"
   },
   {
-   "avg": "0",
+   "avg": "1",
    "key": "HN·GeekNews 글",
    "now": "2",
-   "prev": "1"
+   "prev": "2"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "24,957",
-   "prev": "—"
+   "now": "25,015",
+   "prev": "24,957"
   }
  ]
 }

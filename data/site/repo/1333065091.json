@@ -171,11 +171,24 @@
    "index": 44.7,
    "rank": 127,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 25.49,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 25.9
+   },
+   "index": 57.22,
+   "rank": 66,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 34,476",
+   "big": "누적 포크 34,876",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -189,17 +202,17 @@
    "title": "기여 폭"
   },
   {
-   "big": "12주 HN 2건 · 4점",
+   "big": "언급 점수의 100.0%가 글 하나",
    "id": "I5",
    "signal": "s5",
-   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
    "title": "언급"
   },
   {
-   "big": "120위 → 127위",
+   "big": "127위 → 66위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 56위(08-16 주), 최저 131위(10-04 주).",
+   "text": "12주 최고 66위(이번 주), 최저 131위(10-04 주).",
    "title": "순위 이동"
   }
  ],
@@ -209,31 +222,31 @@
   "backfilled": false,
   "category": "에이전트 프레임워크",
   "contrib": {
-   "s1": 26.04,
+   "s1": 25.49,
    "s2": 0.0,
-   "s3": 5.71,
+   "s3": 5.82,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 25.9
   },
   "full_name": "deepseek-ai/deepseek-harness",
-  "index": 44.7,
+  "index": 57.22,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 95.48,
+   "s1": 93.47,
    "s2": null,
-   "s3": 12.56,
+   "s3": 12.81,
    "s4": null,
-   "s5": 47.49
+   "s5": 94.97
   },
-  "prev_rank": 120,
-  "rank": 127,
+  "prev_rank": 127,
+  "rank": 66,
   "raw": {
-   "s1_stars_gain": 8651,
+   "s1_stars_gain": 5686,
    "s2_fork_delta": null,
-   "s2_forks": 34476,
+   "s2_forks": 34876,
    "s3_closed_issues": 0,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
@@ -242,31 +255,31 @@
    "s4_packages": null,
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
-   "s5_hn_points": 0,
-   "s5_hn_stories": 0
+   "s5_hn_points": 2,
+   "s5_hn_stories": 1
   },
   "repo_id": 1333065091,
-  "star_rank": 10,
+  "star_rank": 14,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 0,
-   "hn_stories": 0
+   "hn_points": 2,
+   "hn_stories": 1
   },
   "window": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 4,
-   "hn_stories": 2,
+   "hn_points": 2,
+   "hn_stories": 1,
    "weeks": 12
   }
  },
@@ -279,22 +292,22 @@
  ],
  "trend": [
   {
-   "avg": "123위",
+   "avg": "122위",
    "key": "종합 순위",
-   "now": "127위",
-   "prev": "120위"
+   "now": "66위",
+   "prev": "127위"
   },
   {
-   "avg": "44.0",
+   "avg": "44.6",
    "key": "지수",
-   "now": "44.7",
-   "prev": "45.1"
+   "now": "57.2",
+   "prev": "44.7"
   },
   {
-   "avg": "6,521",
+   "avg": "7,534",
    "key": "스타 증가",
-   "now": "8,651",
-   "prev": "7,321"
+   "now": "5,686",
+   "prev": "8,651"
   },
   {
    "avg": "0",
@@ -317,14 +330,14 @@
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
-   "now": "0",
+   "now": "1",
    "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "34,476",
-   "prev": "—"
+   "now": "34,876",
+   "prev": "34,476"
   }
  ]
 }

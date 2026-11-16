@@ -15,35 +15,48 @@
    "index": 97.23,
    "rank": 1,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 26.86,
+    "s2": 0.0,
+    "s3": 40.28,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 79.68,
+   "rank": 6,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 6,119",
+   "big": "누적 포크 6,889",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 67명",
+   "big": "PR 작성자 45명",
    "id": "I4",
    "signal": "s3",
    "text": "",
    "title": "기여 폭"
   },
   {
-   "big": "이번 주 글 2건 · 21점",
+   "big": "이번 주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "Hacker News 1건(6점) · GeekNews 1건(15점).",
+   "text": "2주 동안 글 2건 · 21점 — 이번 주는 조용했습니다.",
    "title": "언급"
   },
   {
-   "big": "1위 (처음)",
+   "big": "1위 → 6위",
    "id": "I7",
    "signal": "index",
-   "text": "",
+   "text": "2주 최고 1위(11-01 주), 최저 6위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -53,65 +66,65 @@
   "backfilled": false,
   "category": "코딩 에이전트·IDE",
   "contrib": {
-   "s1": 27.14,
+   "s1": 26.86,
    "s2": 0.0,
-   "s3": 43.09,
+   "s3": 40.28,
    "s4": 0.0,
-   "s5": 27.0
+   "s5": 12.54
   },
   "full_name": "storytold/craft-anything",
-  "index": 97.23,
+  "index": 79.68,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 99.5,
+   "s1": 98.49,
    "s2": null,
-   "s3": 94.81,
+   "s3": 88.61,
    "s4": null,
-   "s5": 98.99
+   "s5": 45.98
   },
-  "prev_rank": null,
-  "rank": 1,
+  "prev_rank": 1,
+  "rank": 6,
   "raw": {
-   "s1_stars_gain": 21156,
+   "s1_stars_gain": 11829,
    "s2_fork_delta": null,
-   "s2_forks": 6119,
-   "s3_closed_issues": 218,
-   "s3_merged_prs": 468,
-   "s3_pr_authors": 67,
+   "s2_forks": 6889,
+   "s3_closed_issues": 44,
+   "s3_merged_prs": 511,
+   "s3_pr_authors": 45,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
-   "s5_gn_points": 15,
-   "s5_gn_topics": 1,
-   "s5_hn_points": 6,
-   "s5_hn_stories": 1
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
   },
   "repo_id": 1440956372,
-  "star_rank": 2,
+  "star_rank": 4,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
-   "gn_points": 15,
-   "gn_topics": 1,
-   "hn_points": 6,
-   "hn_stories": 1
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
   },
   "window": {
    "gn_points": 15,
    "gn_topics": 1,
    "hn_points": 6,
    "hn_stories": 1,
-   "weeks": 1
+   "weeks": 2
   }
  },
  "repo_id": 1440956372,
@@ -120,50 +133,50 @@
   {
    "avg": "—",
    "key": "종합 순위",
-   "now": "1위",
-   "prev": "—"
+   "now": "6위",
+   "prev": "1위"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "97.2",
-   "prev": "—"
+   "now": "79.7",
+   "prev": "97.2"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "21,156",
-   "prev": "—"
+   "now": "11,829",
+   "prev": "21,156"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "468",
-   "prev": "—"
+   "now": "511",
+   "prev": "468"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "67",
-   "prev": "—"
+   "now": "45",
+   "prev": "67"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "218",
-   "prev": "—"
+   "now": "44",
+   "prev": "218"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
-   "now": "2",
-   "prev": "—"
+   "now": "0",
+   "prev": "2"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "6,119",
-   "prev": "—"
+   "now": "6,889",
+   "prev": "6,119"
   }
  ]
 }

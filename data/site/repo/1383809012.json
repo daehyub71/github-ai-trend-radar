@@ -93,11 +93,24 @@
    "index": 55.27,
    "rank": 72,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 24.67,
+    "s2": 0.0,
+    "s3": 18.35,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "index": 68.68,
+   "rank": 23,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 3,164",
+   "big": "누적 포크 3,344",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -107,21 +120,21 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 47명, 7주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
+   "text": "4주 전 11명, 8주 첫 주 10명 — 기여하는 사람이 줄었습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "7주 언급 0건",
+   "big": "언급 점수의 100.0%가 글 하나",
    "id": "I5",
    "signal": "s5",
-   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
    "title": "언급"
   },
   {
-   "big": "63위 → 72위",
+   "big": "72위 → 23위",
    "id": "I7",
    "signal": "index",
-   "text": "7주 최고 10위(09-27 주), 최저 72위(이번 주).",
+   "text": "8주 최고 10위(09-27 주), 최저 72위(11-01 주).",
    "title": "순위 이동"
   }
  ],
@@ -131,32 +144,32 @@
   "backfilled": false,
   "category": "평가·관측(LLMOps)",
   "contrib": {
-   "s1": 24.12,
+   "s1": 24.67,
    "s2": 0.0,
-   "s3": 18.2,
+   "s3": 18.35,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 25.66
   },
   "full_name": "yetone/magpie",
-  "index": 55.27,
+  "index": 68.68,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 88.44,
+   "s1": 90.45,
    "s2": null,
-   "s3": 40.03,
+   "s3": 40.37,
    "s4": null,
-   "s5": 47.49
+   "s5": 94.1
   },
-  "prev_rank": 63,
-  "rank": 72,
+  "prev_rank": 72,
+  "rank": 23,
   "raw": {
-   "s1_stars_gain": 4950,
+   "s1_stars_gain": 4823,
    "s2_fork_delta": null,
-   "s2_forks": 3164,
-   "s3_closed_issues": 217,
+   "s2_forks": 3344,
+   "s3_closed_issues": 192,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -164,32 +177,32 @@
    "s4_packages": null,
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
-   "s5_hn_points": 0,
-   "s5_hn_stories": 0
+   "s5_hn_points": 1,
+   "s5_hn_stories": 1
   },
   "repo_id": 1383809012,
-  "star_rank": 24,
+  "star_rank": 20,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 0,
-   "hn_stories": 0
+   "hn_points": 1,
+   "hn_stories": 1
   },
   "window": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 0,
-   "hn_stories": 0,
-   "weeks": 7
+   "hn_points": 1,
+   "hn_stories": 1,
+   "weeks": 8
   }
  },
  "repo_id": 1383809012,
@@ -203,31 +216,31 @@
  ],
  "trend": [
   {
-   "avg": "42위",
+   "avg": "57위",
    "key": "종합 순위",
-   "now": "72위",
-   "prev": "63위"
+   "now": "23위",
+   "prev": "72위"
   },
   {
-   "avg": "65.3",
+   "avg": "59.9",
    "key": "지수",
-   "now": "55.3",
-   "prev": "56.9"
+   "now": "68.7",
+   "prev": "55.3"
   },
   {
-   "avg": "5,698",
+   "avg": "5,889",
    "key": "스타 증가",
-   "now": "4,950",
-   "prev": "6,276"
+   "now": "4,823",
+   "prev": "4,950"
   },
   {
-   "avg": "46",
+   "avg": "5",
    "key": "머지 PR",
    "now": "0",
    "prev": "0"
   },
   {
-   "avg": "14",
+   "avg": "3",
    "key": "PR 작성자",
    "now": "0",
    "prev": "0"
@@ -235,20 +248,20 @@
   {
    "avg": "276",
    "key": "닫힌 이슈",
-   "now": "217",
-   "prev": "199"
+   "now": "192",
+   "prev": "217"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
-   "now": "0",
+   "now": "1",
    "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "3,164",
-   "prev": "—"
+   "now": "3,344",
+   "prev": "3,164"
   }
  ]
 }

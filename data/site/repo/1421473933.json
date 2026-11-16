@@ -1,0 +1,190 @@
+{
+ "category": "MCP 서버·도구",
+ "description": "Curated tools, case studies and papers for reverse engineering websites, games, apps, binaries, firmware and protocols. Source-reviewed, English and Chinese.",
+ "full_name": "reacher-z/Awesome-REA",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 8.22,
+    "s2": 0.0,
+    "s3": 21.93,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 42.69,
+   "rank": 133,
+   "week": "2026-11-08"
+  }
+ ],
+ "insights": [
+  {
+   "big": "누적 포크 499",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 2명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "1주 언급 0건",
+   "id": "I5",
+   "signal": "s5",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "133위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
+ "language": "Python",
+ "latest": {
+  "backfilled": false,
+  "category": "MCP 서버·도구",
+  "contrib": {
+   "s1": 8.22,
+   "s2": 0.0,
+   "s3": 21.93,
+   "s4": 0.0,
+   "s5": 12.54
+  },
+  "full_name": "reacher-z/Awesome-REA",
+  "index": 42.69,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 30.15,
+   "s2": null,
+   "s3": 48.24,
+   "s4": null,
+   "s5": 45.98
+  },
+  "prev_rank": null,
+  "rank": 133,
+  "raw": {
+   "s1_stars_gain": 1050,
+   "s2_fork_delta": null,
+   "s2_forks": 499,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 94,
+   "s3_pr_authors": 2,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 0,
+   "s5_gn_topics": 0,
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
+  },
+  "repo_id": 1421473933,
+  "star_rank": 140,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-08"
+ },
+ "mentions": {
+  "week": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0
+  },
+  "window": {
+   "gn_points": 0,
+   "gn_topics": 0,
+   "hn_points": 0,
+   "hn_stories": 0,
+   "weeks": 1
+  }
+ },
+ "repo_id": 1421473933,
+ "topics": [
+  "agent-skills",
+  "ai-agents",
+  "android-reverse-engineering",
+  "awesome",
+  "awesome-list",
+  "awesome-resources",
+  "binary-analysis",
+  "decompilation",
+  "firmware-analysis",
+  "game-reversing",
+  "ghidra",
+  "ios-reverse-engineering",
+  "javascript-deobfuscation",
+  "mcp",
+  "protocol-analysis",
+  "rea",
+  "research-papers",
+  "reverse-engineering",
+  "static-analysis",
+  "web-reverse-engineering"
+ ],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "133위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "42.7",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "1,050",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "94",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "2",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "1",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "499",
+   "prev": "—"
+  }
+ ]
+}

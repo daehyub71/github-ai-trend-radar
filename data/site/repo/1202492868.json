@@ -54,62 +54,82 @@
    "index": 20.6,
    "rank": 198,
    "week": "2026-10-11"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 1.85,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 20.21,
+   "rank": 199,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
+   "big": "누적 포크 376",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "",
+   "text": "4주 전 0명, 8주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
-   "big": "4주 언급 0건",
+   "big": "8주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "193위 → 198위",
+   "big": "199위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "4주 최고 179위(09-27 주), 최저 198위(이번 주).",
+   "text": "8주 최고 179위(09-27 주), 최저 199위(이번 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": null,
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "MCP 서버·도구",
   "contrib": {
-   "s1": 1.78,
+   "s1": 1.85,
    "s2": 0.0,
-   "s3": 5.87,
+   "s3": 5.82,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
-  "index": 20.6,
+  "index": 20.21,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 6.53,
+   "s1": 6.78,
    "s2": null,
-   "s3": 12.91,
+   "s3": 12.81,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 193,
-  "rank": 198,
+  "prev_rank": null,
+  "rank": 199,
   "raw": {
-   "s1_stars_gain": 789,
+   "s1_stars_gain": 705,
    "s2_fork_delta": null,
-   "s2_forks": null,
+   "s2_forks": 376,
    "s3_closed_issues": 0,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
@@ -124,12 +144,12 @@
   "repo_id": 1202492868,
   "star_rank": 187,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-10-11"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -143,53 +163,59 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 4
+   "weeks": 8
   }
  },
  "repo_id": 1202492868,
  "topics": [],
  "trend": [
   {
-   "avg": "187위",
+   "avg": "—",
    "key": "종합 순위",
-   "now": "198위",
-   "prev": "193위"
+   "now": "199위",
+   "prev": "—"
   },
   {
-   "avg": "25.2",
+   "avg": "—",
    "key": "지수",
-   "now": "20.6",
-   "prev": "22.3"
+   "now": "20.2",
+   "prev": "—"
   },
   {
-   "avg": "798",
+   "avg": "—",
    "key": "스타 증가",
-   "now": "789",
-   "prev": "746"
+   "now": "705",
+   "prev": "—"
   },
   {
-   "avg": "0",
+   "avg": "—",
    "key": "머지 PR",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
-   "avg": "0",
+   "avg": "—",
    "key": "PR 작성자",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
-   "avg": "0",
+   "avg": "—",
    "key": "닫힌 이슈",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
-   "avg": "0",
+   "avg": "—",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "376",
+   "prev": "—"
   }
  ]
 }

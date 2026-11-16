@@ -54,35 +54,48 @@
    "index": 35.47,
    "rank": 167,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 3.43,
+    "s2": 0.0,
+    "s3": 26.65,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 42.61,
+   "rank": 134,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 4,452",
+   "big": "누적 포크 4,500",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 0명",
+   "big": "PR 작성자 9명",
    "id": "I4",
    "signal": "s3",
-   "text": "7주 첫 주 6명 — 기여하는 사람이 줄었습니다.",
+   "text": "4주 전 0명, 8주 첫 주 6명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "7주 언급 0건",
+   "big": "8주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "192위 → 167위",
+   "big": "167위 → 134위",
    "id": "I7",
    "signal": "index",
-   "text": "7주 최고 78위(09-20 주), 최저 192위(10-25 주).",
+   "text": "8주 최고 78위(09-20 주), 최저 192위(10-25 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,34 +105,34 @@
   "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 9.73,
+   "s1": 3.43,
    "s2": 0.0,
-   "s3": 12.79,
+   "s3": 26.65,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "Crosstalk-Solutions/project-nomad",
-  "index": 35.47,
+  "index": 42.61,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 35.68,
+   "s1": 12.56,
    "s2": null,
-   "s3": 28.14,
+   "s3": 58.63,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 192,
-  "rank": 167,
+  "prev_rank": 167,
+  "rank": 134,
   "raw": {
-   "s1_stars_gain": 1186,
+   "s1_stars_gain": 763,
    "s2_fork_delta": null,
-   "s2_forks": 4452,
-   "s3_closed_issues": 12,
-   "s3_merged_prs": 0,
-   "s3_pr_authors": 0,
+   "s2_forks": 4500,
+   "s3_closed_issues": 13,
+   "s3_merged_prs": 12,
+   "s3_pr_authors": 9,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -129,14 +142,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1007827531,
-  "star_rank": 129,
+  "star_rank": 175,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -150,47 +163,47 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 7
+   "weeks": 8
   }
  },
  "repo_id": 1007827531,
  "topics": [],
  "trend": [
   {
-   "avg": "188위",
+   "avg": "181위",
    "key": "종합 순위",
-   "now": "167위",
-   "prev": "192위"
+   "now": "134위",
+   "prev": "167위"
   },
   {
-   "avg": "24.5",
+   "avg": "28.2",
    "key": "지수",
-   "now": "35.5",
-   "prev": "22.7"
+   "now": "42.6",
+   "prev": "35.5"
   },
   {
-   "avg": "856",
+   "avg": "966",
    "key": "스타 증가",
-   "now": "1,186",
-   "prev": "622"
+   "now": "763",
+   "prev": "1,186"
   },
   {
    "avg": "0",
    "key": "머지 PR",
-   "now": "0",
+   "now": "12",
    "prev": "0"
   },
   {
    "avg": "0",
    "key": "PR 작성자",
-   "now": "0",
+   "now": "9",
    "prev": "0"
   },
   {
-   "avg": "0",
+   "avg": "4",
    "key": "닫힌 이슈",
-   "now": "12",
-   "prev": "1"
+   "now": "13",
+   "prev": "12"
   },
   {
    "avg": "0",
@@ -201,8 +214,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "4,452",
-   "prev": "—"
+   "now": "4,500",
+   "prev": "4,452"
   }
  ]
 }

@@ -1,0 +1,5381 @@
+{
+ "candidates": 200,
+ "rows": [
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 27.14,
+    "s2": 0.0,
+    "s3": 41.31,
+    "s4": 0.0,
+    "s5": 26.66
+   },
+   "full_name": "meta/astryx",
+   "gain_rank": 2,
+   "index": 95.1,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 99.5,
+    "s2": null,
+    "s3": 90.87,
+    "s4": null,
+    "s5": 97.74
+   },
+   "rank": 1,
+   "repo_id": 1131202426
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 23.16,
+    "s2": 0.0,
+    "s3": 40.05,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "full_name": "Gathin23/cleanyourtv",
+   "gain_rank": 31,
+   "index": 88.87,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 84.92,
+    "s2": null,
+    "s3": 88.11,
+    "s4": null,
+    "s5": 94.1
+   },
+   "rank": 2,
+   "repo_id": 1423101235
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 26.59,
+    "s2": 0.0,
+    "s3": 44.92,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "pingdotgg/t3code",
+   "gain_rank": 6,
+   "index": 84.05,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 97.49,
+    "s2": null,
+    "s3": 98.83,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 3,
+   "repo_id": 1153130349
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 25.22,
+    "s2": 0.0,
+    "s3": 30.87,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "full_name": "google/elephant-goldfish-model",
+   "gain_rank": 16,
+   "index": 81.75,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 92.46,
+    "s2": null,
+    "s3": 67.92,
+    "s4": null,
+    "s5": 94.1
+   },
+   "rank": 4,
+   "repo_id": 1368596582
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 25.77,
+    "s2": 0.0,
+    "s3": 42.71,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "stablyai/orca",
+   "gain_rank": 12,
+   "index": 81.02,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 94.47,
+    "s2": null,
+    "s3": 93.97,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 5,
+   "repo_id": 1183888342
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 26.86,
+    "s2": 0.0,
+    "s3": 40.28,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "storytold/craft-anything",
+   "gain_rank": 4,
+   "index": 79.68,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.49,
+    "s2": null,
+    "s3": 88.61,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 6,
+   "repo_id": 1440956372
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 26.04,
+    "s2": 0.0,
+    "s3": 40.2,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "debpalash/VoiceStudio",
+   "gain_rank": 10,
+   "index": 78.78,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.48,
+    "s2": null,
+    "s3": 88.44,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 7,
+   "repo_id": 1206390571
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 10.2,
+    "s2": 0.0,
+    "s3": 24.53,
+    "s4": 33.69,
+    "s5": 8.11
+   },
+   "full_name": "remotion-dev/remotion",
+   "gain_rank": 85,
+   "index": 76.54,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 57.79,
+    "s2": null,
+    "s3": 83.42,
+    "s4": 95.45,
+    "s5": 45.98
+   },
+   "rank": 8,
+   "repo_id": 274495425
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 18.91,
+    "s2": 0.0,
+    "s3": 45.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "NousResearch/hermes-agent",
+   "gain_rank": 62,
+   "index": 76.53,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 69.35,
+    "s2": null,
+    "s3": 99.16,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 9,
+   "repo_id": 1024554267
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 18.5,
+    "s2": 0.0,
+    "s3": 31.22,
+    "s4": 0.0,
+    "s5": 26.38
+   },
+   "full_name": "dream-num/univer",
+   "gain_rank": 65,
+   "index": 76.1,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 67.84,
+    "s2": null,
+    "s3": 68.68,
+    "s4": null,
+    "s5": 96.73
+   },
+   "rank": 10,
+   "repo_id": 543101941
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 6.99,
+    "s2": 0.0,
+    "s3": 42.79,
+    "s4": 0.0,
+    "s5": 26.14
+   },
+   "full_name": "can1357/oh-my-pi",
+   "gain_rank": 149,
+   "index": 75.92,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 25.63,
+    "s2": null,
+    "s3": 94.14,
+    "s4": null,
+    "s5": 95.85
+   },
+   "rank": 11,
+   "repo_id": 1125856365
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 21.93,
+    "s2": 0.0,
+    "s3": 27.98,
+    "s4": 0.0,
+    "s5": 25.9
+   },
+   "full_name": "amosblomqvist/learnharness",
+   "gain_rank": 40,
+   "index": 75.81,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 80.4,
+    "s2": null,
+    "s3": 61.56,
+    "s4": null,
+    "s5": 94.97
+   },
+   "rank": 12,
+   "repo_id": 1422597771
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 25.08,
+    "s2": 0.0,
+    "s3": 37.65,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "GoogleChrome/modern-web-guidance-src",
+   "gain_rank": 17,
+   "index": 75.27,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 91.96,
+    "s2": null,
+    "s3": 82.83,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 13,
+   "repo_id": 1143633223
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 17.65,
+    "s2": 0.0,
+    "s3": 27.54,
+    "s4": 20.45,
+    "s5": 8.11
+   },
+   "full_name": "morluto/rea",
+   "gain_rank": 1,
+   "index": 73.76,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 100.0,
+    "s2": null,
+    "s3": 93.63,
+    "s4": 57.95,
+    "s5": 45.98
+   },
+   "rank": 14,
+   "repo_id": 1209966933
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 23.71,
+    "s2": 0.0,
+    "s3": 37.38,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "we-promise/sure",
+   "gain_rank": 27,
+   "index": 73.63,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 86.93,
+    "s2": null,
+    "s3": 82.24,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 15,
+   "repo_id": 1024661423
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 13.02,
+    "s2": 0.0,
+    "s3": 33.5,
+    "s4": 0.0,
+    "s5": 25.9
+   },
+   "full_name": "earendil-works/pi",
+   "gain_rank": 105,
+   "index": 72.42,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 47.74,
+    "s2": null,
+    "s3": 73.7,
+    "s4": null,
+    "s5": 94.97
+   },
+   "rank": 16,
+   "repo_id": 1035029907
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 15.9,
+    "s2": 0.0,
+    "s3": 43.7,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "storytold/photocraft",
+   "gain_rank": 84,
+   "index": 72.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 58.29,
+    "s2": null,
+    "s3": 96.15,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 17,
+   "repo_id": 1398080271
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 16.41,
+    "s2": 0.0,
+    "s3": 26.92,
+    "s4": 11.63,
+    "s5": 16.98
+   },
+   "full_name": "milind-soni/OpenMausBot",
+   "gain_rank": 15,
+   "index": 71.94,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 92.96,
+    "s2": null,
+    "s3": 91.54,
+    "s4": 32.95,
+    "s5": 96.23
+   },
+   "rank": 18,
+   "repo_id": 1331261687
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 13.84,
+    "s2": 0.0,
+    "s3": 44.96,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "tangency-labs/solidcraft",
+   "gain_rank": 99,
+   "index": 71.34,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 50.75,
+    "s2": null,
+    "s3": 98.91,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 19,
+   "repo_id": 1409246014
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 16.86,
+    "s2": 0.0,
+    "s3": 41.23,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anomalyco/opencode",
+   "gain_rank": 77,
+   "index": 70.63,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 61.81,
+    "s2": null,
+    "s3": 90.7,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 20,
+   "repo_id": 975734319
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 24.94,
+    "s2": 0.0,
+    "s3": 32.02,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "h4ckf0r0day/obscura",
+   "gain_rank": 18,
+   "index": 69.5,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 91.46,
+    "s2": null,
+    "s3": 70.44,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 21,
+   "repo_id": 1209343409
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 13.39,
+    "s2": 0.0,
+    "s3": 25.82,
+    "s4": 22.06,
+    "s5": 8.11
+   },
+   "full_name": "ranxianglei/billion-context",
+   "gain_rank": 49,
+   "index": 69.38,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 75.88,
+    "s2": null,
+    "s3": 87.77,
+    "s4": 62.5,
+    "s5": 45.98
+   },
+   "rank": 22,
+   "repo_id": 1324949198
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 24.67,
+    "s2": 0.0,
+    "s3": 18.35,
+    "s4": 0.0,
+    "s5": 25.66
+   },
+   "full_name": "yetone/magpie",
+   "gain_rank": 20,
+   "index": 68.68,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.45,
+    "s2": null,
+    "s3": 40.37,
+    "s4": null,
+    "s5": 94.1
+   },
+   "rank": 23,
+   "repo_id": 1383809012
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 15.35,
+    "s2": 0.0,
+    "s3": 40.66,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "career-ops-hq/career-ops",
+   "gain_rank": 88,
+   "index": 68.55,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 56.28,
+    "s2": null,
+    "s3": 89.45,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 24,
+   "repo_id": 1201476594
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 18.78,
+    "s2": 0.0,
+    "s3": 37.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "OpenMontageInc/OpenMontage",
+   "gain_rank": 63,
+   "index": 68.32,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 68.84,
+    "s2": null,
+    "s3": 81.41,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 25,
+   "repo_id": 1195360525
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 14.72,
+    "s2": 0.0,
+    "s3": 23.01,
+    "s4": 22.46,
+    "s5": 8.11
+   },
+   "full_name": "heygen-com/hyperframes",
+   "gain_rank": 34,
+   "index": 68.3,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 83.42,
+    "s2": null,
+    "s3": 78.22,
+    "s4": 63.64,
+    "s5": 45.98
+   },
+   "rank": 26,
+   "repo_id": 1177402105
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 17.82,
+    "s2": 0.0,
+    "s3": 37.46,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "farion1231/cc-switch",
+   "gain_rank": 70,
+   "index": 67.82,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 65.33,
+    "s2": null,
+    "s3": 82.41,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 27,
+   "repo_id": 1031912724
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 26.31,
+    "s2": 0.0,
+    "s3": 28.29,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ccch1mneyyy/dsh-Go",
+   "gain_rank": 8,
+   "index": 67.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.48,
+    "s2": null,
+    "s3": 62.23,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 28,
+   "repo_id": 1432967563
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 4.17,
+    "s2": 0.0,
+    "s3": 21.01,
+    "s4": 33.69,
+    "s5": 8.11
+   },
+   "full_name": "vercel-labs/skills",
+   "gain_rank": 153,
+   "index": 66.98,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 23.62,
+    "s2": null,
+    "s3": 71.44,
+    "s4": 95.45,
+    "s5": 45.98
+   },
+   "rank": 29,
+   "repo_id": 1134543109
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 17.27,
+    "s2": 0.0,
+    "s3": 36.39,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "paperclipai/paperclip",
+   "gain_rank": 74,
+   "index": 66.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 63.32,
+    "s2": null,
+    "s3": 80.07,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 30,
+   "repo_id": 1170821064
+  },
+  {
+   "backfilled": false,
+   "category": "vectordb-memory",
+   "contrib": {
+    "s1": 13.48,
+    "s2": 0.0,
+    "s3": 26.28,
+    "s4": 18.05,
+    "s5": 8.11
+   },
+   "full_name": "thedotmack/claude-mem",
+   "gain_rank": 48,
+   "index": 65.92,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 76.38,
+    "s2": null,
+    "s3": 89.36,
+    "s4": 51.14,
+    "s5": 45.98
+   },
+   "rank": 31,
+   "repo_id": 1048065319
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 11.08,
+    "s2": 0.0,
+    "s3": 11.92,
+    "s4": 25.67,
+    "s5": 17.18
+   },
+   "full_name": "openai/codex",
+   "gain_rank": 75,
+   "index": 65.86,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 62.81,
+    "s2": null,
+    "s3": 40.54,
+    "s4": 72.73,
+    "s5": 97.36
+   },
+   "rank": 32,
+   "repo_id": 965415649
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 15.7,
+    "s2": 0.0,
+    "s3": 21.92,
+    "s4": 20.05,
+    "s5": 8.11
+   },
+   "full_name": "pbakaus/impeccable",
+   "gain_rank": 23,
+   "index": 65.79,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 88.94,
+    "s2": null,
+    "s3": 74.54,
+    "s4": 56.82,
+    "s5": 45.98
+   },
+   "rank": 33,
+   "repo_id": 1097346685
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 23.85,
+    "s2": 0.0,
+    "s3": 29.39,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ZhuLinsen/daily_stock_analysis",
+   "gain_rank": 26,
+   "index": 65.78,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 87.44,
+    "s2": null,
+    "s3": 64.66,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 34,
+   "repo_id": 1131513930
+  },
+  {
+   "backfilled": false,
+   "category": "local-llm",
+   "contrib": {
+    "s1": 19.74,
+    "s2": 0.0,
+    "s3": 32.66,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "JustVugg/colibri",
+   "gain_rank": 56,
+   "index": 64.94,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 72.36,
+    "s2": null,
+    "s3": 71.86,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 35,
+   "repo_id": 1286080397
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 24.81,
+    "s2": 0.0,
+    "s3": 27.3,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "JuneYaooo/rea-video",
+   "gain_rank": 19,
+   "index": 64.64,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 90.95,
+    "s2": null,
+    "s3": 60.05,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 36,
+   "repo_id": 1438661890
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 1.82,
+    "s2": 0.0,
+    "s3": 26.95,
+    "s4": 27.67,
+    "s5": 8.11
+   },
+   "full_name": "n8n-io/n8n",
+   "gain_rank": 180,
+   "index": 64.55,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 10.3,
+    "s2": null,
+    "s3": 91.62,
+    "s4": 78.41,
+    "s5": 45.98
+   },
+   "rank": 37,
+   "repo_id": 193215554
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 11.88,
+    "s2": 0.0,
+    "s3": 26.87,
+    "s4": 17.65,
+    "s5": 8.11
+   },
+   "full_name": "cheaper-inference/OmniRoute",
+   "gain_rank": 66,
+   "index": 64.52,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 67.34,
+    "s2": null,
+    "s3": 91.37,
+    "s4": 50.0,
+    "s5": 45.98
+   },
+   "rank": 38,
+   "repo_id": 1157102282
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 18.23,
+    "s2": 0.0,
+    "s3": 33.31,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "AgriciDaniel/claude-seo",
+   "gain_rank": 67,
+   "index": 64.08,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 66.83,
+    "s2": null,
+    "s3": 73.28,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 39,
+   "repo_id": 1152014594
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 26.45,
+    "s2": 0.0,
+    "s3": 9.97,
+    "s4": 0.0,
+    "s5": 27.27
+   },
+   "full_name": "janestreet/agent_skills",
+   "gain_rank": 7,
+   "index": 63.7,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 96.98,
+    "s2": null,
+    "s3": 21.94,
+    "s4": null,
+    "s5": 100.0
+   },
+   "rank": 40,
+   "repo_id": 1444573070
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 22.2,
+    "s2": 0.0,
+    "s3": 28.7,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "kingcharleslzy-ai/dsh-purge",
+   "gain_rank": 38,
+   "index": 63.45,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 81.41,
+    "s2": null,
+    "s3": 63.15,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 41,
+   "repo_id": 1421822085
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 15.87,
+    "s2": 0.0,
+    "s3": 13.25,
+    "s4": 17.25,
+    "s5": 17.03
+   },
+   "full_name": "vercel-labs/agent-desktop",
+   "gain_rank": 21,
+   "index": 63.4,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 89.95,
+    "s2": null,
+    "s3": 45.06,
+    "s4": 48.86,
+    "s5": 96.48
+   },
+   "rank": 42,
+   "repo_id": 1161958643
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 15.16,
+    "s2": 0.0,
+    "s3": 16.75,
+    "s4": 23.26,
+    "s5": 8.11
+   },
+   "full_name": "vercel-labs/agent-browser",
+   "gain_rank": 29,
+   "index": 63.29,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 85.93,
+    "s2": null,
+    "s3": 56.95,
+    "s4": 65.91,
+    "s5": 45.98
+   },
+   "rank": 43,
+   "repo_id": 1132001614
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 2.84,
+    "s2": 0.0,
+    "s3": 28.28,
+    "s4": 23.66,
+    "s5": 8.11
+   },
+   "full_name": "openclaw/openclaw",
+   "gain_rank": 168,
+   "index": 62.89,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 16.08,
+    "s2": null,
+    "s3": 96.15,
+    "s4": 67.05,
+    "s5": 45.98
+   },
+   "rank": 44,
+   "repo_id": 1103012935
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 21.65,
+    "s2": 0.0,
+    "s3": 28.51,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anomalyco/rune",
+   "gain_rank": 42,
+   "index": 62.71,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 79.4,
+    "s2": null,
+    "s3": 62.73,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 45,
+   "repo_id": 1429303647
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 16.58,
+    "s2": 0.0,
+    "s3": 33.5,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Panniantong/Agent-Reach",
+   "gain_rank": 79,
+   "index": 62.62,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 60.8,
+    "s2": null,
+    "s3": 73.7,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 46,
+   "repo_id": 1165277268
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 7.67,
+    "s2": 0.0,
+    "s3": 41.8,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "elie222/rakazo",
+   "gain_rank": 144,
+   "index": 62.01,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 28.14,
+    "s2": null,
+    "s3": 91.96,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 47,
+   "repo_id": 1332781509
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 13.12,
+    "s2": 0.0,
+    "s3": 18.6,
+    "s4": 13.24,
+    "s5": 16.61
+   },
+   "full_name": "qybaihe/bla",
+   "gain_rank": 52,
+   "index": 61.56,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 74.37,
+    "s2": null,
+    "s3": 63.23,
+    "s4": 37.5,
+    "s5": 94.1
+   },
+   "rank": 48,
+   "repo_id": 1432859403
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 16.99,
+    "s2": 0.0,
+    "s3": 30.91,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "CopilotKit/OpenBot",
+   "gain_rank": 76,
+   "index": 60.45,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 62.31,
+    "s2": null,
+    "s3": 68.01,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 49,
+   "repo_id": 1336502227
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 27.0,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 27.03
+   },
+   "full_name": "GoogleChrome/modern-web-guidance",
+   "gain_rank": 3,
+   "index": 59.86,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 98.99,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 99.12
+   },
+   "rank": 50,
+   "repo_id": 1189825116
+  },
+  {
+   "backfilled": false,
+   "category": "doc-parsing",
+   "contrib": {
+    "s1": 12.68,
+    "s2": 0.0,
+    "s3": 15.99,
+    "s4": 22.86,
+    "s5": 8.11
+   },
+   "full_name": "firecrawl/firecrawl",
+   "gain_rank": 57,
+   "index": 59.64,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 71.86,
+    "s2": null,
+    "s3": 54.36,
+    "s4": 64.77,
+    "s5": 45.98
+   },
+   "rank": 51,
+   "repo_id": 787076358
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 4.35,
+    "s2": 0.0,
+    "s3": 12.49,
+    "s4": 25.27,
+    "s5": 17.45
+   },
+   "full_name": "anthropics/claude-code",
+   "gain_rank": 151,
+   "index": 59.55,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 24.62,
+    "s2": null,
+    "s3": 42.46,
+    "s4": 71.59,
+    "s5": 98.87
+   },
+   "rank": 52,
+   "repo_id": 937253475
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 12.06,
+    "s2": 0.0,
+    "s3": 20.0,
+    "s4": 19.25,
+    "s5": 8.11
+   },
+   "full_name": "openai/codex-security",
+   "gain_rank": 64,
+   "index": 59.43,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 68.34,
+    "s2": null,
+    "s3": 68.01,
+    "s4": 54.55,
+    "s5": 45.98
+   },
+   "rank": 53,
+   "repo_id": 1299769220
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 3.84,
+    "s2": 0.0,
+    "s3": 42.9,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "storytold/pdfcraft",
+   "gain_rank": 172,
+   "index": 59.28,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 14.07,
+    "s2": null,
+    "s3": 94.39,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 54,
+   "repo_id": 1398086162
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 7.13,
+    "s2": 0.0,
+    "s3": 39.48,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "multica-ai/multica",
+   "gain_rank": 148,
+   "index": 59.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 26.13,
+    "s2": null,
+    "s3": 86.85,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 55,
+   "repo_id": 1133707766
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 17.68,
+    "s2": 0.0,
+    "s3": 28.48,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "tt-a1i/archify",
+   "gain_rank": 71,
+   "index": 58.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 64.82,
+    "s2": null,
+    "s3": 62.65,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 56,
+   "repo_id": 1211139949
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 15.62,
+    "s2": 0.0,
+    "s3": 30.49,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "obsidianmd/obsidian-skills",
+   "gain_rank": 86,
+   "index": 58.66,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 57.29,
+    "s2": null,
+    "s3": 67.09,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 57,
+   "repo_id": 1126947080
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 14.45,
+    "s2": 0.0,
+    "s3": 22.39,
+    "s4": 13.64,
+    "s5": 8.11
+   },
+   "full_name": "tashfeenahmed/freellmapi",
+   "gain_rank": 37,
+   "index": 58.6,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 81.91,
+    "s2": null,
+    "s3": 76.13,
+    "s4": 38.64,
+    "s5": 45.98
+   },
+   "rank": 58,
+   "repo_id": 1217040185
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 5.76,
+    "s2": 0.0,
+    "s3": 40.2,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "t8y2/dbx",
+   "gain_rank": 158,
+   "index": 58.5,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 21.11,
+    "s2": null,
+    "s3": 88.44,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 59,
+   "repo_id": 1224172037
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 22.06,
+    "s2": 0.0,
+    "s3": 23.87,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Alishahryar1/free-claude-code",
+   "gain_rank": 39,
+   "index": 58.47,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 80.9,
+    "s2": null,
+    "s3": 52.51,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 60,
+   "repo_id": 1144520675
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 13.57,
+    "s2": 0.0,
+    "s3": 32.36,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "bilawalsidhu/gods-eye-view",
+   "gain_rank": 101,
+   "index": 58.47,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 49.75,
+    "s2": null,
+    "s3": 71.19,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 61,
+   "repo_id": 1277471539
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 11.35,
+    "s2": 0.0,
+    "s3": 19.9,
+    "s4": 18.85,
+    "s5": 8.11
+   },
+   "full_name": "alibaba/open-code-review",
+   "gain_rank": 72,
+   "index": 58.22,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 64.32,
+    "s2": null,
+    "s3": 67.67,
+    "s4": 53.41,
+    "s5": 45.98
+   },
+   "rank": 62,
+   "repo_id": 1241960226
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 22.89,
+    "s2": 0.0,
+    "s3": 22.61,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "addyosmani/agent-skills",
+   "gain_rank": 33,
+   "index": 58.04,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 83.92,
+    "s2": null,
+    "s3": 49.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 63,
+   "repo_id": 1158722119
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 10.83,
+    "s2": 0.0,
+    "s3": 34.38,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "NVIDIA/SkillSpector",
+   "gain_rank": 121,
+   "index": 57.74,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 39.7,
+    "s2": null,
+    "s3": 75.63,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 64,
+   "repo_id": 1187630119
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 7.95,
+    "s2": 0.0,
+    "s3": 37.08,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "wangzan101/Mika",
+   "gain_rank": 142,
+   "index": 57.57,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 29.15,
+    "s2": null,
+    "s3": 81.57,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 65,
+   "repo_id": 1438540053
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 25.49,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 25.9
+   },
+   "full_name": "deepseek-ai/deepseek-harness",
+   "gain_rank": 14,
+   "index": 57.22,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 93.47,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 94.97
+   },
+   "rank": 66,
+   "repo_id": 1333065091
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 19.19,
+    "s2": 0.0,
+    "s3": 25.47,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "jub0t/Concat",
+   "gain_rank": 60,
+   "index": 57.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 70.35,
+    "s2": null,
+    "s3": 56.03,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 67,
+   "repo_id": 1346499044
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 12.06,
+    "s2": 0.0,
+    "s3": 32.28,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "github/spec-kit",
+   "gain_rank": 111,
+   "index": 56.88,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 44.22,
+    "s2": null,
+    "s3": 71.02,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 68,
+   "repo_id": 1042367133
+  },
+  {
+   "backfilled": false,
+   "category": "vectordb-memory",
+   "contrib": {
+    "s1": 12.75,
+    "s2": 0.0,
+    "s3": 31.52,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "garrytan/gbrain",
+   "gain_rank": 107,
+   "index": 56.81,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 46.73,
+    "s2": null,
+    "s3": 69.35,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 69,
+   "repo_id": 1202057891
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 21.79,
+    "s2": 0.0,
+    "s3": 22.31,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "blader/humanizer",
+   "gain_rank": 41,
+   "index": 56.64,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 79.9,
+    "s2": null,
+    "s3": 49.08,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 70,
+   "repo_id": 1136666433
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 23.98,
+    "s2": 0.0,
+    "s3": 19.38,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "heydamir/unslop",
+   "gain_rank": 25,
+   "index": 55.9,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 87.94,
+    "s2": null,
+    "s3": 42.63,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 71,
+   "repo_id": 1438623288
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 8.77,
+    "s2": 0.0,
+    "s3": 34.34,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "rddmwmddr/android-ad-cleaner",
+   "gain_rank": 136,
+   "index": 55.65,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 32.16,
+    "s2": null,
+    "s3": 75.54,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 72,
+   "repo_id": 1431851693
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 14.54,
+    "s2": 0.0,
+    "s3": 12.12,
+    "s4": 20.86,
+    "s5": 8.11
+   },
+   "full_name": "D4Vinci/Scrapling",
+   "gain_rank": 36,
+   "index": 55.63,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 82.41,
+    "s2": null,
+    "s3": 41.21,
+    "s4": 59.09,
+    "s5": 45.98
+   },
+   "rank": 73,
+   "repo_id": 872119017
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 14.9,
+    "s2": 0.0,
+    "s3": 10.64,
+    "s4": 21.66,
+    "s5": 8.11
+   },
+   "full_name": "Graphify-Labs/graphify",
+   "gain_rank": 32,
+   "index": 55.31,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 84.42,
+    "s2": null,
+    "s3": 36.18,
+    "s4": 61.36,
+    "s5": 45.98
+   },
+   "rank": 74,
+   "repo_id": 1200597263
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 0.41,
+    "s2": 0.0,
+    "s3": 42.1,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "makecindy/cindy",
+   "gain_rank": 197,
+   "index": 55.06,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 1.51,
+    "s2": null,
+    "s3": 92.63,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 75,
+   "repo_id": 1309102418
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 8.09,
+    "s2": 0.0,
+    "s3": 34.15,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anomalyco/hex",
+   "gain_rank": 141,
+   "index": 54.77,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 29.65,
+    "s2": null,
+    "s3": 75.13,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 76,
+   "repo_id": 1304469751
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 14.25,
+    "s2": 0.0,
+    "s3": 27.68,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "cathrynlavery/diagram-design",
+   "gain_rank": 96,
+   "index": 54.47,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 52.26,
+    "s2": null,
+    "s3": 60.89,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 77,
+   "repo_id": 1212769188
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 11.1,
+    "s2": 0.0,
+    "s3": 30.34,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Comfy-Org/ComfyUI",
+   "gain_rank": 119,
+   "index": 53.98,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 40.7,
+    "s2": null,
+    "s3": 66.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 78,
+   "repo_id": 589831718
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 10.0,
+    "s2": 0.0,
+    "s3": 31.41,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "DuarteSantos8/openGym",
+   "gain_rank": 127,
+   "index": 53.95,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 36.68,
+    "s2": null,
+    "s3": 69.1,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 79,
+   "repo_id": 1305213943
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 26.18,
+    "s2": 0.0,
+    "s3": 15.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "mattpocock/skills",
+   "gain_rank": 9,
+   "index": 53.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 95.98,
+    "s2": null,
+    "s3": 33.25,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 80,
+   "repo_id": 1148788086
+  },
+  {
+   "backfilled": false,
+   "category": "vectordb-memory",
+   "contrib": {
+    "s1": 12.47,
+    "s2": 0.0,
+    "s3": 28.67,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "vectorize-io/hindsight",
+   "gain_rank": 109,
+   "index": 53.68,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 45.73,
+    "s2": null,
+    "s3": 63.07,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 81,
+   "repo_id": 1086419061
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 13.98,
+    "s2": 0.0,
+    "s3": 26.84,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ai-job-search-dev/ai-job-search",
+   "gain_rank": 98,
+   "index": 53.36,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 51.26,
+    "s2": null,
+    "s3": 59.05,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 82,
+   "repo_id": 1185389803
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 21.24,
+    "s2": 0.0,
+    "s3": 19.57,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "lemomo-ai/lemo-opuscar",
+   "gain_rank": 45,
+   "index": 53.35,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 77.89,
+    "s2": null,
+    "s3": 43.05,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 83,
+   "repo_id": 1389011744
+  },
+  {
+   "backfilled": false,
+   "category": "inference",
+   "contrib": {
+    "s1": 19.87,
+    "s2": 0.0,
+    "s3": 20.56,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Edge0-AI/Edge0",
+   "gain_rank": 55,
+   "index": 52.97,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 72.86,
+    "s2": null,
+    "s3": 45.23,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 84,
+   "repo_id": 1361439328
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 5.59,
+    "s2": 0.0,
+    "s3": 19.39,
+    "s4": 19.65,
+    "s5": 8.11
+   },
+   "full_name": "dsh-market/dsh-market",
+   "gain_rank": 137,
+   "index": 52.74,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 31.66,
+    "s2": null,
+    "s3": 65.91,
+    "s4": 55.68,
+    "s5": 45.98
+   },
+   "rank": 85,
+   "repo_id": 1333807290
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 9.4,
+    "s2": 0.0,
+    "s3": 20.3,
+    "s4": 14.84,
+    "s5": 8.11
+   },
+   "full_name": "Fei2411/DS-Bot",
+   "gain_rank": 94,
+   "index": 52.65,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 53.27,
+    "s2": null,
+    "s3": 69.01,
+    "s4": 42.05,
+    "s5": 45.98
+   },
+   "rank": 86,
+   "repo_id": 1409013846
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 9.87,
+    "s2": 0.0,
+    "s3": 30.23,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "microsoft/TokenEconomizer",
+   "gain_rank": 128,
+   "index": 52.63,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 36.18,
+    "s2": null,
+    "s3": 66.5,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 87,
+   "repo_id": 1416442720
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 3.9,
+    "s2": 0.0,
+    "s3": 18.13,
+    "s4": 22.46,
+    "s5": 8.11
+   },
+   "full_name": "soxoj/maigret",
+   "gain_rank": 156,
+   "index": 52.61,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 22.11,
+    "s2": null,
+    "s3": 61.64,
+    "s4": 63.64,
+    "s5": 45.98
+   },
+   "rank": 88,
+   "repo_id": 275386910
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 15.49,
+    "s2": 0.0,
+    "s3": 24.52,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "BaaRai/ARTEX",
+   "gain_rank": 87,
+   "index": 52.54,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 56.78,
+    "s2": null,
+    "s3": 53.94,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 89,
+   "repo_id": 1410961834
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 25.63,
+    "s2": 0.0,
+    "s3": 14.35,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anthropics/skills",
+   "gain_rank": 13,
+   "index": 52.52,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 93.97,
+    "s2": null,
+    "s3": 31.57,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 90,
+   "repo_id": 1061953414
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 17.95,
+    "s2": 0.0,
+    "s3": 22.0,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Vincentwei1021/video-shotcraft",
+   "gain_rank": 69,
+   "index": 52.5,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 65.83,
+    "s2": null,
+    "s3": 48.41,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 91,
+   "repo_id": 1305663861
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Nutlope/hallmark",
+   "gain_rank": 22,
+   "index": 52.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 89.45,
+    "s2": null,
+    "s3": 33.58,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 92,
+   "repo_id": 1222917575
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 0.0,
+    "s2": 0.0,
+    "s3": 22.61,
+    "s4": 21.26,
+    "s5": 8.11
+   },
+   "full_name": "opensandbox-group/OpenSandbox",
+   "gain_rank": 200,
+   "index": 51.98,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 0.0,
+    "s2": null,
+    "s3": 76.88,
+    "s4": 60.23,
+    "s5": 45.98
+   },
+   "rank": 93,
+   "repo_id": 1118085970
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 17.29,
+    "s2": 0.0,
+    "s3": 11.85,
+    "s4": 14.44,
+    "s5": 8.11
+   },
+   "full_name": "Ebony-Vinyl/dsh-our-free-model",
+   "gain_rank": 5,
+   "index": 51.69,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 97.99,
+    "s2": null,
+    "s3": 40.28,
+    "s4": 40.91,
+    "s5": 45.98
+   },
+   "rank": 94,
+   "repo_id": 1385896447
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 21.11,
+    "s2": 0.0,
+    "s3": 17.59,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "HKUDS/DeepTutor",
+   "gain_rank": 46,
+   "index": 51.23,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 77.39,
+    "s2": null,
+    "s3": 38.69,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 95,
+   "repo_id": 1124219907
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 3.15,
+    "s2": 0.0,
+    "s3": 35.14,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "lexmount/moli",
+   "gain_rank": 177,
+   "index": 50.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 11.56,
+    "s2": null,
+    "s3": 77.3,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 96,
+   "repo_id": 1329849289
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 6.21,
+    "s2": 0.0,
+    "s3": 19.21,
+    "s4": 16.84,
+    "s5": 8.11
+   },
+   "full_name": "apify/apify-mcp-server",
+   "gain_rank": 130,
+   "index": 50.38,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 35.18,
+    "s2": null,
+    "s3": 65.33,
+    "s4": 47.73,
+    "s5": 45.98
+   },
+   "rank": 97,
+   "repo_id": 911256711
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 8.36,
+    "s2": 0.0,
+    "s3": 28.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "beenuar/AiSOC",
+   "gain_rank": 139,
+   "index": 49.72,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 30.65,
+    "s2": null,
+    "s3": 63.4,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 98,
+   "repo_id": 1226971975
+  },
+  {
+   "backfilled": false,
+   "category": "local-llm",
+   "contrib": {
+    "s1": 20.56,
+    "s2": 0.0,
+    "s3": 16.56,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Niko1221/Strata",
+   "gain_rank": 50,
+   "index": 49.66,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 75.38,
+    "s2": null,
+    "s3": 36.43,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 99,
+   "repo_id": 1385946301
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 21.52,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "nextlevelbuilder/ui-ux-pro-max-skill",
+   "gain_rank": 43,
+   "index": 49.32,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 78.89,
+    "s2": null,
+    "s3": 33.58,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 100,
+   "repo_id": 1106996539
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 13.43,
+    "s2": 0.0,
+    "s3": 23.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "dataelement/dsh-desktop",
+   "gain_rank": 102,
+   "index": 49.04,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 49.25,
+    "s2": null,
+    "s3": 50.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 101,
+   "repo_id": 1333165619
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 5.41,
+    "s2": 0.0,
+    "s3": 30.84,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "cjpais/Handy",
+   "gain_rank": 160,
+   "index": 48.79,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 19.85,
+    "s2": null,
+    "s3": 67.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 102,
+   "repo_id": 931888694
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 20.15,
+    "s2": 0.0,
+    "s3": 16.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "emilkowalski/skills",
+   "gain_rank": 53,
+   "index": 48.75,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 73.87,
+    "s2": null,
+    "s3": 35.34,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 103,
+   "repo_id": 1183325896
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 12.88,
+    "s2": 0.0,
+    "s3": 23.26,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "storytold/artcraft",
+   "gain_rank": 106,
+   "index": 48.68,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 47.24,
+    "s2": null,
+    "s3": 51.17,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 104,
+   "repo_id": 476507964
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 10.96,
+    "s2": 0.0,
+    "s3": 24.9,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "coreyhaines31/marketingskills",
+   "gain_rank": 120,
+   "index": 48.4,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 40.2,
+    "s2": null,
+    "s3": 54.77,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 105,
+   "repo_id": 1135212071
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 6.03,
+    "s2": 0.0,
+    "s3": 25.77,
+    "s4": 8.42,
+    "s5": 8.11
+   },
+   "full_name": "awesome-dsh-plugin/awesome-dsh-plugin",
+   "gain_rank": 132,
+   "index": 48.33,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 34.17,
+    "s2": null,
+    "s3": 87.6,
+    "s4": 23.86,
+    "s5": 45.98
+   },
+   "rank": 106,
+   "repo_id": 1333175049
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 10.69,
+    "s2": 0.0,
+    "s3": 25.09,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "nexu-io/open-design",
+   "gain_rank": 122,
+   "index": 48.32,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 39.2,
+    "s2": null,
+    "s3": 55.19,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 107,
+   "repo_id": 1223170290
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 22.61,
+    "s2": 0.0,
+    "s3": 13.13,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "obra/superpowers",
+   "gain_rank": 35,
+   "index": 48.29,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 82.91,
+    "s2": null,
+    "s3": 28.89,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 108,
+   "repo_id": 1073224795
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 18.09,
+    "s2": 0.0,
+    "s3": 17.59,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "JuliusBrussee/caveman",
+   "gain_rank": 68,
+   "index": 48.22,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 66.33,
+    "s2": null,
+    "s3": 38.69,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 109,
+   "repo_id": 1201173969
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 6.85,
+    "s2": 0.0,
+    "s3": 28.74,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "tw93/Mole",
+   "gain_rank": 150,
+   "index": 48.13,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 25.13,
+    "s2": null,
+    "s3": 63.23,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 110,
+   "repo_id": 1062356571
+  },
+  {
+   "backfilled": false,
+   "category": "doc-parsing",
+   "contrib": {
+    "s1": 6.3,
+    "s2": 0.0,
+    "s3": 8.92,
+    "s4": 24.47,
+    "s5": 8.11
+   },
+   "full_name": "microsoft/markitdown",
+   "gain_rank": 129,
+   "index": 47.79,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 35.68,
+    "s2": null,
+    "s3": 30.32,
+    "s4": 69.32,
+    "s5": 45.98
+   },
+   "rank": 111,
+   "repo_id": 888092115
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 5.76,
+    "s2": 0.0,
+    "s3": 18.6,
+    "s4": 15.24,
+    "s5": 8.11
+   },
+   "full_name": "elysia395/dsh-wallpaper-engine",
+   "gain_rank": 135,
+   "index": 47.72,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 32.66,
+    "s2": null,
+    "s3": 63.23,
+    "s4": 43.18,
+    "s5": 45.98
+   },
+   "rank": 112,
+   "repo_id": 1336114531
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 11.26,
+    "s2": 0.0,
+    "s3": 16.28,
+    "s4": 12.03,
+    "s5": 8.11
+   },
+   "full_name": "openfilm/openfilm",
+   "gain_rank": 73,
+   "index": 47.69,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 63.82,
+    "s2": null,
+    "s3": 55.36,
+    "s4": 34.09,
+    "s5": 45.98
+   },
+   "rank": 113,
+   "repo_id": 1404197626
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 19.46,
+    "s2": 0.0,
+    "s3": 15.68,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "hugohe3/ppt-master",
+   "gain_rank": 58,
+   "index": 47.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 71.36,
+    "s2": null,
+    "s3": 34.51,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 114,
+   "repo_id": 1113573066
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 1.33,
+    "s2": 0.0,
+    "s3": 22.24,
+    "s4": 15.64,
+    "s5": 8.11
+   },
+   "full_name": "liguobao/ds-harness-remote",
+   "gain_rank": 185,
+   "index": 47.33,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 7.54,
+    "s2": null,
+    "s3": 75.63,
+    "s4": 44.32,
+    "s5": 45.98
+   },
+   "rank": 115,
+   "repo_id": 1334325657
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 1.51,
+    "s2": 0.0,
+    "s3": 32.85,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "chthollyphile/folia-major",
+   "gain_rank": 189,
+   "index": 46.9,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 5.53,
+    "s2": null,
+    "s3": 72.28,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 116,
+   "repo_id": 1105953775
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 16.45,
+    "s2": 0.0,
+    "s3": 17.63,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "experientiallabs/experiential",
+   "gain_rank": 80,
+   "index": 46.61,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 60.3,
+    "s2": null,
+    "s3": 38.78,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 117,
+   "repo_id": 1279659344
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 7.81,
+    "s2": 0.0,
+    "s3": 26.23,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "garrytan/gstack",
+   "gain_rank": 143,
+   "index": 46.58,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 28.64,
+    "s2": null,
+    "s3": 57.71,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 118,
+   "repo_id": 1179264259
+  },
+  {
+   "backfilled": false,
+   "category": "other-ai",
+   "contrib": {
+    "s1": 11.79,
+    "s2": 0.0,
+    "s3": 21.81,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "rohitg00/ai-engineering-from-scratch",
+   "gain_rank": 114,
+   "index": 46.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 43.22,
+    "s2": null,
+    "s3": 47.99,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 119,
+   "repo_id": 1185590488
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 10.28,
+    "s2": 0.0,
+    "s3": 23.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Imbad0202/academic-research-skills",
+   "gain_rank": 125,
+   "index": 45.89,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 37.69,
+    "s2": null,
+    "s3": 50.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 120,
+   "repo_id": 1167300963
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 7.4,
+    "s2": 0.0,
+    "s3": 25.89,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anthropics/claude-plugins-official",
+   "gain_rank": 146,
+   "index": 45.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 27.14,
+    "s2": null,
+    "s3": 56.95,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 121,
+   "repo_id": 1100776768
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 11.24,
+    "s2": 0.0,
+    "s3": 21.47,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Thysrael/Horizon",
+   "gain_rank": 118,
+   "index": 45.25,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 41.21,
+    "s2": null,
+    "s3": 47.24,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 122,
+   "repo_id": 1162410458
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 10.55,
+    "s2": 0.0,
+    "s3": 21.81,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "gamedev-skills/awesome-gamedev-agent-skills",
+   "gain_rank": 123,
+   "index": 44.91,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 38.69,
+    "s2": null,
+    "s3": 47.99,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 123,
+   "repo_id": 1278883735
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 11.38,
+    "s2": 0.0,
+    "s3": 20.79,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "usestrix/strix",
+   "gain_rank": 117,
+   "index": 44.7,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 41.71,
+    "s2": null,
+    "s3": 45.73,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 124,
+   "repo_id": 1032808806
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 16.72,
+    "s2": 0.0,
+    "s3": 15.34,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "herdrdev/herdr",
+   "gain_rank": 78,
+   "index": 44.6,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 61.31,
+    "s2": null,
+    "s3": 33.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 125,
+   "repo_id": 1193909050
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 25.9,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "cloudflare/security-audit-skill",
+   "gain_rank": 11,
+   "index": 44.27,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 94.97,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 126,
+   "repo_id": 1273427276
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 1.37,
+    "s2": 0.0,
+    "s3": 30.34,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "block/buzz",
+   "gain_rank": 190,
+   "index": 44.25,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 5.03,
+    "s2": null,
+    "s3": 66.75,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 127,
+   "repo_id": 1174789082
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 0.82,
+    "s2": 0.0,
+    "s3": 30.84,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "router-for-me/CLIProxyAPI",
+   "gain_rank": 194,
+   "index": 44.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 3.02,
+    "s2": null,
+    "s3": 67.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 128,
+   "repo_id": 1012087571
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 15.61,
+    "s2": 0.0,
+    "s3": 3.77,
+    "s4": 16.44,
+    "s5": 8.11
+   },
+   "full_name": "DietrichGebert/ponytail",
+   "gain_rank": 24,
+   "index": 43.93,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 88.44,
+    "s2": null,
+    "s3": 12.81,
+    "s4": 46.59,
+    "s5": 45.98
+   },
+   "rank": 129,
+   "repo_id": 1266797999
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 13.83,
+    "s2": 0.0,
+    "s3": 11.43,
+    "s4": 10.43,
+    "s5": 8.11
+   },
+   "full_name": "harry0703/MoneyPrinterTurbo",
+   "gain_rank": 44,
+   "index": 43.81,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 78.39,
+    "s2": null,
+    "s3": 38.86,
+    "s4": 29.55,
+    "s5": 45.98
+   },
+   "rank": 130,
+   "repo_id": 770153867
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 7.54,
+    "s2": 0.0,
+    "s3": 23.37,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "KKKKhazix/AIHOT",
+   "gain_rank": 145,
+   "index": 43.45,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 27.64,
+    "s2": null,
+    "s3": 51.42,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 131,
+   "repo_id": 1393965829
+  },
+  {
+   "backfilled": false,
+   "category": "local-llm",
+   "contrib": {
+    "s1": 3.02,
+    "s2": 0.0,
+    "s3": 27.6,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ollama/ollama",
+   "gain_rank": 178,
+   "index": 43.16,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 11.06,
+    "s2": null,
+    "s3": 60.72,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 132,
+   "repo_id": 658928958
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 8.22,
+    "s2": 0.0,
+    "s3": 21.93,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "reacher-z/Awesome-REA",
+   "gain_rank": 140,
+   "index": 42.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 30.15,
+    "s2": null,
+    "s3": 48.24,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 133,
+   "repo_id": 1421473933
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 3.43,
+    "s2": 0.0,
+    "s3": 26.65,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Crosstalk-Solutions/project-nomad",
+   "gain_rank": 175,
+   "index": 42.61,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 12.56,
+    "s2": null,
+    "s3": 58.63,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 134,
+   "repo_id": 1007827531
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 8.6,
+    "s2": 0.0,
+    "s3": 16.41,
+    "s4": 9.22,
+    "s5": 8.11
+   },
+   "full_name": "ruvnet/RuView",
+   "gain_rank": 103,
+   "index": 42.35,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 48.74,
+    "s2": null,
+    "s3": 55.78,
+    "s4": 26.14,
+    "s5": 45.98
+   },
+   "rank": 135,
+   "repo_id": 997737944
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 14.94,
+    "s2": 0.0,
+    "s3": 14.85,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "eternity4719/HowToLiveBetter",
+   "gain_rank": 91,
+   "index": 42.33,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 54.77,
+    "s2": null,
+    "s3": 32.66,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 136,
+   "repo_id": 1359648985
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 14.8,
+    "s2": 0.0,
+    "s3": 14.35,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Anil-matcha/Open-Generative-AI",
+   "gain_rank": 92,
+   "index": 41.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 54.27,
+    "s2": null,
+    "s3": 31.57,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 137,
+   "repo_id": 638513786
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 23.3,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Leonxlnx/taste-skill",
+   "gain_rank": 30,
+   "index": 41.66,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 85.43,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 138,
+   "repo_id": 1162099055
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 2.6,
+    "s2": 0.0,
+    "s3": 26.27,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "rtk-ai/rtk",
+   "gain_rank": 181,
+   "index": 41.41,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 9.55,
+    "s2": null,
+    "s3": 57.79,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 139,
+   "repo_id": 1139971460
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 19.32,
+    "s2": 0.0,
+    "s3": 9.21,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "kuafuai/andee",
+   "gain_rank": 59,
+   "index": 41.08,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 70.85,
+    "s2": null,
+    "s3": 20.27,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 140,
+   "repo_id": 1374472673
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 20.42,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Donchitos/Claude-Code-Game-Studios",
+   "gain_rank": 51,
+   "index": 41.07,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 74.87,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 141,
+   "repo_id": 1155965274
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 15.25,
+    "s2": 0.0,
+    "s3": 3.77,
+    "s4": 12.83,
+    "s5": 8.11
+   },
+   "full_name": "affaan-m/ECC",
+   "gain_rank": 28,
+   "index": 39.97,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 86.43,
+    "s2": null,
+    "s3": 12.81,
+    "s4": 36.36,
+    "s5": 45.98
+   },
+   "rank": 142,
+   "repo_id": 1136590548
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 20.97,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "multica-ai/andrej-karpathy-skills",
+   "gain_rank": 47,
+   "index": 39.33,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 76.88,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 143,
+   "repo_id": 1142983825
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 11.51,
+    "s2": 0.0,
+    "s3": 15.23,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "msitarzewski/agency-agents",
+   "gain_rank": 116,
+   "index": 39.28,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 42.21,
+    "s2": null,
+    "s3": 33.5,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 144,
+   "repo_id": 1075372545
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 10.55,
+    "s2": 0.0,
+    "s3": 9.06,
+    "s4": 10.83,
+    "s5": 8.11
+   },
+   "full_name": "ifixai-ai/iFixAi",
+   "gain_rank": 81,
+   "index": 38.56,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 59.8,
+    "s2": null,
+    "s3": 30.82,
+    "s4": 30.68,
+    "s5": 45.98
+   },
+   "rank": 145,
+   "repo_id": 1222527844
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 12.33,
+    "s2": 0.0,
+    "s3": 13.59,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Egonex-AI/Understand-Anything",
+   "gain_rank": 110,
+   "index": 38.47,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 45.23,
+    "s2": null,
+    "s3": 29.9,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 146,
+   "repo_id": 1182081931
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 20.01,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "shadcn/improve",
+   "gain_rank": 54,
+   "index": 38.37,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 73.37,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 147,
+   "repo_id": 1264986626
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 3.56,
+    "s2": 0.0,
+    "s3": 22.27,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "mvanhorn/last30days-skill",
+   "gain_rank": 174,
+   "index": 38.37,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 13.07,
+    "s2": null,
+    "s3": 48.99,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 148,
+   "repo_id": 1140843380
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 14.39,
+    "s2": 0.0,
+    "s3": 10.96,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "patch-gg/pixelfx",
+   "gain_rank": 95,
+   "index": 37.89,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 52.76,
+    "s2": null,
+    "s3": 24.12,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 149,
+   "repo_id": 1439372976
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 16.03,
+    "s2": 0.0,
+    "s3": 9.21,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Jakeschincariol/day-trader-skill",
+   "gain_rank": 83,
+   "index": 37.79,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 58.79,
+    "s2": null,
+    "s3": 20.27,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 150,
+   "repo_id": 1427126014
+  },
+  {
+   "backfilled": false,
+   "category": "inference",
+   "contrib": {
+    "s1": 15.21,
+    "s2": 0.0,
+    "s3": 9.97,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Zagitta/gpu-unlock",
+   "gain_rank": 89,
+   "index": 37.73,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 55.78,
+    "s2": null,
+    "s3": 21.94,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 151,
+   "repo_id": 1423892373
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 19.05,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "deepseek-ai/dsh-superagent-prototype",
+   "gain_rank": 61,
+   "index": 37.41,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 69.85,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 152,
+   "repo_id": 1440705679
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 7.8,
+    "s2": 0.0,
+    "s3": 8.79,
+    "s4": 12.43,
+    "s5": 8.11
+   },
+   "full_name": "hypit-ai/hypit",
+   "gain_rank": 112,
+   "index": 37.14,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 44.22,
+    "s2": null,
+    "s3": 29.9,
+    "s4": 35.23,
+    "s5": 45.98
+   },
+   "rank": 153,
+   "repo_id": 1316470719
+  },
+  {
+   "backfilled": false,
+   "category": "other-ai",
+   "contrib": {
+    "s1": 16.17,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anthropics/claude-quickstarts",
+   "gain_rank": 82,
+   "index": 36.82,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 59.3,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 154,
+   "repo_id": 849553306
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 10.42,
+    "s2": 0.0,
+    "s3": 13.32,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "f/prompts.chat",
+   "gain_rank": 124,
+   "index": 36.28,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 38.19,
+    "s2": null,
+    "s3": 29.31,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 155,
+   "repo_id": 574523116
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 4.11,
+    "s2": 0.0,
+    "s3": 19.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ethanplusai/sellbird",
+   "gain_rank": 170,
+   "index": 35.76,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 15.08,
+    "s2": null,
+    "s3": 42.04,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 156,
+   "repo_id": 1179388779
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 12.06,
+    "s2": 0.0,
+    "s3": 11.08,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Likely7/Veyra-NRVideo",
+   "gain_rank": 113,
+   "index": 35.68,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 44.22,
+    "s2": null,
+    "s3": 24.37,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 157,
+   "repo_id": 1362562155
+  },
+  {
+   "backfilled": false,
+   "category": "computer-use",
+   "contrib": {
+    "s1": 5.62,
+    "s2": 0.0,
+    "s3": 16.98,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "citrolabs/ego-lite",
+   "gain_rank": 159,
+   "index": 35.14,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 20.6,
+    "s2": null,
+    "s3": 37.35,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 158,
+   "repo_id": 1212503250
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 9.75,
+    "s2": 0.0,
+    "s3": 7.32,
+    "s4": 9.63,
+    "s5": 8.11
+   },
+   "full_name": "vAPI-Network/vapi-network",
+   "gain_rank": 90,
+   "index": 34.81,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 55.28,
+    "s2": null,
+    "s3": 24.87,
+    "s4": 27.27,
+    "s5": 45.98
+   },
+   "rank": 159,
+   "repo_id": 1401744296
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 3.81,
+    "s2": 0.0,
+    "s3": 12.59,
+    "s4": 10.03,
+    "s5": 8.11
+   },
+   "full_name": "Sandflow-ai/sand3d",
+   "gain_rank": 157,
+   "index": 34.54,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 21.61,
+    "s2": null,
+    "s3": 42.8,
+    "s4": 28.41,
+    "s5": 45.98
+   },
+   "rank": 160,
+   "repo_id": 1444005452
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 7.26,
+    "s2": 0.0,
+    "s3": 14.58,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "every-app/open-seo",
+   "gain_rank": 147,
+   "index": 34.38,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 26.63,
+    "s2": null,
+    "s3": 32.08,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 161,
+   "repo_id": 1168753718
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 12.61,
+    "s2": 0.0,
+    "s3": 9.21,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "sarpstar/cinecode",
+   "gain_rank": 108,
+   "index": 34.36,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 46.23,
+    "s2": null,
+    "s3": 20.27,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 162,
+   "repo_id": 1444112593
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 13.16,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "TauricResearch/TradingAgents",
+   "gain_rank": 104,
+   "index": 33.81,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 48.24,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 163,
+   "repo_id": 909213664
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 1.1,
+    "s2": 0.0,
+    "s3": 20.02,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anywhere-labs/dsh-desktop",
+   "gain_rank": 192,
+   "index": 33.66,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 4.02,
+    "s2": null,
+    "s3": 44.05,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 164,
+   "repo_id": 1333321333
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 1.85,
+    "s2": 0.0,
+    "s3": 19.19,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "cursor/plugins",
+   "gain_rank": 186,
+   "index": 33.58,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 6.78,
+    "s2": null,
+    "s3": 42.21,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 165,
+   "repo_id": 1140229822
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 9.49,
+    "s2": 0.0,
+    "s3": 7.41,
+    "s4": 8.02,
+    "s5": 8.11
+   },
+   "full_name": "VoltAgent/awesome-design-md",
+   "gain_rank": 93,
+   "index": 33.04,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 53.77,
+    "s2": null,
+    "s3": 25.21,
+    "s4": 22.73,
+    "s5": 45.98
+   },
+   "rank": 166,
+   "repo_id": 1197515131
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 14.12,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "wheresryan22/anatomy",
+   "gain_rank": 97,
+   "index": 32.48,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 51.76,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 167,
+   "repo_id": 1410124849
+  },
+  {
+   "backfilled": false,
+   "category": "inference",
+   "contrib": {
+    "s1": 0.96,
+    "s2": 0.0,
+    "s3": 18.58,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "mnfst/awesome-free-llm-apis",
+   "gain_rank": 193,
+   "index": 32.08,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 3.52,
+    "s2": null,
+    "s3": 40.87,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 168,
+   "repo_id": 1188180267
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 13.7,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ChenLiu-1996/figures4papers",
+   "gain_rank": 100,
+   "index": 32.07,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 50.25,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 169,
+   "repo_id": 974591843
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 4.52,
+    "s2": 0.0,
+    "s3": 14.96,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "anthropics/knowledge-work-plugins",
+   "gain_rank": 167,
+   "index": 32.02,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 16.58,
+    "s2": null,
+    "s3": 32.91,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 170,
+   "repo_id": 1140828898
+  },
+  {
+   "backfilled": false,
+   "category": "other-ai",
+   "contrib": {
+    "s1": 11.65,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "walkinglabs/learn-harness-engineering",
+   "gain_rank": 115,
+   "index": 30.01,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 42.71,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 171,
+   "repo_id": 1195243030
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 9.18,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Jakeschincariol/replica-skill",
+   "gain_rank": 133,
+   "index": 29.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 33.67,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 172,
+   "repo_id": 1403115747
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 4.25,
+    "s2": 0.0,
+    "s3": 12.41,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "HBAI-Ltd/Toonflow-app",
+   "gain_rank": 169,
+   "index": 29.2,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 15.58,
+    "s2": null,
+    "s3": 27.3,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 173,
+   "repo_id": 1145022970
+  },
+  {
+   "backfilled": false,
+   "category": "multimodal",
+   "contrib": {
+    "s1": 1.06,
+    "s2": 0.0,
+    "s3": 3.77,
+    "s4": 16.04,
+    "s5": 8.11
+   },
+   "full_name": "OpenBMB/VoxCPM",
+   "gain_rank": 188,
+   "index": 28.99,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 6.03,
+    "s2": null,
+    "s3": 12.81,
+    "s4": 45.45,
+    "s5": 45.98
+   },
+   "rank": 174,
+   "repo_id": 1057664813
+  },
+  {
+   "backfilled": false,
+   "category": "training",
+   "contrib": {
+    "s1": 0.18,
+    "s2": 0.0,
+    "s3": 9.06,
+    "s4": 11.23,
+    "s5": 8.11
+   },
+   "full_name": "p-e-w/heretic",
+   "gain_rank": 198,
+   "index": 28.59,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 1.01,
+    "s2": null,
+    "s3": 30.82,
+    "s4": 31.82,
+    "s5": 45.98
+   },
+   "rank": 175,
+   "repo_id": 1061041576
+  },
+  {
+   "backfilled": false,
+   "category": "llmops",
+   "contrib": {
+    "s1": 3.02,
+    "s2": 0.0,
+    "s3": 8.62,
+    "s4": 8.82,
+    "s5": 8.11
+   },
+   "full_name": "FailproofAI/failproofai",
+   "gain_rank": 166,
+   "index": 28.57,
+   "missing": [
+    "s2"
+   ],
+   "pct": {
+    "s1": 17.09,
+    "s2": null,
+    "s3": 29.31,
+    "s4": 25.0,
+    "s5": 45.98
+   },
+   "rank": 176,
+   "repo_id": 1202410617
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 10.14,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "arjun988/blender-skills",
+   "gain_rank": 126,
+   "index": 28.51,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 37.19,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 177,
+   "repo_id": 1289817225
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 0.69,
+    "s2": 0.0,
+    "s3": 15.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "kaankiziltug/logo-design-skill",
+   "gain_rank": 195,
+   "index": 28.34,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 2.51,
+    "s2": null,
+    "s3": 33.25,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 178,
+   "repo_id": 1388867993
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 9.46,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Jakeschincariol/instagram-agent-skill",
+   "gain_rank": 131,
+   "index": 27.82,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 34.67,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 179,
+   "repo_id": 1368447577
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 9.05,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "elder-plinius/CL4R1T4S",
+   "gain_rank": 134,
+   "index": 27.41,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 33.17,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 180,
+   "repo_id": 942867788
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 8.5,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "yihui-dev/awesome-opus5-5-videos",
+   "gain_rank": 138,
+   "index": 26.86,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 31.16,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 181,
+   "repo_id": 1390273274
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 6.17,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Jakeschincariol/youtube-agent-skill",
+   "gain_rank": 155,
+   "index": 26.82,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 22.61,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 182,
+   "repo_id": 1373084533
+  },
+  {
+   "backfilled": false,
+   "category": "coding-agent",
+   "contrib": {
+    "s1": 1.23,
+    "s2": 0.0,
+    "s3": 12.98,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Ebony-Vinyl/EAC-Desktop",
+   "gain_rank": 191,
+   "index": 26.75,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 4.52,
+    "s2": null,
+    "s3": 28.56,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 183,
+   "repo_id": 1334373503
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 0.14,
+    "s2": 0.0,
+    "s3": 14.01,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "datawhalechina/hello-agents",
+   "gain_rank": 199,
+   "index": 26.69,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 0.5,
+    "s2": null,
+    "s3": 30.82,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 184,
+   "repo_id": 1052050442
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 5.41,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "K-Dense-AI/scientific-agent-skills",
+   "gain_rank": 161,
+   "index": 26.06,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 19.85,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 185,
+   "repo_id": 1079456184
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 6.58,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Yuan1z0825/nature-skills",
+   "gain_rank": 152,
+   "index": 24.94,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 24.12,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 186,
+   "repo_id": 1219596233
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 6.3,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "Ryze-AI-Adgent/open-seo-mcp-skills",
+   "gain_rank": 154,
+   "index": 24.67,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 23.12,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 187,
+   "repo_id": 1350978527
+  },
+  {
+   "backfilled": false,
+   "category": "ai-apps",
+   "contrib": {
+    "s1": 3.29,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "666ghj/MiroFish",
+   "gain_rank": 176,
+   "index": 23.94,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 12.06,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 188,
+   "repo_id": 1104332987
+  },
+  {
+   "backfilled": false,
+   "category": "agent-framework",
+   "contrib": {
+    "s1": 5.21,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "google-research/harness2",
+   "gain_rank": 162,
+   "index": 23.57,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 19.1,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 189,
+   "repo_id": 1407951147
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 5.0,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "guillaumemeyer/watermarks-remover",
+   "gain_rank": 163,
+   "index": 23.37,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 18.34,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 190,
+   "repo_id": 1331135699
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 5.0,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "latent-spaces/brag",
+   "gain_rank": 164,
+   "index": 23.37,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 18.34,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 191,
+   "repo_id": 1271560627
+  },
+  {
+   "backfilled": false,
+   "category": "inference",
+   "contrib": {
+    "s1": 4.8,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "FareedKhan-dev/kimi-k3-in-c",
+   "gain_rank": 165,
+   "index": 23.16,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 17.59,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 192,
+   "repo_id": 1319154759
+  },
+  {
+   "backfilled": false,
+   "category": "other-ai",
+   "contrib": {
+    "s1": 2.33,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "bojieli/ai-agent-book",
+   "gain_rank": 183,
+   "index": 22.98,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 8.54,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 193,
+   "repo_id": 1053118194
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 2.19,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "unclebob/ub-mode",
+   "gain_rank": 184,
+   "index": 22.84,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 8.04,
+    "s2": null,
+    "s3": 17.84,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 194,
+   "repo_id": 1433377156
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 3.97,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "irinabuht12-oss/marketing-skills",
+   "gain_rank": 171,
+   "index": 22.34,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 14.57,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 195,
+   "repo_id": 1138946494
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 3.7,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "ayghri/i-have-adhd",
+   "gain_rank": 173,
+   "index": 22.06,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 13.57,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 196,
+   "repo_id": 1238120057
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 2.81,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "google-labs-code/stitch-skills",
+   "gain_rank": 179,
+   "index": 21.17,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 10.3,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 197,
+   "repo_id": 1135847870
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 2.47,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "OpenCut-app/OpenCut",
+   "gain_rank": 182,
+   "index": 20.83,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 9.05,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 198,
+   "repo_id": 1006414368
+  },
+  {
+   "backfilled": false,
+   "category": "mcp-tools",
+   "contrib": {
+    "s1": 1.85,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "irinabuht12-oss/google-ads-meta-ads-mcp",
+   "gain_rank": 187,
+   "index": 20.21,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 6.78,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 199,
+   "repo_id": 1202492868
+  },
+  {
+   "backfilled": false,
+   "category": "agent-skills",
+   "contrib": {
+    "s1": 0.55,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "full_name": "bradautomates/claude-video",
+   "gain_rank": 196,
+   "index": 18.91,
+   "missing": [
+    "s2",
+    "s4"
+   ],
+   "pct": {
+    "s1": 2.01,
+    "s2": null,
+    "s3": 12.81,
+    "s4": null,
+    "s5": 45.98
+   },
+   "rank": 200,
+   "repo_id": 1219644159
+  }
+ ],
+ "top": [
+  1131202426,
+  1423101235,
+  1153130349,
+  1368596582,
+  1183888342,
+  1440956372,
+  1206390571,
+  274495425,
+  1024554267,
+  543101941
+ ],
+ "week": "2026-11-08",
+ "weights": {
+  "s1": 15,
+  "s2": 15,
+  "s3": 25,
+  "s4": 30,
+  "s5": 15
+ },
+ "weights_version": 1
+}

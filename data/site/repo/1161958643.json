@@ -15,42 +15,55 @@
    "index": 59.9,
    "rank": 51,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 15.87,
+    "s2": 0.0,
+    "s3": 13.25,
+    "s4": 17.25,
+    "s5": 17.03
+   },
+   "index": 63.4,
+   "rank": 42,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "스타 1개당 다운로드 4회",
+   "big": "스타 1개당 다운로드 11회",
    "id": "I1",
    "signal": "s4",
-   "text": "패키지가 있는 후보 47개 중 32위.",
+   "text": "패키지가 있는 후보 45개 중 28위.",
    "title": "사용 대비 관심"
   },
   {
-   "big": "누적 포크 1,687",
+   "big": "누적 포크 1,807",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 3명",
+   "big": "PR 작성자 2명",
    "id": "I4",
    "signal": "s3",
    "text": "",
    "title": "기여 폭"
   },
   {
-   "big": "1주 언급 0건",
+   "big": "언급 점수의 100.0%가 글 하나",
    "id": "I5",
    "signal": "s5",
-   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
+   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
    "title": "언급"
   },
   {
-   "big": "51위 (처음)",
+   "big": "51위 → 42위",
    "id": "I7",
    "signal": "index",
-   "text": "",
+   "text": "2주 최고 42위(이번 주), 최저 51위(11-01 주).",
    "title": "순위 이동"
   }
  ],
@@ -60,64 +73,64 @@
   "backfilled": false,
   "category": "브라우저·컴퓨터 사용 자동화",
   "contrib": {
-   "s1": 17.29,
+   "s1": 15.87,
    "s2": 0.0,
-   "s3": 15.05,
-   "s4": 19.18,
-   "s5": 8.38
+   "s3": 13.25,
+   "s4": 17.25,
+   "s5": 17.03
   },
   "full_name": "vercel-labs/agent-desktop",
-  "index": 59.9,
+  "index": 63.4,
   "missing": [
    "s2"
   ],
   "pct": {
-   "s1": 97.99,
+   "s1": 89.95,
    "s2": null,
-   "s3": 51.17,
-   "s4": 54.35,
-   "s5": 47.49
+   "s3": 45.06,
+   "s4": 48.86,
+   "s5": 96.48
   },
-  "prev_rank": null,
-  "rank": 51,
+  "prev_rank": 51,
+  "rank": 42,
   "raw": {
-   "s1_stars_gain": 14207,
+   "s1_stars_gain": 4811,
    "s2_fork_delta": null,
-   "s2_forks": 1687,
-   "s3_closed_issues": 5,
-   "s3_merged_prs": 20,
-   "s3_pr_authors": 3,
+   "s2_forks": 1807,
+   "s3_closed_issues": 6,
+   "s3_merged_prs": 12,
+   "s3_pr_authors": 2,
    "s4_dependents": 0,
-   "s4_downloads": 51872,
+   "s4_downloads": 50927,
    "s4_packages": "npm:agent-desktop",
-   "s5_gn_points": 0,
-   "s5_gn_topics": 0,
+   "s5_gn_points": 11,
+   "s5_gn_topics": 1,
    "s5_hn_points": 0,
    "s5_hn_stories": 0
   },
   "repo_id": 1161958643,
-  "star_rank": 5,
+  "star_rank": 21,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "ok",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
-   "gn_points": 0,
-   "gn_topics": 0,
+   "gn_points": 11,
+   "gn_topics": 1,
    "hn_points": 0,
    "hn_stories": 0
   },
   "window": {
-   "gn_points": 0,
-   "gn_topics": 0,
+   "gn_points": 11,
+   "gn_topics": 1,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 1
+   "weeks": 2
   }
  },
  "repo_id": 1161958643,
@@ -139,56 +152,56 @@
   {
    "avg": "—",
    "key": "종합 순위",
-   "now": "51위",
-   "prev": "—"
+   "now": "42위",
+   "prev": "51위"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "59.9",
-   "prev": "—"
+   "now": "63.4",
+   "prev": "59.9"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "14,207",
-   "prev": "—"
+   "now": "4,811",
+   "prev": "14,207"
   },
   {
    "avg": "—",
    "key": "주간 다운로드",
-   "now": "51,872",
-   "prev": "—"
+   "now": "50,927",
+   "prev": "51,872"
   },
   {
    "avg": "—",
    "key": "머지 PR",
-   "now": "20",
-   "prev": "—"
+   "now": "12",
+   "prev": "20"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
-   "now": "3",
-   "prev": "—"
+   "now": "2",
+   "prev": "3"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
-   "now": "5",
-   "prev": "—"
+   "now": "6",
+   "prev": "5"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
-   "now": "0",
-   "prev": "—"
+   "now": "1",
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,687",
-   "prev": "—"
+   "now": "1,807",
+   "prev": "1,687"
   }
  ]
 }

@@ -93,11 +93,24 @@
    "index": 24.5,
    "rank": 187,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.0,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 23.37,
+   "rank": 190,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 3,091",
+   "big": "누적 포크 3,120",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -118,10 +131,10 @@
    "title": "언급"
   },
   {
-   "big": "187위 → 187위",
+   "big": "187위 → 190위",
    "id": "I7",
    "signal": "index",
-   "text": "12주 최고 6위(08-23 주), 최저 187위(이번 주).",
+   "text": "12주 최고 6위(08-23 주), 최저 190위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -131,32 +144,32 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 3.29,
+   "s1": 5.0,
    "s2": 0.0,
-   "s3": 8.26,
+   "s3": 5.82,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "guillaumemeyer/watermarks-remover",
-  "index": 24.5,
+  "index": 23.37,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 12.06,
+   "s1": 18.34,
    "s2": null,
-   "s3": 18.17,
+   "s3": 12.81,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
   "prev_rank": 187,
-  "rank": 187,
+  "rank": 190,
   "raw": {
-   "s1_stars_gain": 846,
+   "s1_stars_gain": 853,
    "s2_fork_delta": null,
-   "s2_forks": 3091,
-   "s3_closed_issues": 1,
+   "s2_forks": 3120,
+   "s3_closed_issues": 0,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -168,14 +181,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1331135699,
-  "star_rank": 176,
+  "star_rank": 163,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -212,43 +225,43 @@
  ],
  "trend": [
   {
-   "avg": "—",
+   "avg": "187위",
    "key": "종합 순위",
-   "now": "187위",
+   "now": "190위",
    "prev": "187위"
   },
   {
-   "avg": "—",
+   "avg": "25.4",
    "key": "지수",
-   "now": "24.5",
-   "prev": "26.2"
+   "now": "23.4",
+   "prev": "24.5"
   },
   {
-   "avg": "—",
+   "avg": "926",
    "key": "스타 증가",
-   "now": "846",
-   "prev": "1,005"
+   "now": "853",
+   "prev": "846"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "머지 PR",
    "now": "0",
    "prev": "0"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "PR 작성자",
    "now": "0",
    "prev": "0"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "닫힌 이슈",
-   "now": "1",
-   "prev": "0"
+   "now": "0",
+   "prev": "1"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
    "prev": "0"
@@ -256,8 +269,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "3,091",
-   "prev": "—"
+   "now": "3,120",
+   "prev": "3,091"
   }
  ]
 }

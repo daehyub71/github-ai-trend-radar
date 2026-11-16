@@ -1,0 +1,169 @@
+{
+ "category": "에이전트 스킬·프롬프트",
+ "description": "Keep your coding agent up to date with the latest web best practices",
+ "full_name": "GoogleChrome/modern-web-guidance",
+ "history": [
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 27.0,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 27.03
+   },
+   "index": 59.86,
+   "rank": 50,
+   "week": "2026-11-08"
+  }
+ ],
+ "insights": [
+  {
+   "big": "누적 포크 705",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 0명",
+   "id": "I4",
+   "signal": "s3",
+   "text": "",
+   "title": "기여 폭"
+  },
+  {
+   "big": "언급 점수의 99.6%가 글 하나",
+   "id": "I5",
+   "signal": "s5",
+   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
+   "title": "언급"
+  },
+  {
+   "big": "50위 (처음)",
+   "id": "I7",
+   "signal": "index",
+   "text": "",
+   "title": "순위 이동"
+  }
+ ],
+ "insights_version": 1,
+ "language": null,
+ "latest": {
+  "backfilled": false,
+  "category": "에이전트 스킬·프롬프트",
+  "contrib": {
+   "s1": 27.0,
+   "s2": 0.0,
+   "s3": 5.82,
+   "s4": 0.0,
+   "s5": 27.03
+  },
+  "full_name": "GoogleChrome/modern-web-guidance",
+  "index": 59.86,
+  "missing": [
+   "s2",
+   "s4"
+  ],
+  "pct": {
+   "s1": 98.99,
+   "s2": null,
+   "s3": 12.81,
+   "s4": null,
+   "s5": 99.12
+  },
+  "prev_rank": null,
+  "rank": 50,
+  "raw": {
+   "s1_stars_gain": 13363,
+   "s2_fork_delta": null,
+   "s2_forks": 705,
+   "s3_closed_issues": 0,
+   "s3_merged_prs": 0,
+   "s3_pr_authors": 0,
+   "s4_dependents": null,
+   "s4_downloads": null,
+   "s4_packages": null,
+   "s5_gn_points": 2,
+   "s5_gn_topics": 1,
+   "s5_hn_points": 447,
+   "s5_hn_stories": 1
+  },
+  "repo_id": 1189825116,
+  "star_rank": 3,
+  "status": {
+   "s2_status": "ok",
+   "s3_status": "ok",
+   "s4_status": "none",
+   "s5_status": "ok"
+  },
+  "week": "2026-11-08"
+ },
+ "mentions": {
+  "week": {
+   "gn_points": 2,
+   "gn_topics": 1,
+   "hn_points": 447,
+   "hn_stories": 1
+  },
+  "window": {
+   "gn_points": 2,
+   "gn_topics": 1,
+   "hn_points": 447,
+   "hn_stories": 1,
+   "weeks": 1
+  }
+ },
+ "repo_id": 1189825116,
+ "topics": [],
+ "trend": [
+  {
+   "avg": "—",
+   "key": "종합 순위",
+   "now": "50위",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "지수",
+   "now": "59.9",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "스타 증가",
+   "now": "13,363",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "머지 PR",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "닫힌 이슈",
+   "now": "0",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "HN·GeekNews 글",
+   "now": "2",
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "705",
+   "prev": "—"
+  }
+ ]
+}

@@ -158,11 +158,24 @@
    "index": 22.7,
    "rank": 195,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.41,
+    "s2": 0.0,
+    "s3": 8.11,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 26.06,
+   "rank": 185,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 5,002",
+   "big": "누적 포크 5,042",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -172,21 +185,21 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 0명, 11주 첫 주 2명.",
+   "text": "4주 전 0명, 12주 첫 주 2명.",
    "title": "기여 폭"
   },
   {
-   "big": "11주 언급 0건",
+   "big": "12주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "176위 → 195위",
+   "big": "195위 → 185위",
    "id": "I7",
    "signal": "index",
-   "text": "11주 최고 57위(09-06 주), 최저 195위(이번 주).",
+   "text": "12주 최고 57위(09-06 주), 최저 195위(11-01 주).",
    "title": "순위 이동"
   }
  ],
@@ -196,32 +209,32 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 4.04,
+   "s1": 5.41,
    "s2": 0.0,
-   "s3": 5.71,
+   "s3": 8.11,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "K-Dense-AI/scientific-agent-skills",
-  "index": 22.7,
+  "index": 26.06,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 14.82,
+   "s1": 19.85,
    "s2": null,
-   "s3": 12.56,
+   "s3": 17.84,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 176,
-  "rank": 195,
+  "prev_rank": 195,
+  "rank": 185,
   "raw": {
-   "s1_stars_gain": 894,
+   "s1_stars_gain": 861,
    "s2_fork_delta": null,
-   "s2_forks": 5002,
-   "s3_closed_issues": 0,
+   "s2_forks": 5042,
+   "s3_closed_issues": 1,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -233,14 +246,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1079456184,
-  "star_rank": 171,
+  "star_rank": 161,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -254,7 +267,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 11
+   "weeks": 12
   }
  },
  "repo_id": 1079456184,
@@ -279,22 +292,22 @@
  ],
  "trend": [
   {
-   "avg": "162위",
+   "avg": "164위",
    "key": "종합 순위",
-   "now": "195위",
-   "prev": "176위"
+   "now": "185위",
+   "prev": "195위"
   },
   {
-   "avg": "32.7",
+   "avg": "32.3",
    "key": "지수",
-   "now": "22.7",
-   "prev": "28.8"
+   "now": "26.1",
+   "prev": "22.7"
   },
   {
-   "avg": "2,062",
+   "avg": "2,073",
    "key": "스타 증가",
-   "now": "894",
-   "prev": "1,153"
+   "now": "861",
+   "prev": "894"
   },
   {
    "avg": "0",
@@ -311,7 +324,7 @@
   {
    "avg": "0",
    "key": "닫힌 이슈",
-   "now": "0",
+   "now": "1",
    "prev": "0"
   },
   {
@@ -323,8 +336,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "5,002",
-   "prev": "—"
+   "now": "5,042",
+   "prev": "5,002"
   }
  ]
 }

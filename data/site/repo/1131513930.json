@@ -41,65 +41,85 @@
    "index": 43.0,
    "rank": 134,
    "week": "2026-08-23"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 23.85,
+    "s2": 0.0,
+    "s3": 29.39,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 65.78,
+   "rank": 34,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "PR 작성자 7명",
+   "big": "누적 포크 57,605",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
+  },
+  {
+   "big": "PR 작성자 13명",
    "id": "I4",
    "signal": "s3",
-   "text": "",
+   "text": "12주 첫 주 7명 — 기여하는 사람이 늘고 있습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "3주 언급 0건",
+   "big": "12주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "130위 → 134위",
+   "big": "34위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "3주 최고 59위(08-09 주), 최저 134위(이번 주).",
+   "text": "12주 최고 34위(이번 주), 최저 134위(08-23 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": "Python",
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "AI 앱·서비스",
   "contrib": {
-   "s1": 3.26,
+   "s1": 23.85,
    "s2": 0.0,
-   "s3": 27.2,
+   "s3": 29.39,
    "s4": 0.0,
-   "s5": 12.55
+   "s5": 12.54
   },
   "full_name": "ZhuLinsen/daily_stock_analysis",
-  "index": 43.0,
+  "index": 65.78,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 11.94,
+   "s1": 87.44,
    "s2": null,
-   "s3": 59.83,
+   "s3": 64.66,
    "s4": null,
-   "s5": 46.02
+   "s5": 45.98
   },
-  "prev_rank": 130,
-  "rank": 134,
+  "prev_rank": null,
+  "rank": 34,
   "raw": {
-   "s1_stars_gain": 655,
+   "s1_stars_gain": 4530,
    "s2_fork_delta": null,
-   "s2_forks": null,
-   "s3_closed_issues": 6,
-   "s3_merged_prs": 16,
-   "s3_pr_authors": 7,
+   "s2_forks": 57605,
+   "s3_closed_issues": 11,
+   "s3_merged_prs": 27,
+   "s3_pr_authors": 13,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -109,14 +129,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1131513930,
-  "star_rank": 178,
+  "star_rank": 26,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-08-23"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -130,7 +150,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 3
+   "weeks": 12
   }
  },
  "repo_id": 1131513930,
@@ -145,46 +165,52 @@
  ],
  "trend": [
   {
-   "avg": "94위",
+   "avg": "—",
    "key": "종합 순위",
-   "now": "134위",
-   "prev": "130위"
+   "now": "34위",
+   "prev": "—"
   },
   {
-   "avg": "50.7",
+   "avg": "—",
    "key": "지수",
-   "now": "43.0",
-   "prev": "42.4"
+   "now": "65.8",
+   "prev": "—"
   },
   {
-   "avg": "1,457",
+   "avg": "—",
    "key": "스타 증가",
-   "now": "655",
-   "prev": "714"
+   "now": "4,530",
+   "prev": "—"
   },
   {
-   "avg": "10",
+   "avg": "—",
    "key": "머지 PR",
-   "now": "16",
-   "prev": "11"
+   "now": "27",
+   "prev": "—"
   },
   {
-   "avg": "6",
+   "avg": "—",
    "key": "PR 작성자",
-   "now": "7",
-   "prev": "8"
+   "now": "13",
+   "prev": "—"
   },
   {
-   "avg": "7",
+   "avg": "—",
    "key": "닫힌 이슈",
-   "now": "6",
-   "prev": "6"
+   "now": "11",
+   "prev": "—"
   },
   {
-   "avg": "0",
+   "avg": "—",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
+  },
+  {
+   "avg": "—",
+   "key": "포크 (누적)",
+   "now": "57,605",
+   "prev": "—"
   }
  ]
 }

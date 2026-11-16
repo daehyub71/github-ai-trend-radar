@@ -54,11 +54,24 @@
    "index": 49.46,
    "rank": 97,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 4.8,
+    "s2": 0.0,
+    "s3": 5.82,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 23.16,
+   "rank": 192,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,838",
+   "big": "누적 포크 1,878",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -68,21 +81,21 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "9주 첫 주 1명 — 기여하는 사람이 줄었습니다.",
+   "text": "10주 첫 주 1명 — 기여하는 사람이 줄었습니다.",
    "title": "기여 폭"
   },
   {
-   "big": "언급 점수의 100.0%가 글 하나",
+   "big": "10주 HN 1건 · 3점",
    "id": "I5",
    "signal": "s5",
-   "text": "글 하나가 이번 주 언급 신호를 만들었습니다.",
+   "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "97위 (처음)",
+   "big": "97위 → 192위",
    "id": "I7",
    "signal": "index",
-   "text": "9주 최고 97위(이번 주), 최저 184위(09-20 주).",
+   "text": "10주 최고 97위(11-01 주), 최저 192위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -92,31 +105,31 @@
   "backfilled": false,
   "category": "추론·서빙",
   "contrib": {
-   "s1": 17.27,
+   "s1": 4.8,
    "s2": 0.0,
-   "s3": 5.71,
+   "s3": 5.82,
    "s4": 0.0,
-   "s5": 26.48
+   "s5": 12.54
   },
   "full_name": "FareedKhan-dev/kimi-k3-in-c",
-  "index": 49.46,
+  "index": 23.16,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 63.32,
+   "s1": 17.59,
    "s2": null,
-   "s3": 12.56,
+   "s3": 12.81,
    "s4": null,
-   "s5": 97.11
+   "s5": 45.98
   },
-  "prev_rank": null,
-  "rank": 97,
+  "prev_rank": 97,
+  "rank": 192,
   "raw": {
-   "s1_stars_gain": 2018,
+   "s1_stars_gain": 845,
    "s2_fork_delta": null,
-   "s2_forks": 1838,
+   "s2_forks": 1878,
    "s3_closed_issues": 0,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
@@ -125,32 +138,32 @@
    "s4_packages": null,
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
-   "s5_hn_points": 3,
-   "s5_hn_stories": 1
+   "s5_hn_points": 0,
+   "s5_hn_stories": 0
   },
   "repo_id": 1319154759,
-  "star_rank": 74,
+  "star_rank": 165,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
    "gn_points": 0,
    "gn_topics": 0,
-   "hn_points": 3,
-   "hn_stories": 1
+   "hn_points": 0,
+   "hn_stories": 0
   },
   "window": {
    "gn_points": 0,
    "gn_topics": 0,
    "hn_points": 3,
    "hn_stories": 1,
-   "weeks": 9
+   "weeks": 10
   }
  },
  "repo_id": 1319154759,
@@ -180,50 +193,50 @@
   {
    "avg": "—",
    "key": "종합 순위",
-   "now": "97위",
-   "prev": "—"
+   "now": "192위",
+   "prev": "97위"
   },
   {
    "avg": "—",
    "key": "지수",
-   "now": "49.5",
-   "prev": "—"
+   "now": "23.2",
+   "prev": "49.5"
   },
   {
    "avg": "—",
    "key": "스타 증가",
-   "now": "2,018",
-   "prev": "—"
+   "now": "845",
+   "prev": "2,018"
   },
   {
    "avg": "—",
    "key": "머지 PR",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "PR 작성자",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "닫힌 이슈",
    "now": "0",
-   "prev": "—"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "HN·GeekNews 글",
-   "now": "1",
-   "prev": "—"
+   "now": "0",
+   "prev": "1"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,838",
-   "prev": "—"
+   "now": "1,878",
+   "prev": "1,838"
   }
  ]
 }

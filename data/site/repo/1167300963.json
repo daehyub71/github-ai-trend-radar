@@ -171,11 +171,24 @@
    "index": 41.86,
    "rank": 141,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 10.28,
+    "s2": 0.0,
+    "s3": 23.07,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 45.89,
+   "rank": 120,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 4,320",
+   "big": "누적 포크 4,348",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -185,7 +198,7 @@
    "big": "PR 작성자 2명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 2명, 12주 첫 주 2명.",
+   "text": "4주 전 4명, 12주 첫 주 2명.",
    "title": "기여 폭"
   },
   {
@@ -196,7 +209,7 @@
    "title": "언급"
   },
   {
-   "big": "130위 → 141위",
+   "big": "141위 → 120위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 66위(08-30 주), 최저 145위(10-04 주).",
@@ -209,33 +222,33 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 6.37,
+   "s1": 10.28,
    "s2": 0.0,
-   "s3": 22.54,
+   "s3": 23.07,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "Imbad0202/academic-research-skills",
-  "index": 41.86,
+  "index": 45.89,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 23.37,
+   "s1": 37.69,
    "s2": null,
-   "s3": 49.58,
+   "s3": 50.75,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 130,
-  "rank": 141,
+  "prev_rank": 141,
+  "rank": 120,
   "raw": {
-   "s1_stars_gain": 1022,
+   "s1_stars_gain": 1217,
    "s2_fork_delta": null,
-   "s2_forks": 4320,
-   "s3_closed_issues": 10,
-   "s3_merged_prs": 13,
+   "s2_forks": 4348,
+   "s3_closed_issues": 14,
+   "s3_merged_prs": 15,
    "s3_pr_authors": 2,
    "s4_dependents": null,
    "s4_downloads": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1167300963,
-  "star_rank": 154,
+  "star_rank": 125,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -283,28 +296,28 @@
  ],
  "trend": [
   {
-   "avg": "124위",
+   "avg": "123위",
    "key": "종합 순위",
-   "now": "141위",
-   "prev": "130위"
+   "now": "120위",
+   "prev": "141위"
   },
   {
-   "avg": "43.7",
+   "avg": "44.8",
    "key": "지수",
-   "now": "41.9",
-   "prev": "43.8"
+   "now": "45.9",
+   "prev": "41.9"
   },
   {
-   "avg": "1,166",
+   "avg": "1,179",
    "key": "스타 증가",
-   "now": "1,022",
-   "prev": "1,048"
+   "now": "1,217",
+   "prev": "1,022"
   },
   {
-   "avg": "9",
+   "avg": "12",
    "key": "머지 PR",
-   "now": "13",
-   "prev": "9"
+   "now": "15",
+   "prev": "13"
   },
   {
    "avg": "3",
@@ -313,10 +326,10 @@
    "prev": "2"
   },
   {
-   "avg": "8",
+   "avg": "10",
    "key": "닫힌 이슈",
-   "now": "10",
-   "prev": "9"
+   "now": "14",
+   "prev": "10"
   },
   {
    "avg": "0",
@@ -327,8 +340,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "4,320",
-   "prev": "—"
+   "now": "4,348",
+   "prev": "4,320"
   }
  ]
 }

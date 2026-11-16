@@ -28,35 +28,48 @@
    "index": 73.61,
    "rank": 13,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 7.95,
+    "s2": 0.0,
+    "s3": 37.08,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 57.57,
+   "rank": 65,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,914",
+   "big": "누적 포크 2,001",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 23명",
+   "big": "PR 작성자 36명",
    "id": "I4",
    "signal": "s3",
    "text": "",
    "title": "기여 폭"
   },
   {
-   "big": "2주 언급 0건",
+   "big": "3주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제가 거의 없었습니다.",
    "title": "언급"
   },
   {
-   "big": "69위 → 13위",
+   "big": "13위 → 65위",
    "id": "I7",
    "signal": "index",
-   "text": "2주 최고 13위(이번 주), 최저 69위(10-25 주).",
+   "text": "3주 최고 13위(11-01 주), 최저 69위(10-25 주).",
    "title": "순위 이동"
   }
  ],
@@ -66,34 +79,34 @@
   "backfilled": false,
   "category": "브라우저·컴퓨터 사용 자동화",
   "contrib": {
-   "s1": 23.85,
+   "s1": 7.95,
    "s2": 0.0,
-   "s3": 36.81,
+   "s3": 37.08,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "wangzan101/Mika",
-  "index": 73.61,
+  "index": 57.57,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 87.44,
+   "s1": 29.15,
    "s2": null,
-   "s3": 80.99,
+   "s3": 81.57,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 69,
-  "rank": 13,
+  "prev_rank": 13,
+  "rank": 65,
   "raw": {
-   "s1_stars_gain": 4632,
+   "s1_stars_gain": 1018,
    "s2_fork_delta": null,
-   "s2_forks": 1914,
-   "s3_closed_issues": 92,
-   "s3_merged_prs": 42,
-   "s3_pr_authors": 23,
+   "s2_forks": 2001,
+   "s3_closed_issues": 33,
+   "s3_merged_prs": 147,
+   "s3_pr_authors": 36,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -103,14 +116,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1438540053,
-  "star_rank": 26,
+  "star_rank": 142,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -124,7 +137,7 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 2
+   "weeks": 3
   }
  },
  "repo_id": 1438540053,
@@ -140,43 +153,43 @@
  ],
  "trend": [
   {
-   "avg": "—",
+   "avg": "41위",
    "key": "종합 순위",
-   "now": "13위",
-   "prev": "69위"
+   "now": "65위",
+   "prev": "13위"
   },
   {
-   "avg": "—",
+   "avg": "65.0",
    "key": "지수",
-   "now": "73.6",
-   "prev": "56.5"
+   "now": "57.6",
+   "prev": "73.6"
   },
   {
-   "avg": "—",
+   "avg": "3,834",
    "key": "스타 증가",
-   "now": "4,632",
-   "prev": "3,036"
+   "now": "1,018",
+   "prev": "4,632"
   },
   {
-   "avg": "—",
+   "avg": "23",
    "key": "머지 PR",
-   "now": "42",
-   "prev": "4"
+   "now": "147",
+   "prev": "42"
   },
   {
-   "avg": "—",
+   "avg": "12",
    "key": "PR 작성자",
-   "now": "23",
-   "prev": "2"
+   "now": "36",
+   "prev": "23"
   },
   {
-   "avg": "—",
+   "avg": "55",
    "key": "닫힌 이슈",
-   "now": "92",
-   "prev": "18"
+   "now": "33",
+   "prev": "92"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
    "prev": "0"
@@ -184,8 +197,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,914",
-   "prev": "—"
+   "now": "2,001",
+   "prev": "1,914"
   }
  ]
 }

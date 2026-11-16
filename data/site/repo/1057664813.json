@@ -54,73 +54,100 @@
    "index": 31.58,
    "rank": 174,
    "week": "2026-10-18"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 1.06,
+    "s2": 0.0,
+    "s3": 3.77,
+    "s4": 16.04,
+    "s5": 8.11
+   },
+   "index": 28.99,
+   "rank": 174,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "스타 1개당 다운로드 24회",
+   "big": "스타 1개당 다운로드 47회",
    "id": "I1",
    "signal": "s4",
-   "text": "패키지가 있는 후보 49개 중 24위.",
+   "text": "패키지가 있는 후보 45개 중 19위.",
    "title": "사용 대비 관심"
+  },
+  {
+   "big": "4주 평균의 1.36배",
+   "id": "I2",
+   "signal": "s4",
+   "text": "9주 첫 주(09-13, 12,855)의 2.55배.",
+   "title": "다운로드 추세"
+  },
+  {
+   "big": "누적 포크 4,863",
+   "id": "I3",
+   "signal": "s2",
+   "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
+   "title": "포크 비율"
   },
   {
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "11주 첫 주 0명.",
+   "text": "4주 전 0명, 9주 첫 주 0명.",
    "title": "기여 폭"
   },
   {
-   "big": "11주 언급 0건",
+   "big": "9주 언급 0건",
    "id": "I5",
    "signal": "s5",
    "text": "언급 점수 합이 10 미만 — 커뮤니티 화제보다 사용으로 오른 저장소입니다.",
    "title": "언급"
   },
   {
-   "big": "157위 → 174위",
+   "big": "174위 (처음)",
    "id": "I7",
    "signal": "index",
-   "text": "11주 최고 157위(10-11 주), 최저 174위(이번 주).",
+   "text": "9주 최고 157위(10-11 주), 최저 174위(이번 주).",
    "title": "순위 이동"
   }
  ],
  "insights_version": 1,
  "language": null,
  "latest": {
-  "backfilled": true,
+  "backfilled": false,
   "category": "멀티모달(이미지·음성·영상)",
   "contrib": {
-   "s1": 3.62,
+   "s1": 1.06,
    "s2": 0.0,
-   "s3": 4.21,
-   "s4": 15.44,
-   "s5": 8.32
+   "s3": 3.77,
+   "s4": 16.04,
+   "s5": 8.11
   },
   "full_name": "OpenBMB/VoxCPM",
-  "index": 31.58,
+  "index": 28.99,
   "missing": [
    "s2"
   ],
   "pct": {
-   "s1": 20.5,
+   "s1": 6.03,
    "s2": null,
-   "s3": 14.3,
-   "s4": 43.75,
-   "s5": 47.12
+   "s3": 12.81,
+   "s4": 45.45,
+   "s5": 45.98
   },
-  "prev_rank": 157,
+  "prev_rank": null,
   "rank": 174,
   "raw": {
-   "s1_stars_gain": 1066,
+   "s1_stars_gain": 695,
    "s2_fork_delta": null,
-   "s2_forks": null,
+   "s2_forks": 4863,
    "s3_closed_issues": 0,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
-   "s4_dependents": null,
-   "s4_downloads": 26086,
+   "s4_dependents": 0,
+   "s4_downloads": 32727,
    "s4_packages": "pypi:voxcpm",
    "s5_gn_points": 0,
    "s5_gn_topics": 0,
@@ -128,14 +155,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1057664813,
-  "star_rank": 160,
+  "star_rank": 188,
   "status": {
-   "s2_status": "none",
+   "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "ok",
    "s5_status": "ok"
   },
-  "week": "2026-10-18"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -149,59 +176,65 @@
    "gn_topics": 0,
    "hn_points": 0,
    "hn_stories": 0,
-   "weeks": 11
+   "weeks": 9
   }
  },
  "repo_id": 1057664813,
  "topics": [],
  "trend": [
   {
-   "avg": "—",
+   "avg": "166위",
    "key": "종합 순위",
    "now": "174위",
-   "prev": "157위"
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "33.4",
    "key": "지수",
-   "now": "31.6",
-   "prev": "35.2"
+   "now": "29.0",
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "1,026",
    "key": "스타 증가",
-   "now": "1,066",
-   "prev": "985"
+   "now": "695",
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "24,152",
    "key": "주간 다운로드",
-   "now": "26,086",
-   "prev": "22,219"
+   "now": "32,727",
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "머지 PR",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "PR 작성자",
    "now": "0",
-   "prev": "0"
+   "prev": "—"
   },
   {
-   "avg": "—",
+   "avg": "0",
    "key": "닫힌 이슈",
    "now": "0",
-   "prev": "1"
+   "prev": "—"
+  },
+  {
+   "avg": "0",
+   "key": "HN·GeekNews 글",
+   "now": "0",
+   "prev": "—"
   },
   {
    "avg": "—",
-   "key": "HN·GeekNews 글",
-   "now": "0",
-   "prev": "0"
+   "key": "포크 (누적)",
+   "now": "4,863",
+   "prev": "—"
   }
  ]
 }

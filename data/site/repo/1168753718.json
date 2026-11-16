@@ -171,11 +171,24 @@
    "index": 30.32,
    "rank": 179,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 7.26,
+    "s2": 0.0,
+    "s3": 14.58,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 34.38,
+   "rank": 161,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 3,854",
+   "big": "누적 포크 3,915",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -185,7 +198,7 @@
    "big": "PR 작성자 0명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 2명, 12주 첫 주 0명.",
+   "text": "4주 전 0명, 12주 첫 주 1명.",
    "title": "기여 폭"
   },
   {
@@ -196,7 +209,7 @@
    "title": "언급"
   },
   {
-   "big": "165위 → 179위",
+   "big": "179위 → 161위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 108위(08-23 주), 최저 191위(10-18 주).",
@@ -209,32 +222,32 @@
   "backfilled": false,
   "category": "MCP 서버·도구",
   "contrib": {
-   "s1": 4.04,
+   "s1": 7.26,
    "s2": 0.0,
-   "s3": 13.32,
+   "s3": 14.58,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "every-app/open-seo",
-  "index": 30.32,
+  "index": 34.38,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 14.82,
+   "s1": 26.63,
    "s2": null,
-   "s3": 29.31,
+   "s3": 32.08,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 165,
-  "rank": 179,
+  "prev_rank": 179,
+  "rank": 161,
   "raw": {
-   "s1_stars_gain": 894,
+   "s1_stars_gain": 958,
    "s2_fork_delta": null,
-   "s2_forks": 3854,
-   "s3_closed_issues": 14,
+   "s2_forks": 3915,
+   "s3_closed_issues": 23,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -246,14 +259,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1168753718,
-  "star_rank": 170,
+  "star_rank": 147,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -286,25 +299,25 @@
  ],
  "trend": [
   {
-   "avg": "170위",
+   "avg": "174위",
    "key": "종합 순위",
-   "now": "179위",
-   "prev": "165위"
+   "now": "161위",
+   "prev": "179위"
   },
   {
-   "avg": "31.3",
+   "avg": "30.7",
    "key": "지수",
-   "now": "30.3",
-   "prev": "34.2"
+   "now": "34.4",
+   "prev": "30.3"
   },
   {
-   "avg": "933",
+   "avg": "975",
    "key": "스타 증가",
-   "now": "894",
-   "prev": "1,119"
+   "now": "958",
+   "prev": "894"
   },
   {
-   "avg": "1",
+   "avg": "0",
    "key": "머지 PR",
    "now": "0",
    "prev": "0"
@@ -316,10 +329,10 @@
    "prev": "0"
   },
   {
-   "avg": "16",
+   "avg": "20",
    "key": "닫힌 이슈",
-   "now": "14",
-   "prev": "11"
+   "now": "23",
+   "prev": "14"
   },
   {
    "avg": "0",
@@ -330,8 +343,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "3,854",
-   "prev": "—"
+   "now": "3,915",
+   "prev": "3,854"
   }
  ]
 }

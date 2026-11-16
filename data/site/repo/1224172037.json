@@ -158,21 +158,34 @@
    "index": 63.42,
    "rank": 35,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 5.76,
+    "s2": 0.0,
+    "s3": 40.2,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 58.5,
+   "rank": 59,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 2,753",
+   "big": "누적 포크 2,768",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 66명",
+   "big": "PR 작성자 39명",
    "id": "I4",
    "signal": "s3",
-   "text": "4주 전 48명, 12주 첫 주 43명 — 기여하는 사람이 늘고 있습니다.",
+   "text": "4주 전 54명, 12주 첫 주 35명.",
    "title": "기여 폭"
   },
   {
@@ -183,7 +196,7 @@
    "title": "언급"
   },
   {
-   "big": "61위 → 35위",
+   "big": "35위 → 59위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 9위(09-27 주), 최저 61위(10-25 주).",
@@ -196,34 +209,34 @@
   "backfilled": false,
   "category": "MCP 서버·도구",
   "contrib": {
-   "s1": 9.32,
+   "s1": 5.76,
    "s2": 0.0,
-   "s3": 41.15,
+   "s3": 40.2,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "t8y2/dbx",
-  "index": 63.42,
+  "index": 58.5,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 34.17,
+   "s1": 21.11,
    "s2": null,
-   "s3": 90.54,
+   "s3": 88.44,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 61,
-  "rank": 35,
+  "prev_rank": 35,
+  "rank": 59,
   "raw": {
-   "s1_stars_gain": 1164,
+   "s1_stars_gain": 875,
    "s2_fork_delta": null,
-   "s2_forks": 2753,
-   "s3_closed_issues": 128,
-   "s3_merged_prs": 190,
-   "s3_pr_authors": 66,
+   "s2_forks": 2768,
+   "s3_closed_issues": 122,
+   "s3_merged_prs": 179,
+   "s3_pr_authors": 39,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -233,14 +246,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1224172037,
-  "star_rank": 132,
+  "star_rank": 158,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -280,40 +293,40 @@
  ],
  "trend": [
   {
-   "avg": "42위",
+   "avg": "43위",
    "key": "종합 순위",
-   "now": "35위",
-   "prev": "61위"
+   "now": "59위",
+   "prev": "35위"
   },
   {
-   "avg": "64.0",
+   "avg": "62.4",
    "key": "지수",
-   "now": "63.4",
-   "prev": "57.1"
+   "now": "58.5",
+   "prev": "63.4"
   },
   {
-   "avg": "1,155",
+   "avg": "1,102",
    "key": "스타 증가",
-   "now": "1,164",
-   "prev": "742"
+   "now": "875",
+   "prev": "1,164"
   },
   {
-   "avg": "269",
+   "avg": "244",
    "key": "머지 PR",
-   "now": "190",
-   "prev": "212"
+   "now": "179",
+   "prev": "190"
   },
   {
-   "avg": "52",
+   "avg": "58",
    "key": "PR 작성자",
-   "now": "66",
-   "prev": "53"
+   "now": "39",
+   "prev": "66"
   },
   {
-   "avg": "257",
+   "avg": "180",
    "key": "닫힌 이슈",
-   "now": "128",
-   "prev": "164"
+   "now": "122",
+   "prev": "128"
   },
   {
    "avg": "0",
@@ -324,8 +337,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "2,753",
-   "prev": "—"
+   "now": "2,768",
+   "prev": "2,753"
   }
  ]
 }

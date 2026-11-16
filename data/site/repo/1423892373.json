@@ -41,11 +41,24 @@
    "index": 43.96,
    "rank": 131,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 15.21,
+    "s2": 0.0,
+    "s3": 9.97,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 37.73,
+   "rank": 151,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 1,946",
+   "big": "누적 포크 2,054",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
@@ -62,14 +75,14 @@
    "big": "이번 주 언급 0건",
    "id": "I5",
    "signal": "s5",
-   "text": "3주 동안 글 3건 · 364점 — 이번 주는 조용했습니다.",
+   "text": "4주 동안 글 3건 · 364점 — 이번 주는 조용했습니다.",
    "title": "언급"
   },
   {
-   "big": "27위 → 131위",
+   "big": "131위 → 151위",
    "id": "I7",
    "signal": "index",
-   "text": "3주 최고 19위(10-18 주), 최저 131위(이번 주).",
+   "text": "4주 최고 19위(10-18 주), 최저 151위(이번 주).",
    "title": "순위 이동"
   }
  ],
@@ -79,32 +92,32 @@
   "backfilled": false,
   "category": "추론·서빙",
   "contrib": {
-   "s1": 22.75,
+   "s1": 15.21,
    "s2": 0.0,
-   "s3": 8.26,
+   "s3": 9.97,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "Zagitta/gpu-unlock",
-  "index": 43.96,
+  "index": 37.73,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 83.42,
+   "s1": 55.78,
    "s2": null,
-   "s3": 18.17,
+   "s3": 21.94,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 27,
-  "rank": 131,
+  "prev_rank": 131,
+  "rank": 151,
   "raw": {
-   "s1_stars_gain": 4063,
+   "s1_stars_gain": 1692,
    "s2_fork_delta": null,
-   "s2_forks": 1946,
-   "s3_closed_issues": 1,
+   "s2_forks": 2054,
+   "s3_closed_issues": 3,
    "s3_merged_prs": 0,
    "s3_pr_authors": 0,
    "s4_dependents": null,
@@ -116,14 +129,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1423892373,
-  "star_rank": 34,
+  "star_rank": 89,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -137,50 +150,50 @@
    "gn_topics": 1,
    "hn_points": 354,
    "hn_stories": 2,
-   "weeks": 3
+   "weeks": 4
   }
  },
  "repo_id": 1423892373,
  "topics": [],
  "trend": [
   {
-   "avg": "23위",
+   "avg": "59위",
    "key": "종합 순위",
-   "now": "131위",
-   "prev": "27위"
+   "now": "151위",
+   "prev": "131위"
   },
   {
-   "avg": "70.1",
+   "avg": "61.4",
    "key": "지수",
-   "now": "44.0",
-   "prev": "68.1"
+   "now": "37.7",
+   "prev": "44.0"
   },
   {
-   "avg": "6,966",
+   "avg": "5,998",
    "key": "스타 증가",
-   "now": "4,063",
-   "prev": "10,180"
+   "now": "1,692",
+   "prev": "4,063"
   },
   {
-   "avg": "4",
+   "avg": "3",
    "key": "머지 PR",
    "now": "0",
-   "prev": "4"
-  },
-  {
-   "avg": "4",
-   "key": "PR 작성자",
-   "now": "0",
-   "prev": "4"
-  },
-  {
-   "avg": "72",
-   "key": "닫힌 이슈",
-   "now": "1",
-   "prev": "133"
+   "prev": "0"
   },
   {
    "avg": "2",
+   "key": "PR 작성자",
+   "now": "0",
+   "prev": "0"
+  },
+  {
+   "avg": "48",
+   "key": "닫힌 이슈",
+   "now": "3",
+   "prev": "1"
+  },
+  {
+   "avg": "1",
    "key": "HN·GeekNews 글",
    "now": "0",
    "prev": "0"
@@ -188,8 +201,8 @@
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "1,946",
-   "prev": "—"
+   "now": "2,054",
+   "prev": "1,946"
   }
  ]
 }

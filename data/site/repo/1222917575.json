@@ -93,18 +93,31 @@
    "index": 60.77,
    "rank": 46,
    "week": "2026-11-01"
+  },
+  {
+   "backfilled": false,
+   "contrib": {
+    "s1": 24.39,
+    "s2": 0.0,
+    "s3": 15.27,
+    "s4": 0.0,
+    "s5": 12.54
+   },
+   "index": 52.2,
+   "rank": 92,
+   "week": "2026-11-08"
   }
  ],
  "insights": [
   {
-   "big": "누적 포크 2,885",
+   "big": "누적 포크 2,988",
    "id": "I3",
    "signal": "s2",
    "text": "주간 포크 증가는 6~8일 간격 스냅샷이 두 번 쌓인 뒤부터 나옵니다.",
    "title": "포크 비율"
   },
   {
-   "big": "PR 작성자 6명",
+   "big": "PR 작성자 2명",
    "id": "I4",
    "signal": "s3",
    "text": "12주 첫 주 0명 — 기여하는 사람이 늘고 있습니다.",
@@ -118,7 +131,7 @@
    "title": "언급"
   },
   {
-   "big": "25위 → 46위",
+   "big": "46위 → 92위",
    "id": "I7",
    "signal": "index",
    "text": "12주 최고 25위(10-25 주), 최저 187위(08-30 주).",
@@ -131,34 +144,34 @@
   "backfilled": false,
   "category": "에이전트 스킬·프롬프트",
   "contrib": {
-   "s1": 24.94,
+   "s1": 24.39,
    "s2": 0.0,
-   "s3": 22.88,
+   "s3": 15.27,
    "s4": 0.0,
-   "s5": 12.95
+   "s5": 12.54
   },
   "full_name": "Nutlope/hallmark",
-  "index": 60.77,
+  "index": 52.2,
   "missing": [
    "s2",
    "s4"
   ],
   "pct": {
-   "s1": 91.46,
+   "s1": 89.45,
    "s2": null,
-   "s3": 50.34,
+   "s3": 33.58,
    "s4": null,
-   "s5": 47.49
+   "s5": 45.98
   },
-  "prev_rank": 25,
-  "rank": 46,
+  "prev_rank": 46,
+  "rank": 92,
   "raw": {
-   "s1_stars_gain": 6414,
+   "s1_stars_gain": 4784,
    "s2_fork_delta": null,
-   "s2_forks": 2885,
-   "s3_closed_issues": 2,
-   "s3_merged_prs": 15,
-   "s3_pr_authors": 6,
+   "s2_forks": 2988,
+   "s3_closed_issues": 1,
+   "s3_merged_prs": 3,
+   "s3_pr_authors": 2,
    "s4_dependents": null,
    "s4_downloads": null,
    "s4_packages": null,
@@ -168,14 +181,14 @@
    "s5_hn_stories": 0
   },
   "repo_id": 1222917575,
-  "star_rank": 18,
+  "star_rank": 22,
   "status": {
    "s2_status": "ok",
    "s3_status": "ok",
    "s4_status": "none",
    "s5_status": "ok"
   },
-  "week": "2026-11-01"
+  "week": "2026-11-08"
  },
  "mentions": {
   "week": {
@@ -196,52 +209,52 @@
  "topics": [],
  "trend": [
   {
-   "avg": "78위",
+   "avg": "68위",
    "key": "종합 순위",
-   "now": "46위",
-   "prev": "25위"
+   "now": "92위",
+   "prev": "46위"
   },
   {
-   "avg": "55.9",
+   "avg": "57.5",
    "key": "지수",
-   "now": "60.8",
-   "prev": "69.2"
+   "now": "52.2",
+   "prev": "60.8"
   },
   {
-   "avg": "6,996",
+   "avg": "6,802",
    "key": "스타 증가",
-   "now": "6,414",
-   "prev": "11,739"
+   "now": "4,784",
+   "prev": "6,414"
   },
   {
-   "avg": "2",
+   "avg": "6",
    "key": "머지 PR",
-   "now": "15",
-   "prev": "3"
+   "now": "3",
+   "prev": "15"
   },
   {
-   "avg": "2",
+   "avg": "3",
    "key": "PR 작성자",
-   "now": "6",
-   "prev": "3"
+   "now": "2",
+   "prev": "6"
   },
   {
-   "avg": "0",
+   "avg": "1",
    "key": "닫힌 이슈",
-   "now": "2",
-   "prev": "0"
+   "now": "1",
+   "prev": "2"
   },
   {
    "avg": "0",
    "key": "HN·GeekNews 글",
    "now": "0",
-   "prev": "1"
+   "prev": "0"
   },
   {
    "avg": "—",
    "key": "포크 (누적)",
-   "now": "2,885",
-   "prev": "—"
+   "now": "2,988",
+   "prev": "2,885"
   }
  ]
 }
