@@ -2,8 +2,9 @@
 
 차트 C1~C4 와 저장소 카드 R1 을 PNG(1600×900)로 그린다. 숫자는 `core/charts_data.py` 가 정한 것만 쓴다.
 색은 사이트 시각 체계(DESIGN §3)를 따른다.
-한글 글꼴은 이름으로 찾고(Noto Sans CJK KR → Apple SD Gothic Neo …),
-없으면 기본 글꼴로 그린다(한글이 네모로 나온다 — 워크플로가 글꼴을 설치한다).
+한글 글꼴은 이름으로 찾고(Noto Sans CJK KR → Noto Sans CJK JP → Apple SD Gothic Neo …),
+목록에 없으면 시스템 글꼴을 한 번 다시 읽는다 — matplotlib 은 처음 불릴 때 글꼴 목록을 캐시하므로
+그 뒤에 설치한 글꼴(CI 글꼴 단계)은 다시 읽어야 보인다. 그래도 없으면 None(그림 단계가 멈춘다).
 """
 
 import math
@@ -45,7 +46,16 @@ LINES = (
 CATS = ("#4F46E5", "#059669", "#F59E0B", "#DB2777", "#0EA5E9", "#8B5CF6", "#9CA3AF")
 INK, MUTED, GRID, BG, ACCENT, SHADE = "#111827", "#4B5563", "#E5E7EB", "#FFFFFF", "#1F5BD8", "#F3F4F8"
 TOP_COLOR = INK  # 신호 지도의 TOP 점 — 관점 C(파랑)와 겹치지 않게
-FONT_CANDIDATES = ("Noto Sans CJK KR", "Noto Sans KR", "Apple SD Gothic Neo", "AppleGothic", "NanumGothic")
+# Ubuntu fonts-noto-cjk 의 NotoSansCJK-*.ttc 는 matplotlib 이 첫 글꼴만 읽는다
+# — 이름이 "Noto Sans CJK JP" 지만 한글 글자는 같다
+FONT_CANDIDATES = (
+    "Noto Sans CJK KR",
+    "Noto Sans CJK JP",
+    "Noto Sans KR",
+    "Apple SD Gothic Neo",
+    "AppleGothic",
+    "NanumGothic",
+)
 RANK_TICKS = (1, 2, 3, 5, 10, 20, 50, 100, 200)
 
 
@@ -68,9 +78,23 @@ def inspect_image(data: bytes) -> tuple[str, int, int] | None:
     return IMAGE_FORMATS[fmt], w, h
 
 
-def pick_font() -> str | None:
+def _known_font() -> str | None:
     names = {f.name for f in font_manager.fontManager.ttflist}
     return next((n for n in FONT_CANDIDATES if n in names), None)
+
+
+def pick_font() -> str | None:
+    found = _known_font()
+    if found is None:
+        known = {f.fname for f in font_manager.fontManager.ttflist}
+        for path in font_manager.findSystemFonts():
+            if path not in known:
+                try:
+                    font_manager.fontManager.addfont(path)
+                except (OSError, RuntimeError, ValueError):
+                    continue  # 읽지 못하는 글꼴 파일은 건너뛴다
+        found = _known_font()
+    return found
 
 
 def _setup() -> None:

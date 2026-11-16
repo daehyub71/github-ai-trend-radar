@@ -96,6 +96,39 @@ def test_charts_font_pick_is_known_or_none():
     assert charts.pick_font() in (*charts.FONT_CANDIDATES, None)
 
 
+def test_charts_font_pick_rescans_fonts_installed_after_the_cache(monkeypatch):
+    # 11-16 실행: 해설 단계가 matplotlib 을 먼저 불러 글꼴 목록이 캐시된 뒤 CI 가 fonts-noto-cjk 를 설치했다 →
+    # 목록에 없어 그림 단계가 멈췄다. 후보가 없으면 시스템 글꼴을 다시 읽는다.
+    # Ubuntu 의 NotoSansCJK-*.ttc 는 matplotlib 이 첫 글꼴만 읽는다
+    # — 이름이 "Noto Sans CJK JP"(한글 글자는 같다)
+    from types import SimpleNamespace
+
+    from matplotlib import font_manager
+
+    fm = SimpleNamespace(ttflist=[SimpleNamespace(name="DejaVu Sans", fname="/f/DejaVuSans.ttf")])
+
+    def addfont(path):
+        fm.ttflist.append(SimpleNamespace(name="Noto Sans CJK JP", fname=path))
+
+    fm.addfont = addfont
+    monkeypatch.setattr(font_manager, "fontManager", fm)
+    ttc = "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc"
+    monkeypatch.setattr(font_manager, "findSystemFonts", lambda: ["/f/DejaVuSans.ttf", ttc])
+    assert charts.pick_font() == "Noto Sans CJK JP"
+    assert [f.fname for f in fm.ttflist].count("/f/DejaVuSans.ttf") == 1  # 아는 파일은 다시 넣지 않는다
+
+
+def test_charts_font_pick_prefers_the_korean_face(monkeypatch):
+    from types import SimpleNamespace
+
+    from matplotlib import font_manager
+
+    faces = ("Noto Sans CJK JP", "Noto Sans CJK KR")
+    fm = SimpleNamespace(ttflist=[SimpleNamespace(name=n, fname=n) for n in faces])
+    monkeypatch.setattr(font_manager, "fontManager", fm)
+    assert charts.pick_font() == "Noto Sans CJK KR"
+
+
 def test_charts_inspect_image_accepts_real_pictures_only():
     from io import BytesIO
 
