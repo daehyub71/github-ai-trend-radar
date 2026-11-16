@@ -1,6 +1,6 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.7.10** (2026-11-16). 기준 문서는 `docs/SPEC.md` v0.7.10.
+> **상태: v0.7.11** (2026-11-16). 기준 문서는 `docs/SPEC.md` v0.7.11.
 > PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
@@ -201,6 +201,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.7.11 | 2026-11-16 | D29 — `drafts.hashtags(words)` = 시리즈 + 그 주 + 채널 태그, `post_tags(facts)` · `angle_tags(facts)` 가 그 주 태그를 사실에서. `post_markdown` · `angles_markdown` 맨 끝 한 줄. |
 | v0.7.10 | 2026-11-16 | D28 보강 — `post_markdown(summary_image=)` 이 그림 아래에 `summary_prompt` 의 라벨 5개를 "그림 라벨(왼쪽부터)" 한 줄로 |
 | v0.7.9 | 2026-11-16 | D28 — `drafts.summary_prompt(facts)` → (프롬프트, 라벨 5). `post_markdown(summary_image=)` · `blog._write` 가 `gen/summary.*` 를 찾는다. 관심 비중은 `core.charts_data.trend_observations` 문장에서 읽는다(형식 결합 테스트) |
 | v0.7.8 | 2026-11-16 | D27 — `drafts.restyle(prompt, 유형, 순번)` 이 다크 블루프린트 첫 문장을 유형 강조색 × 바탕(남색·제도지·그래파이트·미색 제도지, 유형마다 시작을 민다) 문장으로 바꾼다. `angles_markdown` 이 유형 안 순번을 넘긴다 |

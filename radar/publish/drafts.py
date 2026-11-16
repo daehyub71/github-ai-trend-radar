@@ -236,6 +236,36 @@ def _summary_image(f: Mapping[str, Any], image: str) -> list[str]:
     return [f"![한 장 요약]({image})", "", "그림 라벨(왼쪽부터): " + _numbered(summary_prompt(f)[1]), ""]
 
 
+# 해시태그 (D29) — 시리즈 태그 + 그 주 태그(사실에서 코드가, LLM 0) + 채널 태그(star-trend 와 같은 7개)
+SERIES_TAGS = ("#깃허브AI트렌드레이더", "#GitHub트렌드", "#AI트렌드", "#오픈소스", "#AI코딩")
+CHANNEL_TAGS = ("#백발개발자", "#바이브코딩", "#오십로그", "#50Log", "#오십바이브로그", "#50바이브로그",
+                "#50VibeLog")
+
+
+def _hashtag(word: str) -> str:
+    w = re.sub(r"[^0-9A-Za-z가-힣]", "", word)
+    return f"#{w}" if w else ""
+
+
+def hashtags(words: Sequence[str]) -> str:
+    """시리즈 + 그 주 + 채널 태그 한 줄. 글자·숫자만 남기고 겹치면 한 번만."""
+    tags = [*SERIES_TAGS, *(_hashtag(w) for w in words), *CHANNEL_TAGS]
+    return " ".join(t for t in dict.fromkeys(tags) if t)
+
+
+def post_tags(f: Mapping[str, Any]) -> list[str]:
+    """TOP 10 글의 그 주 태그 — 카테고리(많은 것부터) → TOP 10 저장소 이름."""
+    cats = Counter(r["category"] for r in f["top10"] if r.get("category"))
+    return [c for c, _ in cats.most_common()] + [r["repo"].split("/")[-1] for r in f["top10"]]
+
+
+def angle_tags(f: Mapping[str, Any]) -> list[str]:
+    """관점 노트의 그 주 태그 — 저장소가 있는 관점 유형 이름 → 관점 저장소 이름."""
+    filled = [a for a in (f["angles"][k] for k in ("A", "B", "C", "D"))
+              if a["status"] != "insufficient" and a.get("items")]
+    return [a["name"] for a in filled] + [it["repo"].split("/")[-1] for a in filled for it in a["items"]]
+
+
 def _cover(cover: str | None) -> list[str]:
     """대표 이미지 (D25) — 사람이 만든 blog/gen/cover*.* 가 있으면 제목 바로 아래."""
     return [f"![대표 이미지]({cover})", ""] if cover else []
@@ -330,6 +360,7 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, 
         *(_summary_image(f, summary_image) if summary_image else []),
         t["summary"], "",
         *([] if summary_image else _summary_picture(f)),
+        hashtags(post_tags(f)), "",
     ]
     return "\n".join(lines)
 
@@ -379,5 +410,5 @@ def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str
     lines += ["### 주의할 점", "",
               f"- 유형은 코드가 정한 규칙으로 고릅니다(유형마다 최대 5개, 한 저장소는 한 유형에만). 백분위는 후보 {f['candidates']}개 안의 상대값입니다.",
               "- 반짝 관심 유형은 판단이 아니라 관측입니다. 사용·기여 신호가 늦게 나타나는 저장소도 많습니다.", "",
-              "### 한 장 요약", "", t["angle_summary"], ""]
+              "### 한 장 요약", "", t["angle_summary"], "", hashtags(angle_tags(f)), ""]
     return "\n".join(lines)

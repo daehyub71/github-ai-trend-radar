@@ -1,6 +1,7 @@
 """M5 — 게이트 통제군·초안·예산·Notion 초안만 갱신 (SPEC F7~F9, TASKS T5-2~T5-8). 네트워크·과금 0."""
 
 import json
+import re
 from typing import Any
 
 from radar.clients.claude import LLMResponse, MockLLM
@@ -459,3 +460,29 @@ def test_publish_summary_section_gets_prompt_or_made_picture():
     # v0.7.10 — 그림 안 라벨 상자는 비어 있으니 라벨 5개를 그림 바로 아래 한 줄로
     assert sec.split("\n")[4].startswith("그림 라벨(왼쪽부터): ① 지수 1위 org/lead · 49위 → 1위 ② 포크·사용")
     assert sec.split("\n")[4].count("⑤") == 1
+
+
+# ── 해시태그 (D29) ──
+
+
+def _tag_line(md: str) -> list[str]:
+    return md.rstrip("\n").split("\n")[-1].split(" ")
+
+
+def test_publish_post_ends_with_hashtags_from_facts():
+    f = _summary_facts()
+    f["top10"][3]["category"] = "MCP 서버·도구"
+    tags = _tag_line(drafts.post_markdown(f, _texts(f), ART))
+    assert tags[:5] == list(drafts.SERIES_TAGS) and tags[-7:] == list(drafts.CHANNEL_TAGS)
+    # 그 주 태그 — 카테고리(많은 것부터, 빈 카테고리는 건너뜀) → TOP 10 저장소 이름
+    assert tags[5:8] == ["#코딩에이전트IDE", "#MCP서버도구", "#lead"] and "#r11" in tags
+    assert len(tags) == len(set(tags)) and all(re.fullmatch(r"#[0-9A-Za-z가-힣]+", t) for t in tags)
+    # 한 장 요약 그림이 있어도 맨 끝 줄
+    assert _tag_line(drafts.post_markdown(f, _texts(f), ART, summary_image="gen/summary.png")) == tags
+
+
+def test_publish_angles_end_with_hashtags_of_filled_types():
+    f = _facts_with_angle()   # A 에 org/r2 하나 · B 빈 유형 · C·D 이력 부족
+    tags = _tag_line(drafts.angles_markdown(f, _texts(f), ART))
+    assert tags[:5] == list(drafts.SERIES_TAGS) and tags[-7:] == list(drafts.CHANNEL_TAGS)
+    assert tags[5:-7] == ["#조용한강자", "#r2"]
