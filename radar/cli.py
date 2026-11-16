@@ -13,6 +13,7 @@ from radar.core.weeks import parse_week, target_week
 from radar.inputs.startrend import ContractError, available_weeks, load_ai_repos, load_week_stars
 
 EXIT_NOT_READY = 4  # star-trend 입력이 아직 그 주로 갱신되지 않았다 — 워크플로가 기다렸다 다시 본다
+EXIT_DONE = 5  # 그 주는 이미 끝냈다(공개 데이터에 신호 파일이 있다) — 워크플로가 뒤 단계를 모두 건너뛴다(D26)
 
 
 def _today() -> date:
@@ -117,6 +118,7 @@ def _weekly(check_input: bool, dry_run: bool) -> int:
     """정기 주간 실행 (M3, SPEC F1·D6) — 지난 완료 주를 수집하고 지수까지 낸다.
 
     --check-input: star-trend 에 그 주 스타 파일이 있는지만 본다(없으면 종료 코드 4).
+                   그 주를 이미 끝냈으면 종료 코드 5 — star-trend 신호 실행과 예약 실행이 겹쳐도 한 번만(D26).
     이미 수집한 주면 0 으로 끝난다(다시 돌려도 안전).
     """
     from radar import pipeline
@@ -129,10 +131,13 @@ def _weekly(check_input: bool, dry_run: bool) -> int:
         if week not in available_weeks(cfg.startrend_dir):
             print(f"star-trend 입력이 아직 {week.isoformat()} 주로 갱신되지 않았다", file=sys.stderr)
             return EXIT_NOT_READY
+        data = _data_dir()
         if check_input:
+            if week_path("signals", week, "csv", data).exists():
+                print(f"{week.isoformat()} 주는 이미 끝냈다 — 이번 실행은 건너뛴다")
+                return EXIT_DONE
             print(f"입력 준비됨: {week.isoformat()}")
             return 0
-        data = _data_dir()
         if dry_run:
             print(json.dumps(pipeline.plan_week(cfg, week, data=data), ensure_ascii=False, indent=1))
             return 0

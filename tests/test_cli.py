@@ -70,6 +70,7 @@ def test_cli_weekly_check_input_ready_and_dry_run(tmp_path, capsys, monkeypatch)
     root = write_tree(tmp_path, [meta(1, "a/a")], {"2026-11-08": [(1, "a/a", 50)]})
     monkeypatch.setenv("RADAR_STARTREND_DIR", str(root))
     monkeypatch.setattr(cli, "_today", lambda: date(2026, 11, 16))
+    monkeypatch.setattr(cli, "_data_dir", lambda: tmp_path / "data")
     assert main(["weekly", "--check-input"]) == 0
     assert main(["weekly", "--dry-run"]) == 0
     assert '"week": "2026-11-08"' in capsys.readouterr().out
@@ -89,4 +90,21 @@ def test_cli_weekly_already_collected_is_ok(tmp_path, capsys, monkeypatch):
     (data / "signals" / "2026-11-08.csv").write_text("repo_id\n", encoding="utf-8")
     monkeypatch.setattr(cli, "_data_dir", lambda: data)
     assert main(["weekly"]) == 0
+    assert "이미" in capsys.readouterr().out
+
+
+def test_cli_weekly_check_input_reports_week_already_done(tmp_path, capsys, monkeypatch):
+    # D26 — star-trend 신호 실행과 레이더 예약 실행이 둘 다 돌아도 그 주는 한 번만(유료 단계 포함)
+    from datetime import date
+
+    import radar.cli as cli
+
+    root = write_tree(tmp_path, [meta(1, "a/a")], {"2026-11-08": [(1, "a/a", 50)]})
+    monkeypatch.setenv("RADAR_STARTREND_DIR", str(root))
+    monkeypatch.setattr(cli, "_today", lambda: date(2026, 11, 16))
+    data = tmp_path / "data"
+    (data / "signals").mkdir(parents=True)
+    (data / "signals" / "2026-11-08.csv").write_text("repo_id\n", encoding="utf-8")
+    monkeypatch.setattr(cli, "_data_dir", lambda: data)
+    assert main(["weekly", "--check-input"]) == cli.EXIT_DONE
     assert "이미" in capsys.readouterr().out

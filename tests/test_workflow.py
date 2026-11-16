@@ -51,3 +51,27 @@ jobs:
     assert any("권한" in p for p in found)
     assert any("env 밖" in p for p in found)
     assert any("persist-credentials" in p for p in found)
+
+
+def _step(text: str, name: str) -> str:
+    start = text.index(f"- name: {name}")
+    nxt = text.find("\n      - name:", start + 1)
+    return text[start:nxt if nxt > 0 else len(text)]
+
+
+def test_weekly_waits_in_short_steps_and_skips_a_week_already_done():
+    # D26 — star-trend 가 끝나면 신호로 시작한다. 예약 실행은 대비용 — 5분마다 보고,
+    # 이미 끝낸 주(종료 코드 5)면 뒤 단계(유료 포함)를 모두 건너뛴다.
+    # 순서를 기다린 실행도 앞 실행의 커밋을 보도록 최신 main 을 받는다
+    text = (WF / "weekly.yml").read_text(encoding="utf-8")
+    own = _step(text, "레이더 저장소")
+    assert "ref: main" in own
+    wait = _step(text, "입력 갱신 대기")
+    assert "sleep 300" in wait and "sleep 1800" not in wait
+    assert '"5"' in wait and "GO=true" in wait and "GITHUB_ENV" in wait
+    after = text[text.index("- name: 입력 갱신 대기"):].split("\n      - name:")[1:]
+    assert after
+    for step in after:
+        cond = re.search(r"^\s+if: (.+)$", step, re.M)
+        assert cond, step.splitlines()[0]
+        assert "env.GO == 'true'" in cond.group(1) and "env.RUN" not in cond.group(1), step.splitlines()[0]
