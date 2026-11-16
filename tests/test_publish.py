@@ -363,3 +363,40 @@ def test_publish_angles_use_commentary_and_drop_unknown_sentence():
     # 해설이 없으면 관점 문단 그대로(대신할 설명이 없다)
     plain = drafts.angles_markdown(f, texts, ART)
     assert UNKNOWN in plain and "**무엇인가**" not in plain
+
+
+# ── 관점 노트 일러스트 색 (D27) ──
+
+STYLE = ("16:9 dark blueprint technical schematic, deep navy background (#0B1220) "
+         "with a faint engineering grid, thin cyan (#22D3EE) and indigo (#6366F1) line art, "
+         "isometric engineering-drawing precision.")
+BODY = " A worker pool feeds a vector index through a message bus. No people, characters, logos, or text."
+
+
+def test_publish_restyle_varies_illustration_colors_by_angle_and_order():
+    # 2026-11-16 사용자 "관점 노트 그림의 색들을 다양하게"
+    # — 유형마다 강조색, 같은 유형 안에서는 바탕 4종을 차례로(유형마다 시작 바탕을 하나씩 민다).
+    # LLM 이 쓴 다크 블루프린트 첫 문장만 바꾸고 나머지는 그대로 둔다
+    got = {(k, i): drafts.restyle(STYLE + BODY, k, i) for k in "ABCD" for i in range(4)}
+    assert len(set(got.values())) == 16
+    assert all(p.endswith(BODY) and p.startswith("16:9 ") for p in got.values())
+    a0, a1, a2, a3 = (got["A", i] for i in range(4))
+    assert "emerald" in a0 and "#0B1220" in a0 and "#22D3EE" not in a0
+    assert "light drafting paper" in a1 and "#0B1220" not in a1
+    assert "graphite" in a2 and "warm vellum" in a3
+    assert drafts.restyle(STYLE + BODY, "A", 4) == a0  # 바탕은 네 개씩 돈다
+    firsts = [got[k, 0] for k in "ABCD"]  # 네 섹션의 첫 그림 바탕이 모두 다르다
+    grounds = ("deep navy", "light drafting paper", "graphite", "warm vellum")
+    assert [next(g for g in grounds if g in x) for x in firsts] == list(grounds)
+    assert "crimson" in got["B", 0] and "magenta" in got["B", 1] and "violet" in got["D", 0]
+    assert "orthographic" in drafts.restyle(STYLE.replace("isometric", "orthographic") + BODY, "C", 0)
+    # 양식 문장을 찾지 못하면(LLM 이 다르게 썼으면) 고치지 않는다
+    assert drafts.restyle(BODY.strip(), "A", 0) == BODY.strip()
+
+
+def test_publish_angles_restyle_each_illustration_prompt():
+    f = _facts_with_angle()
+    ill = dict(ILL, prompt=STYLE + BODY)
+    art = dict(ART, cards=[dict(ART["cards"][0], illustration=ill)])
+    ang = drafts.angles_markdown(f, _texts(f), art)
+    assert drafts.restyle(STYLE + BODY, "A", 0) in ang and STYLE not in ang

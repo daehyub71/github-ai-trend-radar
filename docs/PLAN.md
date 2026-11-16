@@ -1,6 +1,6 @@
 # PLAN.md — github-ai-trend-radar
 
-> **상태: v0.7.7** (2026-11-16). 기준 문서는 `docs/SPEC.md` v0.7.7.
+> **상태: v0.7.8** (2026-11-16). 기준 문서는 `docs/SPEC.md` v0.7.8.
 > PLAN 결정 P1~P6 확정(P5·P6은 2026-11-14 시안 합의 때 이의 없음). 숫자 근거는 `docs/MEASURE.md` §1(M0 실측).
 
 ---
@@ -201,6 +201,7 @@ web/                   (M4) Next.js 정적 사이트 — data/site 를 읽는다
 | v0.2 | 2026-11-13 | P1 평문 git · P2 ecosyste.ms · P3 M0 실측 뒤 · P4 urllib 확정 |
 | v0.3 | 2026-11-13 | SPEC v0.3 F9 반영: `core/angles.py`(M2), 관점 글 초안·Notion(M5), 테스트 항목 |
 | v0.4 | 2026-11-13 | M0 실측 반영: S2 소급 제외, S3 12주 한 질의 + 1,000건 초과 시 주별 분할, S4 패키지 파일 연결, P2 수정, P3 확정 |
+| v0.7.8 | 2026-11-16 | D27 — `drafts.restyle(prompt, 유형, 순번)` 이 다크 블루프린트 첫 문장을 유형 강조색 × 바탕(남색·제도지·그래파이트·미색 제도지, 유형마다 시작을 민다) 문장으로 바꾼다. `angles_markdown` 이 유형 안 순번을 넘긴다 |
 | v0.7.7 | 2026-11-16 | D25 보강 — `drafts.angles_markdown(notes=)` · `_what` 이 요약 없을 때 초안 문장을 `_drop_unknown` 으로 걸러 첫 줄로. `blog._write` 가 관점 글에도 해설을 넘긴다 |
 | v0.7.6 | 2026-11-16 | D26 — star-trend 워크플로 맨 끝 `레이더 시작 신호` 단계(`gh workflow run weekly -f mode=run`). 레이더: `weekly --check-input` 종료 코드 5(이미 끝낸 주) → 입력 대기 단계가 `GO` 를 `GITHUB_ENV` 에 쓰고 뒤 단계는 `env.GO` 로만 돈다 · 체크아웃 `ref: main` · 대기 5분 × 24 |
 | v0.7.5 | 2026-11-16 | 주간 cron 월 05:00 UTC(14:00 KST) — star-trend 보다 먼저 시작해도 입력 대기가 공개 데이터 push 를 기다린다 |

@@ -107,16 +107,51 @@ def _trend(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | 
     return lines + [t["trend"], ""]
 
 
-def _illustration(card: Mapping[str, Any]) -> list[str]:
-    """R2 — 사람이 이미지 AI 로 만들 프롬프트. 이미 만든 일러스트가 있으면 뺀다."""
+# 관점 노트 일러스트 색 (D27) — 유형마다 강조색(관점 카드 차트의 유형 색 계열), 같은 유형 안에서는 바탕 4종을 차례로.
+# 유형마다 시작 바탕을 하나씩 밀어 네 섹션의 첫 그림 바탕이 모두 다르다.
+# 해설 LLM 은 D24 첫 문장(다크 블루프린트)을 그대로 쓰고, 여기서 그 문장만 바꿔 끼운다(LLM 0).
+GROUNDS = (("dark", "deep navy", "#0B1220"), ("light", "light drafting paper", "#F7F8FA"),
+           ("dark", "graphite", "#16181D"), ("light", "warm vellum drafting sheet", "#F4EFE3"))
+ACCENTS: dict[str, dict[str, tuple[tuple[str, str], tuple[str, str]]]] = {
+    "A": {"dark": (("emerald", "#10B981"), ("teal", "#2DD4BF")),
+          "light": (("deep emerald", "#047857"), ("slate", "#334155"))},
+    "B": {"dark": (("magenta", "#F472B6"), ("amber", "#FBBF24")),
+          "light": (("crimson", "#BE185D"), ("burnt orange", "#C2410C"))},
+    "C": {"dark": (("cyan", "#22D3EE"), ("blue", "#60A5FA")),
+          "light": (("cobalt blue", "#1D4ED8"), ("steel teal", "#0E7490"))},
+    "D": {"dark": (("violet", "#A78BFA"), ("coral", "#FB7185")),
+          "light": (("deep violet", "#6D28D9"), ("rose", "#BE123C"))},
+}
+STYLE_SENTENCE = re.compile(r"16:9[^.]*?(?:#0B1220|navy background)[^.]*\.", re.I)
+
+
+def restyle(prompt: str, angle: str, order: int) -> str:
+    """D27 — 다크 블루프린트 첫 문장을 관점 유형 강조색 × 바탕 문장으로 바꾼다. 문장을 못 찾으면 그대로."""
+    m = STYLE_SENTENCE.search(prompt)
+    if not m or angle not in ACCENTS:
+        return prompt
+    tone, ground, hexa = GROUNDS[("ABCD".index(angle) + order) % len(GROUNDS)]
+    (c1, h1), (c2, h2) = ACCENTS[angle][tone]
+    view = "orthographic" if "orthographic" in m.group(0).lower() else "isometric"
+    lines = f"thin {c1} ({h1}) and {c2} ({h2}) line art, {view} engineering-drawing precision."
+    if tone == "dark":
+        new = f"16:9 dark technical schematic on a {ground} background ({hexa}) with a faint engineering grid, {lines}"
+    else:
+        new = f"16:9 precise engineering drawing on {ground} ({hexa}) with a faint gray engineering grid, {lines}"
+    return prompt[:m.start()] + new + prompt[m.end():]
+
+
+def _illustration(card: Mapping[str, Any], style: tuple[str, int] | None = None) -> list[str]:
+    """R2 — 사람이 이미지 AI 로 만들 프롬프트. 이미 만든 일러스트가 있으면 뺀다. style = (관점 유형, 유형 안 순번)."""
     ill = card.get("illustration")
     if not ill or (card.get("picture") or {}).get("kind") == "illustration":
         return []
+    prompt = restyle(ill["prompt"], *style) if style else ill["prompt"]
     labels = " · ".join(ill.get("labels") or [])
     return [f"> 🎨 일러스트 프롬프트 — {ill.get('teach') or ''}".rstrip(" —"),
             f"> 이미지 AI 로 만들어 `gen/{_key(card['full_name'])}.png` 로 두면 카드와 글에 들어갑니다."
             + (f" 얹을 한글 라벨: {labels}" if labels else ""),
-            ">", f"> {ill['prompt']}", ""]
+            ">", f"> {prompt}", ""]
 
 
 def _cover(cover: str | None) -> list[str]:
@@ -241,7 +276,7 @@ def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str
         if not a["items"]:
             lines += ["이번 주에는 조건을 만족하는 저장소가 없습니다.", ""]
             continue
-        for it in a["items"]:
+        for order, it in enumerate(a["items"]):
             card = cards.get(it["repo"])
             lines += [f"#### {it['repo']} — 종합 {it['rank']}위 · 지수 {it['index']:.1f}", ""]
             if card:
@@ -253,7 +288,7 @@ def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str
                 text = _drop_unknown(text)
             lines += [f"근거: {_evidence(key, it['evidence'])}", "", text, ""]
             if card:
-                lines += _illustration(card)
+                lines += _illustration(card, (key, order))
     lines += ["### 주의할 점", "",
               f"- 유형은 코드가 정한 규칙으로 고릅니다(유형마다 최대 5개, 한 저장소는 한 유형에만). 백분위는 후보 {f['candidates']}개 안의 상대값입니다.",
               "- 반짝 관심 유형은 판단이 아니라 관측입니다. 사용·기여 신호가 늦게 나타나는 저장소도 많습니다.", "",
