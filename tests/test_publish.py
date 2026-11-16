@@ -456,3 +456,6 @@ def test_publish_summary_section_gets_prompt_or_made_picture():
     made = drafts.post_markdown(f, _texts(f), ART, summary_image="gen/summary.png")
     sec = made[made.index("### 한 장 요약"):]
     assert sec.split("\n")[2] == "![한 장 요약](gen/summary.png)" and "🎨" not in sec
+    # v0.7.10 — 그림 안 라벨 상자는 비어 있으니 라벨 5개를 그림 바로 아래 한 줄로
+    assert sec.split("\n")[4].startswith("그림 라벨(왼쪽부터): ① 지수 1위 org/lead · 49위 → 1위 ② 포크·사용")
+    assert sec.split("\n")[4].count("⑤") == 1

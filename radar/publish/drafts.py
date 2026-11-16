@@ -219,12 +219,21 @@ def summary_prompt(f: Mapping[str, Any]) -> tuple[str, list[str]]:
     return prompt, [l1, l2, l3, l4, l5]
 
 
+def _numbered(labels: list[str]) -> str:
+    return " ".join(f"{n} {label}" for n, label in zip("①②③④⑤", labels, strict=False))
+
+
 def _summary_picture(f: Mapping[str, Any]) -> list[str]:
     prompt, labels = summary_prompt(f)
     return ["> 🎨 한 장 요약 그림 프롬프트 — 이번 주 요약 다섯 가지를 한 장의 기술 도해로",
             "> 이미지 AI 로 만들어 `gen/summary.png` 로 두면 이 자리에 들어갑니다. 구역 (1)~(5)에 얹을 한글 라벨: "
-            + " ".join(f"{n} {label}" for n, label in zip("①②③④⑤", labels, strict=False)),
+            + _numbered(labels),
             ">", f"> {prompt}", ""]
+
+
+def _summary_image(f: Mapping[str, Any], image: str) -> list[str]:
+    """사람이 만든 그림 + 그 아래 라벨 한 줄(D28 v0.7.10 — 그림 안 라벨 상자는 비어 있다)."""
+    return [f"![한 장 요약]({image})", "", "그림 라벨(왼쪽부터): " + _numbered(summary_prompt(f)[1]), ""]
 
 
 def _cover(cover: str | None) -> list[str]:
@@ -318,7 +327,7 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, 
         "- AI 저장소 판정과 카테고리는 github-ai-star-trend 의 판정(Claude)을 그대로 씁니다.", "",
         t["caveats"], "",
         "### 한 장 요약", "",
-        *([f"![한 장 요약]({summary_image})", ""] if summary_image else []),
+        *(_summary_image(f, summary_image) if summary_image else []),
         t["summary"], "",
         *([] if summary_image else _summary_picture(f)),
     ]
