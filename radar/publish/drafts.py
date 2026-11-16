@@ -4,6 +4,7 @@
 걸리거나 빠진 문단은 사유를 적은 자리 표시로 남긴다 — 사람이 검토할 때 보이게.
 """
 
+import re
 from collections.abc import Mapping, Sequence
 from datetime import date
 from typing import Any
@@ -127,14 +128,30 @@ def _tag(c: Mapping[str, Any]) -> str:
     return " (추정)" if c.get("basis") == "추정" else ""
 
 
+UNKNOWN_MARK = "확인이 필요"  # 초안 LLM 이 설명·토픽이 비었을 때 쓰는 문장 — 해설이 있으면 뺀다 (D25 보강)
+
+
+def _drop_unknown(text: str) -> str:
+    """'…저장소에서 확인이 필요합니다' 같은 문장을 뺀다. 해설이 그 자리를 채울 때만 부른다."""
+    keep = [x for x in re.split(r"(?<=[.!?])\s+", text.strip()) if x and UNKNOWN_MARK not in x]
+    return " ".join(keep)
+
+
+def _has_what(note: Mapping[str, Any] | None) -> bool:
+    head = ((note or {}).get("summary") or {}).get("what") or {}
+    return bool(head.get("text")) or any(w.get("text") for w in (note or {}).get("what") or [])
+
+
 def _what(note: Mapping[str, Any] | None, fallback: str) -> list[str]:
     """무엇인가 (D25) — 그 주 저장소 해설(F10, README·웹 근거·게이트 통과)이 있으면 그것을,
-    없으면 초안 LLM 문단(설명·토픽·언어 근거)을 쓴다."""
+    없으면 초안 LLM 문단(설명·토픽·언어 근거)을 쓴다. 해설에 요약 문장이 없으면 초안 문단에서
+    "확인이 필요" 문장을 뺀 나머지를 첫 줄로 쓰고 해설 항목을 붙인다."""
     head = ((note or {}).get("summary") or {}).get("what") or {}
     items = [w for w in (note or {}).get("what") or [] if w.get("text")]
     if not head.get("text") and not items:
-        return [f"**무엇인가** {fallback}", ""]
-    lines = [f"**무엇인가**{_tag(head)} {head['text']}" if head.get("text") else "**무엇인가**", ""]
+        return [f"**무엇인가** {fallback}", ""] if fallback else []
+    first = f"{_tag(head)} {head['text']}" if head.get("text") else (f" {_drop_unknown(fallback)}".rstrip())
+    lines = [f"**무엇인가**{first}", ""]
     lines += [f"- **{w['label']}**{_tag(w)} {w['text']}" for w in items]
     return lines + ([""] if items else [])
 
@@ -208,8 +225,9 @@ def _evidence(key: str, ev: Mapping[str, Any]) -> str:
 
 
 def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None, *,
-                    cover: str | None = None) -> str:
-    """관점 노트 (F9). art 가 있으면 신호 지도(C3)·관점 카드(R1)·일러스트 프롬프트(R2)를 넣는다."""
+                    notes: Mapping[str, Mapping[str, Any]] | None = None, cover: str | None = None) -> str:
+    """관점 노트 (F9). art 가 있으면 신호 지도(C3)·관점 카드(R1)·일러스트 프롬프트(R2)를 넣는다.
+    그 주 해설(notes)이 있는 저장소는 무엇인가를 넣고, 관점 문단의 "확인이 필요" 문장은 뺀다 (D25 보강)."""
     rules = f["rules"]["angles"]
     cards = {c["full_name"]: c for c in (art or {}).get("cards") or []}
     lines = [f"# 📡 {f['series']} 관점 노트 📡 {_period(f)}", "", *_cover(cover), t["angle_intro"], "",
@@ -228,7 +246,12 @@ def angles_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str
             lines += [f"#### {it['repo']} — 종합 {it['rank']}위 · 지수 {it['index']:.1f}", ""]
             if card:
                 lines += [f"![관점 카드 — {it['repo']}](charts/{card['file']})", ""]
-            lines += [f"근거: {_evidence(key, it['evidence'])}", "", t["angle:" + it["repo"]], ""]
+            note = (notes or {}).get(it["repo"])
+            text = t["angle:" + it["repo"]]
+            if _has_what(note):
+                lines += _what(note, "")
+                text = _drop_unknown(text)
+            lines += [f"근거: {_evidence(key, it['evidence'])}", "", text, ""]
             if card:
                 lines += _illustration(card)
     lines += ["### 주의할 점", "",

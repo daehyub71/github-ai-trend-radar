@@ -325,4 +325,41 @@ def test_publish_rewrite_drafts_uses_week_commentary_and_cover(tmp_path):
     post = (out / "post.md").read_text(encoding="utf-8")
     assert "**무엇인가** 여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다." in post
     assert post.split("\n")[2] == "![대표 이미지](gen/cover.png)"
-    assert "대표 이미지" not in (out / "angles.md").read_text(encoding="utf-8")  # 관점 글은 cover-angles.*
+    angles = (out / "angles.md").read_text(encoding="utf-8")
+    assert "대표 이미지" not in angles  # 관점 글은 cover-angles.*
+    assert "**무엇인가** 여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다." in angles  # 관점 글도 해설로
+
+
+UNKNOWN = "설명과 토픽이 없어 자세한 용도는 저장소에서 확인이 필요합니다."
+
+
+def test_publish_what_keeps_draft_sentence_when_commentary_has_no_summary():
+    # D25 보강(2026-11-16) — 11-08 1위 meta/astryx: 해설 요약 문장이 없어 항목 하나만 남았다.
+    # 요약이 없으면 초안 문단에서 "확인이 필요" 문장을 뺀 나머지를 첫 줄로 쓰고 항목을 붙인다
+    f = _facts_with_angle()
+    items_only = dict(NOTE, summary={"what": None})
+    texts = dict(_texts(f), **{"what:org/r2": "org/r2 는 디자인 시스템입니다. " + UNKNOWN})
+    post = drafts.post_markdown(f, texts, ART, notes={"org/r2": items_only})
+    sec = post[post.index("org/r2 — 지수"):post.index("org/r3 — 지수")]
+    assert "**무엇인가** org/r2 는 디자인 시스템입니다.\n" in sec
+    assert "- **구조** WebSocket 서버가 CLI 를 감쌉니다." in sec and "확인이 필요" not in sec
+    # 남는 문장이 없으면 첫 줄 없이 항목만
+    texts = dict(texts, **{"what:org/r2": UNKNOWN})
+    post = drafts.post_markdown(f, texts, ART, notes={"org/r2": items_only})
+    sec = post[post.index("org/r2 — 지수"):post.index("org/r3 — 지수")]
+    assert "**무엇인가**\n" in sec and "확인이 필요" not in sec
+
+
+def test_publish_angles_use_commentary_and_drop_unknown_sentence():
+    # D25 보강 — 관점 글에도 해설의 무엇인가를 넣고, 해설이 있으면 "확인이 필요" 문장은 뺀다
+    f = _facts_with_angle()
+    texts = dict(_texts(f), **{"angle:org/r2": "사용 백분위가 높습니다. " + UNKNOWN})
+    ang = drafts.angles_markdown(f, texts, ART, notes={"org/r2": NOTE})
+    sec = ang[ang.index("#### org/r2"):]
+    assert "**무엇인가** 여러 에이전트 CLI 를 한곳에서 제어하는 도구입니다." in sec
+    assert "- **쓰는 사람** (추정) 구독을 이미 쓰는 개발자입니다." in sec
+    assert "사용 백분위가 높습니다." in sec and "확인이 필요" not in sec
+    assert sec.index("**무엇인가**") < sec.index("근거:")
+    # 해설이 없으면 관점 문단 그대로(대신할 설명이 없다)
+    plain = drafts.angles_markdown(f, texts, ART)
+    assert UNKNOWN in plain and "**무엇인가**" not in plain

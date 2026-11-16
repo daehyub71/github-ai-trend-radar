@@ -92,7 +92,7 @@ def _write(out: Path, f: dict[str, Any], texts: dict[str, str], art: dict[str, A
     notes, cover = _notes(out), _cover(out, "cover")
     write_mutable(out / "post.md", drafts.post_markdown(f, texts, art, notes=notes, cover=cover))
     write_mutable(out / "angles.md",
-                  drafts.angles_markdown(f, texts, art, cover=_cover(out, "cover-angles")))
+                  drafts.angles_markdown(f, texts, art, notes=notes, cover=_cover(out, "cover-angles")))
     return {"notes": len(notes), "cover": cover is not None}
 
 
