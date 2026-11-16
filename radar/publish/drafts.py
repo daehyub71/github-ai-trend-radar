@@ -5,6 +5,7 @@
 """
 
 import re
+from collections import Counter
 from collections.abc import Mapping, Sequence
 from datetime import date
 from typing import Any
@@ -154,6 +155,78 @@ def _illustration(card: Mapping[str, Any], style: tuple[str, int] | None = None)
             ">", f"> {prompt}", ""]
 
 
+# 한 장 요약 그림 (D28) — 계산한 사실로만 프롬프트를 쓴다(LLM 0). 색은 사이트 차트의 신호 5색(publish/charts.COLORS)
+SIGNAL_INKS = "amber (#F59E0B), sky blue (#38BDF8), indigo (#4F46E5), emerald (#059669) and pink (#DB2777)"
+ORDINALS = ("first", "second", "third", "fourth", "fifth")
+ATTENTION_SHARE = re.compile(r"관심\(스타·언급\) 비중은 (\d+)% → (\d+)%")  # core.charts_data.trend_observations 문장
+
+
+def _ranking_zone(lead: Mapping[str, Any], n: int) -> tuple[str, str]:
+    prev, head = lead.get("prev_rank"), f"지수 {lead['rank']}위 {lead['repo']}"
+    if prev is None:
+        return "one marker enters from outside the column straight into the top slot", f"{head} · 새로 진입"
+    if prev <= lead["rank"]:
+        return "the marker in the top slot holds its position", f"{head} · 지난주도 {prev}위"
+    how = "climbs along a steep arrow from far below the column" if prev > n else "moves up a few slots"
+    return f"one marker {how} into the top slot", f"{head} · {prev}위 → {lead['rank']}위"
+
+
+def summary_prompt(f: Mapping[str, Any]) -> tuple[str, list[str]]:
+    """D28 — "한 장 요약"을 형상화할 그림 프롬프트(영어)와 얹을 한글 라벨 5개."""
+    top = f["top10"]
+    n = len(top)
+    z1, l1 = _ranking_zone(top[0], n)
+    names = list(SIGNAL_NAMES.values())
+    sparse = [i for i, nm in enumerate(names) if 2 * sum(nm in (r.get("missing") or []) for r in top) > n]
+    if sparse:
+        cols = " and ".join(ORDINALS[i] for i in sparse)
+        verb = "columns are" if len(sparse) > 1 else "column is"
+        z2 = f"a {n}-by-5 signal matrix of square cells where the {cols} {verb} mostly empty outlines while the others are filled"
+        l2 = "·".join(names[i] for i in sparse) + " 신호 빈칸"
+    else:
+        z2, l2 = f"a {n}-by-5 signal matrix of square cells, nearly every cell filled", "다섯 신호 고르게"
+    cats = Counter(r["category"] for r in top if r.get("category"))
+    if cats and max(cats.values()) >= 2:
+        cat, k = max(cats.items(), key=lambda kv: (kv[1], kv[0]))
+        z3 = f"a cluster of category blocks where one column of {k} stacked units stands taller than the others"
+        l3 = f"{cat} {k}개"
+    else:
+        z3, l3 = "a cluster of evenly sized category blocks", "카테고리 고르게"
+    obs = (f.get("trend") or {}).get("observations") or []
+    m = next((x for x in (ATTENTION_SHARE.search(o) for o in obs) if x), None)
+    if m:
+        a0, a1 = int(m.group(1)), int(m.group(2))
+        way = "widens slightly" if a1 > a0 else "narrows slightly" if a1 < a0 else "stays level"
+        z4, l4 = f"a twelve-step stacked band chart where the upper attention band {way} toward the right", \
+            f"관심 비중 {a0}% → {a1}%"
+    else:
+        z4, l4 = "a twelve-step stacked band chart of attention versus usage shares", "관심·사용 비중 추이"
+    new = sum(1 for r in top if r.get("prev_rank") is None or r["prev_rank"] > n)
+    if new:
+        enter = f"{new} new nodes enter" if new > 1 else "one new node enters"
+        z5 = f"a gateway frame through which {enter} the top-ten column, outlined in a brighter stroke"
+        l5 = f"새로 진입 {new}개"
+    else:
+        z5, l5 = "a closed gateway frame beside the top-ten column, every slot carried over from last week", "새로 진입 없음"
+    prompt = (
+        "16:9 editorial technical infographic, dark technical schematic on a deep navy background (#0B1220) with a "
+        f"faint engineering grid, thin line art in the five signal colors of the series charts — {SIGNAL_INKS} — "
+        "isometric engineering-drawing precision. One dashboard-like composition with five zones read left to right: "
+        f"(1) a vertical ranking column of {n} slots where {z1}; (2) {z2}; (3) {z3}; (4) {z4}; (5) {z5}. "
+        "Each zone has an annotation leader line ending in an empty label box. Clean, precise, high contrast, "
+        "generous spacing, no decorative clutter. No people, characters, logos, or text."
+    )
+    return prompt, [l1, l2, l3, l4, l5]
+
+
+def _summary_picture(f: Mapping[str, Any]) -> list[str]:
+    prompt, labels = summary_prompt(f)
+    return ["> 🎨 한 장 요약 그림 프롬프트 — 이번 주 요약 다섯 가지를 한 장의 기술 도해로",
+            "> 이미지 AI 로 만들어 `gen/summary.png` 로 두면 이 자리에 들어갑니다. 구역 (1)~(5)에 얹을 한글 라벨: "
+            + " ".join(f"{n} {label}" for n, label in zip("①②③④⑤", labels, strict=False)),
+            ">", f"> {prompt}", ""]
+
+
 def _cover(cover: str | None) -> list[str]:
     """대표 이미지 (D25) — 사람이 만든 blog/gen/cover*.* 가 있으면 제목 바로 아래."""
     return [f"![대표 이미지]({cover})", ""] if cover else []
@@ -192,9 +265,11 @@ def _what(note: Mapping[str, Any] | None, fallback: str) -> list[str]:
 
 
 def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, Any] | None = None, *,
-                  notes: Mapping[str, Mapping[str, Any]] | None = None, cover: str | None = None) -> str:
+                  notes: Mapping[str, Mapping[str, Any]] | None = None, cover: str | None = None,
+                  summary_image: str | None = None) -> str:
     """TOP 10 글 (F7). t 는 gate_texts 를 거친 글, art 는 그림 단계 결과(F11 — 없으면 그림 없이),
-    notes 는 그 주 저장소 해설(저장소 이름 → 카드), cover 는 대표 이미지 경로(blog/ 기준)."""
+    notes 는 그 주 저장소 해설(저장소 이름 → 카드), cover 는 대표 이미지 경로(blog/ 기준),
+    summary_image 는 사람이 만든 한 장 요약 그림(D28 — 없으면 그 자리에 프롬프트)."""
     lines = [
         f"# 📡 {f['series']} {f['issue']}회 📡 {t['title:1']}", "",
         *_cover(cover),
@@ -242,7 +317,10 @@ def post_markdown(f: Mapping[str, Any], t: Mapping[str, str], art: Mapping[str, 
         "- 포크 증가는 매주 쌓는 스냅샷 두 개가 있어야 나옵니다. 사용 신호는 PyPI·npm 패키지로 확인된 저장소에만 있습니다.",
         "- AI 저장소 판정과 카테고리는 github-ai-star-trend 의 판정(Claude)을 그대로 씁니다.", "",
         t["caveats"], "",
-        "### 한 장 요약", "", t["summary"], "",
+        "### 한 장 요약", "",
+        *([f"![한 장 요약]({summary_image})", ""] if summary_image else []),
+        t["summary"], "",
+        *([] if summary_image else _summary_picture(f)),
     ]
     return "\n".join(lines)
 

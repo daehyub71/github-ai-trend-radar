@@ -400,3 +400,59 @@ def test_publish_angles_restyle_each_illustration_prompt():
     art = dict(ART, cards=[dict(ART["cards"][0], illustration=ill)])
     ang = drafts.angles_markdown(f, _texts(f), art)
     assert drafts.restyle(STYLE + BODY, "A", 0) in ang and STYLE not in ang
+
+
+# ── 한 장 요약 그림 프롬프트 (D28) ──
+
+
+def _summary_facts():
+    from radar.core.charts_data import Share, trend_observations
+
+    f = _facts_with_angle()
+    top = [dict(r, rank=i, prev_rank=i) for i, r in enumerate(f["top10"], 1)]
+    top[0].update(repo="org/lead", prev_rank=49, category="코딩 에이전트·IDE")
+    top[1].update(category="코딩 에이전트·IDE")
+    top[2].update(category="코딩 에이전트·IDE", prev_rank=None)
+    shares = [Share("2026-08-16", False, {"s1": 30.0, "s2": 0.0, "s3": 40.0, "s4": 15.0, "s5": 15.0}),
+              Share("2026-11-01", False, {"s1": 33.0, "s2": 0.0, "s3": 38.0, "s4": 13.0, "s5": 16.0})]
+    # 관심 비중은 core 의 트렌드 관찰 문장에서 읽는다 — 그 문장 형식이 바뀌면 이 테스트가 잡는다
+    return dict(f, top10=top, trend={"observations": trend_observations(shares, [], [])})
+
+
+def test_publish_summary_prompt_comes_from_facts():
+    # 2026-11-16 사용자 "한장요약을 형상화할 수 있는 이미지 생성 프롬프트를 추가" — 사실로만, LLM 0
+    prompt, labels = drafts.summary_prompt(_summary_facts())
+    assert labels == ["지수 1위 org/lead · 49위 → 1위", "포크·사용 신호 빈칸", "코딩 에이전트·IDE 3개",
+                      "관심 비중 45% → 49%", "새로 진입 2개"]
+    assert "climbs along a steep arrow from far below the column into the top slot" in prompt
+    assert "the second and fourth columns are mostly empty outlines" in prompt
+    assert "one column of 3 stacked units stands taller" in prompt
+    assert "attention band widens slightly toward the right" in prompt
+    assert "2 new nodes enter the top-ten column" in prompt
+    assert prompt.startswith("16:9 ") and prompt.endswith("No people, characters, logos, or text.")
+    assert "#F59E0B" in prompt and "#DB2777" in prompt  # 사이트 차트의 신호 색
+    from radar.publish.card import STYLE_BANNED
+
+    assert not STYLE_BANNED.search(prompt)  # D24 금지 양식을 쓰지 않는다
+
+
+def test_publish_summary_prompt_handles_quiet_weeks():
+    f = _summary_facts()
+    top = [dict(r, prev_rank=r["rank"], category=None, missing=[]) for r in f["top10"]]
+    top[0]["prev_rank"] = 1
+    prompt, labels = drafts.summary_prompt(dict(f, top10=top, trend={"observations": []}))
+    assert labels[0].endswith("지난주도 1위") and labels[1:] == ["다섯 신호 고르게", "카테고리 고르게",
+                                                                "관심·사용 비중 추이", "새로 진입 없음"]
+    assert "holds its position" in prompt and "closed gateway frame" in prompt
+
+
+def test_publish_summary_section_gets_prompt_or_made_picture():
+    f = _summary_facts()
+    post = drafts.post_markdown(f, _texts(f), ART)
+    sec = post[post.index("### 한 장 요약"):]
+    assert "> 🎨 한 장 요약 그림 프롬프트" in sec and "`gen/summary.png`" in sec
+    assert "얹을 한글 라벨: ① 지수 1위 org/lead · 49위 → 1위 ② 포크·사용 신호 빈칸 ③ 코딩" in sec
+    assert sec.index("관측한 내용입니다.") < sec.index("> 🎨")  # 요약 글 다음에
+    made = drafts.post_markdown(f, _texts(f), ART, summary_image="gen/summary.png")
+    sec = made[made.index("### 한 장 요약"):]
+    assert sec.split("\n")[2] == "![한 장 요약](gen/summary.png)" and "🎨" not in sec
