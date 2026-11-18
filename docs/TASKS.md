@@ -64,6 +64,7 @@
 - [x] T3-5 Secrets 등록(star-trend 키 재사용, D8)·수동 실행 1회 — 2026-11-14 사용자가 키체인에서 4개 등록(`RADAR_GH_TOKEN`·`STARTREND_ANTHROPIC_API_KEY`·`NOTION_TOKEN`·`STARTREND_TAVILY_API_KEY`). 점검 모드 수동 실행 성공(run 43558458501): 토큰 있음 · 시간당 한도 5,000 · 입력 계약 통과(AI 1,425 · 최신 11-01 · 후보 200). `RADAR_PRIVATE_REPO_TOKEN` 은 미등록 — 그동안 초안·해설·Notion 단계는 건너뛴다
 - [ ] T3-6 첫 예약 실행 성공 확인 — 2026-11-16 사용자 요청으로 cron 을 월 05:00 UTC(14:00 KST)로 바꾸고 11-08 주는 손으로 실행. 첫 예약 실행은 11-23
 - [ ] T3-7 **끝나면 바로 시작(D26)** — 코드 ✅ 2026-11-16: star-trend 워크플로 맨 끝 신호 단계(star-trend 결정 70) · `weekly --check-input` 이미 끝낸 주 종료 코드 5 · 뒤 단계 `env.GO` · 체크아웃 `ref: main` · 대기 5분 × 24. 테스트 먼저 (`test_cli_weekly_check_input_reports_week_already_done` · `test_weekly_waits_in_short_steps_and_skips_a_week_already_done`). 남은 것: ① 사용자 — 세분화 토큰(이 저장소 하나 · Actions 읽기·쓰기) → star-trend Secret `RADAR_DISPATCH_TOKEN` ② 11-23 신호로 시작했는지 · 14:00 예약 실행이 건너뛰었는지 확인
+- [ ] T3-8 **로컬 맥이 실행, 예약은 대비(D30)** — 코드 ✅ 2026-11-18: 크론 `0 8 * * 1`(17:00 KST). 테스트 `test_weekly_schedule_is_a_fallback_at_17_kst` 먼저. 로컬 점검(계약 · 입력 확인 · 예상 호출 수) 통과. 남은 것: ① 11-23 로컬 첫 실행 확인 ② 같은 날 17:00 예약 실행이 건너뛰는지(종료 코드 5) 확인 ③ 두세 주 뒤 예약 끄기
 
 ## M4 사이트
 

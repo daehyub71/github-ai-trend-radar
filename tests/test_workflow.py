@@ -75,3 +75,12 @@ def test_weekly_waits_in_short_steps_and_skips_a_week_already_done():
         cond = re.search(r"^\s+if: (.+)$", step, re.M)
         assert cond, step.splitlines()[0]
         assert "env.GO == 'true'" in cond.group(1) and "env.RUN" not in cond.group(1), step.splitlines()[0]
+
+
+def test_weekly_schedule_is_a_fallback_at_17_kst():
+    # D30 — 주간 실행은 로컬 맥이 star-trend 에 이어서 한다. 예약은 대비로 월 08:00 UTC(17:00 KST)
+    # — star-trend 대비 예약(16:00 KST) 뒤. 손으로 돌리는 길(workflow_dispatch)도 남긴다
+    text = (WF / "weekly.yml").read_text(encoding="utf-8")
+    on = text[text.index("\non:"):text.index("\npermissions:")]
+    assert re.search(r"^  schedule:\n    - cron: \"0 8 \* \* 1\"$", on, re.M)
+    assert "workflow_dispatch:" in on
